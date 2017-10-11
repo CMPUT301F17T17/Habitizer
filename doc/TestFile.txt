@@ -1,2 +1,3 @@
 Hey Hey ! It's the first commit! -- Sadman
 hello it's me your asian -- Simon
+Hello, I attempted to commit my change without write access to the repo a while ago -- Derrick
