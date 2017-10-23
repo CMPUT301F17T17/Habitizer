@@ -7,4 +7,72 @@
     android:background="@android:color/black" >
     tools:context="ssmad.habitizer.AddHabitEventActivity">
 
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="299dp"
+        android:layout_height="40dp"
+        android:text="Add Habit Event"
+        android:textSize="30sp"
+        tools:layout_editor_absoluteX="3dp"
+        tools:layout_editor_absoluteY="-1dp" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="65dp"
+        android:layout_height="26dp"
+        android:text="Habit:"
+        android:textSize="24sp"
+        android:layout_marginLeft="61dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="89dp" />
+
+    <EditText
+        android:id="@+id/habit_name"
+        android:layout_width="204dp"
+        android:layout_height="35dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintLeft_toRightOf="@+id/textView4"
+        android:layout_marginLeft="19dp"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="89dp"
+        app:layout_constraintHorizontal_bias="0.333" />
+
+    <EditText
+        android:id="@+id/comment_input"
+        android:layout_width="285dp"
+        android:layout_height="178dp"
+        android:background="@android:color/white"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Comment"
+        app:layout_constraintHorizontal_bias="0.506"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:layout_editor_absoluteY="194dp" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="143dp"
+        android:layout_height="43dp"
+        android:layout_marginLeft="61dp"
+        android:text="Comment:"
+        android:textSize="30sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/comment_input" />
+
+    <ImageButton
+        android:id="@+id/confirmE_button"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_marginLeft="8dp"
+        app:srcCompat="@android:drawable/checkbox_on_background"
+        tools:layout_editor_absoluteX="317dp"
+        tools:layout_editor_absoluteY="0dp" />
 </android.support.constraint.ConstraintLayout>
