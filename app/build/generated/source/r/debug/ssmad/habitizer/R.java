@@ -3137,7 +3137,7 @@ containing a value of this type.
         public static final int basic=0x7f0d0015;
         public static final int beginning=0x7f0d003f;
         public static final int bottom=0x7f0d002e;
-        public static final int button=0x7f0d008d;
+        public static final int habit_tab_button =0x7f0d008d;
         public static final int buttonPanel=0x7f0d0052;
         public static final int cancel_action=0x7f0d0094;
         public static final int center=0x7f0d002f;
@@ -3168,7 +3168,7 @@ containing a value of this type.
         public static final int exitUntilCollapsed=0x7f0d0023;
         public static final int expand_activities_button=0x7f0d004c;
         public static final int expanded_menu=0x7f0d0061;
-        public static final int feed_button=0x7f0d008c;
+        public static final int habit_feed_button =0x7f0d008c;
         public static final int fill=0x7f0d003c;
         public static final int fill_horizontal=0x7f0d003d;
         public static final int fill_vertical=0x7f0d0033;

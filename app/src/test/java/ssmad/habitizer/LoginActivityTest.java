@@ -4,7 +4,6 @@ import android.app.Activity;
 import android.test.ActivityInstrumentationTestCase2;
 import android.widget.EditText;
 
-import junit.framework.TestCase;
 import com.robotium.solo.Solo;
 
 /**

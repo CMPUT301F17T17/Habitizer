@@ -14,21 +14,21 @@
         android:background="@android:color/darker_gray"
         android:text="Social"
         android:textColor="@android:color/black"
-        app:layout_constraintBaseline_toBaselineOf="@+id/feed_button"
+        app:layout_constraintBaseline_toBaselineOf="@+id/habit_feed_button"
         tools:layout_editor_absoluteX="186dp" />
 
     <Button
-        android:id="@+id/feed_button"
+        android:id="@+id/habit_feed_button"
         android:layout_width="93dp"
         android:layout_height="76dp"
         android:background="@android:color/darker_gray"
         android:text="Feed"
         android:textColor="@android:color/black"
-        app:layout_constraintBaseline_toBaselineOf="@+id/button"
+        app:layout_constraintBaseline_toBaselineOf="@+id/habit_tab_button"
         tools:layout_editor_absoluteX="93dp" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/habit_tab_button"
         android:layout_width="93dp"
         android:layout_height="76dp"
         android:background="@android:color/holo_blue_dark"
@@ -38,20 +38,6 @@
         app:layout_constraintTop_toTopOf="parent"
         android:layout_marginTop="2dp" />
 
-
-    <ListView
-        android:id="@+id/habits_listview"
-        android:layout_width="366dp"
-        android:layout_height="316dp"
-        android:layout_marginBottom="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginRight="8dp"
-        android:layout_marginTop="8dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.703" />
 
     <TextView
         android:id="@+id/textView"
@@ -63,5 +49,31 @@
         android:textSize="24sp"
         app:layout_constraintTop_toTopOf="parent"
         tools:layout_editor_absoluteX="0dp" />
+
+    <ListView
+        android:id="@+id/habits_listview"
+        android:layout_width="370dp"
+        android:layout_height="336dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <ImageButton
+        android:id="@+id/add_habit_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/habits_listview"
+        app:srcCompat="@android:drawable/ic_input_add" />
 
 </android.support.constraint.ConstraintLayout>
