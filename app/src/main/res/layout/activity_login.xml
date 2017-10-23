@@ -43,7 +43,7 @@
         tools:layout_editor_absoluteY="114dp" />
 
     <EditText
-        android:id="@+id/editText"
+        android:id="@+id/username_input"
         style="@style/Widget.AppCompat.EditText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

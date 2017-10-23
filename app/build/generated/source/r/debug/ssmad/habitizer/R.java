@@ -3160,7 +3160,6 @@ containing a value of this type.
         public static final int design_menu_item_text=0x7f0d0087;
         public static final int design_navigation_view=0x7f0d0086;
         public static final int disableHome=0x7f0d001b;
-        public static final int editText=0x7f0d007c;
         public static final int edit_query=0x7f0d006d;
         public static final int end=0x7f0d0032;
         public static final int end_padder=0x7f0d00a6;
@@ -3272,6 +3271,7 @@ containing a value of this type.
         public static final int transition_scene_layoutid_cache=0x7f0d000c;
         public static final int up=0x7f0d000d;
         public static final int useLogo=0x7f0d0020;
+        public static final int username_input=0x7f0d007c;
         public static final int view_offset_helper=0x7f0d000e;
         public static final int visible=0x7f0d00a7;
         public static final int withText=0x7f0d0045;

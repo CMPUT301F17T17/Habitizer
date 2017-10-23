@@ -779,7 +779,6 @@ int id design_menu_item_action_area_stub 0x7f0d0088
 int id design_menu_item_text 0x7f0d0087
 int id design_navigation_view 0x7f0d0086
 int id disableHome 0x7f0d001b
-int id editText 0x7f0d007c
 int id edit_query 0x7f0d006d
 int id end 0x7f0d0032
 int id end_padder 0x7f0d00a6
@@ -891,6 +890,7 @@ int id transition_current_scene 0x7f0d000b
 int id transition_scene_layoutid_cache 0x7f0d000c
 int id up 0x7f0d000d
 int id useLogo 0x7f0d0020
+int id username_input 0x7f0d007c
 int id view_offset_helper 0x7f0d000e
 int id visible 0x7f0d00a7
 int id withText 0x7f0d0045
