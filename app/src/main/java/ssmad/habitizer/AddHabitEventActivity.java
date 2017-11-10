@@ -1,10 +1,12 @@
 package ssmad.habitizer;
 
 import android.content.Intent;
+import android.graphics.Bitmap;
 import android.net.Uri;
 import android.os.Bundle;
 import android.provider.MediaStore;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
@@ -14,6 +16,8 @@ import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+
+import java.io.IOException;
 
 
 /**
@@ -25,11 +29,14 @@ Ref getting pic
 https://stackoverflow.com/questions/10165302/dialog-to-pick-image-from-gallery-or-from-camera
 Ref getting map
 https://stackoverflow.com/questions/16536414/how-to-use-mapview-in-android-using-google-map-v2
+Ref pic size reduce
+https://stackoverflow.com/questions/16954109/reduce-the-size-of-a-bitmap-to-a-specified-size-in-android
  */
 
 public class AddHabitEventActivity extends AppCompatActivity {
     private final int GET_PIC_WITH_CAMERA = 0;
     private final int GET_PIC_FROM_GALLERY = 1;
+    private final int PIC_MAX_SIZE = 65536;
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -111,29 +118,37 @@ public class AddHabitEventActivity extends AppCompatActivity {
         switch (requestCode) {
             case GET_PIC_WITH_CAMERA:
                 if (resultCode == RESULT_OK) {
-                    setImage(data, "pic form camera");
+                    ImageView picPreview = (ImageView) findViewById(R.id.pic_preview);
+                    Bitmap bitmap = (Bitmap) data.getExtras().get("data");
+                    Bitmap compressedPic = getResizedBitmap(bitmap, PIC_MAX_SIZE);
+                    picPreview.setImageBitmap(compressedPic);
+                    picPreview.setVisibility(View.VISIBLE);
+                    DummyMainActivity.toastMe("get pic from camera", AddHabitEventActivity.this);
+
                 }
 
                 break;
             case GET_PIC_FROM_GALLERY:
                 if (resultCode == RESULT_OK) {
-                    setImage(data, "pic form gallery");
+                    ImageView picPreview = (ImageView) findViewById(R.id.pic_preview);
+                    Uri imageUri = data.getData();
+                    Bitmap bitmap;
+                    try {
+                        bitmap = MediaStore.Images.Media.getBitmap(this.getContentResolver(), imageUri);
+                    } catch (IOException e) {
+                        DummyMainActivity.toastMe("Getting bitmap failed!", AddHabitEventActivity.this);
+                        break;
+                    }
+                    Bitmap compressedPic = getResizedBitmap(bitmap, PIC_MAX_SIZE);
+                    picPreview.setImageBitmap(compressedPic);
+                    picPreview.setVisibility(View.VISIBLE);
+                    DummyMainActivity.toastMe("get pic from gallery", AddHabitEventActivity.this);
                 }
                 break;
         }
 
     }
 
-    public void setImage(Intent data, String toast) {
-        ImageView picPreview = (ImageView) findViewById(R.id.pic_preview);
-        Uri selectedImage = data.getData();
-        picPreview.setImageURI(null);
-        picPreview.setImageURI(selectedImage);
-        picPreview.setVisibility(View.VISIBLE);
-        if (toast != null) {
-            DummyMainActivity.toastMe(toast, AddHabitEventActivity.this);
-        }
-    }
 
     public void addEvent() {
 
@@ -141,5 +156,26 @@ public class AddHabitEventActivity extends AppCompatActivity {
 
     public void cancelEvent() {
         finish();
+    }
+
+    public Bitmap getResizedBitmap(Bitmap pic, int maxSize) {
+        Bitmap image = pic.copy(pic.getConfig(), true);
+        double width = (double) image.getWidth();
+        double height = (double) image.getHeight();
+        double size = (double) image.getAllocationByteCount();
+        double maxs = (double) maxSize;
+        Log.d("PhotoSize", Integer.toString((int)size));
+        double div = 0.9;
+        while(size > maxs){
+            image = Bitmap.createScaledBitmap(image, (int) (width*div), (int) (height*div), true);
+            size = (double) image.getAllocationByteCount();
+            Log.d("PhotoSize|div", Integer.toString((int)size)+" | "+Double.toString(div));
+            div = div * 0.9;
+        }
+
+        return image;
+
+
+
     }
 }
