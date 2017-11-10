@@ -108,6 +108,10 @@
         "source": "D:\\school\\CMPUT 301\\Habitizer\\app\\src\\main\\res\\layout\\add_habit.xml"
     },
     {
+        "merged": "D:\\school\\CMPUT 301\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_edit_habit.xml",
+        "source": "D:\\school\\CMPUT 301\\Habitizer\\app\\src\\main\\res\\layout\\activity_edit_habit.xml"
+    },
+    {
         "merged": "D:\\school\\CMPUT 301\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_text_input_password_icon.xml",
         "source": "C:\\Users\\Sadman\\.android\\build-cache\\1f43954577a446aa44799bcf7dd607cc0cac21fb\\output\\res\\layout\\design_text_input_password_icon.xml"
     },
@@ -154,6 +158,10 @@
     {
         "merged": "D:\\school\\CMPUT 301\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_layout_snackbar_include.xml",
         "source": "C:\\Users\\Sadman\\.android\\build-cache\\1f43954577a446aa44799bcf7dd607cc0cac21fb\\output\\res\\layout\\design_layout_snackbar_include.xml"
+    },
+    {
+        "merged": "D:\\school\\CMPUT 301\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\layout\\myhabits_list_view.xml",
+        "source": "D:\\school\\CMPUT 301\\Habitizer\\app\\src\\main\\res\\layout\\myhabits_list_view.xml"
     },
     {
         "merged": "D:\\school\\CMPUT 301\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_layout_snackbar.xml",

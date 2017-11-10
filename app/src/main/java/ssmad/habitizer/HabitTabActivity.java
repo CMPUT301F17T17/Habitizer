@@ -17,8 +17,8 @@ import java.util.ArrayList;
  */
 
 public class HabitTabActivity extends AppCompatActivity {
-    public static ArrayList<String> myHabits = new ArrayList<>();
-    private ArrayAdapter<String> myHabitsAdapter;
+    public static ArrayList<Habit> myHabits = new ArrayList<>();
+    private ArrayAdapter<Habit> myHabitsAdapter;
     public static String  GENERIC_REQUEST_CODE = "GENERIC.REQUEST.CODE";
     ListView myHabitsListView;
 
@@ -28,13 +28,13 @@ public class HabitTabActivity extends AppCompatActivity {
         setContentView(R.layout.habit_tab);
 
         myHabitsListView = (ListView) findViewById(R.id.habits_listview);
-        myHabitsAdapter = new ArrayAdapter<>(HabitTabActivity.this, android.R.layout.simple_list_item_1, myHabits);
+        myHabitsAdapter = new MyHabitsAdapter(HabitTabActivity.this, myHabits);
         myHabitsListView.setAdapter(myHabitsAdapter);
 
         Button button = (Button) findViewById(R.id.add_habit_button);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
-                    
+            public void onClick(View v) {
                 Intent intent = new Intent(HabitTabActivity.this, AddHabitActivity.class);
                 startActivityForResult(intent, 0);
             }
