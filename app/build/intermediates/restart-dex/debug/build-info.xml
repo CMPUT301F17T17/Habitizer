@@ -6,31 +6,37 @@
     density="xxhdpi"
     format="10"
     plugin-version="2.3.3"
-    timestamp="1510323479995"
+    timestamp="1510332884876"
     token="6659760543784596368"
     verifier="COLD_SWAP_REQUESTED" >
 
     <task
         name="javac"
-        duration="0" />
+        duration="775" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="0" />
+        duration="159" />
     <task
         name="verifier"
-        duration="0" />
+        duration="22" />
 
     <artifact
-        location="D:\school\CMPUT 301\Habitizer\app\build\outputs\apk\app-debug.apk"
-        type="SPLIT_MAIN" />
+        location="D:\school\CMPUT 301\Habitizer\app\build\intermediates\split-apk\debug\slices\slice_4.apk"
+        type="SPLIT" />
 
     <build
         build-mode="FULL"
-        timestamp="1510323199895"
+        timestamp="1510331253557"
         verifier="FULL_BUILD_REQUESTED" >
+        <artifact
+            location="D:\school\CMPUT 301\Habitizer\app\build\intermediates\split-apk\debug\slices\slice_2.apk"
+            type="SPLIT" />
+        <artifact
+            location="D:\school\CMPUT 301\Habitizer\app\build\intermediates\split-apk\debug\slices\slice_0.apk"
+            type="SPLIT" />
         <artifact
             location="D:\school\CMPUT 301\Habitizer\app\build\intermediates\split-apk\debug\slices\slice_4.apk"
             type="SPLIT" />
@@ -50,16 +56,10 @@
             location="D:\school\CMPUT 301\Habitizer\app\build\intermediates\split-apk\debug\slices\slice_7.apk"
             type="SPLIT" />
         <artifact
-            location="D:\school\CMPUT 301\Habitizer\app\build\intermediates\split-apk\debug\slices\slice_0.apk"
-            type="SPLIT" />
-        <artifact
             location="D:\school\CMPUT 301\Habitizer\app\build\intermediates\split-apk\debug\slices\slice_5.apk"
             type="SPLIT" />
         <artifact
             location="D:\school\CMPUT 301\Habitizer\app\build\intermediates\split-apk\debug\slices\slice_8.apk"
-            type="SPLIT" />
-        <artifact
-            location="D:\school\CMPUT 301\Habitizer\app\build\intermediates\split-apk\debug\slices\slice_2.apk"
             type="SPLIT" />
         <artifact
             location="D:\school\CMPUT 301\Habitizer\app\build\intermediates\split-apk\debug\slices\slice_3.apk"
@@ -70,19 +70,11 @@
     </build>
     <build
         build-mode="COLD"
-        timestamp="1510323293152"
+        timestamp="1510332884876"
         verifier="COLD_SWAP_REQUESTED" >
         <artifact
             location="D:\school\CMPUT 301\Habitizer\app\build\intermediates\split-apk\debug\slices\slice_4.apk"
             type="SPLIT" />
-    </build>
-    <build
-        build-mode="COLD"
-        timestamp="1510323479995"
-        verifier="COLD_SWAP_REQUESTED" >
-        <artifact
-            location="D:\school\CMPUT 301\Habitizer\app\build\outputs\apk\app-debug.apk"
-            type="SPLIT_MAIN" />
     </build>
 
 </instant-run>

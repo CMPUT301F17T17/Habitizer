@@ -27,7 +27,8 @@ public class AddHabitActivity extends AppCompatActivity{
                 EditText reason = (EditText) findViewById(R.id.reason_input);
                 Date start = new Date();
                 Habit habit = new Habit(title.getText().toString(), start, reason.getText().toString());
-                HabitTabActivity.myHabits.add(habit);
+                HabitTabActivity.myHabits.add(habit.toString());
+                HabitTabActivity.toastMe("New habit added!", AddHabitActivity.this);
                 AddHabitActivity.this.finish();
             }
         });

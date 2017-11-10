@@ -50,7 +50,7 @@
 
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/generic_text_view"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="My Habits:"
@@ -67,7 +67,7 @@
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+        app:layout_constraintTop_toBottomOf="@+id/generic_text_view" />
 
     <Button
         android:id="@+id/add_habit_button"
