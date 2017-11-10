@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 manifest
-ADDED from D:\school\CMPUT 301\Habitizer\app\src\main\AndroidManifest.xml:2:1-26:12
+ADDED from D:\school\CMPUT 301\Habitizer\app\src\main\AndroidManifest.xml:2:1-43:12
 	package
 		ADDED from D:\school\CMPUT 301\Habitizer\app\src\main\AndroidManifest.xml:3:5-30
 		INJECTED from D:\school\CMPUT 301\Habitizer\app\src\main\AndroidManifest.xml
@@ -26,7 +26,7 @@ ADDED from D:\school\CMPUT 301\Habitizer\app\src\main\AndroidManifest.xml:8:5-72
 	android:name
 		ADDED from D:\school\CMPUT 301\Habitizer\app\src\main\AndroidManifest.xml:8:22-69
 application
-ADDED from D:\school\CMPUT 301\Habitizer\app\src\main\AndroidManifest.xml:10:5-24:19
+ADDED from D:\school\CMPUT 301\Habitizer\app\src\main\AndroidManifest.xml:10:5-41:19
 MERGED from [com.android.support:design:25.3.1] C:\Users\Sadman\.android\build-cache\1f43954577a446aa44799bcf7dd607cc0cac21fb\output\AndroidManifest.xml:29:5-20
 MERGED from [com.android.support:appcompat-v7:25.3.1] C:\Users\Sadman\.android\build-cache\7791cc1ed7a29c2c812ace4b0530d4f9c2c1b23e\output\AndroidManifest.xml:29:5-20
 MERGED from [com.android.support:animated-vector-drawable:25.3.1] C:\Users\Sadman\.android\build-cache\d527fa0808d2be4193f87e699bafb49100eec9c0\output\AndroidManifest.xml:26:5-20
@@ -51,20 +51,40 @@ MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\Sa
 		ADDED from D:\school\CMPUT 301\Habitizer\app\src\main\AndroidManifest.xml:12:9-43
 	android:theme
 		ADDED from D:\school\CMPUT 301\Habitizer\app\src\main\AndroidManifest.xml:16:9-59
-activity#ssmad.habitizer.LoginActivity
+activity#ssmad.habitizer.DummyMainActivity
 ADDED from D:\school\CMPUT 301\Habitizer\app\src\main\AndroidManifest.xml:17:9-23:20
 	android:name
-		ADDED from D:\school\CMPUT 301\Habitizer\app\src\main\AndroidManifest.xml:17:19-48
+		ADDED from D:\school\CMPUT 301\Habitizer\app\src\main\AndroidManifest.xml:17:19-52
+activity#ssmad.habitizer.LoginActivity
+ADDED from D:\school\CMPUT 301\Habitizer\app\src\main\AndroidManifest.xml:24:9-30:20
+	android:name
+		ADDED from D:\school\CMPUT 301\Habitizer\app\src\main\AndroidManifest.xml:24:19-48
+activity#ssmad.habitizer.TestActivity
+ADDED from D:\school\CMPUT 301\Habitizer\app\src\main\AndroidManifest.xml:31:9-59
+	android:name
+		ADDED from D:\school\CMPUT 301\Habitizer\app\src\main\AndroidManifest.xml:31:19-47
+activity#ssmad.habitizer.AddHabitActivity
+ADDED from D:\school\CMPUT 301\Habitizer\app\src\main\AndroidManifest.xml:32:9-63
+	android:name
+		ADDED from D:\school\CMPUT 301\Habitizer\app\src\main\AndroidManifest.xml:32:19-51
+activity#ssmad.habitizer.AddHabitEventActivity
+ADDED from D:\school\CMPUT 301\Habitizer\app\src\main\AndroidManifest.xml:33:9-68
+	android:name
+		ADDED from D:\school\CMPUT 301\Habitizer\app\src\main\AndroidManifest.xml:33:19-56
+activity#ssmad.habitizer.HabitTabActivity
+ADDED from D:\school\CMPUT 301\Habitizer\app\src\main\AndroidManifest.xml:34:9-40:20
+	android:name
+		ADDED from D:\school\CMPUT 301\Habitizer\app\src\main\AndroidManifest.xml:34:19-51
 intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
-ADDED from D:\school\CMPUT 301\Habitizer\app\src\main\AndroidManifest.xml:18:13-22:29
+ADDED from D:\school\CMPUT 301\Habitizer\app\src\main\AndroidManifest.xml:35:13-39:29
 action#android.intent.action.MAIN
-ADDED from D:\school\CMPUT 301\Habitizer\app\src\main\AndroidManifest.xml:19:17-69
+ADDED from D:\school\CMPUT 301\Habitizer\app\src\main\AndroidManifest.xml:36:17-69
 	android:name
-		ADDED from D:\school\CMPUT 301\Habitizer\app\src\main\AndroidManifest.xml:19:25-66
+		ADDED from D:\school\CMPUT 301\Habitizer\app\src\main\AndroidManifest.xml:36:25-66
 category#android.intent.category.LAUNCHER
-ADDED from D:\school\CMPUT 301\Habitizer\app\src\main\AndroidManifest.xml:21:17-77
+ADDED from D:\school\CMPUT 301\Habitizer\app\src\main\AndroidManifest.xml:38:17-77
 	android:name
-		ADDED from D:\school\CMPUT 301\Habitizer\app\src\main\AndroidManifest.xml:21:27-74
+		ADDED from D:\school\CMPUT 301\Habitizer\app\src\main\AndroidManifest.xml:38:27-74
 uses-sdk
 INJECTED from D:\school\CMPUT 301\Habitizer\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 MERGED from [com.android.support:design:25.3.1] C:\Users\Sadman\.android\build-cache\1f43954577a446aa44799bcf7dd607cc0cac21fb\output\AndroidManifest.xml:21:5-23:62

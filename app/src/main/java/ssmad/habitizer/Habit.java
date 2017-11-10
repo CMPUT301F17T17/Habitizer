@@ -14,6 +14,14 @@ public class Habit {
     private int[] daysOfWeekComplete = {0,0,0,0,0,0,0};
     private ArrayList<HabitEvent> events;
 
+    @Override
+    public String toString() {
+        return "Habit{" +
+                "title='" + title + '\'' +
+                ", startDate=" + startDate +
+                '}';
+    }
+
     public Habit(String title, Date startDate, String reason) {
         this.title = title;
         this.startDate = startDate;
