@@ -11,6 +11,7 @@ import android.widget.ListView;
 import android.widget.Toast;
 
 import java.util.ArrayList;
+import java.util.Date;
 
 /**
  * Created by cryst on 10/22/2017.
@@ -31,6 +32,8 @@ public class HabitTabActivity extends AppCompatActivity {
         myHabitsAdapter = new MyHabitsAdapter(HabitTabActivity.this, myHabits);
         myHabitsListView.setAdapter(myHabitsAdapter);
 
+        DEBUG_addHabits();
+
         Button button = (Button) findViewById(R.id.add_habit_button);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -45,9 +48,14 @@ public class HabitTabActivity extends AppCompatActivity {
         super.onActivityResult(requestCode, resultCode, data);
         myHabitsAdapter.notifyDataSetChanged();
     }
-    public static void toastMe(String s, Context context){
-        Toast.makeText(context,s, Toast.LENGTH_SHORT).show();
+    public void DEBUG_addHabits(){
+        for(int i = 0; i < 10; i++){
+            Habit h = new Habit("Habit_"+Integer.toString(i), new Date(), "Reasonable reason "+Integer.toString(i));
+            myHabits.add(h);
+        }
+        myHabitsAdapter.notifyDataSetChanged();
     }
+
 }
 
 
