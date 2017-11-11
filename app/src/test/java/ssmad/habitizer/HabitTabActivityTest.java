@@ -61,7 +61,7 @@ public class HabitTabActivityTest extends ActivityInstrumentationTestCase2<Habit
         solo.waitForActivity("AddHabitEventActivity");
         solo.assertCurrentActivity("Wrong Activity!", AddHabitEventActivity.class);
         solo.enterText((EditText) solo.getView(R.id.comment_input), "I DID ABOUT 7!");
-        solo.clickOnView(solo.getView(R.id.confirmE_button));
+        //solo.clickOnView(solo.getView(R.id.confirmE_button));
 
         solo.waitForActivity("HabitTabActivity");
         solo.assertCurrentActivity("Wrong Activity!", HabitTabActivity.class);

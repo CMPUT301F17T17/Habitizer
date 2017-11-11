@@ -17,7 +17,8 @@ public class DummyMainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_dummy_main);
         myHabitEvents = new ArrayList<>();
-        Intent intent = new Intent(DummyMainActivity.this, HabitTabActivity.class);
+        Intent intent = new Intent(DummyMainActivity.this, LoginActivity.class);
+        //Intent intent = new Intent(DummyMainActivity.this, HabitTabActivity.class);
         startActivity(intent);
 
     }

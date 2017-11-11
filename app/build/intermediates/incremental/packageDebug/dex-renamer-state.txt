@@ -1,7 +1,7 @@
-#Fri Nov 10 13:16:11 MST 2017
-base.0=D\:\\school\\CMPUT 301\\Habitizer\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run-bootstrap_f43d7c817d16bfc24e68031f79d396b9cde0d862
-renamed.1=classes2.dex
-renamed.0=classes.dex
-file.1=D\:\\school\\CMPUT 301\\Habitizer\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run_0932ada49d860a499dda54172495768e76521286\\classes.dex
-base.1=D\:\\school\\CMPUT 301\\Habitizer\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run_0932ada49d860a499dda54172495768e76521286
-file.0=D\:\\school\\CMPUT 301\\Habitizer\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run-bootstrap_f43d7c817d16bfc24e68031f79d396b9cde0d862\\classes.dex
+#Sat Nov 11 00:34:25 CST 2017
+base.0=D\:\\Habitizer\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run_a6aa21f8dcc96900b5b2e7b15bcfc08f5e6997b4
+renamed.1=classes.dex
+renamed.0=classes2.dex
+file.1=D\:\\Habitizer\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run-bootstrap_6acc301475efe6a146c38cd9cc091685c5b9cff1\\classes.dex
+base.1=D\:\\Habitizer\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run-bootstrap_6acc301475efe6a146c38cd9cc091685c5b9cff1
+file.0=D\:\\Habitizer\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run_a6aa21f8dcc96900b5b2e7b15bcfc08f5e6997b4\\classes.dex
