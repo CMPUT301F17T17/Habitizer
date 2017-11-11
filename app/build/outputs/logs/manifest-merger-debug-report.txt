@@ -1,107 +1,107 @@
 -- Merging decision tree log ---
 manifest
-ADDED from D:\school\CMPUT 301\Habitizer\app\src\main\AndroidManifest.xml:2:1-26:12
+ADDED from C:\Users\cryst\AndroidStudioProjects\Habitizer\app\src\main\AndroidManifest.xml:2:1-26:12
 	package
-		ADDED from D:\school\CMPUT 301\Habitizer\app\src\main\AndroidManifest.xml:3:5-30
-		INJECTED from D:\school\CMPUT 301\Habitizer\app\src\main\AndroidManifest.xml
-		INJECTED from D:\school\CMPUT 301\Habitizer\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\cryst\AndroidStudioProjects\Habitizer\app\src\main\AndroidManifest.xml:3:5-30
+		INJECTED from C:\Users\cryst\AndroidStudioProjects\Habitizer\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\cryst\AndroidStudioProjects\Habitizer\app\src\main\AndroidManifest.xml
 	android:versionName
-		INJECTED from D:\school\CMPUT 301\Habitizer\app\src\main\AndroidManifest.xml
-		INJECTED from D:\school\CMPUT 301\Habitizer\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\cryst\AndroidStudioProjects\Habitizer\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\cryst\AndroidStudioProjects\Habitizer\app\src\main\AndroidManifest.xml
 	xmlns:android
-		ADDED from D:\school\CMPUT 301\Habitizer\app\src\main\AndroidManifest.xml:2:11-69
+		ADDED from C:\Users\cryst\AndroidStudioProjects\Habitizer\app\src\main\AndroidManifest.xml:2:11-69
 	android:versionCode
-		INJECTED from D:\school\CMPUT 301\Habitizer\app\src\main\AndroidManifest.xml
-		INJECTED from D:\school\CMPUT 301\Habitizer\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\cryst\AndroidStudioProjects\Habitizer\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\cryst\AndroidStudioProjects\Habitizer\app\src\main\AndroidManifest.xml
 uses-permission#android.permission.GET_ACCOUNTS
-ADDED from D:\school\CMPUT 301\Habitizer\app\src\main\AndroidManifest.xml:6:5-71
+ADDED from C:\Users\cryst\AndroidStudioProjects\Habitizer\app\src\main\AndroidManifest.xml:6:5-71
 	android:name
-		ADDED from D:\school\CMPUT 301\Habitizer\app\src\main\AndroidManifest.xml:6:22-68
+		ADDED from C:\Users\cryst\AndroidStudioProjects\Habitizer\app\src\main\AndroidManifest.xml:6:22-68
 uses-permission#android.permission.READ_PROFILE
-ADDED from D:\school\CMPUT 301\Habitizer\app\src\main\AndroidManifest.xml:7:5-71
+ADDED from C:\Users\cryst\AndroidStudioProjects\Habitizer\app\src\main\AndroidManifest.xml:7:5-71
 	android:name
-		ADDED from D:\school\CMPUT 301\Habitizer\app\src\main\AndroidManifest.xml:7:22-68
+		ADDED from C:\Users\cryst\AndroidStudioProjects\Habitizer\app\src\main\AndroidManifest.xml:7:22-68
 uses-permission#android.permission.READ_CONTACTS
-ADDED from D:\school\CMPUT 301\Habitizer\app\src\main\AndroidManifest.xml:8:5-72
+ADDED from C:\Users\cryst\AndroidStudioProjects\Habitizer\app\src\main\AndroidManifest.xml:8:5-72
 	android:name
-		ADDED from D:\school\CMPUT 301\Habitizer\app\src\main\AndroidManifest.xml:8:22-69
+		ADDED from C:\Users\cryst\AndroidStudioProjects\Habitizer\app\src\main\AndroidManifest.xml:8:22-69
 application
-ADDED from D:\school\CMPUT 301\Habitizer\app\src\main\AndroidManifest.xml:10:5-24:19
-MERGED from [com.android.support:design:25.3.1] C:\Users\Sadman\.android\build-cache\1f43954577a446aa44799bcf7dd607cc0cac21fb\output\AndroidManifest.xml:29:5-20
-MERGED from [com.android.support:appcompat-v7:25.3.1] C:\Users\Sadman\.android\build-cache\7791cc1ed7a29c2c812ace4b0530d4f9c2c1b23e\output\AndroidManifest.xml:29:5-20
-MERGED from [com.android.support:animated-vector-drawable:25.3.1] C:\Users\Sadman\.android\build-cache\d527fa0808d2be4193f87e699bafb49100eec9c0\output\AndroidManifest.xml:26:5-20
-MERGED from [com.android.support:support-vector-drawable:25.3.1] C:\Users\Sadman\.android\build-cache\7d2df717adf01f0172866c2203b1ce10936a33d3\output\AndroidManifest.xml:26:5-20
-MERGED from [com.android.support:transition:25.3.1] C:\Users\Sadman\.android\build-cache\f62816b7612c7ceda063b892aa5ab3af2d640443\output\AndroidManifest.xml:26:5-20
-MERGED from [com.android.support:support-v4:25.3.1] C:\Users\Sadman\.android\build-cache\7a2dc6e4d359a258458c4c9c29e46d6c5153c2ea\output\AndroidManifest.xml:29:5-20
-MERGED from [com.android.support:support-fragment:25.3.1] C:\Users\Sadman\.android\build-cache\54557aabfcaf78f9853fcb5f31f3bb2ee85507a1\output\AndroidManifest.xml:29:5-20
-MERGED from [com.android.support:support-media-compat:25.3.1] C:\Users\Sadman\.android\build-cache\db61772948fb937fa34f73c771ced329e408096c\output\AndroidManifest.xml:29:5-20
-MERGED from [com.android.support:support-core-ui:25.3.1] C:\Users\Sadman\.android\build-cache\55c8067ec80fb3135de34687c6e8e24eef46dd5d\output\AndroidManifest.xml:29:5-20
-MERGED from [com.android.support:support-core-utils:25.3.1] C:\Users\Sadman\.android\build-cache\7a7a89788a3240c06ab7a27fbf515202c7cc4ede\output\AndroidManifest.xml:29:5-20
-MERGED from [com.android.support:support-compat:25.3.1] C:\Users\Sadman\.android\build-cache\d2ef1279596fba2028385379ead5ebcd65e758c9\output\AndroidManifest.xml:29:5-20
-MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\Sadman\.android\build-cache\ad1cc4a6c156d97a59579d601514fa3d0745d8fc\output\AndroidManifest.xml:9:5-20
+ADDED from C:\Users\cryst\AndroidStudioProjects\Habitizer\app\src\main\AndroidManifest.xml:10:5-24:19
+MERGED from [com.android.support:design:25.3.1] C:\Users\cryst\.android\build-cache\be05bf9c16458419eb7087291bd58a9ed060f4d3\output\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:appcompat-v7:25.3.1] C:\Users\cryst\.android\build-cache\fce3adb7b0d30772b260f22ef18f2b0be48c3445\output\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:animated-vector-drawable:25.3.1] C:\Users\cryst\.android\build-cache\750a0761a1815df34d54629968409769c6bd7e00\output\AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:support-vector-drawable:25.3.1] C:\Users\cryst\.android\build-cache\8e5534a24736327a0fb95836ccd119b00db458c9\output\AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:transition:25.3.1] C:\Users\cryst\.android\build-cache\ff23f33410389c078d2c4cdf3513d028b92108fb\output\AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:support-v4:25.3.1] C:\Users\cryst\.android\build-cache\c6c7d131d24e0f86b08070a52f4a66e20274eb85\output\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-fragment:25.3.1] C:\Users\cryst\.android\build-cache\9804df559a3ce512192ec654cf43a0d2ab1ba4a9\output\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-media-compat:25.3.1] C:\Users\cryst\.android\build-cache\bf0ecc46cbe4124588e3bc216ed8143ff492b015\output\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-core-ui:25.3.1] C:\Users\cryst\.android\build-cache\fb8c2682a055bf8ab4049ee54a17e3b5267e24d6\output\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-core-utils:25.3.1] C:\Users\cryst\.android\build-cache\089d899a5692802b6b1b1ec0268bd0140c682206\output\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-compat:25.3.1] C:\Users\cryst\.android\build-cache\cc5e0ee90ab66cbba9dac21d4982e441a4da2817\output\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\cryst\.android\build-cache\7c4b7d1a50836533cd3d499fe809298e26033b59\output\AndroidManifest.xml:9:5-20
 	android:label
-		ADDED from D:\school\CMPUT 301\Habitizer\app\src\main\AndroidManifest.xml:13:9-41
+		ADDED from C:\Users\cryst\AndroidStudioProjects\Habitizer\app\src\main\AndroidManifest.xml:13:9-41
 	android:supportsRtl
-		ADDED from D:\school\CMPUT 301\Habitizer\app\src\main\AndroidManifest.xml:15:9-35
+		ADDED from C:\Users\cryst\AndroidStudioProjects\Habitizer\app\src\main\AndroidManifest.xml:15:9-35
 	android:roundIcon
-		ADDED from D:\school\CMPUT 301\Habitizer\app\src\main\AndroidManifest.xml:14:9-54
+		ADDED from C:\Users\cryst\AndroidStudioProjects\Habitizer\app\src\main\AndroidManifest.xml:14:9-54
 	android:allowBackup
-		ADDED from D:\school\CMPUT 301\Habitizer\app\src\main\AndroidManifest.xml:11:9-35
+		ADDED from C:\Users\cryst\AndroidStudioProjects\Habitizer\app\src\main\AndroidManifest.xml:11:9-35
 	android:icon
-		ADDED from D:\school\CMPUT 301\Habitizer\app\src\main\AndroidManifest.xml:12:9-43
+		ADDED from C:\Users\cryst\AndroidStudioProjects\Habitizer\app\src\main\AndroidManifest.xml:12:9-43
 	android:theme
-		ADDED from D:\school\CMPUT 301\Habitizer\app\src\main\AndroidManifest.xml:16:9-59
+		ADDED from C:\Users\cryst\AndroidStudioProjects\Habitizer\app\src\main\AndroidManifest.xml:16:9-59
 activity#ssmad.habitizer.LoginActivity
-ADDED from D:\school\CMPUT 301\Habitizer\app\src\main\AndroidManifest.xml:17:9-23:20
+ADDED from C:\Users\cryst\AndroidStudioProjects\Habitizer\app\src\main\AndroidManifest.xml:17:9-23:20
 	android:name
-		ADDED from D:\school\CMPUT 301\Habitizer\app\src\main\AndroidManifest.xml:17:19-48
+		ADDED from C:\Users\cryst\AndroidStudioProjects\Habitizer\app\src\main\AndroidManifest.xml:17:19-48
 intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
-ADDED from D:\school\CMPUT 301\Habitizer\app\src\main\AndroidManifest.xml:18:13-22:29
+ADDED from C:\Users\cryst\AndroidStudioProjects\Habitizer\app\src\main\AndroidManifest.xml:18:13-22:29
 action#android.intent.action.MAIN
-ADDED from D:\school\CMPUT 301\Habitizer\app\src\main\AndroidManifest.xml:19:17-69
+ADDED from C:\Users\cryst\AndroidStudioProjects\Habitizer\app\src\main\AndroidManifest.xml:19:17-69
 	android:name
-		ADDED from D:\school\CMPUT 301\Habitizer\app\src\main\AndroidManifest.xml:19:25-66
+		ADDED from C:\Users\cryst\AndroidStudioProjects\Habitizer\app\src\main\AndroidManifest.xml:19:25-66
 category#android.intent.category.LAUNCHER
-ADDED from D:\school\CMPUT 301\Habitizer\app\src\main\AndroidManifest.xml:21:17-77
+ADDED from C:\Users\cryst\AndroidStudioProjects\Habitizer\app\src\main\AndroidManifest.xml:21:17-77
 	android:name
-		ADDED from D:\school\CMPUT 301\Habitizer\app\src\main\AndroidManifest.xml:21:27-74
+		ADDED from C:\Users\cryst\AndroidStudioProjects\Habitizer\app\src\main\AndroidManifest.xml:21:27-74
 uses-sdk
-INJECTED from D:\school\CMPUT 301\Habitizer\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
-MERGED from [com.android.support:design:25.3.1] C:\Users\Sadman\.android\build-cache\1f43954577a446aa44799bcf7dd607cc0cac21fb\output\AndroidManifest.xml:21:5-23:62
-MERGED from [com.android.support:appcompat-v7:25.3.1] C:\Users\Sadman\.android\build-cache\7791cc1ed7a29c2c812ace4b0530d4f9c2c1b23e\output\AndroidManifest.xml:21:5-23:78
-MERGED from [com.android.support:animated-vector-drawable:25.3.1] C:\Users\Sadman\.android\build-cache\d527fa0808d2be4193f87e699bafb49100eec9c0\output\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-vector-drawable:25.3.1] C:\Users\Sadman\.android\build-cache\7d2df717adf01f0172866c2203b1ce10936a33d3\output\AndroidManifest.xml:20:5-43
-MERGED from [com.android.support:recyclerview-v7:25.3.1] C:\Users\Sadman\.android\build-cache\abcd14db4b70e7ff8ee4fd92e5af7cc9876839c8\output\AndroidManifest.xml:20:5-43
-MERGED from [com.android.support:transition:25.3.1] C:\Users\Sadman\.android\build-cache\f62816b7612c7ceda063b892aa5ab3af2d640443\output\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-v4:25.3.1] C:\Users\Sadman\.android\build-cache\7a2dc6e4d359a258458c4c9c29e46d6c5153c2ea\output\AndroidManifest.xml:21:5-23:54
-MERGED from [com.android.support:support-fragment:25.3.1] C:\Users\Sadman\.android\build-cache\54557aabfcaf78f9853fcb5f31f3bb2ee85507a1\output\AndroidManifest.xml:21:5-23:60
-MERGED from [com.android.support:support-media-compat:25.3.1] C:\Users\Sadman\.android\build-cache\db61772948fb937fa34f73c771ced329e408096c\output\AndroidManifest.xml:21:5-23:63
-MERGED from [com.android.support:support-core-ui:25.3.1] C:\Users\Sadman\.android\build-cache\55c8067ec80fb3135de34687c6e8e24eef46dd5d\output\AndroidManifest.xml:21:5-23:58
-MERGED from [com.android.support:support-core-utils:25.3.1] C:\Users\Sadman\.android\build-cache\7a7a89788a3240c06ab7a27fbf515202c7cc4ede\output\AndroidManifest.xml:21:5-23:61
-MERGED from [com.android.support:support-compat:25.3.1] C:\Users\Sadman\.android\build-cache\d2ef1279596fba2028385379ead5ebcd65e758c9\output\AndroidManifest.xml:21:5-23:58
-MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\Sadman\.android\build-cache\ad1cc4a6c156d97a59579d601514fa3d0745d8fc\output\AndroidManifest.xml:5:5-7:41
+INJECTED from C:\Users\cryst\AndroidStudioProjects\Habitizer\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+MERGED from [com.android.support:design:25.3.1] C:\Users\cryst\.android\build-cache\be05bf9c16458419eb7087291bd58a9ed060f4d3\output\AndroidManifest.xml:21:5-23:62
+MERGED from [com.android.support:appcompat-v7:25.3.1] C:\Users\cryst\.android\build-cache\fce3adb7b0d30772b260f22ef18f2b0be48c3445\output\AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:animated-vector-drawable:25.3.1] C:\Users\cryst\.android\build-cache\750a0761a1815df34d54629968409769c6bd7e00\output\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:25.3.1] C:\Users\cryst\.android\build-cache\8e5534a24736327a0fb95836ccd119b00db458c9\output\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:recyclerview-v7:25.3.1] C:\Users\cryst\.android\build-cache\4a233686976f7839d837e655561b52e72db0a300\output\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:transition:25.3.1] C:\Users\cryst\.android\build-cache\ff23f33410389c078d2c4cdf3513d028b92108fb\output\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v4:25.3.1] C:\Users\cryst\.android\build-cache\c6c7d131d24e0f86b08070a52f4a66e20274eb85\output\AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-fragment:25.3.1] C:\Users\cryst\.android\build-cache\9804df559a3ce512192ec654cf43a0d2ab1ba4a9\output\AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-media-compat:25.3.1] C:\Users\cryst\.android\build-cache\bf0ecc46cbe4124588e3bc216ed8143ff492b015\output\AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-core-ui:25.3.1] C:\Users\cryst\.android\build-cache\fb8c2682a055bf8ab4049ee54a17e3b5267e24d6\output\AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-core-utils:25.3.1] C:\Users\cryst\.android\build-cache\089d899a5692802b6b1b1ec0268bd0140c682206\output\AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:support-compat:25.3.1] C:\Users\cryst\.android\build-cache\cc5e0ee90ab66cbba9dac21d4982e441a4da2817\output\AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\cryst\.android\build-cache\7c4b7d1a50836533cd3d499fe809298e26033b59\output\AndroidManifest.xml:5:5-7:41
 	tools:overrideLibrary
-		ADDED from [com.android.support:design:25.3.1] C:\Users\Sadman\.android\build-cache\1f43954577a446aa44799bcf7dd607cc0cac21fb\output\AndroidManifest.xml:23:9-59
+		ADDED from [com.android.support:design:25.3.1] C:\Users\cryst\.android\build-cache\be05bf9c16458419eb7087291bd58a9ed060f4d3\output\AndroidManifest.xml:23:9-59
 	android:targetSdkVersion
-		INJECTED from D:\school\CMPUT 301\Habitizer\app\src\main\AndroidManifest.xml
-		INJECTED from D:\school\CMPUT 301\Habitizer\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\cryst\AndroidStudioProjects\Habitizer\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\cryst\AndroidStudioProjects\Habitizer\app\src\main\AndroidManifest.xml
 	android:minSdkVersion
-		INJECTED from D:\school\CMPUT 301\Habitizer\app\src\main\AndroidManifest.xml
-		INJECTED from D:\school\CMPUT 301\Habitizer\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\cryst\AndroidStudioProjects\Habitizer\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\cryst\AndroidStudioProjects\Habitizer\app\src\main\AndroidManifest.xml
 meta-data#android.support.VERSION
-ADDED from [com.android.support:design:25.3.1] C:\Users\Sadman\.android\build-cache\1f43954577a446aa44799bcf7dd607cc0cac21fb\output\AndroidManifest.xml:25:5-27:34
-MERGED from [com.android.support:appcompat-v7:25.3.1] C:\Users\Sadman\.android\build-cache\7791cc1ed7a29c2c812ace4b0530d4f9c2c1b23e\output\AndroidManifest.xml:25:5-27:34
-MERGED from [com.android.support:animated-vector-drawable:25.3.1] C:\Users\Sadman\.android\build-cache\d527fa0808d2be4193f87e699bafb49100eec9c0\output\AndroidManifest.xml:22:5-24:34
-MERGED from [com.android.support:support-vector-drawable:25.3.1] C:\Users\Sadman\.android\build-cache\7d2df717adf01f0172866c2203b1ce10936a33d3\output\AndroidManifest.xml:22:5-24:34
-MERGED from [com.android.support:recyclerview-v7:25.3.1] C:\Users\Sadman\.android\build-cache\abcd14db4b70e7ff8ee4fd92e5af7cc9876839c8\output\AndroidManifest.xml:22:5-24:34
-MERGED from [com.android.support:transition:25.3.1] C:\Users\Sadman\.android\build-cache\f62816b7612c7ceda063b892aa5ab3af2d640443\output\AndroidManifest.xml:22:5-24:34
-MERGED from [com.android.support:support-v4:25.3.1] C:\Users\Sadman\.android\build-cache\7a2dc6e4d359a258458c4c9c29e46d6c5153c2ea\output\AndroidManifest.xml:25:5-27:34
-MERGED from [com.android.support:support-fragment:25.3.1] C:\Users\Sadman\.android\build-cache\54557aabfcaf78f9853fcb5f31f3bb2ee85507a1\output\AndroidManifest.xml:25:5-27:34
-MERGED from [com.android.support:support-media-compat:25.3.1] C:\Users\Sadman\.android\build-cache\db61772948fb937fa34f73c771ced329e408096c\output\AndroidManifest.xml:25:5-27:34
-MERGED from [com.android.support:support-core-ui:25.3.1] C:\Users\Sadman\.android\build-cache\55c8067ec80fb3135de34687c6e8e24eef46dd5d\output\AndroidManifest.xml:25:5-27:34
-MERGED from [com.android.support:support-core-utils:25.3.1] C:\Users\Sadman\.android\build-cache\7a7a89788a3240c06ab7a27fbf515202c7cc4ede\output\AndroidManifest.xml:25:5-27:34
-MERGED from [com.android.support:support-compat:25.3.1] C:\Users\Sadman\.android\build-cache\d2ef1279596fba2028385379ead5ebcd65e758c9\output\AndroidManifest.xml:25:5-27:34
+ADDED from [com.android.support:design:25.3.1] C:\Users\cryst\.android\build-cache\be05bf9c16458419eb7087291bd58a9ed060f4d3\output\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:appcompat-v7:25.3.1] C:\Users\cryst\.android\build-cache\fce3adb7b0d30772b260f22ef18f2b0be48c3445\output\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:animated-vector-drawable:25.3.1] C:\Users\cryst\.android\build-cache\750a0761a1815df34d54629968409769c6bd7e00\output\AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:support-vector-drawable:25.3.1] C:\Users\cryst\.android\build-cache\8e5534a24736327a0fb95836ccd119b00db458c9\output\AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:recyclerview-v7:25.3.1] C:\Users\cryst\.android\build-cache\4a233686976f7839d837e655561b52e72db0a300\output\AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:transition:25.3.1] C:\Users\cryst\.android\build-cache\ff23f33410389c078d2c4cdf3513d028b92108fb\output\AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:support-v4:25.3.1] C:\Users\cryst\.android\build-cache\c6c7d131d24e0f86b08070a52f4a66e20274eb85\output\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-fragment:25.3.1] C:\Users\cryst\.android\build-cache\9804df559a3ce512192ec654cf43a0d2ab1ba4a9\output\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-media-compat:25.3.1] C:\Users\cryst\.android\build-cache\bf0ecc46cbe4124588e3bc216ed8143ff492b015\output\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-core-ui:25.3.1] C:\Users\cryst\.android\build-cache\fb8c2682a055bf8ab4049ee54a17e3b5267e24d6\output\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-core-utils:25.3.1] C:\Users\cryst\.android\build-cache\089d899a5692802b6b1b1ec0268bd0140c682206\output\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-compat:25.3.1] C:\Users\cryst\.android\build-cache\cc5e0ee90ab66cbba9dac21d4982e441a4da2817\output\AndroidManifest.xml:25:5-27:34
 	android:value
-		ADDED from [com.android.support:design:25.3.1] C:\Users\Sadman\.android\build-cache\1f43954577a446aa44799bcf7dd607cc0cac21fb\output\AndroidManifest.xml:27:9-31
+		ADDED from [com.android.support:design:25.3.1] C:\Users\cryst\.android\build-cache\be05bf9c16458419eb7087291bd58a9ed060f4d3\output\AndroidManifest.xml:27:9-31
 	android:name
-		ADDED from [com.android.support:design:25.3.1] C:\Users\Sadman\.android\build-cache\1f43954577a446aa44799bcf7dd607cc0cac21fb\output\AndroidManifest.xml:26:9-47
+		ADDED from [com.android.support:design:25.3.1] C:\Users\cryst\.android\build-cache\be05bf9c16458419eb7087291bd58a9ed060f4d3\output\AndroidManifest.xml:26:9-47
