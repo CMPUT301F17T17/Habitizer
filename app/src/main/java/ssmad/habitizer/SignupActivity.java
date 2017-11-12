@@ -31,6 +31,7 @@ public class SignupActivity extends AppCompatActivity {
     private EditText passwordText;
     private Button signupButton;
     private static ArrayList<Account> accountList = new ArrayList<Account>();
+    private String username;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -54,7 +55,8 @@ public class SignupActivity extends AppCompatActivity {
                 } else {
                     accountList.add(new Account(username, password));
                     saveInFile(SignupActivity.this);
-                    Intent intent = new Intent(SignupActivity.this, LoginActivity.class);
+                    Intent intent = new Intent(SignupActivity.this, EditProfileActivity.class);
+                    intent.putExtra(EditProfileActivity.USER_NAME, username);
                     startActivity(intent);
                 }
         }   });

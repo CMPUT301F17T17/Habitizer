@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 manifest
-ADDED from D:\Habitizer\app\src\main\AndroidManifest.xml:2:1-58:12
+ADDED from D:\Habitizer\app\src\main\AndroidManifest.xml:2:1-66:12
 	package
 		ADDED from D:\Habitizer\app\src\main\AndroidManifest.xml:3:5-30
 		INJECTED from D:\Habitizer\app\src\main\AndroidManifest.xml
@@ -30,7 +30,7 @@ ADDED from D:\Habitizer\app\src\main\AndroidManifest.xml:9:5-81
 	android:name
 		ADDED from D:\Habitizer\app\src\main\AndroidManifest.xml:9:22-78
 application
-ADDED from D:\Habitizer\app\src\main\AndroidManifest.xml:11:5-56:19
+ADDED from D:\Habitizer\app\src\main\AndroidManifest.xml:11:5-64:19
 MERGED from [com.android.support:design:25.3.1] C:\Users\Andoryu\.android\build-cache\d567faffe9c7a4a79f4535997169a87eacaed47b\output\AndroidManifest.xml:29:5-20
 MERGED from [com.android.support:appcompat-v7:25.3.1] C:\Users\Andoryu\.android\build-cache\71a97fee7c3e8e072c375b08ec9301718058bb51\output\AndroidManifest.xml:29:5-20
 MERGED from [com.android.support:animated-vector-drawable:25.3.1] C:\Users\Andoryu\.android\build-cache\61c14eaba26d2e97a05bc7a8075e5344510854ea\output\AndroidManifest.xml:26:5-20
@@ -74,29 +74,33 @@ ADDED from D:\Habitizer\app\src\main\AndroidManifest.xml:32:17-77
 	android:name
 		ADDED from D:\Habitizer\app\src\main\AndroidManifest.xml:32:27-74
 activity#ssmad.habitizer.SignupActivity
-ADDED from D:\Habitizer\app\src\main\AndroidManifest.xml:36:9-42:20
+ADDED from D:\Habitizer\app\src\main\AndroidManifest.xml:35:9-42:20
 	android:name
-		ADDED from D:\Habitizer\app\src\main\AndroidManifest.xml:36:19-49
+		ADDED from D:\Habitizer\app\src\main\AndroidManifest.xml:35:19-49
+activity#ssmad.habitizer.EditProfileActivity
+ADDED from D:\Habitizer\app\src\main\AndroidManifest.xml:44:9-50:20
+	android:name
+		ADDED from D:\Habitizer\app\src\main\AndroidManifest.xml:44:19-54
 activity#ssmad.habitizer.TestActivity
-ADDED from D:\Habitizer\app\src\main\AndroidManifest.xml:44:9-50
+ADDED from D:\Habitizer\app\src\main\AndroidManifest.xml:52:9-50
 	android:name
-		ADDED from D:\Habitizer\app\src\main\AndroidManifest.xml:44:19-47
+		ADDED from D:\Habitizer\app\src\main\AndroidManifest.xml:52:19-47
 activity#ssmad.habitizer.AddHabitActivity
-ADDED from D:\Habitizer\app\src\main\AndroidManifest.xml:45:9-54
+ADDED from D:\Habitizer\app\src\main\AndroidManifest.xml:53:9-54
 	android:name
-		ADDED from D:\Habitizer\app\src\main\AndroidManifest.xml:45:19-51
+		ADDED from D:\Habitizer\app\src\main\AndroidManifest.xml:53:19-51
 activity#ssmad.habitizer.AddHabitEventActivity
-ADDED from D:\Habitizer\app\src\main\AndroidManifest.xml:46:9-59
+ADDED from D:\Habitizer\app\src\main\AndroidManifest.xml:54:9-59
 	android:name
-		ADDED from D:\Habitizer\app\src\main\AndroidManifest.xml:46:19-56
+		ADDED from D:\Habitizer\app\src\main\AndroidManifest.xml:54:19-56
 activity#ssmad.habitizer.HabitTabActivity
-ADDED from D:\Habitizer\app\src\main\AndroidManifest.xml:47:9-53:20
+ADDED from D:\Habitizer\app\src\main\AndroidManifest.xml:55:9-61:20
 	android:name
-		ADDED from D:\Habitizer\app\src\main\AndroidManifest.xml:47:19-51
+		ADDED from D:\Habitizer\app\src\main\AndroidManifest.xml:55:19-51
 activity#ssmad.habitizer.EditHabitActivity
-ADDED from D:\Habitizer\app\src\main\AndroidManifest.xml:54:9-55
+ADDED from D:\Habitizer\app\src\main\AndroidManifest.xml:62:9-55
 	android:name
-		ADDED from D:\Habitizer\app\src\main\AndroidManifest.xml:54:19-52
+		ADDED from D:\Habitizer\app\src\main\AndroidManifest.xml:62:19-52
 uses-sdk
 INJECTED from D:\Habitizer\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 MERGED from [com.android.support:design:25.3.1] C:\Users\Andoryu\.android\build-cache\d567faffe9c7a4a79f4535997169a87eacaed47b\output\AndroidManifest.xml:21:5-23:62

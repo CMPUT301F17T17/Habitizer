@@ -40,9 +40,8 @@ public class LoginActivity extends AppCompatActivity {
         loginButton = (Button) findViewById(R.id.login_btn);
         signupButton =  (Button) findViewById(R.id.signup_btn);
 
-
         loadFromFile();
-        //accountList.add(new Account("user", "pass"));
+
         loginButton.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v) {
                 String username = usernameText.getText().toString();
@@ -51,7 +50,6 @@ public class LoginActivity extends AppCompatActivity {
                 Boolean find = find(username, password);
 
                 if (find) {
-
                     Intent intent = new Intent(LoginActivity.this, HabitTabActivity.class);
                     startActivity(intent);
                 } else {

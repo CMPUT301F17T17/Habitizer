@@ -49,6 +49,13 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name="ssmad.habitizer.EditProfileActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <activity android:name="ssmad.habitizer.TestActivity" />
         <activity android:name="ssmad.habitizer.AddHabitActivity" />
         <activity android:name="ssmad.habitizer.AddHabitEventActivity" />
