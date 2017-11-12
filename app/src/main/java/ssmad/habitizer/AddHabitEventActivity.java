@@ -1,10 +1,16 @@
 package ssmad.habitizer;
 
+import android.app.Activity;
 import android.content.Intent;
+import android.content.pm.PackageManager;
 import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.net.Uri;
 import android.os.Bundle;
 import android.provider.MediaStore;
+import android.support.annotation.NonNull;
+import android.support.annotation.Nullable;
+import android.support.v4.app.ActivityCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
@@ -17,7 +23,22 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
+import com.google.android.gms.common.ConnectionResult;
+import com.google.android.gms.common.api.GoogleApiClient;
+import com.google.android.gms.location.LocationRequest;
+import com.google.android.gms.location.LocationServices;
+import com.google.android.gms.maps.CameraUpdate;
+import com.google.android.gms.maps.CameraUpdateFactory;
+import com.google.android.gms.maps.GoogleMap;
+import com.google.android.gms.maps.MapFragment;
+import com.google.android.gms.maps.OnMapReadyCallback;
+import com.google.android.gms.maps.model.LatLng;
+
+import java.io.ByteArrayInputStream;
+import java.io.ByteArrayOutputStream;
 import java.io.IOException;
+
+import static java.security.AccessController.getContext;
 
 
 /**
@@ -33,15 +54,21 @@ Ref pic size reduce
 https://stackoverflow.com/questions/16954109/reduce-the-size-of-a-bitmap-to-a-specified-size-in-android
  */
 
-public class AddHabitEventActivity extends AppCompatActivity {
+public class AddHabitEventActivity extends AppCompatActivity implements OnMapReadyCallback {
     private final int GET_PIC_WITH_CAMERA = 0;
     private final int GET_PIC_FROM_GALLERY = 1;
     private final int PIC_MAX_SIZE = 65536;
+    private static boolean picButtonsAreVisible = Boolean.FALSE;
+    private static boolean picIsVisible = Boolean.FALSE;
+    private static Bitmap pic;
+    private GoogleMap gmap;
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.add_habit_event);
-
+        Intent intent = getIntent();
+        int position = intent.getIntExtra(HabitTabActivity.GENERIC_REQUEST_CODE,0);
+        Habit habit = DummyMainActivity.myHabits.get(position);
         // Get stuff
         TextView habitTitle = (TextView) findViewById(R.id.what_habit);
         TextView habitEventComment = (EditText) findViewById(R.id.comment_input);
@@ -53,9 +80,19 @@ public class AddHabitEventActivity extends AppCompatActivity {
         Button fromGallery = (Button) findViewById(R.id.pic_gallery);
         CheckBox locationCheck = (CheckBox) findViewById(R.id.location_check);
         CheckBox picCheck = (CheckBox) findViewById(R.id.pic_check);
-
+        if (picButtonsAreVisible) {
+            LinearLayout picToggle = (LinearLayout) findViewById(R.id.pic_toggle);
+            picToggle.setVisibility(View.VISIBLE);
+        }
+        if (picIsVisible) {
+            ImageView picPreview = (ImageView) findViewById(R.id.pic_preview);
+            picPreview.setImageBitmap(pic);
+            picPreview.setVisibility(View.VISIBLE);
+        }
 
         // Set stuff
+        habitTitle.setText(habit.getTitle());
+
         add.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -91,6 +128,20 @@ public class AddHabitEventActivity extends AppCompatActivity {
                 } else {
                     picToggle.setVisibility(View.GONE);
                 }
+                picButtonsAreVisible = !picButtonsAreVisible;
+            }
+        });
+        locationCheck.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                CheckBox thisBox = (CheckBox) v;
+                LinearLayout mapToggle = (LinearLayout) findViewById(R.id.map_toggle);
+                if (thisBox.isChecked()) {
+                    mapToggle.setVisibility(View.VISIBLE);
+                    initMap();
+                } else {
+                    mapToggle.setVisibility(View.GONE);
+                }
             }
         });
         fromCamera.setOnClickListener(new View.OnClickListener() {
@@ -119,11 +170,13 @@ public class AddHabitEventActivity extends AppCompatActivity {
             case GET_PIC_WITH_CAMERA:
                 if (resultCode == RESULT_OK) {
                     ImageView picPreview = (ImageView) findViewById(R.id.pic_preview);
-                    Bitmap bitmap = (Bitmap) data.getExtras().get("data");
-                    Bitmap compressedPic = getResizedBitmap(bitmap, PIC_MAX_SIZE);
+                    pic = (Bitmap) data.getExtras().get("data");
+                    Bitmap compressedPic = getResizedBitmap(pic, PIC_MAX_SIZE);
+
                     picPreview.setImageBitmap(compressedPic);
                     picPreview.setVisibility(View.VISIBLE);
                     DummyMainActivity.toastMe("get pic from camera", AddHabitEventActivity.this);
+                    picIsVisible = Boolean.TRUE;
 
                 }
 
@@ -132,17 +185,17 @@ public class AddHabitEventActivity extends AppCompatActivity {
                 if (resultCode == RESULT_OK) {
                     ImageView picPreview = (ImageView) findViewById(R.id.pic_preview);
                     Uri imageUri = data.getData();
-                    Bitmap bitmap;
                     try {
-                        bitmap = MediaStore.Images.Media.getBitmap(this.getContentResolver(), imageUri);
+                        pic = MediaStore.Images.Media.getBitmap(this.getContentResolver(), imageUri);
                     } catch (IOException e) {
                         DummyMainActivity.toastMe("Getting bitmap failed!", AddHabitEventActivity.this);
                         break;
                     }
-                    Bitmap compressedPic = getResizedBitmap(bitmap, PIC_MAX_SIZE);
+                    Bitmap compressedPic = getResizedBitmap(pic, PIC_MAX_SIZE);
                     picPreview.setImageBitmap(compressedPic);
                     picPreview.setVisibility(View.VISIBLE);
                     DummyMainActivity.toastMe("get pic from gallery", AddHabitEventActivity.this);
+                    picIsVisible = Boolean.TRUE;
                 }
                 break;
         }
@@ -159,23 +212,50 @@ public class AddHabitEventActivity extends AppCompatActivity {
     }
 
     public Bitmap getResizedBitmap(Bitmap pic, int maxSize) {
+
+        double div = 90.0;
         Bitmap image = pic.copy(pic.getConfig(), true);
-        double width = (double) image.getWidth();
-        double height = (double) image.getHeight();
-        double size = (double) image.getAllocationByteCount();
-        double maxs = (double) maxSize;
-        Log.d("PhotoSize", Integer.toString((int)size));
-        double div = 0.9;
-        while(size > maxs){
-            image = Bitmap.createScaledBitmap(image, (int) (width*div), (int) (height*div), true);
-            size = (double) image.getAllocationByteCount();
-            Log.d("PhotoSize|div", Integer.toString((int)size)+" | "+Double.toString(div));
+        int size = image.getAllocationByteCount();
+
+        int quality;
+        while (size >= maxSize) {
+            quality = (int) (div);
+            ByteArrayOutputStream stream = new ByteArrayOutputStream();
+            pic.compress(Bitmap.CompressFormat.JPEG, quality, stream);
+
+            byte[] byteArray = stream.toByteArray();
+            image = BitmapFactory.decodeByteArray(byteArray, 0, byteArray.length);
+            size = byteArray.length;
+            Log.d("PhotoSize|Quality", size + " | " + quality);
             div = div * 0.9;
         }
 
         return image;
 
+    }
+
+    public void initMap() {
+        MapFragment mapFragment = (MapFragment) getFragmentManager().findFragmentById(R.id.map);
+        mapFragment.getMapAsync(this);
+
+    }
+
+    @Override
+    public void onMapReady(GoogleMap googleMap) {
+        gmap = googleMap;
+        gotoLocation(53.523079, -113.526329);
+
+
 
 
     }
+
+    private void gotoLocation(double lat, double lng) {
+        float zoom = 15.0f;
+        LatLng ll = new LatLng(lat, lng);
+        CameraUpdate update = CameraUpdateFactory.newLatLngZoom(ll,zoom);
+        gmap.moveCamera(update);
+    }
+
+
 }

@@ -2018,9 +2018,30 @@
                     "startLine": 279,
                     "startColumn": 4,
                     "startOffset": 20451,
-                    "endLine": 281,
+                    "endLine": 280,
+                    "endColumn": 8,
+                    "endOffset": 20576
+                },
+                "from": {
+                    "file": "C:\\Users\\Sadman\\.android\\build-cache\\61c6984aecb75e6d1183a8fecfb8c8a087537d03\\output\\res\\values-v21\\values.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 0,
+                        "startOffset": 172,
+                        "endLine": 5,
+                        "endColumn": 8,
+                        "endOffset": 297
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 281,
+                    "startColumn": 4,
+                    "startOffset": 20581,
+                    "endLine": 283,
                     "endColumn": 12,
-                    "endOffset": 20621
+                    "endOffset": 20751
                 },
                 "from": {
                     "file": "C:\\Users\\Sadman\\.android\\build-cache\\7791cc1ed7a29c2c812ace4b0530d4f9c2c1b23e\\output\\res\\values-v21\\values-v21.xml",
@@ -2036,12 +2057,12 @@
             },
             {
                 "to": {
-                    "startLine": 282,
+                    "startLine": 284,
                     "startColumn": 4,
-                    "startOffset": 20626,
-                    "endLine": 286,
+                    "startOffset": 20756,
+                    "endLine": 288,
                     "endColumn": 12,
-                    "endOffset": 20962
+                    "endOffset": 21092
                 },
                 "from": {
                     "file": "C:\\Users\\Sadman\\.android\\build-cache\\7791cc1ed7a29c2c812ace4b0530d4f9c2c1b23e\\output\\res\\values-v21\\values-v21.xml",
@@ -2057,12 +2078,12 @@
             },
             {
                 "to": {
-                    "startLine": 287,
+                    "startLine": 289,
                     "startColumn": 4,
-                    "startOffset": 20967,
-                    "endLine": 289,
+                    "startOffset": 21097,
+                    "endLine": 291,
                     "endColumn": 12,
-                    "endOffset": 21160
+                    "endOffset": 21290
                 },
                 "from": {
                     "file": "C:\\Users\\Sadman\\.android\\build-cache\\1f43954577a446aa44799bcf7dd607cc0cac21fb\\output\\res\\values-v21\\values-v21.xml",

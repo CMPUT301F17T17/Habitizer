@@ -1,6 +1,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@android:color/black"
@@ -8,43 +9,10 @@
     tools:context="ssmad.habitizer.HabitTabActivity">
 
     <LinearLayout
+        android:id="@+id/tabs"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
-
-        <Button
-            android:id="@+id/habit_tab_button"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_marginTop="2dp"
-            android:layout_weight="1"
-            android:background="@android:color/holo_blue_dark"
-            android:text="Habits"
-            android:textColor="@android:color/white"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
-        <Button
-            android:id="@+id/habit_feed_button"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:background="@android:color/darker_gray"
-            android:text="Feed"
-            android:textColor="@android:color/black"
-            app:layout_constraintBaseline_toBaselineOf="@+id/habit_tab_button"
-            tools:layout_editor_absoluteX="93dp" />
-
-        <Button
-            android:id="@+id/social_button"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:background="@android:color/darker_gray"
-            android:text="Social"
-            android:textColor="@android:color/black"
-            app:layout_constraintBaseline_toBaselineOf="@+id/habit_feed_button"
-            tools:layout_editor_absoluteX="186dp" />
 
     </LinearLayout>
 

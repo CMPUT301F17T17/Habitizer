@@ -3,12 +3,39 @@
 
     <item
         is-multidex="true"
-        jar="D:\school\CMPUT 301\Habitizer\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jar="C:\Users\Sadman\.android\build-cache\873b31e352d2c94a404fee4dbfad79961f926f4e\output\jars\classes.jar"
         jumboMode="true"
         optimize="true"
         revision="26.0.1"
-        sha1="8246eb99a2a49ba26af6d46fdb6fdbde91dce38e">
-        <dex dex="D:\school\CMPUT 301\Habitizer\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_f43d7c817d16bfc24e68031f79d396b9cde0d862\classes.dex" />
+        sha1="f15e20dd7bcde7c688cfda44d0c8320a5c1c24b8">
+        <dex dex="D:\school\CMPUT 301\Habitizer\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_b68452ec80e3d1ddb0a89e8b17a8b9c54e302223\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Sadman\.android\build-cache\35c17a714c29bf703ddf02852e326a559aa60791\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="416fb9ee2fd6e7af0bba04b01d90cb475b1e2074">
+        <dex dex="D:\school\CMPUT 301\Habitizer\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_cbfe9b907c8966bfa8bcd0aa67f7a18750f570a5\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Sadman\.android\build-cache\872c6cd258db61d0dbe5e1d8b72ba4a40b2bcc2e\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="4b685077cdb08cf7ae8b61afd1fe910e47d91b9a">
+        <dex dex="D:\school\CMPUT 301\Habitizer\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_c2366e8be6e0f56fb4e4392e930980d2cfc9ae8d\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Sadman\.android\build-cache\1180ec70a46c02fd4014dd0519a8875abacb0e82\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="b5b6af36bacf1d812cd3dc45f9dcab9ea471ed91">
+        <dex dex="D:\school\CMPUT 301\Habitizer\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_4a3bd06242f898ae3a5f671706dff6ab8f0dc9f1\classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -18,6 +45,456 @@
         revision="26.0.1"
         sha1="3be78ebc2706b2e1fe2f12d5726887a92d6c183b">
         <dex dex="D:\school\CMPUT 301\Habitizer\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run_0932ada49d860a499dda54172495768e76521286\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Sadman\.android\build-cache\2381c39ee8a8b82f18b16dc3cea4ac9a922d7cfc\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="2c73e2a93e00abd240e495c1e62217e53904a3f3">
+        <dex dex="D:\school\CMPUT 301\Habitizer\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_702ca0ab4d6890fcbb896c510c95987f5070bd14\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Sadman\.android\build-cache\e2f708953209c13495e15ece1dad28a1eb19879b\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="c1b91bc7e480ab100d0397b16c93732e26fd10eb">
+        <dex dex="D:\school\CMPUT 301\Habitizer\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_042656daaede7c6102df985a7c2fa2c82b5942f1\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Sadman\.android\build-cache\fb653c1928606407943ccf0cefe0194987291cf7\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="c175c3009577fad8b433703f5d7ac2dc21d3871f">
+        <dex dex="D:\school\CMPUT 301\Habitizer\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_55c92d7fcc5d1f21db2d25d9ce67a4dab8aa9ae1\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Sadman\.android\build-cache\f0509a0a37aa434e789156ae4a2dff60e864122b\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="02b91f8efa91dcdf5c555ee24b7f006f02cd0f8b">
+        <dex dex="D:\school\CMPUT 301\Habitizer\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_cd6e5d8c309090215a68c7fb1471b32b16c22d5e\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Sadman\.android\build-cache\c2f7a305f12d7a55b0067eb0b35131e2c8688094\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="f2cb88e7e28736d44e7e643deb80c9af1c3662c8">
+        <dex dex="D:\school\CMPUT 301\Habitizer\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_98151506b7e8ef1325f082b7c4a6892946ec1c4c\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\school\CMPUT 301\Habitizer\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="c88cd2c942a2643c70cf92d9a9c492558e87905b">
+        <dex dex="D:\school\CMPUT 301\Habitizer\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_f43d7c817d16bfc24e68031f79d396b9cde0d862\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Sadman\.android\build-cache\f4ee8e24b4fa1b2d5c3335aa1efb174f5315461c\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="dd282bdeaa904c59d77e57dedd7e0a241c9b679d">
+        <dex dex="D:\school\CMPUT 301\Habitizer\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_cf916537850c7edcb1201bf7fb02ec4477c72b46\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Sadman\.android\build-cache\ba12c83657573df11cb9b7ce04e834a762e4f896\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="ed87ccdcb70c17d71ba4e6e4ac16afa62d3c49fb">
+        <dex dex="D:\school\CMPUT 301\Habitizer\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_f2ba26c46eba0b7e3800cd0eb61c898076ce22e3\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Sadman\.android\build-cache\396591588bb559951e27d129d60b2a49738ac4c4\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="377c5f26ebf67f3fa6ef2f663a58cac7ce647dde">
+        <dex dex="D:\school\CMPUT 301\Habitizer\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_9205eacc06be6986ce4f303409a49cacea60fd3d\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Sadman\.android\build-cache\7e7b82dc40b89d6db62895d12eea1d9b56f046b9\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="057fb316bed8467398333f30926c2d5506e275b2">
+        <dex dex="D:\school\CMPUT 301\Habitizer\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_d21053730e852b8c1c3f76576ed87bdc6a45fbda\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Sadman\.android\build-cache\08f0e4f2fa14dc7b0c0da3739a53266795063b90\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="364364bf77b4a71afc5930fc3ae57b3f0eea637c">
+        <dex dex="D:\school\CMPUT 301\Habitizer\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_80ed22089e15833f36f050157a87404614c482f7\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Sadman\.android\build-cache\f3f4b37bf9fea4d5daf362d23e75de6134a6f1d3\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="41f47bbcd281fdb1e42e220220ab3bfa1da591e0">
+        <dex dex="D:\school\CMPUT 301\Habitizer\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_6da9b970791bbb9e873e5b42b01f062a4f2450a5\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Sadman\.android\build-cache\42e0c3e89bdad05e184f158a27b4d484257d6950\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="1b12397bc9f342b29d9e9108978828f99a6da579">
+        <dex dex="D:\school\CMPUT 301\Habitizer\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_30513d84dbcd855d0c6e6857649d698cabd006e7\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Sadman\.android\build-cache\0bbf97a914ff300b6964f7225ed68aa057ca7cb1\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="a5d52089bf4d31537232bb6bcb70cee817d8a374">
+        <dex dex="D:\school\CMPUT 301\Habitizer\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_531f40fa5b9f375c55191ea6df9a10cd1b781e25\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Sadman\.android\build-cache\4628b0ed4fcdef9a3b1c63f6048857b1d76ac56b\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="c6706cc7c8c3093560edd55d322218afe7798aa9">
+        <dex dex="D:\school\CMPUT 301\Habitizer\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_5534d7785399e5790f590309fe0b8dcf63296bcd\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Sadman\.android\build-cache\0b95b9965df00b880fd17abbda3fcccc45f547cf\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="63b03eaa1aa9b9431c7638841175f9842dcbf274">
+        <dex dex="D:\school\CMPUT 301\Habitizer\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_bc3a77eb0712ab77869f88aa27e22631cd09c9a1\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Sadman\.android\build-cache\f82b590dbb2d50489bfdd70bec3967492916b0b8\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="34c23b5894b4f24d566bfc33e0e25462c6436b78">
+        <dex dex="D:\school\CMPUT 301\Habitizer\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_6bf5547adbc338af8d01be6f98987239d8b38f88\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Sadman\.android\build-cache\740a0368602fdb9891b3aeaf02318e49dc304a32\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="c72b1515efbd8ad652e2d63582c8234a979b1e53">
+        <dex dex="D:\school\CMPUT 301\Habitizer\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_5f516c56e1dc921bcd26aa5df00ccd45aee2d835\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Sadman\.android\build-cache\4f4e0b51b0ec2b28fc4a7eecdb1294e71909567b\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="dae0d68af4c87df40eca67069861e53b7cefaaa0">
+        <dex dex="D:\school\CMPUT 301\Habitizer\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_a1b271c51ef23bf0f603136244d1fbfc9723205b\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Sadman\.android\build-cache\f45699c1cb65f4cdd6a27dea329250acca92c968\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="9be5e957849eb82ad9addf9bdb2896de8bf5654b">
+        <dex dex="D:\school\CMPUT 301\Habitizer\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_ff198dac99b5a1d4b63541bc7ca2a0b8941eac09\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Sadman\.android\build-cache\bfa0aa0cd2260dff93504dc9ab5d0f0f6180b2f8\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="2b12b18c5518021cc71577c83d1290f8ddaa3c98">
+        <dex dex="D:\school\CMPUT 301\Habitizer\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_47a7f221c3c58bcb1a8bcbe3aa842c7a01c0ce70\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Sadman\.android\build-cache\fc9b978f4914567eccda07bc451fe65decab6433\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="a25b0b5aec89681b95d32780ad7904c1e1e4c679">
+        <dex dex="D:\school\CMPUT 301\Habitizer\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_cf0502335e5cb6650d03ffbde7548d0a72343b7a\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Sadman\.android\build-cache\5c9a70e8d9264747f4ccc90ae1007e6b1950f9ee\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="d8942ee348aaa9341f08f7e2437063893fe27542">
+        <dex dex="D:\school\CMPUT 301\Habitizer\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_746e13ef09531d79dbd5c20a89702ecf9a3a4388\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Sadman\.android\build-cache\b2b0daa7348e4eb961120a335e73962e3d7074eb\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="2430e711762a749feb00b3d64858ca4768251b9d">
+        <dex dex="D:\school\CMPUT 301\Habitizer\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_bdc7c2f13f36e06a54bb8ad38409f98cf0a9289f\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Sadman\.android\build-cache\39ecd4a625354b3abf91f26d125779a08ee03fd1\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="5594a368622908d89c47d9a391aa2724fe046c35">
+        <dex dex="D:\school\CMPUT 301\Habitizer\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_de81563aaa4554643c6fdc108cd4057edd115d95\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Sadman\.android\build-cache\4c580cfb3514cfeccdd241c15e8d5afa1ce0546e\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="c6aa915c08cfd82780c10d4b957018bf819a48e2">
+        <dex dex="D:\school\CMPUT 301\Habitizer\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_85dba8d791ca10380cba2bac99ecde302b3bbf1b\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Sadman\.android\build-cache\b0d9f42ecec7ecf07b5912686af0e8ce7126db36\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="7c24e2e9773fb498e390ce973db382c3ddcf748e">
+        <dex dex="D:\school\CMPUT 301\Habitizer\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_3e464f73a22b43b6aaa2b452e8c752f469ecabbb\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Sadman\.android\build-cache\8c380e229bc2a0b4c7e5a88f0eb9261e6f88380c\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="e7f890dd2539b7f2582f450f0721e2dea6ae510c">
+        <dex dex="D:\school\CMPUT 301\Habitizer\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_4baa48f09845c166970c088c90b2500f971120aa\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Sadman\.android\build-cache\100845ff96e5f0f9eb203d77277f989e498ad55b\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="43e9789bd3240271265ab30ce1be9f224843f5a8">
+        <dex dex="D:\school\CMPUT 301\Habitizer\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_9b73bf4721e93e20139eb0fdbccbb04a4dba167d\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Sadman\.android\build-cache\3a45beea8f1affd14687d2edb767a4ec7a863a1a\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="8544f739799dd15db63927073a21312864ab0bfd">
+        <dex dex="D:\school\CMPUT 301\Habitizer\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_77817cd7597ac98105d0c4704dd4b7082ce73bc6\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Sadman\.android\build-cache\61c6984aecb75e6d1183a8fecfb8c8a087537d03\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="576570f46ff6ccc69a984af9e55ddd58d9549270">
+        <dex dex="D:\school\CMPUT 301\Habitizer\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_5f3c5ec578a5e2d0b6ff25842e0dbe7d6ac09b1c\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Sadman\.android\build-cache\86d8565e303793ec3f85d46b48ff8dcb3a19afba\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="fcae52a60bc07924d370b4d376116cd8f8581f54">
+        <dex dex="D:\school\CMPUT 301\Habitizer\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_f475624ad82facef91bd0da0fb1b649d0f6a3ee7\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Sadman\.android\build-cache\c06de106e0d1cf4c93a40c79de27ef426e2de8e8\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="e5b429c146094a612134910688d169ec08deeefb">
+        <dex dex="D:\school\CMPUT 301\Habitizer\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_8282b7d6d953b7e38de10770f469b2479f452b86\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Sadman\.android\build-cache\70770b15e7ccd47b113c1633b7e936c842f539c3\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="eea424e61a0c85b93a0e477565314a58136abaea">
+        <dex dex="D:\school\CMPUT 301\Habitizer\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_46b3b322416978c87bb859b610714e5784482650\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Sadman\.android\build-cache\f890e7b39729e8ef9fac79ddf1b5ed1dd7ec82a5\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="f47f4d5bdfd7d7bf330945b8a7ccce4ab437a710">
+        <dex dex="D:\school\CMPUT 301\Habitizer\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_61c217a115f34d7194734b739bdd4f7d16d99e43\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Sadman\.android\build-cache\c0559cd23ce317ccbdc1e450cbf3850d6bbfadbc\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="56d68d1174b9c1e368017a850b62b12429f39757">
+        <dex dex="D:\school\CMPUT 301\Habitizer\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_8fc635fe4563ee07839f07be7ce4dcdf6dd3373f\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Sadman\.android\build-cache\2a5dff78b4634fc24fdb64aeb3f35ecd9e14381a\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="fc3036436defd3070337b7191c50a136ebca7f8f">
+        <dex dex="D:\school\CMPUT 301\Habitizer\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_edd50b990e7bdd5e139f2606f00d91dd485bb112\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Sadman\.android\build-cache\760169ce9a112749a0ecc13a9d3e87158d740b67\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="3ac08c35419ab7cf9146969de471768dbe502f0f">
+        <dex dex="D:\school\CMPUT 301\Habitizer\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_cfc855f61560f29e5ede912a6bd5ae4ff2adfffe\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Sadman\.android\build-cache\c6ad4f95a7e388a92c53c90c1579052f1a8b7a77\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="e1625e48a836779b5fa141d22e5d05563aaccc9a">
+        <dex dex="D:\school\CMPUT 301\Habitizer\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_c66b5887fa2b2d7ddb9d7d8ee0f10da8ef8b878e\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Sadman\.android\build-cache\2f27de00bdeb6916142b852072e0822bdb47cd94\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="f5ff5e3811e8c9485fd27f9052ae4d4d23a22d9d">
+        <dex dex="D:\school\CMPUT 301\Habitizer\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_cc30756dcc701e8601150fc6d3dc940746f59c24\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Sadman\.android\build-cache\ef868f462266c38de741e2dae522e3105273108f\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="0bffdc0bd4f7ca0e27c5bfeef39569f8da00aa26">
+        <dex dex="D:\school\CMPUT 301\Habitizer\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_584016ea4390a5d59bc1f4b8946a9e56220e5c25\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Sadman\.android\build-cache\5cc3e28aa4ce3c5c8a33f133705df32c645ec1fb\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="bfba7cf662f7e3e2cfeb92226c6b84c08e590225">
+        <dex dex="D:\school\CMPUT 301\Habitizer\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_20e134e2b267538df039d3e6c0c68438ff1b569b\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Sadman\.android\build-cache\2da5be2cf0197498482e0a482f60330b471b83f7\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="6b3430725095bd46b785e97bd34240826c27b4db">
+        <dex dex="D:\school\CMPUT 301\Habitizer\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_d187ee79b73d12c6a413c40d4a368e42f3b967e7\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Sadman\.android\build-cache\058beeae1a3f7b0cce8ca9fa26bbcb626613d8d9\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="c8bf878c09bf0df6ae76eb6c2df38c6a186b38b7">
+        <dex dex="D:\school\CMPUT 301\Habitizer\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_cef3672aa920a23bed4f21e3d9ab35ae9e6477d9\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Sadman\.android\build-cache\83e2f24c4bbd9843984fa299afc84d5a7c6ec7d3\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="76ea35b41786082af23db898ca9e0fc07cc71fb9">
+        <dex dex="D:\school\CMPUT 301\Habitizer\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_0a57672c016173474a3e41bb79a888e82b132009\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Sadman\.android\build-cache\dd3c588bfaff752029b83862143766ba6f8d6e5c\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="ffd0ddf5e57b4d60c4a3fbcd38fa20349a0cebd1">
+        <dex dex="D:\school\CMPUT 301\Habitizer\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_8000e478890090ab7cb1e06cfddf57a96791a3f3\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Sadman\.android\build-cache\c007d640965807179f884100c44ed6805b2ce618\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="70ffe00aaf049893f59d1dad57bd82992faa38ef">
+        <dex dex="D:\school\CMPUT 301\Habitizer\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_1f270f340591658e240d261aaa06c6d52f612d36\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Sadman\.android\build-cache\425f3761563fad2c1c3c1343cba0806a8b296d15\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="2c379c235d7983201bb83edfc3c60bb0dafb5805">
+        <dex dex="D:\school\CMPUT 301\Habitizer\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_9913003de02c45b52c66892bb5bb2af74a339415\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Sadman\.android\build-cache\36e7f380eebf5be642206bbecf5c72248a1d34e2\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="2c2f1b3f82c027e98f56bb0154de0acbcce42e6d">
+        <dex dex="D:\school\CMPUT 301\Habitizer\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_8e64bbff5d44f0712aebc980f7a7b6672b8575e5\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Sadman\.android\build-cache\046677683d115e1250598dd7c7aa55fe55bc9dea\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="af13a350b71b437ebf4be335d02a8f785c39b111">
+        <dex dex="D:\school\CMPUT 301\Habitizer\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_2ecebd1ec68a5a2d4edb3fa1e3592d3728718cdd\classes.dex" />
     </item>
 
 </items>

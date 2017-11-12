@@ -85,12 +85,6 @@
                 android:layout_height="wrap_content"
                 android:text="Add Photo" />
 
-            <CheckBox
-                android:id="@+id/location_check"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Add Location" />
-
             <LinearLayout
                 android:id="@+id/pic_toggle"
                 android:layout_width="match_parent"
@@ -116,12 +110,33 @@
 
             <ImageView
                 android:id="@+id/pic_preview"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_weight="1"
                 android:visibility="gone"
                 app:srcCompat="@mipmap/ic_launcher" />
+
+            <CheckBox
+                android:id="@+id/location_check"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Add Location" />
+
+            <LinearLayout
+                android:id="@+id/map_toggle"
+                android:layout_width="match_parent"
+                android:layout_height="128dp"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <fragment
+                    android:id="@+id/map"
+                    android:name="com.google.android.gms.maps.MapFragment"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
 
             <Button
                 android:id="@+id/add"

@@ -17,13 +17,41 @@ https://alvinalexander.com/source-code/android/android-how-load-image-file-and-s
 public class HabitEvent {
     private String title;
     private Date completionDate;
-    private String pathToPicture;
-    private Location location;
+    private Byte[] pic;
+    private double[] location;
     private String comment;
+    private boolean hasPic;
+    private boolean hasLoc;
 
-    public HabitEvent(String title, Date completionDate) {
+    public boolean hasPicture() {
+        return hasPic;
+    }
+
+    public boolean hasLocation() {
+        return hasLoc;
+    }
+
+    public HabitEvent(String title, Date completionDate, Byte[] pic, double[] location, String comment) {
         this.title = title;
         this.completionDate = completionDate;
+        if(pic == null){
+            this.hasPic = Boolean.FALSE;
+        }else {
+            this.hasPic = Boolean.TRUE;
+            this.pic = pic;
+        }
+        if(location == null){
+            this.hasLoc = Boolean.FALSE;
+        }else {
+            this.hasLoc = Boolean.TRUE;
+            this.location = location;
+        }
+        if(comment == null){
+            this.comment = "";
+        }else {
+            this.comment = comment;
+        }
+
     }
 
     public String getTitle() {
@@ -42,19 +70,20 @@ public class HabitEvent {
         this.completionDate = completionDate;
     }
 
-    public String getPathToPicture() {
-        return pathToPicture;
+
+    public Byte[] getPic() {
+        return pic;
     }
 
-    public void setPathToPicture(String pathToPicture) {
-        this.pathToPicture = pathToPicture;
+    public void setPic(Byte[] pic) {
+        this.pic = pic;
     }
 
-    public Location getLocation() {
+    public double[] getLocation() {
         return location;
     }
 
-    public void setLocation(Location location) {
+    public void setLocation(double[] location) {
         this.location = location;
     }
 
