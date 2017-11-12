@@ -45,13 +45,13 @@
         app:srcCompat="@mipmap/ic_launcher" />
 
     <TextView
-        android:id="@+id/textView5"
+        android:id="@+id/nmText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="40dp"
         android:fontFamily="serif"
-        android:text="TextView"
-        android:textColor="@android:color/white"/>
+        android:text="Name:"
+        android:textColor="@android:color/white" />
 
     <EditText
         android:id="@+id/usr_name"
@@ -68,7 +68,7 @@
         android:textColor="@android:color/black"/>
 
     <TextView
-        android:id="@+id/textView4"
+        android:id="@+id/btText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:fontFamily="serif"
@@ -89,7 +89,7 @@
         android:textColor="@android:color/black"/>
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/gdText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="4dp"
@@ -113,5 +113,111 @@
         android:layout_marginTop="20dp"
         android:layout_weight="0.01"
         android:text="Comfirm" />
+
+    <LinearLayout
+        android:id="@+id/lay_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.13"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        android:weightSum="1">
+
+        <TextView
+            android:id="@+id/textView15"
+            android:layout_width="112dp"
+            android:layout_height="match_parent"
+            android:text="Name:"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/name_dis"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="24sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lay_birth"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.13"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        android:weightSum="1">
+
+        <TextView
+            android:id="@+id/textView19"
+            android:layout_width="112dp"
+            android:layout_height="match_parent"
+            android:text="Birthday:"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/birth_dis"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="24sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lay_gender"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.13"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        android:weightSum="1">
+
+        <TextView
+            android:id="@+id/textView20"
+            android:layout_width="112dp"
+            android:layout_height="match_parent"
+            android:text="Gender:"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/gender_dis"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="24sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lay_follow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        android:weightSum="1">
+
+        <Button
+            android:id="@+id/follower_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="0.50"
+            android:text="Follower" />
+
+        <Button
+            android:id="@+id/following_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:text="Following" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/edit_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Edit"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/habit_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Show Habits"
+        android:visibility="gone" />
 
 </LinearLayout>

@@ -50,7 +50,8 @@ public class LoginActivity extends AppCompatActivity {
                 Boolean find = find(username, password);
 
                 if (find) {
-                    Intent intent = new Intent(LoginActivity.this, HabitTabActivity.class);
+                    Intent intent = new Intent(LoginActivity.this, EditProfileActivity.class);
+                    intent.putExtra(EditProfileActivity.USER_NAME, username);
                     startActivity(intent);
                 } else {
                     Toast.makeText(LoginActivity.this,

@@ -8,12 +8,12 @@ import android.graphics.Bitmap;
 
 public class UserProfile {
     private String username;
-    private Bitmap portrait;
+    private byte[] portrait;
     private String name;
     private String birthday;
     private String gender;
 
-    public UserProfile(String username, Bitmap portrait, String name, String birthday, String gender){
+    public UserProfile(String username, byte[] portrait, String name, String birthday, String gender){
         this.username = username;
         this.portrait = portrait;
         this.name = name;
@@ -21,7 +21,7 @@ public class UserProfile {
         this.gender = gender;
     }
 
-    public void setPortrait(Bitmap portrait){
+    public void setPortrait(byte[] portrait){
         this.portrait = portrait;
     }
 
@@ -41,7 +41,7 @@ public class UserProfile {
         return this.username;
     }
 
-    public Bitmap getPortrait(){
+    public byte[] getPortrait(){
         return this.portrait;
     }
 
