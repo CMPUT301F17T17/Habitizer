@@ -49,22 +49,30 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
 
+        android:layout_marginLeft="14dp"
+        android:layout_marginRight="14dp"
+        android:layout_marginTop="20dp"
         android:layout_weight="0.09"
         android:background="@android:color/white"
         android:ems="10"
         android:hint="Username"
-        android:textColorHint="@android:color/darker_gray"
-        android:textColor="@android:color/black"/>
+        android:paddingLeft="5dp"
+        android:textColor="@android:color/black"
+        android:textColorHint="@android:color/darker_gray" />
 
     <EditText
         android:id="@+id/password_input"
         style="@style/Widget.AppCompat.EditText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="14dp"
+        android:layout_marginRight="14dp"
+        android:layout_marginTop="2dp"
         android:layout_weight="0.09"
         android:background="@android:color/white"
         android:ems="10"
         android:hint="Password"
+        android:paddingLeft="5dp"
         android:textColor="@android:color/black"
         android:textColorHint="@android:color/darker_gray" />
 
@@ -72,13 +80,17 @@
         android:id="@+id/login_btn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Login"
-        android:layout_weight="0.03" />
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"
+        android:text="Login" />
 
     <Button
         android:id="@+id/signup_btn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
         android:text="Signup" />
 
 </LinearLayout>

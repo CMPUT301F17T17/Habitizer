@@ -5,7 +5,7 @@
     android:versionName="1.0" >
 
     <uses-sdk
-        android:minSdkVersion="18"
+        android:minSdkVersion="25"
         android:targetSdkVersion="25" />
 
     <!-- To auto-complete the email text field in the login form with the user's emails -->
@@ -13,6 +13,7 @@
     <uses-permission android:name="android.permission.READ_PROFILE" />
     <uses-permission android:name="android.permission.READ_CONTACTS" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
     <meta-data
         android:name="android.support.VERSION"
@@ -26,6 +27,13 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.NoActionBar" >
         <activity android:name="ssmad.habitizer.DummyMainActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="ssmad.habitizer.LoginActivity" >
 
             <!--
             <intent-filter>
@@ -35,36 +43,39 @@
             </intent-filter>
             -->
         </activity>
-        <activity android:name="ssmad.habitizer.LoginActivity" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
         <activity android:name="ssmad.habitizer.SignupActivity" >
+
+            <!--
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+            -->
+
         </activity>
         <activity android:name="ssmad.habitizer.EditProfileActivity" >
+
+            <!--
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+            -->
         </activity>
         <activity android:name="ssmad.habitizer.TestActivity" />
         <activity android:name="ssmad.habitizer.AddHabitActivity" />
         <activity android:name="ssmad.habitizer.AddHabitEventActivity" />
         <activity android:name="ssmad.habitizer.HabitTabActivity" >
+
+            <!--
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+            -->
         </activity>
         <activity android:name="ssmad.habitizer.EditHabitActivity" />
     </application>

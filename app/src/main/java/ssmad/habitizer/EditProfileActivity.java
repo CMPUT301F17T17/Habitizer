@@ -44,6 +44,10 @@ public class EditProfileActivity extends AppCompatActivity {
 
     private Integer REQUEST_GALLERY = 0;
     private Integer REQUEST_CAMERA = 1;
+    private int PIC_MAX_SIZE = 65536;
+    private static Bitmap pic;
+    public Boolean selected = false;
+
     private static ArrayList<UserProfile> profileList = new ArrayList<UserProfile>();
 
     private TextView nmText;
@@ -114,6 +118,14 @@ public class EditProfileActivity extends AppCompatActivity {
     }
 
     private void onEditEvent(final int pos){
+        if (pos >= 0){
+            nameText.setText(profileList.get(pos).getName());
+            birthdayText.setText(profileList.get(pos).getBirthday());
+            byte[] imageBytes = profileList.get(pos).getPortrait();
+            imageButton.setImageBitmap(BitmapFactory.decodeByteArray(imageBytes, 0,
+                    imageBytes.length));
+        }
+
         imageButton.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 LayoutInflater inflater = LayoutInflater.from(EditProfileActivity.this);
@@ -167,7 +179,14 @@ public class EditProfileActivity extends AppCompatActivity {
                 String user = intent.getStringExtra(EditProfileActivity.USER_NAME);
                 //get bitmap from iamgeButton then transfer it to byte array
                 ByteArrayOutputStream stream = new ByteArrayOutputStream();
-                Bitmap bitmap = ((BitmapDrawable) imageButton.getDrawable()).getBitmap();
+                Bitmap bitmap;
+                // If image is selected from camera or gallery, selected image will be converted
+                // to bitmap for saving. Otherwise, image in imageview would be converted
+                if (selected) {
+                    bitmap = ((BitmapDrawable) imageButton.getDrawable()).getBitmap();
+                } else {
+                    bitmap = ((BitmapDrawable) imageV.getDrawable()).getBitmap();
+                }
                 bitmap.compress(Bitmap.CompressFormat.JPEG, 100, stream);
                 byte[] imageByte = stream.toByteArray();
 
@@ -175,8 +194,8 @@ public class EditProfileActivity extends AppCompatActivity {
                 String birthday = birthdayText.getText().toString();
                 String gender = genderSpn.getSelectedItem().toString();
 
+                Boolean profileOk = checkInput();
                 if (pos < 0){
-                    Boolean profileOk = checkInput();
                     if (profileOk) {
                         profileList.add(new UserProfile(user, imageByte, name, birthday, gender));
                         saveInFile(EditProfileActivity.this);
@@ -185,13 +204,12 @@ public class EditProfileActivity extends AppCompatActivity {
                         startActivity(intent);
                     }
                 } else {
-                    Boolean profileOk = checkInput();
                     if (profileOk) {
                         profileList.get(pos).setPortrait(imageByte);
                         profileList.get(pos).setName(name);
                         profileList.get(pos).setBirthday(birthday);
                         profileList.get(pos).setGender(gender);
-
+                        saveInFile(EditProfileActivity.this);
                         onDisplayEvent(pos);
                     }
 
@@ -278,32 +296,31 @@ public class EditProfileActivity extends AppCompatActivity {
         followLayout.setVisibility(View.GONE);
         editButton.setVisibility(View.GONE);
         imageV.setVisibility(View.GONE);
+        habbitButton.setVisibility(View.GONE);
     }
 
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data){
         super.onActivityResult(requestCode, resultCode, data);
         if(resultCode == RESULT_OK){
+            selected = true;
             if(requestCode == REQUEST_CAMERA){
                 selectFromCamera(data);
-                //imageV.setVisibility(View.VISIBLE);
             } else if(requestCode == REQUEST_GALLERY){
                 selectFromGallery(data);
-                //imageV.setVisibility(View.VISIBLE);
             }
-            //imageButton.setVisibility(View.GONE);
         }
     }
 
     private void selectFromGallery(Intent data){
         Uri imageUri = data.getData();
-        Bitmap bitmap = null;
         try {
-            bitmap = MediaStore.Images.Media.getBitmap(this.getContentResolver(), imageUri);
+            pic = MediaStore.Images.Media.getBitmap(this.getContentResolver(), imageUri);
         } catch (IOException e) {
             Toast.makeText(EditProfileActivity.this, "Getting bitmap failed!", Toast.LENGTH_SHORT).show();
         }
-        imageButton.setImageBitmap(bitmap);
+        Bitmap compressedPic = getResizedBitmap(pic, PIC_MAX_SIZE);
+        imageButton.setImageBitmap(compressedPic);
     }
 
     private void selectFromCamera(Intent data){
@@ -376,6 +393,27 @@ public class EditProfileActivity extends AppCompatActivity {
                     Toast.LENGTH_LONG).show();
         }
         return correctness;
+    }
+
+    public Bitmap getResizedBitmap(Bitmap pic, int maxSize) {
+
+        double div = 90.0;
+        Bitmap image = pic.copy(pic.getConfig(), true);
+        int size = image.getAllocationByteCount();
+
+        int quality;
+        while (size >= maxSize) {
+            quality = (int) (div);
+            ByteArrayOutputStream stream = new ByteArrayOutputStream();
+            pic.compress(Bitmap.CompressFormat.JPEG, quality, stream);
+
+            byte[] byteArray = stream.toByteArray();
+            image = BitmapFactory.decodeByteArray(byteArray, 0, byteArray.length);
+            size = byteArray.length;
+            //Log.d("PhotoSize|Quality", size + " | " + quality);
+            div = div * 0.9;
+        }
+        return image;
     }
 
     public void followerEvent(){

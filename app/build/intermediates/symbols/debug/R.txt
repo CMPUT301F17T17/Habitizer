@@ -748,7 +748,7 @@ int id action_mode_bar 0x7f0e0068
 int id action_mode_bar_stub 0x7f0e0067
 int id action_mode_close_button 0x7f0e004a
 int id action_text 0x7f0e00c1
-int id actions 0x7f0e00cf
+int id actions 0x7f0e00ce
 int id activity_chooser_view_content 0x7f0e004b
 int id add 0x7f0e0026
 int id add_habit_button 0x7f0e00bc
@@ -822,7 +822,7 @@ int id habits_listview 0x7f0e00bb
 int id home 0x7f0e0004
 int id homeAsUp 0x7f0e001c
 int id icon 0x7f0e0050
-int id icon_group 0x7f0e00d0
+int id icon_group 0x7f0e00cf
 int id ifRoom 0x7f0e0043
 int id image 0x7f0e004d
 int id imageView 0x7f0e007c
@@ -876,7 +876,7 @@ int id reason 0x7f0e00be
 int id reason_input 0x7f0e009c
 int id requests_button 0x7f0e00da
 int id right 0x7f0e0035
-int id right_icon 0x7f0e00ce
+int id right_icon 0x7f0e00d0
 int id right_side 0x7f0e00c9
 int id screen 0x7f0e0028
 int id scroll 0x7f0e0024

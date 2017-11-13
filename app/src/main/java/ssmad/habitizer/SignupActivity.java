@@ -49,10 +49,12 @@ public class SignupActivity extends AppCompatActivity {
                 String username = usernameText.getText().toString();
                 String password = passwordText.getText().toString();
                 Boolean find = find(username);
+                Boolean correct = checkInput();
+
                 if (find){
                     Toast.makeText(SignupActivity.this,
                             "Username already exists!", Toast.LENGTH_SHORT).show();
-                } else {
+                } else if (correct){
                     accountList.add(new Account(username, password));
                     saveInFile(SignupActivity.this);
                     Intent intent = new Intent(SignupActivity.this, EditProfileActivity.class);
@@ -103,5 +105,27 @@ public class SignupActivity extends AppCompatActivity {
             }
         }
         return false;
+    }
+
+    public Boolean checkInput(){
+        Boolean correctness = true;
+        String name = usernameText.getText().toString();
+        String password = passwordText.getText().toString();
+
+        if(name.isEmpty() || name.trim().equals("") || password.length() > 12) {
+            correctness = false;
+            Toast.makeText(SignupActivity.this, "Must Input a username", Toast.LENGTH_SHORT).show();
+        } else if (password.isEmpty() || password.trim().equals("") || password.length() > 12){
+            correctness = false;
+            Toast.makeText(SignupActivity.this, "Must input password in length(1-12)", Toast.LENGTH_LONG).show();
+        } else if (!name.matches("[0-9A-Za-z]*")){
+            correctness = false;
+            Toast.makeText(SignupActivity.this, "Username must be in a-z or A-Z or 0-9", Toast.LENGTH_LONG).show();
+        } else if (!password.matches("[0-9A-Za-z]*")){
+            correctness = false;
+            Toast.makeText(SignupActivity.this, "Password must be in a-z or A-Z or 0-9", Toast.LENGTH_LONG).show();
+        }
+        
+        return correctness;
     }
 }

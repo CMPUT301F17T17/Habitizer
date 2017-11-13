@@ -3131,7 +3131,7 @@ containing a value of this type.
         public static final int action_mode_bar_stub=0x7f0e0067;
         public static final int action_mode_close_button=0x7f0e004a;
         public static final int action_text=0x7f0e00c1;
-        public static final int actions=0x7f0e00cf;
+        public static final int actions=0x7f0e00ce;
         public static final int activity_chooser_view_content=0x7f0e004b;
         public static final int add=0x7f0e0026;
         public static final int add_habit_button=0x7f0e00bc;
@@ -3205,7 +3205,7 @@ containing a value of this type.
         public static final int home=0x7f0e0004;
         public static final int homeAsUp=0x7f0e001c;
         public static final int icon=0x7f0e0050;
-        public static final int icon_group=0x7f0e00d0;
+        public static final int icon_group=0x7f0e00cf;
         public static final int ifRoom=0x7f0e0043;
         public static final int image=0x7f0e004d;
         public static final int imageView=0x7f0e007c;
@@ -3259,7 +3259,7 @@ containing a value of this type.
         public static final int reason_input=0x7f0e009c;
         public static final int requests_button=0x7f0e00da;
         public static final int right=0x7f0e0035;
-        public static final int right_icon=0x7f0e00ce;
+        public static final int right_icon=0x7f0e00d0;
         public static final int right_side=0x7f0e00c9;
         public static final int screen=0x7f0e0028;
         public static final int scroll=0x7f0e0024;
