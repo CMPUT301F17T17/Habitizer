@@ -17,7 +17,7 @@ https://alvinalexander.com/source-code/android/android-how-load-image-file-and-s
 public class HabitEvent {
     private String title;
     private Date completionDate;
-    private Byte[] pic;
+    private byte[] pic;
     private double[] location;
     private String comment;
     private boolean hasPic;
@@ -31,7 +31,8 @@ public class HabitEvent {
         return hasLoc;
     }
 
-    public HabitEvent(String title, Date completionDate, Byte[] pic, double[] location, String comment) {
+    public HabitEvent(String title, Date completionDate, byte[] pic, double[] location, String
+            comment) {
         this.title = title;
         this.completionDate = completionDate;
         if(pic == null){
@@ -71,11 +72,11 @@ public class HabitEvent {
     }
 
 
-    public Byte[] getPic() {
+    public byte[] getPic() {
         return pic;
     }
 
-    public void setPic(Byte[] pic) {
+    public void setPic(byte[] pic) {
         this.pic = pic;
     }
 
