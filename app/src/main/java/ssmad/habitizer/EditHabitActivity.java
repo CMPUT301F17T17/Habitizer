@@ -1,8 +1,13 @@
 package ssmad.habitizer;
 
-/**
- * Created by 旻丰 on 2017/11/10.
- */
+import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
 
-public class EditHabitActivity {
+public class EditHabitActivity extends AppCompatActivity {
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_edit_habit);
+    }
 }

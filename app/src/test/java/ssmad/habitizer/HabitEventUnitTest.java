@@ -18,34 +18,42 @@ public class HabitEventUnitTest {
     @Test
     public void testHEGetters() throws Exception {
         Date cal = Calendar.getInstance().getTime();
-        HabitEvent habitevent = new HabitEvent("Push-Ups", cal);
+        double [] loc = {15.00, 15.00};
+        Byte [] testByte = {10, 10};
+        HabitEvent habitevent = new HabitEvent("Push-Ups", cal, testByte, loc, "I did 7");
 
         assertEquals("Push-Ups", habitevent.getTitle());
         assertEquals(cal, habitevent.getCompletionDate());
+        assertEquals(testByte, habitevent.getPic());
+        assertEquals(loc, habitevent.getLocation());
+        assertEquals("I did 7", habitevent.getComment());
     }
 
     @Test
     public void testHESetters() throws Exception {
         Date cal = Calendar.getInstance().getTime();
-        HabitEvent habitevent = new HabitEvent("Push-Ups", cal);
+        double [] loc = {15.00, 15.00};
+        Byte [] testByte = {10, 10};
+        HabitEvent habitevent = new HabitEvent("Push-Ups", cal, testByte, loc, "I did 7");
 
-        habitevent.setTitle("Sit-Ups");
-        habitevent.setComment("I did 5!");
 
         Date cal2 = Calendar.getInstance().getTime();
+        double [] newloc = {20.00, 20.00};
+        Byte [] newtestByte = {50, 50};
+
+        habitevent.setTitle("Sit-Ups");
         habitevent.setCompletionDate(cal2);
-
-        Location loc = new Location("dummyLoc");
-        habitevent.setLocation(loc);
-
-        habitevent.setPathToPicture("dummyPath");
+        habitevent.setPic(newtestByte);
+        habitevent.setLocation(newloc);
+        habitevent.setComment("I did 5!");
 
 
         assertEquals("Sit-Ups", habitevent.getTitle());
-        assertEquals("I did 5!", habitevent.getComment());
         assertEquals(cal2, habitevent.getCompletionDate());
-        assertEquals(loc, habitevent.getLocation());
-        assertEquals("dummyPath", habitevent.getPathToPicture());
+        assertEquals(newloc, habitevent.getLocation());
+        assertEquals(newtestByte, habitevent.getPic());
+        assertEquals("I did 5!", habitevent.getComment());
+
     }
 
 }

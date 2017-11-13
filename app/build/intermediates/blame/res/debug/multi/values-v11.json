@@ -493,6 +493,27 @@
                         "endOffset": 14072
                     }
                 }
+            },
+            {
+                "to": {
+                    "startLine": 192,
+                    "startColumn": 4,
+                    "startOffset": 14077,
+                    "endLine": 193,
+                    "endColumn": 8,
+                    "endOffset": 14198
+                },
+                "from": {
+                    "file": "C:\\Users\\cryst\\.android\\build-cache\\84468bcbd5f0370aa62939e3ff957de2a37584d8\\output\\res\\values-v11\\values.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 0,
+                        "startOffset": 172,
+                        "endLine": 5,
+                        "endColumn": 8,
+                        "endOffset": 293
+                    }
+                }
             }
         ]
     }

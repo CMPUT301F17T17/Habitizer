@@ -12,7 +12,25 @@ public class Habit {
     private Date startDate;
     private String reason;
     private int[] daysOfWeekComplete = {0,0,0,0,0,0,0};
+    private int[] daysOfWeekDue = {0,0,0,0,0,0,0};
+
+    public int[] getDaysOfWeekDue() {
+        return daysOfWeekDue;
+    }
+
+    public void setDaysOfWeekDue(int[] daysOfWeekDue) {
+        this.daysOfWeekDue = daysOfWeekDue;
+    }
+
     private ArrayList<HabitEvent> events;
+
+    @Override
+    public String toString() {
+        return "Habit{" +
+                "title='" + title + '\'' +
+                ", startDate=" + startDate +
+                '}';
+    }
 
     public Habit(String title, Date startDate, String reason) {
         this.title = title;

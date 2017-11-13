@@ -37,14 +37,6 @@ public class HabitUnitTest {
         assertEquals(cal2, habit.getStartDate());
     }
 
-    @Test
-    public void testHabitStats() throws Exception {
-        Date cal = Calendar.getInstance().getTime();
-        Habit habit = new Habit("Push-Ups", cal, "Big Arms");
-        int[] successes = habit.getDaysOfWeekComplete();
-        int[] testList = {0,0,0,0,0,0,0};
-        assertEquals(successes, testList);
-
-    }
 
 }
+
