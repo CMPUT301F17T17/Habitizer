@@ -324,9 +324,10 @@ public class EditProfileActivity extends AppCompatActivity {
     }
 
     private void selectFromCamera(Intent data){
-        Bitmap bitmap = (Bitmap) data.getExtras().get("data");
+        pic = (Bitmap) data.getExtras().get("data");
+        Bitmap compressedPic = getResizedBitmap(pic, PIC_MAX_SIZE);
         imageV = (ImageView) findViewById(R.id.imageView);
-        imageButton.setImageBitmap(bitmap);
+        imageButton.setImageBitmap(compressedPic);
     }
 
     private void loadFromFile() {
