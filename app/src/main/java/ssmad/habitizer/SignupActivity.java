@@ -117,15 +117,15 @@ public class SignupActivity extends AppCompatActivity {
             Toast.makeText(SignupActivity.this, "Must Input a username", Toast.LENGTH_SHORT).show();
         } else if (password.isEmpty() || password.trim().equals("") || password.length() > 12){
             correctness = false;
-            Toast.makeText(SignupActivity.this, "Must input password in length(1-12)", Toast.LENGTH_LONG).show();
+            Toast.makeText(SignupActivity.this, "Must input password in length(1-12)", Toast.LENGTH_SHORT).show();
         } else if (!name.matches("[0-9A-Za-z]*")){
             correctness = false;
-            Toast.makeText(SignupActivity.this, "Username must be in a-z or A-Z or 0-9", Toast.LENGTH_LONG).show();
+            Toast.makeText(SignupActivity.this, "Username must be in a-z or A-Z or 0-9", Toast.LENGTH_SHORT).show();
         } else if (!password.matches("[0-9A-Za-z]*")){
             correctness = false;
-            Toast.makeText(SignupActivity.this, "Password must be in a-z or A-Z or 0-9", Toast.LENGTH_LONG).show();
+            Toast.makeText(SignupActivity.this, "Password must be in a-z or A-Z or 0-9", Toast.LENGTH_SHORT).show();
         }
-        
+
         return correctness;
     }
 }

@@ -6,22 +6,22 @@
     density="xhdpi"
     format="10"
     plugin-version="2.3.3"
-    timestamp="1510558179643"
+    timestamp="1510559412377"
     token="-7454579888521570975"
     verifier="COLD_SWAP_REQUESTED" >
 
     <task
         name="javac"
-        duration="1111" />
+        duration="1037" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="27" />
+        duration="31" />
     <task
         name="verifier"
-        duration="5" />
+        duration="13" />
 
     <artifact
         location="D:\Habitizer\app\build\intermediates\split-apk\debug\slices\slice_4.apk"
@@ -78,7 +78,7 @@
     </build>
     <build
         build-mode="COLD"
-        timestamp="1510558179643"
+        timestamp="1510559412377"
         verifier="COLD_SWAP_REQUESTED" >
         <artifact
             location="D:\Habitizer\app\build\intermediates\split-apk\debug\slices\slice_4.apk"

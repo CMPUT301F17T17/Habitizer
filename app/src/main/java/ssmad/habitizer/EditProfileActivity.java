@@ -375,21 +375,29 @@ public class EditProfileActivity extends AppCompatActivity {
         return -1;
     }
 
-    public Boolean checkInput(){
+    public Boolean checkInput() {
         Boolean correctness = true;
         String name = nameText.getText().toString();
         String date = birthdayText.getText().toString();
         String gender = genderSpn.getSelectedItem().toString();
+        String[] part = date.split("-");
 
-        if(name.isEmpty() || name.trim().equals("")) {
+        if (name.isEmpty() || name.trim().equals("")) {
             correctness = false;
             Toast.makeText(EditProfileActivity.this, "Must Input a name", Toast.LENGTH_SHORT).show();
-        } else if (gender.isEmpty()){
+        } else if (!name.matches("[a-zA-Z]*")) {
+            correctness = false;
+            Toast.makeText(EditProfileActivity.this, "Input name must in a-z or A-Z", Toast.LENGTH_SHORT).show();
+        } else if (gender.isEmpty()) {
             correctness = false;
             Toast.makeText(EditProfileActivity.this, "Must select a gender", Toast.LENGTH_SHORT).show();
-        } else if (!date.matches("\\d{4}-\\d{2}-\\d{2}")){
+        } else if (!date.matches("\\d{4}-\\d{2}-\\d{2}")) {
             correctness = false;
             Toast.makeText(EditProfileActivity.this, "Must Input Birthday in format: yyyy-mm-dd",
+                    Toast.LENGTH_LONG).show();
+        } else if (Integer.parseInt(part[1]) > 12 || Integer.parseInt(part[2]) > 31) {
+            correctness = false;
+            Toast.makeText(EditProfileActivity.this, "Invalid date",
                     Toast.LENGTH_LONG).show();
         }
         return correctness;
