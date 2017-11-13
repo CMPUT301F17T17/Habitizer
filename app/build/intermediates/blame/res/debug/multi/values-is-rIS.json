@@ -1,6 +1,6 @@
 [
     {
-        "outputFile": "C:\\Users\\cryst\\AndroidStudioProjects\\Habitizer\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-is-rIS\\values-is-rIS.xml",
+        "outputFile": "D:\\Habitizer\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-is-rIS\\values-is-rIS.xml",
         "map": [
             {
                 "to": {
@@ -11,7 +11,7 @@
                     "endOffset": 150
                 },
                 "from": {
-                    "file": "C:\\Users\\cryst\\.android\\build-cache\\fce3adb7b0d30772b260f22ef18f2b0be48c3445\\output\\res\\values-is-rIS\\values-is-rIS.xml",
+                    "file": "C:\\Users\\Andoryu\\.android\\build-cache\\71a97fee7c3e8e072c375b08ec9301718058bb51\\output\\res\\values-is-rIS\\values-is-rIS.xml",
                     "position": {
                         "startLine": 2,
                         "startColumn": 4,
@@ -30,7 +30,7 @@
                     "endOffset": 258
                 },
                 "from": {
-                    "file": "C:\\Users\\cryst\\.android\\build-cache\\fce3adb7b0d30772b260f22ef18f2b0be48c3445\\output\\res\\values-is-rIS\\values-is-rIS.xml",
+                    "file": "C:\\Users\\Andoryu\\.android\\build-cache\\71a97fee7c3e8e072c375b08ec9301718058bb51\\output\\res\\values-is-rIS\\values-is-rIS.xml",
                     "position": {
                         "startLine": 3,
                         "startColumn": 4,
@@ -49,7 +49,7 @@
                     "endOffset": 381
                 },
                 "from": {
-                    "file": "C:\\Users\\cryst\\.android\\build-cache\\fce3adb7b0d30772b260f22ef18f2b0be48c3445\\output\\res\\values-is-rIS\\values-is-rIS.xml",
+                    "file": "C:\\Users\\Andoryu\\.android\\build-cache\\71a97fee7c3e8e072c375b08ec9301718058bb51\\output\\res\\values-is-rIS\\values-is-rIS.xml",
                     "position": {
                         "startLine": 4,
                         "startColumn": 4,
@@ -68,7 +68,7 @@
                     "endOffset": 478
                 },
                 "from": {
-                    "file": "C:\\Users\\cryst\\.android\\build-cache\\fce3adb7b0d30772b260f22ef18f2b0be48c3445\\output\\res\\values-is-rIS\\values-is-rIS.xml",
+                    "file": "C:\\Users\\Andoryu\\.android\\build-cache\\71a97fee7c3e8e072c375b08ec9301718058bb51\\output\\res\\values-is-rIS\\values-is-rIS.xml",
                     "position": {
                         "startLine": 5,
                         "startColumn": 4,
@@ -87,7 +87,7 @@
                     "endOffset": 590
                 },
                 "from": {
-                    "file": "C:\\Users\\cryst\\.android\\build-cache\\fce3adb7b0d30772b260f22ef18f2b0be48c3445\\output\\res\\values-is-rIS\\values-is-rIS.xml",
+                    "file": "C:\\Users\\Andoryu\\.android\\build-cache\\71a97fee7c3e8e072c375b08ec9301718058bb51\\output\\res\\values-is-rIS\\values-is-rIS.xml",
                     "position": {
                         "startLine": 6,
                         "startColumn": 4,
@@ -106,7 +106,7 @@
                     "endOffset": 675
                 },
                 "from": {
-                    "file": "C:\\Users\\cryst\\.android\\build-cache\\fce3adb7b0d30772b260f22ef18f2b0be48c3445\\output\\res\\values-is-rIS\\values-is-rIS.xml",
+                    "file": "C:\\Users\\Andoryu\\.android\\build-cache\\71a97fee7c3e8e072c375b08ec9301718058bb51\\output\\res\\values-is-rIS\\values-is-rIS.xml",
                     "position": {
                         "startLine": 7,
                         "startColumn": 4,
@@ -125,7 +125,7 @@
                     "endOffset": 776
                 },
                 "from": {
-                    "file": "C:\\Users\\cryst\\.android\\build-cache\\fce3adb7b0d30772b260f22ef18f2b0be48c3445\\output\\res\\values-is-rIS\\values-is-rIS.xml",
+                    "file": "C:\\Users\\Andoryu\\.android\\build-cache\\71a97fee7c3e8e072c375b08ec9301718058bb51\\output\\res\\values-is-rIS\\values-is-rIS.xml",
                     "position": {
                         "startLine": 8,
                         "startColumn": 4,
@@ -144,7 +144,7 @@
                     "endOffset": 890
                 },
                 "from": {
-                    "file": "C:\\Users\\cryst\\.android\\build-cache\\fce3adb7b0d30772b260f22ef18f2b0be48c3445\\output\\res\\values-is-rIS\\values-is-rIS.xml",
+                    "file": "C:\\Users\\Andoryu\\.android\\build-cache\\71a97fee7c3e8e072c375b08ec9301718058bb51\\output\\res\\values-is-rIS\\values-is-rIS.xml",
                     "position": {
                         "startLine": 9,
                         "startColumn": 4,
@@ -163,7 +163,7 @@
                     "endOffset": 970
                 },
                 "from": {
-                    "file": "C:\\Users\\cryst\\.android\\build-cache\\fce3adb7b0d30772b260f22ef18f2b0be48c3445\\output\\res\\values-is-rIS\\values-is-rIS.xml",
+                    "file": "C:\\Users\\Andoryu\\.android\\build-cache\\71a97fee7c3e8e072c375b08ec9301718058bb51\\output\\res\\values-is-rIS\\values-is-rIS.xml",
                     "position": {
                         "startLine": 10,
                         "startColumn": 4,
@@ -182,7 +182,7 @@
                     "endOffset": 1050
                 },
                 "from": {
-                    "file": "C:\\Users\\cryst\\.android\\build-cache\\fce3adb7b0d30772b260f22ef18f2b0be48c3445\\output\\res\\values-is-rIS\\values-is-rIS.xml",
+                    "file": "C:\\Users\\Andoryu\\.android\\build-cache\\71a97fee7c3e8e072c375b08ec9301718058bb51\\output\\res\\values-is-rIS\\values-is-rIS.xml",
                     "position": {
                         "startLine": 11,
                         "startColumn": 4,
@@ -201,7 +201,7 @@
                     "endOffset": 1131
                 },
                 "from": {
-                    "file": "C:\\Users\\cryst\\.android\\build-cache\\fce3adb7b0d30772b260f22ef18f2b0be48c3445\\output\\res\\values-is-rIS\\values-is-rIS.xml",
+                    "file": "C:\\Users\\Andoryu\\.android\\build-cache\\71a97fee7c3e8e072c375b08ec9301718058bb51\\output\\res\\values-is-rIS\\values-is-rIS.xml",
                     "position": {
                         "startLine": 12,
                         "startColumn": 4,
@@ -220,7 +220,7 @@
                     "endOffset": 1241
                 },
                 "from": {
-                    "file": "C:\\Users\\cryst\\.android\\build-cache\\fce3adb7b0d30772b260f22ef18f2b0be48c3445\\output\\res\\values-is-rIS\\values-is-rIS.xml",
+                    "file": "C:\\Users\\Andoryu\\.android\\build-cache\\71a97fee7c3e8e072c375b08ec9301718058bb51\\output\\res\\values-is-rIS\\values-is-rIS.xml",
                     "position": {
                         "startLine": 13,
                         "startColumn": 4,
@@ -239,7 +239,7 @@
                     "endOffset": 1349
                 },
                 "from": {
-                    "file": "C:\\Users\\cryst\\.android\\build-cache\\fce3adb7b0d30772b260f22ef18f2b0be48c3445\\output\\res\\values-is-rIS\\values-is-rIS.xml",
+                    "file": "C:\\Users\\Andoryu\\.android\\build-cache\\71a97fee7c3e8e072c375b08ec9301718058bb51\\output\\res\\values-is-rIS\\values-is-rIS.xml",
                     "position": {
                         "startLine": 14,
                         "startColumn": 4,
@@ -258,7 +258,7 @@
                     "endOffset": 1447
                 },
                 "from": {
-                    "file": "C:\\Users\\cryst\\.android\\build-cache\\fce3adb7b0d30772b260f22ef18f2b0be48c3445\\output\\res\\values-is-rIS\\values-is-rIS.xml",
+                    "file": "C:\\Users\\Andoryu\\.android\\build-cache\\71a97fee7c3e8e072c375b08ec9301718058bb51\\output\\res\\values-is-rIS\\values-is-rIS.xml",
                     "position": {
                         "startLine": 15,
                         "startColumn": 4,
@@ -277,7 +277,7 @@
                     "endOffset": 1556
                 },
                 "from": {
-                    "file": "C:\\Users\\cryst\\.android\\build-cache\\fce3adb7b0d30772b260f22ef18f2b0be48c3445\\output\\res\\values-is-rIS\\values-is-rIS.xml",
+                    "file": "C:\\Users\\Andoryu\\.android\\build-cache\\71a97fee7c3e8e072c375b08ec9301718058bb51\\output\\res\\values-is-rIS\\values-is-rIS.xml",
                     "position": {
                         "startLine": 16,
                         "startColumn": 4,
@@ -296,7 +296,7 @@
                     "endOffset": 1655
                 },
                 "from": {
-                    "file": "C:\\Users\\cryst\\.android\\build-cache\\fce3adb7b0d30772b260f22ef18f2b0be48c3445\\output\\res\\values-is-rIS\\values-is-rIS.xml",
+                    "file": "C:\\Users\\Andoryu\\.android\\build-cache\\71a97fee7c3e8e072c375b08ec9301718058bb51\\output\\res\\values-is-rIS\\values-is-rIS.xml",
                     "position": {
                         "startLine": 17,
                         "startColumn": 4,
@@ -315,7 +315,7 @@
                     "endOffset": 1758
                 },
                 "from": {
-                    "file": "C:\\Users\\cryst\\.android\\build-cache\\fce3adb7b0d30772b260f22ef18f2b0be48c3445\\output\\res\\values-is-rIS\\values-is-rIS.xml",
+                    "file": "C:\\Users\\Andoryu\\.android\\build-cache\\71a97fee7c3e8e072c375b08ec9301718058bb51\\output\\res\\values-is-rIS\\values-is-rIS.xml",
                     "position": {
                         "startLine": 18,
                         "startColumn": 4,
@@ -334,7 +334,7 @@
                     "endOffset": 1876
                 },
                 "from": {
-                    "file": "C:\\Users\\cryst\\.android\\build-cache\\fce3adb7b0d30772b260f22ef18f2b0be48c3445\\output\\res\\values-is-rIS\\values-is-rIS.xml",
+                    "file": "C:\\Users\\Andoryu\\.android\\build-cache\\71a97fee7c3e8e072c375b08ec9301718058bb51\\output\\res\\values-is-rIS\\values-is-rIS.xml",
                     "position": {
                         "startLine": 19,
                         "startColumn": 4,
@@ -353,7 +353,7 @@
                     "endOffset": 1974
                 },
                 "from": {
-                    "file": "C:\\Users\\cryst\\.android\\build-cache\\fce3adb7b0d30772b260f22ef18f2b0be48c3445\\output\\res\\values-is-rIS\\values-is-rIS.xml",
+                    "file": "C:\\Users\\Andoryu\\.android\\build-cache\\71a97fee7c3e8e072c375b08ec9301718058bb51\\output\\res\\values-is-rIS\\values-is-rIS.xml",
                     "position": {
                         "startLine": 20,
                         "startColumn": 4,
@@ -368,11 +368,391 @@
                     "startLine": 21,
                     "startColumn": 4,
                     "startOffset": 1979,
-                    "endColumn": 80,
-                    "endOffset": 2055
+                    "endColumn": 106,
+                    "endOffset": 2081
                 },
                 "from": {
-                    "file": "C:\\Users\\cryst\\.android\\build-cache\\fce3adb7b0d30772b260f22ef18f2b0be48c3445\\output\\res\\values-is-rIS\\values-is-rIS.xml",
+                    "file": "C:\\Users\\Andoryu\\.android\\build-cache\\cbb61a5065c9c122e7651a1013ab5d2c4ecd81fd\\output\\res\\values-is-rIS\\values-is-rIS.xml",
+                    "position": {
+                        "startLine": 2,
+                        "startColumn": 4,
+                        "startOffset": 55,
+                        "endColumn": 106,
+                        "endOffset": 157
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 22,
+                    "startColumn": 4,
+                    "startOffset": 2086,
+                    "endColumn": 108,
+                    "endOffset": 2190
+                },
+                "from": {
+                    "file": "C:\\Users\\Andoryu\\.android\\build-cache\\cbb61a5065c9c122e7651a1013ab5d2c4ecd81fd\\output\\res\\values-is-rIS\\values-is-rIS.xml",
+                    "position": {
+                        "startLine": 3,
+                        "startColumn": 4,
+                        "startOffset": 162,
+                        "endColumn": 108,
+                        "endOffset": 266
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 23,
+                    "startColumn": 4,
+                    "startOffset": 2195,
+                    "endColumn": 111,
+                    "endOffset": 2302
+                },
+                "from": {
+                    "file": "C:\\Users\\Andoryu\\.android\\build-cache\\cbb61a5065c9c122e7651a1013ab5d2c4ecd81fd\\output\\res\\values-is-rIS\\values-is-rIS.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 271,
+                        "endColumn": 111,
+                        "endOffset": 378
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 24,
+                    "startColumn": 4,
+                    "startOffset": 2307,
+                    "endColumn": 112,
+                    "endOffset": 2415
+                },
+                "from": {
+                    "file": "C:\\Users\\Andoryu\\.android\\build-cache\\cbb61a5065c9c122e7651a1013ab5d2c4ecd81fd\\output\\res\\values-is-rIS\\values-is-rIS.xml",
+                    "position": {
+                        "startLine": 5,
+                        "startColumn": 4,
+                        "startOffset": 383,
+                        "endColumn": 112,
+                        "endOffset": 491
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 25,
+                    "startColumn": 4,
+                    "startOffset": 2420,
+                    "endColumn": 95,
+                    "endOffset": 2511
+                },
+                "from": {
+                    "file": "C:\\Users\\Andoryu\\.android\\build-cache\\cbb61a5065c9c122e7651a1013ab5d2c4ecd81fd\\output\\res\\values-is-rIS\\values-is-rIS.xml",
+                    "position": {
+                        "startLine": 6,
+                        "startColumn": 4,
+                        "startOffset": 496,
+                        "endColumn": 95,
+                        "endOffset": 587
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 26,
+                    "startColumn": 4,
+                    "startOffset": 2516,
+                    "endColumn": 84,
+                    "endOffset": 2596
+                },
+                "from": {
+                    "file": "C:\\Users\\Andoryu\\.android\\build-cache\\cbb61a5065c9c122e7651a1013ab5d2c4ecd81fd\\output\\res\\values-is-rIS\\values-is-rIS.xml",
+                    "position": {
+                        "startLine": 7,
+                        "startColumn": 4,
+                        "startOffset": 592,
+                        "endColumn": 84,
+                        "endOffset": 672
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 27,
+                    "startColumn": 4,
+                    "startOffset": 2601,
+                    "endColumn": 93,
+                    "endOffset": 2690
+                },
+                "from": {
+                    "file": "C:\\Users\\Andoryu\\.android\\build-cache\\cbb61a5065c9c122e7651a1013ab5d2c4ecd81fd\\output\\res\\values-is-rIS\\values-is-rIS.xml",
+                    "position": {
+                        "startLine": 8,
+                        "startColumn": 4,
+                        "startOffset": 677,
+                        "endColumn": 93,
+                        "endOffset": 766
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 28,
+                    "startColumn": 4,
+                    "startOffset": 2695,
+                    "endColumn": 102,
+                    "endOffset": 2793
+                },
+                "from": {
+                    "file": "C:\\Users\\Andoryu\\.android\\build-cache\\cbb61a5065c9c122e7651a1013ab5d2c4ecd81fd\\output\\res\\values-is-rIS\\values-is-rIS.xml",
+                    "position": {
+                        "startLine": 9,
+                        "startColumn": 4,
+                        "startOffset": 771,
+                        "endColumn": 102,
+                        "endOffset": 869
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 29,
+                    "startColumn": 4,
+                    "startOffset": 2798,
+                    "endColumn": 94,
+                    "endOffset": 2888
+                },
+                "from": {
+                    "file": "C:\\Users\\Andoryu\\.android\\build-cache\\cbb61a5065c9c122e7651a1013ab5d2c4ecd81fd\\output\\res\\values-is-rIS\\values-is-rIS.xml",
+                    "position": {
+                        "startLine": 10,
+                        "startColumn": 4,
+                        "startOffset": 874,
+                        "endColumn": 94,
+                        "endOffset": 964
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 30,
+                    "startColumn": 4,
+                    "startOffset": 2893,
+                    "endColumn": 93,
+                    "endOffset": 2982
+                },
+                "from": {
+                    "file": "C:\\Users\\Andoryu\\.android\\build-cache\\cbb61a5065c9c122e7651a1013ab5d2c4ecd81fd\\output\\res\\values-is-rIS\\values-is-rIS.xml",
+                    "position": {
+                        "startLine": 11,
+                        "startColumn": 4,
+                        "startOffset": 969,
+                        "endColumn": 93,
+                        "endOffset": 1058
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 31,
+                    "startColumn": 4,
+                    "startOffset": 2987,
+                    "endColumn": 93,
+                    "endOffset": 3076
+                },
+                "from": {
+                    "file": "C:\\Users\\Andoryu\\.android\\build-cache\\cbb61a5065c9c122e7651a1013ab5d2c4ecd81fd\\output\\res\\values-is-rIS\\values-is-rIS.xml",
+                    "position": {
+                        "startLine": 12,
+                        "startColumn": 4,
+                        "startOffset": 1063,
+                        "endColumn": 93,
+                        "endOffset": 1152
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 32,
+                    "startColumn": 4,
+                    "startOffset": 3081,
+                    "endColumn": 91,
+                    "endOffset": 3168
+                },
+                "from": {
+                    "file": "C:\\Users\\Andoryu\\.android\\build-cache\\cbb61a5065c9c122e7651a1013ab5d2c4ecd81fd\\output\\res\\values-is-rIS\\values-is-rIS.xml",
+                    "position": {
+                        "startLine": 13,
+                        "startColumn": 4,
+                        "startOffset": 1157,
+                        "endColumn": 91,
+                        "endOffset": 1244
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 33,
+                    "startColumn": 4,
+                    "startOffset": 3173,
+                    "endColumn": 114,
+                    "endOffset": 3283
+                },
+                "from": {
+                    "file": "C:\\Users\\Andoryu\\.android\\build-cache\\cbb61a5065c9c122e7651a1013ab5d2c4ecd81fd\\output\\res\\values-is-rIS\\values-is-rIS.xml",
+                    "position": {
+                        "startLine": 14,
+                        "startColumn": 4,
+                        "startOffset": 1249,
+                        "endColumn": 114,
+                        "endOffset": 1359
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 34,
+                    "startColumn": 4,
+                    "startOffset": 3288,
+                    "endColumn": 110,
+                    "endOffset": 3394
+                },
+                "from": {
+                    "file": "C:\\Users\\Andoryu\\.android\\build-cache\\cbb61a5065c9c122e7651a1013ab5d2c4ecd81fd\\output\\res\\values-is-rIS\\values-is-rIS.xml",
+                    "position": {
+                        "startLine": 15,
+                        "startColumn": 4,
+                        "startOffset": 1364,
+                        "endColumn": 110,
+                        "endOffset": 1470
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 35,
+                    "startColumn": 4,
+                    "startOffset": 3399,
+                    "endColumn": 81,
+                    "endOffset": 3476
+                },
+                "from": {
+                    "file": "C:\\Users\\Andoryu\\.android\\build-cache\\cbb61a5065c9c122e7651a1013ab5d2c4ecd81fd\\output\\res\\values-is-rIS\\values-is-rIS.xml",
+                    "position": {
+                        "startLine": 16,
+                        "startColumn": 4,
+                        "startOffset": 1475,
+                        "endColumn": 81,
+                        "endOffset": 1552
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 36,
+                    "startColumn": 4,
+                    "startOffset": 3481,
+                    "endColumn": 81,
+                    "endOffset": 3558
+                },
+                "from": {
+                    "file": "C:\\Users\\Andoryu\\.android\\build-cache\\cbb61a5065c9c122e7651a1013ab5d2c4ecd81fd\\output\\res\\values-is-rIS\\values-is-rIS.xml",
+                    "position": {
+                        "startLine": 17,
+                        "startColumn": 4,
+                        "startOffset": 1557,
+                        "endColumn": 81,
+                        "endOffset": 1634
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 37,
+                    "startColumn": 4,
+                    "startOffset": 3563,
+                    "endColumn": 94,
+                    "endOffset": 3653
+                },
+                "from": {
+                    "file": "C:\\Users\\Andoryu\\.android\\build-cache\\cbb61a5065c9c122e7651a1013ab5d2c4ecd81fd\\output\\res\\values-is-rIS\\values-is-rIS.xml",
+                    "position": {
+                        "startLine": 18,
+                        "startColumn": 4,
+                        "startOffset": 1639,
+                        "endColumn": 94,
+                        "endOffset": 1729
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 38,
+                    "startColumn": 4,
+                    "startOffset": 3658,
+                    "endColumn": 102,
+                    "endOffset": 3756
+                },
+                "from": {
+                    "file": "C:\\Users\\Andoryu\\.android\\build-cache\\cbb61a5065c9c122e7651a1013ab5d2c4ecd81fd\\output\\res\\values-is-rIS\\values-is-rIS.xml",
+                    "position": {
+                        "startLine": 19,
+                        "startColumn": 4,
+                        "startOffset": 1734,
+                        "endColumn": 102,
+                        "endOffset": 1832
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 39,
+                    "startColumn": 4,
+                    "startOffset": 3761,
+                    "endColumn": 84,
+                    "endOffset": 3841
+                },
+                "from": {
+                    "file": "C:\\Users\\Andoryu\\.android\\build-cache\\cbb61a5065c9c122e7651a1013ab5d2c4ecd81fd\\output\\res\\values-is-rIS\\values-is-rIS.xml",
+                    "position": {
+                        "startLine": 20,
+                        "startColumn": 4,
+                        "startOffset": 1837,
+                        "endColumn": 84,
+                        "endOffset": 1917
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 40,
+                    "startColumn": 4,
+                    "startOffset": 3846,
+                    "endColumn": 90,
+                    "endOffset": 3932
+                },
+                "from": {
+                    "file": "C:\\Users\\Andoryu\\.android\\build-cache\\cbb61a5065c9c122e7651a1013ab5d2c4ecd81fd\\output\\res\\values-is-rIS\\values-is-rIS.xml",
+                    "position": {
+                        "startLine": 21,
+                        "startColumn": 4,
+                        "startOffset": 1922,
+                        "endColumn": 90,
+                        "endOffset": 2008
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 41,
+                    "startColumn": 4,
+                    "startOffset": 3937,
+                    "endColumn": 80,
+                    "endOffset": 4013
+                },
+                "from": {
+                    "file": "C:\\Users\\Andoryu\\.android\\build-cache\\71a97fee7c3e8e072c375b08ec9301718058bb51\\output\\res\\values-is-rIS\\values-is-rIS.xml",
                     "position": {
                         "startLine": 21,
                         "startColumn": 4,
@@ -384,14 +764,14 @@
             },
             {
                 "to": {
-                    "startLine": 22,
+                    "startLine": 42,
                     "startColumn": 4,
-                    "startOffset": 2060,
+                    "startOffset": 4018,
                     "endColumn": 100,
-                    "endOffset": 2156
+                    "endOffset": 4114
                 },
                 "from": {
-                    "file": "C:\\Users\\cryst\\.android\\build-cache\\fce3adb7b0d30772b260f22ef18f2b0be48c3445\\output\\res\\values-is-rIS\\values-is-rIS.xml",
+                    "file": "C:\\Users\\Andoryu\\.android\\build-cache\\71a97fee7c3e8e072c375b08ec9301718058bb51\\output\\res\\values-is-rIS\\values-is-rIS.xml",
                     "position": {
                         "startLine": 22,
                         "startColumn": 4,
@@ -404,7 +784,7 @@
         ]
     },
     {
-        "outputFile": "C:\\Users\\John\\Documents\\CMPUT 301\\git\\Habitizer\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-is-rIS\\values-is-rIS.xml",
+        "outputFile": "D:\\Habitizer-sadbranch\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-is-rIS\\values-is-rIS.xml",
         "map": [
             {
                 "to": {
@@ -415,7 +795,7 @@
                     "endOffset": 150
                 },
                 "from": {
-                    "file": "C:\\Users\\John\\.android\\build-cache\\f203b6cfa7b2212cf461fe1ee4cba09dc9dea6b1\\output\\res\\values-is-rIS\\values-is-rIS.xml",
+                    "file": "C:\\Users\\Andoryu\\.android\\build-cache\\71a97fee7c3e8e072c375b08ec9301718058bb51\\output\\res\\values-is-rIS\\values-is-rIS.xml",
                     "position": {
                         "startLine": 2,
                         "startColumn": 4,
@@ -434,7 +814,7 @@
                     "endOffset": 258
                 },
                 "from": {
-                    "file": "C:\\Users\\John\\.android\\build-cache\\f203b6cfa7b2212cf461fe1ee4cba09dc9dea6b1\\output\\res\\values-is-rIS\\values-is-rIS.xml",
+                    "file": "C:\\Users\\Andoryu\\.android\\build-cache\\71a97fee7c3e8e072c375b08ec9301718058bb51\\output\\res\\values-is-rIS\\values-is-rIS.xml",
                     "position": {
                         "startLine": 3,
                         "startColumn": 4,
@@ -453,7 +833,7 @@
                     "endOffset": 381
                 },
                 "from": {
-                    "file": "C:\\Users\\John\\.android\\build-cache\\f203b6cfa7b2212cf461fe1ee4cba09dc9dea6b1\\output\\res\\values-is-rIS\\values-is-rIS.xml",
+                    "file": "C:\\Users\\Andoryu\\.android\\build-cache\\71a97fee7c3e8e072c375b08ec9301718058bb51\\output\\res\\values-is-rIS\\values-is-rIS.xml",
                     "position": {
                         "startLine": 4,
                         "startColumn": 4,
@@ -472,7 +852,7 @@
                     "endOffset": 478
                 },
                 "from": {
-                    "file": "C:\\Users\\John\\.android\\build-cache\\f203b6cfa7b2212cf461fe1ee4cba09dc9dea6b1\\output\\res\\values-is-rIS\\values-is-rIS.xml",
+                    "file": "C:\\Users\\Andoryu\\.android\\build-cache\\71a97fee7c3e8e072c375b08ec9301718058bb51\\output\\res\\values-is-rIS\\values-is-rIS.xml",
                     "position": {
                         "startLine": 5,
                         "startColumn": 4,
@@ -491,7 +871,7 @@
                     "endOffset": 590
                 },
                 "from": {
-                    "file": "C:\\Users\\John\\.android\\build-cache\\f203b6cfa7b2212cf461fe1ee4cba09dc9dea6b1\\output\\res\\values-is-rIS\\values-is-rIS.xml",
+                    "file": "C:\\Users\\Andoryu\\.android\\build-cache\\71a97fee7c3e8e072c375b08ec9301718058bb51\\output\\res\\values-is-rIS\\values-is-rIS.xml",
                     "position": {
                         "startLine": 6,
                         "startColumn": 4,
@@ -510,7 +890,7 @@
                     "endOffset": 675
                 },
                 "from": {
-                    "file": "C:\\Users\\John\\.android\\build-cache\\f203b6cfa7b2212cf461fe1ee4cba09dc9dea6b1\\output\\res\\values-is-rIS\\values-is-rIS.xml",
+                    "file": "C:\\Users\\Andoryu\\.android\\build-cache\\71a97fee7c3e8e072c375b08ec9301718058bb51\\output\\res\\values-is-rIS\\values-is-rIS.xml",
                     "position": {
                         "startLine": 7,
                         "startColumn": 4,
@@ -529,7 +909,7 @@
                     "endOffset": 776
                 },
                 "from": {
-                    "file": "C:\\Users\\John\\.android\\build-cache\\f203b6cfa7b2212cf461fe1ee4cba09dc9dea6b1\\output\\res\\values-is-rIS\\values-is-rIS.xml",
+                    "file": "C:\\Users\\Andoryu\\.android\\build-cache\\71a97fee7c3e8e072c375b08ec9301718058bb51\\output\\res\\values-is-rIS\\values-is-rIS.xml",
                     "position": {
                         "startLine": 8,
                         "startColumn": 4,
@@ -548,7 +928,7 @@
                     "endOffset": 890
                 },
                 "from": {
-                    "file": "C:\\Users\\John\\.android\\build-cache\\f203b6cfa7b2212cf461fe1ee4cba09dc9dea6b1\\output\\res\\values-is-rIS\\values-is-rIS.xml",
+                    "file": "C:\\Users\\Andoryu\\.android\\build-cache\\71a97fee7c3e8e072c375b08ec9301718058bb51\\output\\res\\values-is-rIS\\values-is-rIS.xml",
                     "position": {
                         "startLine": 9,
                         "startColumn": 4,
@@ -567,7 +947,7 @@
                     "endOffset": 970
                 },
                 "from": {
-                    "file": "C:\\Users\\John\\.android\\build-cache\\f203b6cfa7b2212cf461fe1ee4cba09dc9dea6b1\\output\\res\\values-is-rIS\\values-is-rIS.xml",
+                    "file": "C:\\Users\\Andoryu\\.android\\build-cache\\71a97fee7c3e8e072c375b08ec9301718058bb51\\output\\res\\values-is-rIS\\values-is-rIS.xml",
                     "position": {
                         "startLine": 10,
                         "startColumn": 4,
@@ -586,7 +966,7 @@
                     "endOffset": 1050
                 },
                 "from": {
-                    "file": "C:\\Users\\John\\.android\\build-cache\\f203b6cfa7b2212cf461fe1ee4cba09dc9dea6b1\\output\\res\\values-is-rIS\\values-is-rIS.xml",
+                    "file": "C:\\Users\\Andoryu\\.android\\build-cache\\71a97fee7c3e8e072c375b08ec9301718058bb51\\output\\res\\values-is-rIS\\values-is-rIS.xml",
                     "position": {
                         "startLine": 11,
                         "startColumn": 4,
@@ -605,7 +985,7 @@
                     "endOffset": 1131
                 },
                 "from": {
-                    "file": "C:\\Users\\John\\.android\\build-cache\\f203b6cfa7b2212cf461fe1ee4cba09dc9dea6b1\\output\\res\\values-is-rIS\\values-is-rIS.xml",
+                    "file": "C:\\Users\\Andoryu\\.android\\build-cache\\71a97fee7c3e8e072c375b08ec9301718058bb51\\output\\res\\values-is-rIS\\values-is-rIS.xml",
                     "position": {
                         "startLine": 12,
                         "startColumn": 4,
@@ -624,7 +1004,7 @@
                     "endOffset": 1241
                 },
                 "from": {
-                    "file": "C:\\Users\\John\\.android\\build-cache\\f203b6cfa7b2212cf461fe1ee4cba09dc9dea6b1\\output\\res\\values-is-rIS\\values-is-rIS.xml",
+                    "file": "C:\\Users\\Andoryu\\.android\\build-cache\\71a97fee7c3e8e072c375b08ec9301718058bb51\\output\\res\\values-is-rIS\\values-is-rIS.xml",
                     "position": {
                         "startLine": 13,
                         "startColumn": 4,
@@ -643,7 +1023,7 @@
                     "endOffset": 1349
                 },
                 "from": {
-                    "file": "C:\\Users\\John\\.android\\build-cache\\f203b6cfa7b2212cf461fe1ee4cba09dc9dea6b1\\output\\res\\values-is-rIS\\values-is-rIS.xml",
+                    "file": "C:\\Users\\Andoryu\\.android\\build-cache\\71a97fee7c3e8e072c375b08ec9301718058bb51\\output\\res\\values-is-rIS\\values-is-rIS.xml",
                     "position": {
                         "startLine": 14,
                         "startColumn": 4,
@@ -662,7 +1042,7 @@
                     "endOffset": 1447
                 },
                 "from": {
-                    "file": "C:\\Users\\John\\.android\\build-cache\\f203b6cfa7b2212cf461fe1ee4cba09dc9dea6b1\\output\\res\\values-is-rIS\\values-is-rIS.xml",
+                    "file": "C:\\Users\\Andoryu\\.android\\build-cache\\71a97fee7c3e8e072c375b08ec9301718058bb51\\output\\res\\values-is-rIS\\values-is-rIS.xml",
                     "position": {
                         "startLine": 15,
                         "startColumn": 4,
@@ -681,7 +1061,7 @@
                     "endOffset": 1556
                 },
                 "from": {
-                    "file": "C:\\Users\\John\\.android\\build-cache\\f203b6cfa7b2212cf461fe1ee4cba09dc9dea6b1\\output\\res\\values-is-rIS\\values-is-rIS.xml",
+                    "file": "C:\\Users\\Andoryu\\.android\\build-cache\\71a97fee7c3e8e072c375b08ec9301718058bb51\\output\\res\\values-is-rIS\\values-is-rIS.xml",
                     "position": {
                         "startLine": 16,
                         "startColumn": 4,
@@ -700,7 +1080,7 @@
                     "endOffset": 1655
                 },
                 "from": {
-                    "file": "C:\\Users\\John\\.android\\build-cache\\f203b6cfa7b2212cf461fe1ee4cba09dc9dea6b1\\output\\res\\values-is-rIS\\values-is-rIS.xml",
+                    "file": "C:\\Users\\Andoryu\\.android\\build-cache\\71a97fee7c3e8e072c375b08ec9301718058bb51\\output\\res\\values-is-rIS\\values-is-rIS.xml",
                     "position": {
                         "startLine": 17,
                         "startColumn": 4,
@@ -719,7 +1099,7 @@
                     "endOffset": 1758
                 },
                 "from": {
-                    "file": "C:\\Users\\John\\.android\\build-cache\\f203b6cfa7b2212cf461fe1ee4cba09dc9dea6b1\\output\\res\\values-is-rIS\\values-is-rIS.xml",
+                    "file": "C:\\Users\\Andoryu\\.android\\build-cache\\71a97fee7c3e8e072c375b08ec9301718058bb51\\output\\res\\values-is-rIS\\values-is-rIS.xml",
                     "position": {
                         "startLine": 18,
                         "startColumn": 4,
@@ -738,7 +1118,7 @@
                     "endOffset": 1876
                 },
                 "from": {
-                    "file": "C:\\Users\\John\\.android\\build-cache\\f203b6cfa7b2212cf461fe1ee4cba09dc9dea6b1\\output\\res\\values-is-rIS\\values-is-rIS.xml",
+                    "file": "C:\\Users\\Andoryu\\.android\\build-cache\\71a97fee7c3e8e072c375b08ec9301718058bb51\\output\\res\\values-is-rIS\\values-is-rIS.xml",
                     "position": {
                         "startLine": 19,
                         "startColumn": 4,
@@ -757,7 +1137,7 @@
                     "endOffset": 1974
                 },
                 "from": {
-                    "file": "C:\\Users\\John\\.android\\build-cache\\f203b6cfa7b2212cf461fe1ee4cba09dc9dea6b1\\output\\res\\values-is-rIS\\values-is-rIS.xml",
+                    "file": "C:\\Users\\Andoryu\\.android\\build-cache\\71a97fee7c3e8e072c375b08ec9301718058bb51\\output\\res\\values-is-rIS\\values-is-rIS.xml",
                     "position": {
                         "startLine": 20,
                         "startColumn": 4,
@@ -772,415 +1152,391 @@
                     "startLine": 21,
                     "startColumn": 4,
                     "startOffset": 1979,
-                    "endColumn": 80,
-                    "endOffset": 2055
+                    "endColumn": 106,
+                    "endOffset": 2081
                 },
                 "from": {
-                    "file": "C:\\Users\\John\\.android\\build-cache\\f203b6cfa7b2212cf461fe1ee4cba09dc9dea6b1\\output\\res\\values-is-rIS\\values-is-rIS.xml",
-                    "position": {
-                        "startLine": 21,
-                        "startColumn": 4,
-                        "startOffset": 1979,
-                        "endColumn": 80,
-                        "endOffset": 2055
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 22,
-                    "startColumn": 4,
-                    "startOffset": 2060,
-                    "endColumn": 100,
-                    "endOffset": 2156
-                },
-                "from": {
-                    "file": "C:\\Users\\John\\.android\\build-cache\\f203b6cfa7b2212cf461fe1ee4cba09dc9dea6b1\\output\\res\\values-is-rIS\\values-is-rIS.xml",
-                    "position": {
-                        "startLine": 22,
-                        "startColumn": 4,
-                        "startOffset": 2060,
-                        "endColumn": 100,
-                        "endOffset": 2156
-                    }
-                }
-            }
-        ]
-    },
-    {
-        "outputFile": "D:\\school\\CMPUT 301\\Habitizer\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-is-rIS\\values-is-rIS.xml",
-        "map": [
-            {
-                "to": {
-                    "startLine": 2,
-                    "startColumn": 4,
-                    "startOffset": 55,
-                    "endColumn": 99,
-                    "endOffset": 150
-                },
-                "from": {
-                    "file": "C:\\Users\\Sadman\\.android\\build-cache\\7791cc1ed7a29c2c812ace4b0530d4f9c2c1b23e\\output\\res\\values-is-rIS\\values-is-rIS.xml",
+                    "file": "C:\\Users\\Andoryu\\.android\\build-cache\\cbb61a5065c9c122e7651a1013ab5d2c4ecd81fd\\output\\res\\values-is-rIS\\values-is-rIS.xml",
                     "position": {
                         "startLine": 2,
                         "startColumn": 4,
                         "startOffset": 55,
-                        "endColumn": 99,
-                        "endOffset": 150
+                        "endColumn": 106,
+                        "endOffset": 157
                     }
                 }
             },
             {
                 "to": {
-                    "startLine": 3,
+                    "startLine": 22,
                     "startColumn": 4,
-                    "startOffset": 155,
-                    "endColumn": 107,
-                    "endOffset": 258
+                    "startOffset": 2086,
+                    "endColumn": 108,
+                    "endOffset": 2190
                 },
                 "from": {
-                    "file": "C:\\Users\\Sadman\\.android\\build-cache\\7791cc1ed7a29c2c812ace4b0530d4f9c2c1b23e\\output\\res\\values-is-rIS\\values-is-rIS.xml",
+                    "file": "C:\\Users\\Andoryu\\.android\\build-cache\\cbb61a5065c9c122e7651a1013ab5d2c4ecd81fd\\output\\res\\values-is-rIS\\values-is-rIS.xml",
                     "position": {
                         "startLine": 3,
                         "startColumn": 4,
-                        "startOffset": 155,
-                        "endColumn": 107,
-                        "endOffset": 258
+                        "startOffset": 162,
+                        "endColumn": 108,
+                        "endOffset": 266
                     }
                 }
             },
             {
                 "to": {
-                    "startLine": 4,
+                    "startLine": 23,
                     "startColumn": 4,
-                    "startOffset": 263,
-                    "endColumn": 122,
-                    "endOffset": 381
+                    "startOffset": 2195,
+                    "endColumn": 111,
+                    "endOffset": 2302
                 },
                 "from": {
-                    "file": "C:\\Users\\Sadman\\.android\\build-cache\\7791cc1ed7a29c2c812ace4b0530d4f9c2c1b23e\\output\\res\\values-is-rIS\\values-is-rIS.xml",
+                    "file": "C:\\Users\\Andoryu\\.android\\build-cache\\cbb61a5065c9c122e7651a1013ab5d2c4ecd81fd\\output\\res\\values-is-rIS\\values-is-rIS.xml",
                     "position": {
                         "startLine": 4,
                         "startColumn": 4,
-                        "startOffset": 263,
-                        "endColumn": 122,
-                        "endOffset": 381
+                        "startOffset": 271,
+                        "endColumn": 111,
+                        "endOffset": 378
                     }
                 }
             },
             {
                 "to": {
-                    "startLine": 5,
+                    "startLine": 24,
                     "startColumn": 4,
-                    "startOffset": 386,
-                    "endColumn": 96,
-                    "endOffset": 478
+                    "startOffset": 2307,
+                    "endColumn": 112,
+                    "endOffset": 2415
                 },
                 "from": {
-                    "file": "C:\\Users\\Sadman\\.android\\build-cache\\7791cc1ed7a29c2c812ace4b0530d4f9c2c1b23e\\output\\res\\values-is-rIS\\values-is-rIS.xml",
+                    "file": "C:\\Users\\Andoryu\\.android\\build-cache\\cbb61a5065c9c122e7651a1013ab5d2c4ecd81fd\\output\\res\\values-is-rIS\\values-is-rIS.xml",
                     "position": {
                         "startLine": 5,
                         "startColumn": 4,
-                        "startOffset": 386,
-                        "endColumn": 96,
-                        "endOffset": 478
+                        "startOffset": 383,
+                        "endColumn": 112,
+                        "endOffset": 491
                     }
                 }
             },
             {
                 "to": {
-                    "startLine": 6,
+                    "startLine": 25,
                     "startColumn": 4,
-                    "startOffset": 483,
-                    "endColumn": 111,
-                    "endOffset": 590
+                    "startOffset": 2420,
+                    "endColumn": 95,
+                    "endOffset": 2511
                 },
                 "from": {
-                    "file": "C:\\Users\\Sadman\\.android\\build-cache\\7791cc1ed7a29c2c812ace4b0530d4f9c2c1b23e\\output\\res\\values-is-rIS\\values-is-rIS.xml",
+                    "file": "C:\\Users\\Andoryu\\.android\\build-cache\\cbb61a5065c9c122e7651a1013ab5d2c4ecd81fd\\output\\res\\values-is-rIS\\values-is-rIS.xml",
                     "position": {
                         "startLine": 6,
                         "startColumn": 4,
-                        "startOffset": 483,
-                        "endColumn": 111,
-                        "endOffset": 590
+                        "startOffset": 496,
+                        "endColumn": 95,
+                        "endOffset": 587
                     }
                 }
             },
             {
                 "to": {
-                    "startLine": 7,
+                    "startLine": 26,
                     "startColumn": 4,
-                    "startOffset": 595,
+                    "startOffset": 2516,
                     "endColumn": 84,
-                    "endOffset": 675
+                    "endOffset": 2596
                 },
                 "from": {
-                    "file": "C:\\Users\\Sadman\\.android\\build-cache\\7791cc1ed7a29c2c812ace4b0530d4f9c2c1b23e\\output\\res\\values-is-rIS\\values-is-rIS.xml",
+                    "file": "C:\\Users\\Andoryu\\.android\\build-cache\\cbb61a5065c9c122e7651a1013ab5d2c4ecd81fd\\output\\res\\values-is-rIS\\values-is-rIS.xml",
                     "position": {
                         "startLine": 7,
                         "startColumn": 4,
-                        "startOffset": 595,
+                        "startOffset": 592,
                         "endColumn": 84,
-                        "endOffset": 675
+                        "endOffset": 672
                     }
                 }
             },
             {
                 "to": {
-                    "startLine": 8,
+                    "startLine": 27,
                     "startColumn": 4,
-                    "startOffset": 680,
-                    "endColumn": 100,
-                    "endOffset": 776
+                    "startOffset": 2601,
+                    "endColumn": 93,
+                    "endOffset": 2690
                 },
                 "from": {
-                    "file": "C:\\Users\\Sadman\\.android\\build-cache\\7791cc1ed7a29c2c812ace4b0530d4f9c2c1b23e\\output\\res\\values-is-rIS\\values-is-rIS.xml",
+                    "file": "C:\\Users\\Andoryu\\.android\\build-cache\\cbb61a5065c9c122e7651a1013ab5d2c4ecd81fd\\output\\res\\values-is-rIS\\values-is-rIS.xml",
                     "position": {
                         "startLine": 8,
                         "startColumn": 4,
-                        "startOffset": 680,
-                        "endColumn": 100,
-                        "endOffset": 776
+                        "startOffset": 677,
+                        "endColumn": 93,
+                        "endOffset": 766
                     }
                 }
             },
             {
                 "to": {
-                    "startLine": 9,
+                    "startLine": 28,
                     "startColumn": 4,
-                    "startOffset": 781,
-                    "endColumn": 113,
-                    "endOffset": 890
+                    "startOffset": 2695,
+                    "endColumn": 102,
+                    "endOffset": 2793
                 },
                 "from": {
-                    "file": "C:\\Users\\Sadman\\.android\\build-cache\\7791cc1ed7a29c2c812ace4b0530d4f9c2c1b23e\\output\\res\\values-is-rIS\\values-is-rIS.xml",
+                    "file": "C:\\Users\\Andoryu\\.android\\build-cache\\cbb61a5065c9c122e7651a1013ab5d2c4ecd81fd\\output\\res\\values-is-rIS\\values-is-rIS.xml",
                     "position": {
                         "startLine": 9,
                         "startColumn": 4,
-                        "startOffset": 781,
-                        "endColumn": 113,
-                        "endOffset": 890
+                        "startOffset": 771,
+                        "endColumn": 102,
+                        "endOffset": 869
                     }
                 }
             },
             {
                 "to": {
-                    "startLine": 10,
+                    "startLine": 29,
                     "startColumn": 4,
-                    "startOffset": 895,
-                    "endColumn": 79,
-                    "endOffset": 970
+                    "startOffset": 2798,
+                    "endColumn": 94,
+                    "endOffset": 2888
                 },
                 "from": {
-                    "file": "C:\\Users\\Sadman\\.android\\build-cache\\7791cc1ed7a29c2c812ace4b0530d4f9c2c1b23e\\output\\res\\values-is-rIS\\values-is-rIS.xml",
+                    "file": "C:\\Users\\Andoryu\\.android\\build-cache\\cbb61a5065c9c122e7651a1013ab5d2c4ecd81fd\\output\\res\\values-is-rIS\\values-is-rIS.xml",
                     "position": {
                         "startLine": 10,
                         "startColumn": 4,
-                        "startOffset": 895,
-                        "endColumn": 79,
-                        "endOffset": 970
+                        "startOffset": 874,
+                        "endColumn": 94,
+                        "endOffset": 964
                     }
                 }
             },
             {
                 "to": {
-                    "startLine": 11,
+                    "startLine": 30,
                     "startColumn": 4,
-                    "startOffset": 975,
-                    "endColumn": 79,
-                    "endOffset": 1050
+                    "startOffset": 2893,
+                    "endColumn": 93,
+                    "endOffset": 2982
                 },
                 "from": {
-                    "file": "C:\\Users\\Sadman\\.android\\build-cache\\7791cc1ed7a29c2c812ace4b0530d4f9c2c1b23e\\output\\res\\values-is-rIS\\values-is-rIS.xml",
+                    "file": "C:\\Users\\Andoryu\\.android\\build-cache\\cbb61a5065c9c122e7651a1013ab5d2c4ecd81fd\\output\\res\\values-is-rIS\\values-is-rIS.xml",
                     "position": {
                         "startLine": 11,
                         "startColumn": 4,
-                        "startOffset": 975,
-                        "endColumn": 79,
-                        "endOffset": 1050
+                        "startOffset": 969,
+                        "endColumn": 93,
+                        "endOffset": 1058
                     }
                 }
             },
             {
                 "to": {
-                    "startLine": 12,
+                    "startLine": 31,
                     "startColumn": 4,
-                    "startOffset": 1055,
-                    "endColumn": 80,
-                    "endOffset": 1131
+                    "startOffset": 2987,
+                    "endColumn": 93,
+                    "endOffset": 3076
                 },
                 "from": {
-                    "file": "C:\\Users\\Sadman\\.android\\build-cache\\7791cc1ed7a29c2c812ace4b0530d4f9c2c1b23e\\output\\res\\values-is-rIS\\values-is-rIS.xml",
+                    "file": "C:\\Users\\Andoryu\\.android\\build-cache\\cbb61a5065c9c122e7651a1013ab5d2c4ecd81fd\\output\\res\\values-is-rIS\\values-is-rIS.xml",
                     "position": {
                         "startLine": 12,
                         "startColumn": 4,
-                        "startOffset": 1055,
-                        "endColumn": 80,
-                        "endOffset": 1131
+                        "startOffset": 1063,
+                        "endColumn": 93,
+                        "endOffset": 1152
                     }
                 }
             },
             {
                 "to": {
-                    "startLine": 13,
+                    "startLine": 32,
                     "startColumn": 4,
-                    "startOffset": 1136,
-                    "endColumn": 109,
-                    "endOffset": 1241
+                    "startOffset": 3081,
+                    "endColumn": 91,
+                    "endOffset": 3168
                 },
                 "from": {
-                    "file": "C:\\Users\\Sadman\\.android\\build-cache\\7791cc1ed7a29c2c812ace4b0530d4f9c2c1b23e\\output\\res\\values-is-rIS\\values-is-rIS.xml",
+                    "file": "C:\\Users\\Andoryu\\.android\\build-cache\\cbb61a5065c9c122e7651a1013ab5d2c4ecd81fd\\output\\res\\values-is-rIS\\values-is-rIS.xml",
                     "position": {
                         "startLine": 13,
                         "startColumn": 4,
-                        "startOffset": 1136,
-                        "endColumn": 109,
-                        "endOffset": 1241
+                        "startOffset": 1157,
+                        "endColumn": 91,
+                        "endOffset": 1244
                     }
                 }
             },
             {
                 "to": {
-                    "startLine": 14,
+                    "startLine": 33,
                     "startColumn": 4,
-                    "startOffset": 1246,
-                    "endColumn": 107,
-                    "endOffset": 1349
+                    "startOffset": 3173,
+                    "endColumn": 114,
+                    "endOffset": 3283
                 },
                 "from": {
-                    "file": "C:\\Users\\Sadman\\.android\\build-cache\\7791cc1ed7a29c2c812ace4b0530d4f9c2c1b23e\\output\\res\\values-is-rIS\\values-is-rIS.xml",
+                    "file": "C:\\Users\\Andoryu\\.android\\build-cache\\cbb61a5065c9c122e7651a1013ab5d2c4ecd81fd\\output\\res\\values-is-rIS\\values-is-rIS.xml",
                     "position": {
                         "startLine": 14,
                         "startColumn": 4,
-                        "startOffset": 1246,
-                        "endColumn": 107,
-                        "endOffset": 1349
+                        "startOffset": 1249,
+                        "endColumn": 114,
+                        "endOffset": 1359
                     }
                 }
             },
             {
                 "to": {
-                    "startLine": 15,
+                    "startLine": 34,
                     "startColumn": 4,
-                    "startOffset": 1354,
-                    "endColumn": 97,
-                    "endOffset": 1447
+                    "startOffset": 3288,
+                    "endColumn": 110,
+                    "endOffset": 3394
                 },
                 "from": {
-                    "file": "C:\\Users\\Sadman\\.android\\build-cache\\7791cc1ed7a29c2c812ace4b0530d4f9c2c1b23e\\output\\res\\values-is-rIS\\values-is-rIS.xml",
+                    "file": "C:\\Users\\Andoryu\\.android\\build-cache\\cbb61a5065c9c122e7651a1013ab5d2c4ecd81fd\\output\\res\\values-is-rIS\\values-is-rIS.xml",
                     "position": {
                         "startLine": 15,
                         "startColumn": 4,
-                        "startOffset": 1354,
-                        "endColumn": 97,
-                        "endOffset": 1447
+                        "startOffset": 1364,
+                        "endColumn": 110,
+                        "endOffset": 1470
                     }
                 }
             },
             {
                 "to": {
-                    "startLine": 16,
+                    "startLine": 35,
                     "startColumn": 4,
-                    "startOffset": 1452,
-                    "endColumn": 108,
-                    "endOffset": 1556
+                    "startOffset": 3399,
+                    "endColumn": 81,
+                    "endOffset": 3476
                 },
                 "from": {
-                    "file": "C:\\Users\\Sadman\\.android\\build-cache\\7791cc1ed7a29c2c812ace4b0530d4f9c2c1b23e\\output\\res\\values-is-rIS\\values-is-rIS.xml",
+                    "file": "C:\\Users\\Andoryu\\.android\\build-cache\\cbb61a5065c9c122e7651a1013ab5d2c4ecd81fd\\output\\res\\values-is-rIS\\values-is-rIS.xml",
                     "position": {
                         "startLine": 16,
                         "startColumn": 4,
-                        "startOffset": 1452,
-                        "endColumn": 108,
-                        "endOffset": 1556
+                        "startOffset": 1475,
+                        "endColumn": 81,
+                        "endOffset": 1552
                     }
                 }
             },
             {
                 "to": {
-                    "startLine": 17,
+                    "startLine": 36,
                     "startColumn": 4,
-                    "startOffset": 1561,
-                    "endColumn": 98,
-                    "endOffset": 1655
+                    "startOffset": 3481,
+                    "endColumn": 81,
+                    "endOffset": 3558
                 },
                 "from": {
-                    "file": "C:\\Users\\Sadman\\.android\\build-cache\\7791cc1ed7a29c2c812ace4b0530d4f9c2c1b23e\\output\\res\\values-is-rIS\\values-is-rIS.xml",
+                    "file": "C:\\Users\\Andoryu\\.android\\build-cache\\cbb61a5065c9c122e7651a1013ab5d2c4ecd81fd\\output\\res\\values-is-rIS\\values-is-rIS.xml",
                     "position": {
                         "startLine": 17,
                         "startColumn": 4,
-                        "startOffset": 1561,
-                        "endColumn": 98,
-                        "endOffset": 1655
+                        "startOffset": 1557,
+                        "endColumn": 81,
+                        "endOffset": 1634
                     }
                 }
             },
             {
                 "to": {
-                    "startLine": 18,
+                    "startLine": 37,
                     "startColumn": 4,
-                    "startOffset": 1660,
-                    "endColumn": 102,
-                    "endOffset": 1758
+                    "startOffset": 3563,
+                    "endColumn": 94,
+                    "endOffset": 3653
                 },
                 "from": {
-                    "file": "C:\\Users\\Sadman\\.android\\build-cache\\7791cc1ed7a29c2c812ace4b0530d4f9c2c1b23e\\output\\res\\values-is-rIS\\values-is-rIS.xml",
+                    "file": "C:\\Users\\Andoryu\\.android\\build-cache\\cbb61a5065c9c122e7651a1013ab5d2c4ecd81fd\\output\\res\\values-is-rIS\\values-is-rIS.xml",
                     "position": {
                         "startLine": 18,
                         "startColumn": 4,
-                        "startOffset": 1660,
-                        "endColumn": 102,
-                        "endOffset": 1758
+                        "startOffset": 1639,
+                        "endColumn": 94,
+                        "endOffset": 1729
                     }
                 }
             },
             {
                 "to": {
-                    "startLine": 19,
+                    "startLine": 38,
                     "startColumn": 4,
-                    "startOffset": 1763,
-                    "endColumn": 117,
-                    "endOffset": 1876
+                    "startOffset": 3658,
+                    "endColumn": 102,
+                    "endOffset": 3756
                 },
                 "from": {
-                    "file": "C:\\Users\\Sadman\\.android\\build-cache\\7791cc1ed7a29c2c812ace4b0530d4f9c2c1b23e\\output\\res\\values-is-rIS\\values-is-rIS.xml",
+                    "file": "C:\\Users\\Andoryu\\.android\\build-cache\\cbb61a5065c9c122e7651a1013ab5d2c4ecd81fd\\output\\res\\values-is-rIS\\values-is-rIS.xml",
                     "position": {
                         "startLine": 19,
                         "startColumn": 4,
-                        "startOffset": 1763,
-                        "endColumn": 117,
-                        "endOffset": 1876
+                        "startOffset": 1734,
+                        "endColumn": 102,
+                        "endOffset": 1832
                     }
                 }
             },
             {
                 "to": {
-                    "startLine": 20,
+                    "startLine": 39,
                     "startColumn": 4,
-                    "startOffset": 1881,
-                    "endColumn": 97,
-                    "endOffset": 1974
+                    "startOffset": 3761,
+                    "endColumn": 84,
+                    "endOffset": 3841
                 },
                 "from": {
-                    "file": "C:\\Users\\Sadman\\.android\\build-cache\\7791cc1ed7a29c2c812ace4b0530d4f9c2c1b23e\\output\\res\\values-is-rIS\\values-is-rIS.xml",
+                    "file": "C:\\Users\\Andoryu\\.android\\build-cache\\cbb61a5065c9c122e7651a1013ab5d2c4ecd81fd\\output\\res\\values-is-rIS\\values-is-rIS.xml",
                     "position": {
                         "startLine": 20,
                         "startColumn": 4,
-                        "startOffset": 1881,
-                        "endColumn": 97,
-                        "endOffset": 1974
+                        "startOffset": 1837,
+                        "endColumn": 84,
+                        "endOffset": 1917
                     }
                 }
             },
             {
                 "to": {
-                    "startLine": 21,
+                    "startLine": 40,
                     "startColumn": 4,
-                    "startOffset": 1979,
-                    "endColumn": 80,
-                    "endOffset": 2055
+                    "startOffset": 3846,
+                    "endColumn": 90,
+                    "endOffset": 3932
                 },
                 "from": {
-                    "file": "C:\\Users\\Sadman\\.android\\build-cache\\7791cc1ed7a29c2c812ace4b0530d4f9c2c1b23e\\output\\res\\values-is-rIS\\values-is-rIS.xml",
+                    "file": "C:\\Users\\Andoryu\\.android\\build-cache\\cbb61a5065c9c122e7651a1013ab5d2c4ecd81fd\\output\\res\\values-is-rIS\\values-is-rIS.xml",
+                    "position": {
+                        "startLine": 21,
+                        "startColumn": 4,
+                        "startOffset": 1922,
+                        "endColumn": 90,
+                        "endOffset": 2008
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 41,
+                    "startColumn": 4,
+                    "startOffset": 3937,
+                    "endColumn": 80,
+                    "endOffset": 4013
+                },
+                "from": {
+                    "file": "C:\\Users\\Andoryu\\.android\\build-cache\\71a97fee7c3e8e072c375b08ec9301718058bb51\\output\\res\\values-is-rIS\\values-is-rIS.xml",
                     "position": {
                         "startLine": 21,
                         "startColumn": 4,
@@ -1192,14 +1548,14 @@
             },
             {
                 "to": {
-                    "startLine": 22,
+                    "startLine": 42,
                     "startColumn": 4,
-                    "startOffset": 2060,
+                    "startOffset": 4018,
                     "endColumn": 100,
-                    "endOffset": 2156
+                    "endOffset": 4114
                 },
                 "from": {
-                    "file": "C:\\Users\\Sadman\\.android\\build-cache\\7791cc1ed7a29c2c812ace4b0530d4f9c2c1b23e\\output\\res\\values-is-rIS\\values-is-rIS.xml",
+                    "file": "C:\\Users\\Andoryu\\.android\\build-cache\\71a97fee7c3e8e072c375b08ec9301718058bb51\\output\\res\\values-is-rIS\\values-is-rIS.xml",
                     "position": {
                         "startLine": 22,
                         "startColumn": 4,

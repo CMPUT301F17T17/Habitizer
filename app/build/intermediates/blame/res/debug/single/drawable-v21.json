@@ -1,98 +1,66 @@
 [
     {
-        "merged": "C:\\Users\\cryst\\AndroidStudioProjects\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\avd_hide_password.xml",
-        "source": "C:\\Users\\cryst\\.android\\build-cache\\be05bf9c16458419eb7087291bd58a9ed060f4d3\\output\\res\\drawable-v21\\avd_hide_password.xml"
+        "merged": "D:\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\design_bottom_navigation_item_background.xml",
+        "source": "C:\\Users\\Andoryu\\.android\\build-cache\\d567faffe9c7a4a79f4535997169a87eacaed47b\\output\\res\\drawable-v21\\design_bottom_navigation_item_background.xml"
     },
     {
-        "merged": "D:\\school\\CMPUT 301\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\abc_btn_colored_material.xml",
-        "source": "C:\\Users\\Sadman\\.android\\build-cache\\7791cc1ed7a29c2c812ace4b0530d4f9c2c1b23e\\output\\res\\drawable-v21\\abc_btn_colored_material.xml"
+        "merged": "D:\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\abc_edit_text_material.xml",
+        "source": "C:\\Users\\Andoryu\\.android\\build-cache\\71a97fee7c3e8e072c375b08ec9301718058bb51\\output\\res\\drawable-v21\\abc_edit_text_material.xml"
     },
     {
-        "merged": "D:\\school\\CMPUT 301\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\notification_action_background.xml",
-        "source": "C:\\Users\\Sadman\\.android\\build-cache\\7791cc1ed7a29c2c812ace4b0530d4f9c2c1b23e\\output\\res\\drawable-v21\\notification_action_background.xml"
+        "merged": "D:\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\abc_action_bar_item_background_material.xml",
+        "source": "C:\\Users\\Andoryu\\.android\\build-cache\\71a97fee7c3e8e072c375b08ec9301718058bb51\\output\\res\\drawable-v21\\abc_action_bar_item_background_material.xml"
     },
     {
-        "merged": "D:\\school\\CMPUT 301\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\avd_hide_password.xml",
-        "source": "C:\\Users\\Sadman\\.android\\build-cache\\1f43954577a446aa44799bcf7dd607cc0cac21fb\\output\\res\\drawable-v21\\avd_hide_password.xml"
+        "merged": "D:\\Habitizer-sadbranch\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\avd_show_password.xml",
+        "source": "C:\\Users\\Andoryu\\.android\\build-cache\\d567faffe9c7a4a79f4535997169a87eacaed47b\\output\\res\\drawable-v21\\avd_show_password.xml"
     },
     {
-        "merged": "C:\\Users\\cryst\\AndroidStudioProjects\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\avd_show_password.xml",
-        "source": "C:\\Users\\cryst\\.android\\build-cache\\be05bf9c16458419eb7087291bd58a9ed060f4d3\\output\\res\\drawable-v21\\avd_show_password.xml"
+        "merged": "D:\\Habitizer-sadbranch\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\abc_btn_colored_material.xml",
+        "source": "C:\\Users\\Andoryu\\.android\\build-cache\\71a97fee7c3e8e072c375b08ec9301718058bb51\\output\\res\\drawable-v21\\abc_btn_colored_material.xml"
     },
     {
-        "merged": "C:\\Users\\John\\Documents\\CMPUT 301\\git\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\abc_edit_text_material.xml",
-        "source": "C:\\Users\\John\\.android\\build-cache\\f203b6cfa7b2212cf461fe1ee4cba09dc9dea6b1\\output\\res\\drawable-v21\\abc_edit_text_material.xml"
+        "merged": "D:\\Habitizer-sadbranch\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\notification_action_background.xml",
+        "source": "C:\\Users\\Andoryu\\.android\\build-cache\\71a97fee7c3e8e072c375b08ec9301718058bb51\\output\\res\\drawable-v21\\notification_action_background.xml"
     },
     {
-        "merged": "D:\\school\\CMPUT 301\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\abc_action_bar_item_background_material.xml",
-        "source": "C:\\Users\\Sadman\\.android\\build-cache\\7791cc1ed7a29c2c812ace4b0530d4f9c2c1b23e\\output\\res\\drawable-v21\\abc_action_bar_item_background_material.xml"
+        "merged": "D:\\Habitizer-sadbranch\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\abc_action_bar_item_background_material.xml",
+        "source": "C:\\Users\\Andoryu\\.android\\build-cache\\71a97fee7c3e8e072c375b08ec9301718058bb51\\output\\res\\drawable-v21\\abc_action_bar_item_background_material.xml"
     },
     {
-        "merged": "C:\\Users\\John\\Documents\\CMPUT 301\\git\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\abc_btn_colored_material.xml",
-        "source": "C:\\Users\\John\\.android\\build-cache\\f203b6cfa7b2212cf461fe1ee4cba09dc9dea6b1\\output\\res\\drawable-v21\\abc_btn_colored_material.xml"
+        "merged": "D:\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\design_password_eye.xml",
+        "source": "C:\\Users\\Andoryu\\.android\\build-cache\\d567faffe9c7a4a79f4535997169a87eacaed47b\\output\\res\\drawable-v21\\design_password_eye.xml"
     },
     {
-        "merged": "C:\\Users\\cryst\\AndroidStudioProjects\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\abc_edit_text_material.xml",
-        "source": "C:\\Users\\cryst\\.android\\build-cache\\fce3adb7b0d30772b260f22ef18f2b0be48c3445\\output\\res\\drawable-v21\\abc_edit_text_material.xml"
+        "merged": "D:\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\avd_hide_password.xml",
+        "source": "C:\\Users\\Andoryu\\.android\\build-cache\\d567faffe9c7a4a79f4535997169a87eacaed47b\\output\\res\\drawable-v21\\avd_hide_password.xml"
     },
     {
-        "merged": "C:\\Users\\John\\Documents\\CMPUT 301\\git\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\avd_hide_password.xml",
-        "source": "C:\\Users\\John\\.android\\build-cache\\ea9ad18277e08e5bc72eecbd010bc7a8c12dbf7b\\output\\res\\drawable-v21\\avd_hide_password.xml"
+        "merged": "D:\\Habitizer-sadbranch\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\abc_edit_text_material.xml",
+        "source": "C:\\Users\\Andoryu\\.android\\build-cache\\71a97fee7c3e8e072c375b08ec9301718058bb51\\output\\res\\drawable-v21\\abc_edit_text_material.xml"
     },
     {
-        "merged": "C:\\Users\\cryst\\AndroidStudioProjects\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\notification_action_background.xml",
-        "source": "C:\\Users\\cryst\\.android\\build-cache\\fce3adb7b0d30772b260f22ef18f2b0be48c3445\\output\\res\\drawable-v21\\notification_action_background.xml"
+        "merged": "D:\\Habitizer-sadbranch\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\design_password_eye.xml",
+        "source": "C:\\Users\\Andoryu\\.android\\build-cache\\d567faffe9c7a4a79f4535997169a87eacaed47b\\output\\res\\drawable-v21\\design_password_eye.xml"
     },
     {
-        "merged": "C:\\Users\\John\\Documents\\CMPUT 301\\git\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\abc_action_bar_item_background_material.xml",
-        "source": "C:\\Users\\John\\.android\\build-cache\\f203b6cfa7b2212cf461fe1ee4cba09dc9dea6b1\\output\\res\\drawable-v21\\abc_action_bar_item_background_material.xml"
+        "merged": "D:\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\abc_btn_colored_material.xml",
+        "source": "C:\\Users\\Andoryu\\.android\\build-cache\\71a97fee7c3e8e072c375b08ec9301718058bb51\\output\\res\\drawable-v21\\abc_btn_colored_material.xml"
     },
     {
-        "merged": "C:\\Users\\cryst\\AndroidStudioProjects\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\design_password_eye.xml",
-        "source": "C:\\Users\\cryst\\.android\\build-cache\\be05bf9c16458419eb7087291bd58a9ed060f4d3\\output\\res\\drawable-v21\\design_password_eye.xml"
+        "merged": "D:\\Habitizer-sadbranch\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\design_bottom_navigation_item_background.xml",
+        "source": "C:\\Users\\Andoryu\\.android\\build-cache\\d567faffe9c7a4a79f4535997169a87eacaed47b\\output\\res\\drawable-v21\\design_bottom_navigation_item_background.xml"
     },
     {
-        "merged": "C:\\Users\\John\\Documents\\CMPUT 301\\git\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\design_bottom_navigation_item_background.xml",
-        "source": "C:\\Users\\John\\.android\\build-cache\\ea9ad18277e08e5bc72eecbd010bc7a8c12dbf7b\\output\\res\\drawable-v21\\design_bottom_navigation_item_background.xml"
+        "merged": "D:\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\avd_show_password.xml",
+        "source": "C:\\Users\\Andoryu\\.android\\build-cache\\d567faffe9c7a4a79f4535997169a87eacaed47b\\output\\res\\drawable-v21\\avd_show_password.xml"
     },
     {
-        "merged": "D:\\school\\CMPUT 301\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\avd_show_password.xml",
-        "source": "C:\\Users\\Sadman\\.android\\build-cache\\1f43954577a446aa44799bcf7dd607cc0cac21fb\\output\\res\\drawable-v21\\avd_show_password.xml"
+        "merged": "D:\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\notification_action_background.xml",
+        "source": "C:\\Users\\Andoryu\\.android\\build-cache\\71a97fee7c3e8e072c375b08ec9301718058bb51\\output\\res\\drawable-v21\\notification_action_background.xml"
     },
     {
-        "merged": "D:\\school\\CMPUT 301\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\design_bottom_navigation_item_background.xml",
-        "source": "C:\\Users\\Sadman\\.android\\build-cache\\1f43954577a446aa44799bcf7dd607cc0cac21fb\\output\\res\\drawable-v21\\design_bottom_navigation_item_background.xml"
-    },
-    {
-        "merged": "C:\\Users\\John\\Documents\\CMPUT 301\\git\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\avd_show_password.xml",
-        "source": "C:\\Users\\John\\.android\\build-cache\\ea9ad18277e08e5bc72eecbd010bc7a8c12dbf7b\\output\\res\\drawable-v21\\avd_show_password.xml"
-    },
-    {
-        "merged": "D:\\school\\CMPUT 301\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\design_password_eye.xml",
-        "source": "C:\\Users\\Sadman\\.android\\build-cache\\1f43954577a446aa44799bcf7dd607cc0cac21fb\\output\\res\\drawable-v21\\design_password_eye.xml"
-    },
-    {
-        "merged": "C:\\Users\\cryst\\AndroidStudioProjects\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\abc_action_bar_item_background_material.xml",
-        "source": "C:\\Users\\cryst\\.android\\build-cache\\fce3adb7b0d30772b260f22ef18f2b0be48c3445\\output\\res\\drawable-v21\\abc_action_bar_item_background_material.xml"
-    },
-    {
-        "merged": "C:\\Users\\John\\Documents\\CMPUT 301\\git\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\design_password_eye.xml",
-        "source": "C:\\Users\\John\\.android\\build-cache\\ea9ad18277e08e5bc72eecbd010bc7a8c12dbf7b\\output\\res\\drawable-v21\\design_password_eye.xml"
-    },
-    {
-        "merged": "D:\\school\\CMPUT 301\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\abc_edit_text_material.xml",
-        "source": "C:\\Users\\Sadman\\.android\\build-cache\\7791cc1ed7a29c2c812ace4b0530d4f9c2c1b23e\\output\\res\\drawable-v21\\abc_edit_text_material.xml"
-    },
-    {
-        "merged": "C:\\Users\\cryst\\AndroidStudioProjects\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\abc_btn_colored_material.xml",
-        "source": "C:\\Users\\cryst\\.android\\build-cache\\fce3adb7b0d30772b260f22ef18f2b0be48c3445\\output\\res\\drawable-v21\\abc_btn_colored_material.xml"
-    },
-    {
-        "merged": "C:\\Users\\cryst\\AndroidStudioProjects\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\design_bottom_navigation_item_background.xml",
-        "source": "C:\\Users\\cryst\\.android\\build-cache\\be05bf9c16458419eb7087291bd58a9ed060f4d3\\output\\res\\drawable-v21\\design_bottom_navigation_item_background.xml"
-    },
-    {
-        "merged": "C:\\Users\\John\\Documents\\CMPUT 301\\git\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\notification_action_background.xml",
-        "source": "C:\\Users\\John\\.android\\build-cache\\f203b6cfa7b2212cf461fe1ee4cba09dc9dea6b1\\output\\res\\drawable-v21\\notification_action_background.xml"
+        "merged": "D:\\Habitizer-sadbranch\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\avd_hide_password.xml",
+        "source": "C:\\Users\\Andoryu\\.android\\build-cache\\d567faffe9c7a4a79f4535997169a87eacaed47b\\output\\res\\drawable-v21\\avd_hide_password.xml"
     }
 ]

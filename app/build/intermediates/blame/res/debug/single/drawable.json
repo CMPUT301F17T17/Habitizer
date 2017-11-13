@@ -1,518 +1,922 @@
 [
     {
-        "merged": "D:\\school\\CMPUT 301\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\design_bottom_navigation_item_background.xml",
-        "source": "C:\\Users\\Sadman\\.android\\build-cache\\1f43954577a446aa44799bcf7dd607cc0cac21fb\\output\\res\\drawable\\design_bottom_navigation_item_background.xml"
+        "merged": "D:\\Habitizer-sadbranch\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_cab_background_top_material.xml",
+        "source": "C:\\Users\\Andoryu\\.android\\build-cache\\71a97fee7c3e8e072c375b08ec9301718058bb51\\output\\res\\drawable\\abc_cab_background_top_material.xml"
     },
     {
-        "merged": "C:\\Users\\cryst\\AndroidStudioProjects\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_seekbar_thumb_material.xml",
-        "source": "C:\\Users\\cryst\\.android\\build-cache\\fce3adb7b0d30772b260f22ef18f2b0be48c3445\\output\\res\\drawable\\abc_seekbar_thumb_material.xml"
+        "merged": "D:\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\cast_ic_notification_forward30.xml",
+        "source": "C:\\Users\\Andoryu\\.android\\build-cache\\d1d468c01183bd06ce235fc2324aa212baf2d8d1\\output\\res\\drawable\\cast_ic_notification_forward30.xml"
     },
     {
-        "merged": "D:\\school\\CMPUT 301\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\navigation_empty_icon.xml",
-        "source": "C:\\Users\\Sadman\\.android\\build-cache\\1f43954577a446aa44799bcf7dd607cc0cac21fb\\output\\res\\drawable\\navigation_empty_icon.xml"
+        "merged": "D:\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\common_google_signin_btn_icon_light.xml",
+        "source": "C:\\Users\\Andoryu\\.android\\build-cache\\cd589b5e61db6b57086578d337a0bb4d423f3378\\output\\res\\drawable\\common_google_signin_btn_icon_light.xml"
     },
     {
-        "merged": "C:\\Users\\John\\Documents\\CMPUT 301\\git\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_clear_material.xml",
-        "source": "C:\\Users\\John\\.android\\build-cache\\f203b6cfa7b2212cf461fe1ee4cba09dc9dea6b1\\output\\res\\drawable\\abc_ic_clear_material.xml"
+        "merged": "D:\\Habitizer-sadbranch\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\cast_mini_controller_progress_drawable.xml",
+        "source": "C:\\Users\\Andoryu\\.android\\build-cache\\d1d468c01183bd06ce235fc2324aa212baf2d8d1\\output\\res\\drawable\\cast_mini_controller_progress_drawable.xml"
     },
     {
-        "merged": "D:\\school\\CMPUT 301\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\design_fab_background.xml",
-        "source": "C:\\Users\\Sadman\\.android\\build-cache\\1f43954577a446aa44799bcf7dd607cc0cac21fb\\output\\res\\drawable\\design_fab_background.xml"
+        "merged": "D:\\Habitizer-sadbranch\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\common_google_signin_btn_text_light_normal.xml",
+        "source": "C:\\Users\\Andoryu\\.android\\build-cache\\cd589b5e61db6b57086578d337a0bb4d423f3378\\output\\res\\drawable\\common_google_signin_btn_text_light_normal.xml"
     },
     {
-        "merged": "C:\\Users\\John\\Documents\\CMPUT 301\\git\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_switch_thumb_material.xml",
-        "source": "C:\\Users\\John\\.android\\build-cache\\f203b6cfa7b2212cf461fe1ee4cba09dc9dea6b1\\output\\res\\drawable\\abc_switch_thumb_material.xml"
+        "merged": "D:\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\cast_ic_notification_play.xml",
+        "source": "C:\\Users\\Andoryu\\.android\\build-cache\\d1d468c01183bd06ce235fc2324aa212baf2d8d1\\output\\res\\drawable\\cast_ic_notification_play.xml"
     },
     {
-        "merged": "C:\\Users\\John\\Documents\\CMPUT 301\\git\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_ab_back_material.xml",
-        "source": "C:\\Users\\John\\.android\\build-cache\\f203b6cfa7b2212cf461fe1ee4cba09dc9dea6b1\\output\\res\\drawable\\abc_ic_ab_back_material.xml"
+        "merged": "D:\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\cast_ic_notification_rewind.xml",
+        "source": "C:\\Users\\Andoryu\\.android\\build-cache\\d1d468c01183bd06ce235fc2324aa212baf2d8d1\\output\\res\\drawable\\cast_ic_notification_rewind.xml"
     },
     {
-        "merged": "C:\\Users\\John\\Documents\\CMPUT 301\\git\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_menu_overflow_material.xml",
-        "source": "C:\\Users\\John\\.android\\build-cache\\f203b6cfa7b2212cf461fe1ee4cba09dc9dea6b1\\output\\res\\drawable\\abc_ic_menu_overflow_material.xml"
+        "merged": "D:\\Habitizer-sadbranch\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\cast_ic_mini_controller_play.xml",
+        "source": "C:\\Users\\Andoryu\\.android\\build-cache\\d1d468c01183bd06ce235fc2324aa212baf2d8d1\\output\\res\\drawable\\cast_ic_mini_controller_play.xml"
     },
     {
-        "merged": "C:\\Users\\John\\Documents\\CMPUT 301\\git\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_voice_search_api_material.xml",
-        "source": "C:\\Users\\John\\.android\\build-cache\\f203b6cfa7b2212cf461fe1ee4cba09dc9dea6b1\\output\\res\\drawable\\abc_ic_voice_search_api_material.xml"
+        "merged": "D:\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\mr_group_expand.xml",
+        "source": "C:\\Users\\Andoryu\\.android\\build-cache\\cbb61a5065c9c122e7651a1013ab5d2c4ecd81fd\\output\\res\\drawable\\mr_group_expand.xml"
     },
     {
-        "merged": "C:\\Users\\cryst\\AndroidStudioProjects\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_spinner_textfield_background_material.xml",
-        "source": "C:\\Users\\cryst\\.android\\build-cache\\fce3adb7b0d30772b260f22ef18f2b0be48c3445\\output\\res\\drawable\\abc_spinner_textfield_background_material.xml"
+        "merged": "D:\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_default_mtrl_shape.xml",
+        "source": "C:\\Users\\Andoryu\\.android\\build-cache\\71a97fee7c3e8e072c375b08ec9301718058bb51\\output\\res\\drawable\\abc_btn_default_mtrl_shape.xml"
     },
     {
-        "merged": "D:\\school\\CMPUT 301\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_tab_indicator_material.xml",
-        "source": "C:\\Users\\Sadman\\.android\\build-cache\\7791cc1ed7a29c2c812ace4b0530d4f9c2c1b23e\\output\\res\\drawable\\abc_tab_indicator_material.xml"
+        "merged": "D:\\Habitizer-sadbranch\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_radio_material.xml",
+        "source": "C:\\Users\\Andoryu\\.android\\build-cache\\71a97fee7c3e8e072c375b08ec9301718058bb51\\output\\res\\drawable\\abc_btn_radio_material.xml"
     },
     {
-        "merged": "C:\\Users\\cryst\\AndroidStudioProjects\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\design_snackbar_background.xml",
-        "source": "C:\\Users\\cryst\\.android\\build-cache\\be05bf9c16458419eb7087291bd58a9ed060f4d3\\output\\res\\drawable\\design_snackbar_background.xml"
+        "merged": "D:\\Habitizer-sadbranch\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_seekbar_thumb_material.xml",
+        "source": "C:\\Users\\Andoryu\\.android\\build-cache\\71a97fee7c3e8e072c375b08ec9301718058bb51\\output\\res\\drawable\\abc_seekbar_thumb_material.xml"
     },
     {
-        "merged": "D:\\school\\CMPUT 301\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_check_material.xml",
-        "source": "C:\\Users\\Sadman\\.android\\build-cache\\7791cc1ed7a29c2c812ace4b0530d4f9c2c1b23e\\output\\res\\drawable\\abc_btn_check_material.xml"
+        "merged": "D:\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\cast_ic_mini_controller_play_large.xml",
+        "source": "C:\\Users\\Andoryu\\.android\\build-cache\\d1d468c01183bd06ce235fc2324aa212baf2d8d1\\output\\res\\drawable\\cast_ic_mini_controller_play_large.xml"
     },
     {
-        "merged": "C:\\Users\\cryst\\AndroidStudioProjects\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ratingbar_material.xml",
-        "source": "C:\\Users\\cryst\\.android\\build-cache\\fce3adb7b0d30772b260f22ef18f2b0be48c3445\\output\\res\\drawable\\abc_ratingbar_material.xml"
+        "merged": "D:\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\cast_ic_mini_controller_stop.xml",
+        "source": "C:\\Users\\Andoryu\\.android\\build-cache\\d1d468c01183bd06ce235fc2324aa212baf2d8d1\\output\\res\\drawable\\cast_ic_mini_controller_stop.xml"
     },
     {
-        "merged": "C:\\Users\\John\\Documents\\CMPUT 301\\git\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_text_cursor_material.xml",
-        "source": "C:\\Users\\John\\.android\\build-cache\\f203b6cfa7b2212cf461fe1ee4cba09dc9dea6b1\\output\\res\\drawable\\abc_text_cursor_material.xml"
+        "merged": "D:\\Habitizer-sadbranch\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\cast_ic_expanded_controller_closed_caption.xml",
+        "source": "C:\\Users\\Andoryu\\.android\\build-cache\\d1d468c01183bd06ce235fc2324aa212baf2d8d1\\output\\res\\drawable\\cast_ic_expanded_controller_closed_caption.xml"
     },
     {
-        "merged": "D:\\school\\CMPUT 301\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\design_password_eye.xml",
-        "source": "C:\\Users\\Sadman\\.android\\build-cache\\1f43954577a446aa44799bcf7dd607cc0cac21fb\\output\\res\\drawable\\design_password_eye.xml"
+        "merged": "D:\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\cast_ic_expanded_controller_closed_caption.xml",
+        "source": "C:\\Users\\Andoryu\\.android\\build-cache\\d1d468c01183bd06ce235fc2324aa212baf2d8d1\\output\\res\\drawable\\cast_ic_expanded_controller_closed_caption.xml"
     },
     {
-        "merged": "C:\\Users\\John\\Documents\\CMPUT 301\\git\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_seekbar_tick_mark_material.xml",
-        "source": "C:\\Users\\John\\.android\\build-cache\\f203b6cfa7b2212cf461fe1ee4cba09dc9dea6b1\\output\\res\\drawable\\abc_seekbar_tick_mark_material.xml"
+        "merged": "D:\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_item_background_holo_dark.xml",
+        "source": "C:\\Users\\Andoryu\\.android\\build-cache\\71a97fee7c3e8e072c375b08ec9301718058bb51\\output\\res\\drawable\\abc_item_background_holo_dark.xml"
     },
     {
-        "merged": "C:\\Users\\cryst\\AndroidStudioProjects\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_radio_material.xml",
-        "source": "C:\\Users\\cryst\\.android\\build-cache\\fce3adb7b0d30772b260f22ef18f2b0be48c3445\\output\\res\\drawable\\abc_btn_radio_material.xml"
+        "merged": "D:\\Habitizer-sadbranch\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\common_google_signin_btn_icon_disabled.xml",
+        "source": "C:\\Users\\Andoryu\\.android\\build-cache\\cd589b5e61db6b57086578d337a0bb4d423f3378\\output\\res\\drawable\\common_google_signin_btn_icon_disabled.xml"
     },
     {
-        "merged": "C:\\Users\\cryst\\AndroidStudioProjects\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\notification_icon_background.xml",
-        "source": "C:\\Users\\cryst\\.android\\build-cache\\fce3adb7b0d30772b260f22ef18f2b0be48c3445\\output\\res\\drawable\\notification_icon_background.xml"
+        "merged": "D:\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\days_border_valid.xml",
+        "source": "D:\\Habitizer\\app\\src\\main\\res\\drawable\\days_border_valid.xml"
     },
     {
-        "merged": "C:\\Users\\cryst\\AndroidStudioProjects\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_item_background_holo_light.xml",
-        "source": "C:\\Users\\cryst\\.android\\build-cache\\fce3adb7b0d30772b260f22ef18f2b0be48c3445\\output\\res\\drawable\\abc_item_background_holo_light.xml"
+        "merged": "D:\\Habitizer-sadbranch\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ratingbar_indicator_material.xml",
+        "source": "C:\\Users\\Andoryu\\.android\\build-cache\\71a97fee7c3e8e072c375b08ec9301718058bb51\\output\\res\\drawable\\abc_ratingbar_indicator_material.xml"
     },
     {
-        "merged": "C:\\Users\\John\\Documents\\CMPUT 301\\git\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_dialog_material_background.xml",
-        "source": "C:\\Users\\John\\.android\\build-cache\\f203b6cfa7b2212cf461fe1ee4cba09dc9dea6b1\\output\\res\\drawable\\abc_dialog_material_background.xml"
+        "merged": "D:\\Habitizer-sadbranch\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\common_google_signin_btn_icon_light_normal.xml",
+        "source": "C:\\Users\\Andoryu\\.android\\build-cache\\cd589b5e61db6b57086578d337a0bb4d423f3378\\output\\res\\drawable\\common_google_signin_btn_icon_light_normal.xml"
     },
     {
-        "merged": "C:\\Users\\cryst\\AndroidStudioProjects\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_search_api_material.xml",
-        "source": "C:\\Users\\cryst\\.android\\build-cache\\fce3adb7b0d30772b260f22ef18f2b0be48c3445\\output\\res\\drawable\\abc_ic_search_api_material.xml"
+        "merged": "D:\\Habitizer-sadbranch\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\cast_ic_expanded_controller_skip_previous.xml",
+        "source": "C:\\Users\\Andoryu\\.android\\build-cache\\d1d468c01183bd06ce235fc2324aa212baf2d8d1\\output\\res\\drawable\\cast_ic_expanded_controller_skip_previous.xml"
     },
     {
-        "merged": "C:\\Users\\John\\Documents\\CMPUT 301\\git\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_colored_material.xml",
-        "source": "C:\\Users\\John\\.android\\build-cache\\f203b6cfa7b2212cf461fe1ee4cba09dc9dea6b1\\output\\res\\drawable\\abc_btn_colored_material.xml"
+        "merged": "D:\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_holo_light.xml",
+        "source": "C:\\Users\\Andoryu\\.android\\build-cache\\71a97fee7c3e8e072c375b08ec9301718058bb51\\output\\res\\drawable\\abc_list_selector_holo_light.xml"
     },
     {
-        "merged": "D:\\school\\CMPUT 301\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_seekbar_thumb_material.xml",
-        "source": "C:\\Users\\Sadman\\.android\\build-cache\\7791cc1ed7a29c2c812ace4b0530d4f9c2c1b23e\\output\\res\\drawable\\abc_seekbar_thumb_material.xml"
+        "merged": "D:\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_search_api_material.xml",
+        "source": "C:\\Users\\Andoryu\\.android\\build-cache\\71a97fee7c3e8e072c375b08ec9301718058bb51\\output\\res\\drawable\\abc_ic_search_api_material.xml"
     },
     {
-        "merged": "D:\\school\\CMPUT 301\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_arrow_drop_right_black_24dp.xml",
-        "source": "C:\\Users\\Sadman\\.android\\build-cache\\7791cc1ed7a29c2c812ace4b0530d4f9c2c1b23e\\output\\res\\drawable\\abc_ic_arrow_drop_right_black_24dp.xml"
+        "merged": "D:\\Habitizer-sadbranch\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\common_google_signin_btn_icon_light_focused.xml",
+        "source": "C:\\Users\\Andoryu\\.android\\build-cache\\cd589b5e61db6b57086578d337a0bb4d423f3378\\output\\res\\drawable\\common_google_signin_btn_icon_light_focused.xml"
     },
     {
-        "merged": "C:\\Users\\cryst\\AndroidStudioProjects\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_tab_indicator_material.xml",
-        "source": "C:\\Users\\cryst\\.android\\build-cache\\fce3adb7b0d30772b260f22ef18f2b0be48c3445\\output\\res\\drawable\\abc_tab_indicator_material.xml"
+        "merged": "D:\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\common_google_signin_btn_text_light.xml",
+        "source": "C:\\Users\\Andoryu\\.android\\build-cache\\cd589b5e61db6b57086578d337a0bb4d423f3378\\output\\res\\drawable\\common_google_signin_btn_text_light.xml"
     },
     {
-        "merged": "C:\\Users\\cryst\\AndroidStudioProjects\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ratingbar_small_material.xml",
-        "source": "C:\\Users\\cryst\\.android\\build-cache\\fce3adb7b0d30772b260f22ef18f2b0be48c3445\\output\\res\\drawable\\abc_ratingbar_small_material.xml"
+        "merged": "D:\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_background_transition_holo_dark.xml",
+        "source": "C:\\Users\\Andoryu\\.android\\build-cache\\71a97fee7c3e8e072c375b08ec9301718058bb51\\output\\res\\drawable\\abc_list_selector_background_transition_holo_dark.xml"
     },
     {
-        "merged": "C:\\Users\\John\\Documents\\CMPUT 301\\git\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ratingbar_indicator_material.xml",
-        "source": "C:\\Users\\John\\.android\\build-cache\\f203b6cfa7b2212cf461fe1ee4cba09dc9dea6b1\\output\\res\\drawable\\abc_ratingbar_indicator_material.xml"
+        "merged": "D:\\Habitizer-sadbranch\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\cast_ic_mini_controller_play_large.xml",
+        "source": "C:\\Users\\Andoryu\\.android\\build-cache\\d1d468c01183bd06ce235fc2324aa212baf2d8d1\\output\\res\\drawable\\cast_ic_mini_controller_play_large.xml"
     },
     {
-        "merged": "D:\\school\\CMPUT 301\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_colored_material.xml",
-        "source": "C:\\Users\\Sadman\\.android\\build-cache\\7791cc1ed7a29c2c812ace4b0530d4f9c2c1b23e\\output\\res\\drawable\\abc_btn_colored_material.xml"
+        "merged": "D:\\Habitizer-sadbranch\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\cast_ic_notification_forward.xml",
+        "source": "C:\\Users\\Andoryu\\.android\\build-cache\\d1d468c01183bd06ce235fc2324aa212baf2d8d1\\output\\res\\drawable\\cast_ic_notification_forward.xml"
     },
     {
-        "merged": "D:\\school\\CMPUT 301\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_search_api_material.xml",
-        "source": "C:\\Users\\Sadman\\.android\\build-cache\\7791cc1ed7a29c2c812ace4b0530d4f9c2c1b23e\\output\\res\\drawable\\abc_ic_search_api_material.xml"
+        "merged": "D:\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\mr_button_connecting_dark.xml",
+        "source": "C:\\Users\\Andoryu\\.android\\build-cache\\cbb61a5065c9c122e7651a1013ab5d2c4ecd81fd\\output\\res\\drawable\\mr_button_connecting_dark.xml"
     },
     {
-        "merged": "D:\\school\\CMPUT 301\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_cab_background_internal_bg.xml",
-        "source": "C:\\Users\\Sadman\\.android\\build-cache\\7791cc1ed7a29c2c812ace4b0530d4f9c2c1b23e\\output\\res\\drawable\\abc_cab_background_internal_bg.xml"
+        "merged": "D:\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_seekbar_track_material.xml",
+        "source": "C:\\Users\\Andoryu\\.android\\build-cache\\71a97fee7c3e8e072c375b08ec9301718058bb51\\output\\res\\drawable\\abc_seekbar_track_material.xml"
     },
     {
-        "merged": "C:\\Users\\John\\Documents\\CMPUT 301\\git\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_borderless_material.xml",
-        "source": "C:\\Users\\John\\.android\\build-cache\\f203b6cfa7b2212cf461fe1ee4cba09dc9dea6b1\\output\\res\\drawable\\abc_btn_borderless_material.xml"
+        "merged": "D:\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\cast_ic_notification_skip_next.xml",
+        "source": "C:\\Users\\Andoryu\\.android\\build-cache\\d1d468c01183bd06ce235fc2324aa212baf2d8d1\\output\\res\\drawable\\cast_ic_notification_skip_next.xml"
     },
     {
-        "merged": "C:\\Users\\cryst\\AndroidStudioProjects\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_dialog_material_background.xml",
-        "source": "C:\\Users\\cryst\\.android\\build-cache\\fce3adb7b0d30772b260f22ef18f2b0be48c3445\\output\\res\\drawable\\abc_dialog_material_background.xml"
+        "merged": "D:\\Habitizer-sadbranch\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\notification_tile_bg.xml",
+        "source": "C:\\Users\\Andoryu\\.android\\build-cache\\71a97fee7c3e8e072c375b08ec9301718058bb51\\output\\res\\drawable\\notification_tile_bg.xml"
     },
     {
-        "merged": "C:\\Users\\cryst\\AndroidStudioProjects\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_vector_test.xml",
-        "source": "C:\\Users\\cryst\\.android\\build-cache\\fce3adb7b0d30772b260f22ef18f2b0be48c3445\\output\\res\\drawable\\abc_vector_test.xml"
+        "merged": "D:\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\common_google_signin_btn_text_disabled.xml",
+        "source": "C:\\Users\\Andoryu\\.android\\build-cache\\cd589b5e61db6b57086578d337a0bb4d423f3378\\output\\res\\drawable\\common_google_signin_btn_text_disabled.xml"
     },
     {
-        "merged": "D:\\school\\CMPUT 301\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_switch_thumb_material.xml",
-        "source": "C:\\Users\\Sadman\\.android\\build-cache\\7791cc1ed7a29c2c812ace4b0530d4f9c2c1b23e\\output\\res\\drawable\\abc_switch_thumb_material.xml"
+        "merged": "D:\\Habitizer-sadbranch\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\cast_ic_expanded_controller_skip_next.xml",
+        "source": "C:\\Users\\Andoryu\\.android\\build-cache\\d1d468c01183bd06ce235fc2324aa212baf2d8d1\\output\\res\\drawable\\cast_ic_expanded_controller_skip_next.xml"
     },
     {
-        "merged": "C:\\Users\\cryst\\AndroidStudioProjects\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\design_password_eye.xml",
-        "source": "C:\\Users\\cryst\\.android\\build-cache\\be05bf9c16458419eb7087291bd58a9ed060f4d3\\output\\res\\drawable\\design_password_eye.xml"
+        "merged": "D:\\Habitizer-sadbranch\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\mr_group_collapse.xml",
+        "source": "C:\\Users\\Andoryu\\.android\\build-cache\\cbb61a5065c9c122e7651a1013ab5d2c4ecd81fd\\output\\res\\drawable\\mr_group_collapse.xml"
     },
     {
-        "merged": "C:\\Users\\cryst\\AndroidStudioProjects\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_cab_background_internal_bg.xml",
-        "source": "C:\\Users\\cryst\\.android\\build-cache\\fce3adb7b0d30772b260f22ef18f2b0be48c3445\\output\\res\\drawable\\abc_cab_background_internal_bg.xml"
+        "merged": "D:\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\mr_media_pause_light.xml",
+        "source": "C:\\Users\\Andoryu\\.android\\build-cache\\cbb61a5065c9c122e7651a1013ab5d2c4ecd81fd\\output\\res\\drawable\\mr_media_pause_light.xml"
     },
     {
-        "merged": "C:\\Users\\cryst\\AndroidStudioProjects\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\design_fab_background.xml",
-        "source": "C:\\Users\\cryst\\.android\\build-cache\\be05bf9c16458419eb7087291bd58a9ed060f4d3\\output\\res\\drawable\\design_fab_background.xml"
+        "merged": "D:\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\common_google_signin_btn_icon_light_normal.xml",
+        "source": "C:\\Users\\Andoryu\\.android\\build-cache\\cd589b5e61db6b57086578d337a0bb4d423f3378\\output\\res\\drawable\\common_google_signin_btn_icon_light_normal.xml"
     },
     {
-        "merged": "C:\\Users\\John\\Documents\\CMPUT 301\\git\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\design_snackbar_background.xml",
-        "source": "C:\\Users\\John\\.android\\build-cache\\ea9ad18277e08e5bc72eecbd010bc7a8c12dbf7b\\output\\res\\drawable\\design_snackbar_background.xml"
+        "merged": "D:\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\design_snackbar_background.xml",
+        "source": "C:\\Users\\Andoryu\\.android\\build-cache\\d567faffe9c7a4a79f4535997169a87eacaed47b\\output\\res\\drawable\\design_snackbar_background.xml"
     },
     {
-        "merged": "C:\\Users\\cryst\\AndroidStudioProjects\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_voice_search_api_material.xml",
-        "source": "C:\\Users\\cryst\\.android\\build-cache\\fce3adb7b0d30772b260f22ef18f2b0be48c3445\\output\\res\\drawable\\abc_ic_voice_search_api_material.xml"
+        "merged": "D:\\Habitizer-sadbranch\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_spinner_textfield_background_material.xml",
+        "source": "C:\\Users\\Andoryu\\.android\\build-cache\\71a97fee7c3e8e072c375b08ec9301718058bb51\\output\\res\\drawable\\abc_spinner_textfield_background_material.xml"
     },
     {
-        "merged": "C:\\Users\\cryst\\AndroidStudioProjects\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_arrow_drop_right_black_24dp.xml",
-        "source": "C:\\Users\\cryst\\.android\\build-cache\\fce3adb7b0d30772b260f22ef18f2b0be48c3445\\output\\res\\drawable\\abc_ic_arrow_drop_right_black_24dp.xml"
+        "merged": "D:\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\mr_dialog_material_background_dark.xml",
+        "source": "C:\\Users\\Andoryu\\.android\\build-cache\\cbb61a5065c9c122e7651a1013ab5d2c4ecd81fd\\output\\res\\drawable\\mr_dialog_material_background_dark.xml"
     },
     {
-        "merged": "D:\\school\\CMPUT 301\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_holo_light.xml",
-        "source": "C:\\Users\\Sadman\\.android\\build-cache\\7791cc1ed7a29c2c812ace4b0530d4f9c2c1b23e\\output\\res\\drawable\\abc_list_selector_holo_light.xml"
+        "merged": "D:\\Habitizer-sadbranch\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\mr_vol_type_audiotrack_dark.xml",
+        "source": "C:\\Users\\Andoryu\\.android\\build-cache\\cbb61a5065c9c122e7651a1013ab5d2c4ecd81fd\\output\\res\\drawable\\mr_vol_type_audiotrack_dark.xml"
     },
     {
-        "merged": "D:\\school\\CMPUT 301\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ratingbar_indicator_material.xml",
-        "source": "C:\\Users\\Sadman\\.android\\build-cache\\7791cc1ed7a29c2c812ace4b0530d4f9c2c1b23e\\output\\res\\drawable\\abc_ratingbar_indicator_material.xml"
+        "merged": "D:\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\cast_skip_ad_label_border.xml",
+        "source": "C:\\Users\\Andoryu\\.android\\build-cache\\d1d468c01183bd06ce235fc2324aa212baf2d8d1\\output\\res\\drawable\\cast_skip_ad_label_border.xml"
     },
     {
-        "merged": "C:\\Users\\John\\Documents\\CMPUT 301\\git\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_cab_background_top_material.xml",
-        "source": "C:\\Users\\John\\.android\\build-cache\\f203b6cfa7b2212cf461fe1ee4cba09dc9dea6b1\\output\\res\\drawable\\abc_cab_background_top_material.xml"
+        "merged": "D:\\Habitizer-sadbranch\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\cast_ic_notification_connecting.xml",
+        "source": "C:\\Users\\Andoryu\\.android\\build-cache\\c2ca6b1c4009ee818bc93406d9ccf56244920c4e\\output\\res\\drawable\\cast_ic_notification_connecting.xml"
     },
     {
-        "merged": "C:\\Users\\John\\Documents\\CMPUT 301\\git\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_vector_test.xml",
-        "source": "C:\\Users\\John\\.android\\build-cache\\f203b6cfa7b2212cf461fe1ee4cba09dc9dea6b1\\output\\res\\drawable\\abc_vector_test.xml"
+        "merged": "D:\\Habitizer-sadbranch\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\cast_ic_expanded_controller_play.xml",
+        "source": "C:\\Users\\Andoryu\\.android\\build-cache\\d1d468c01183bd06ce235fc2324aa212baf2d8d1\\output\\res\\drawable\\cast_ic_expanded_controller_play.xml"
     },
     {
-        "merged": "C:\\Users\\cryst\\AndroidStudioProjects\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_holo_dark.xml",
-        "source": "C:\\Users\\cryst\\.android\\build-cache\\fce3adb7b0d30772b260f22ef18f2b0be48c3445\\output\\res\\drawable\\abc_list_selector_holo_dark.xml"
+        "merged": "D:\\Habitizer-sadbranch\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\cast_ic_notification_small_icon.xml",
+        "source": "C:\\Users\\Andoryu\\.android\\build-cache\\d1d468c01183bd06ce235fc2324aa212baf2d8d1\\output\\res\\drawable\\cast_ic_notification_small_icon.xml"
     },
     {
-        "merged": "D:\\school\\CMPUT 301\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_cab_background_top_material.xml",
-        "source": "C:\\Users\\Sadman\\.android\\build-cache\\7791cc1ed7a29c2c812ace4b0530d4f9c2c1b23e\\output\\res\\drawable\\abc_cab_background_top_material.xml"
+        "merged": "D:\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\common_google_signin_btn_icon_dark_focused.xml",
+        "source": "C:\\Users\\Andoryu\\.android\\build-cache\\cd589b5e61db6b57086578d337a0bb4d423f3378\\output\\res\\drawable\\common_google_signin_btn_icon_dark_focused.xml"
     },
     {
-        "merged": "C:\\Users\\John\\Documents\\CMPUT 301\\git\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\design_fab_background.xml",
-        "source": "C:\\Users\\John\\.android\\build-cache\\ea9ad18277e08e5bc72eecbd010bc7a8c12dbf7b\\output\\res\\drawable\\design_fab_background.xml"
+        "merged": "D:\\Habitizer-sadbranch\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\mr_button_connecting_light.xml",
+        "source": "C:\\Users\\Andoryu\\.android\\build-cache\\cbb61a5065c9c122e7651a1013ab5d2c4ecd81fd\\output\\res\\drawable\\mr_button_connecting_light.xml"
     },
     {
-        "merged": "D:\\school\\CMPUT 301\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_holo_dark.xml",
-        "source": "C:\\Users\\Sadman\\.android\\build-cache\\7791cc1ed7a29c2c812ace4b0530d4f9c2c1b23e\\output\\res\\drawable\\abc_list_selector_holo_dark.xml"
+        "merged": "D:\\Habitizer-sadbranch\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\mr_media_pause_light.xml",
+        "source": "C:\\Users\\Andoryu\\.android\\build-cache\\cbb61a5065c9c122e7651a1013ab5d2c4ecd81fd\\output\\res\\drawable\\mr_media_pause_light.xml"
     },
     {
-        "merged": "D:\\school\\CMPUT 301\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_item_background_holo_light.xml",
-        "source": "C:\\Users\\Sadman\\.android\\build-cache\\7791cc1ed7a29c2c812ace4b0530d4f9c2c1b23e\\output\\res\\drawable\\abc_item_background_holo_light.xml"
+        "merged": "D:\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_item_background_holo_light.xml",
+        "source": "C:\\Users\\Andoryu\\.android\\build-cache\\71a97fee7c3e8e072c375b08ec9301718058bb51\\output\\res\\drawable\\abc_item_background_holo_light.xml"
     },
     {
-        "merged": "C:\\Users\\John\\Documents\\CMPUT 301\\git\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ratingbar_material.xml",
-        "source": "C:\\Users\\John\\.android\\build-cache\\f203b6cfa7b2212cf461fe1ee4cba09dc9dea6b1\\output\\res\\drawable\\abc_ratingbar_material.xml"
+        "merged": "D:\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\mr_button_connecting_light.xml",
+        "source": "C:\\Users\\Andoryu\\.android\\build-cache\\cbb61a5065c9c122e7651a1013ab5d2c4ecd81fd\\output\\res\\drawable\\mr_button_connecting_light.xml"
     },
     {
-        "merged": "C:\\Users\\John\\Documents\\CMPUT 301\\git\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_textfield_search_material.xml",
-        "source": "C:\\Users\\John\\.android\\build-cache\\f203b6cfa7b2212cf461fe1ee4cba09dc9dea6b1\\output\\res\\drawable\\abc_textfield_search_material.xml"
+        "merged": "D:\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\mr_button_connected_light.xml",
+        "source": "C:\\Users\\Andoryu\\.android\\build-cache\\cbb61a5065c9c122e7651a1013ab5d2c4ecd81fd\\output\\res\\drawable\\mr_button_connected_light.xml"
     },
     {
-        "merged": "D:\\school\\CMPUT 301\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_default_mtrl_shape.xml",
-        "source": "C:\\Users\\Sadman\\.android\\build-cache\\7791cc1ed7a29c2c812ace4b0530d4f9c2c1b23e\\output\\res\\drawable\\abc_btn_default_mtrl_shape.xml"
+        "merged": "D:\\Habitizer-sadbranch\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\mr_dialog_material_background_light.xml",
+        "source": "C:\\Users\\Andoryu\\.android\\build-cache\\cbb61a5065c9c122e7651a1013ab5d2c4ecd81fd\\output\\res\\drawable\\mr_dialog_material_background_light.xml"
     },
     {
-        "merged": "D:\\school\\CMPUT 301\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_spinner_textfield_background_material.xml",
-        "source": "C:\\Users\\Sadman\\.android\\build-cache\\7791cc1ed7a29c2c812ace4b0530d4f9c2c1b23e\\output\\res\\drawable\\abc_spinner_textfield_background_material.xml"
+        "merged": "D:\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_menu_overflow_material.xml",
+        "source": "C:\\Users\\Andoryu\\.android\\build-cache\\71a97fee7c3e8e072c375b08ec9301718058bb51\\output\\res\\drawable\\abc_ic_menu_overflow_material.xml"
     },
     {
-        "merged": "C:\\Users\\cryst\\AndroidStudioProjects\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_check_material.xml",
-        "source": "C:\\Users\\cryst\\.android\\build-cache\\fce3adb7b0d30772b260f22ef18f2b0be48c3445\\output\\res\\drawable\\abc_btn_check_material.xml"
+        "merged": "D:\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_voice_search_api_material.xml",
+        "source": "C:\\Users\\Andoryu\\.android\\build-cache\\71a97fee7c3e8e072c375b08ec9301718058bb51\\output\\res\\drawable\\abc_ic_voice_search_api_material.xml"
     },
     {
-        "merged": "C:\\Users\\cryst\\AndroidStudioProjects\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_seekbar_tick_mark_material.xml",
-        "source": "C:\\Users\\cryst\\.android\\build-cache\\fce3adb7b0d30772b260f22ef18f2b0be48c3445\\output\\res\\drawable\\abc_seekbar_tick_mark_material.xml"
+        "merged": "D:\\Habitizer-sadbranch\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\mr_media_play_dark.xml",
+        "source": "C:\\Users\\Andoryu\\.android\\build-cache\\cbb61a5065c9c122e7651a1013ab5d2c4ecd81fd\\output\\res\\drawable\\mr_media_play_dark.xml"
     },
     {
-        "merged": "C:\\Users\\John\\Documents\\CMPUT 301\\git\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_radio_material.xml",
-        "source": "C:\\Users\\John\\.android\\build-cache\\f203b6cfa7b2212cf461fe1ee4cba09dc9dea6b1\\output\\res\\drawable\\abc_btn_radio_material.xml"
+        "merged": "D:\\Habitizer-sadbranch\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\mr_vol_type_audiotrack_light.xml",
+        "source": "C:\\Users\\Andoryu\\.android\\build-cache\\cbb61a5065c9c122e7651a1013ab5d2c4ecd81fd\\output\\res\\drawable\\mr_vol_type_audiotrack_light.xml"
     },
     {
-        "merged": "C:\\Users\\John\\Documents\\CMPUT 301\\git\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\notification_bg.xml",
-        "source": "C:\\Users\\John\\.android\\build-cache\\f203b6cfa7b2212cf461fe1ee4cba09dc9dea6b1\\output\\res\\drawable\\notification_bg.xml"
+        "merged": "D:\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_ab_back_material.xml",
+        "source": "C:\\Users\\Andoryu\\.android\\build-cache\\71a97fee7c3e8e072c375b08ec9301718058bb51\\output\\res\\drawable\\abc_ic_ab_back_material.xml"
     },
     {
-        "merged": "C:\\Users\\cryst\\AndroidStudioProjects\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_borderless_material.xml",
-        "source": "C:\\Users\\cryst\\.android\\build-cache\\fce3adb7b0d30772b260f22ef18f2b0be48c3445\\output\\res\\drawable\\abc_btn_borderless_material.xml"
+        "merged": "D:\\Habitizer-sadbranch\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\mr_media_pause_dark.xml",
+        "source": "C:\\Users\\Andoryu\\.android\\build-cache\\cbb61a5065c9c122e7651a1013ab5d2c4ecd81fd\\output\\res\\drawable\\mr_media_pause_dark.xml"
     },
     {
-        "merged": "C:\\Users\\John\\Documents\\CMPUT 301\\git\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_background_transition_holo_light.xml",
-        "source": "C:\\Users\\John\\.android\\build-cache\\f203b6cfa7b2212cf461fe1ee4cba09dc9dea6b1\\output\\res\\drawable\\abc_list_selector_background_transition_holo_light.xml"
+        "merged": "D:\\Habitizer-sadbranch\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\mr_dialog_material_background_dark.xml",
+        "source": "C:\\Users\\Andoryu\\.android\\build-cache\\cbb61a5065c9c122e7651a1013ab5d2c4ecd81fd\\output\\res\\drawable\\mr_dialog_material_background_dark.xml"
     },
     {
-        "merged": "D:\\school\\CMPUT 301\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_text_cursor_material.xml",
-        "source": "C:\\Users\\Sadman\\.android\\build-cache\\7791cc1ed7a29c2c812ace4b0530d4f9c2c1b23e\\output\\res\\drawable\\abc_text_cursor_material.xml"
+        "merged": "D:\\Habitizer-sadbranch\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_check_material.xml",
+        "source": "C:\\Users\\Andoryu\\.android\\build-cache\\71a97fee7c3e8e072c375b08ec9301718058bb51\\output\\res\\drawable\\abc_btn_check_material.xml"
     },
     {
-        "merged": "D:\\school\\CMPUT 301\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_voice_search_api_material.xml",
-        "source": "C:\\Users\\Sadman\\.android\\build-cache\\7791cc1ed7a29c2c812ace4b0530d4f9c2c1b23e\\output\\res\\drawable\\abc_ic_voice_search_api_material.xml"
+        "merged": "D:\\Habitizer-sadbranch\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\notification_icon_background.xml",
+        "source": "C:\\Users\\Andoryu\\.android\\build-cache\\71a97fee7c3e8e072c375b08ec9301718058bb51\\output\\res\\drawable\\notification_icon_background.xml"
     },
     {
-        "merged": "C:\\Users\\John\\Documents\\CMPUT 301\\git\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_seekbar_track_material.xml",
-        "source": "C:\\Users\\John\\.android\\build-cache\\f203b6cfa7b2212cf461fe1ee4cba09dc9dea6b1\\output\\res\\drawable\\abc_seekbar_track_material.xml"
+        "merged": "D:\\Habitizer-sadbranch\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\mr_dialog_close_dark.xml",
+        "source": "C:\\Users\\Andoryu\\.android\\build-cache\\cbb61a5065c9c122e7651a1013ab5d2c4ecd81fd\\output\\res\\drawable\\mr_dialog_close_dark.xml"
     },
     {
-        "merged": "D:\\school\\CMPUT 301\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_go_search_api_material.xml",
-        "source": "C:\\Users\\Sadman\\.android\\build-cache\\7791cc1ed7a29c2c812ace4b0530d4f9c2c1b23e\\output\\res\\drawable\\abc_ic_go_search_api_material.xml"
+        "merged": "D:\\Habitizer-sadbranch\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_background_transition_holo_light.xml",
+        "source": "C:\\Users\\Andoryu\\.android\\build-cache\\71a97fee7c3e8e072c375b08ec9301718058bb51\\output\\res\\drawable\\abc_list_selector_background_transition_holo_light.xml"
     },
     {
-        "merged": "C:\\Users\\John\\Documents\\CMPUT 301\\git\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\design_password_eye.xml",
-        "source": "C:\\Users\\John\\.android\\build-cache\\ea9ad18277e08e5bc72eecbd010bc7a8c12dbf7b\\output\\res\\drawable\\design_password_eye.xml"
+        "merged": "D:\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\cast_ic_expanded_controller_skip_previous.xml",
+        "source": "C:\\Users\\Andoryu\\.android\\build-cache\\d1d468c01183bd06ce235fc2324aa212baf2d8d1\\output\\res\\drawable\\cast_ic_expanded_controller_skip_previous.xml"
     },
     {
-        "merged": "D:\\school\\CMPUT 301\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\notification_icon_background.xml",
-        "source": "C:\\Users\\Sadman\\.android\\build-cache\\7791cc1ed7a29c2c812ace4b0530d4f9c2c1b23e\\output\\res\\drawable\\notification_icon_background.xml"
+        "merged": "D:\\Habitizer-sadbranch\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\cast_mini_controller_gradient_light.xml",
+        "source": "C:\\Users\\Andoryu\\.android\\build-cache\\d1d468c01183bd06ce235fc2324aa212baf2d8d1\\output\\res\\drawable\\cast_mini_controller_gradient_light.xml"
     },
     {
-        "merged": "C:\\Users\\cryst\\AndroidStudioProjects\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_holo_light.xml",
-        "source": "C:\\Users\\cryst\\.android\\build-cache\\fce3adb7b0d30772b260f22ef18f2b0be48c3445\\output\\res\\drawable\\abc_list_selector_holo_light.xml"
+        "merged": "D:\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\cast_expanded_controller_seekbar_track.xml",
+        "source": "C:\\Users\\Andoryu\\.android\\build-cache\\d1d468c01183bd06ce235fc2324aa212baf2d8d1\\output\\res\\drawable\\cast_expanded_controller_seekbar_track.xml"
     },
     {
-        "merged": "C:\\Users\\John\\Documents\\CMPUT 301\\git\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_check_material.xml",
-        "source": "C:\\Users\\John\\.android\\build-cache\\f203b6cfa7b2212cf461fe1ee4cba09dc9dea6b1\\output\\res\\drawable\\abc_btn_check_material.xml"
+        "merged": "D:\\Habitizer-sadbranch\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\common_google_signin_btn_text_light_focused.xml",
+        "source": "C:\\Users\\Andoryu\\.android\\build-cache\\cd589b5e61db6b57086578d337a0bb4d423f3378\\output\\res\\drawable\\common_google_signin_btn_text_light_focused.xml"
     },
     {
-        "merged": "D:\\school\\CMPUT 301\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_radio_material.xml",
-        "source": "C:\\Users\\Sadman\\.android\\build-cache\\7791cc1ed7a29c2c812ace4b0530d4f9c2c1b23e\\output\\res\\drawable\\abc_btn_radio_material.xml"
+        "merged": "D:\\Habitizer-sadbranch\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\cast_ic_mini_controller_forward30.xml",
+        "source": "C:\\Users\\Andoryu\\.android\\build-cache\\d1d468c01183bd06ce235fc2324aa212baf2d8d1\\output\\res\\drawable\\cast_ic_mini_controller_forward30.xml"
     },
     {
-        "merged": "C:\\Users\\John\\Documents\\CMPUT 301\\git\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_default_mtrl_shape.xml",
-        "source": "C:\\Users\\John\\.android\\build-cache\\f203b6cfa7b2212cf461fe1ee4cba09dc9dea6b1\\output\\res\\drawable\\abc_btn_default_mtrl_shape.xml"
+        "merged": "D:\\Habitizer-sadbranch\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\navigation_empty_icon.xml",
+        "source": "C:\\Users\\Andoryu\\.android\\build-cache\\d567faffe9c7a4a79f4535997169a87eacaed47b\\output\\res\\drawable\\navigation_empty_icon.xml"
     },
     {
-        "merged": "D:\\school\\CMPUT 301\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_item_background_holo_dark.xml",
-        "source": "C:\\Users\\Sadman\\.android\\build-cache\\7791cc1ed7a29c2c812ace4b0530d4f9c2c1b23e\\output\\res\\drawable\\abc_item_background_holo_dark.xml"
+        "merged": "D:\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\common_google_signin_btn_text_dark.xml",
+        "source": "C:\\Users\\Andoryu\\.android\\build-cache\\cd589b5e61db6b57086578d337a0bb4d423f3378\\output\\res\\drawable\\common_google_signin_btn_text_dark.xml"
     },
     {
-        "merged": "C:\\Users\\cryst\\AndroidStudioProjects\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_clear_material.xml",
-        "source": "C:\\Users\\cryst\\.android\\build-cache\\fce3adb7b0d30772b260f22ef18f2b0be48c3445\\output\\res\\drawable\\abc_ic_clear_material.xml"
+        "merged": "D:\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_switch_thumb_material.xml",
+        "source": "C:\\Users\\Andoryu\\.android\\build-cache\\71a97fee7c3e8e072c375b08ec9301718058bb51\\output\\res\\drawable\\abc_switch_thumb_material.xml"
     },
     {
-        "merged": "C:\\Users\\John\\Documents\\CMPUT 301\\git\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_spinner_textfield_background_material.xml",
-        "source": "C:\\Users\\John\\.android\\build-cache\\f203b6cfa7b2212cf461fe1ee4cba09dc9dea6b1\\output\\res\\drawable\\abc_spinner_textfield_background_material.xml"
+        "merged": "D:\\Habitizer-sadbranch\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\common_google_signin_btn_text_light.xml",
+        "source": "C:\\Users\\Andoryu\\.android\\build-cache\\cd589b5e61db6b57086578d337a0bb4d423f3378\\output\\res\\drawable\\common_google_signin_btn_text_light.xml"
     },
     {
-        "merged": "C:\\Users\\John\\Documents\\CMPUT 301\\git\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_cab_background_internal_bg.xml",
-        "source": "C:\\Users\\John\\.android\\build-cache\\f203b6cfa7b2212cf461fe1ee4cba09dc9dea6b1\\output\\res\\drawable\\abc_cab_background_internal_bg.xml"
+        "merged": "D:\\Habitizer-sadbranch\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ratingbar_small_material.xml",
+        "source": "C:\\Users\\Andoryu\\.android\\build-cache\\71a97fee7c3e8e072c375b08ec9301718058bb51\\output\\res\\drawable\\abc_ratingbar_small_material.xml"
     },
     {
-        "merged": "D:\\school\\CMPUT 301\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ratingbar_material.xml",
-        "source": "C:\\Users\\Sadman\\.android\\build-cache\\7791cc1ed7a29c2c812ace4b0530d4f9c2c1b23e\\output\\res\\drawable\\abc_ratingbar_material.xml"
+        "merged": "D:\\Habitizer-sadbranch\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\common_google_signin_btn_icon_dark_focused.xml",
+        "source": "C:\\Users\\Andoryu\\.android\\build-cache\\cd589b5e61db6b57086578d337a0bb4d423f3378\\output\\res\\drawable\\common_google_signin_btn_icon_dark_focused.xml"
     },
     {
-        "merged": "D:\\school\\CMPUT 301\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_seekbar_tick_mark_material.xml",
-        "source": "C:\\Users\\Sadman\\.android\\build-cache\\7791cc1ed7a29c2c812ace4b0530d4f9c2c1b23e\\output\\res\\drawable\\abc_seekbar_tick_mark_material.xml"
+        "merged": "D:\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\notification_bg.xml",
+        "source": "C:\\Users\\Andoryu\\.android\\build-cache\\71a97fee7c3e8e072c375b08ec9301718058bb51\\output\\res\\drawable\\notification_bg.xml"
     },
     {
-        "merged": "C:\\Users\\cryst\\AndroidStudioProjects\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\notification_bg_low.xml",
-        "source": "C:\\Users\\cryst\\.android\\build-cache\\fce3adb7b0d30772b260f22ef18f2b0be48c3445\\output\\res\\drawable\\notification_bg_low.xml"
+        "merged": "D:\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_spinner_textfield_background_material.xml",
+        "source": "C:\\Users\\Andoryu\\.android\\build-cache\\71a97fee7c3e8e072c375b08ec9301718058bb51\\output\\res\\drawable\\abc_spinner_textfield_background_material.xml"
     },
     {
-        "merged": "C:\\Users\\cryst\\AndroidStudioProjects\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\notification_bg.xml",
-        "source": "C:\\Users\\cryst\\.android\\build-cache\\fce3adb7b0d30772b260f22ef18f2b0be48c3445\\output\\res\\drawable\\notification_bg.xml"
+        "merged": "D:\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\cast_ic_notification_pause.xml",
+        "source": "C:\\Users\\Andoryu\\.android\\build-cache\\d1d468c01183bd06ce235fc2324aa212baf2d8d1\\output\\res\\drawable\\cast_ic_notification_pause.xml"
     },
     {
-        "merged": "D:\\school\\CMPUT 301\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_dialog_material_background.xml",
-        "source": "C:\\Users\\Sadman\\.android\\build-cache\\7791cc1ed7a29c2c812ace4b0530d4f9c2c1b23e\\output\\res\\drawable\\abc_dialog_material_background.xml"
+        "merged": "D:\\Habitizer-sadbranch\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_item_background_holo_dark.xml",
+        "source": "C:\\Users\\Andoryu\\.android\\build-cache\\71a97fee7c3e8e072c375b08ec9301718058bb51\\output\\res\\drawable\\abc_item_background_holo_dark.xml"
     },
     {
-        "merged": "D:\\school\\CMPUT 301\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_borderless_material.xml",
-        "source": "C:\\Users\\Sadman\\.android\\build-cache\\7791cc1ed7a29c2c812ace4b0530d4f9c2c1b23e\\output\\res\\drawable\\abc_btn_borderless_material.xml"
+        "merged": "D:\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\cast_ic_mini_controller_forward30.xml",
+        "source": "C:\\Users\\Andoryu\\.android\\build-cache\\d1d468c01183bd06ce235fc2324aa212baf2d8d1\\output\\res\\drawable\\cast_ic_mini_controller_forward30.xml"
     },
     {
-        "merged": "C:\\Users\\John\\Documents\\CMPUT 301\\git\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_item_background_holo_dark.xml",
-        "source": "C:\\Users\\John\\.android\\build-cache\\f203b6cfa7b2212cf461fe1ee4cba09dc9dea6b1\\output\\res\\drawable\\abc_item_background_holo_dark.xml"
+        "merged": "D:\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\cast_ic_mini_controller_mute.xml",
+        "source": "C:\\Users\\Andoryu\\.android\\build-cache\\d1d468c01183bd06ce235fc2324aa212baf2d8d1\\output\\res\\drawable\\cast_ic_mini_controller_mute.xml"
     },
     {
-        "merged": "C:\\Users\\cryst\\AndroidStudioProjects\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\notification_tile_bg.xml",
-        "source": "C:\\Users\\cryst\\.android\\build-cache\\fce3adb7b0d30772b260f22ef18f2b0be48c3445\\output\\res\\drawable\\notification_tile_bg.xml"
+        "merged": "D:\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\notification_bg_low.xml",
+        "source": "C:\\Users\\Andoryu\\.android\\build-cache\\71a97fee7c3e8e072c375b08ec9301718058bb51\\output\\res\\drawable\\notification_bg_low.xml"
     },
     {
-        "merged": "C:\\Users\\John\\Documents\\CMPUT 301\\git\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_arrow_drop_right_black_24dp.xml",
-        "source": "C:\\Users\\John\\.android\\build-cache\\f203b6cfa7b2212cf461fe1ee4cba09dc9dea6b1\\output\\res\\drawable\\abc_ic_arrow_drop_right_black_24dp.xml"
+        "merged": "D:\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\cast_ic_mini_controller_skip_prev.xml",
+        "source": "C:\\Users\\Andoryu\\.android\\build-cache\\d1d468c01183bd06ce235fc2324aa212baf2d8d1\\output\\res\\drawable\\cast_ic_mini_controller_skip_prev.xml"
     },
     {
-        "merged": "D:\\school\\CMPUT 301\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_background_transition_holo_dark.xml",
-        "source": "C:\\Users\\Sadman\\.android\\build-cache\\7791cc1ed7a29c2c812ace4b0530d4f9c2c1b23e\\output\\res\\drawable\\abc_list_selector_background_transition_holo_dark.xml"
+        "merged": "D:\\Habitizer-sadbranch\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\cast_ic_notification_rewind.xml",
+        "source": "C:\\Users\\Andoryu\\.android\\build-cache\\d1d468c01183bd06ce235fc2324aa212baf2d8d1\\output\\res\\drawable\\cast_ic_notification_rewind.xml"
     },
     {
-        "merged": "C:\\Users\\John\\Documents\\CMPUT 301\\git\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_background_transition_holo_dark.xml",
-        "source": "C:\\Users\\John\\.android\\build-cache\\f203b6cfa7b2212cf461fe1ee4cba09dc9dea6b1\\output\\res\\drawable\\abc_list_selector_background_transition_holo_dark.xml"
+        "merged": "D:\\Habitizer-sadbranch\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\mr_button_connected_light.xml",
+        "source": "C:\\Users\\Andoryu\\.android\\build-cache\\cbb61a5065c9c122e7651a1013ab5d2c4ecd81fd\\output\\res\\drawable\\mr_button_connected_light.xml"
     },
     {
-        "merged": "C:\\Users\\John\\Documents\\CMPUT 301\\git\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_tab_indicator_material.xml",
-        "source": "C:\\Users\\John\\.android\\build-cache\\f203b6cfa7b2212cf461fe1ee4cba09dc9dea6b1\\output\\res\\drawable\\abc_tab_indicator_material.xml"
+        "merged": "D:\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_cab_background_top_material.xml",
+        "source": "C:\\Users\\Andoryu\\.android\\build-cache\\71a97fee7c3e8e072c375b08ec9301718058bb51\\output\\res\\drawable\\abc_cab_background_top_material.xml"
     },
     {
-        "merged": "D:\\school\\CMPUT 301\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ratingbar_small_material.xml",
-        "source": "C:\\Users\\Sadman\\.android\\build-cache\\7791cc1ed7a29c2c812ace4b0530d4f9c2c1b23e\\output\\res\\drawable\\abc_ratingbar_small_material.xml"
+        "merged": "D:\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\design_fab_background.xml",
+        "source": "C:\\Users\\Andoryu\\.android\\build-cache\\d567faffe9c7a4a79f4535997169a87eacaed47b\\output\\res\\drawable\\design_fab_background.xml"
     },
     {
-        "merged": "D:\\school\\CMPUT 301\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_menu_overflow_material.xml",
-        "source": "C:\\Users\\Sadman\\.android\\build-cache\\7791cc1ed7a29c2c812ace4b0530d4f9c2c1b23e\\output\\res\\drawable\\abc_ic_menu_overflow_material.xml"
+        "merged": "D:\\Habitizer-sadbranch\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\cast_ic_notification_forward10.xml",
+        "source": "C:\\Users\\Andoryu\\.android\\build-cache\\d1d468c01183bd06ce235fc2324aa212baf2d8d1\\output\\res\\drawable\\cast_ic_notification_forward10.xml"
     },
     {
-        "merged": "C:\\Users\\cryst\\AndroidStudioProjects\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_go_search_api_material.xml",
-        "source": "C:\\Users\\cryst\\.android\\build-cache\\fce3adb7b0d30772b260f22ef18f2b0be48c3445\\output\\res\\drawable\\abc_ic_go_search_api_material.xml"
+        "merged": "D:\\Habitizer-sadbranch\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\cast_expanded_controller_seekbar_thumb.xml",
+        "source": "C:\\Users\\Andoryu\\.android\\build-cache\\d1d468c01183bd06ce235fc2324aa212baf2d8d1\\output\\res\\drawable\\cast_expanded_controller_seekbar_thumb.xml"
     },
     {
-        "merged": "C:\\Users\\cryst\\AndroidStudioProjects\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_item_background_holo_dark.xml",
-        "source": "C:\\Users\\cryst\\.android\\build-cache\\fce3adb7b0d30772b260f22ef18f2b0be48c3445\\output\\res\\drawable\\abc_item_background_holo_dark.xml"
+        "merged": "D:\\Habitizer-sadbranch\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\cast_ic_notification_rewind10.xml",
+        "source": "C:\\Users\\Andoryu\\.android\\build-cache\\d1d468c01183bd06ce235fc2324aa212baf2d8d1\\output\\res\\drawable\\cast_ic_notification_rewind10.xml"
     },
     {
-        "merged": "C:\\Users\\John\\Documents\\CMPUT 301\\git\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_item_background_holo_light.xml",
-        "source": "C:\\Users\\John\\.android\\build-cache\\f203b6cfa7b2212cf461fe1ee4cba09dc9dea6b1\\output\\res\\drawable\\abc_item_background_holo_light.xml"
+        "merged": "D:\\Habitizer-sadbranch\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_tab_indicator_material.xml",
+        "source": "C:\\Users\\Andoryu\\.android\\build-cache\\71a97fee7c3e8e072c375b08ec9301718058bb51\\output\\res\\drawable\\abc_tab_indicator_material.xml"
     },
     {
-        "merged": "C:\\Users\\cryst\\AndroidStudioProjects\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\navigation_empty_icon.xml",
-        "source": "C:\\Users\\cryst\\.android\\build-cache\\be05bf9c16458419eb7087291bd58a9ed060f4d3\\output\\res\\drawable\\navigation_empty_icon.xml"
+        "merged": "D:\\Habitizer-sadbranch\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\cast_skip_ad_label_border.xml",
+        "source": "C:\\Users\\Andoryu\\.android\\build-cache\\d1d468c01183bd06ce235fc2324aa212baf2d8d1\\output\\res\\drawable\\cast_skip_ad_label_border.xml"
     },
     {
-        "merged": "C:\\Users\\cryst\\AndroidStudioProjects\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ratingbar_indicator_material.xml",
-        "source": "C:\\Users\\cryst\\.android\\build-cache\\fce3adb7b0d30772b260f22ef18f2b0be48c3445\\output\\res\\drawable\\abc_ratingbar_indicator_material.xml"
+        "merged": "D:\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\notification_tile_bg.xml",
+        "source": "C:\\Users\\Andoryu\\.android\\build-cache\\71a97fee7c3e8e072c375b08ec9301718058bb51\\output\\res\\drawable\\notification_tile_bg.xml"
     },
     {
-        "merged": "C:\\Users\\cryst\\AndroidStudioProjects\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_edit_text_material.xml",
-        "source": "C:\\Users\\cryst\\.android\\build-cache\\fce3adb7b0d30772b260f22ef18f2b0be48c3445\\output\\res\\drawable\\abc_edit_text_material.xml"
+        "merged": "D:\\Habitizer-sadbranch\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_background_transition_holo_dark.xml",
+        "source": "C:\\Users\\Andoryu\\.android\\build-cache\\71a97fee7c3e8e072c375b08ec9301718058bb51\\output\\res\\drawable\\abc_list_selector_background_transition_holo_dark.xml"
     },
     {
-        "merged": "C:\\Users\\cryst\\AndroidStudioProjects\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_menu_overflow_material.xml",
-        "source": "C:\\Users\\cryst\\.android\\build-cache\\fce3adb7b0d30772b260f22ef18f2b0be48c3445\\output\\res\\drawable\\abc_ic_menu_overflow_material.xml"
+        "merged": "D:\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\mr_media_play_light.xml",
+        "source": "C:\\Users\\Andoryu\\.android\\build-cache\\cbb61a5065c9c122e7651a1013ab5d2c4ecd81fd\\output\\res\\drawable\\mr_media_play_light.xml"
     },
     {
-        "merged": "C:\\Users\\John\\Documents\\CMPUT 301\\git\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\notification_tile_bg.xml",
-        "source": "C:\\Users\\John\\.android\\build-cache\\f203b6cfa7b2212cf461fe1ee4cba09dc9dea6b1\\output\\res\\drawable\\notification_tile_bg.xml"
+        "merged": "D:\\Habitizer-sadbranch\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\cast_ic_mini_controller_skip_next.xml",
+        "source": "C:\\Users\\Andoryu\\.android\\build-cache\\d1d468c01183bd06ce235fc2324aa212baf2d8d1\\output\\res\\drawable\\cast_ic_mini_controller_skip_next.xml"
     },
     {
-        "merged": "C:\\Users\\cryst\\AndroidStudioProjects\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_colored_material.xml",
-        "source": "C:\\Users\\cryst\\.android\\build-cache\\fce3adb7b0d30772b260f22ef18f2b0be48c3445\\output\\res\\drawable\\abc_btn_colored_material.xml"
+        "merged": "D:\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\cast_mini_controller_gradient_light.xml",
+        "source": "C:\\Users\\Andoryu\\.android\\build-cache\\d1d468c01183bd06ce235fc2324aa212baf2d8d1\\output\\res\\drawable\\cast_mini_controller_gradient_light.xml"
     },
     {
-        "merged": "C:\\Users\\cryst\\AndroidStudioProjects\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_seekbar_track_material.xml",
-        "source": "C:\\Users\\cryst\\.android\\build-cache\\fce3adb7b0d30772b260f22ef18f2b0be48c3445\\output\\res\\drawable\\abc_seekbar_track_material.xml"
+        "merged": "D:\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\cast_ic_notification_stop_live_stream.xml",
+        "source": "C:\\Users\\Andoryu\\.android\\build-cache\\d1d468c01183bd06ce235fc2324aa212baf2d8d1\\output\\res\\drawable\\cast_ic_notification_stop_live_stream.xml"
     },
     {
-        "merged": "C:\\Users\\John\\Documents\\CMPUT 301\\git\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\notification_icon_background.xml",
-        "source": "C:\\Users\\John\\.android\\build-cache\\f203b6cfa7b2212cf461fe1ee4cba09dc9dea6b1\\output\\res\\drawable\\notification_icon_background.xml"
+        "merged": "D:\\Habitizer-sadbranch\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\common_google_signin_btn_icon_light.xml",
+        "source": "C:\\Users\\Andoryu\\.android\\build-cache\\cd589b5e61db6b57086578d337a0bb4d423f3378\\output\\res\\drawable\\common_google_signin_btn_icon_light.xml"
     },
     {
-        "merged": "C:\\Users\\John\\Documents\\CMPUT 301\\git\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_holo_light.xml",
-        "source": "C:\\Users\\John\\.android\\build-cache\\f203b6cfa7b2212cf461fe1ee4cba09dc9dea6b1\\output\\res\\drawable\\abc_list_selector_holo_light.xml"
+        "merged": "D:\\Habitizer-sadbranch\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\cast_ic_mini_controller_stop_large.xml",
+        "source": "C:\\Users\\Andoryu\\.android\\build-cache\\d1d468c01183bd06ce235fc2324aa212baf2d8d1\\output\\res\\drawable\\cast_ic_mini_controller_stop_large.xml"
     },
     {
-        "merged": "C:\\Users\\John\\Documents\\CMPUT 301\\git\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_go_search_api_material.xml",
-        "source": "C:\\Users\\John\\.android\\build-cache\\f203b6cfa7b2212cf461fe1ee4cba09dc9dea6b1\\output\\res\\drawable\\abc_ic_go_search_api_material.xml"
+        "merged": "D:\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\cast_ic_expanded_controller_play.xml",
+        "source": "C:\\Users\\Andoryu\\.android\\build-cache\\d1d468c01183bd06ce235fc2324aa212baf2d8d1\\output\\res\\drawable\\cast_ic_expanded_controller_play.xml"
     },
     {
-        "merged": "C:\\Users\\John\\Documents\\CMPUT 301\\git\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\design_bottom_navigation_item_background.xml",
-        "source": "C:\\Users\\John\\.android\\build-cache\\ea9ad18277e08e5bc72eecbd010bc7a8c12dbf7b\\output\\res\\drawable\\design_bottom_navigation_item_background.xml"
+        "merged": "D:\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_go_search_api_material.xml",
+        "source": "C:\\Users\\Andoryu\\.android\\build-cache\\71a97fee7c3e8e072c375b08ec9301718058bb51\\output\\res\\drawable\\abc_ic_go_search_api_material.xml"
     },
     {
-        "merged": "D:\\school\\CMPUT 301\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\notification_tile_bg.xml",
-        "source": "C:\\Users\\Sadman\\.android\\build-cache\\7791cc1ed7a29c2c812ace4b0530d4f9c2c1b23e\\output\\res\\drawable\\notification_tile_bg.xml"
+        "merged": "D:\\Habitizer-sadbranch\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_default_mtrl_shape.xml",
+        "source": "C:\\Users\\Andoryu\\.android\\build-cache\\71a97fee7c3e8e072c375b08ec9301718058bb51\\output\\res\\drawable\\abc_btn_default_mtrl_shape.xml"
     },
     {
-        "merged": "C:\\Users\\cryst\\AndroidStudioProjects\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\design_bottom_navigation_item_background.xml",
-        "source": "C:\\Users\\cryst\\.android\\build-cache\\be05bf9c16458419eb7087291bd58a9ed060f4d3\\output\\res\\drawable\\design_bottom_navigation_item_background.xml"
+        "merged": "D:\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_arrow_drop_right_black_24dp.xml",
+        "source": "C:\\Users\\Andoryu\\.android\\build-cache\\71a97fee7c3e8e072c375b08ec9301718058bb51\\output\\res\\drawable\\abc_ic_arrow_drop_right_black_24dp.xml"
     },
     {
-        "merged": "C:\\Users\\John\\Documents\\CMPUT 301\\git\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\notification_bg_low.xml",
-        "source": "C:\\Users\\John\\.android\\build-cache\\f203b6cfa7b2212cf461fe1ee4cba09dc9dea6b1\\output\\res\\drawable\\notification_bg_low.xml"
+        "merged": "D:\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\common_google_signin_btn_text_dark_focused.xml",
+        "source": "C:\\Users\\Andoryu\\.android\\build-cache\\cd589b5e61db6b57086578d337a0bb4d423f3378\\output\\res\\drawable\\common_google_signin_btn_text_dark_focused.xml"
     },
     {
-        "merged": "D:\\school\\CMPUT 301\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\notification_bg_low.xml",
-        "source": "C:\\Users\\Sadman\\.android\\build-cache\\7791cc1ed7a29c2c812ace4b0530d4f9c2c1b23e\\output\\res\\drawable\\notification_bg_low.xml"
+        "merged": "D:\\Habitizer-sadbranch\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\cast_ic_notification_skip_next.xml",
+        "source": "C:\\Users\\Andoryu\\.android\\build-cache\\d1d468c01183bd06ce235fc2324aa212baf2d8d1\\output\\res\\drawable\\cast_ic_notification_skip_next.xml"
     },
     {
-        "merged": "C:\\Users\\cryst\\AndroidStudioProjects\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_default_mtrl_shape.xml",
-        "source": "C:\\Users\\cryst\\.android\\build-cache\\fce3adb7b0d30772b260f22ef18f2b0be48c3445\\output\\res\\drawable\\abc_btn_default_mtrl_shape.xml"
+        "merged": "D:\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\common_google_signin_btn_text_light_normal.xml",
+        "source": "C:\\Users\\Andoryu\\.android\\build-cache\\cd589b5e61db6b57086578d337a0bb4d423f3378\\output\\res\\drawable\\common_google_signin_btn_text_light_normal.xml"
     },
     {
-        "merged": "D:\\school\\CMPUT 301\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_clear_material.xml",
-        "source": "C:\\Users\\Sadman\\.android\\build-cache\\7791cc1ed7a29c2c812ace4b0530d4f9c2c1b23e\\output\\res\\drawable\\abc_ic_clear_material.xml"
+        "merged": "D:\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\common_google_signin_btn_icon_disabled.xml",
+        "source": "C:\\Users\\Andoryu\\.android\\build-cache\\cd589b5e61db6b57086578d337a0bb4d423f3378\\output\\res\\drawable\\common_google_signin_btn_icon_disabled.xml"
     },
     {
-        "merged": "C:\\Users\\John\\Documents\\CMPUT 301\\git\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ratingbar_small_material.xml",
-        "source": "C:\\Users\\John\\.android\\build-cache\\f203b6cfa7b2212cf461fe1ee4cba09dc9dea6b1\\output\\res\\drawable\\abc_ratingbar_small_material.xml"
+        "merged": "D:\\Habitizer-sadbranch\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_vector_test.xml",
+        "source": "C:\\Users\\Andoryu\\.android\\build-cache\\71a97fee7c3e8e072c375b08ec9301718058bb51\\output\\res\\drawable\\abc_vector_test.xml"
     },
     {
-        "merged": "D:\\school\\CMPUT 301\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_seekbar_track_material.xml",
-        "source": "C:\\Users\\Sadman\\.android\\build-cache\\7791cc1ed7a29c2c812ace4b0530d4f9c2c1b23e\\output\\res\\drawable\\abc_seekbar_track_material.xml"
+        "merged": "D:\\Habitizer-sadbranch\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\cast_ic_notification_forward30.xml",
+        "source": "C:\\Users\\Andoryu\\.android\\build-cache\\d1d468c01183bd06ce235fc2324aa212baf2d8d1\\output\\res\\drawable\\cast_ic_notification_forward30.xml"
     },
     {
-        "merged": "D:\\school\\CMPUT 301\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_ab_back_material.xml",
-        "source": "C:\\Users\\Sadman\\.android\\build-cache\\7791cc1ed7a29c2c812ace4b0530d4f9c2c1b23e\\output\\res\\drawable\\abc_ic_ab_back_material.xml"
+        "merged": "D:\\Habitizer-sadbranch\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\cast_ic_notification_skip_prev.xml",
+        "source": "C:\\Users\\Andoryu\\.android\\build-cache\\d1d468c01183bd06ce235fc2324aa212baf2d8d1\\output\\res\\drawable\\cast_ic_notification_skip_prev.xml"
     },
     {
-        "merged": "D:\\school\\CMPUT 301\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_edit_text_material.xml",
-        "source": "C:\\Users\\Sadman\\.android\\build-cache\\7791cc1ed7a29c2c812ace4b0530d4f9c2c1b23e\\output\\res\\drawable\\abc_edit_text_material.xml"
+        "merged": "D:\\Habitizer-sadbranch\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\cast_ic_mini_controller_skip_prev.xml",
+        "source": "C:\\Users\\Andoryu\\.android\\build-cache\\d1d468c01183bd06ce235fc2324aa212baf2d8d1\\output\\res\\drawable\\cast_ic_mini_controller_skip_prev.xml"
     },
     {
-        "merged": "C:\\Users\\John\\Documents\\CMPUT 301\\git\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_edit_text_material.xml",
-        "source": "C:\\Users\\John\\.android\\build-cache\\f203b6cfa7b2212cf461fe1ee4cba09dc9dea6b1\\output\\res\\drawable\\abc_edit_text_material.xml"
+        "merged": "D:\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_check_material.xml",
+        "source": "C:\\Users\\Andoryu\\.android\\build-cache\\71a97fee7c3e8e072c375b08ec9301718058bb51\\output\\res\\drawable\\abc_btn_check_material.xml"
     },
     {
-        "merged": "C:\\Users\\John\\Documents\\CMPUT 301\\git\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\navigation_empty_icon.xml",
-        "source": "C:\\Users\\John\\.android\\build-cache\\ea9ad18277e08e5bc72eecbd010bc7a8c12dbf7b\\output\\res\\drawable\\navigation_empty_icon.xml"
+        "merged": "D:\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\mr_vol_type_audiotrack_light.xml",
+        "source": "C:\\Users\\Andoryu\\.android\\build-cache\\cbb61a5065c9c122e7651a1013ab5d2c4ecd81fd\\output\\res\\drawable\\mr_vol_type_audiotrack_light.xml"
     },
     {
-        "merged": "C:\\Users\\cryst\\AndroidStudioProjects\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_background_transition_holo_dark.xml",
-        "source": "C:\\Users\\cryst\\.android\\build-cache\\fce3adb7b0d30772b260f22ef18f2b0be48c3445\\output\\res\\drawable\\abc_list_selector_background_transition_holo_dark.xml"
+        "merged": "D:\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\cast_ic_notification_forward.xml",
+        "source": "C:\\Users\\Andoryu\\.android\\build-cache\\d1d468c01183bd06ce235fc2324aa212baf2d8d1\\output\\res\\drawable\\cast_ic_notification_forward.xml"
     },
     {
-        "merged": "C:\\Users\\John\\Documents\\CMPUT 301\\git\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_holo_dark.xml",
-        "source": "C:\\Users\\John\\.android\\build-cache\\f203b6cfa7b2212cf461fe1ee4cba09dc9dea6b1\\output\\res\\drawable\\abc_list_selector_holo_dark.xml"
+        "merged": "D:\\Habitizer-sadbranch\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\cast_ic_notification_play.xml",
+        "source": "C:\\Users\\Andoryu\\.android\\build-cache\\d1d468c01183bd06ce235fc2324aa212baf2d8d1\\output\\res\\drawable\\cast_ic_notification_play.xml"
     },
     {
-        "merged": "C:\\Users\\John\\Documents\\CMPUT 301\\git\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_search_api_material.xml",
-        "source": "C:\\Users\\John\\.android\\build-cache\\f203b6cfa7b2212cf461fe1ee4cba09dc9dea6b1\\output\\res\\drawable\\abc_ic_search_api_material.xml"
+        "merged": "D:\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\mr_button_connected_dark.xml",
+        "source": "C:\\Users\\Andoryu\\.android\\build-cache\\cbb61a5065c9c122e7651a1013ab5d2c4ecd81fd\\output\\res\\drawable\\mr_button_connected_dark.xml"
     },
     {
-        "merged": "D:\\school\\CMPUT 301\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_textfield_search_material.xml",
-        "source": "C:\\Users\\Sadman\\.android\\build-cache\\7791cc1ed7a29c2c812ace4b0530d4f9c2c1b23e\\output\\res\\drawable\\abc_textfield_search_material.xml"
+        "merged": "D:\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_seekbar_tick_mark_material.xml",
+        "source": "C:\\Users\\Andoryu\\.android\\build-cache\\71a97fee7c3e8e072c375b08ec9301718058bb51\\output\\res\\drawable\\abc_seekbar_tick_mark_material.xml"
     },
     {
-        "merged": "C:\\Users\\cryst\\AndroidStudioProjects\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_switch_thumb_material.xml",
-        "source": "C:\\Users\\cryst\\.android\\build-cache\\fce3adb7b0d30772b260f22ef18f2b0be48c3445\\output\\res\\drawable\\abc_switch_thumb_material.xml"
+        "merged": "D:\\Habitizer-sadbranch\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\cast_ic_expanded_controller_rewind30.xml",
+        "source": "C:\\Users\\Andoryu\\.android\\build-cache\\d1d468c01183bd06ce235fc2324aa212baf2d8d1\\output\\res\\drawable\\cast_ic_expanded_controller_rewind30.xml"
     },
     {
-        "merged": "C:\\Users\\cryst\\AndroidStudioProjects\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_ab_back_material.xml",
-        "source": "C:\\Users\\cryst\\.android\\build-cache\\fce3adb7b0d30772b260f22ef18f2b0be48c3445\\output\\res\\drawable\\abc_ic_ab_back_material.xml"
+        "merged": "D:\\Habitizer-sadbranch\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\cast_ic_notification_stop_live_stream.xml",
+        "source": "C:\\Users\\Andoryu\\.android\\build-cache\\d1d468c01183bd06ce235fc2324aa212baf2d8d1\\output\\res\\drawable\\cast_ic_notification_stop_live_stream.xml"
     },
     {
-        "merged": "D:\\school\\CMPUT 301\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_vector_test.xml",
-        "source": "C:\\Users\\Sadman\\.android\\build-cache\\7791cc1ed7a29c2c812ace4b0530d4f9c2c1b23e\\output\\res\\drawable\\abc_vector_test.xml"
+        "merged": "D:\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\cast_ic_expanded_controller_skip_next.xml",
+        "source": "C:\\Users\\Andoryu\\.android\\build-cache\\d1d468c01183bd06ce235fc2324aa212baf2d8d1\\output\\res\\drawable\\cast_ic_expanded_controller_skip_next.xml"
     },
     {
-        "merged": "D:\\school\\CMPUT 301\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_background_transition_holo_light.xml",
-        "source": "C:\\Users\\Sadman\\.android\\build-cache\\7791cc1ed7a29c2c812ace4b0530d4f9c2c1b23e\\output\\res\\drawable\\abc_list_selector_background_transition_holo_light.xml"
+        "merged": "D:\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_dialog_material_background.xml",
+        "source": "C:\\Users\\Andoryu\\.android\\build-cache\\71a97fee7c3e8e072c375b08ec9301718058bb51\\output\\res\\drawable\\abc_dialog_material_background.xml"
     },
     {
-        "merged": "C:\\Users\\cryst\\AndroidStudioProjects\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_textfield_search_material.xml",
-        "source": "C:\\Users\\cryst\\.android\\build-cache\\fce3adb7b0d30772b260f22ef18f2b0be48c3445\\output\\res\\drawable\\abc_textfield_search_material.xml"
+        "merged": "D:\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\days_border.xml",
+        "source": "D:\\Habitizer\\app\\src\\main\\res\\drawable\\days_border.xml"
     },
     {
-        "merged": "C:\\Users\\John\\Documents\\CMPUT 301\\git\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_seekbar_thumb_material.xml",
-        "source": "C:\\Users\\John\\.android\\build-cache\\f203b6cfa7b2212cf461fe1ee4cba09dc9dea6b1\\output\\res\\drawable\\abc_seekbar_thumb_material.xml"
+        "merged": "D:\\Habitizer-sadbranch\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\cast_ic_notification_rewind30.xml",
+        "source": "C:\\Users\\Andoryu\\.android\\build-cache\\d1d468c01183bd06ce235fc2324aa212baf2d8d1\\output\\res\\drawable\\cast_ic_notification_rewind30.xml"
     },
     {
-        "merged": "D:\\school\\CMPUT 301\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\notification_bg.xml",
-        "source": "C:\\Users\\Sadman\\.android\\build-cache\\7791cc1ed7a29c2c812ace4b0530d4f9c2c1b23e\\output\\res\\drawable\\notification_bg.xml"
+        "merged": "D:\\Habitizer-sadbranch\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_dialog_material_background.xml",
+        "source": "C:\\Users\\Andoryu\\.android\\build-cache\\71a97fee7c3e8e072c375b08ec9301718058bb51\\output\\res\\drawable\\abc_dialog_material_background.xml"
     },
     {
-        "merged": "C:\\Users\\cryst\\AndroidStudioProjects\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_cab_background_top_material.xml",
-        "source": "C:\\Users\\cryst\\.android\\build-cache\\fce3adb7b0d30772b260f22ef18f2b0be48c3445\\output\\res\\drawable\\abc_cab_background_top_material.xml"
+        "merged": "D:\\Habitizer-sadbranch\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\days_border.xml",
+        "source": "D:\\Habitizer-sadbranch\\app\\src\\main\\res\\drawable\\days_border.xml"
     },
     {
-        "merged": "C:\\Users\\cryst\\AndroidStudioProjects\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_background_transition_holo_light.xml",
-        "source": "C:\\Users\\cryst\\.android\\build-cache\\fce3adb7b0d30772b260f22ef18f2b0be48c3445\\output\\res\\drawable\\abc_list_selector_background_transition_holo_light.xml"
+        "merged": "D:\\Habitizer-sadbranch\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\cast_ic_expanded_controller_mute.xml",
+        "source": "C:\\Users\\Andoryu\\.android\\build-cache\\d1d468c01183bd06ce235fc2324aa212baf2d8d1\\output\\res\\drawable\\cast_ic_expanded_controller_mute.xml"
     },
     {
-        "merged": "C:\\Users\\cryst\\AndroidStudioProjects\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_text_cursor_material.xml",
-        "source": "C:\\Users\\cryst\\.android\\build-cache\\fce3adb7b0d30772b260f22ef18f2b0be48c3445\\output\\res\\drawable\\abc_text_cursor_material.xml"
+        "merged": "D:\\Habitizer-sadbranch\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ratingbar_material.xml",
+        "source": "C:\\Users\\Andoryu\\.android\\build-cache\\71a97fee7c3e8e072c375b08ec9301718058bb51\\output\\res\\drawable\\abc_ratingbar_material.xml"
     },
     {
-        "merged": "D:\\school\\CMPUT 301\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\design_snackbar_background.xml",
-        "source": "C:\\Users\\Sadman\\.android\\build-cache\\1f43954577a446aa44799bcf7dd607cc0cac21fb\\output\\res\\drawable\\design_snackbar_background.xml"
+        "merged": "D:\\Habitizer-sadbranch\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\mr_group_expand.xml",
+        "source": "C:\\Users\\Andoryu\\.android\\build-cache\\cbb61a5065c9c122e7651a1013ab5d2c4ecd81fd\\output\\res\\drawable\\mr_group_expand.xml"
+    },
+    {
+        "merged": "D:\\Habitizer-sadbranch\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_textfield_search_material.xml",
+        "source": "C:\\Users\\Andoryu\\.android\\build-cache\\71a97fee7c3e8e072c375b08ec9301718058bb51\\output\\res\\drawable\\abc_textfield_search_material.xml"
+    },
+    {
+        "merged": "D:\\Habitizer-sadbranch\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\cast_ic_mini_controller_stop.xml",
+        "source": "C:\\Users\\Andoryu\\.android\\build-cache\\d1d468c01183bd06ce235fc2324aa212baf2d8d1\\output\\res\\drawable\\cast_ic_mini_controller_stop.xml"
+    },
+    {
+        "merged": "D:\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\common_google_signin_btn_text_light_focused.xml",
+        "source": "C:\\Users\\Andoryu\\.android\\build-cache\\cd589b5e61db6b57086578d337a0bb4d423f3378\\output\\res\\drawable\\common_google_signin_btn_text_light_focused.xml"
+    },
+    {
+        "merged": "D:\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\mr_dialog_close_dark.xml",
+        "source": "C:\\Users\\Andoryu\\.android\\build-cache\\cbb61a5065c9c122e7651a1013ab5d2c4ecd81fd\\output\\res\\drawable\\mr_dialog_close_dark.xml"
+    },
+    {
+        "merged": "D:\\Habitizer-sadbranch\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\cast_ic_mini_controller_pause.xml",
+        "source": "C:\\Users\\Andoryu\\.android\\build-cache\\d1d468c01183bd06ce235fc2324aa212baf2d8d1\\output\\res\\drawable\\cast_ic_mini_controller_pause.xml"
+    },
+    {
+        "merged": "D:\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\cast_ic_mini_controller_skip_next.xml",
+        "source": "C:\\Users\\Andoryu\\.android\\build-cache\\d1d468c01183bd06ce235fc2324aa212baf2d8d1\\output\\res\\drawable\\cast_ic_mini_controller_skip_next.xml"
+    },
+    {
+        "merged": "D:\\Habitizer-sadbranch\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\mr_dialog_close_light.xml",
+        "source": "C:\\Users\\Andoryu\\.android\\build-cache\\cbb61a5065c9c122e7651a1013ab5d2c4ecd81fd\\output\\res\\drawable\\mr_dialog_close_light.xml"
+    },
+    {
+        "merged": "D:\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\cast_mini_controller_progress_drawable.xml",
+        "source": "C:\\Users\\Andoryu\\.android\\build-cache\\d1d468c01183bd06ce235fc2324aa212baf2d8d1\\output\\res\\drawable\\cast_mini_controller_progress_drawable.xml"
+    },
+    {
+        "merged": "D:\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_tab_indicator_material.xml",
+        "source": "C:\\Users\\Andoryu\\.android\\build-cache\\71a97fee7c3e8e072c375b08ec9301718058bb51\\output\\res\\drawable\\abc_tab_indicator_material.xml"
+    },
+    {
+        "merged": "D:\\Habitizer-sadbranch\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\common_google_signin_btn_text_disabled.xml",
+        "source": "C:\\Users\\Andoryu\\.android\\build-cache\\cd589b5e61db6b57086578d337a0bb4d423f3378\\output\\res\\drawable\\common_google_signin_btn_text_disabled.xml"
+    },
+    {
+        "merged": "D:\\Habitizer-sadbranch\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_holo_light.xml",
+        "source": "C:\\Users\\Andoryu\\.android\\build-cache\\71a97fee7c3e8e072c375b08ec9301718058bb51\\output\\res\\drawable\\abc_list_selector_holo_light.xml"
+    },
+    {
+        "merged": "D:\\Habitizer-sadbranch\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\mr_button_dark.xml",
+        "source": "C:\\Users\\Andoryu\\.android\\build-cache\\cbb61a5065c9c122e7651a1013ab5d2c4ecd81fd\\output\\res\\drawable\\mr_button_dark.xml"
+    },
+    {
+        "merged": "D:\\Habitizer-sadbranch\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_ab_back_material.xml",
+        "source": "C:\\Users\\Andoryu\\.android\\build-cache\\71a97fee7c3e8e072c375b08ec9301718058bb51\\output\\res\\drawable\\abc_ic_ab_back_material.xml"
+    },
+    {
+        "merged": "D:\\Habitizer-sadbranch\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_seekbar_tick_mark_material.xml",
+        "source": "C:\\Users\\Andoryu\\.android\\build-cache\\71a97fee7c3e8e072c375b08ec9301718058bb51\\output\\res\\drawable\\abc_seekbar_tick_mark_material.xml"
+    },
+    {
+        "merged": "D:\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\cast_ic_mini_controller_closed_caption.xml",
+        "source": "C:\\Users\\Andoryu\\.android\\build-cache\\d1d468c01183bd06ce235fc2324aa212baf2d8d1\\output\\res\\drawable\\cast_ic_mini_controller_closed_caption.xml"
+    },
+    {
+        "merged": "D:\\Habitizer-sadbranch\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\cast_ic_notification_disconnect.xml",
+        "source": "C:\\Users\\Andoryu\\.android\\build-cache\\d1d468c01183bd06ce235fc2324aa212baf2d8d1\\output\\res\\drawable\\cast_ic_notification_disconnect.xml"
+    },
+    {
+        "merged": "D:\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\cast_ic_notification_skip_prev.xml",
+        "source": "C:\\Users\\Andoryu\\.android\\build-cache\\d1d468c01183bd06ce235fc2324aa212baf2d8d1\\output\\res\\drawable\\cast_ic_notification_skip_prev.xml"
+    },
+    {
+        "merged": "D:\\Habitizer-sadbranch\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_menu_overflow_material.xml",
+        "source": "C:\\Users\\Andoryu\\.android\\build-cache\\71a97fee7c3e8e072c375b08ec9301718058bb51\\output\\res\\drawable\\abc_ic_menu_overflow_material.xml"
+    },
+    {
+        "merged": "D:\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\mr_dialog_close_light.xml",
+        "source": "C:\\Users\\Andoryu\\.android\\build-cache\\cbb61a5065c9c122e7651a1013ab5d2c4ecd81fd\\output\\res\\drawable\\mr_dialog_close_light.xml"
+    },
+    {
+        "merged": "D:\\Habitizer-sadbranch\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\mr_button_light.xml",
+        "source": "C:\\Users\\Andoryu\\.android\\build-cache\\cbb61a5065c9c122e7651a1013ab5d2c4ecd81fd\\output\\res\\drawable\\mr_button_light.xml"
+    },
+    {
+        "merged": "D:\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_holo_dark.xml",
+        "source": "C:\\Users\\Andoryu\\.android\\build-cache\\71a97fee7c3e8e072c375b08ec9301718058bb51\\output\\res\\drawable\\abc_list_selector_holo_dark.xml"
+    },
+    {
+        "merged": "D:\\Habitizer-sadbranch\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\mr_button_connected_dark.xml",
+        "source": "C:\\Users\\Andoryu\\.android\\build-cache\\cbb61a5065c9c122e7651a1013ab5d2c4ecd81fd\\output\\res\\drawable\\mr_button_connected_dark.xml"
+    },
+    {
+        "merged": "D:\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\mr_vol_type_audiotrack_dark.xml",
+        "source": "C:\\Users\\Andoryu\\.android\\build-cache\\cbb61a5065c9c122e7651a1013ab5d2c4ecd81fd\\output\\res\\drawable\\mr_vol_type_audiotrack_dark.xml"
+    },
+    {
+        "merged": "D:\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\cast_expanded_controller_seekbar_thumb.xml",
+        "source": "C:\\Users\\Andoryu\\.android\\build-cache\\d1d468c01183bd06ce235fc2324aa212baf2d8d1\\output\\res\\drawable\\cast_expanded_controller_seekbar_thumb.xml"
+    },
+    {
+        "merged": "D:\\Habitizer-sadbranch\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_text_cursor_material.xml",
+        "source": "C:\\Users\\Andoryu\\.android\\build-cache\\71a97fee7c3e8e072c375b08ec9301718058bb51\\output\\res\\drawable\\abc_text_cursor_material.xml"
+    },
+    {
+        "merged": "D:\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_text_cursor_material.xml",
+        "source": "C:\\Users\\Andoryu\\.android\\build-cache\\71a97fee7c3e8e072c375b08ec9301718058bb51\\output\\res\\drawable\\abc_text_cursor_material.xml"
+    },
+    {
+        "merged": "D:\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\cast_ic_notification_forward10.xml",
+        "source": "C:\\Users\\Andoryu\\.android\\build-cache\\d1d468c01183bd06ce235fc2324aa212baf2d8d1\\output\\res\\drawable\\cast_ic_notification_forward10.xml"
+    },
+    {
+        "merged": "D:\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\cast_ic_notification_small_icon.xml",
+        "source": "C:\\Users\\Andoryu\\.android\\build-cache\\d1d468c01183bd06ce235fc2324aa212baf2d8d1\\output\\res\\drawable\\cast_ic_notification_small_icon.xml"
+    },
+    {
+        "merged": "D:\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\common_google_signin_btn_icon_dark_normal.xml",
+        "source": "C:\\Users\\Andoryu\\.android\\build-cache\\cd589b5e61db6b57086578d337a0bb4d423f3378\\output\\res\\drawable\\common_google_signin_btn_icon_dark_normal.xml"
+    },
+    {
+        "merged": "D:\\Habitizer-sadbranch\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\cast_ic_notification_pause.xml",
+        "source": "C:\\Users\\Andoryu\\.android\\build-cache\\d1d468c01183bd06ce235fc2324aa212baf2d8d1\\output\\res\\drawable\\cast_ic_notification_pause.xml"
+    },
+    {
+        "merged": "D:\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\cast_ic_mini_controller_play.xml",
+        "source": "C:\\Users\\Andoryu\\.android\\build-cache\\d1d468c01183bd06ce235fc2324aa212baf2d8d1\\output\\res\\drawable\\cast_ic_mini_controller_play.xml"
+    },
+    {
+        "merged": "D:\\Habitizer-sadbranch\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\cast_ic_expanded_controller_stop.xml",
+        "source": "C:\\Users\\Andoryu\\.android\\build-cache\\d1d468c01183bd06ce235fc2324aa212baf2d8d1\\output\\res\\drawable\\cast_ic_expanded_controller_stop.xml"
+    },
+    {
+        "merged": "D:\\Habitizer-sadbranch\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\common_google_signin_btn_text_dark.xml",
+        "source": "C:\\Users\\Andoryu\\.android\\build-cache\\cd589b5e61db6b57086578d337a0bb4d423f3378\\output\\res\\drawable\\common_google_signin_btn_text_dark.xml"
+    },
+    {
+        "merged": "D:\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\cast_ic_mini_controller_pause_large.xml",
+        "source": "C:\\Users\\Andoryu\\.android\\build-cache\\d1d468c01183bd06ce235fc2324aa212baf2d8d1\\output\\res\\drawable\\cast_ic_mini_controller_pause_large.xml"
+    },
+    {
+        "merged": "D:\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\mr_media_play_dark.xml",
+        "source": "C:\\Users\\Andoryu\\.android\\build-cache\\cbb61a5065c9c122e7651a1013ab5d2c4ecd81fd\\output\\res\\drawable\\mr_media_play_dark.xml"
+    },
+    {
+        "merged": "D:\\Habitizer-sadbranch\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\cast_ic_mini_controller_mute.xml",
+        "source": "C:\\Users\\Andoryu\\.android\\build-cache\\d1d468c01183bd06ce235fc2324aa212baf2d8d1\\output\\res\\drawable\\cast_ic_mini_controller_mute.xml"
+    },
+    {
+        "merged": "D:\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\cast_expanded_controller_actionbar_bg_gradient_light.xml",
+        "source": "C:\\Users\\Andoryu\\.android\\build-cache\\d1d468c01183bd06ce235fc2324aa212baf2d8d1\\output\\res\\drawable\\cast_expanded_controller_actionbar_bg_gradient_light.xml"
+    },
+    {
+        "merged": "D:\\Habitizer-sadbranch\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\mr_media_play_light.xml",
+        "source": "C:\\Users\\Andoryu\\.android\\build-cache\\cbb61a5065c9c122e7651a1013ab5d2c4ecd81fd\\output\\res\\drawable\\mr_media_play_light.xml"
+    },
+    {
+        "merged": "D:\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\cast_ic_notification_connecting.xml",
+        "source": "C:\\Users\\Andoryu\\.android\\build-cache\\c2ca6b1c4009ee818bc93406d9ccf56244920c4e\\output\\res\\drawable\\cast_ic_notification_connecting.xml"
+    },
+    {
+        "merged": "D:\\Habitizer-sadbranch\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_switch_thumb_material.xml",
+        "source": "C:\\Users\\Andoryu\\.android\\build-cache\\71a97fee7c3e8e072c375b08ec9301718058bb51\\output\\res\\drawable\\abc_switch_thumb_material.xml"
+    },
+    {
+        "merged": "D:\\Habitizer-sadbranch\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\design_snackbar_background.xml",
+        "source": "C:\\Users\\Andoryu\\.android\\build-cache\\d567faffe9c7a4a79f4535997169a87eacaed47b\\output\\res\\drawable\\design_snackbar_background.xml"
+    },
+    {
+        "merged": "D:\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\common_google_signin_btn_icon_dark.xml",
+        "source": "C:\\Users\\Andoryu\\.android\\build-cache\\cd589b5e61db6b57086578d337a0bb4d423f3378\\output\\res\\drawable\\common_google_signin_btn_icon_dark.xml"
+    },
+    {
+        "merged": "D:\\Habitizer-sadbranch\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\mr_button_connecting_dark.xml",
+        "source": "C:\\Users\\Andoryu\\.android\\build-cache\\cbb61a5065c9c122e7651a1013ab5d2c4ecd81fd\\output\\res\\drawable\\mr_button_connecting_dark.xml"
+    },
+    {
+        "merged": "D:\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\notification_icon_background.xml",
+        "source": "C:\\Users\\Andoryu\\.android\\build-cache\\71a97fee7c3e8e072c375b08ec9301718058bb51\\output\\res\\drawable\\notification_icon_background.xml"
+    },
+    {
+        "merged": "D:\\Habitizer-sadbranch\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\cast_ic_mini_controller_rewind30.xml",
+        "source": "C:\\Users\\Andoryu\\.android\\build-cache\\d1d468c01183bd06ce235fc2324aa212baf2d8d1\\output\\res\\drawable\\cast_ic_mini_controller_rewind30.xml"
+    },
+    {
+        "merged": "D:\\Habitizer-sadbranch\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\cast_ic_expanded_controller_pause.xml",
+        "source": "C:\\Users\\Andoryu\\.android\\build-cache\\d1d468c01183bd06ce235fc2324aa212baf2d8d1\\output\\res\\drawable\\cast_ic_expanded_controller_pause.xml"
+    },
+    {
+        "merged": "D:\\Habitizer-sadbranch\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\common_google_signin_btn_icon_dark.xml",
+        "source": "C:\\Users\\Andoryu\\.android\\build-cache\\cd589b5e61db6b57086578d337a0bb4d423f3378\\output\\res\\drawable\\common_google_signin_btn_icon_dark.xml"
+    },
+    {
+        "merged": "D:\\Habitizer-sadbranch\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_clear_material.xml",
+        "source": "C:\\Users\\Andoryu\\.android\\build-cache\\71a97fee7c3e8e072c375b08ec9301718058bb51\\output\\res\\drawable\\abc_ic_clear_material.xml"
+    },
+    {
+        "merged": "D:\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\cast_expanded_controller_bg_gradient_light.xml",
+        "source": "C:\\Users\\Andoryu\\.android\\build-cache\\d1d468c01183bd06ce235fc2324aa212baf2d8d1\\output\\res\\drawable\\cast_expanded_controller_bg_gradient_light.xml"
+    },
+    {
+        "merged": "D:\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_clear_material.xml",
+        "source": "C:\\Users\\Andoryu\\.android\\build-cache\\71a97fee7c3e8e072c375b08ec9301718058bb51\\output\\res\\drawable\\abc_ic_clear_material.xml"
+    },
+    {
+        "merged": "D:\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\cast_ic_notification_disconnect.xml",
+        "source": "C:\\Users\\Andoryu\\.android\\build-cache\\d1d468c01183bd06ce235fc2324aa212baf2d8d1\\output\\res\\drawable\\cast_ic_notification_disconnect.xml"
+    },
+    {
+        "merged": "D:\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\cast_ic_mini_controller_pause.xml",
+        "source": "C:\\Users\\Andoryu\\.android\\build-cache\\d1d468c01183bd06ce235fc2324aa212baf2d8d1\\output\\res\\drawable\\cast_ic_mini_controller_pause.xml"
+    },
+    {
+        "merged": "D:\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_cab_background_internal_bg.xml",
+        "source": "C:\\Users\\Andoryu\\.android\\build-cache\\71a97fee7c3e8e072c375b08ec9301718058bb51\\output\\res\\drawable\\abc_cab_background_internal_bg.xml"
+    },
+    {
+        "merged": "D:\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\common_google_signin_btn_icon_light_focused.xml",
+        "source": "C:\\Users\\Andoryu\\.android\\build-cache\\cd589b5e61db6b57086578d337a0bb4d423f3378\\output\\res\\drawable\\common_google_signin_btn_icon_light_focused.xml"
+    },
+    {
+        "merged": "D:\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\mr_button_dark.xml",
+        "source": "C:\\Users\\Andoryu\\.android\\build-cache\\cbb61a5065c9c122e7651a1013ab5d2c4ecd81fd\\output\\res\\drawable\\mr_button_dark.xml"
+    },
+    {
+        "merged": "D:\\Habitizer-sadbranch\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\cast_ic_expanded_controller_forward30.xml",
+        "source": "C:\\Users\\Andoryu\\.android\\build-cache\\d1d468c01183bd06ce235fc2324aa212baf2d8d1\\output\\res\\drawable\\cast_ic_expanded_controller_forward30.xml"
+    },
+    {
+        "merged": "D:\\Habitizer-sadbranch\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\design_fab_background.xml",
+        "source": "C:\\Users\\Andoryu\\.android\\build-cache\\d567faffe9c7a4a79f4535997169a87eacaed47b\\output\\res\\drawable\\design_fab_background.xml"
+    },
+    {
+        "merged": "D:\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\cast_ic_expanded_controller_pause.xml",
+        "source": "C:\\Users\\Andoryu\\.android\\build-cache\\d1d468c01183bd06ce235fc2324aa212baf2d8d1\\output\\res\\drawable\\cast_ic_expanded_controller_pause.xml"
+    },
+    {
+        "merged": "D:\\Habitizer-sadbranch\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\common_google_signin_btn_text_dark_focused.xml",
+        "source": "C:\\Users\\Andoryu\\.android\\build-cache\\cd589b5e61db6b57086578d337a0bb4d423f3378\\output\\res\\drawable\\common_google_signin_btn_text_dark_focused.xml"
+    },
+    {
+        "merged": "D:\\Habitizer-sadbranch\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\notification_bg_low.xml",
+        "source": "C:\\Users\\Andoryu\\.android\\build-cache\\71a97fee7c3e8e072c375b08ec9301718058bb51\\output\\res\\drawable\\notification_bg_low.xml"
+    },
+    {
+        "merged": "D:\\Habitizer-sadbranch\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_go_search_api_material.xml",
+        "source": "C:\\Users\\Andoryu\\.android\\build-cache\\71a97fee7c3e8e072c375b08ec9301718058bb51\\output\\res\\drawable\\abc_ic_go_search_api_material.xml"
+    },
+    {
+        "merged": "D:\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ratingbar_small_material.xml",
+        "source": "C:\\Users\\Andoryu\\.android\\build-cache\\71a97fee7c3e8e072c375b08ec9301718058bb51\\output\\res\\drawable\\abc_ratingbar_small_material.xml"
+    },
+    {
+        "merged": "D:\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_textfield_search_material.xml",
+        "source": "C:\\Users\\Andoryu\\.android\\build-cache\\71a97fee7c3e8e072c375b08ec9301718058bb51\\output\\res\\drawable\\abc_textfield_search_material.xml"
+    },
+    {
+        "merged": "D:\\Habitizer-sadbranch\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_item_background_holo_light.xml",
+        "source": "C:\\Users\\Andoryu\\.android\\build-cache\\71a97fee7c3e8e072c375b08ec9301718058bb51\\output\\res\\drawable\\abc_item_background_holo_light.xml"
+    },
+    {
+        "merged": "D:\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\navigation_empty_icon.xml",
+        "source": "C:\\Users\\Andoryu\\.android\\build-cache\\d567faffe9c7a4a79f4535997169a87eacaed47b\\output\\res\\drawable\\navigation_empty_icon.xml"
+    },
+    {
+        "merged": "D:\\Habitizer-sadbranch\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_holo_dark.xml",
+        "source": "C:\\Users\\Andoryu\\.android\\build-cache\\71a97fee7c3e8e072c375b08ec9301718058bb51\\output\\res\\drawable\\abc_list_selector_holo_dark.xml"
+    },
+    {
+        "merged": "D:\\Habitizer-sadbranch\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\notification_bg.xml",
+        "source": "C:\\Users\\Andoryu\\.android\\build-cache\\71a97fee7c3e8e072c375b08ec9301718058bb51\\output\\res\\drawable\\notification_bg.xml"
+    },
+    {
+        "merged": "D:\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_radio_material.xml",
+        "source": "C:\\Users\\Andoryu\\.android\\build-cache\\71a97fee7c3e8e072c375b08ec9301718058bb51\\output\\res\\drawable\\abc_btn_radio_material.xml"
+    },
+    {
+        "merged": "D:\\Habitizer-sadbranch\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\cast_expanded_controller_seekbar_track.xml",
+        "source": "C:\\Users\\Andoryu\\.android\\build-cache\\d1d468c01183bd06ce235fc2324aa212baf2d8d1\\output\\res\\drawable\\cast_expanded_controller_seekbar_track.xml"
+    },
+    {
+        "merged": "D:\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ratingbar_material.xml",
+        "source": "C:\\Users\\Andoryu\\.android\\build-cache\\71a97fee7c3e8e072c375b08ec9301718058bb51\\output\\res\\drawable\\abc_ratingbar_material.xml"
+    },
+    {
+        "merged": "D:\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\cast_ic_notification_rewind10.xml",
+        "source": "C:\\Users\\Andoryu\\.android\\build-cache\\d1d468c01183bd06ce235fc2324aa212baf2d8d1\\output\\res\\drawable\\cast_ic_notification_rewind10.xml"
+    },
+    {
+        "merged": "D:\\Habitizer-sadbranch\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_arrow_drop_right_black_24dp.xml",
+        "source": "C:\\Users\\Andoryu\\.android\\build-cache\\71a97fee7c3e8e072c375b08ec9301718058bb51\\output\\res\\drawable\\abc_ic_arrow_drop_right_black_24dp.xml"
+    },
+    {
+        "merged": "D:\\Habitizer-sadbranch\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_cab_background_internal_bg.xml",
+        "source": "C:\\Users\\Andoryu\\.android\\build-cache\\71a97fee7c3e8e072c375b08ec9301718058bb51\\output\\res\\drawable\\abc_cab_background_internal_bg.xml"
+    },
+    {
+        "merged": "D:\\Habitizer-sadbranch\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\cast_expanded_controller_bg_gradient_light.xml",
+        "source": "C:\\Users\\Andoryu\\.android\\build-cache\\d1d468c01183bd06ce235fc2324aa212baf2d8d1\\output\\res\\drawable\\cast_expanded_controller_bg_gradient_light.xml"
+    },
+    {
+        "merged": "D:\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ratingbar_indicator_material.xml",
+        "source": "C:\\Users\\Andoryu\\.android\\build-cache\\71a97fee7c3e8e072c375b08ec9301718058bb51\\output\\res\\drawable\\abc_ratingbar_indicator_material.xml"
+    },
+    {
+        "merged": "D:\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\cast_ic_expanded_controller_mute.xml",
+        "source": "C:\\Users\\Andoryu\\.android\\build-cache\\d1d468c01183bd06ce235fc2324aa212baf2d8d1\\output\\res\\drawable\\cast_ic_expanded_controller_mute.xml"
+    },
+    {
+        "merged": "D:\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\common_google_signin_btn_text_dark_normal.xml",
+        "source": "C:\\Users\\Andoryu\\.android\\build-cache\\cd589b5e61db6b57086578d337a0bb4d423f3378\\output\\res\\drawable\\common_google_signin_btn_text_dark_normal.xml"
+    },
+    {
+        "merged": "D:\\Habitizer-sadbranch\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_seekbar_track_material.xml",
+        "source": "C:\\Users\\Andoryu\\.android\\build-cache\\71a97fee7c3e8e072c375b08ec9301718058bb51\\output\\res\\drawable\\abc_seekbar_track_material.xml"
+    },
+    {
+        "merged": "D:\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\mr_dialog_material_background_light.xml",
+        "source": "C:\\Users\\Andoryu\\.android\\build-cache\\cbb61a5065c9c122e7651a1013ab5d2c4ecd81fd\\output\\res\\drawable\\mr_dialog_material_background_light.xml"
+    },
+    {
+        "merged": "D:\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\cast_ic_expanded_controller_stop.xml",
+        "source": "C:\\Users\\Andoryu\\.android\\build-cache\\d1d468c01183bd06ce235fc2324aa212baf2d8d1\\output\\res\\drawable\\cast_ic_expanded_controller_stop.xml"
+    },
+    {
+        "merged": "D:\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_vector_test.xml",
+        "source": "C:\\Users\\Andoryu\\.android\\build-cache\\71a97fee7c3e8e072c375b08ec9301718058bb51\\output\\res\\drawable\\abc_vector_test.xml"
+    },
+    {
+        "merged": "D:\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_seekbar_thumb_material.xml",
+        "source": "C:\\Users\\Andoryu\\.android\\build-cache\\71a97fee7c3e8e072c375b08ec9301718058bb51\\output\\res\\drawable\\abc_seekbar_thumb_material.xml"
+    },
+    {
+        "merged": "D:\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\cast_ic_mini_controller_rewind30.xml",
+        "source": "C:\\Users\\Andoryu\\.android\\build-cache\\d1d468c01183bd06ce235fc2324aa212baf2d8d1\\output\\res\\drawable\\cast_ic_mini_controller_rewind30.xml"
+    },
+    {
+        "merged": "D:\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\cast_ic_expanded_controller_forward30.xml",
+        "source": "C:\\Users\\Andoryu\\.android\\build-cache\\d1d468c01183bd06ce235fc2324aa212baf2d8d1\\output\\res\\drawable\\cast_ic_expanded_controller_forward30.xml"
+    },
+    {
+        "merged": "D:\\Habitizer-sadbranch\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\cast_expanded_controller_actionbar_bg_gradient_light.xml",
+        "source": "C:\\Users\\Andoryu\\.android\\build-cache\\d1d468c01183bd06ce235fc2324aa212baf2d8d1\\output\\res\\drawable\\cast_expanded_controller_actionbar_bg_gradient_light.xml"
+    },
+    {
+        "merged": "D:\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\mr_media_pause_dark.xml",
+        "source": "C:\\Users\\Andoryu\\.android\\build-cache\\cbb61a5065c9c122e7651a1013ab5d2c4ecd81fd\\output\\res\\drawable\\mr_media_pause_dark.xml"
+    },
+    {
+        "merged": "D:\\Habitizer-sadbranch\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_borderless_material.xml",
+        "source": "C:\\Users\\Andoryu\\.android\\build-cache\\71a97fee7c3e8e072c375b08ec9301718058bb51\\output\\res\\drawable\\abc_btn_borderless_material.xml"
+    },
+    {
+        "merged": "D:\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_background_transition_holo_light.xml",
+        "source": "C:\\Users\\Andoryu\\.android\\build-cache\\71a97fee7c3e8e072c375b08ec9301718058bb51\\output\\res\\drawable\\abc_list_selector_background_transition_holo_light.xml"
+    },
+    {
+        "merged": "D:\\Habitizer-sadbranch\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_search_api_material.xml",
+        "source": "C:\\Users\\Andoryu\\.android\\build-cache\\71a97fee7c3e8e072c375b08ec9301718058bb51\\output\\res\\drawable\\abc_ic_search_api_material.xml"
+    },
+    {
+        "merged": "D:\\Habitizer-sadbranch\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\days_border_valid.xml",
+        "source": "D:\\Habitizer-sadbranch\\app\\src\\main\\res\\drawable\\days_border_valid.xml"
+    },
+    {
+        "merged": "D:\\Habitizer-sadbranch\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_voice_search_api_material.xml",
+        "source": "C:\\Users\\Andoryu\\.android\\build-cache\\71a97fee7c3e8e072c375b08ec9301718058bb51\\output\\res\\drawable\\abc_ic_voice_search_api_material.xml"
+    },
+    {
+        "merged": "D:\\Habitizer-sadbranch\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\cast_ic_mini_controller_pause_large.xml",
+        "source": "C:\\Users\\Andoryu\\.android\\build-cache\\d1d468c01183bd06ce235fc2324aa212baf2d8d1\\output\\res\\drawable\\cast_ic_mini_controller_pause_large.xml"
+    },
+    {
+        "merged": "D:\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_borderless_material.xml",
+        "source": "C:\\Users\\Andoryu\\.android\\build-cache\\71a97fee7c3e8e072c375b08ec9301718058bb51\\output\\res\\drawable\\abc_btn_borderless_material.xml"
+    },
+    {
+        "merged": "D:\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\mr_group_collapse.xml",
+        "source": "C:\\Users\\Andoryu\\.android\\build-cache\\cbb61a5065c9c122e7651a1013ab5d2c4ecd81fd\\output\\res\\drawable\\mr_group_collapse.xml"
+    },
+    {
+        "merged": "D:\\Habitizer-sadbranch\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\common_google_signin_btn_icon_dark_normal.xml",
+        "source": "C:\\Users\\Andoryu\\.android\\build-cache\\cd589b5e61db6b57086578d337a0bb4d423f3378\\output\\res\\drawable\\common_google_signin_btn_icon_dark_normal.xml"
+    },
+    {
+        "merged": "D:\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\mr_button_light.xml",
+        "source": "C:\\Users\\Andoryu\\.android\\build-cache\\cbb61a5065c9c122e7651a1013ab5d2c4ecd81fd\\output\\res\\drawable\\mr_button_light.xml"
+    },
+    {
+        "merged": "D:\\Habitizer-sadbranch\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\common_google_signin_btn_text_dark_normal.xml",
+        "source": "C:\\Users\\Andoryu\\.android\\build-cache\\cd589b5e61db6b57086578d337a0bb4d423f3378\\output\\res\\drawable\\common_google_signin_btn_text_dark_normal.xml"
+    },
+    {
+        "merged": "D:\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\cast_ic_notification_rewind30.xml",
+        "source": "C:\\Users\\Andoryu\\.android\\build-cache\\d1d468c01183bd06ce235fc2324aa212baf2d8d1\\output\\res\\drawable\\cast_ic_notification_rewind30.xml"
+    },
+    {
+        "merged": "D:\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\cast_ic_mini_controller_stop_large.xml",
+        "source": "C:\\Users\\Andoryu\\.android\\build-cache\\d1d468c01183bd06ce235fc2324aa212baf2d8d1\\output\\res\\drawable\\cast_ic_mini_controller_stop_large.xml"
+    },
+    {
+        "merged": "D:\\Habitizer-sadbranch\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\cast_ic_mini_controller_closed_caption.xml",
+        "source": "C:\\Users\\Andoryu\\.android\\build-cache\\d1d468c01183bd06ce235fc2324aa212baf2d8d1\\output\\res\\drawable\\cast_ic_mini_controller_closed_caption.xml"
+    },
+    {
+        "merged": "D:\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\cast_ic_expanded_controller_rewind30.xml",
+        "source": "C:\\Users\\Andoryu\\.android\\build-cache\\d1d468c01183bd06ce235fc2324aa212baf2d8d1\\output\\res\\drawable\\cast_ic_expanded_controller_rewind30.xml"
     }
 ]

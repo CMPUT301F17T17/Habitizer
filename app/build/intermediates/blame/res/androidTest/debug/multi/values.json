@@ -1,6 +1,6 @@
 [
     {
-        "outputFile": "C:\\Users\\John\\Documents\\CMPUT 301\\git\\Habitizer\\app\\build\\intermediates\\incremental\\mergeDebugAndroidTestResources\\merged.dir\\values\\values.xml",
+        "outputFile": "D:\\Habitizer-sadbranch\\app\\build\\intermediates\\incremental\\mergeDebugAndroidTestResources\\merged.dir\\values\\values.xml",
         "map": [
             {
                 "to": {
@@ -11,7 +11,7 @@
                     "endOffset": 96
                 },
                 "from": {
-                    "file": "C:\\Users\\John\\.android\\build-cache\\90ff6c37dfd104b2aa126ffe3c8d036397426764\\output\\res\\values\\values.xml",
+                    "file": "C:\\Users\\Andoryu\\.android\\build-cache\\cfbb76152789a605f2b5265923df70fcdb58b9aa\\output\\res\\values\\values.xml",
                     "position": {
                         "startLine": 4,
                         "startColumn": 4,
@@ -24,7 +24,7 @@
         ]
     },
     {
-        "outputFile": "D:\\school\\CMPUT 301\\Habitizer\\app\\build\\intermediates\\incremental\\mergeDebugAndroidTestResources\\merged.dir\\values\\values.xml",
+        "outputFile": "D:\\Habitizer\\app\\build\\intermediates\\incremental\\mergeDebugAndroidTestResources\\merged.dir\\values\\values.xml",
         "map": [
             {
                 "to": {
@@ -35,31 +35,7 @@
                     "endOffset": 96
                 },
                 "from": {
-                    "file": "C:\\Users\\Sadman\\.android\\build-cache\\10e15b5e694e3e7aa8e7a4a647ced941dfbfda49\\output\\res\\values\\values.xml",
-                    "position": {
-                        "startLine": 4,
-                        "startColumn": 4,
-                        "startOffset": 229,
-                        "endColumn": 45,
-                        "endOffset": 270
-                    }
-                }
-            }
-        ]
-    },
-    {
-        "outputFile": "C:\\Users\\cryst\\AndroidStudioProjects\\Habitizer\\app\\build\\intermediates\\incremental\\mergeDebugAndroidTestResources\\merged.dir\\values\\values.xml",
-        "map": [
-            {
-                "to": {
-                    "startLine": 2,
-                    "startColumn": 4,
-                    "startOffset": 55,
-                    "endColumn": 45,
-                    "endOffset": 96
-                },
-                "from": {
-                    "file": "C:\\Users\\cryst\\.android\\build-cache\\5001f20b480ff7386cc00e4b0491490b59ba7fe2\\output\\res\\values\\values.xml",
+                    "file": "C:\\Users\\Andoryu\\.android\\build-cache\\cfbb76152789a605f2b5265923df70fcdb58b9aa\\output\\res\\values\\values.xml",
                     "position": {
                         "startLine": 4,
                         "startColumn": 4,

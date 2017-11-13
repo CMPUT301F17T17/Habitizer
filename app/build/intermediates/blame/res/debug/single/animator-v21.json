@@ -1,14 +1,10 @@
 [
     {
-        "merged": "C:\\Users\\cryst\\AndroidStudioProjects\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\animator-v21\\design_appbar_state_list_animator.xml",
-        "source": "C:\\Users\\cryst\\.android\\build-cache\\be05bf9c16458419eb7087291bd58a9ed060f4d3\\output\\res\\animator-v21\\design_appbar_state_list_animator.xml"
+        "merged": "D:\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\animator-v21\\design_appbar_state_list_animator.xml",
+        "source": "C:\\Users\\Andoryu\\.android\\build-cache\\d567faffe9c7a4a79f4535997169a87eacaed47b\\output\\res\\animator-v21\\design_appbar_state_list_animator.xml"
     },
     {
-        "merged": "C:\\Users\\John\\Documents\\CMPUT 301\\git\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\animator-v21\\design_appbar_state_list_animator.xml",
-        "source": "C:\\Users\\John\\.android\\build-cache\\ea9ad18277e08e5bc72eecbd010bc7a8c12dbf7b\\output\\res\\animator-v21\\design_appbar_state_list_animator.xml"
-    },
-    {
-        "merged": "D:\\school\\CMPUT 301\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\animator-v21\\design_appbar_state_list_animator.xml",
-        "source": "C:\\Users\\Sadman\\.android\\build-cache\\1f43954577a446aa44799bcf7dd607cc0cac21fb\\output\\res\\animator-v21\\design_appbar_state_list_animator.xml"
+        "merged": "D:\\Habitizer-sadbranch\\app\\build\\intermediates\\res\\merged\\debug\\animator-v21\\design_appbar_state_list_animator.xml",
+        "source": "C:\\Users\\Andoryu\\.android\\build-cache\\d567faffe9c7a4a79f4535997169a87eacaed47b\\output\\res\\animator-v21\\design_appbar_state_list_animator.xml"
     }
 ]
