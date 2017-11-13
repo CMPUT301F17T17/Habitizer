@@ -5,12 +5,17 @@ import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
+import android.location.Criteria;
+import android.location.Location;
+import android.location.LocationListener;
+import android.location.LocationManager;
 import android.net.Uri;
 import android.os.Bundle;
 import android.provider.MediaStore;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.v4.app.ActivityCompat;
+import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
@@ -243,7 +248,14 @@ public class AddHabitEventActivity extends AppCompatActivity implements OnMapRea
     @Override
     public void onMapReady(GoogleMap googleMap) {
         gmap = googleMap;
-        gotoLocation(53.523079, -113.526329);
+        //gotoLocation(53.523079, -113.526329);
+        Location loc = getCurrentLocation();
+
+        double lat = loc.getLatitude();
+        double lon = loc.getLongitude();
+
+        //gotoLocation(53.523079, -113.526329);
+        gotoLocation(lat, lon);
 
 
 
@@ -255,6 +267,62 @@ public class AddHabitEventActivity extends AppCompatActivity implements OnMapRea
         LatLng ll = new LatLng(lat, lng);
         CameraUpdate update = CameraUpdateFactory.newLatLngZoom(ll,zoom);
         gmap.moveCamera(update);
+    }
+
+    //https://github.com/CMPUT301W17T22/MoodSwing/blob/master/app/src/main/java/com/ualberta/cmput301w17t22/moodswing/MainActivity.java
+    public Location getCurrentLocation() {
+        // Get the current location.
+        // http://stackoverflow.com/questions/32491960/android-check-permission-for-locationmanager
+        // Check if we have proper permissions to get the coarse lastKnownLocation.
+        if (ContextCompat.checkSelfPermission(this, android.Manifest.permission.
+                ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
+
+            Log.i("Habitizer", "Requesting coarse permission.");
+            ActivityCompat.requestPermissions(this,
+                    new String[]{android.Manifest.permission.ACCESS_COARSE_LOCATION}, 8);
+        }
+
+        // Check if we have proper permissions to get the fine lastKnownLocation.
+        if (ContextCompat.checkSelfPermission(this, android.Manifest.permission.
+                ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
+
+            Log.i("debugMaps", "Requesting fine permission");
+            // Request the permission.
+            // Dummy request code 8 used.
+            ActivityCompat.requestPermissions(this,
+                    new String[]{android.Manifest.permission.ACCESS_FINE_LOCATION}, 8);
+        }
+
+        // Get the lastKnownLocation once every 5 seconds, or every 10 meters.
+        LocationManager locationManager = (LocationManager) this.getSystemService(this.LOCATION_SERVICE);
+        Criteria criteria = new Criteria();
+        String provider = locationManager.getBestProvider(criteria, false);
+
+        //https://stackoverflow.com/questions/28935694/android-locationmanager-requestlocationupdates-cannot-be-resolved
+        LocationListener listener = new LocationListener() {
+            @Override
+            public void onLocationChanged(Location location) {
+
+            }
+
+            @Override
+            public void onStatusChanged(String provider, int status, Bundle extras) {
+
+            }
+
+            @Override
+            public void onProviderEnabled(String provider) {
+
+            }
+
+            @Override
+            public void onProviderDisabled(String provider) {
+
+            }
+        };
+        locationManager.requestLocationUpdates(provider, 5000, 10, listener);
+        Location lastKnownLocationLocation = locationManager.getLastKnownLocation(provider);
+        return lastKnownLocationLocation;
     }
 
 
