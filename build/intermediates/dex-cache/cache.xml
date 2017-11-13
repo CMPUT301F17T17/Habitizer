@@ -3,21 +3,26 @@
 
     <item
         is-multidex="true"
-        jar="D:\school\CMPUT 301\Habitizer\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jar="D:\Habitizer\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
         jumboMode="true"
         optimize="true"
         revision="26.0.1"
+<<<<<<< HEAD
         sha1="317c39003ac4a43b38dca8cd4540cb65e4c938f1">
         <dex dex="D:\school\CMPUT 301\Habitizer\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_f43d7c817d16bfc24e68031f79d396b9cde0d862\classes.dex" />
+=======
+        sha1="3be78ebc2706b2e1fe2f12d5726887a92d6c183b">
+        <dex dex="D:\Habitizer\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run_a6aa21f8dcc96900b5b2e7b15bcfc08f5e6997b4\classes.dex" />
+>>>>>>> origin/AndroyuBranch
     </item>
     <item
         is-multidex="true"
-        jar="D:\school\CMPUT 301\Habitizer\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jar="D:\Habitizer\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
         jumboMode="true"
         optimize="true"
         revision="26.0.1"
-        sha1="3be78ebc2706b2e1fe2f12d5726887a92d6c183b">
-        <dex dex="D:\school\CMPUT 301\Habitizer\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run_0932ada49d860a499dda54172495768e76521286\classes.dex" />
+        sha1="45471ee9e086d0bcf4d5586dd4db566dcec1210a">
+        <dex dex="D:\Habitizer\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_6acc301475efe6a146c38cd9cc091685c5b9cff1\classes.dex" />
     </item>
 
 </items>

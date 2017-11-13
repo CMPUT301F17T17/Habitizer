@@ -49,6 +49,7 @@ public class DummyMainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_dummy_main);
         thisContext = this;
         myHabitEvents = new ArrayList<>();
+<<<<<<< HEAD
         myHabits = new ArrayList<>();
         myHabitDict = new HashMap<>();
         DEBUG_addHabits();
@@ -57,6 +58,11 @@ public class DummyMainActivity extends AppCompatActivity {
         startActivityForResult(intent, VIEW_HABIT);
 
     }
+=======
+        Intent intent = new Intent(DummyMainActivity.this, LoginActivity.class);
+        //Intent intent = new Intent(DummyMainActivity.this, HabitTabActivity.class);
+        startActivity(intent);
+>>>>>>> origin/AndroyuBranch
 
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {

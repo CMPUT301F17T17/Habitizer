@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #Sun Nov 12 19:23:50 MST 2017
 file.69=D\:\\school\\CMPUT 301\\Habitizer\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\classes_4a3bd06242f898ae3a5f671706dff6ab8f0dc9f1\\classes.dex
 file.68=D\:\\school\\CMPUT 301\\Habitizer\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\gson-2.8.2_065542b7768be3fee6a72fdef2ccffaae5f916cc\\classes.dex
@@ -209,3 +210,57 @@ renamed.13=classes16.dex
 renamed.12=classes70.dex
 renamed.11=classes.dex
 renamed.10=classes53.dex
+=======
+#Fri Nov 10 14:58:53 CST 2017
+file.2=D\:\\Habitizer\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\classes_7b8a32ebfbfbe46ff0982752fb839cdc6df1a38d\\classes.dex
+base.2=D\:\\Habitizer\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\classes_7b8a32ebfbfbe46ff0982752fb839cdc6df1a38d
+file.1=D\:\\Habitizer\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\classes_6362a25b36a2234d5eecfc5b2b46488c2fa85898\\classes.dex
+base.1=D\:\\Habitizer\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\classes_6362a25b36a2234d5eecfc5b2b46488c2fa85898
+file.0=D\:\\Habitizer\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\classes_fa244c298931ba85d267750f5b1f9e65941a082b\\classes.dex
+base.0=D\:\\Habitizer\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\classes_fa244c298931ba85d267750f5b1f9e65941a082b
+renamed.9=classes5.dex
+renamed.8=classes3.dex
+renamed.7=classes15.dex
+renamed.6=classes7.dex
+renamed.5=classes16.dex
+renamed.4=classes6.dex
+renamed.3=classes9.dex
+renamed.2=classes4.dex
+renamed.1=classes2.dex
+renamed.16=classes14.dex
+renamed.0=classes13.dex
+renamed.15=classes10.dex
+renamed.14=classes11.dex
+renamed.13=classes17.dex
+renamed.12=classes.dex
+renamed.11=classes12.dex
+base.16=D\:\\Habitizer\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\constraint-layout-solver-1.0.2_e973e1dceeb745b286aec78cae2393879e708793
+renamed.10=classes8.dex
+base.15=D\:\\Habitizer\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\classes_a2c4e6b79e6930813109a545fc032095c100bbba
+base.14=D\:\\Habitizer\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\classes_c6a51f47c45e6d87b13c38946ccc4e8c90be6633
+base.13=D\:\\Habitizer\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\support-annotations-25.3.1_2d48f854d7ddddb2674fa3cc8f0037d90f232bab
+base.12=D\:\\Habitizer\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\classes_1e100366c2fbc36cf9704079c2106cb660c47df0
+base.11=D\:\\Habitizer\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\classes_d22b9be758d50b95d45bc6c6785d20ac3b263336
+file.16=D\:\\Habitizer\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\constraint-layout-solver-1.0.2_e973e1dceeb745b286aec78cae2393879e708793\\classes.dex
+base.10=D\:\\Habitizer\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\classes_908157114fb41cd8bed7b7d70b804d02000d3796
+file.15=D\:\\Habitizer\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\classes_a2c4e6b79e6930813109a545fc032095c100bbba\\classes.dex
+file.14=D\:\\Habitizer\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\classes_c6a51f47c45e6d87b13c38946ccc4e8c90be6633\\classes.dex
+file.13=D\:\\Habitizer\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\support-annotations-25.3.1_2d48f854d7ddddb2674fa3cc8f0037d90f232bab\\classes.dex
+file.12=D\:\\Habitizer\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\classes_1e100366c2fbc36cf9704079c2106cb660c47df0\\classes.dex
+file.11=D\:\\Habitizer\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\classes_d22b9be758d50b95d45bc6c6785d20ac3b263336\\classes.dex
+file.10=D\:\\Habitizer\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\classes_908157114fb41cd8bed7b7d70b804d02000d3796\\classes.dex
+file.9=D\:\\Habitizer\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\classes_7d1971085456fa2730ff595c4bc8a8f5a043ff5b\\classes.dex
+base.9=D\:\\Habitizer\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\classes_7d1971085456fa2730ff595c4bc8a8f5a043ff5b
+file.8=D\:\\Habitizer\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\classes_7062140846a1546b412685784c79b25321164880\\classes.dex
+base.8=D\:\\Habitizer\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\classes_7062140846a1546b412685784c79b25321164880
+file.7=D\:\\Habitizer\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\gson-2.8.2_3e562ce77c880394781587f94090193b87b4ae3d\\classes.dex
+base.7=D\:\\Habitizer\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\gson-2.8.2_3e562ce77c880394781587f94090193b87b4ae3d
+file.6=D\:\\Habitizer\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\classes_8cd0966cc8cd9f5462ef21f6fc43a574b9ed1483\\classes.dex
+base.6=D\:\\Habitizer\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\classes_8cd0966cc8cd9f5462ef21f6fc43a574b9ed1483
+file.5=D\:\\Habitizer\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\robotium-solo-5.6.3_15574d60e5f818a3af9a7665e42f87e5281c5665\\classes.dex
+base.5=D\:\\Habitizer\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\robotium-solo-5.6.3_15574d60e5f818a3af9a7665e42f87e5281c5665
+file.4=D\:\\Habitizer\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\classes_8b33f9e78409ea665dc05171c5debb35d2b40dcb\\classes.dex
+base.4=D\:\\Habitizer\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\classes_8b33f9e78409ea665dc05171c5debb35d2b40dcb
+file.3=D\:\\Habitizer\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\classes_943ac58437b3c1b8156832fefb979dd43f6e406b\\classes.dex
+base.3=D\:\\Habitizer\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\classes_943ac58437b3c1b8156832fefb979dd43f6e406b
+>>>>>>> origin/AndroyuBranch
