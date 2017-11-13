@@ -172,7 +172,7 @@
             android:layout_weight="1"
             android:backgroundTint="@android:color/holo_red_dark"
             android:text="Delete"
-            android:visibility="visible"/>
+            android:visibility="gone"/>
 
         <Button
             android:id="@+id/done_button"

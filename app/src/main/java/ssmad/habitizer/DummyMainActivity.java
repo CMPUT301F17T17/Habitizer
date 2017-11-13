@@ -102,6 +102,7 @@ public class DummyMainActivity extends AppCompatActivity {
                 case VIEW_SIGN_UP:
                     intent = new Intent(this, SignupActivity.class);
                     startActivityForResult(intent, VIEW_SIGN_UP);
+                    break;
                 default:
                     intent = new Intent(this, HabitTabActivity.class);
                     startActivityForResult(intent, VIEW_HABIT);
