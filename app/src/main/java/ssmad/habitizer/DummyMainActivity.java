@@ -37,9 +37,12 @@ public class DummyMainActivity extends AppCompatActivity {
     public static ArrayAdapter<Habit> myHabitsAdapter;
     public static ArrayAdapter<HabitEvent> myHabitEventsAdapter;
     public static Map<String,Integer> myHabitDict;
-    public static final int VIEW_HABIT = 0;
-    public static final int VIEW_FEED = 1;
-    public static final int VIEW_SOCIAL = 2;
+    public static final int VIEW_HABIT = 990;
+    public static final int VIEW_FEED = 991;
+    public static final int VIEW_SOCIAL = 992;
+    public static final int VIEW_LOGIN = 993;
+    public static final int VIEW_EDIT_PROFILE = 994;
+    public static final int VIEW_SIGN_UP = 995;
     public static Activity currentActivity;
     private static Context thisContext;
 
@@ -49,38 +52,64 @@ public class DummyMainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_dummy_main);
         thisContext = this;
         myHabitEvents = new ArrayList<>();
-<<<<<<< HEAD
         myHabits = new ArrayList<>();
         myHabitDict = new HashMap<>();
         DEBUG_addHabits();
 
-        Intent intent = new Intent(DummyMainActivity.this, HabitTabActivity.class);
-        startActivityForResult(intent, VIEW_HABIT);
+        Intent intent = new Intent(DummyMainActivity.this, LoginActivity.class);
+        startActivityForResult(intent, VIEW_LOGIN);
 
     }
-=======
-        Intent intent = new Intent(DummyMainActivity.this, LoginActivity.class);
-        //Intent intent = new Intent(DummyMainActivity.this, HabitTabActivity.class);
-        startActivity(intent);
->>>>>>> origin/AndroyuBranch
 
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
         Intent intent;
-        switch (resultCode) {
-            case VIEW_FEED:
-                intent = new Intent(this, FeedTabActivity.class);
-                startActivityForResult(intent, VIEW_FEED);
-                break;
-            case VIEW_HABIT:
-                intent = new Intent(this, HabitTabActivity.class);
-                startActivityForResult(intent, VIEW_HABIT);
-                break;
-            case VIEW_SOCIAL:
-                intent = new Intent(this, SocialTabActivity.class);
-                startActivityForResult(intent, VIEW_SOCIAL);
+        boolean done = false;
+        if(resultCode == RESULT_CANCELED){
+            switch (requestCode){
+                case VIEW_LOGIN:
+                    // stuck in login
+                case VIEW_SIGN_UP:
+                    // cancelled signup
+                    intent = new Intent(this, LoginActivity.class);
+                    startActivityForResult(intent, VIEW_LOGIN);
+                    break;
+                default:
+                    intent = new Intent(this, HabitTabActivity.class);
+                    startActivityForResult(intent, VIEW_HABIT);
+                    break;
+            }
+        }else{
+            switch (resultCode) {
+                case VIEW_FEED:
+                    intent = new Intent(this, FeedTabActivity.class);
+                    startActivityForResult(intent, VIEW_FEED);
+                    break;
+                case VIEW_HABIT:
+                    intent = new Intent(this, HabitTabActivity.class);
+                    startActivityForResult(intent, VIEW_HABIT);
+                    break;
+                case VIEW_SOCIAL:
+                    intent = new Intent(this, SocialTabActivity.class);
+                    startActivityForResult(intent, VIEW_SOCIAL);
+                    break;
+                case VIEW_EDIT_PROFILE:
+                    intent = new Intent(this, EditProfileActivity.class);
+                    intent.replaceExtras(data);
+                    startActivityForResult(intent, VIEW_EDIT_PROFILE);
+                    break;
+                case VIEW_SIGN_UP:
+                    intent = new Intent(this, SignupActivity.class);
+                    startActivityForResult(intent, VIEW_SIGN_UP);
+                default:
+                    intent = new Intent(this, HabitTabActivity.class);
+                    startActivityForResult(intent, VIEW_HABIT);
+
+            }
+
         }
+
     }
 
     public static void toastMe(String s, Context context) {

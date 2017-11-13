@@ -72,6 +72,7 @@ public class EditProfileActivity extends AppCompatActivity {
     private LinearLayout birthLayout;
     private LinearLayout genderLayout;
     private LinearLayout followLayout;
+    private static String currentUser;
 
     //This part is for displaing profile
 
@@ -199,9 +200,8 @@ public class EditProfileActivity extends AppCompatActivity {
                     if (profileOk) {
                         profileList.add(new UserProfile(user, imageByte, name, birthday, gender));
                         saveInFile(EditProfileActivity.this);
-
-                        intent = new Intent(EditProfileActivity.this, LoginActivity.class);
-                        startActivity(intent);
+                        setResult(DummyMainActivity.VIEW_LOGIN, new Intent());
+                        finish();
                     }
                 } else {
                     if (profileOk) {
@@ -216,6 +216,14 @@ public class EditProfileActivity extends AppCompatActivity {
                 }
             }
         });
+    }
+
+    @Override
+    public void onBackPressed() {
+        Intent intent = new Intent();
+        intent.putExtra(USER_NAME, currentUser);
+        setResult(DummyMainActivity.VIEW_EDIT_PROFILE,intent);
+        super.onBackPressed();
     }
 
     private void onDisplayEvent(final int pos){
@@ -235,8 +243,8 @@ public class EditProfileActivity extends AppCompatActivity {
 
         habbitButton.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                Intent intent = new Intent(EditProfileActivity.this, HabitTabActivity.class);
-                startActivity(intent);
+                setResult(DummyMainActivity.VIEW_HABIT);
+                finish();
             }
         });
 
@@ -368,6 +376,7 @@ public class EditProfileActivity extends AppCompatActivity {
         loadFromFile();
         Intent intent = getIntent();
         String user = intent.getStringExtra(this.USER_NAME);
+        currentUser = user;
         for(int i=0; i < profileList.size(); i++){
             if(profileList.get(i).getUsername().equals(user)){
                 return i;

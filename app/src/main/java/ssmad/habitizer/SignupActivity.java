@@ -57,9 +57,10 @@ public class SignupActivity extends AppCompatActivity {
                 } else if (correct){
                     accountList.add(new Account(username, password));
                     saveInFile(SignupActivity.this);
-                    Intent intent = new Intent(SignupActivity.this, EditProfileActivity.class);
+                    Intent intent = new Intent();
                     intent.putExtra(EditProfileActivity.USER_NAME, username);
-                    startActivity(intent);
+                    setResult(DummyMainActivity.VIEW_EDIT_PROFILE, intent);
+                    finish();
                 }
         }   });
     }

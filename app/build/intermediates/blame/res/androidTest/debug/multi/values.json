@@ -1,6 +1,6 @@
 [
     {
-        "outputFile": "D:\\Habitizer\\app\\build\\intermediates\\incremental\\mergeDebugAndroidTestResources\\merged.dir\\values\\values.xml",
+        "outputFile": "D:\\school\\CMPUT 301\\Habitizer\\app\\build\\intermediates\\incremental\\mergeDebugAndroidTestResources\\merged.dir\\values\\values.xml",
         "map": [
             {
                 "to": {
@@ -11,7 +11,7 @@
                     "endOffset": 96
                 },
                 "from": {
-                    "file": "C:\\Users\\Andoryu\\.android\\build-cache\\cfbb76152789a605f2b5265923df70fcdb58b9aa\\output\\res\\values\\values.xml",
+                    "file": "C:\\Users\\Sadman\\.android\\build-cache\\10e15b5e694e3e7aa8e7a4a647ced941dfbfda49\\output\\res\\values\\values.xml",
                     "position": {
                         "startLine": 4,
                         "startColumn": 4,

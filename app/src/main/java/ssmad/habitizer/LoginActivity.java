@@ -22,6 +22,8 @@ import java.io.OutputStreamWriter;
 import java.lang.reflect.Type;
 import java.util.ArrayList;
 
+
+
 public class LoginActivity extends AppCompatActivity {
     public static final String FILENAME= "account.sav";
     private EditText usernameText;
@@ -29,6 +31,8 @@ public class LoginActivity extends AppCompatActivity {
     private Button loginButton;
     private Button signupButton;
     private ArrayList<Account> accountList = new ArrayList<Account>();
+
+    public static final int SIGNUP = 1212;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -50,9 +54,10 @@ public class LoginActivity extends AppCompatActivity {
                 Boolean find = find(username, password);
 
                 if (find) {
-                    Intent intent = new Intent(LoginActivity.this, EditProfileActivity.class);
+                    Intent intent = new Intent();
                     intent.putExtra(EditProfileActivity.USER_NAME, username);
-                    startActivity(intent);
+                    setResult(DummyMainActivity.VIEW_EDIT_PROFILE, intent);
+                    finish();
                 } else {
                     Toast.makeText(LoginActivity.this,
                             "Login failed: username or password is incorrect!", Toast.LENGTH_SHORT).show();
@@ -62,11 +67,22 @@ public class LoginActivity extends AppCompatActivity {
 
         signupButton.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                Intent intent = new Intent(LoginActivity.this, SignupActivity.class);
-                startActivity(intent);
+                setResult( DummyMainActivity.VIEW_SIGN_UP,new Intent());
+                finish();
             }
         });
 
+    }
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        if(resultCode == DummyMainActivity.VIEW_EDIT_PROFILE){
+            Intent intent = new Intent();
+            intent.replaceExtras(data);
+            setResult(DummyMainActivity.VIEW_EDIT_PROFILE, intent);
+            finish();
+        }
     }
 
     private void loadFromFile() {

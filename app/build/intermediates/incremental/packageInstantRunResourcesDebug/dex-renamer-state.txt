@@ -1,5 +1,1 @@
-<<<<<<< HEAD
-#Mon Nov 13 11:37:47 MST 2017
-=======
-#Mon Nov 13 02:01:49 CST 2017
->>>>>>> origin/AndroyuBranch
+#Mon Nov 13 12:20:30 MST 2017

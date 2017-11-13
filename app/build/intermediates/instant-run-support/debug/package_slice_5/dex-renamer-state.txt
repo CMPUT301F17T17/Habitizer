@@ -1,9 +1,4 @@
-<<<<<<< HEAD
-#Sun Nov 12 19:23:51 MST 2017
+#Mon Nov 13 12:21:05 MST 2017
 base.0=D\:\\school\\CMPUT 301\\Habitizer\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\5\\slice_5
-=======
-#Fri Nov 10 14:58:54 CST 2017
-base.0=D\:\\Habitizer\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\5\\slice_5
->>>>>>> origin/AndroyuBranch
 renamed.0=classes.dex
-file.0=D\:\\Habitizer\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\5\\slice_5\\classes.dex
+file.0=D\:\\school\\CMPUT 301\\Habitizer\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\5\\slice_5\\classes.dex
