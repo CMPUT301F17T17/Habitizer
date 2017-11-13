@@ -14,13 +14,34 @@
         android:orientation="vertical">
 
         <TextView
-            android:id="@+id/page_title"
+            android:id="@+id/edit_title"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Edit Habit Event"
+            android:textSize="30sp"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/view_title"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="View Habit Event"
+            android:textSize="30sp"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/add_title"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:gravity="center"
             android:text="Add Habit Event"
-            android:textSize="30sp"/>
+            android:textSize="30sp"
+            android:visibility="gone"/>
 
         <TextView
             android:id="@+id/what_habit"
@@ -59,6 +80,13 @@
                 android:inputType="textPersonName"
                 android:singleLine="false"
                 android:textSize="18sp"/>
+
+            <TextView
+                android:id="@+id/comment_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="No Comment"
+                android:visibility="gone"/>
 
             <CheckBox
                 android:id="@+id/pic_check"
@@ -128,6 +156,22 @@
         android:layout_height="wrap_content"
         android:layout_weight="0.01"
         android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/edit_button"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Edit"
+            android:visibility="gone"/>
+
+        <Button
+            android:id="@+id/done_button"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Done"
+            android:visibility="gone"/>
 
         <Button
             android:id="@+id/add"

@@ -92,6 +92,10 @@
         "source": "D:\\school\\CMPUT 301\\Habitizer\\app\\src\\main\\res\\layout\\activity_dummy_main.xml"
     },
     {
+        "merged": "D:\\school\\CMPUT 301\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\layout\\myfeed_list_view.xml",
+        "source": "D:\\school\\CMPUT 301\\Habitizer\\app\\src\\main\\res\\layout\\myfeed_list_view.xml"
+    },
+    {
         "merged": "D:\\school\\CMPUT 301\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_menu_item_action_area.xml",
         "source": "C:\\Users\\Sadman\\.android\\build-cache\\1f43954577a446aa44799bcf7dd607cc0cac21fb\\output\\res\\layout\\design_menu_item_action_area.xml"
     },

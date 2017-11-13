@@ -41,6 +41,7 @@ public class ViewHabitActivity extends AppCompatActivity {
                 Intent intent = new Intent(ViewHabitActivity.this, EditHabitActivity.class);
                 intent.putExtra(toEdit, position);
                 startActivityForResult(intent, 0);
+
             }
         });
     }

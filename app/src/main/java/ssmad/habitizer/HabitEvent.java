@@ -72,11 +72,11 @@ public class HabitEvent {
     }
 
 
-    public byte[] getPic() {
+    public byte[] getPicBytes() {
         return pic;
     }
 
-    public void setPic(byte[] pic) {
+    public void setPicBytes(byte[] pic) {
         this.pic = pic;
     }
 

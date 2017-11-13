@@ -62,6 +62,7 @@ Ref getting map
 https://stackoverflow.com/questions/16536414/how-to-use-mapview-in-android-using-google-map-v2
 https://stackoverflow.com/questions/40142331/how-to-request-location-permission-on-android-6
 https://www.youtube.com/watch?v=Z3mKhMkdUFk&feature=youtu.be
+https://developer.amazon.com/docs/maps/display-interactive.html
 Ref pic size reduce
 https://stackoverflow.com/questions/16954109/reduce-the-size-of-a-bitmap-to-a-specified-size-in-android
  */
@@ -80,6 +81,7 @@ public class AddHabitEventActivity extends AppCompatActivity {
     public static Bitmap pic;
     public static byte[] picBytes;
     public static GoogleMap gmap;
+    public static Button thisOneIsSpecialAndUnavailableSometimes;
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -88,13 +90,13 @@ public class AddHabitEventActivity extends AppCompatActivity {
         final int position = getIntent().getExtras().getInt(HabitTabActivity.GENERIC_REQUEST_CODE);
         final Habit habit = DummyMainActivity.myHabits.get(position);
         final TextView habitTitle = (TextView) findViewById(R.id.what_habit);
+        (findViewById(R.id.add_title)).setVisibility(View.VISIBLE);
         //final TextView habitEventComment = (EditText) findViewById(R.id.comment_input);
         final Button add = (Button) findViewById(R.id.add);
+        thisOneIsSpecialAndUnavailableSometimes = add;
         Button cancel = (Button) findViewById(R.id.cancel);
-        Button fromCamera = (Button) findViewById(R.id.pic_camera);
-        Button fromGallery = (Button) findViewById(R.id.pic_gallery);
-        CheckBox locationCheck = (CheckBox) findViewById(R.id.location_check);
-        CheckBox picCheck = (CheckBox) findViewById(R.id.pic_check);
+
+
         setPicStuff(this);
         setLocStuff(this);
 
@@ -113,50 +115,75 @@ public class AddHabitEventActivity extends AppCompatActivity {
                 cancelEvent();
             }
         });
+        setUpCheckBoxes(this, (Button) findViewById(R.id.add));
+        setUpPicButtons(this, (Button) findViewById(R.id.add));
+
+    }
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) { // OK
+        super.onActivityResult(requestCode, resultCode, data);
+        tryGetPic(this, requestCode, resultCode, data);
+        makeButtonAvailable((Button) findViewById(R.id.add));
+    }
+
+    public static void setUpCheckBoxes(Activity ctx, final Button btn) {
+        CheckBox locationCheck = (CheckBox) ctx.findViewById(R.id.location_check);
+        CheckBox picCheck = (CheckBox) ctx.findViewById(R.id.pic_check);
+        final Activity fctx = ctx;
         picCheck.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 CheckBox thisBox = (CheckBox) v;
-                LinearLayout picToggle = (LinearLayout) findViewById(R.id.pic_toggle);
                 if (thisBox.isChecked()) {
-                    picToggle.setVisibility(View.VISIBLE);
+                    picButtonsAreVisible = Boolean.TRUE;
                 } else {
-                    picToggle.setVisibility(View.GONE);
+                    picButtonsAreVisible = Boolean.FALSE;
+                    picIsVisible = Boolean.FALSE;
+                    pic = null;
+                    picBytes = null;
                 }
-                picButtonsAreVisible = !picButtonsAreVisible;
+                setPicStuff(fctx);
             }
         });
         locationCheck.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 CheckBox thisBox = (CheckBox) v;
-                LinearLayout mapToggle = (LinearLayout) findViewById(R.id.map_toggle);
                 if (thisBox.isChecked()) {
-                    mapToggle.setVisibility(View.VISIBLE);
-                    makeButtonUnavailable(add);
-                    initMap(AddHabitEventActivity.this);
+
+                    makeButtonUnavailable(btn);
+                    initMap(fctx, null, btn);
                 } else {
-                    mapToggle.setVisibility(View.GONE);
+                    mapIsVisible = Boolean.FALSE;
+                    location = null;
+                    setLocStuff(fctx);
+                    makeButtonAvailable(btn);
                 }
-                mapIsVisible = !mapIsVisible;
             }
         });
+    }
+
+    public static void setUpPicButtons(Activity ctx, final Button btn) { // OK
+        Button fromCamera = (Button) ctx.findViewById(R.id.pic_camera);
+        Button fromGallery = (Button) ctx.findViewById(R.id.pic_gallery);
+        final Activity fctx = ctx;
         fromCamera.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                makeButtonUnavailable(add);
+                makeButtonUnavailable(btn);
                 Intent takePicture = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
-                startActivityForResult(takePicture, GET_PIC_WITH_CAMERA);
+                fctx.startActivityForResult(takePicture, GET_PIC_WITH_CAMERA);
 
             }
         });
         fromGallery.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                makeButtonUnavailable(add);
+                makeButtonUnavailable(btn);
                 Intent pickPhoto = new Intent(Intent.ACTION_PICK,
                         android.provider.MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
-                startActivityForResult(pickPhoto, GET_PIC_FROM_GALLERY);
+                fctx.startActivityForResult(pickPhoto, GET_PIC_FROM_GALLERY);
             }
         });
     }
@@ -165,80 +192,82 @@ public class AddHabitEventActivity extends AppCompatActivity {
         LinearLayout mapToggle = (LinearLayout) ctx.findViewById(R.id.map_toggle);
         if (mapIsVisible) {
             mapToggle.setVisibility(View.VISIBLE);
-        }else{
+        } else {
             mapToggle.setVisibility(View.GONE);
 
         }
     }
 
-    @Override
-    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
-        super.onActivityResult(requestCode, resultCode, data);
-        tryGetPic(this, requestCode, resultCode, data);
-        makeButtonAvailable((Button) findViewById(R.id.add));
+    public static void setPicStuff(Activity ctx) { // OK
+        LinearLayout picToggle = (LinearLayout) ctx.findViewById(R.id.pic_toggle);
+        if (picButtonsAreVisible) {
+            picToggle.setVisibility(View.VISIBLE);
+        } else {
+            picToggle.setVisibility(View.GONE);
+
+        }
+        ImageView picPreview = (ImageView) ctx.findViewById(R.id.pic_preview);
+        if (picIsVisible) {
+            picPreview.setVisibility(View.VISIBLE);
+        } else {
+            picPreview.setVisibility(View.GONE);
+        }
+        picPreview.setImageBitmap(pic);
     }
+
     public static void tryGetPic(Activity ctx, int requestCode, int resultCode, Intent data) {
         switch (requestCode) {
             case GET_PIC_WITH_CAMERA:
                 if (resultCode == RESULT_OK) {
-                    ImageView picPreview = (ImageView) ctx.findViewById(R.id.pic_preview);
                     pic = (Bitmap) data.getExtras().get("data");
-                    picBytes = getCompressedByteFromBitmap(pic, PIC_MAX_SIZE);
-                    picPreview.setImageBitmap(pic);
-                    picPreview.setVisibility(View.VISIBLE);
-                    DummyMainActivity.toastMe("get pic from camera", ctx);
+                    setPic(ctx);
                     picIsVisible = Boolean.TRUE;
+                    setPicStuff(ctx);
+                    DummyMainActivity.toastMe("get pic from camera", ctx);
                 } else {
                     getPictureFail(ctx);
                 }
                 break;
             case GET_PIC_FROM_GALLERY:
                 if (resultCode == RESULT_OK) {
-                    ImageView picPreview = (ImageView) ctx.findViewById(R.id.pic_preview);
                     Uri imageUri = data.getData();
                     try {
                         pic = MediaStore.Images.Media.getBitmap(ctx.getContentResolver(), imageUri);
                     } catch (IOException e) {
                         getPictureFail(ctx);
                     }
-                    picBytes = getCompressedByteFromBitmap(pic, PIC_MAX_SIZE);
-                    picPreview.setImageBitmap(pic);
-                    picPreview.setVisibility(View.VISIBLE);
-                    DummyMainActivity.toastMe("get pic from gallery", ctx);
+                    setPic(ctx);
                     picIsVisible = Boolean.TRUE;
+                    setPicStuff(ctx);
+                    DummyMainActivity.toastMe("get pic from gallery", ctx);
                 } else {
                     getPictureFail(ctx);
                 }
                 break;
         }
     }
+
     public static void getPictureFail(Activity ctx) {
         DummyMainActivity.toastMe("Failed to get pic", ctx);
         AddHabitEventActivity.picIsVisible = Boolean.FALSE;
         AddHabitEventActivity.picButtonsAreVisible = Boolean.FALSE;
         setPicStuff(ctx);
-        ((CheckBox) ctx.findViewById(R.id.pic_check)).toggle();
+        ((CheckBox) ctx.findViewById(R.id.pic_check)).setChecked(Boolean.FALSE);
+        picBytes = null;
+        pic = null;
 
 
     }
-    public static void setPicStuff(Activity ctx) {
-        LinearLayout picToggle = (LinearLayout) ctx.findViewById(R.id.pic_toggle);
-        if (picButtonsAreVisible) {
-            picToggle.setVisibility(View.VISIBLE);
-        }else{
-            picToggle.setVisibility(View.GONE);
 
-        }
+    public static void setPic(Activity ctx) { // OK
         ImageView picPreview = (ImageView) ctx.findViewById(R.id.pic_preview);
-        if (picIsVisible) {
-            picPreview.setImageBitmap(pic);
-            picPreview.setVisibility(View.VISIBLE);
-        }else {
-
-            picPreview.setVisibility(View.GONE);
-        }
+        picBytes = getCompressedByteFromBitmap(pic, PIC_MAX_SIZE);
+        //picPreview.setImageBitmap(pic);
+        setPicFromBytes(picBytes);
+        picPreview.setImageBitmap(pic);
     }
-    private static byte[] getCompressedByteFromBitmap(Bitmap pic, int maxSize) {
+
+    public static byte[] getCompressedByteFromBitmap(Bitmap pic, int maxSize) {
         double div = 100.0;
         ByteArrayOutputStream stream;
         int size;
@@ -256,19 +285,35 @@ public class AddHabitEventActivity extends AppCompatActivity {
 
         return image;
     }
+
+    public static void setPicFromBytes(byte[] bytes) {
+        pic = BitmapFactory.decodeByteArray(bytes, 0, bytes.length);
+    }
+
     public void addEvent() {
         Habit habit = DummyMainActivity.myHabits.get(getIntent().getExtras().getInt
                 (HabitTabActivity.GENERIC_REQUEST_CODE));
-        if(habitEventCheckFix(this)){
-            HabitEvent habitEvent = new HabitEvent(habit.getTitle(),new Date(), picBytes, location,
+        if (habitEventCheckFix(this)) {
+            byte[] fpb = picIsVisible ? picBytes : null;
+            HabitEvent habitEvent = new HabitEvent(habit.getTitle(), new Date(), fpb, location,
                     comment);
             DummyMainActivity.myHabitEvents.add(habitEvent);
+            resetVars(this);
+            finish();
         }
+
     }
 
     public static boolean habitEventCheckFix(Activity ctx) {
         comment = ((EditText) ctx.findViewById(R.id.comment_input)).getText().toString();
-        if(comment.length() > COMMENT_MAX_SIZE){
+        if (!mapIsVisible) {
+            location = null;
+        }
+        if (!picIsVisible) {
+            pic = null;
+            picBytes = null;
+        }
+        if (comment.length() > COMMENT_MAX_SIZE) {
             DummyMainActivity.toastMe("Comment must be less than " + COMMENT_MAX_SIZE + " chars",
                     ctx);
             return Boolean.FALSE;
@@ -276,79 +321,75 @@ public class AddHabitEventActivity extends AppCompatActivity {
         return Boolean.TRUE;
     }
 
-    public static void makeButtonUnavailable(Button button){
+    public void cancelEvent() {
+        resetVars(this);
+        finish();
+    }
+
+    public static void resetVars(Activity ctx) {
+        location = null;
+        pic = null;
+        picBytes = null;
+        picIsVisible = false;
+        picButtonsAreVisible = false;
+        mapIsVisible = false;
+        setPicStuff(ctx);
+        setLocStuff(ctx);
+    }
+
+    public static void makeButtonUnavailable(Button button) {
         button.setAlpha(0.5f);
         button.setClickable(Boolean.FALSE);
     }
-    public static void makeButtonAvailable(Button button){
+
+    public static void makeButtonAvailable(Button button) {
         button.setAlpha(1.0f);
         button.setClickable(Boolean.TRUE);
     }
-    public void cancelEvent() {
-        finish();
-    }
-    public static void initMap(Activity ctx) {
+
+    public static void initMap(Activity ctx, final Location location, final Button btn) {
         MapFragment mapFragment = (MapFragment) ctx.getFragmentManager().findFragmentById(R.id.map);
         final Activity fctx = ctx;
+        final Location floc = location;
         mapFragment.getMapAsync(new OnMapReadyCallback() {
             @Override
             public void onMapReady(GoogleMap googleMap) {
-                myOnMapReady(fctx, googleMap);
+                myOnMapReady(fctx, googleMap, location, btn);
             }
         });
 
     }
-    public static void myOnMapReady(Activity ctx,  GoogleMap googleMap) {
-        gmap = googleMap;
-        Location loc = getLocationPermissionThenLocation(ctx);
-        if (loc != null) {
 
+    public static void myOnMapReady(Activity ctx, GoogleMap googleMap, Location location, final
+                                    Button btn) {
+        gmap = googleMap;
+        Location loc = location;
+        if (location == null) {
+            loc = getLocationPermissionThenLocation(ctx);
+        }
+        if (loc != null) {
             double lat = loc.getLatitude();
             double lon = loc.getLongitude();
-            gotoLocation(ctx, lat, lon);
+            gotoLocation(ctx, lat, lon, btn);
         }
 
 
+
     }
-    public static void locationFail(Activity ctx){
-        DummyMainActivity.toastMe("Location permission was denied", ctx);
-        AddHabitEventActivity.mapIsVisible = Boolean.FALSE;
-        setLocStuff(ctx);
-        ((CheckBox) ctx.findViewById(R.id.location_check)).toggle();
-    }
-    private static void gotoLocation(Activity ctx,  double lat, double lng) {
+
+    public static void gotoLocation(Activity ctx, double lat, double lng, final Button btn) {
+
         float zoom = 15.0f;
-        location = new double[]{lat,lng};
+        location = new double[]{lat, lng};
         LatLng ll = new LatLng(lat, lng);
         CameraUpdate update = CameraUpdateFactory.newLatLngZoom(ll, zoom);
         gmap.moveCamera(update);
-        makeButtonAvailable((Button) ctx.findViewById(R.id.add));
+        mapIsVisible = Boolean.TRUE;
+        makeButtonAvailable(btn);
+        setLocStuff(ctx);
 
     }
-    public static Location getLocationPermissionThenLocation(Activity ctx) {
-        //https://github.com/CMPUT301W17T22/MoodSwing/blob/master/app/src/main/java/com/ualberta/cmput301w17t22/moodswing/MainActivity.java
-        // Get the current location.
-        // http://stackoverflow.com/questions/32491960/android-check-permission-for-locationmanager
-        // Check if we have proper permissions to get the coarse lastKnownLocation.
 
-
-        // Check if we have proper permissions to get the fine lastKnownLocation.
-        if (ContextCompat.checkSelfPermission(ctx, android.Manifest.permission.
-                ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
-
-            Log.i("debugMaps", "Requesting fine permission");
-            // Request the permission.
-            // Dummy request code 8 used.
-            ActivityCompat.requestPermissions(ctx,
-                    new String[]{android.Manifest.permission.ACCESS_FINE_LOCATION}, MY_PERMISSIONS_REQUEST_LOCATION);
-
-            return null;
-        } else {
-            return getCurrentLocation(ctx);
-        }
-
-
-    }
     public static Location getCurrentLocation(Activity ctx) {
         // Get the lastKnownLocation once every 5 seconds, or every 10 meters.
         LocationManager locationManager = (LocationManager) ctx.getSystemService(ctx
@@ -382,6 +423,40 @@ public class AddHabitEventActivity extends AppCompatActivity {
         Location lastKnownLocationLocation = locationManager.getLastKnownLocation(provider);
         return lastKnownLocationLocation;
     }
+
+    public static Location getLocationPermissionThenLocation(Activity ctx) {
+        //https://github.com/CMPUT301W17T22/MoodSwing/blob/master/app/src/main/java/com/ualberta/cmput301w17t22/moodswing/MainActivity.java
+        // Get the current location.
+        // http://stackoverflow.com/questions/32491960/android-check-permission-for-locationmanager
+        // Check if we have proper permissions to get the coarse lastKnownLocation.
+
+
+        // Check if we have proper permissions to get the fine lastKnownLocation.
+        if (ContextCompat.checkSelfPermission(ctx, android.Manifest.permission.
+                ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
+
+            Log.i("debugMaps", "Requesting fine permission");
+            // Request the permission.
+            // Dummy request code 8 used.
+            ActivityCompat.requestPermissions(ctx,
+                    new String[]{android.Manifest.permission.ACCESS_FINE_LOCATION}, MY_PERMISSIONS_REQUEST_LOCATION);
+
+            return null;
+        } else {
+            return getCurrentLocation(ctx);
+        }
+
+
+    }
+
+    public static void locationFail(Activity ctx) {
+        DummyMainActivity.toastMe("Location permission was denied", ctx);
+        AddHabitEventActivity.mapIsVisible = Boolean.FALSE;
+        setLocStuff(ctx);
+        ((CheckBox) ctx.findViewById(R.id.location_check)).setChecked(Boolean.FALSE);
+        location = null;
+    }
+
     @Override
     public void onRequestPermissionsResult(int requestCode, String permissions[], int[] grantResults) {
         switch (requestCode) {
@@ -400,9 +475,8 @@ public class AddHabitEventActivity extends AppCompatActivity {
                         Location loc = getCurrentLocation(this);
                         double lat = loc.getLatitude();
                         double lon = loc.getLongitude();
-
                         //gotoLocation(53.523079, -113.526329);
-                        gotoLocation(this, lat, lon);
+                        gotoLocation(this, lat, lon, thisOneIsSpecialAndUnavailableSometimes);
 
 
                     }

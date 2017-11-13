@@ -74,6 +74,10 @@
         <activity android:name=".SocialTabActivity"/>
         <activity android:name=".ViewHabitActivity">
         </activity>
+        <activity android:name=".ViewHabitEventActivity">
+        </activity>
+        <activity android:name=".EditHabitEventActivity">
+        </activity>
     </application>
 
 </manifest>

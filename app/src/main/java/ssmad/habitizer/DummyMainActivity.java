@@ -35,6 +35,7 @@ public class DummyMainActivity extends AppCompatActivity {
     public static ArrayList<HabitEvent> myHabitEvents;
     public static ArrayList<Habit> myHabits;
     public static ArrayAdapter<Habit> myHabitsAdapter;
+    public static ArrayAdapter<HabitEvent> myHabitEventsAdapter;
     public static Map<String,Integer> myHabitDict;
     public static final int VIEW_HABIT = 0;
     public static final int VIEW_FEED = 1;

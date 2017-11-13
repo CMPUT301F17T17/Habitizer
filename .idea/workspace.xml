@@ -11,6 +11,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="418f3cd0-18f8-49ed-923d-8f734b8d3bc3" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/ssmad/habitizer/MyFeedAdapter.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/ssmad/habitizer/ViewHabitEventActivity.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/layout/myfeed_list_view.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/fileHashes.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/fileSnapshots.bin" afterPath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/fileSnapshots.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/taskArtifacts.bin" afterPath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/taskArtifacts.bin" />
@@ -19,7 +22,9 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/tasks/_app_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.lock" afterPath="$PROJECT_DIR$/.gradle/3.3/tasks/_app_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.lock" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/tasks/_app_compileDebugJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.lock" afterPath="$PROJECT_DIR$/.gradle/3.3/tasks/_app_compileDebugJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.lock" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/android/support/design/R$id.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/android/support/design/R$id.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/android/support/design/R$layout.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/android/support/design/R$layout.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/android/support/v7/appcompat/R$id.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/android/support/v7/appcompat/R$id.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/android/support/v7/appcompat/R$layout.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/android/support/v7/appcompat/R$layout.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/ssmad/habitizer/R$id.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/ssmad/habitizer/R$id.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/ssmad/habitizer/R$integer.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/ssmad/habitizer/R$integer.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/ssmad/habitizer/R$layout.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/ssmad/habitizer/R$layout.class" />
@@ -27,8 +32,11 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/ssmad/habitizer/R$string.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/ssmad/habitizer/R$string.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/ssmad/habitizer/R$style.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/ssmad/habitizer/R$style.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/ssmad/habitizer/R$styleable.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/ssmad/habitizer/R$styleable.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/android/support/design/R$id.class" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/android/support/design/R$id.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/android/support/design/R$layout.class" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/android/support/design/R$layout.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/android/support/v7/appcompat/R$id.class" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/android/support/v7/appcompat/R$id.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/android/support/v7/appcompat/R$layout.class" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/android/support/v7/appcompat/R$layout.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/ssmad/habitizer/R$id.class" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/ssmad/habitizer/R$id.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/ssmad/habitizer/R$integer.class" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/ssmad/habitizer/R$integer.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/ssmad/habitizer/R$layout.class" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/ssmad/habitizer/R$layout.class" />
@@ -45,7 +53,9 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_2/classes.dex" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_2/classes.dex" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_4/classes.dex" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_4/classes.dex" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/android/support/design/R$id.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/android/support/design/R$id.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/android/support/design/R$layout.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/android/support/design/R$layout.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/android/support/v7/appcompat/R$id.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/android/support/v7/appcompat/R$id.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/android/support/v7/appcompat/R$layout.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/android/support/v7/appcompat/R$layout.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/ssmad/habitizer/R$id.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/ssmad/habitizer/R$id.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/ssmad/habitizer/R$integer.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/ssmad/habitizer/R$integer.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/ssmad/habitizer/R$layout.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/ssmad/habitizer/R$layout.class" />
@@ -54,7 +64,9 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/ssmad/habitizer/R$style.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/ssmad/habitizer/R$style.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/ssmad/habitizer/R$styleable.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/ssmad/habitizer/R$styleable.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_0/android/support/design/R$id.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_0/android/support/design/R$id.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_0/android/support/design/R$layout.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_0/android/support/design/R$layout.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_2/android/support/v7/appcompat/R$id.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_2/android/support/v7/appcompat/R$id.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_2/android/support/v7/appcompat/R$layout.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_2/android/support/v7/appcompat/R$layout.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_4/ssmad/habitizer/R$id.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_4/ssmad/habitizer/R$id.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_4/ssmad/habitizer/R$integer.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_4/ssmad/habitizer/R$integer.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_4/ssmad/habitizer/R$layout.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_4/ssmad/habitizer/R$layout.class" />
@@ -68,20 +80,33 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/generated/source/r/debug/android/support/v7/appcompat/R.java" afterPath="$PROJECT_DIR$/app/build/generated/source/r/debug/android/support/v7/appcompat/R.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/generated/source/r/debug/ssmad/habitizer/R.java" afterPath="$PROJECT_DIR$/app/build/generated/source/r/debug/ssmad/habitizer/R.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/single/drawable.json" afterPath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/single/drawable.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/single/layout.json" afterPath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/single/layout.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/compile-file-map.properties" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/compile-file-map.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merger.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merger.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/packageDebug/dex-renamer-state.txt" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/packageDebug/dex-renamer-state.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/packageDebug/file-input-save-data.txt" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/packageDebug/file-input-save-data.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/packageInstantRunResourcesDebug/dex-renamer-state.txt" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/packageInstantRunResourcesDebug/dex-renamer-state.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/packageInstantRunResourcesDebug/file-input-save-data.txt" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/packageInstantRunResourcesDebug/file-input-save-data.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/instant-run-support/debug/manifest.crc" afterPath="$PROJECT_DIR$/app/build/intermediates/instant-run-support/debug/manifest.crc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/instant-run-support/debug/manifest.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/instant-run-support/debug/manifest.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/instant-run-support/debug/package_slice_0/dex-renamer-state.txt" afterPath="$PROJECT_DIR$/app/build/intermediates/instant-run-support/debug/package_slice_0/dex-renamer-state.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/instant-run-support/debug/package_slice_2/dex-renamer-state.txt" afterPath="$PROJECT_DIR$/app/build/intermediates/instant-run-support/debug/package_slice_2/dex-renamer-state.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/instant-run-support/debug/package_slice_4/dex-renamer-state.txt" afterPath="$PROJECT_DIR$/app/build/intermediates/instant-run-support/debug/package_slice_4/dex-renamer-state.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/manifests/full/debug/AndroidManifest.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/manifests/full/debug/AndroidManifest.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/manifests/instant-run/debug/AndroidManifest.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/manifests/instant-run/debug/AndroidManifest.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/layout/add_habit_event.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/layout/add_habit_event.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/restart-dex/debug/build-info.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/restart-dex/debug/build-info.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/symbols/debug/R.txt" afterPath="$PROJECT_DIR$/app/build/intermediates/symbols/debug/R.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/outputs/logs/manifest-merger-debug-report.txt" afterPath="$PROJECT_DIR$/app/build/outputs/logs/manifest-merger-debug-report.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/ssmad/habitizer/AddHabitEventActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/ssmad/habitizer/AddHabitEventActivity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/ssmad/habitizer/DummyMainActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/ssmad/habitizer/DummyMainActivity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/ssmad/habitizer/EditHabitEventActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/ssmad/habitizer/EditHabitEventActivity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/ssmad/habitizer/FeedTabActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/ssmad/habitizer/FeedTabActivity.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/ssmad/habitizer/HabitEvent.java" afterPath="$PROJECT_DIR$/app/src/main/java/ssmad/habitizer/HabitEvent.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/ssmad/habitizer/ViewHabitActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/ssmad/habitizer/ViewHabitActivity.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/add_habit_event.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/add_habit_event.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/dex-cache/cache.xml" afterPath="$PROJECT_DIR$/build/intermediates/dex-cache/cache.xml" />
     </list>
     <ignored path="Habitizer.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -133,73 +158,24 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="AddHabitActivity.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/ssmad/habitizer/AddHabitActivity.java">
+      <file leaf-file-name="HabitTabActivity.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/ssmad/habitizer/HabitTabActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="129" column="23" selection-start-line="128" selection-start-column="38" selection-end-line="129" selection-end-column="23" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="HabitEvent.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/ssmad/habitizer/HabitEvent.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2100">
-              <caret line="77" column="0" selection-start-line="77" selection-start-column="0" selection-end-line="77" selection-end-column="0" />
+            <state relative-caret-position="345">
+              <caret line="65" column="5" selection-start-line="39" selection-start-column="4" selection-end-line="65" selection-end-column="5" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DummyMainActivity.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/ssmad/habitizer/DummyMainActivity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="184" column="5" selection-start-line="184" selection-start-column="5" selection-end-line="184" selection-end-column="5" />
-              <folding />
-            </state>
+      <file leaf-file-name="activity_feed_tab.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_feed_tab.xml">
+          <provider selected="true" editor-type-id="android-designer2">
+            <state />
           </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AddHabitEventActivity.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/ssmad/habitizer/AddHabitEventActivity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1265">
-              <caret line="314" column="59" selection-start-line="314" selection-start-column="59" selection-end-line="314" selection-end-column="59" />
-              <folding>
-                <element signature="method#onCreate#0;class#AddHabitEventActivity#0" expanded="false" />
-                <element signature="method#setLocStuff#0;class#AddHabitEventActivity#0" expanded="false" />
-                <element signature="method#tryGetPic#0;class#AddHabitEventActivity#0" expanded="false" />
-                <element signature="method#getPictureFail#0;class#AddHabitEventActivity#0" expanded="false" />
-                <element signature="method#setPicStuff#0;class#AddHabitEventActivity#0" expanded="false" />
-                <element signature="method#getCompressedByteFromBitmap#0;class#AddHabitEventActivity#0" expanded="false" />
-                <element signature="method#addEvent#0;class#AddHabitEventActivity#0" expanded="false" />
-                <element signature="method#habitEventCheckFix#0;class#AddHabitEventActivity#0" expanded="false" />
-                <element signature="method#makeButtonUnavailable#0;class#AddHabitEventActivity#0" expanded="false" />
-                <element signature="method#makeButtonAvailable#0;class#AddHabitEventActivity#0" expanded="false" />
-                <element signature="method#initMap#0;class#AddHabitEventActivity#0" expanded="false" />
-                <element signature="e#11569#11746#0" expanded="true" />
-                <element signature="e#11745#11746#0" expanded="true" />
-                <element signature="method#myOnMapReady#0;class#AddHabitEventActivity#0" expanded="false" />
-                <element signature="method#gotoLocation#0;class#AddHabitEventActivity#0" expanded="false" />
-                <element signature="method#getLocationPermissionThenLocation#0;class#AddHabitEventActivity#0" expanded="false" />
-                <element signature="method#getCurrentLocation#0;class#AddHabitEventActivity#0" expanded="false" />
-                <element signature="class#14394:14847" expanded="false" />
-                <marker date="1510571794503" expanded="false" signature="6846:7034" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ActivityCompat.java" pinned="false" current-in-tab="false">
-        <entry file="jar://D:/Users/Sadman/AppData/Local/Android/sdk/extras/android/m2repository/com/android/support/support-compat/25.3.1/support-compat-25.3.1-sources.jar!/android/support/v4/app/ActivityCompat.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-316">
-              <caret line="368" column="23" selection-start-line="368" selection-start-column="23" selection-end-line="368" selection-end-column="23" />
+          <provider editor-type-id="text-editor">
+            <state relative-caret-position="35">
+              <caret line="1" column="13" selection-start-line="1" selection-start-column="13" selection-end-line="1" selection-end-column="13" />
               <folding />
             </state>
           </provider>
@@ -209,7 +185,101 @@
         <entry file="file://$PROJECT_DIR$/app/src/main/java/ssmad/habitizer/MyHabitsAdapter.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="1995">
-              <caret line="87" column="16" selection-start-line="87" selection-start-column="16" selection-end-line="87" selection-end-column="16" />
+              <caret line="87" column="76" selection-start-line="85" selection-start-column="16" selection-end-line="87" selection-end-column="76" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AddHabitEventActivity.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/ssmad/habitizer/AddHabitEventActivity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-616">
+              <caret line="328" column="10" selection-start-line="328" selection-start-column="10" selection-end-line="328" selection-end-column="10" />
+              <folding>
+                <element signature="method#onCreate#0;class#AddHabitEventActivity#0" expanded="false" />
+                <element signature="e#4098#4242#0" expanded="true" />
+                <element signature="e#4241#4242#0" expanded="true" />
+                <element signature="method#onActivityResult#0;class#AddHabitEventActivity#0" expanded="false" />
+                <element signature="method#setUpCheckBoxes#0;class#AddHabitEventActivity#0" expanded="false" />
+                <element signature="e#5721#6239#0" expanded="true" />
+                <element signature="e#6238#6239#0" expanded="true" />
+                <element signature="method#setUpPicButtons#0;class#AddHabitEventActivity#0" expanded="false" />
+                <element signature="e#6547#6869#0" expanded="true" />
+                <element signature="e#6868#6869#0" expanded="true" />
+                <element signature="e#6911#7303#0" expanded="true" />
+                <element signature="e#7302#7303#0" expanded="true" />
+                <element signature="method#setLocStuff#0;class#AddHabitEventActivity#0" expanded="false" />
+                <element signature="method#setPicStuff#0;class#AddHabitEventActivity#0" expanded="false" />
+                <element signature="method#getPictureFail#0;class#AddHabitEventActivity#0" expanded="false" />
+                <element signature="method#getCompressedByteFromBitmap#0;class#AddHabitEventActivity#0" expanded="false" />
+                <element signature="method#addEvent#0;class#AddHabitEventActivity#0" expanded="false" />
+                <element signature="method#habitEventCheckFix#0;class#AddHabitEventActivity#0" expanded="false" />
+                <element signature="method#cancelEvent#0;class#AddHabitEventActivity#0" expanded="false" />
+                <element signature="method#resetVars#0;class#AddHabitEventActivity#0" expanded="false" />
+                <element signature="method#makeButtonUnavailable#0;class#AddHabitEventActivity#0" expanded="false" />
+                <element signature="method#makeButtonAvailable#0;class#AddHabitEventActivity#0" expanded="false" />
+                <element signature="e#12901#13093#0" expanded="true" />
+                <element signature="e#13092#13093#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MapFragment.class" pinned="false" current-in-tab="false">
+        <entry file="jar://$USER_HOME$/.android/build-cache/86d8565e303793ec3f85d46b48ff8dcb3a19afba/output/jars/classes.jar!/com/google/android/gms/maps/MapFragment.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="174">
+              <caret line="150" column="54" selection-start-line="150" selection-start-column="54" selection-end-line="150" selection-end-column="54" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ActivityCompat.java" pinned="false" current-in-tab="true">
+        <entry file="jar://D:/Users/Sadman/AppData/Local/Android/sdk/extras/android/m2repository/com/android/support/support-compat/25.3.1/support-compat-25.3.1-sources.jar!/android/support/v4/app/ActivityCompat.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-316">
+              <caret line="368" column="23" selection-start-line="368" selection-start-column="23" selection-end-line="368" selection-end-column="23" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ViewHabitEventActivity.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/ssmad/habitizer/ViewHabitEventActivity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-96">
+              <caret line="41" column="41" selection-start-line="41" selection-start-column="41" selection-end-line="41" selection-end-column="41" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1860#2080#0" expanded="true" />
+                <element signature="e#2079#2080#0" expanded="true" />
+                <element signature="e#2458#2779#0" expanded="true" />
+                <element signature="e#2778#2779#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="EditHabitEventActivity.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/ssmad/habitizer/EditHabitEventActivity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1012">
+              <caret line="58" column="17" selection-start-line="58" selection-start-column="15" selection-end-line="65" selection-end-column="19" />
+              <folding>
+                <element signature="e#2282#2836#0" expanded="true" />
+                <element signature="e#2835#2836#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FeedTabActivity.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/ssmad/habitizer/FeedTabActivity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="126">
+              <caret line="26" column="70" selection-start-line="26" selection-start-column="70" selection-end-line="26" selection-end-column="70" />
               <folding />
             </state>
           </provider>
@@ -221,8 +291,8 @@
             <state />
           </provider>
           <provider editor-type-id="text-editor">
-            <state relative-caret-position="-34">
-              <caret line="125" column="4" selection-start-line="125" selection-start-column="4" selection-end-line="147" selection-end-column="0" />
+            <state relative-caret-position="5355">
+              <caret line="153" column="4" selection-start-line="153" selection-start-column="4" selection-end-line="191" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -2648,12 +2718,10 @@
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_habit_tab.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/ssmad/habitizer/SocialTabActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_social_tab.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/ssmad/habitizer/FeedTabActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_dummy_main.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/ssmad/habitizer/HabitTabActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_feed_tab.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/ssmad/habitizer/DummyMainActivity.java" />
         <option value="$PROJECT_DIR$/app/build.gradle" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/days_border.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/values/colors.xml" />
@@ -2666,10 +2734,16 @@
         <option value="$PROJECT_DIR$/app/src/main/res/layout/add_habit.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/ssmad/habitizer/AddHabitActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/ssmad/habitizer/EditHabitActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/myfeed_list_view.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/ssmad/habitizer/MyFeedAdapter.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/ssmad/habitizer/HabitEvent.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/ssmad/habitizer/ViewHabitActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/add_habit_event.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/ssmad/habitizer/HabitEvent.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/ssmad/habitizer/DummyMainActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/ssmad/habitizer/FeedTabActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/ssmad/habitizer/EditHabitEventActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/ssmad/habitizer/AddHabitEventActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/ssmad/habitizer/ViewHabitEventActivity.java" />
       </list>
     </option>
   </component>
@@ -3189,7 +3263,7 @@
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.38641426" sideWeight="0.39658847" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Android Monitor" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.38641426" sideWeight="0.6034115" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Android Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.38641426" sideWeight="0.6034115" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32876712" sideWeight="0.49697885" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32628062" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -3227,50 +3301,11 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="3" />
+      <option name="time" value="9" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/ssmad/habitizer/DeleteHabitEventActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/ssmad/habitizer/DeleteHabitActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="6" column="32" selection-start-line="6" selection-start-column="32" selection-end-line="6" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/ssmad/habitizer/EditHabitEventActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="6" column="35" selection-start-line="6" selection-start-column="35" selection-end-line="6" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/ssmad/habitizer/DeleteHabitEventActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_login.xml">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="android-designer2">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_test.xml">
       <provider editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -3432,25 +3467,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/ssmad/habitizer/FeedTabActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="350">
-          <caret line="11" column="62" selection-start-line="11" selection-start-column="62" selection-end-line="11" selection-end-column="62" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_feed_tab.xml">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="35">
-          <caret line="1" column="13" selection-start-line="1" selection-start-column="13" selection-end-line="1" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="android-designer2">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_habit_tab.xml">
       <provider editor-type-id="text-editor">
         <state relative-caret-position="560">
@@ -3543,8 +3559,8 @@
         <state relative-caret-position="208">
           <caret line="23" column="52" selection-start-line="23" selection-start-column="52" selection-end-line="23" selection-end-column="52" />
           <folding>
-            <element signature="e#369#370#0" expanded="true" />
-            <element signature="e#405#406#0" expanded="true" />
+            <element signature="e#369#370#0" expanded="false" />
+            <element signature="e#405#406#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -3571,36 +3587,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/myhabits_list_view.xml">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="-980">
-          <caret line="8" column="4" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="android-designer2">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/ssmad/habitizer/EditHabitActivity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="730">
           <caret line="35" column="39" selection-start-line="35" selection-start-column="39" selection-end-line="35" selection-end-column="39" />
           <folding>
-            <element signature="e#1795#1796#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/ssmad/habitizer/ViewHabitActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="46" column="0" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
-          <folding>
-            <element signature="e#1443#1585#0" expanded="true" />
-            <element signature="e#1584#1585#0" expanded="true" />
-            <element signature="e#1626#1937#0" expanded="true" />
-            <element signature="e#1936#1937#0" expanded="true" />
+            <element signature="e#1795#1796#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -3616,9 +3608,49 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/ssmad/habitizer/AddHabitActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="129" column="23" selection-start-line="128" selection-start-column="38" selection-end-line="129" selection-end-column="23" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/myfeed_list_view.xml">
+      <provider selected="true" editor-type-id="android-designer2">
+        <state />
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/myhabits_list_view.xml">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="8" column="4" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="android-designer2">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/ssmad/habitizer/HabitEvent.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="243">
+          <caret line="78" column="27" selection-start-line="78" selection-start-column="27" selection-end-line="78" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/add_habit.xml">
       <provider editor-type-id="text-editor">
-        <state relative-caret-position="386">
+        <state relative-caret-position="6545">
           <caret line="187" column="47" selection-start-line="187" selection-start-column="47" selection-end-line="187" selection-end-column="47" />
           <folding />
         </state>
@@ -3627,10 +3659,57 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/add_habit_event.xml">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/ssmad/habitizer/DummyMainActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="58">
+          <caret line="37" column="64" selection-start-line="37" selection-start-column="64" selection-end-line="37" selection-end-column="64" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/ssmad/habitizer/MyFeedAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1050">
+          <caret line="51" column="79" selection-start-line="51" selection-start-column="57" selection-end-line="51" selection-end-column="79" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1792#2151#0" expanded="true" />
+            <element signature="e#2150#2151#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/ssmad/habitizer/ViewHabitActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="700">
+          <caret line="54" column="5" selection-start-line="48" selection-start-column="4" selection-end-line="54" selection-end-column="5" />
+          <folding>
+            <element signature="e#1626#1938#0" expanded="true" />
+            <element signature="e#1937#1938#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/ssmad/habitizer/MyHabitsAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1995">
+          <caret line="87" column="76" selection-start-line="85" selection-start-column="16" selection-end-line="87" selection-end-column="76" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/ssmad/habitizer/HabitTabActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="65" column="5" selection-start-line="39" selection-start-column="4" selection-end-line="65" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_feed_tab.xml">
       <provider editor-type-id="text-editor">
-        <state relative-caret-position="-34">
-          <caret line="125" column="4" selection-start-line="125" selection-start-column="4" selection-end-line="147" selection-end-column="0" />
+        <state relative-caret-position="35">
+          <caret line="1" column="13" selection-start-line="1" selection-start-column="13" selection-end-line="1" selection-end-column="13" />
           <folding />
         </state>
       </provider>
@@ -3638,44 +3717,87 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/ssmad/habitizer/HabitTabActivity.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/ssmad/habitizer/EditHabitEventActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-145">
-          <caret line="60" column="5" selection-start-line="60" selection-start-column="5" selection-end-line="60" selection-end-column="5" />
+        <state relative-caret-position="1012">
+          <caret line="58" column="17" selection-start-line="58" selection-start-column="15" selection-end-line="65" selection-end-column="19" />
+          <folding>
+            <element signature="e#2282#2836#0" expanded="true" />
+            <element signature="e#2835#2836#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.android/build-cache/86d8565e303793ec3f85d46b48ff8dcb3a19afba/output/jars/classes.jar!/com/google/android/gms/maps/MapFragment.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="174">
+          <caret line="150" column="54" selection-start-line="150" selection-start-column="54" selection-end-line="150" selection-end-column="54" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/ssmad/habitizer/DummyMainActivity.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/ssmad/habitizer/FeedTabActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="184" column="5" selection-start-line="184" selection-start-column="5" selection-end-line="184" selection-end-column="5" />
+        <state relative-caret-position="126">
+          <caret line="26" column="70" selection-start-line="26" selection-start-column="70" selection-end-line="26" selection-end-column="70" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/ssmad/habitizer/HabitEvent.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2100">
-          <caret line="77" column="0" selection-start-line="77" selection-start-column="0" selection-end-line="77" selection-end-column="0" />
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/add_habit_event.xml">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="5355">
+          <caret line="153" column="4" selection-start-line="153" selection-start-column="4" selection-end-line="191" selection-end-column="0" />
           <folding />
         </state>
       </provider>
+      <provider selected="true" editor-type-id="android-designer2">
+        <state />
+      </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/ssmad/habitizer/MyHabitsAdapter.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/ssmad/habitizer/AddHabitEventActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1995">
-          <caret line="87" column="16" selection-start-line="87" selection-start-column="16" selection-end-line="87" selection-end-column="16" />
-          <folding />
+        <state relative-caret-position="-616">
+          <caret line="328" column="10" selection-start-line="328" selection-start-column="10" selection-end-line="328" selection-end-column="10" />
+          <folding>
+            <element signature="method#onCreate#0;class#AddHabitEventActivity#0" expanded="false" />
+            <element signature="e#4098#4242#0" expanded="true" />
+            <element signature="e#4241#4242#0" expanded="true" />
+            <element signature="method#onActivityResult#0;class#AddHabitEventActivity#0" expanded="false" />
+            <element signature="method#setUpCheckBoxes#0;class#AddHabitEventActivity#0" expanded="false" />
+            <element signature="e#5721#6239#0" expanded="true" />
+            <element signature="e#6238#6239#0" expanded="true" />
+            <element signature="method#setUpPicButtons#0;class#AddHabitEventActivity#0" expanded="false" />
+            <element signature="e#6547#6869#0" expanded="true" />
+            <element signature="e#6868#6869#0" expanded="true" />
+            <element signature="e#6911#7303#0" expanded="true" />
+            <element signature="e#7302#7303#0" expanded="true" />
+            <element signature="method#setLocStuff#0;class#AddHabitEventActivity#0" expanded="false" />
+            <element signature="method#setPicStuff#0;class#AddHabitEventActivity#0" expanded="false" />
+            <element signature="method#getPictureFail#0;class#AddHabitEventActivity#0" expanded="false" />
+            <element signature="method#getCompressedByteFromBitmap#0;class#AddHabitEventActivity#0" expanded="false" />
+            <element signature="method#addEvent#0;class#AddHabitEventActivity#0" expanded="false" />
+            <element signature="method#habitEventCheckFix#0;class#AddHabitEventActivity#0" expanded="false" />
+            <element signature="method#cancelEvent#0;class#AddHabitEventActivity#0" expanded="false" />
+            <element signature="method#resetVars#0;class#AddHabitEventActivity#0" expanded="false" />
+            <element signature="method#makeButtonUnavailable#0;class#AddHabitEventActivity#0" expanded="false" />
+            <element signature="method#makeButtonAvailable#0;class#AddHabitEventActivity#0" expanded="false" />
+            <element signature="e#12901#13093#0" expanded="true" />
+            <element signature="e#13092#13093#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/ssmad/habitizer/AddHabitActivity.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/ssmad/habitizer/ViewHabitEventActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="129" column="23" selection-start-line="128" selection-start-column="38" selection-end-line="129" selection-end-column="23" />
+        <state relative-caret-position="-96">
+          <caret line="41" column="41" selection-start-line="41" selection-start-column="41" selection-end-line="41" selection-end-column="41" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#1860#2080#0" expanded="true" />
+            <element signature="e#2079#2080#0" expanded="true" />
+            <element signature="e#2458#2779#0" expanded="true" />
+            <element signature="e#2778#2779#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -3685,34 +3807,6 @@
         <state relative-caret-position="-316">
           <caret line="368" column="23" selection-start-line="368" selection-start-column="23" selection-end-line="368" selection-end-column="23" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/ssmad/habitizer/AddHabitEventActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1265">
-          <caret line="314" column="59" selection-start-line="314" selection-start-column="59" selection-end-line="314" selection-end-column="59" />
-          <folding>
-            <element signature="method#onCreate#0;class#AddHabitEventActivity#0" expanded="false" />
-            <element signature="method#setLocStuff#0;class#AddHabitEventActivity#0" expanded="false" />
-            <element signature="method#tryGetPic#0;class#AddHabitEventActivity#0" expanded="false" />
-            <element signature="method#getPictureFail#0;class#AddHabitEventActivity#0" expanded="false" />
-            <element signature="method#setPicStuff#0;class#AddHabitEventActivity#0" expanded="false" />
-            <element signature="method#getCompressedByteFromBitmap#0;class#AddHabitEventActivity#0" expanded="false" />
-            <element signature="method#addEvent#0;class#AddHabitEventActivity#0" expanded="false" />
-            <element signature="method#habitEventCheckFix#0;class#AddHabitEventActivity#0" expanded="false" />
-            <element signature="method#makeButtonUnavailable#0;class#AddHabitEventActivity#0" expanded="false" />
-            <element signature="method#makeButtonAvailable#0;class#AddHabitEventActivity#0" expanded="false" />
-            <element signature="method#initMap#0;class#AddHabitEventActivity#0" expanded="false" />
-            <element signature="e#11569#11746#0" expanded="true" />
-            <element signature="e#11745#11746#0" expanded="true" />
-            <element signature="method#myOnMapReady#0;class#AddHabitEventActivity#0" expanded="false" />
-            <element signature="method#gotoLocation#0;class#AddHabitEventActivity#0" expanded="false" />
-            <element signature="method#getLocationPermissionThenLocation#0;class#AddHabitEventActivity#0" expanded="false" />
-            <element signature="method#getCurrentLocation#0;class#AddHabitEventActivity#0" expanded="false" />
-            <element signature="class#14394:14847" expanded="false" />
-            <marker date="1510571794503" expanded="false" signature="6846:7034" ph="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>

@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 manifest
-ADDED from D:\school\CMPUT 301\Habitizer\app\src\main\AndroidManifest.xml:2:1-79:12
+ADDED from D:\school\CMPUT 301\Habitizer\app\src\main\AndroidManifest.xml:2:1-83:12
 	package
 		ADDED from D:\school\CMPUT 301\Habitizer\app\src\main\AndroidManifest.xml:3:11-36
 		INJECTED from D:\school\CMPUT 301\Habitizer\app\src\main\AndroidManifest.xml
@@ -88,7 +88,7 @@ ADDED from D:\school\CMPUT 301\Habitizer\app\src\main\AndroidManifest.xml:25:5-8
 	android:name
 		ADDED from D:\school\CMPUT 301\Habitizer\app\src\main\AndroidManifest.xml:25:22-78
 application
-ADDED from D:\school\CMPUT 301\Habitizer\app\src\main\AndroidManifest.xml:27:5-77:19
+ADDED from D:\school\CMPUT 301\Habitizer\app\src\main\AndroidManifest.xml:27:5-81:19
 MERGED from [com.android.support:design:25.3.1] C:\Users\Sadman\.android\build-cache\1f43954577a446aa44799bcf7dd607cc0cac21fb\output\AndroidManifest.xml:29:5-20
 MERGED from [com.android.support:transition:25.3.1] C:\Users\Sadman\.android\build-cache\f62816b7612c7ceda063b892aa5ab3af2d640443\output\AndroidManifest.xml:26:5-20
 MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\Sadman\.android\build-cache\ad1cc4a6c156d97a59579d601514fa3d0745d8fc\output\AndroidManifest.xml:9:5-20
@@ -220,6 +220,14 @@ activity#ssmad.habitizer.ViewHabitActivity
 ADDED from D:\school\CMPUT 301\Habitizer\app\src\main\AndroidManifest.xml:75:9-76:20
 	android:name
 		ADDED from D:\school\CMPUT 301\Habitizer\app\src\main\AndroidManifest.xml:75:19-52
+activity#ssmad.habitizer.ViewHabitEventActivity
+ADDED from D:\school\CMPUT 301\Habitizer\app\src\main\AndroidManifest.xml:77:9-78:20
+	android:name
+		ADDED from D:\school\CMPUT 301\Habitizer\app\src\main\AndroidManifest.xml:77:19-57
+activity#ssmad.habitizer.EditHabitEventActivity
+ADDED from D:\school\CMPUT 301\Habitizer\app\src\main\AndroidManifest.xml:79:9-80:20
+	android:name
+		ADDED from D:\school\CMPUT 301\Habitizer\app\src\main\AndroidManifest.xml:79:19-57
 uses-sdk
 INJECTED from D:\school\CMPUT 301\Habitizer\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 MERGED from [com.android.support:design:25.3.1] C:\Users\Sadman\.android\build-cache\1f43954577a446aa44799bcf7dd607cc0cac21fb\output\AndroidManifest.xml:21:5-23:62
