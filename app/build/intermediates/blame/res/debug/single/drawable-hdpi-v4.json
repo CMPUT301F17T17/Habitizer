@@ -28,12 +28,12 @@
         "source": "C:\\Users\\Sadman\\.android\\build-cache\\7791cc1ed7a29c2c812ace4b0530d4f9c2c1b23e\\output\\res\\drawable-hdpi-v4\\abc_ic_menu_paste_mtrl_am_alpha.png"
     },
     {
-        "merged": "D:\\school\\CMPUT 301\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\abc_text_select_handle_middle_mtrl_light.png",
-        "source": "C:\\Users\\Sadman\\.android\\build-cache\\7791cc1ed7a29c2c812ace4b0530d4f9c2c1b23e\\output\\res\\drawable-hdpi-v4\\abc_text_select_handle_middle_mtrl_light.png"
-    },
-    {
         "merged": "D:\\school\\CMPUT 301\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\abc_scrubber_control_off_mtrl_alpha.png",
         "source": "C:\\Users\\Sadman\\.android\\build-cache\\7791cc1ed7a29c2c812ace4b0530d4f9c2c1b23e\\output\\res\\drawable-hdpi-v4\\abc_scrubber_control_off_mtrl_alpha.png"
+    },
+    {
+        "merged": "D:\\school\\CMPUT 301\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\abc_text_select_handle_middle_mtrl_light.png",
+        "source": "C:\\Users\\Sadman\\.android\\build-cache\\7791cc1ed7a29c2c812ace4b0530d4f9c2c1b23e\\output\\res\\drawable-hdpi-v4\\abc_text_select_handle_middle_mtrl_light.png"
     },
     {
         "merged": "D:\\school\\CMPUT 301\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\abc_btn_switch_to_on_mtrl_00001.9.png",
@@ -44,16 +44,16 @@
         "source": "C:\\Users\\Sadman\\.android\\build-cache\\c0559cd23ce317ccbdc1e450cbf3850d6bbfadbc\\output\\res\\drawable-hdpi-v4\\quantum_ic_play_circle_filled_grey600_36.png"
     },
     {
-        "merged": "D:\\school\\CMPUT 301\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\abc_switch_track_mtrl_alpha.9.png",
-        "source": "C:\\Users\\Sadman\\.android\\build-cache\\7791cc1ed7a29c2c812ace4b0530d4f9c2c1b23e\\output\\res\\drawable-hdpi-v4\\abc_switch_track_mtrl_alpha.9.png"
+        "merged": "D:\\school\\CMPUT 301\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\quantum_ic_pause_circle_filled_white_36.png",
+        "source": "C:\\Users\\Sadman\\.android\\build-cache\\c0559cd23ce317ccbdc1e450cbf3850d6bbfadbc\\output\\res\\drawable-hdpi-v4\\quantum_ic_pause_circle_filled_white_36.png"
     },
     {
         "merged": "D:\\school\\CMPUT 301\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\abc_ab_share_pack_mtrl_alpha.9.png",
         "source": "C:\\Users\\Sadman\\.android\\build-cache\\7791cc1ed7a29c2c812ace4b0530d4f9c2c1b23e\\output\\res\\drawable-hdpi-v4\\abc_ab_share_pack_mtrl_alpha.9.png"
     },
     {
-        "merged": "D:\\school\\CMPUT 301\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\quantum_ic_pause_circle_filled_white_36.png",
-        "source": "C:\\Users\\Sadman\\.android\\build-cache\\c0559cd23ce317ccbdc1e450cbf3850d6bbfadbc\\output\\res\\drawable-hdpi-v4\\quantum_ic_pause_circle_filled_white_36.png"
+        "merged": "D:\\school\\CMPUT 301\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\abc_switch_track_mtrl_alpha.9.png",
+        "source": "C:\\Users\\Sadman\\.android\\build-cache\\7791cc1ed7a29c2c812ace4b0530d4f9c2c1b23e\\output\\res\\drawable-hdpi-v4\\abc_switch_track_mtrl_alpha.9.png"
     },
     {
         "merged": "D:\\school\\CMPUT 301\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\cast_ic_stop_circle_filled_white.png",
@@ -64,8 +64,16 @@
         "source": "C:\\Users\\Sadman\\.android\\build-cache\\dd3c588bfaff752029b83862143766ba6f8d6e5c\\output\\res\\drawable-hdpi-v4\\cast_ic_notification_0.png"
     },
     {
+        "merged": "D:\\school\\CMPUT 301\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\ic_speaker_group_dark.png",
+        "source": "C:\\Users\\Sadman\\.android\\build-cache\\d63879850c988cdb3bf594b87afca95ad4729033\\output\\res\\drawable-hdpi-v4\\ic_speaker_group_dark.png"
+    },
+    {
         "merged": "D:\\school\\CMPUT 301\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\quantum_ic_replay_30_white_36.png",
         "source": "C:\\Users\\Sadman\\.android\\build-cache\\c0559cd23ce317ccbdc1e450cbf3850d6bbfadbc\\output\\res\\drawable-hdpi-v4\\quantum_ic_replay_30_white_36.png"
+    },
+    {
+        "merged": "D:\\school\\CMPUT 301\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\ic_cast_disabled_light.png",
+        "source": "C:\\Users\\Sadman\\.android\\build-cache\\d63879850c988cdb3bf594b87afca95ad4729033\\output\\res\\drawable-hdpi-v4\\ic_cast_disabled_light.png"
     },
     {
         "merged": "D:\\school\\CMPUT 301\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\abc_ic_commit_search_api_mtrl_alpha.png",
@@ -74,6 +82,10 @@
     {
         "merged": "D:\\school\\CMPUT 301\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\quantum_ic_refresh_white_24.png",
         "source": "C:\\Users\\Sadman\\.android\\build-cache\\c0559cd23ce317ccbdc1e450cbf3850d6bbfadbc\\output\\res\\drawable-hdpi-v4\\quantum_ic_refresh_white_24.png"
+    },
+    {
+        "merged": "D:\\school\\CMPUT 301\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\common_google_signin_btn_text_light_disabled.9.png",
+        "source": "C:\\Users\\Sadman\\.android\\build-cache\\d05c0d6b5ccda2e01e17f7771eb5505f2e755f85\\output\\res\\drawable-hdpi-v4\\common_google_signin_btn_text_light_disabled.9.png"
     },
     {
         "merged": "D:\\school\\CMPUT 301\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\abc_ic_star_black_36dp.png",
@@ -92,12 +104,16 @@
         "source": "C:\\Users\\Sadman\\.android\\build-cache\\c0559cd23ce317ccbdc1e450cbf3850d6bbfadbc\\output\\res\\drawable-hdpi-v4\\quantum_ic_forward_10_white_24.png"
     },
     {
+        "merged": "D:\\school\\CMPUT 301\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\common_google_signin_btn_text_light_normal_background.9.png",
+        "source": "C:\\Users\\Sadman\\.android\\build-cache\\c007d640965807179f884100c44ed6805b2ce618\\output\\res\\drawable-hdpi-v4\\common_google_signin_btn_text_light_normal_background.9.png"
+    },
+    {
         "merged": "D:\\school\\CMPUT 301\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\places_ic_search.png",
         "source": "C:\\Users\\Sadman\\.android\\build-cache\\39ecd4a625354b3abf91f26d125779a08ee03fd1\\output\\res\\drawable-hdpi-v4\\places_ic_search.png"
     },
     {
-        "merged": "D:\\school\\CMPUT 301\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\common_google_signin_btn_text_light_normal_background.9.png",
-        "source": "C:\\Users\\Sadman\\.android\\build-cache\\c007d640965807179f884100c44ed6805b2ce618\\output\\res\\drawable-hdpi-v4\\common_google_signin_btn_text_light_normal_background.9.png"
+        "merged": "D:\\school\\CMPUT 301\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\ic_pause_dark.png",
+        "source": "C:\\Users\\Sadman\\.android\\build-cache\\d63879850c988cdb3bf594b87afca95ad4729033\\output\\res\\drawable-hdpi-v4\\ic_pause_dark.png"
     },
     {
         "merged": "D:\\school\\CMPUT 301\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\abc_list_focused_holo.9.png",
@@ -108,6 +124,14 @@
         "source": "C:\\Users\\Sadman\\.android\\build-cache\\046677683d115e1250598dd7c7aa55fe55bc9dea\\output\\res\\drawable-hdpi-v4\\ic_vol_type_speaker_dark.png"
     },
     {
+        "merged": "D:\\school\\CMPUT 301\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\common_google_signin_btn_text_dark_disabled.9.png",
+        "source": "C:\\Users\\Sadman\\.android\\build-cache\\d05c0d6b5ccda2e01e17f7771eb5505f2e755f85\\output\\res\\drawable-hdpi-v4\\common_google_signin_btn_text_dark_disabled.9.png"
+    },
+    {
+        "merged": "D:\\school\\CMPUT 301\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\ic_tv_dark.png",
+        "source": "C:\\Users\\Sadman\\.android\\build-cache\\d63879850c988cdb3bf594b87afca95ad4729033\\output\\res\\drawable-hdpi-v4\\ic_tv_dark.png"
+    },
+    {
         "merged": "D:\\school\\CMPUT 301\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\abc_ic_star_half_black_48dp.png",
         "source": "C:\\Users\\Sadman\\.android\\build-cache\\7791cc1ed7a29c2c812ace4b0530d4f9c2c1b23e\\output\\res\\drawable-hdpi-v4\\abc_ic_star_half_black_48dp.png"
     },
@@ -116,12 +140,28 @@
         "source": "C:\\Users\\Sadman\\.android\\build-cache\\7791cc1ed7a29c2c812ace4b0530d4f9c2c1b23e\\output\\res\\drawable-hdpi-v4\\abc_list_selector_disabled_holo_light.9.png"
     },
     {
+        "merged": "D:\\school\\CMPUT 301\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\ic_media_route_disabled_mono_dark.png",
+        "source": "C:\\Users\\Sadman\\.android\\build-cache\\d63879850c988cdb3bf594b87afca95ad4729033\\output\\res\\drawable-hdpi-v4\\ic_media_route_disabled_mono_dark.png"
+    },
+    {
         "merged": "D:\\school\\CMPUT 301\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\quantum_ic_bigtop_updates_white_24.png",
         "source": "C:\\Users\\Sadman\\.android\\build-cache\\c0559cd23ce317ccbdc1e450cbf3850d6bbfadbc\\output\\res\\drawable-hdpi-v4\\quantum_ic_bigtop_updates_white_24.png"
     },
     {
+        "merged": "D:\\school\\CMPUT 301\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\ic_play_dark.png",
+        "source": "C:\\Users\\Sadman\\.android\\build-cache\\d63879850c988cdb3bf594b87afca95ad4729033\\output\\res\\drawable-hdpi-v4\\ic_play_dark.png"
+    },
+    {
+        "merged": "D:\\school\\CMPUT 301\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\common_google_signin_btn_text_dark_normal.9.png",
+        "source": "C:\\Users\\Sadman\\.android\\build-cache\\d05c0d6b5ccda2e01e17f7771eb5505f2e755f85\\output\\res\\drawable-hdpi-v4\\common_google_signin_btn_text_dark_normal.9.png"
+    },
+    {
         "merged": "D:\\school\\CMPUT 301\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\abc_textfield_activated_mtrl_alpha.9.png",
         "source": "C:\\Users\\Sadman\\.android\\build-cache\\7791cc1ed7a29c2c812ace4b0530d4f9c2c1b23e\\output\\res\\drawable-hdpi-v4\\abc_textfield_activated_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "D:\\school\\CMPUT 301\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\common_google_signin_btn_icon_dark_disabled.9.png",
+        "source": "C:\\Users\\Sadman\\.android\\build-cache\\d05c0d6b5ccda2e01e17f7771eb5505f2e755f85\\output\\res\\drawable-hdpi-v4\\common_google_signin_btn_icon_dark_disabled.9.png"
     },
     {
         "merged": "D:\\school\\CMPUT 301\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\design_ic_visibility_off.png",
@@ -220,6 +260,10 @@
         "source": "C:\\Users\\Sadman\\.android\\build-cache\\7791cc1ed7a29c2c812ace4b0530d4f9c2c1b23e\\output\\res\\drawable-hdpi-v4\\abc_list_pressed_holo_light.9.png"
     },
     {
+        "merged": "D:\\school\\CMPUT 301\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\ic_cast_light.png",
+        "source": "C:\\Users\\Sadman\\.android\\build-cache\\d63879850c988cdb3bf594b87afca95ad4729033\\output\\res\\drawable-hdpi-v4\\ic_cast_light.png"
+    },
+    {
         "merged": "D:\\school\\CMPUT 301\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\abc_ic_star_half_black_16dp.png",
         "source": "C:\\Users\\Sadman\\.android\\build-cache\\7791cc1ed7a29c2c812ace4b0530d4f9c2c1b23e\\output\\res\\drawable-hdpi-v4\\abc_ic_star_half_black_16dp.png"
     },
@@ -228,12 +272,24 @@
         "source": "C:\\Users\\Sadman\\.android\\build-cache\\c0559cd23ce317ccbdc1e450cbf3850d6bbfadbc\\output\\res\\drawable-hdpi-v4\\quantum_ic_forward_30_white_36.png"
     },
     {
+        "merged": "D:\\school\\CMPUT 301\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\ic_close_light.png",
+        "source": "C:\\Users\\Sadman\\.android\\build-cache\\d63879850c988cdb3bf594b87afca95ad4729033\\output\\res\\drawable-hdpi-v4\\ic_close_light.png"
+    },
+    {
         "merged": "D:\\school\\CMPUT 301\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\cast_abc_scrubber_control_to_pressed_mtrl_005.png",
         "source": "C:\\Users\\Sadman\\.android\\build-cache\\c0559cd23ce317ccbdc1e450cbf3850d6bbfadbc\\output\\res\\drawable-hdpi-v4\\cast_abc_scrubber_control_to_pressed_mtrl_005.png"
     },
     {
         "merged": "D:\\school\\CMPUT 301\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\abc_ic_menu_selectall_mtrl_alpha.png",
         "source": "C:\\Users\\Sadman\\.android\\build-cache\\7791cc1ed7a29c2c812ace4b0530d4f9c2c1b23e\\output\\res\\drawable-hdpi-v4\\abc_ic_menu_selectall_mtrl_alpha.png"
+    },
+    {
+        "merged": "D:\\school\\CMPUT 301\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\ic_speaker_light.png",
+        "source": "C:\\Users\\Sadman\\.android\\build-cache\\d63879850c988cdb3bf594b87afca95ad4729033\\output\\res\\drawable-hdpi-v4\\ic_speaker_light.png"
+    },
+    {
+        "merged": "D:\\school\\CMPUT 301\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\ic_media_route_off_mono_dark.png",
+        "source": "C:\\Users\\Sadman\\.android\\build-cache\\d63879850c988cdb3bf594b87afca95ad4729033\\output\\res\\drawable-hdpi-v4\\ic_media_route_off_mono_dark.png"
     },
     {
         "merged": "D:\\school\\CMPUT 301\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\powered_by_google_light.png",
@@ -246,6 +302,10 @@
     {
         "merged": "D:\\school\\CMPUT 301\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\quantum_ic_pause_grey600_36.png",
         "source": "C:\\Users\\Sadman\\.android\\build-cache\\c0559cd23ce317ccbdc1e450cbf3850d6bbfadbc\\output\\res\\drawable-hdpi-v4\\quantum_ic_pause_grey600_36.png"
+    },
+    {
+        "merged": "D:\\school\\CMPUT 301\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\ic_play_light.png",
+        "source": "C:\\Users\\Sadman\\.android\\build-cache\\d63879850c988cdb3bf594b87afca95ad4729033\\output\\res\\drawable-hdpi-v4\\ic_play_light.png"
     },
     {
         "merged": "D:\\school\\CMPUT 301\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\quantum_ic_pause_circle_filled_grey600_36.png",
@@ -288,12 +348,24 @@
         "source": "C:\\Users\\Sadman\\.android\\build-cache\\dd3c588bfaff752029b83862143766ba6f8d6e5c\\output\\res\\drawable-hdpi-v4\\cast_ic_notification_2.png"
     },
     {
+        "merged": "D:\\school\\CMPUT 301\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\common_google_signin_btn_icon_light_pressed.9.png",
+        "source": "C:\\Users\\Sadman\\.android\\build-cache\\d05c0d6b5ccda2e01e17f7771eb5505f2e755f85\\output\\res\\drawable-hdpi-v4\\common_google_signin_btn_icon_light_pressed.9.png"
+    },
+    {
+        "merged": "D:\\school\\CMPUT 301\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\common_google_signin_btn_icon_dark_pressed.9.png",
+        "source": "C:\\Users\\Sadman\\.android\\build-cache\\d05c0d6b5ccda2e01e17f7771eb5505f2e755f85\\output\\res\\drawable-hdpi-v4\\common_google_signin_btn_icon_dark_pressed.9.png"
+    },
+    {
         "merged": "D:\\school\\CMPUT 301\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\abc_ic_menu_copy_mtrl_am_alpha.png",
         "source": "C:\\Users\\Sadman\\.android\\build-cache\\7791cc1ed7a29c2c812ace4b0530d4f9c2c1b23e\\output\\res\\drawable-hdpi-v4\\abc_ic_menu_copy_mtrl_am_alpha.png"
     },
     {
         "merged": "D:\\school\\CMPUT 301\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\abc_list_longpressed_holo.9.png",
         "source": "C:\\Users\\Sadman\\.android\\build-cache\\7791cc1ed7a29c2c812ace4b0530d4f9c2c1b23e\\output\\res\\drawable-hdpi-v4\\abc_list_longpressed_holo.9.png"
+    },
+    {
+        "merged": "D:\\school\\CMPUT 301\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\common_google_signin_btn_icon_light_disabled.9.png",
+        "source": "C:\\Users\\Sadman\\.android\\build-cache\\d05c0d6b5ccda2e01e17f7771eb5505f2e755f85\\output\\res\\drawable-hdpi-v4\\common_google_signin_btn_icon_light_disabled.9.png"
     },
     {
         "merged": "D:\\school\\CMPUT 301\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\notification_bg_normal.9.png",
@@ -340,6 +412,10 @@
         "source": "C:\\Users\\Sadman\\.android\\build-cache\\046677683d115e1250598dd7c7aa55fe55bc9dea\\output\\res\\drawable-hdpi-v4\\ic_dialog_close_light.png"
     },
     {
+        "merged": "D:\\school\\CMPUT 301\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\common_google_signin_btn_text_light_normal.9.png",
+        "source": "C:\\Users\\Sadman\\.android\\build-cache\\d05c0d6b5ccda2e01e17f7771eb5505f2e755f85\\output\\res\\drawable-hdpi-v4\\common_google_signin_btn_text_light_normal.9.png"
+    },
+    {
         "merged": "D:\\school\\CMPUT 301\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\abc_scrubber_control_to_pressed_mtrl_005.png",
         "source": "C:\\Users\\Sadman\\.android\\build-cache\\7791cc1ed7a29c2c812ace4b0530d4f9c2c1b23e\\output\\res\\drawable-hdpi-v4\\abc_scrubber_control_to_pressed_mtrl_005.png"
     },
@@ -364,8 +440,20 @@
         "source": "C:\\Users\\Sadman\\.android\\build-cache\\c0559cd23ce317ccbdc1e450cbf3850d6bbfadbc\\output\\res\\drawable-hdpi-v4\\quantum_ic_art_track_grey600_48.png"
     },
     {
+        "merged": "D:\\school\\CMPUT 301\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\ic_speaker_group_light.png",
+        "source": "C:\\Users\\Sadman\\.android\\build-cache\\d63879850c988cdb3bf594b87afca95ad4729033\\output\\res\\drawable-hdpi-v4\\ic_speaker_group_light.png"
+    },
+    {
         "merged": "D:\\school\\CMPUT 301\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\quantum_ic_replay_white_24.png",
         "source": "C:\\Users\\Sadman\\.android\\build-cache\\c0559cd23ce317ccbdc1e450cbf3850d6bbfadbc\\output\\res\\drawable-hdpi-v4\\quantum_ic_replay_white_24.png"
+    },
+    {
+        "merged": "D:\\school\\CMPUT 301\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\ic_cast_dark.png",
+        "source": "C:\\Users\\Sadman\\.android\\build-cache\\d63879850c988cdb3bf594b87afca95ad4729033\\output\\res\\drawable-hdpi-v4\\ic_cast_dark.png"
+    },
+    {
+        "merged": "D:\\school\\CMPUT 301\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\common_google_signin_btn_icon_light_normal.9.png",
+        "source": "C:\\Users\\Sadman\\.android\\build-cache\\d05c0d6b5ccda2e01e17f7771eb5505f2e755f85\\output\\res\\drawable-hdpi-v4\\common_google_signin_btn_icon_light_normal.9.png"
     },
     {
         "merged": "D:\\school\\CMPUT 301\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\abc_list_divider_mtrl_alpha.9.png",
@@ -388,6 +476,10 @@
         "source": "C:\\Users\\Sadman\\.android\\build-cache\\c0559cd23ce317ccbdc1e450cbf3850d6bbfadbc\\output\\res\\drawable-hdpi-v4\\quantum_ic_volume_off_grey600_36.png"
     },
     {
+        "merged": "D:\\school\\CMPUT 301\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\ic_cast_grey.png",
+        "source": "C:\\Users\\Sadman\\.android\\build-cache\\d63879850c988cdb3bf594b87afca95ad4729033\\output\\res\\drawable-hdpi-v4\\ic_cast_grey.png"
+    },
+    {
         "merged": "D:\\school\\CMPUT 301\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\common_google_signin_btn_icon_light_normal_background.9.png",
         "source": "C:\\Users\\Sadman\\.android\\build-cache\\c007d640965807179f884100c44ed6805b2ce618\\output\\res\\drawable-hdpi-v4\\common_google_signin_btn_icon_light_normal_background.9.png"
     },
@@ -400,12 +492,20 @@
         "source": "C:\\Users\\Sadman\\.android\\build-cache\\c0559cd23ce317ccbdc1e450cbf3850d6bbfadbc\\output\\res\\drawable-hdpi-v4\\cast_abc_scrubber_control_to_pressed_mtrl_000.png"
     },
     {
+        "merged": "D:\\school\\CMPUT 301\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\ic_speaker_dark.png",
+        "source": "C:\\Users\\Sadman\\.android\\build-cache\\d63879850c988cdb3bf594b87afca95ad4729033\\output\\res\\drawable-hdpi-v4\\ic_speaker_dark.png"
+    },
+    {
         "merged": "D:\\school\\CMPUT 301\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\quantum_ic_closed_caption_white_36.png",
         "source": "C:\\Users\\Sadman\\.android\\build-cache\\c0559cd23ce317ccbdc1e450cbf3850d6bbfadbc\\output\\res\\drawable-hdpi-v4\\quantum_ic_closed_caption_white_36.png"
     },
     {
         "merged": "D:\\school\\CMPUT 301\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\ic_mr_button_disabled_dark.png",
         "source": "C:\\Users\\Sadman\\.android\\build-cache\\046677683d115e1250598dd7c7aa55fe55bc9dea\\output\\res\\drawable-hdpi-v4\\ic_mr_button_disabled_dark.png"
+    },
+    {
+        "merged": "D:\\school\\CMPUT 301\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\common_google_signin_btn_text_light_pressed.9.png",
+        "source": "C:\\Users\\Sadman\\.android\\build-cache\\d05c0d6b5ccda2e01e17f7771eb5505f2e755f85\\output\\res\\drawable-hdpi-v4\\common_google_signin_btn_text_light_pressed.9.png"
     },
     {
         "merged": "D:\\school\\CMPUT 301\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\quantum_ic_skip_previous_white_36.png",
@@ -416,8 +516,16 @@
         "source": "C:\\Users\\Sadman\\.android\\build-cache\\c0559cd23ce317ccbdc1e450cbf3850d6bbfadbc\\output\\res\\drawable-hdpi-v4\\quantum_ic_forward_30_white_24.png"
     },
     {
+        "merged": "D:\\school\\CMPUT 301\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\ic_cast_white.png",
+        "source": "C:\\Users\\Sadman\\.android\\build-cache\\d63879850c988cdb3bf594b87afca95ad4729033\\output\\res\\drawable-hdpi-v4\\ic_cast_white.png"
+    },
+    {
         "merged": "D:\\school\\CMPUT 301\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\abc_list_pressed_holo_dark.9.png",
         "source": "C:\\Users\\Sadman\\.android\\build-cache\\7791cc1ed7a29c2c812ace4b0530d4f9c2c1b23e\\output\\res\\drawable-hdpi-v4\\abc_list_pressed_holo_dark.9.png"
+    },
+    {
+        "merged": "D:\\school\\CMPUT 301\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\ic_cast_off_light.png",
+        "source": "C:\\Users\\Sadman\\.android\\build-cache\\d63879850c988cdb3bf594b87afca95ad4729033\\output\\res\\drawable-hdpi-v4\\ic_cast_off_light.png"
     },
     {
         "merged": "D:\\school\\CMPUT 301\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\quantum_ic_pause_grey600_48.png",
@@ -476,12 +584,24 @@
         "source": "C:\\Users\\Sadman\\.android\\build-cache\\c007d640965807179f884100c44ed6805b2ce618\\output\\res\\drawable-hdpi-v4\\googleg_standard_color_18.png"
     },
     {
+        "merged": "D:\\school\\CMPUT 301\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\common_google_signin_btn_text_dark_pressed.9.png",
+        "source": "C:\\Users\\Sadman\\.android\\build-cache\\d05c0d6b5ccda2e01e17f7771eb5505f2e755f85\\output\\res\\drawable-hdpi-v4\\common_google_signin_btn_text_dark_pressed.9.png"
+    },
+    {
         "merged": "D:\\school\\CMPUT 301\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\ic_plusone_tall_off_client.png",
         "source": "C:\\Users\\Sadman\\.android\\build-cache\\7e7b82dc40b89d6db62895d12eea1d9b56f046b9\\output\\res\\drawable-hdpi-v4\\ic_plusone_tall_off_client.png"
     },
     {
+        "merged": "D:\\school\\CMPUT 301\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\ic_tv_light.png",
+        "source": "C:\\Users\\Sadman\\.android\\build-cache\\d63879850c988cdb3bf594b87afca95ad4729033\\output\\res\\drawable-hdpi-v4\\ic_tv_light.png"
+    },
+    {
         "merged": "D:\\school\\CMPUT 301\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\quantum_ic_closed_caption_grey600_36.png",
         "source": "C:\\Users\\Sadman\\.android\\build-cache\\c0559cd23ce317ccbdc1e450cbf3850d6bbfadbc\\output\\res\\drawable-hdpi-v4\\quantum_ic_closed_caption_grey600_36.png"
+    },
+    {
+        "merged": "D:\\school\\CMPUT 301\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\ic_pause_light.png",
+        "source": "C:\\Users\\Sadman\\.android\\build-cache\\d63879850c988cdb3bf594b87afca95ad4729033\\output\\res\\drawable-hdpi-v4\\ic_pause_light.png"
     },
     {
         "merged": "D:\\school\\CMPUT 301\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\quantum_ic_replay_10_white_24.png",
@@ -494,6 +614,10 @@
     {
         "merged": "D:\\school\\CMPUT 301\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\quantum_ic_skip_previous_grey600_36.png",
         "source": "C:\\Users\\Sadman\\.android\\build-cache\\c0559cd23ce317ccbdc1e450cbf3850d6bbfadbc\\output\\res\\drawable-hdpi-v4\\quantum_ic_skip_previous_grey600_36.png"
+    },
+    {
+        "merged": "D:\\school\\CMPUT 301\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\ic_close_dark.png",
+        "source": "C:\\Users\\Sadman\\.android\\build-cache\\d63879850c988cdb3bf594b87afca95ad4729033\\output\\res\\drawable-hdpi-v4\\ic_close_dark.png"
     },
     {
         "merged": "D:\\school\\CMPUT 301\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\ic_mr_button_grey.png",
@@ -528,6 +652,14 @@
         "source": "C:\\Users\\Sadman\\.android\\build-cache\\1f43954577a446aa44799bcf7dd607cc0cac21fb\\output\\res\\drawable-hdpi-v4\\design_ic_visibility.png"
     },
     {
+        "merged": "D:\\school\\CMPUT 301\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\ic_media_play.png",
+        "source": "C:\\Users\\Sadman\\.android\\build-cache\\d63879850c988cdb3bf594b87afca95ad4729033\\output\\res\\drawable-hdpi-v4\\ic_media_play.png"
+    },
+    {
+        "merged": "D:\\school\\CMPUT 301\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\common_google_signin_btn_icon_dark_normal.9.png",
+        "source": "C:\\Users\\Sadman\\.android\\build-cache\\d05c0d6b5ccda2e01e17f7771eb5505f2e755f85\\output\\res\\drawable-hdpi-v4\\common_google_signin_btn_icon_dark_normal.9.png"
+    },
+    {
         "merged": "D:\\school\\CMPUT 301\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\quantum_ic_skip_next_grey600_36.png",
         "source": "C:\\Users\\Sadman\\.android\\build-cache\\c0559cd23ce317ccbdc1e450cbf3850d6bbfadbc\\output\\res\\drawable-hdpi-v4\\quantum_ic_skip_next_grey600_36.png"
     },
@@ -538,6 +670,10 @@
     {
         "merged": "D:\\school\\CMPUT 301\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\places_ic_clear.png",
         "source": "C:\\Users\\Sadman\\.android\\build-cache\\39ecd4a625354b3abf91f26d125779a08ee03fd1\\output\\res\\drawable-hdpi-v4\\places_ic_clear.png"
+    },
+    {
+        "merged": "D:\\school\\CMPUT 301\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\ic_media_pause.png",
+        "source": "C:\\Users\\Sadman\\.android\\build-cache\\d63879850c988cdb3bf594b87afca95ad4729033\\output\\res\\drawable-hdpi-v4\\ic_media_pause.png"
     },
     {
         "merged": "D:\\school\\CMPUT 301\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\abc_btn_check_to_on_mtrl_000.png",
@@ -554,5 +690,9 @@
     {
         "merged": "D:\\school\\CMPUT 301\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\ic_audiotrack_light.png",
         "source": "C:\\Users\\Sadman\\.android\\build-cache\\046677683d115e1250598dd7c7aa55fe55bc9dea\\output\\res\\drawable-hdpi-v4\\ic_audiotrack_light.png"
+    },
+    {
+        "merged": "D:\\school\\CMPUT 301\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\ic_audiotrack.png",
+        "source": "C:\\Users\\Sadman\\.android\\build-cache\\d63879850c988cdb3bf594b87afca95ad4729033\\output\\res\\drawable-hdpi-v4\\ic_audiotrack.png"
     }
 ]

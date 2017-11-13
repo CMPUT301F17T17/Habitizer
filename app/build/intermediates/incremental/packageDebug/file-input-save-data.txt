@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Sun Nov 12 12:23:39 MST 2017
+#Sun Nov 12 19:23:54 MST 2017
 20.base=D\:\\school\\CMPUT 301\\Habitizer\\app\\build\\intermediates\\res\\resources-debug.ap_
 143.base=D\:\\school\\CMPUT 301\\Habitizer\\app\\build\\intermediates\\res\\resources-debug.ap_
 493.base=D\:\\school\\CMPUT 301\\Habitizer\\app\\build\\intermediates\\res\\resources-debug.ap_
@@ -106,7 +106,7 @@
 202.set=ANDROID_RESOURCE
 37.base=D\:\\school\\CMPUT 301\\Habitizer\\app\\build\\intermediates\\res\\resources-debug.ap_
 157.set=ANDROID_RESOURCE
-63.file=D\:\\school\\CMPUT 301\\Habitizer\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable-xxhdpi-v4\\ic_audiotrack_light.png
+63.file=D\:\\school\\CMPUT 301\\Habitizer\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable-xxxhdpi-v4\\ic_group_collapse_04.png
 186.file=D\:\\school\\CMPUT 301\\Habitizer\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable-xxhdpi-v4\\abc_scrubber_control_to_pressed_mtrl_000.png
 532.set=ANDROID_RESOURCE
 96.file=D\:\\school\\CMPUT 301\\Habitizer\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable\\cast_ic_expanded_controller_stop.xml
@@ -174,7 +174,7 @@
 257.base=D\:\\school\\CMPUT 301\\Habitizer\\app\\build\\intermediates\\res\\resources-debug.ap_
 428.base=D\:\\school\\CMPUT 301\\Habitizer\\app\\build\\intermediates\\res\\resources-debug.ap_
 104.file=D\:\\school\\CMPUT 301\\Habitizer\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\mipmap-xhdpi-v4\\ic_launcher_round.png
-137.file=D\:\\school\\CMPUT 301\\Habitizer\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable-xxxhdpi-v4\\ic_group_expand_06.png
+137.file=D\:\\school\\CMPUT 301\\Habitizer\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable-xxhdpi-v4\\ic_mr_button_connecting_14_light.png
 487.file=D\:\\school\\CMPUT 301\\Habitizer\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\layout\\abc_action_bar_view_list_nav_layout.xml
 308.file=D\:\\school\\CMPUT 301\\Habitizer\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable\\cast_ic_notification_play.xml
 494.set=ANDROID_RESOURCE
@@ -234,7 +234,7 @@
 208.base=D\:\\school\\CMPUT 301\\Habitizer\\app\\build\\intermediates\\res\\resources-debug.ap_
 225.file=D\:\\school\\CMPUT 301\\Habitizer\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\color-v23\\abc_tint_switch_track.xml
 505.set=ANDROID_RESOURCE
-438.file=D\:\\school\\CMPUT 301\\Habitizer\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable\\cast_ic_expanded_controller_skip_next.xml
+438.file=D\:\\school\\CMPUT 301\\Habitizer\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable-xxhdpi-v4\\ic_mr_button_connected_13_light.png
 428.set=ANDROID_RESOURCE
 55.set=ANDROID_RESOURCE
 306.set=ANDROID_RESOURCE
@@ -274,8 +274,8 @@
 529.base=D\:\\school\\CMPUT 301\\Habitizer\\app\\build\\intermediates\\res\\resources-debug.ap_
 205.file=D\:\\school\\CMPUT 301\\Habitizer\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\color-v23\\abc_tint_switch_thumb.xml
 88.base=D\:\\school\\CMPUT 301\\Habitizer\\app\\build\\intermediates\\res\\resources-debug.ap_
-238.file=D\:\\school\\CMPUT 301\\Habitizer\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable-xxhdpi-v4\\quantum_ic_pause_circle_filled_grey600_36.png
-409.file=D\:\\school\\CMPUT 301\\Habitizer\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable-xxhdpi-v4\\ic_mr_button_connecting_22_light.png
+238.file=D\:\\school\\CMPUT 301\\Habitizer\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable-xxxhdpi-v4\\ic_group_collapse_00.png
+409.file=D\:\\school\\CMPUT 301\\Habitizer\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable-xxhdpi-v4\\ic_mr_button_connected_19_dark.png
 138.set=ANDROID_RESOURCE
 513.set=ANDROID_RESOURCE
 272.base=D\:\\school\\CMPUT 301\\Habitizer\\app\\build\\intermediates\\res\\resources-debug.ap_
@@ -357,7 +357,7 @@
 275.base=D\:\\school\\CMPUT 301\\Habitizer\\app\\build\\intermediates\\res\\resources-debug.ap_
 446.base=D\:\\school\\CMPUT 301\\Habitizer\\app\\build\\intermediates\\res\\resources-debug.ap_
 376.set=ANDROID_RESOURCE
-122.file=D\:\\school\\CMPUT 301\\Habitizer\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable-xxxhdpi-v4\\ic_group_collapse_05.png
+122.file=D\:\\school\\CMPUT 301\\Habitizer\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable-xxhdpi-v4\\common_google_signin_btn_text_dark_normal_background.9.png
 479.base=D\:\\school\\CMPUT 301\\Habitizer\\app\\build\\intermediates\\res\\resources-debug.ap_
 155.file=D\:\\school\\CMPUT 301\\Habitizer\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable\\abc_list_selector_background_transition_holo_light.xml
 299.set=ANDROID_RESOURCE
@@ -492,7 +492,7 @@
 80.file=D\:\\school\\CMPUT 301\\Habitizer\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\anim\\abc_slide_out_bottom.xml
 417.set=ANDROID_RESOURCE
 383.file=D\:\\school\\CMPUT 301\\Habitizer\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable-xxhdpi-v4\\ic_mr_button_connecting_21_light.png
-554.file=D\:\\school\\CMPUT 301\\Habitizer\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable-xxhdpi-v4\\googleg_disabled_color_18.png
+554.file=D\:\\school\\CMPUT 301\\Habitizer\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable\\cast_ic_notification_rewind.xml
 44.set=ANDROID_RESOURCE
 2.file=D\:\\school\\CMPUT 301\\Habitizer\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable-xxhdpi-v4\\abc_textfield_default_mtrl_alpha.9.png
 96.base=D\:\\school\\CMPUT 301\\Habitizer\\app\\build\\intermediates\\res\\resources-debug.ap_
@@ -633,7 +633,7 @@
 448.base=D\:\\school\\CMPUT 301\\Habitizer\\app\\build\\intermediates\\res\\resources-debug.ap_
 396.set=ANDROID_RESOURCE
 124.file=D\:\\school\\CMPUT 301\\Habitizer\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable\\notification_icon_background.xml
-157.file=D\:\\school\\CMPUT 301\\Habitizer\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable-xxxhdpi-v4\\ic_group_collapse_06.png
+157.file=D\:\\school\\CMPUT 301\\Habitizer\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable-xxxhdpi-v4\\ic_group_expand_14.png
 328.file=D\:\\school\\CMPUT 301\\Habitizer\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable-xxhdpi-v4\\abc_list_divider_mtrl_alpha.9.png
 242.set=ANDROID_RESOURCE
 67.file=D\:\\school\\CMPUT 301\\Habitizer\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\color-v23\\abc_color_highlight_material.xml
@@ -667,7 +667,7 @@
 5.set=ANDROID_RESOURCE
 445.file=D\:\\school\\CMPUT 301\\Habitizer\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable-xxhdpi-v4\\quantum_ic_replay_30_white_24.png
 196.set=ANDROID_RESOURCE
-478.file=D\:\\school\\CMPUT 301\\Habitizer\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable-xxhdpi-v4\\ic_mr_button_connecting_18_dark.png
+478.file=D\:\\school\\CMPUT 301\\Habitizer\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable-xxhdpi-v4\\ic_mr_button_connected_10_light.png
 38.file=D\:\\school\\CMPUT 301\\Habitizer\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable-xxxhdpi-v4\\ic_group_expand_07.png
 48.set=ANDROID_RESOURCE
 171.base=D\:\\school\\CMPUT 301\\Habitizer\\app\\build\\intermediates\\res\\resources-debug.ap_
@@ -699,7 +699,7 @@
 228.base=D\:\\school\\CMPUT 301\\Habitizer\\app\\build\\intermediates\\res\\resources-debug.ap_
 245.file=D\:\\school\\CMPUT 301\\Habitizer\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable-v21\\abc_btn_colored_material.xml
 281.set=ANDROID_RESOURCE
-108.file=D\:\\school\\CMPUT 301\\Habitizer\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable-xxhdpi-v4\\cast_ic_stop_circle_filled_white.png
+108.file=D\:\\school\\CMPUT 301\\Habitizer\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable\\mr_media_play_light.xml
 506.set=DEX
 18.file=D\:\\school\\CMPUT 301\\Habitizer\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable\\abc_text_cursor_material.xml
 142.base=D\:\\school\\CMPUT 301\\Habitizer\\app\\build\\intermediates\\res\\resources-debug.ap_
@@ -760,7 +760,7 @@
 315.set=ANDROID_RESOURCE
 4.file=D\:\\school\\CMPUT 301\\Habitizer\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable\\notification_tile_bg.xml
 98.base=D\:\\school\\CMPUT 301\\Habitizer\\app\\build\\intermediates\\res\\resources-debug.ap_
-419.file=D\:\\school\\CMPUT 301\\Habitizer\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable\\cast_ic_expanded_controller_play.xml
+419.file=D\:\\school\\CMPUT 301\\Habitizer\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable-xxhdpi-v4\\ic_mr_button_connecting_00_dark.png
 238.set=ANDROID_RESOURCE
 420.base=D\:\\school\\CMPUT 301\\Habitizer\\app\\build\\intermediates\\res\\resources-debug.ap_
 116.set=ANDROID_RESOURCE
@@ -774,7 +774,7 @@
 316.base=D\:\\school\\CMPUT 301\\Habitizer\\app\\build\\intermediates\\res\\resources-debug.ap_
 41.set=ANDROID_RESOURCE
 178.base=D\:\\school\\CMPUT 301\\Habitizer\\app\\build\\intermediates\\res\\resources-debug.ap_
-72.file=D\:\\school\\CMPUT 301\\Habitizer\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\layout\\mr_controller_material_dialog_b.xml
+72.file=D\:\\school\\CMPUT 301\\Habitizer\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable-xxhdpi-v4\\ic_mr_button_connecting_04_light.png
 349.base=D\:\\school\\CMPUT 301\\Habitizer\\app\\build\\intermediates\\res\\resources-debug.ap_
 546.file=D\:\\school\\CMPUT 301\\Habitizer\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable\\abc_ratingbar_small_material.xml
 215.set=ANDROID_RESOURCE
@@ -790,7 +790,7 @@
 323.file=D\:\\school\\CMPUT 301\\Habitizer\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable-xxhdpi-v4\\abc_btn_radio_to_on_mtrl_015.png
 36.base=D\:\\school\\CMPUT 301\\Habitizer\\app\\build\\intermediates\\res\\resources-debug.ap_
 147.set=ANDROID_RESOURCE
-62.file=D\:\\school\\CMPUT 301\\Habitizer\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable-xxxhdpi-v4\\ic_group_collapse_04.png
+62.file=D\:\\school\\CMPUT 301\\Habitizer\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable-xxhdpi-v4\\ic_audiotrack_light.png
 185.file=D\:\\school\\CMPUT 301\\Habitizer\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\layout\\abc_screen_content_include.xml
 339.base=D\:\\school\\CMPUT 301\\Habitizer\\app\\build\\intermediates\\res\\resources-debug.ap_
 522.set=ANDROID_RESOURCE
@@ -874,7 +874,7 @@
 427.base=D\:\\school\\CMPUT 301\\Habitizer\\app\\build\\intermediates\\res\\resources-debug.ap_
 103.file=D\:\\school\\CMPUT 301\\Habitizer\\app\\build\\intermediates\\transforms\\mergeJavaRes\\debug\\jars\\2\\1f\\main.jar\\com\\robotium\\solo\\RobotiumWeb.js
 289.base=D\:\\school\\CMPUT 301\\Habitizer\\app\\build\\intermediates\\res\\resources-debug.ap_
-136.file=D\:\\school\\CMPUT 301\\Habitizer\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable-xxhdpi-v4\\ic_mr_button_connecting_14_light.png
+136.file=D\:\\school\\CMPUT 301\\Habitizer\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable-xxxhdpi-v4\\ic_group_expand_06.png
 486.file=D\:\\school\\CMPUT 301\\Habitizer\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\layout\\design_navigation_menu.xml
 307.file=D\:\\school\\CMPUT 301\\Habitizer\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable-xxhdpi-v4\\quantum_ic_play_arrow_grey600_36.png
 484.set=ANDROID_RESOURCE
@@ -944,7 +944,7 @@
 224.file=D\:\\school\\CMPUT 301\\Habitizer\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable-xxhdpi-v4\\abc_switch_track_mtrl_alpha.9.png
 2.set=ANDROID_RESOURCE
 193.set=ANDROID_RESOURCE
-437.file=D\:\\school\\CMPUT 301\\Habitizer\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable-xxhdpi-v4\\ic_mr_button_connected_13_light.png
+437.file=D\:\\school\\CMPUT 301\\Habitizer\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable\\cast_ic_expanded_controller_skip_next.xml
 418.set=ANDROID_RESOURCE
 45.set=ANDROID_RESOURCE
 471.base=D\:\\school\\CMPUT 301\\Habitizer\\app\\build\\intermediates\\res\\resources-debug.ap_
@@ -982,9 +982,9 @@
 528.base=D\:\\school\\CMPUT 301\\Habitizer\\app\\build\\intermediates\\res\\resources-debug.ap_
 204.file=D\:\\school\\CMPUT 301\\Habitizer\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable\\abc_list_selector_holo_light.xml
 87.base=D\:\\school\\CMPUT 301\\Habitizer\\app\\build\\intermediates\\res\\resources-debug.ap_
-237.file=D\:\\school\\CMPUT 301\\Habitizer\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable-xxxhdpi-v4\\ic_group_collapse_00.png
+237.file=D\:\\school\\CMPUT 301\\Habitizer\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable-xxhdpi-v4\\quantum_ic_pause_circle_filled_grey600_36.png
 9.base=D\:\\school\\CMPUT 301\\Habitizer\\app\\build\\intermediates\\res\\resources-debug.ap_
-408.file=D\:\\school\\CMPUT 301\\Habitizer\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable-xxhdpi-v4\\ic_mr_button_connected_19_dark.png
+408.file=D\:\\school\\CMPUT 301\\Habitizer\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable-xxhdpi-v4\\ic_mr_button_connecting_22_light.png
 128.set=ANDROID_RESOURCE
 503.set=ANDROID_RESOURCE
 271.base=D\:\\school\\CMPUT 301\\Habitizer\\app\\build\\intermediates\\res\\resources-debug.ap_
@@ -1062,7 +1062,7 @@
 291.file=D\:\\school\\CMPUT 301\\Habitizer\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\color\\abc_hint_foreground_material_dark.xml
 445.base=D\:\\school\\CMPUT 301\\Habitizer\\app\\build\\intermediates\\res\\resources-debug.ap_
 366.set=ANDROID_RESOURCE
-121.file=D\:\\school\\CMPUT 301\\Habitizer\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable-xxhdpi-v4\\common_google_signin_btn_text_dark_normal_background.9.png
+121.file=D\:\\school\\CMPUT 301\\Habitizer\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable-xxxhdpi-v4\\ic_group_collapse_05.png
 478.base=D\:\\school\\CMPUT 301\\Habitizer\\app\\build\\intermediates\\res\\resources-debug.ap_
 154.file=D\:\\school\\CMPUT 301\\Habitizer\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable-xxhdpi-v4\\abc_scrubber_control_off_mtrl_alpha.png
 289.set=ANDROID_RESOURCE
@@ -1338,7 +1338,7 @@
 447.base=D\:\\school\\CMPUT 301\\Habitizer\\app\\build\\intermediates\\res\\resources-debug.ap_
 386.set=ANDROID_RESOURCE
 123.file=D\:\\school\\CMPUT 301\\Habitizer\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\mipmap-xxxhdpi-v4\\ic_launcher.png
-156.file=D\:\\school\\CMPUT 301\\Habitizer\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable-xxxhdpi-v4\\ic_group_expand_14.png
+156.file=D\:\\school\\CMPUT 301\\Habitizer\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable-xxxhdpi-v4\\ic_group_collapse_06.png
 327.file=D\:\\school\\CMPUT 301\\Habitizer\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\layout\\cast_tracks_chooser_dialog_layout.xml
 232.set=ANDROID_RESOURCE
 189.file=D\:\\school\\CMPUT 301\\Habitizer\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\layout\\support_simple_spinner_dropdown_item.xml
@@ -1406,7 +1406,7 @@
 397.base=D\:\\school\\CMPUT 301\\Habitizer\\app\\build\\intermediates\\res\\resources-debug.ap_
 244.file=D\:\\school\\CMPUT 301\\Habitizer\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable-xxhdpi-v4\\abc_text_select_handle_right_mtrl_light.png
 271.set=ANDROID_RESOURCE
-107.file=D\:\\school\\CMPUT 301\\Habitizer\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable\\mr_media_play_light.xml
+107.file=D\:\\school\\CMPUT 301\\Habitizer\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable-xxhdpi-v4\\cast_ic_stop_circle_filled_white.png
 3.set=JAVA_RESOURCE
 194.set=ANDROID_RESOURCE
 17.file=D\:\\school\\CMPUT 301\\Habitizer\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\layout\\social_tab.xml
@@ -1455,12 +1455,12 @@ count=557
 81.file=D\:\\school\\CMPUT 301\\Habitizer\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable\\common_google_signin_btn_icon_dark_focused.xml
 427.set=ANDROID_RESOURCE
 384.file=D\:\\school\\CMPUT 301\\Habitizer\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable-xxxhdpi-v4\\ic_group_expand_09.png
-555.file=D\:\\school\\CMPUT 301\\Habitizer\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable\\cast_ic_notification_rewind.xml
+555.file=D\:\\school\\CMPUT 301\\Habitizer\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable-xxhdpi-v4\\googleg_disabled_color_18.png
 54.set=ANDROID_RESOURCE
 305.set=JAVA_RESOURCE
 3.file=D\:\\school\\CMPUT 301\\Habitizer\\app\\build\\intermediates\\transforms\\mergeJavaRes\\debug\\jars\\2\\1f\\main.jar\\build-data.properties
 97.base=D\:\\school\\CMPUT 301\\Habitizer\\app\\build\\intermediates\\res\\resources-debug.ap_
-418.file=D\:\\school\\CMPUT 301\\Habitizer\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable-xxhdpi-v4\\ic_mr_button_connecting_00_dark.png
+418.file=D\:\\school\\CMPUT 301\\Habitizer\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable\\cast_ic_expanded_controller_play.xml
 228.set=ANDROID_RESOURCE
 106.set=ANDROID_RESOURCE
 281.base=D\:\\school\\CMPUT 301\\Habitizer\\app\\build\\intermediates\\res\\resources-debug.ap_
@@ -1472,7 +1472,7 @@ count=557
 315.base=D\:\\school\\CMPUT 301\\Habitizer\\app\\build\\intermediates\\res\\resources-debug.ap_
 31.set=ANDROID_RESOURCE
 177.base=D\:\\school\\CMPUT 301\\Habitizer\\app\\build\\intermediates\\res\\resources-debug.ap_
-71.file=D\:\\school\\CMPUT 301\\Habitizer\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable-xxhdpi-v4\\ic_mr_button_connecting_04_light.png
+71.file=D\:\\school\\CMPUT 301\\Habitizer\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\layout\\mr_controller_material_dialog_b.xml
 348.base=D\:\\school\\CMPUT 301\\Habitizer\\app\\build\\intermediates\\res\\resources-debug.ap_
 545.file=D\:\\school\\CMPUT 301\\Habitizer\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable\\cast_ic_notification_forward30.xml
 205.set=ANDROID_RESOURCE
@@ -1626,7 +1626,7 @@ count=557
 275.file=D\:\\school\\CMPUT 301\\Habitizer\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable-xxhdpi-v4\\abc_btn_switch_to_on_mtrl_00001.9.png
 446.file=D\:\\school\\CMPUT 301\\Habitizer\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\layout-v21\\notification_template_icon_group.xml
 508.set=ANDROID_RESOURCE
-479.file=D\:\\school\\CMPUT 301\\Habitizer\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable-xxhdpi-v4\\ic_mr_button_connected_10_light.png
+479.file=D\:\\school\\CMPUT 301\\Habitizer\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable-xxhdpi-v4\\ic_mr_button_connecting_18_dark.png
 309.file=D\:\\school\\CMPUT 301\\Habitizer\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable\\mr_vol_type_audiotrack_light.xml
 39.file=D\:\\school\\CMPUT 301\\Habitizer\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable-xxhdpi-v4\\ic_mr_button_connected_08_light.png
 58.set=ANDROID_RESOURCE

@@ -1,5 +1,7 @@
 package ssmad.habitizer;
 
+import android.*;
+import android.Manifest;
 import android.app.Activity;
 import android.content.Intent;
 import android.content.pm.PackageManager;
@@ -62,6 +64,7 @@ https://stackoverflow.com/questions/16954109/reduce-the-size-of-a-bitmap-to-a-sp
 public class AddHabitEventActivity extends AppCompatActivity implements OnMapReadyCallback {
     private final int GET_PIC_WITH_CAMERA = 0;
     private final int GET_PIC_FROM_GALLERY = 1;
+    private final int MY_PERMISSIONS_REQUEST_LOCATION = 8;
     private final int PIC_MAX_SIZE = 65536;
     private static boolean picButtonsAreVisible = Boolean.FALSE;
     private static boolean picIsVisible = Boolean.FALSE;
@@ -249,13 +252,16 @@ public class AddHabitEventActivity extends AppCompatActivity implements OnMapRea
     public void onMapReady(GoogleMap googleMap) {
         gmap = googleMap;
         //gotoLocation(53.523079, -113.526329);
-        Location loc = getCurrentLocation();
+        Location loc = getLocationPermissionThenLocation();
+        if(loc != null){
 
-        double lat = loc.getLatitude();
-        double lon = loc.getLongitude();
+            double lat = loc.getLatitude();
+            double lon = loc.getLongitude();
 
-        //gotoLocation(53.523079, -113.526329);
-        gotoLocation(lat, lon);
+            //gotoLocation(53.523079, -113.526329);
+            gotoLocation(lat, lon);
+        }
+
 
 
 
@@ -270,17 +276,11 @@ public class AddHabitEventActivity extends AppCompatActivity implements OnMapRea
     }
 
     //https://github.com/CMPUT301W17T22/MoodSwing/blob/master/app/src/main/java/com/ualberta/cmput301w17t22/moodswing/MainActivity.java
-    public Location getCurrentLocation() {
+    public Location getLocationPermissionThenLocation() {
         // Get the current location.
         // http://stackoverflow.com/questions/32491960/android-check-permission-for-locationmanager
         // Check if we have proper permissions to get the coarse lastKnownLocation.
-        if (ContextCompat.checkSelfPermission(this, android.Manifest.permission.
-                ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
 
-            Log.i("Habitizer", "Requesting coarse permission.");
-            ActivityCompat.requestPermissions(this,
-                    new String[]{android.Manifest.permission.ACCESS_COARSE_LOCATION}, 8);
-        }
 
         // Check if we have proper permissions to get the fine lastKnownLocation.
         if (ContextCompat.checkSelfPermission(this, android.Manifest.permission.
@@ -290,9 +290,16 @@ public class AddHabitEventActivity extends AppCompatActivity implements OnMapRea
             // Request the permission.
             // Dummy request code 8 used.
             ActivityCompat.requestPermissions(this,
-                    new String[]{android.Manifest.permission.ACCESS_FINE_LOCATION}, 8);
+                    new String[]{android.Manifest.permission.ACCESS_FINE_LOCATION}, MY_PERMISSIONS_REQUEST_LOCATION);
+            return null;
+        }else{
+            return getCurrentLocation();
         }
 
+
+    }
+
+    public Location getCurrentLocation(){
         // Get the lastKnownLocation once every 5 seconds, or every 10 meters.
         LocationManager locationManager = (LocationManager) this.getSystemService(this.LOCATION_SERVICE);
         Criteria criteria = new Criteria();
@@ -323,6 +330,43 @@ public class AddHabitEventActivity extends AppCompatActivity implements OnMapRea
         locationManager.requestLocationUpdates(provider, 5000, 10, listener);
         Location lastKnownLocationLocation = locationManager.getLastKnownLocation(provider);
         return lastKnownLocationLocation;
+    }
+
+
+    @Override
+    public void onRequestPermissionsResult(int requestCode, String permissions[], int[] grantResults) {
+        switch (requestCode) {
+            case MY_PERMISSIONS_REQUEST_LOCATION: {
+                // If request is cancelled, the result arrays are empty.
+                if (grantResults.length > 0
+                        && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
+
+                    // permission was granted, yay! Do the
+                    // location-related task you need to do.
+                    if (ContextCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION)
+                            == PackageManager.PERMISSION_GRANTED) {
+
+                        //Request location updates:
+                        Location loc = getCurrentLocation();
+                        double lat = loc.getLatitude();
+                        double lon = loc.getLongitude();
+
+                        //gotoLocation(53.523079, -113.526329);
+                        gotoLocation(lat, lon);
+
+
+                    }
+
+                } else {
+
+                    DummyMainActivity.toastMe("Location permission was denied",
+                            AddHabitEventActivity.this);
+
+                }
+                return;
+            }
+
+        }
     }
 
 
