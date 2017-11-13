@@ -19,7 +19,10 @@ public class Habit {
     }
 
     public void setDaysOfWeekDue(int[] daysOfWeekDue) {
-        this.daysOfWeekDue = daysOfWeekDue;
+        for(int i = 0;i < 7;i++){
+
+            this.daysOfWeekDue[i] = daysOfWeekDue[i];
+        }
     }
 
     private ArrayList<HabitEvent> events;

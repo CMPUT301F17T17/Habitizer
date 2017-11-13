@@ -480,6 +480,10 @@
         "source": "C:\\Users\\Sadman\\.android\\build-cache\\c0559cd23ce317ccbdc1e450cbf3850d6bbfadbc\\output\\res\\drawable\\cast_ic_expanded_controller_stop.xml"
     },
     {
+        "merged": "D:\\school\\CMPUT 301\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\days_border.xml",
+        "source": "D:\\school\\CMPUT 301\\Habitizer\\app\\src\\main\\res\\drawable\\days_border.xml"
+    },
+    {
         "merged": "D:\\school\\CMPUT 301\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\cast_ic_expanded_controller_skip_next.xml",
         "source": "C:\\Users\\Sadman\\.android\\build-cache\\c0559cd23ce317ccbdc1e450cbf3850d6bbfadbc\\output\\res\\drawable\\cast_ic_expanded_controller_skip_next.xml"
     },
@@ -502,6 +506,10 @@
     {
         "merged": "D:\\school\\CMPUT 301\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\mr_ic_pause_dark.xml",
         "source": "C:\\Users\\Sadman\\.android\\build-cache\\d63879850c988cdb3bf594b87afca95ad4729033\\output\\res\\drawable\\mr_ic_pause_dark.xml"
+    },
+    {
+        "merged": "D:\\school\\CMPUT 301\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\days_border_valid.xml",
+        "source": "D:\\school\\CMPUT 301\\Habitizer\\app\\src\\main\\res\\drawable\\days_border_valid.xml"
     },
     {
         "merged": "D:\\school\\CMPUT 301\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\notification_bg.xml",

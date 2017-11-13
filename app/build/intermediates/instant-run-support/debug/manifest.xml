@@ -90,6 +90,8 @@
 
         <activity android:name="ssmad.habitizer.FeedTabActivity" />
         <activity android:name="ssmad.habitizer.SocialTabActivity" />
+        <activity android:name="ssmad.habitizer.ViewHabitActivity" >
+        </activity>
         <!-- Include the AdActivity and InAppPurchaseActivity configChanges and themes. -->
         <activity
             android:name="com.google.android.gms.ads.AdActivity"

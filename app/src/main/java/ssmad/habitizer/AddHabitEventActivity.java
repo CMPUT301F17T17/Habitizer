@@ -57,6 +57,8 @@ Ref getting pic
 https://stackoverflow.com/questions/10165302/dialog-to-pick-image-from-gallery-or-from-camera
 Ref getting map
 https://stackoverflow.com/questions/16536414/how-to-use-mapview-in-android-using-google-map-v2
+https://stackoverflow.com/questions/40142331/how-to-request-location-permission-on-android-6
+https://www.youtube.com/watch?v=Z3mKhMkdUFk&feature=youtu.be
 Ref pic size reduce
 https://stackoverflow.com/questions/16954109/reduce-the-size-of-a-bitmap-to-a-specified-size-in-android
  */

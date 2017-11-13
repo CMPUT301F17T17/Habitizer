@@ -1,4 +1,4 @@
-#Sun Nov 12 19:23:52 MST 2017
+#Mon Nov 13 01:55:36 MST 2017
 base.0=D\:\\school\\CMPUT 301\\Habitizer\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run-bootstrap_f43d7c817d16bfc24e68031f79d396b9cde0d862
 renamed.1=classes2.dex
 renamed.0=classes.dex
