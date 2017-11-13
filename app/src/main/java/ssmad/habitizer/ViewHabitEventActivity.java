@@ -11,6 +11,7 @@ import android.widget.TextView;
 import static ssmad.habitizer.ViewHabitActivity.toEdit;
 
 public class ViewHabitEventActivity extends AppCompatActivity {
+    private final int EDITING = 345;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,9 +24,10 @@ public class ViewHabitEventActivity extends AppCompatActivity {
         (findViewById(R.id.comment_title)).setVisibility(View.GONE);
         TextView commentView = (TextView) findViewById(R.id.comment_view);
         commentView.setVisibility(View.VISIBLE);
-        HabitEvent habitEvent = DummyMainActivity.myHabitEvents.get(getIntent().getExtras().getInt
+        final int position = getIntent().getExtras().getInt
                 (HabitTabActivity
-                .GENERIC_REQUEST_CODE));
+                        .GENERIC_REQUEST_CODE);
+        HabitEvent habitEvent = DummyMainActivity.myHabitEvents.get(position);
         commentView.setText(habitEvent.getComment());
         ((TextView)findViewById(R.id.what_habit)).setText(habitEvent.getTitle());
         if(habitEvent.hasPicture()){
@@ -36,11 +38,19 @@ public class ViewHabitEventActivity extends AppCompatActivity {
         }
         (findViewById(R.id.cancel)).setVisibility(View.GONE);
         Button doneButton = (Button)  findViewById(R.id.done_button);
+        Button deleteButton = (Button)  findViewById(R.id.delete);
+        deleteButton.setVisibility(View.VISIBLE);
+        deleteButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                DummyMainActivity.myHabitEvents.remove(position);
+                finish();
+            }
+        });
         AddHabitEventActivity.thisOneIsSpecialAndUnavailableSometimes = doneButton;
         doneButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                AddHabitEventActivity.resetVars(ViewHabitEventActivity.this);
                 finish();
             }
         });
@@ -48,14 +58,12 @@ public class ViewHabitEventActivity extends AppCompatActivity {
         Button editButton = (Button) findViewById(R.id.edit_button);
         (findViewById(R.id.add)).setVisibility(View.GONE);
         editButton.setVisibility(View.VISIBLE);
-        final int position = getIntent().getIntExtra(HabitTabActivity
-                .GENERIC_REQUEST_CODE, 0);
         editButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(ViewHabitEventActivity.this, EditHabitEventActivity.class);
                 intent.putExtra(toEdit, position);
-                startActivityForResult(intent, 0);
+                startActivityForResult(intent, EDITING);
             }
         });
         if(habitEvent.hasLocation()){
@@ -69,6 +77,9 @@ public class ViewHabitEventActivity extends AppCompatActivity {
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
+        if(requestCode == EDITING){
+            AddHabitEventActivity._resetVars();
+        }
         //restart
         finish();
         startActivity(getIntent());

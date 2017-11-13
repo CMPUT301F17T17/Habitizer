@@ -4,11 +4,11 @@ import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
 import android.widget.ListView;
 
 public class FeedTabActivity extends AppCompatActivity {
     ListView myHabitEventsListView;
+    public static final int VIEWING = 234;
     @Override
     protected void onStart() {
         super.onStart();
@@ -25,11 +25,21 @@ public class FeedTabActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_feed_tab);
         DummyMainActivity.initTabs(DummyMainActivity.VIEW_FEED, this);
+        (findViewById(R.id.view_map)).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(FeedTabActivity.this, ViewMapActivity.class);
+                startActivityForResult(intent, VIEWING);
+            }
+        });
     }
 
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
-        DummyMainActivity.myHabitsAdapter.notifyDataSetChanged();
+        DummyMainActivity.myHabitEventsAdapter.notifyDataSetChanged();
+        if(requestCode == VIEWING){
+            AddHabitEventActivity._resetVars();
+        }
     }
 }

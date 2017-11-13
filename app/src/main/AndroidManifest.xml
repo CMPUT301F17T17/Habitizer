@@ -78,6 +78,8 @@
         </activity>
         <activity android:name=".EditHabitEventActivity">
         </activity>
+        <activity android:name=".ViewMapActivity">
+        </activity>
     </application>
 
 </manifest>

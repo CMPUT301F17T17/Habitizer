@@ -83,6 +83,12 @@ public class DummyMainActivity extends AppCompatActivity {
     public void DEBUG_addHabits(){
         for(int i = 0; i < 10; i++){
             String title = "Habit_"+Integer.toString(i);
+            double lat = -100.0;
+            double lng = 53.0;
+            HabitEvent habitEvent = new HabitEvent(title, new Date(), null, new double[]{lat,
+                    lng+((double)i/10000.0)},
+                    "");
+            myHabitEvents.add(habitEvent);
             Habit h = new Habit(title, new Date(), "Reasonable reason "+Integer.toString(i));
             int[] days = new int[7];
             for(int j = 0; j < 7; j++){

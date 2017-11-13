@@ -26,6 +26,15 @@ public class ViewHabitActivity extends AppCompatActivity {
         (findViewById(R.id.viewing)).setVisibility(View.VISIBLE);
         editButton.setVisibility(View.VISIBLE);
         doneButton.setVisibility(View.VISIBLE);
+        Button deleteButton = (Button)  findViewById(R.id.delete);
+        deleteButton.setVisibility(View.VISIBLE);
+        deleteButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                DummyMainActivity.myHabits.remove(position);
+                finish();
+            }
+        });
         AddHabitActivity.setDays(habit);
         AddHabitActivity.setUpDays(this);
         AddHabitActivity.resetDays();

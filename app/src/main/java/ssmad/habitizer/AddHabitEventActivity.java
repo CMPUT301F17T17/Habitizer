@@ -76,6 +76,8 @@ public class AddHabitEventActivity extends AppCompatActivity {
     public static boolean picButtonsAreVisible = Boolean.FALSE;
     public static boolean picIsVisible = Boolean.FALSE;
     public static boolean mapIsVisible = Boolean.FALSE;
+    public static boolean picWasChanged = Boolean.FALSE;
+    public static boolean locWasChanged = Boolean.FALSE;
     public static double[] location;
     public static String comment;
     public static Bitmap pic;
@@ -260,8 +262,14 @@ public class AddHabitEventActivity extends AppCompatActivity {
     }
 
     public static void setPic(Activity ctx) { // OK
+        byte[] b = getCompressedByteFromBitmap(pic, PIC_MAX_SIZE);
+        _setPic(ctx, b);
+
+    }
+    public static void _setPic(Activity ctx, byte[] bytes){
         ImageView picPreview = (ImageView) ctx.findViewById(R.id.pic_preview);
-        picBytes = getCompressedByteFromBitmap(pic, PIC_MAX_SIZE);
+        picBytes = bytes;
+        picWasChanged = true;
         //picPreview.setImageBitmap(pic);
         setPicFromBytes(picBytes);
         picPreview.setImageBitmap(pic);
@@ -298,7 +306,6 @@ public class AddHabitEventActivity extends AppCompatActivity {
             HabitEvent habitEvent = new HabitEvent(habit.getTitle(), new Date(), fpb, location,
                     comment);
             DummyMainActivity.myHabitEvents.add(habitEvent);
-            resetVars(this);
             finish();
         }
 
@@ -322,7 +329,6 @@ public class AddHabitEventActivity extends AppCompatActivity {
     }
 
     public void cancelEvent() {
-        resetVars(this);
         finish();
     }
 
@@ -335,6 +341,16 @@ public class AddHabitEventActivity extends AppCompatActivity {
         mapIsVisible = false;
         setPicStuff(ctx);
         setLocStuff(ctx);
+    }
+    public static void _resetVars() {
+        location = null;
+        pic = null;
+        picBytes = null;
+        picIsVisible = false;
+        picButtonsAreVisible = false;
+        mapIsVisible = false;
+        picWasChanged = false;
+        locWasChanged = false;
     }
 
     public static void makeButtonUnavailable(Button button) {
@@ -365,7 +381,7 @@ public class AddHabitEventActivity extends AppCompatActivity {
         gmap = googleMap;
         Location loc = location;
         if (location == null) {
-            loc = getLocationPermissionThenLocation(ctx);
+            loc = getLocationPermissionThenLocation(ctx, btn);
         }
         if (loc != null) {
             double lat = loc.getLatitude();
@@ -381,6 +397,7 @@ public class AddHabitEventActivity extends AppCompatActivity {
 
         float zoom = 15.0f;
         location = new double[]{lat, lng};
+        locWasChanged = true;
         LatLng ll = new LatLng(lat, lng);
         CameraUpdate update = CameraUpdateFactory.newLatLngZoom(ll, zoom);
         gmap.moveCamera(update);
@@ -424,7 +441,7 @@ public class AddHabitEventActivity extends AppCompatActivity {
         return lastKnownLocationLocation;
     }
 
-    public static Location getLocationPermissionThenLocation(Activity ctx) {
+    public static Location getLocationPermissionThenLocation(Activity ctx, final Button btn) {
         //https://github.com/CMPUT301W17T22/MoodSwing/blob/master/app/src/main/java/com/ualberta/cmput301w17t22/moodswing/MainActivity.java
         // Get the current location.
         // http://stackoverflow.com/questions/32491960/android-check-permission-for-locationmanager
@@ -434,6 +451,7 @@ public class AddHabitEventActivity extends AppCompatActivity {
         // Check if we have proper permissions to get the fine lastKnownLocation.
         if (ContextCompat.checkSelfPermission(ctx, android.Manifest.permission.
                 ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
+            locationFail(ctx, btn);
 
             Log.i("debugMaps", "Requesting fine permission");
             // Request the permission.
@@ -449,11 +467,11 @@ public class AddHabitEventActivity extends AppCompatActivity {
 
     }
 
-    public static void locationFail(Activity ctx) {
-        DummyMainActivity.toastMe("Location permission was denied", ctx);
+    public static void locationFail(Activity ctx, final Button btn) {
         AddHabitEventActivity.mapIsVisible = Boolean.FALSE;
         setLocStuff(ctx);
         ((CheckBox) ctx.findViewById(R.id.location_check)).setChecked(Boolean.FALSE);
+        makeButtonAvailable(btn);
         location = null;
     }
 
@@ -471,23 +489,13 @@ public class AddHabitEventActivity extends AppCompatActivity {
                             .ACCESS_FINE_LOCATION)
                             == PackageManager.PERMISSION_GRANTED) {
 
-                        //Request location updates:
-                        Location loc = getCurrentLocation(this);
-                        double lat = loc.getLatitude();
-                        double lon = loc.getLongitude();
-                        //gotoLocation(53.523079, -113.526329);
-                        gotoLocation(this, lat, lon, thisOneIsSpecialAndUnavailableSometimes);
+
+                        DummyMainActivity.toastMe("Can now set location", this);
 
 
                     }
 
-                } else {
-
-
-                    locationFail(this);
-
                 }
-                return;
             }
 
         }

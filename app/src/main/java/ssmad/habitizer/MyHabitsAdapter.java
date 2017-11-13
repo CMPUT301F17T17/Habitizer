@@ -77,7 +77,7 @@ public class MyHabitsAdapter extends ArrayAdapter<Habit> {
             public void onClick(View v) {
                 Intent intent = new Intent(getContext(), AddHabitEventActivity.class);
                 intent.putExtra(HabitTabActivity.GENERIC_REQUEST_CODE, position);
-                ((Activity) getContext()).startActivityForResult(intent, 0);
+                ((Activity) getContext()).startActivityForResult(intent, HabitTabActivity.ADDING_EVENT);
             }
         });
         main.setOnClickListener(new View.OnClickListener() {

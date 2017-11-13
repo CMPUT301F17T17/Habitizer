@@ -23,50 +23,58 @@ public class EditHabitEventActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.add_habit_event);
         (findViewById(R.id.add)).setVisibility(View.GONE);
-        (findViewById(R.id.cancel)).setVisibility(View.GONE);
         (findViewById(R.id.edit_title)).setVisibility(View.VISIBLE);
-        final int position = getIntent().getExtras().getInt(HabitTabActivity.GENERIC_REQUEST_CODE);
+        final int position = getIntent().getExtras().getInt(ViewHabitActivity.toEdit);
         HabitEvent habitEvent = DummyMainActivity.myHabitEvents.get(position);
         ((EditText) findViewById(R.id.comment_input)).setText(habitEvent.getComment());
         ((TextView)findViewById(R.id.what_habit)).setText(habitEvent.getTitle());
         CheckBox picCheck = (CheckBox) findViewById(R.id.pic_check);
         if(habitEvent.hasPicture()){
-            /*AddHabitEventActivity.picIsVisible = Boolean.TRUE;
+            picCheck.setChecked(Boolean.TRUE);
             AddHabitEventActivity.picButtonsAreVisible = Boolean.TRUE;
-            AddHabitEventActivity.setPicFromBytes(habitEvent.getPicBytes());
+            AddHabitEventActivity.picIsVisible = Boolean.TRUE;
+            AddHabitEventActivity._setPic(this,habitEvent.getPicBytes());
             AddHabitEventActivity.setPicStuff(this);
-            AddHabitEventActivity.setPic(this);
-            picCheck.toggle();*/
         }
-
-        if(habitEvent.hasLocation()){
-            /*double[] habitEventLoc = habitEvent.getLocation();
-            Location l = new Location("lol");
-            l.setLatitude(habitEventLoc[0]);
-            l.setLongitude(habitEventLoc[1]);
-            AddHabitEventActivity.initMap(this, l);*/
-        }
-
-
+        CheckBox locCheck = (CheckBox) findViewById(R.id.location_check);
         Button doneButton = (Button)  findViewById(R.id.done_button);
-        /*AddHabitEventActivity.setUpCheckBoxes(this, doneButton);
-        AddHabitEventActivity.setUpPicButtons(this, doneButton);*/
+        if(habitEvent.hasLocation()){
+            locCheck.setChecked(Boolean.TRUE);
+            double[] habitEventLoc = habitEvent.getLocation();
+            Location loc = new Location("lol");
+            loc.setLatitude(habitEventLoc[0]);
+            loc.setLongitude(habitEventLoc[1]);
+            AddHabitEventActivity.initMap(this, loc, doneButton);
+        }
+
+
+        AddHabitEventActivity.setUpCheckBoxes(this, doneButton);
+        AddHabitEventActivity.setUpPicButtons(this, doneButton);
 
         final Activity fctx= this;
         doneButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-               /* HabitEvent habitEvent1 = DummyMainActivity.myHabitEvents.get(position);
+               HabitEvent habitEvent1 = DummyMainActivity.myHabitEvents.get(position);
                 if(AddHabitEventActivity.habitEventCheckFix(fctx)){
-                    habitEvent1.setPicBytes(AddHabitEventActivity.picBytes);
-                    habitEvent1.setLocation(AddHabitEventActivity.location);
+                    if(AddHabitEventActivity.picWasChanged){
+                        habitEvent1.setPicBytes(AddHabitEventActivity.picBytes);
+                    }if(AddHabitEventActivity.locWasChanged){
+                        habitEvent1.setLocation(AddHabitEventActivity.location);
+                    }
                     habitEvent1.setComment(AddHabitEventActivity.comment);
 
                     finish();
-                }*/
+                }
             }
         });
         doneButton.setVisibility(View.VISIBLE);
+        (findViewById(R.id.cancel)).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
+            }
+        });
 
 
     }

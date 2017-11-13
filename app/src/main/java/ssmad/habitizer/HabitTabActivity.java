@@ -24,6 +24,7 @@ public class HabitTabActivity extends AppCompatActivity {
 
 
     public static String  GENERIC_REQUEST_CODE = "GENERIC.REQUEST.CODE";
+    public static final int ADDING_EVENT = 123;
     ListView myHabitsListView;
 
     @Override
@@ -62,6 +63,9 @@ public class HabitTabActivity extends AppCompatActivity {
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
+        if(requestCode == ADDING_EVENT){
+            AddHabitEventActivity._resetVars();
+        }
         DummyMainActivity.myHabitsAdapter.notifyDataSetChanged();
     }
 

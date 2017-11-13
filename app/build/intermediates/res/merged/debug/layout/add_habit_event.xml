@@ -166,6 +166,15 @@
             android:visibility="gone"/>
 
         <Button
+            android:id="@+id/delete"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:backgroundTint="@android:color/holo_red_dark"
+            android:text="Delete"
+            android:visibility="visible"/>
+
+        <Button
             android:id="@+id/done_button"
             android:layout_width="match_parent"
             android:layout_height="match_parent"

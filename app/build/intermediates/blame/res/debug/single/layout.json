@@ -84,6 +84,10 @@
         "source": "C:\\Users\\Sadman\\.android\\build-cache\\7791cc1ed7a29c2c812ace4b0530d4f9c2c1b23e\\output\\res\\layout\\abc_list_menu_item_icon.xml"
     },
     {
+        "merged": "D:\\school\\CMPUT 301\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_view_map.xml",
+        "source": "D:\\school\\CMPUT 301\\Habitizer\\app\\src\\main\\res\\layout\\activity_view_map.xml"
+    },
+    {
         "merged": "D:\\school\\CMPUT 301\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\layout\\mr_chooser_list_item.xml",
         "source": "C:\\Users\\Sadman\\.android\\build-cache\\046677683d115e1250598dd7c7aa55fe55bc9dea\\output\\res\\layout\\mr_chooser_list_item.xml"
     },
