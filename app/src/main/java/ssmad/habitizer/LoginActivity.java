@@ -1,3 +1,12 @@
+/*
+ *  Class Name: LoginActivity
+ *  Version: 0.5
+ *  Date: November 13th, 2017
+ *  Copyright (c) TEAM SSMAD, CMPUT 301, University of Alberta - All Rights Reserved.
+ *  You may use, distribute, or modify this code under terms and conditions of the
+ *  Code of Students Behaviour at University of Alberta
+ */
+
 package ssmad.habitizer;
 
 import android.content.Intent;
@@ -23,7 +32,12 @@ import java.lang.reflect.Type;
 import java.util.ArrayList;
 
 
-
+/**
+ * Login Activity, for logging in and signing up
+ * @author Andrew
+ * @version 0.5
+ * @since 0.5
+ */
 public class LoginActivity extends AppCompatActivity {
     public static final String FILENAME= "account.sav";
     private EditText usernameText;
@@ -34,6 +48,11 @@ public class LoginActivity extends AppCompatActivity {
 
     public static final int SIGNUP = 1212;
 
+    /**
+     * Called when activity starts
+     * Takes in input for logging in, and connects buttons to actions
+     * @param savedInstanceState
+     */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -74,6 +93,12 @@ public class LoginActivity extends AppCompatActivity {
 
     }
 
+    /**
+     * Sends user to edit profile if requested
+     * @param requestCode
+     * @param resultCode
+     * @param data
+     */
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
@@ -85,6 +110,9 @@ public class LoginActivity extends AppCompatActivity {
         }
     }
 
+    /**
+     * Loads account list from file
+     */
     private void loadFromFile() {
         try {
             FileInputStream fis = openFileInput(FILENAME);
@@ -102,6 +130,12 @@ public class LoginActivity extends AppCompatActivity {
         }
     }
 
+    /**
+     * Check if username and password match for successful login
+     * @param username
+     * @param password
+     * @return
+     */
     private Boolean find(String username, String password){
         for(int i=0; i < accountList.size(); i++){
             if(accountList.get(i).getUserName().equals(username) &&

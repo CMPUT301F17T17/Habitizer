@@ -1,3 +1,12 @@
+/*
+ *  Class Name: HabitUnitTest
+ *  Version: 0.5
+ *  Date: November 13th, 2017
+ *  Copyright (c) TEAM SSMAD, CMPUT 301, University of Alberta - All Rights Reserved.
+ *  You may use, distribute, or modify this code under terms and conditions of the
+ *  Code of Students Behaviour at University of Alberta
+ */
+
 package ssmad.habitizer;
 
 import org.junit.Test;
@@ -11,7 +20,18 @@ import static org.junit.Assert.assertEquals;
  * Created by cryst on 11/10/2017.
  */
 
+/**
+ * Tests Habits
+ * @author Simon
+ * @version 0.5
+ * @see Habit
+ * @since 0.5
+ */
 public class HabitUnitTest {
+    /**
+     * Tests getters
+     * @throws Exception
+     */
     @Test
     public void testHGetters() throws Exception {
         Date cal = Calendar.getInstance().getTime();
@@ -22,6 +42,10 @@ public class HabitUnitTest {
         assertEquals(cal, habit.getStartDate());
     }
 
+    /**
+     * Tests setters
+     * @throws Exception
+     */
     @Test
     public void testHSetters() throws Exception {
         Date cal = Calendar.getInstance().getTime();

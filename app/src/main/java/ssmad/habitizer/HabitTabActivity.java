@@ -1,3 +1,14 @@
+/*
+ *  CMPUT301F16T17
+ *
+ *  Project pt 4
+ *
+ *  November 13th, 2017
+ *
+ *  Copyright Notice
+ *
+ */
+
 package ssmad.habitizer;
 
 import android.content.Intent;

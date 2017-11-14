@@ -1,3 +1,12 @@
+/*
+ *  Class Name: EditProfileActivity
+ *  Version: 0.5
+ *  Date: November 13th, 2017
+ *  Copyright (c) TEAM SSMAD, CMPUT 301, University of Alberta - All Rights Reserved.
+ *  You may use, distribute, or modify this code under terms and conditions of the
+ *  Code of Students Behaviour at University of Alberta
+ */
+
 package ssmad.habitizer;
 
 import android.app.AlertDialog;
@@ -38,6 +47,13 @@ import java.io.OutputStreamWriter;
 import java.lang.reflect.Type;
 import java.util.ArrayList;
 
+/**
+ * Edits Profile of user
+ * @author Andrew
+ * @version 0.5
+ * @see UserProfile
+ * @since 0.5
+ */
 public class EditProfileActivity extends AppCompatActivity {
     public static String USER_NAME = "Username of current user will store here";
     public static final String FILENAME= "userProfiles.sav";
@@ -74,8 +90,11 @@ public class EditProfileActivity extends AppCompatActivity {
     private LinearLayout followLayout;
     private static String currentUser;
 
-    //This part is for displaing profile
 
+    /**
+     * Called when activity starts, used for displaying profile
+     * @param savedInstanceState
+     */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -119,6 +138,10 @@ public class EditProfileActivity extends AppCompatActivity {
 
     }
 
+    /**
+     * Used for editing profile
+     * @param pos
+     */
     private void onEditEvent(final int pos){
         if (pos >= 0){
             nameText.setText(profileList.get(pos).getName());
@@ -219,6 +242,9 @@ public class EditProfileActivity extends AppCompatActivity {
         });
     }
 
+    /**
+     * Send user back
+     */
     @Override
     public void onBackPressed() {
         Intent intent = new Intent();
@@ -227,6 +253,10 @@ public class EditProfileActivity extends AppCompatActivity {
         super.onBackPressed();
     }
 
+    /**
+     * Displays Profile
+     * @param pos
+     */
     private void onDisplayEvent(final int pos){
         String name = profileList.get(pos).getName();
         String birthday = profileList.get(pos).getBirthday();
@@ -269,6 +299,9 @@ public class EditProfileActivity extends AppCompatActivity {
         });
     }
 
+    /**
+     * Display visiblity setting
+     */
     private void displayVisibility(){
         imageButton.setVisibility(View.GONE);
         nmText.setVisibility(View.GONE);
@@ -289,6 +322,9 @@ public class EditProfileActivity extends AppCompatActivity {
 
     }
 
+    /**
+     * Editing display visability
+     */
     private void editVisibility(){
         imageButton.setVisibility(View.VISIBLE);
         nmText.setVisibility(View.VISIBLE);
@@ -308,6 +344,12 @@ public class EditProfileActivity extends AppCompatActivity {
         habbitButton.setVisibility(View.GONE);
     }
 
+    /**
+     * Choose between camera and gallery for picture
+     * @param requestCode
+     * @param resultCode
+     * @param data
+     */
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data){
         super.onActivityResult(requestCode, resultCode, data);
@@ -321,6 +363,10 @@ public class EditProfileActivity extends AppCompatActivity {
         }
     }
 
+    /**
+     * Select an image from gallery
+     * @param data
+     */
     private void selectFromGallery(Intent data){
         Uri imageUri = data.getData();
         try {
@@ -332,6 +378,10 @@ public class EditProfileActivity extends AppCompatActivity {
         imageButton.setImageBitmap(compressedPic);
     }
 
+    /**
+     * Select image from camera
+     * @param data
+     */
     private void selectFromCamera(Intent data){
         pic = (Bitmap) data.getExtras().get("data");
         Bitmap compressedPic = getResizedBitmap(pic, PIC_MAX_SIZE);
@@ -339,6 +389,9 @@ public class EditProfileActivity extends AppCompatActivity {
         imageButton.setImageBitmap(compressedPic);
     }
 
+    /**
+     * Load user from file
+     */
     private void loadFromFile() {
         try {
             FileInputStream fis = openFileInput(FILENAME);
@@ -356,6 +409,10 @@ public class EditProfileActivity extends AppCompatActivity {
         }
     }
 
+    /**
+     * save user in file
+     * @param context
+     */
     public static void saveInFile(Context context) {
         try {
             FileOutputStream fos = context.openFileOutput(FILENAME, Context.MODE_PRIVATE);
@@ -373,6 +430,10 @@ public class EditProfileActivity extends AppCompatActivity {
         }
     }
 
+    /**
+     * Finds user profile in file
+     * @return
+     */
     public int findUserProfile(){
         loadFromFile();
         Intent intent = getIntent();
@@ -386,6 +447,10 @@ public class EditProfileActivity extends AppCompatActivity {
         return -1;
     }
 
+    /**
+     * Checks for constraints on input and displays appropriate error message
+     * @return
+     */
     public Boolean checkInput() {
         Boolean correctness = true;
         String name = nameText.getText().toString();
@@ -414,6 +479,12 @@ public class EditProfileActivity extends AppCompatActivity {
         return correctness;
     }
 
+    /**
+     * Gets resized bitmap
+     * @param pic
+     * @param maxSize
+     * @return
+     */
     public Bitmap getResizedBitmap(Bitmap pic, int maxSize) {
 
         double div = 90.0;

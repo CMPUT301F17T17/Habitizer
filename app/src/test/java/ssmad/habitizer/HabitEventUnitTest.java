@@ -1,3 +1,12 @@
+/*
+ *  Class Name: HabitEventUnitTest
+ *  Version: 0.5
+ *  Date: November 13th, 2017
+ *  Copyright (c) TEAM SSMAD, CMPUT 301, University of Alberta - All Rights Reserved.
+ *  You may use, distribute, or modify this code under terms and conditions of the
+ *  Code of Students Behaviour at University of Alberta
+ */
+
 package ssmad.habitizer;
 
 import android.location.Location;
@@ -14,7 +23,18 @@ import static org.junit.Assert.assertEquals;
  */
 
 @SuppressWarnings("DefaultFileTemplate")
+/**
+ * For testing Habit Events
+ * @author Simon
+ * @version 0.5
+ * @see HabitEvent
+ * @since 0.5
+ */
 public class HabitEventUnitTest {
+    /**
+     * Tests getters
+     * @throws Exception
+     */
     @Test
     public void testHEGetters() throws Exception {
         Date cal = Calendar.getInstance().getTime();
@@ -29,6 +49,10 @@ public class HabitEventUnitTest {
         assertEquals("I did 7", habitevent.getComment());
     }
 
+    /**
+     * Tests Setters
+     * @throws Exception
+     */
     @Test
     public void testHESetters() throws Exception {
         Date cal = Calendar.getInstance().getTime();

@@ -1,3 +1,12 @@
+/*
+ *  Class Name: AddHabitEventActivity
+ *  Version: 0.5
+ *  Date: November 13th, 2017
+ *  Copyright (c) TEAM SSMAD, CMPUT 301, University of Alberta - All Rights Reserved.
+ *  You may use, distribute, or modify this code under terms and conditions of the
+ *  Code of Students Behaviour at University of Alberta
+ */
+
 package ssmad.habitizer;
 
 import android.*;
@@ -67,6 +76,13 @@ Ref pic size reduce
 https://stackoverflow.com/questions/16954109/reduce-the-size-of-a-bitmap-to-a-specified-size-in-android
  */
 
+/**
+ * Activity for adding in a Habit Event
+ * @author Sadman, Simon (a little)
+ * @version 0.5
+ * @see HabitEvent
+ * @since 0.5
+ */
 public class AddHabitEventActivity extends AppCompatActivity {
     public static final int GET_PIC_WITH_CAMERA = 0;
     public static final int GET_PIC_FROM_GALLERY = 1;
@@ -85,6 +101,12 @@ public class AddHabitEventActivity extends AppCompatActivity {
     public static GoogleMap gmap;
     public static Button thisOneIsSpecialAndUnavailableSometimes;
 
+    /**
+     * Called when activity starts
+     * Takes input for habit event
+     * Connects buttons to actions
+     * @param savedInstanceState
+     */
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.add_habit_event);
@@ -122,6 +144,12 @@ public class AddHabitEventActivity extends AppCompatActivity {
 
     }
 
+    /**
+     * Tries to get picture and makes add button available
+     * @param requestCode
+     * @param resultCode
+     * @param data
+     */
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) { // OK
         super.onActivityResult(requestCode, resultCode, data);
@@ -129,6 +157,11 @@ public class AddHabitEventActivity extends AppCompatActivity {
         makeButtonAvailable((Button) findViewById(R.id.add));
     }
 
+    /**
+     * Sets up checkboxes
+     * @param ctx
+     * @param btn
+     */
     public static void setUpCheckBoxes(Activity ctx, final Button btn) {
         CheckBox locationCheck = (CheckBox) ctx.findViewById(R.id.location_check);
         CheckBox picCheck = (CheckBox) ctx.findViewById(R.id.pic_check);
@@ -166,6 +199,11 @@ public class AddHabitEventActivity extends AppCompatActivity {
         });
     }
 
+    /**
+     * Sets up buttons related to pictures
+     * @param ctx
+     * @param btn
+     */
     public static void setUpPicButtons(Activity ctx, final Button btn) { // OK
         Button fromCamera = (Button) ctx.findViewById(R.id.pic_camera);
         Button fromGallery = (Button) ctx.findViewById(R.id.pic_gallery);
@@ -190,6 +228,10 @@ public class AddHabitEventActivity extends AppCompatActivity {
         });
     }
 
+    /**
+     * Toggles seeing location task
+     * @param ctx
+     */
     public static void setLocStuff(Activity ctx) {
         LinearLayout mapToggle = (LinearLayout) ctx.findViewById(R.id.map_toggle);
         if (mapIsVisible) {
@@ -200,6 +242,10 @@ public class AddHabitEventActivity extends AppCompatActivity {
         }
     }
 
+    /**
+     * Toggles seeing picture task
+     * @param ctx
+     */
     public static void setPicStuff(Activity ctx) { // OK
         LinearLayout picToggle = (LinearLayout) ctx.findViewById(R.id.pic_toggle);
         if (picButtonsAreVisible) {
@@ -217,6 +263,13 @@ public class AddHabitEventActivity extends AppCompatActivity {
         picPreview.setImageBitmap(pic);
     }
 
+    /**
+     * Attempts to retrieve picture
+     * @param ctx
+     * @param requestCode
+     * @param resultCode
+     * @param data
+     */
     public static void tryGetPic(Activity ctx, int requestCode, int resultCode, Intent data) {
         switch (requestCode) {
             case GET_PIC_WITH_CAMERA:
@@ -249,6 +302,10 @@ public class AddHabitEventActivity extends AppCompatActivity {
         }
     }
 
+    /**
+     * Called upon failure of getting picture, displays failure message
+     * @param ctx
+     */
     public static void getPictureFail(Activity ctx) {
         DummyMainActivity.toastMe("Failed to get pic", ctx);
         AddHabitEventActivity.picIsVisible = Boolean.FALSE;
@@ -261,11 +318,21 @@ public class AddHabitEventActivity extends AppCompatActivity {
 
     }
 
+    /**
+     * Setter for picture with just context
+     * @param ctx
+     */
     public static void setPic(Activity ctx) { // OK
         byte[] b = getCompressedByteFromBitmap(pic, PIC_MAX_SIZE);
         _setPic(ctx, b);
 
     }
+
+    /**
+     * Setter for picture given context and bytes of picture
+     * @param ctx
+     * @param bytes
+     */
     public static void _setPic(Activity ctx, byte[] bytes){
         ImageView picPreview = (ImageView) ctx.findViewById(R.id.pic_preview);
         picBytes = bytes;
@@ -275,6 +342,12 @@ public class AddHabitEventActivity extends AppCompatActivity {
         picPreview.setImageBitmap(pic);
     }
 
+    /**
+     * Gets compressed bytes from Bitmap for image
+     * @param pic
+     * @param maxSize
+     * @return
+     */
     public static byte[] getCompressedByteFromBitmap(Bitmap pic, int maxSize) {
         double div = 100.0;
         ByteArrayOutputStream stream;
@@ -294,10 +367,17 @@ public class AddHabitEventActivity extends AppCompatActivity {
         return image;
     }
 
+    /**
+     * Sets picture from bytes
+     * @param bytes
+     */
     public static void setPicFromBytes(byte[] bytes) {
         pic = BitmapFactory.decodeByteArray(bytes, 0, bytes.length);
     }
 
+    /**
+     * Adds Event
+     */
     public void addEvent() {
         Habit habit = DummyMainActivity.myHabits.get(getIntent().getExtras().getInt
                 (HabitTabActivity.GENERIC_REQUEST_CODE));
@@ -311,6 +391,11 @@ public class AddHabitEventActivity extends AppCompatActivity {
 
     }
 
+    /**
+     * Check constraints on comment and if there's a picture/location displayed
+     * @param ctx
+     * @return
+     */
     public static boolean habitEventCheckFix(Activity ctx) {
         comment = ((EditText) ctx.findViewById(R.id.comment_input)).getText().toString();
         if (!mapIsVisible) {
@@ -328,10 +413,17 @@ public class AddHabitEventActivity extends AppCompatActivity {
         return Boolean.TRUE;
     }
 
+    /**
+     * Cancels adding event
+     */
     public void cancelEvent() {
         finish();
     }
 
+    /**
+     * Resets picture and location variables and sets with new ctx
+     * @param ctx
+     */
     public static void resetVars(Activity ctx) {
         location = null;
         pic = null;
@@ -342,6 +434,10 @@ public class AddHabitEventActivity extends AppCompatActivity {
         setPicStuff(ctx);
         setLocStuff(ctx);
     }
+
+    /**
+     * Resets picture and location variables without setting
+     */
     public static void _resetVars() {
         location = null;
         pic = null;
@@ -353,16 +449,30 @@ public class AddHabitEventActivity extends AppCompatActivity {
         locWasChanged = false;
     }
 
+    /**
+     * Remove button from display
+     * @param button
+     */
     public static void makeButtonUnavailable(Button button) {
         button.setAlpha(0.5f);
         button.setClickable(Boolean.FALSE);
     }
 
+    /**
+     * Adds button to display
+     * @param button
+     */
     public static void makeButtonAvailable(Button button) {
         button.setAlpha(1.0f);
         button.setClickable(Boolean.TRUE);
     }
 
+    /**
+     * Initializes map
+     * @param ctx
+     * @param location
+     * @param btn
+     */
     public static void initMap(Activity ctx, final Location location, final Button btn) {
         MapFragment mapFragment = (MapFragment) ctx.getFragmentManager().findFragmentById(R.id.map);
         final Activity fctx = ctx;
@@ -376,6 +486,13 @@ public class AddHabitEventActivity extends AppCompatActivity {
 
     }
 
+    /**
+     * Makes call to functions to display map
+     * @param ctx
+     * @param googleMap
+     * @param location
+     * @param btn
+     */
     public static void myOnMapReady(Activity ctx, GoogleMap googleMap, Location location, final
                                     Button btn) {
         gmap = googleMap;
@@ -393,6 +510,13 @@ public class AddHabitEventActivity extends AppCompatActivity {
 
     }
 
+    /**
+     * Goes to the specified coordinates on map
+     * @param ctx
+     * @param lat
+     * @param lng
+     * @param btn
+     */
     public static void gotoLocation(Activity ctx, double lat, double lng, final Button btn) {
 
         float zoom = 15.0f;
@@ -407,6 +531,11 @@ public class AddHabitEventActivity extends AppCompatActivity {
 
     }
 
+    /**
+     * Gets current location of user
+     * @param ctx
+     * @return
+     */
     public static Location getCurrentLocation(Activity ctx) {
         // Get the lastKnownLocation once every 5 seconds, or every 10 meters.
         LocationManager locationManager = (LocationManager) ctx.getSystemService(ctx
@@ -441,6 +570,12 @@ public class AddHabitEventActivity extends AppCompatActivity {
         return lastKnownLocationLocation;
     }
 
+    /**
+     * Gets permission from user to access location
+     * @param ctx
+     * @param btn
+     * @return
+     */
     public static Location getLocationPermissionThenLocation(Activity ctx, final Button btn) {
         //https://github.com/CMPUT301W17T22/MoodSwing/blob/master/app/src/main/java/com/ualberta/cmput301w17t22/moodswing/MainActivity.java
         // Get the current location.
@@ -467,6 +602,11 @@ public class AddHabitEventActivity extends AppCompatActivity {
 
     }
 
+    /**
+     * Called upon failure to retrieve location
+     * @param ctx
+     * @param btn
+     */
     public static void locationFail(Activity ctx, final Button btn) {
         AddHabitEventActivity.mapIsVisible = Boolean.FALSE;
         setLocStuff(ctx);
@@ -475,6 +615,12 @@ public class AddHabitEventActivity extends AppCompatActivity {
         location = null;
     }
 
+    /**
+     * Called after getting permission for location
+     * @param requestCode
+     * @param permissions
+     * @param grantResults
+     */
     @Override
     public void onRequestPermissionsResult(int requestCode, String permissions[], int[] grantResults) {
         switch (requestCode) {
