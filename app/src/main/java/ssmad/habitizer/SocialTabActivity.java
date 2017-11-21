@@ -9,10 +9,19 @@
 
 package ssmad.habitizer;
 
+
+
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
+/**
+ *Activity for displaying social related aspects of the app
+ * @author Simon
+ * @version 0.1
+ * @since 0.1
+ */
 public class SocialTabActivity extends AppCompatActivity {
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

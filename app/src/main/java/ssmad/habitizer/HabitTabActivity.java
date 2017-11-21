@@ -11,6 +11,12 @@
 
 package ssmad.habitizer;
 
+/**
+ * Created by cryst on 10/22/2017.
+ */
+
+
+
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -28,7 +34,10 @@ import static android.R.color.holo_blue_light;
 import static android.R.color.white;
 
 /**
- * Created by cryst on 10/22/2017.
+ *Activity for displaying Habit related aspects of the app
+ * @author Sadman
+ * @version 0.5
+ * @since 0.5
  */
 
 public class HabitTabActivity extends AppCompatActivity {

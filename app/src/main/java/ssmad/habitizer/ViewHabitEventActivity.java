@@ -21,7 +21,7 @@ import static ssmad.habitizer.ViewHabitActivity.toEdit;
 
 /**
  * For viewing a habit event
- * @author Sadman
+ * @author Minfeng, Sadman
  * @version 0.5
  * @see HabitEvent
  * @since 0.5
@@ -30,7 +30,10 @@ public class ViewHabitEventActivity extends AppCompatActivity {
     private final int EDITING = 345;
 
     /**
-     * Called when activity starts, takes input, connects buttons to actions
+     * Called when activity starts
+     * Takes input
+     * Connects buttons to actions
+     * Option to delete habit events
      * @param savedInstanceState
      */
     @Override

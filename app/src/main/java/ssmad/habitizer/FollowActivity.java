@@ -18,6 +18,13 @@ import com.robotium.solo.Solo;
  * Created by dwai on 2017-10-23.
  */
 
+/**
+ *Activity for displaying Follow/Following related aspects of the app
+ * @author Derrick
+ * @version 0.1
+ * @since 0.1
+ */
+
 public class FollowActivity extends AppCompatActivity {
 
     private Solo solo;

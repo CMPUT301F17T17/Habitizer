@@ -18,7 +18,7 @@ import android.widget.TextView;
 
 /**
  * Views Habit
- * @author Sadman
+ * @author Minfeng, Sadman
  * @version 0.5
  * @see Habit
  * @since 0.5
@@ -29,6 +29,7 @@ public class ViewHabitActivity extends AppCompatActivity {
     /**
      * Called when activity starts
      * Connects buttons to actions
+     * Option to delete habits
      * @param savedInstanceState
      */
     @Override

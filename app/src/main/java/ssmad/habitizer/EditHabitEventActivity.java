@@ -27,7 +27,7 @@ import static ssmad.habitizer.ViewHabitActivity.toEdit;
 
 /**
  * Edits habit events
- * @author Sadman
+ * @author Minfeng, Sadman
  * @version 0.5
  * @see HabitEvent
  * @since 0.5

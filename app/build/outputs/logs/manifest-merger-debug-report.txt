@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\cryst\AndroidStudioProjects\Habitizer\app\src\main\AndroidManifest.xml:2:1-108:12
+ADDED from C:\Users\cryst\AndroidStudioProjects\Habitizer\app\src\main\AndroidManifest.xml:2:1-107:12
 	package
 		ADDED from C:\Users\cryst\AndroidStudioProjects\Habitizer\app\src\main\AndroidManifest.xml:3:11-36
 		INJECTED from C:\Users\cryst\AndroidStudioProjects\Habitizer\app\src\main\AndroidManifest.xml
@@ -92,7 +92,7 @@ ADDED from C:\Users\cryst\AndroidStudioProjects\Habitizer\app\src\main\AndroidMa
 	android:name
 		ADDED from C:\Users\cryst\AndroidStudioProjects\Habitizer\app\src\main\AndroidManifest.xml:30:22-77
 application
-ADDED from C:\Users\cryst\AndroidStudioProjects\Habitizer\app\src\main\AndroidManifest.xml:32:5-106:19
+ADDED from C:\Users\cryst\AndroidStudioProjects\Habitizer\app\src\main\AndroidManifest.xml:32:5-105:19
 MERGED from [com.android.support:design:25.3.1] C:\Users\cryst\.android\build-cache\be05bf9c16458419eb7087291bd58a9ed060f4d3\output\AndroidManifest.xml:29:5-20
 MERGED from [com.android.support:transition:25.3.1] C:\Users\cryst\.android\build-cache\ff23f33410389c078d2c4cdf3513d028b92108fb\output\AndroidManifest.xml:26:5-20
 MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\cryst\.android\build-cache\7c4b7d1a50836533cd3d499fe809298e26033b59\output\AndroidManifest.xml:9:5-20
@@ -187,63 +187,59 @@ activity#ssmad.habitizer.EditProfileActivity
 ADDED from C:\Users\cryst\AndroidStudioProjects\Habitizer\app\src\main\AndroidManifest.xml:62:9-68:20
 	android:name
 		ADDED from C:\Users\cryst\AndroidStudioProjects\Habitizer\app\src\main\AndroidManifest.xml:62:19-54
-activity#ssmad.habitizer.TestActivity
-ADDED from C:\Users\cryst\AndroidStudioProjects\Habitizer\app\src\main\AndroidManifest.xml:69:9-49
-	android:name
-		ADDED from C:\Users\cryst\AndroidStudioProjects\Habitizer\app\src\main\AndroidManifest.xml:69:19-47
 activity#ssmad.habitizer.AddHabitActivity
-ADDED from C:\Users\cryst\AndroidStudioProjects\Habitizer\app\src\main\AndroidManifest.xml:70:9-53
+ADDED from C:\Users\cryst\AndroidStudioProjects\Habitizer\app\src\main\AndroidManifest.xml:69:9-53
 	android:name
-		ADDED from C:\Users\cryst\AndroidStudioProjects\Habitizer\app\src\main\AndroidManifest.xml:70:19-51
+		ADDED from C:\Users\cryst\AndroidStudioProjects\Habitizer\app\src\main\AndroidManifest.xml:69:19-51
 activity#ssmad.habitizer.AddHabitEventActivity
-ADDED from C:\Users\cryst\AndroidStudioProjects\Habitizer\app\src\main\AndroidManifest.xml:71:9-58
+ADDED from C:\Users\cryst\AndroidStudioProjects\Habitizer\app\src\main\AndroidManifest.xml:70:9-58
 	android:name
-		ADDED from C:\Users\cryst\AndroidStudioProjects\Habitizer\app\src\main\AndroidManifest.xml:71:19-56
+		ADDED from C:\Users\cryst\AndroidStudioProjects\Habitizer\app\src\main\AndroidManifest.xml:70:19-56
 activity#ssmad.habitizer.HabitTabActivity
-ADDED from C:\Users\cryst\AndroidStudioProjects\Habitizer\app\src\main\AndroidManifest.xml:72:9-81:20
+ADDED from C:\Users\cryst\AndroidStudioProjects\Habitizer\app\src\main\AndroidManifest.xml:71:9-80:20
 	android:name
-		ADDED from C:\Users\cryst\AndroidStudioProjects\Habitizer\app\src\main\AndroidManifest.xml:72:19-51
+		ADDED from C:\Users\cryst\AndroidStudioProjects\Habitizer\app\src\main\AndroidManifest.xml:71:19-51
 activity#ssmad.habitizer.EditHabitActivity
-ADDED from C:\Users\cryst\AndroidStudioProjects\Habitizer\app\src\main\AndroidManifest.xml:82:9-54
+ADDED from C:\Users\cryst\AndroidStudioProjects\Habitizer\app\src\main\AndroidManifest.xml:81:9-54
 	android:name
-		ADDED from C:\Users\cryst\AndroidStudioProjects\Habitizer\app\src\main\AndroidManifest.xml:82:19-52
+		ADDED from C:\Users\cryst\AndroidStudioProjects\Habitizer\app\src\main\AndroidManifest.xml:81:19-52
 meta-data#com.google.android.maps.v2.API_KEY
-ADDED from C:\Users\cryst\AndroidStudioProjects\Habitizer\app\src\main\AndroidManifest.xml:84:9-86:70
+ADDED from C:\Users\cryst\AndroidStudioProjects\Habitizer\app\src\main\AndroidManifest.xml:83:9-85:70
 	android:value
-		ADDED from C:\Users\cryst\AndroidStudioProjects\Habitizer\app\src\main\AndroidManifest.xml:86:13-68
+		ADDED from C:\Users\cryst\AndroidStudioProjects\Habitizer\app\src\main\AndroidManifest.xml:85:13-68
 	android:name
-		ADDED from C:\Users\cryst\AndroidStudioProjects\Habitizer\app\src\main\AndroidManifest.xml:85:13-62
+		ADDED from C:\Users\cryst\AndroidStudioProjects\Habitizer\app\src\main\AndroidManifest.xml:84:13-62
 meta-data#com.google.android.gms.version
-ADDED from C:\Users\cryst\AndroidStudioProjects\Habitizer\app\src\main\AndroidManifest.xml:87:9-89:68
+ADDED from C:\Users\cryst\AndroidStudioProjects\Habitizer\app\src\main\AndroidManifest.xml:86:9-88:68
 MERGED from [com.google.android.gms:play-services-basement:11.0.4] C:\Users\cryst\.android\build-cache\82a375ef549dbca280d6cd716d55d984fdc3b990\output\AndroidManifest.xml:20:9-121
 	android:value
-		ADDED from C:\Users\cryst\AndroidStudioProjects\Habitizer\app\src\main\AndroidManifest.xml:89:13-66
+		ADDED from C:\Users\cryst\AndroidStudioProjects\Habitizer\app\src\main\AndroidManifest.xml:88:13-66
 	android:name
-		ADDED from C:\Users\cryst\AndroidStudioProjects\Habitizer\app\src\main\AndroidManifest.xml:88:13-58
+		ADDED from C:\Users\cryst\AndroidStudioProjects\Habitizer\app\src\main\AndroidManifest.xml:87:13-58
 activity#ssmad.habitizer.FeedTabActivity
-ADDED from C:\Users\cryst\AndroidStudioProjects\Habitizer\app\src\main\AndroidManifest.xml:91:9-52
+ADDED from C:\Users\cryst\AndroidStudioProjects\Habitizer\app\src\main\AndroidManifest.xml:90:9-52
 	android:name
-		ADDED from C:\Users\cryst\AndroidStudioProjects\Habitizer\app\src\main\AndroidManifest.xml:91:19-50
+		ADDED from C:\Users\cryst\AndroidStudioProjects\Habitizer\app\src\main\AndroidManifest.xml:90:19-50
 activity#ssmad.habitizer.SocialTabActivity
-ADDED from C:\Users\cryst\AndroidStudioProjects\Habitizer\app\src\main\AndroidManifest.xml:92:9-54
+ADDED from C:\Users\cryst\AndroidStudioProjects\Habitizer\app\src\main\AndroidManifest.xml:91:9-54
+	android:name
+		ADDED from C:\Users\cryst\AndroidStudioProjects\Habitizer\app\src\main\AndroidManifest.xml:91:19-52
+activity#ssmad.habitizer.ViewHabitActivity
+ADDED from C:\Users\cryst\AndroidStudioProjects\Habitizer\app\src\main\AndroidManifest.xml:92:9-93:20
 	android:name
 		ADDED from C:\Users\cryst\AndroidStudioProjects\Habitizer\app\src\main\AndroidManifest.xml:92:19-52
-activity#ssmad.habitizer.ViewHabitActivity
-ADDED from C:\Users\cryst\AndroidStudioProjects\Habitizer\app\src\main\AndroidManifest.xml:93:9-94:20
-	android:name
-		ADDED from C:\Users\cryst\AndroidStudioProjects\Habitizer\app\src\main\AndroidManifest.xml:93:19-52
 activity#ssmad.habitizer.ViewHabitEventActivity
-ADDED from C:\Users\cryst\AndroidStudioProjects\Habitizer\app\src\main\AndroidManifest.xml:95:9-96:20
+ADDED from C:\Users\cryst\AndroidStudioProjects\Habitizer\app\src\main\AndroidManifest.xml:94:9-95:20
 	android:name
-		ADDED from C:\Users\cryst\AndroidStudioProjects\Habitizer\app\src\main\AndroidManifest.xml:95:19-57
+		ADDED from C:\Users\cryst\AndroidStudioProjects\Habitizer\app\src\main\AndroidManifest.xml:94:19-57
 activity#ssmad.habitizer.EditHabitEventActivity
-ADDED from C:\Users\cryst\AndroidStudioProjects\Habitizer\app\src\main\AndroidManifest.xml:97:9-98:20
+ADDED from C:\Users\cryst\AndroidStudioProjects\Habitizer\app\src\main\AndroidManifest.xml:96:9-97:20
 	android:name
-		ADDED from C:\Users\cryst\AndroidStudioProjects\Habitizer\app\src\main\AndroidManifest.xml:97:19-57
+		ADDED from C:\Users\cryst\AndroidStudioProjects\Habitizer\app\src\main\AndroidManifest.xml:96:19-57
 activity#ssmad.habitizer.ViewMapActivity
-ADDED from C:\Users\cryst\AndroidStudioProjects\Habitizer\app\src\main\AndroidManifest.xml:99:9-100:20
+ADDED from C:\Users\cryst\AndroidStudioProjects\Habitizer\app\src\main\AndroidManifest.xml:98:9-99:20
 	android:name
-		ADDED from C:\Users\cryst\AndroidStudioProjects\Habitizer\app\src\main\AndroidManifest.xml:99:19-50
+		ADDED from C:\Users\cryst\AndroidStudioProjects\Habitizer\app\src\main\AndroidManifest.xml:98:19-50
 uses-sdk
 INJECTED from C:\Users\cryst\AndroidStudioProjects\Habitizer\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 MERGED from [com.android.support:design:25.3.1] C:\Users\cryst\.android\build-cache\be05bf9c16458419eb7087291bd58a9ed060f4d3\output\AndroidManifest.xml:21:5-23:62

@@ -44,16 +44,16 @@
         "source": "C:\\Users\\cryst\\.android\\build-cache\\6b66dac656b1dcc5756d5f39e0c834a65054fcff\\output\\res\\layout\\place_autocomplete_item_powered_by_google.xml"
     },
     {
-        "merged": "D:\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_list_menu_item_radio.xml",
-        "source": "C:\\Users\\Andoryu\\.android\\build-cache\\71a97fee7c3e8e072c375b08ec9301718058bb51\\output\\res\\layout\\abc_list_menu_item_radio.xml"
+        "merged": "C:\\Users\\cryst\\AndroidStudioProjects\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\layout\\select_dialog_item_material.xml",
+        "source": "C:\\Users\\cryst\\.android\\build-cache\\fce3adb7b0d30772b260f22ef18f2b0be48c3445\\output\\res\\layout\\select_dialog_item_material.xml"
     },
     {
         "merged": "D:\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\layout\\add_habit_event.xml",
         "source": "D:\\Habitizer\\app\\src\\main\\res\\layout\\add_habit_event.xml"
     },
     {
-        "merged": "C:\\Users\\cryst\\AndroidStudioProjects\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\layout\\select_dialog_item_material.xml",
-        "source": "C:\\Users\\cryst\\.android\\build-cache\\fce3adb7b0d30772b260f22ef18f2b0be48c3445\\output\\res\\layout\\select_dialog_item_material.xml"
+        "merged": "D:\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_list_menu_item_radio.xml",
+        "source": "C:\\Users\\Andoryu\\.android\\build-cache\\71a97fee7c3e8e072c375b08ec9301718058bb51\\output\\res\\layout\\abc_list_menu_item_radio.xml"
     },
     {
         "merged": "D:\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\layout\\mr_volume_control.xml",
@@ -80,12 +80,12 @@
         "source": "C:\\Users\\Andoryu\\.android\\build-cache\\dee30b310453919155cb10b98c633073f8661a5c\\output\\res\\layout\\place_autocomplete_item_prediction.xml"
     },
     {
-        "merged": "D:\\Habitizer-sadbranch\\app\\build\\intermediates\\res\\merged\\debug\\layout\\select_dialog_multichoice_material.xml",
-        "source": "C:\\Users\\Andoryu\\.android\\build-cache\\71a97fee7c3e8e072c375b08ec9301718058bb51\\output\\res\\layout\\select_dialog_multichoice_material.xml"
-    },
-    {
         "merged": "C:\\Users\\cryst\\AndroidStudioProjects\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_text_input_password_icon.xml",
         "source": "C:\\Users\\cryst\\.android\\build-cache\\be05bf9c16458419eb7087291bd58a9ed060f4d3\\output\\res\\layout\\design_text_input_password_icon.xml"
+    },
+    {
+        "merged": "D:\\Habitizer-sadbranch\\app\\build\\intermediates\\res\\merged\\debug\\layout\\select_dialog_multichoice_material.xml",
+        "source": "C:\\Users\\Andoryu\\.android\\build-cache\\71a97fee7c3e8e072c375b08ec9301718058bb51\\output\\res\\layout\\select_dialog_multichoice_material.xml"
     },
     {
         "merged": "D:\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\layout\\mr_chooser_list_item.xml",
@@ -108,20 +108,20 @@
         "source": "C:\\Users\\Andoryu\\.android\\build-cache\\d567faffe9c7a4a79f4535997169a87eacaed47b\\output\\res\\layout\\design_layout_snackbar.xml"
     },
     {
-        "merged": "D:\\Habitizer-sadbranch\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_navigation_item.xml",
-        "source": "C:\\Users\\Andoryu\\.android\\build-cache\\d567faffe9c7a4a79f4535997169a87eacaed47b\\output\\res\\layout\\design_navigation_item.xml"
-    },
-    {
         "merged": "D:\\Habitizer-sadbranch\\app\\build\\intermediates\\res\\merged\\debug\\layout\\place_autocomplete_item_powered_by_google.xml",
         "source": "C:\\Users\\Andoryu\\.android\\build-cache\\dee30b310453919155cb10b98c633073f8661a5c\\output\\res\\layout\\place_autocomplete_item_powered_by_google.xml"
     },
     {
-        "merged": "D:\\Habitizer-sadbranch\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_screen_content_include.xml",
-        "source": "C:\\Users\\Andoryu\\.android\\build-cache\\71a97fee7c3e8e072c375b08ec9301718058bb51\\output\\res\\layout\\abc_screen_content_include.xml"
+        "merged": "D:\\Habitizer-sadbranch\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_navigation_item.xml",
+        "source": "C:\\Users\\Andoryu\\.android\\build-cache\\d567faffe9c7a4a79f4535997169a87eacaed47b\\output\\res\\layout\\design_navigation_item.xml"
     },
     {
         "merged": "C:\\Users\\cryst\\AndroidStudioProjects\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\layout\\place_autocomplete_progress.xml",
         "source": "C:\\Users\\cryst\\.android\\build-cache\\6b66dac656b1dcc5756d5f39e0c834a65054fcff\\output\\res\\layout\\place_autocomplete_progress.xml"
+    },
+    {
+        "merged": "D:\\Habitizer-sadbranch\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_screen_content_include.xml",
+        "source": "C:\\Users\\Andoryu\\.android\\build-cache\\71a97fee7c3e8e072c375b08ec9301718058bb51\\output\\res\\layout\\abc_screen_content_include.xml"
     },
     {
         "merged": "D:\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\layout\\social_tab.xml",
@@ -156,12 +156,12 @@
         "source": "C:\\Users\\cryst\\.android\\build-cache\\35c8093c91a614ed30943200e6a516d62613aadc\\output\\res\\layout\\cast_tracks_chooser_dialog_layout.xml"
     },
     {
-        "merged": "C:\\Users\\cryst\\AndroidStudioProjects\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\layout\\place_autocomplete_item_prediction.xml",
-        "source": "C:\\Users\\cryst\\.android\\build-cache\\6b66dac656b1dcc5756d5f39e0c834a65054fcff\\output\\res\\layout\\place_autocomplete_item_prediction.xml"
-    },
-    {
         "merged": "C:\\Users\\cryst\\AndroidStudioProjects\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_bar_title_item.xml",
         "source": "C:\\Users\\cryst\\.android\\build-cache\\fce3adb7b0d30772b260f22ef18f2b0be48c3445\\output\\res\\layout\\abc_action_bar_title_item.xml"
+    },
+    {
+        "merged": "C:\\Users\\cryst\\AndroidStudioProjects\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\layout\\place_autocomplete_item_prediction.xml",
+        "source": "C:\\Users\\cryst\\.android\\build-cache\\6b66dac656b1dcc5756d5f39e0c834a65054fcff\\output\\res\\layout\\place_autocomplete_item_prediction.xml"
     },
     {
         "merged": "D:\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_layout_tab_icon.xml",
@@ -610,10 +610,6 @@
     {
         "merged": "D:\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\layout\\support_simple_spinner_dropdown_item.xml",
         "source": "C:\\Users\\Andoryu\\.android\\build-cache\\71a97fee7c3e8e072c375b08ec9301718058bb51\\output\\res\\layout\\support_simple_spinner_dropdown_item.xml"
-    },
-    {
-        "merged": "C:\\Users\\cryst\\AndroidStudioProjects\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_test.xml",
-        "source": "C:\\Users\\cryst\\AndroidStudioProjects\\Habitizer\\app\\src\\main\\res\\layout\\activity_test.xml"
     },
     {
         "merged": "C:\\Users\\cryst\\AndroidStudioProjects\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\layout\\myhabits_list_view.xml",

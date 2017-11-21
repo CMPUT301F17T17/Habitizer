@@ -17,7 +17,7 @@ import android.widget.TextView;
 
 /**
  * Used for editing habits
- * @author Sadman
+ * @author Minfeng, Sadman
  * @version 0.5
  * @see Habit
  * @since 0.5

@@ -22,7 +22,6 @@ import static org.junit.Assert.assertEquals;
  * Created by cryst on 11/10/2017.
  */
 
-@SuppressWarnings("DefaultFileTemplate")
 /**
  * For testing Habit Events
  * @author Simon
