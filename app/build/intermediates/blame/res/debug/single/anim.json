@@ -1,39 +1,23 @@
 [
     {
-        "merged": "C:\\Users\\cryst\\AndroidStudioProjects\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_fade_out.xml",
-        "source": "C:\\Users\\cryst\\.android\\build-cache\\fce3adb7b0d30772b260f22ef18f2b0be48c3445\\output\\res\\anim\\abc_fade_out.xml"
-    },
-    {
         "merged": "C:\\Users\\cryst\\AndroidStudioProjects\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_popup_exit.xml",
         "source": "C:\\Users\\cryst\\.android\\build-cache\\fce3adb7b0d30772b260f22ef18f2b0be48c3445\\output\\res\\anim\\abc_popup_exit.xml"
     },
     {
-        "merged": "D:\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\anim\\design_fab_in.xml",
-        "source": "C:\\Users\\Andoryu\\.android\\build-cache\\d567faffe9c7a4a79f4535997169a87eacaed47b\\output\\res\\anim\\design_fab_in.xml"
-    },
-    {
-        "merged": "D:\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_slide_in_bottom.xml",
-        "source": "C:\\Users\\Andoryu\\.android\\build-cache\\71a97fee7c3e8e072c375b08ec9301718058bb51\\output\\res\\anim\\abc_slide_in_bottom.xml"
-    },
-    {
-        "merged": "D:\\Habitizer-sadbranch\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_fade_in.xml",
-        "source": "C:\\Users\\Andoryu\\.android\\build-cache\\71a97fee7c3e8e072c375b08ec9301718058bb51\\output\\res\\anim\\abc_fade_in.xml"
-    },
-    {
-        "merged": "D:\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_fade_in.xml",
-        "source": "C:\\Users\\Andoryu\\.android\\build-cache\\71a97fee7c3e8e072c375b08ec9301718058bb51\\output\\res\\anim\\abc_fade_in.xml"
-    },
-    {
-        "merged": "D:\\Habitizer-sadbranch\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_popup_exit.xml",
-        "source": "C:\\Users\\Andoryu\\.android\\build-cache\\71a97fee7c3e8e072c375b08ec9301718058bb51\\output\\res\\anim\\abc_popup_exit.xml"
+        "merged": "C:\\Users\\cryst\\AndroidStudioProjects\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_fade_out.xml",
+        "source": "C:\\Users\\cryst\\.android\\build-cache\\fce3adb7b0d30772b260f22ef18f2b0be48c3445\\output\\res\\anim\\abc_fade_out.xml"
     },
     {
         "merged": "C:\\Users\\cryst\\AndroidStudioProjects\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_slide_in_top.xml",
         "source": "C:\\Users\\cryst\\.android\\build-cache\\fce3adb7b0d30772b260f22ef18f2b0be48c3445\\output\\res\\anim\\abc_slide_in_top.xml"
     },
     {
-        "merged": "D:\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_fade_out.xml",
-        "source": "C:\\Users\\Andoryu\\.android\\build-cache\\71a97fee7c3e8e072c375b08ec9301718058bb51\\output\\res\\anim\\abc_fade_out.xml"
+        "merged": "C:\\Users\\cryst\\AndroidStudioProjects\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\anim\\design_snackbar_out.xml",
+        "source": "C:\\Users\\cryst\\.android\\build-cache\\be05bf9c16458419eb7087291bd58a9ed060f4d3\\output\\res\\anim\\design_snackbar_out.xml"
+    },
+    {
+        "merged": "C:\\Users\\cryst\\AndroidStudioProjects\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\anim\\design_snackbar_in.xml",
+        "source": "C:\\Users\\cryst\\.android\\build-cache\\be05bf9c16458419eb7087291bd58a9ed060f4d3\\output\\res\\anim\\design_snackbar_in.xml"
     },
     {
         "merged": "C:\\Users\\cryst\\AndroidStudioProjects\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\anim\\design_fab_out.xml",
@@ -44,76 +28,8 @@
         "source": "C:\\Users\\cryst\\.android\\build-cache\\fce3adb7b0d30772b260f22ef18f2b0be48c3445\\output\\res\\anim\\abc_slide_out_top.xml"
     },
     {
-        "merged": "D:\\Habitizer-sadbranch\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_popup_enter.xml",
-        "source": "C:\\Users\\Andoryu\\.android\\build-cache\\71a97fee7c3e8e072c375b08ec9301718058bb51\\output\\res\\anim\\abc_popup_enter.xml"
-    },
-    {
-        "merged": "D:\\Habitizer-sadbranch\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_slide_out_bottom.xml",
-        "source": "C:\\Users\\Andoryu\\.android\\build-cache\\71a97fee7c3e8e072c375b08ec9301718058bb51\\output\\res\\anim\\abc_slide_out_bottom.xml"
-    },
-    {
-        "merged": "D:\\Habitizer-sadbranch\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_grow_fade_in_from_bottom.xml",
-        "source": "C:\\Users\\Andoryu\\.android\\build-cache\\71a97fee7c3e8e072c375b08ec9301718058bb51\\output\\res\\anim\\abc_grow_fade_in_from_bottom.xml"
-    },
-    {
-        "merged": "C:\\Users\\cryst\\AndroidStudioProjects\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_fade_in.xml",
-        "source": "C:\\Users\\cryst\\.android\\build-cache\\fce3adb7b0d30772b260f22ef18f2b0be48c3445\\output\\res\\anim\\abc_fade_in.xml"
-    },
-    {
-        "merged": "D:\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_shrink_fade_out_from_bottom.xml",
-        "source": "C:\\Users\\Andoryu\\.android\\build-cache\\71a97fee7c3e8e072c375b08ec9301718058bb51\\output\\res\\anim\\abc_shrink_fade_out_from_bottom.xml"
-    },
-    {
-        "merged": "C:\\Users\\cryst\\AndroidStudioProjects\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\anim\\design_fab_in.xml",
-        "source": "C:\\Users\\cryst\\.android\\build-cache\\be05bf9c16458419eb7087291bd58a9ed060f4d3\\output\\res\\anim\\design_fab_in.xml"
-    },
-    {
-        "merged": "C:\\Users\\cryst\\AndroidStudioProjects\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_popup_enter.xml",
-        "source": "C:\\Users\\cryst\\.android\\build-cache\\fce3adb7b0d30772b260f22ef18f2b0be48c3445\\output\\res\\anim\\abc_popup_enter.xml"
-    },
-    {
-        "merged": "D:\\Habitizer-sadbranch\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_slide_in_top.xml",
-        "source": "C:\\Users\\Andoryu\\.android\\build-cache\\71a97fee7c3e8e072c375b08ec9301718058bb51\\output\\res\\anim\\abc_slide_in_top.xml"
-    },
-    {
-        "merged": "D:\\Habitizer-sadbranch\\app\\build\\intermediates\\res\\merged\\debug\\anim\\design_snackbar_in.xml",
-        "source": "C:\\Users\\Andoryu\\.android\\build-cache\\d567faffe9c7a4a79f4535997169a87eacaed47b\\output\\res\\anim\\design_snackbar_in.xml"
-    },
-    {
-        "merged": "D:\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\anim\\design_fab_out.xml",
-        "source": "C:\\Users\\Andoryu\\.android\\build-cache\\d567faffe9c7a4a79f4535997169a87eacaed47b\\output\\res\\anim\\design_fab_out.xml"
-    },
-    {
-        "merged": "D:\\Habitizer-sadbranch\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_shrink_fade_out_from_bottom.xml",
-        "source": "C:\\Users\\Andoryu\\.android\\build-cache\\71a97fee7c3e8e072c375b08ec9301718058bb51\\output\\res\\anim\\abc_shrink_fade_out_from_bottom.xml"
-    },
-    {
-        "merged": "C:\\Users\\cryst\\AndroidStudioProjects\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\anim\\design_snackbar_out.xml",
-        "source": "C:\\Users\\cryst\\.android\\build-cache\\be05bf9c16458419eb7087291bd58a9ed060f4d3\\output\\res\\anim\\design_snackbar_out.xml"
-    },
-    {
-        "merged": "D:\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_slide_out_bottom.xml",
-        "source": "C:\\Users\\Andoryu\\.android\\build-cache\\71a97fee7c3e8e072c375b08ec9301718058bb51\\output\\res\\anim\\abc_slide_out_bottom.xml"
-    },
-    {
-        "merged": "D:\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_slide_out_top.xml",
-        "source": "C:\\Users\\Andoryu\\.android\\build-cache\\71a97fee7c3e8e072c375b08ec9301718058bb51\\output\\res\\anim\\abc_slide_out_top.xml"
-    },
-    {
-        "merged": "C:\\Users\\cryst\\AndroidStudioProjects\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\anim\\design_snackbar_in.xml",
-        "source": "C:\\Users\\cryst\\.android\\build-cache\\be05bf9c16458419eb7087291bd58a9ed060f4d3\\output\\res\\anim\\design_snackbar_in.xml"
-    },
-    {
-        "merged": "D:\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_popup_exit.xml",
-        "source": "C:\\Users\\Andoryu\\.android\\build-cache\\71a97fee7c3e8e072c375b08ec9301718058bb51\\output\\res\\anim\\abc_popup_exit.xml"
-    },
-    {
         "merged": "C:\\Users\\cryst\\AndroidStudioProjects\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_slide_out_bottom.xml",
         "source": "C:\\Users\\cryst\\.android\\build-cache\\fce3adb7b0d30772b260f22ef18f2b0be48c3445\\output\\res\\anim\\abc_slide_out_bottom.xml"
-    },
-    {
-        "merged": "D:\\Habitizer-sadbranch\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_slide_in_bottom.xml",
-        "source": "C:\\Users\\Andoryu\\.android\\build-cache\\71a97fee7c3e8e072c375b08ec9301718058bb51\\output\\res\\anim\\abc_slide_in_bottom.xml"
     },
     {
         "merged": "C:\\Users\\cryst\\AndroidStudioProjects\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_shrink_fade_out_from_bottom.xml",
@@ -124,47 +40,19 @@
         "source": "C:\\Users\\cryst\\.android\\build-cache\\fce3adb7b0d30772b260f22ef18f2b0be48c3445\\output\\res\\anim\\abc_grow_fade_in_from_bottom.xml"
     },
     {
-        "merged": "D:\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_popup_enter.xml",
-        "source": "C:\\Users\\Andoryu\\.android\\build-cache\\71a97fee7c3e8e072c375b08ec9301718058bb51\\output\\res\\anim\\abc_popup_enter.xml"
-    },
-    {
-        "merged": "D:\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\anim\\design_snackbar_in.xml",
-        "source": "C:\\Users\\Andoryu\\.android\\build-cache\\d567faffe9c7a4a79f4535997169a87eacaed47b\\output\\res\\anim\\design_snackbar_in.xml"
+        "merged": "C:\\Users\\cryst\\AndroidStudioProjects\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_fade_in.xml",
+        "source": "C:\\Users\\cryst\\.android\\build-cache\\fce3adb7b0d30772b260f22ef18f2b0be48c3445\\output\\res\\anim\\abc_fade_in.xml"
     },
     {
         "merged": "C:\\Users\\cryst\\AndroidStudioProjects\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_slide_in_bottom.xml",
         "source": "C:\\Users\\cryst\\.android\\build-cache\\fce3adb7b0d30772b260f22ef18f2b0be48c3445\\output\\res\\anim\\abc_slide_in_bottom.xml"
     },
     {
-        "merged": "D:\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_grow_fade_in_from_bottom.xml",
-        "source": "C:\\Users\\Andoryu\\.android\\build-cache\\71a97fee7c3e8e072c375b08ec9301718058bb51\\output\\res\\anim\\abc_grow_fade_in_from_bottom.xml"
+        "merged": "C:\\Users\\cryst\\AndroidStudioProjects\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\anim\\design_fab_in.xml",
+        "source": "C:\\Users\\cryst\\.android\\build-cache\\be05bf9c16458419eb7087291bd58a9ed060f4d3\\output\\res\\anim\\design_fab_in.xml"
     },
     {
-        "merged": "D:\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_slide_in_top.xml",
-        "source": "C:\\Users\\Andoryu\\.android\\build-cache\\71a97fee7c3e8e072c375b08ec9301718058bb51\\output\\res\\anim\\abc_slide_in_top.xml"
-    },
-    {
-        "merged": "D:\\Habitizer-sadbranch\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_fade_out.xml",
-        "source": "C:\\Users\\Andoryu\\.android\\build-cache\\71a97fee7c3e8e072c375b08ec9301718058bb51\\output\\res\\anim\\abc_fade_out.xml"
-    },
-    {
-        "merged": "D:\\Habitizer-sadbranch\\app\\build\\intermediates\\res\\merged\\debug\\anim\\design_fab_in.xml",
-        "source": "C:\\Users\\Andoryu\\.android\\build-cache\\d567faffe9c7a4a79f4535997169a87eacaed47b\\output\\res\\anim\\design_fab_in.xml"
-    },
-    {
-        "merged": "D:\\Habitizer-sadbranch\\app\\build\\intermediates\\res\\merged\\debug\\anim\\design_fab_out.xml",
-        "source": "C:\\Users\\Andoryu\\.android\\build-cache\\d567faffe9c7a4a79f4535997169a87eacaed47b\\output\\res\\anim\\design_fab_out.xml"
-    },
-    {
-        "merged": "D:\\Habitizer-sadbranch\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_slide_out_top.xml",
-        "source": "C:\\Users\\Andoryu\\.android\\build-cache\\71a97fee7c3e8e072c375b08ec9301718058bb51\\output\\res\\anim\\abc_slide_out_top.xml"
-    },
-    {
-        "merged": "D:\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\anim\\design_snackbar_out.xml",
-        "source": "C:\\Users\\Andoryu\\.android\\build-cache\\d567faffe9c7a4a79f4535997169a87eacaed47b\\output\\res\\anim\\design_snackbar_out.xml"
-    },
-    {
-        "merged": "D:\\Habitizer-sadbranch\\app\\build\\intermediates\\res\\merged\\debug\\anim\\design_snackbar_out.xml",
-        "source": "C:\\Users\\Andoryu\\.android\\build-cache\\d567faffe9c7a4a79f4535997169a87eacaed47b\\output\\res\\anim\\design_snackbar_out.xml"
+        "merged": "C:\\Users\\cryst\\AndroidStudioProjects\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_popup_enter.xml",
+        "source": "C:\\Users\\cryst\\.android\\build-cache\\fce3adb7b0d30772b260f22ef18f2b0be48c3445\\output\\res\\anim\\abc_popup_enter.xml"
     }
 ]

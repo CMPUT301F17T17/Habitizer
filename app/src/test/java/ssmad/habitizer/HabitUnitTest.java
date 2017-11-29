@@ -29,37 +29,44 @@ import static org.junit.Assert.assertEquals;
  */
 public class HabitUnitTest {
     /**
-     * Tests getters
+     * Tests title getter/setter
      * @throws Exception
      */
     @Test
-    public void testHGetters() throws Exception {
+    public void testTitleGetAndSet() throws Exception {
         Date cal = Calendar.getInstance().getTime();
         Habit habit = new Habit("Push-Ups", cal, "Big Arms" );
 
-        assertEquals("Push-Ups", habit.getTitle());
-        assertEquals("Big Arms", habit.getReason());
-        assertEquals(cal, habit.getStartDate());
+        habit.setTitle("Sit-Ups");
+        assertEquals("Sit-Ups", habit.getTitle());
     }
 
     /**
-     * Tests setters
+     * Tests start date getter/setter
      * @throws Exception
      */
     @Test
-    public void testHSetters() throws Exception {
+    public void testStartDateGetAndSet() throws Exception{
         Date cal = Calendar.getInstance().getTime();
-        Habit habit = new Habit("Push-Ups", cal, "Big Arms");
+        Habit habit = new Habit("Push-Ups", cal, "Big Arms" );
 
-        habit.setTitle("Sit-Ups");
-        habit.setReason("Flat Stomach");
         Date cal2 = Calendar.getInstance().getTime();
         habit.setStartDate(cal2);
-
-        assertEquals("Sit-Ups", habit.getTitle());
-        assertEquals("Flat Stomach", habit.getReason());
         assertEquals(cal2, habit.getStartDate());
     }
+
+    /**
+     * Tests reason getter/setter
+     * @throws Exception
+     */
+    @Test
+    public void testReasonGetAndSet() throws Exception{
+        Date cal = Calendar.getInstance().getTime();
+        Habit habit = new Habit("Push-Ups", cal, "Big Arms" );
+        habit.setReason("Flat Stomach");
+        assertEquals("Flat Stomach", habit.getReason());
+    }
+
 
 
 }

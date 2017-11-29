@@ -29,42 +29,67 @@ import static org.junit.Assert.assertEquals;
  */
 public class UserProfileUnitTest {
     /**
-     * Tests getters
+     * Tests username getter
      * @throws Exception
      */
     @Test
-    public void testUGetters() throws Exception {
+    public void testUserGetter() throws Exception {
         byte[] testbyte = {15, 15};
         UserProfile testuser = new UserProfile("SSMAD", testbyte, "Sadman", "1996-01-01", "Male");
 
         assertEquals("SSMAD", testuser.getUsername());
-        assertEquals(testbyte, testuser.getPortrait());
-        assertEquals("Sadman", testuser.getName());
-        assertEquals("1996-01-01", testuser.getBirthday());
-        assertEquals("Male", testuser.getGender());
     }
 
     /**
-     * Tests setters
+     * Tests Portrait getter/setter
      * @throws Exception
      */
-    public void testUSetters() throws Exception {
+    @Test
+    public void testPortraitGetAndSet() throws Exception {
+        byte[] testbyte = {15,15};
+        UserProfile testuser = new UserProfile("SSMAD", testbyte, "Sadman", "1996-01-01", "Male");
+        byte[] newbyte = {20, 20};
+        testuser.setPortrait(newbyte);
+        assertEquals(newbyte, testuser.getPortrait());
+    }
+
+    /**
+     * Tests Name getter/setter
+     * @throws Exception
+     */
+    @Test
+    public void testNameGetAndSet() throws Exception{
         byte[] testbyte = {15, 15};
         UserProfile testuser = new UserProfile("SSMAD", testbyte, "Sadman", "1996-01-01", "Male");
 
-        byte[] newbyte = {99, 99};
-        testuser.setName("Agirl");
-        testuser.setBirthday("2010-05-15");
+        testuser.setName("newName");
+        assertEquals("newName", testuser.getName());
+    }
+
+    /**
+     * Tests Birthday getter/setter
+     * @throws Exception
+     */
+    @Test
+    public void testBirthdayGetAndSet() throws Exception{
+        byte[] testbyte = {15, 15};
+        UserProfile testuser = new UserProfile("SSMAD", testbyte, "Sadman", "1996-01-01", "Male");
+
+        testuser.setBirthday("2001-12-12");
+        assertEquals("2001-12-12", testuser.getBirthday());
+    }
+
+    /**
+     * Tests Gender getter/setter
+     * @throws Exception
+     */
+    @Test
+    public void testGenderGetAndSet() throws Exception{
+        byte[] testbyte = {15, 15};
+        UserProfile testuser = new UserProfile("SSMAD", testbyte, "Sadman", "1996-01-01", "Male");
+
         testuser.setGender("Female");
-        testuser.setPortrait(newbyte);
-
-        assertEquals(newbyte, testuser.getPortrait());
-        assertEquals("Agirl", testuser.getName());
-        assertEquals("2010-05-15", testuser.getBirthday());
         assertEquals("Female", testuser.getGender());
-
-
-
     }
 
 }
