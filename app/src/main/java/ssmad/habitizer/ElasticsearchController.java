@@ -15,9 +15,6 @@ import io.searchbox.core.Index;
 import io.searchbox.core.Search;
 import io.searchbox.core.SearchResult;
 
-/**
- * Created by romansky on 10/20/16.
- */
 public class ElasticsearchController {
     private static JestDroidClient client;
 
@@ -41,11 +38,11 @@ public class ElasticsearchController {
                         result.getId();
                     }
                     else {
-                        Log.i("Error", "Elasticsearch was not able to add the tweet");
+                        Log.i("Error", "Elasticsearch was not able to add the user");
                     }
                 }
                 catch (Exception e) {
-                    Log.i("Error", "The application failed to build and send the tweets");
+                    Log.i("Error", "The application failed to build and send the user info.");
                 }
 
             }
@@ -81,7 +78,7 @@ public class ElasticsearchController {
                     users.addAll(foundUsers);
                 }
                 else {
-                    Log.i("Error", "The search query failed to find any tweets that matched");
+                    Log.i("Error", "The search query failed to find any users that matched");
                 }
             }
             catch (Exception e) {
@@ -91,9 +88,6 @@ public class ElasticsearchController {
             return users;
         }
     }
-
-
-
 
     public static void verifySettings() {
         if (client == null) {

@@ -34,7 +34,7 @@ public class LoginActivityTest extends ActivityInstrumentationTestCase2<LoginAct
         solo.enterText((EditText) solo.getView(R.id.username_input), "SSMAD");
 
         // click on button
-        solo.clickOnView(solo.getView(R.id.signup_button));
+        //solo.clickOnView(solo.getView(R.id.signup_button));
         solo.sleep(10000);
         solo.waitForActivity("HabitTabActivity");
         solo.assertCurrentActivity("Wrong Activity!", HabitTabActivity.class);
@@ -47,7 +47,7 @@ public class LoginActivityTest extends ActivityInstrumentationTestCase2<LoginAct
         solo.enterText((EditText) solo.getView(R.id.username_input), "SSMAD");
 
         // click on button
-        solo.clickOnView(solo.getView(R.id.login_button));
+        //solo.clickOnView(solo.getView(R.id.login_button));
         solo.sleep(10000);
         solo.waitForActivity("HabitTabActivity");
         solo.assertCurrentActivity("Wrong Activity!", HabitTabActivity.class);
@@ -58,7 +58,7 @@ public class LoginActivityTest extends ActivityInstrumentationTestCase2<LoginAct
         solo.assertCurrentActivity("Wrong Activity!", LoginActivity.class);
         solo.clearEditText((EditText) solo.getView(R.id.username_input));
         // click on button
-        solo.clickOnView(solo.getView(R.id.login_button));
+        //solo.clickOnView(solo.getView(R.id.login_button));
 
         assertTrue(solo.waitForText("Please enter a username!"));
 
