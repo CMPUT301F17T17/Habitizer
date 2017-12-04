@@ -14,4 +14,8 @@ public class SocialTabActivity extends AppCompatActivity {
         intent.getStringExtra("username");
         DummyMainActivity.initTabs(DummyMainActivity.VIEW_SOCIAL, this, intent);
     }
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+
+    }
 }
