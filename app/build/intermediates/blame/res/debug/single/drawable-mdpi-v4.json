@@ -40,12 +40,12 @@
         "source": "C:\\Users\\Andoryu\\.android\\build-cache\\71a97fee7c3e8e072c375b08ec9301718058bb51\\output\\res\\drawable-mdpi-v4\\abc_spinner_mtrl_am_alpha.9.png"
     },
     {
-        "merged": "D:\\Habitizer-sadbranch\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\ic_plusone_standard_off_client.png",
-        "source": "C:\\Users\\Andoryu\\.android\\build-cache\\b3221946f5743a1c35abe67a66a28a031782851f\\output\\res\\drawable-mdpi-v4\\ic_plusone_standard_off_client.png"
-    },
-    {
         "merged": "D:\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\quantum_ic_stop_grey600_36.png",
         "source": "C:\\Users\\Andoryu\\.android\\build-cache\\d1d468c01183bd06ce235fc2324aa212baf2d8d1\\output\\res\\drawable-mdpi-v4\\quantum_ic_stop_grey600_36.png"
+    },
+    {
+        "merged": "D:\\Habitizer-sadbranch\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\ic_plusone_standard_off_client.png",
+        "source": "C:\\Users\\Andoryu\\.android\\build-cache\\b3221946f5743a1c35abe67a66a28a031782851f\\output\\res\\drawable-mdpi-v4\\ic_plusone_standard_off_client.png"
     },
     {
         "merged": "D:\\Habitizer-sadbranch\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\ic_mr_button_disconnected_light.png",
@@ -108,12 +108,12 @@
         "source": "C:\\Users\\Andoryu\\.android\\build-cache\\71a97fee7c3e8e072c375b08ec9301718058bb51\\output\\res\\drawable-mdpi-v4\\abc_ic_menu_share_mtrl_alpha.png"
     },
     {
-        "merged": "D:\\Habitizer-sadbranch\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\abc_list_pressed_holo_light.9.png",
-        "source": "C:\\Users\\Andoryu\\.android\\build-cache\\71a97fee7c3e8e072c375b08ec9301718058bb51\\output\\res\\drawable-mdpi-v4\\abc_list_pressed_holo_light.9.png"
-    },
-    {
         "merged": "D:\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\quantum_ic_closed_caption_grey600_36.png",
         "source": "C:\\Users\\Andoryu\\.android\\build-cache\\d1d468c01183bd06ce235fc2324aa212baf2d8d1\\output\\res\\drawable-mdpi-v4\\quantum_ic_closed_caption_grey600_36.png"
+    },
+    {
+        "merged": "D:\\Habitizer-sadbranch\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\abc_list_pressed_holo_light.9.png",
+        "source": "C:\\Users\\Andoryu\\.android\\build-cache\\71a97fee7c3e8e072c375b08ec9301718058bb51\\output\\res\\drawable-mdpi-v4\\abc_list_pressed_holo_light.9.png"
     },
     {
         "merged": "D:\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\abc_menu_hardkey_panel_mtrl_mult.9.png",
@@ -140,12 +140,12 @@
         "source": "C:\\Users\\Andoryu\\.android\\build-cache\\71a97fee7c3e8e072c375b08ec9301718058bb51\\output\\res\\drawable-mdpi-v4\\abc_tab_indicator_mtrl_alpha.9.png"
     },
     {
-        "merged": "D:\\Habitizer-sadbranch\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\cast_ic_notification_1.png",
-        "source": "C:\\Users\\Andoryu\\.android\\build-cache\\c2ca6b1c4009ee818bc93406d9ccf56244920c4e\\output\\res\\drawable-mdpi-v4\\cast_ic_notification_1.png"
-    },
-    {
         "merged": "D:\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\abc_popup_background_mtrl_mult.9.png",
         "source": "C:\\Users\\Andoryu\\.android\\build-cache\\71a97fee7c3e8e072c375b08ec9301718058bb51\\output\\res\\drawable-mdpi-v4\\abc_popup_background_mtrl_mult.9.png"
+    },
+    {
+        "merged": "D:\\Habitizer-sadbranch\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\cast_ic_notification_1.png",
+        "source": "C:\\Users\\Andoryu\\.android\\build-cache\\c2ca6b1c4009ee818bc93406d9ccf56244920c4e\\output\\res\\drawable-mdpi-v4\\cast_ic_notification_1.png"
     },
     {
         "merged": "D:\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\quantum_ic_stop_grey600_48.png",
@@ -180,12 +180,12 @@
         "source": "C:\\Users\\Andoryu\\.android\\build-cache\\71a97fee7c3e8e072c375b08ec9301718058bb51\\output\\res\\drawable-mdpi-v4\\abc_btn_check_to_on_mtrl_000.png"
     },
     {
-        "merged": "D:\\Habitizer-sadbranch\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\quantum_ic_skip_next_white_36.png",
-        "source": "C:\\Users\\Andoryu\\.android\\build-cache\\d1d468c01183bd06ce235fc2324aa212baf2d8d1\\output\\res\\drawable-mdpi-v4\\quantum_ic_skip_next_white_36.png"
-    },
-    {
         "merged": "D:\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\quantum_ic_art_track_grey600_48.png",
         "source": "C:\\Users\\Andoryu\\.android\\build-cache\\d1d468c01183bd06ce235fc2324aa212baf2d8d1\\output\\res\\drawable-mdpi-v4\\quantum_ic_art_track_grey600_48.png"
+    },
+    {
+        "merged": "D:\\Habitizer-sadbranch\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\quantum_ic_skip_next_white_36.png",
+        "source": "C:\\Users\\Andoryu\\.android\\build-cache\\d1d468c01183bd06ce235fc2324aa212baf2d8d1\\output\\res\\drawable-mdpi-v4\\quantum_ic_skip_next_white_36.png"
     },
     {
         "merged": "D:\\Habitizer-sadbranch\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\abc_ic_star_half_black_48dp.png",

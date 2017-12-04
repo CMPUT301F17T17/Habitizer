@@ -32,6 +32,7 @@ public class ViewHabitActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 DummyMainActivity.myHabits.remove(position);
+                FileController.saveInFile(ViewHabitActivity.this, DummyMainActivity.HABITFILENAME, DummyMainActivity.myHabits);
                 finish();
             }
         });

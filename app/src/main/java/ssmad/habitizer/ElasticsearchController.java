@@ -50,6 +50,31 @@ public class ElasticsearchController {
         }
     }
 
+    public static class AddItemsTask extends AsyncTask<String, Void, String> {
+
+        @Override
+        protected String doInBackground(String... params) {
+            verifySettings();
+
+                Index index = new Index.Builder(params[1]).index(INDEX).type(params[0]).build();
+
+                try {
+                    // where is the client?
+                    DocumentResult result = client.execute(index);
+                    if (result.isSucceeded()) {
+                        return result.getId();
+                    }
+                    else {
+                        Log.i("Error", "Elasticsearch was not able to add the user");
+                    }
+                }
+                catch (Exception e) {
+                    Log.i("Error", "The application failed to build and send the user info.");
+                }
+            return null;
+        }
+    }
+
     // TODO we need a function which gets tweets from elastic search
     public static class GetUsersTask extends AsyncTask<String, Void, ArrayList<Account>> {
         @Override

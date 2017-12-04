@@ -47,13 +47,25 @@ public class AddHabitActivity extends AppCompatActivity {
             public void onClick(View v) {
                 if (habitChecksOut(AddHabitActivity.this)) {
                     Date start = new Date();
+                    ElasticsearchController.AddItemsTask postHabit = new ElasticsearchController.AddItemsTask();
+
                     Habit habit = new Habit(habitInput.getText().toString(), start, reasonInput
                             .getText().toString());
                     habit.setDaysOfWeekDue(days);
+                    postHabit.execute("Habit_test", habit.getJsonString());
+                    try{
+                        String id = postHabit.get();
+                        //habit.setId(id);
+                    }catch (Exception e){
+                        Log.d("ESC", "Could not update habit on first try.");
+                    }
                     DummyMainActivity.myHabits.add(habit);
                     DummyMainActivity.myHabitDict.put(habit.getTitle(), 0);
                     DummyMainActivity.toastMe("New habit added!", AddHabitActivity.this);
                     resetDays();
+
+                    FileController.saveInFile(AddHabitActivity.this, DummyMainActivity.HABITFILENAME, DummyMainActivity.myHabits);
+
                     AddHabitActivity.this.finish();
                 }
             }

@@ -64,12 +64,12 @@
         "source": "C:\\Users\\Andoryu\\.android\\build-cache\\d1d468c01183bd06ce235fc2324aa212baf2d8d1\\output\\res\\drawable-xxhdpi-v4\\quantum_ic_replay_30_white_36.png"
     },
     {
-        "merged": "D:\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\quantum_ic_pause_circle_filled_grey600_36.png",
-        "source": "C:\\Users\\Andoryu\\.android\\build-cache\\d1d468c01183bd06ce235fc2324aa212baf2d8d1\\output\\res\\drawable-xxhdpi-v4\\quantum_ic_pause_circle_filled_grey600_36.png"
-    },
-    {
         "merged": "D:\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_mr_button_connected_04_dark.png",
         "source": "C:\\Users\\Andoryu\\.android\\build-cache\\cbb61a5065c9c122e7651a1013ab5d2c4ecd81fd\\output\\res\\drawable-xxhdpi-v4\\ic_mr_button_connected_04_dark.png"
+    },
+    {
+        "merged": "D:\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\quantum_ic_pause_circle_filled_grey600_36.png",
+        "source": "C:\\Users\\Andoryu\\.android\\build-cache\\d1d468c01183bd06ce235fc2324aa212baf2d8d1\\output\\res\\drawable-xxhdpi-v4\\quantum_ic_pause_circle_filled_grey600_36.png"
     },
     {
         "merged": "D:\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\common_google_signin_btn_text_dark_normal_background.9.png",
@@ -88,12 +88,12 @@
         "source": "C:\\Users\\Andoryu\\.android\\build-cache\\71a97fee7c3e8e072c375b08ec9301718058bb51\\output\\res\\drawable-xxhdpi-v4\\abc_list_longpressed_holo.9.png"
     },
     {
-        "merged": "D:\\Habitizer-sadbranch\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\abc_list_pressed_holo_dark.9.png",
-        "source": "C:\\Users\\Andoryu\\.android\\build-cache\\71a97fee7c3e8e072c375b08ec9301718058bb51\\output\\res\\drawable-xxhdpi-v4\\abc_list_pressed_holo_dark.9.png"
-    },
-    {
         "merged": "D:\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_mr_button_connecting_00_dark.png",
         "source": "C:\\Users\\Andoryu\\.android\\build-cache\\cbb61a5065c9c122e7651a1013ab5d2c4ecd81fd\\output\\res\\drawable-xxhdpi-v4\\ic_mr_button_connecting_00_dark.png"
+    },
+    {
+        "merged": "D:\\Habitizer-sadbranch\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\abc_list_pressed_holo_dark.9.png",
+        "source": "C:\\Users\\Andoryu\\.android\\build-cache\\71a97fee7c3e8e072c375b08ec9301718058bb51\\output\\res\\drawable-xxhdpi-v4\\abc_list_pressed_holo_dark.9.png"
     },
     {
         "merged": "D:\\Habitizer-sadbranch\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_dialog_close_dark.png",
@@ -120,20 +120,20 @@
         "source": "C:\\Users\\Andoryu\\.android\\build-cache\\b3221946f5743a1c35abe67a66a28a031782851f\\output\\res\\drawable-xxhdpi-v4\\ic_plusone_standard_off_client.png"
     },
     {
-        "merged": "D:\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\quantum_ic_stop_grey600_48.png",
-        "source": "C:\\Users\\Andoryu\\.android\\build-cache\\d1d468c01183bd06ce235fc2324aa212baf2d8d1\\output\\res\\drawable-xxhdpi-v4\\quantum_ic_stop_grey600_48.png"
-    },
-    {
         "merged": "D:\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_mr_button_connecting_11_dark.png",
         "source": "C:\\Users\\Andoryu\\.android\\build-cache\\cbb61a5065c9c122e7651a1013ab5d2c4ecd81fd\\output\\res\\drawable-xxhdpi-v4\\ic_mr_button_connecting_11_dark.png"
     },
     {
-        "merged": "D:\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_mr_button_connected_11_dark.png",
-        "source": "C:\\Users\\Andoryu\\.android\\build-cache\\cbb61a5065c9c122e7651a1013ab5d2c4ecd81fd\\output\\res\\drawable-xxhdpi-v4\\ic_mr_button_connected_11_dark.png"
+        "merged": "D:\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\quantum_ic_stop_grey600_48.png",
+        "source": "C:\\Users\\Andoryu\\.android\\build-cache\\d1d468c01183bd06ce235fc2324aa212baf2d8d1\\output\\res\\drawable-xxhdpi-v4\\quantum_ic_stop_grey600_48.png"
     },
     {
         "merged": "D:\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_mr_button_connected_06_dark.png",
         "source": "C:\\Users\\Andoryu\\.android\\build-cache\\cbb61a5065c9c122e7651a1013ab5d2c4ecd81fd\\output\\res\\drawable-xxhdpi-v4\\ic_mr_button_connected_06_dark.png"
+    },
+    {
+        "merged": "D:\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_mr_button_connected_11_dark.png",
+        "source": "C:\\Users\\Andoryu\\.android\\build-cache\\cbb61a5065c9c122e7651a1013ab5d2c4ecd81fd\\output\\res\\drawable-xxhdpi-v4\\ic_mr_button_connected_11_dark.png"
     },
     {
         "merged": "D:\\Habitizer-sadbranch\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\abc_popup_background_mtrl_mult.9.png",
@@ -240,12 +240,12 @@
         "source": "C:\\Users\\Andoryu\\.android\\build-cache\\cbb61a5065c9c122e7651a1013ab5d2c4ecd81fd\\output\\res\\drawable-xxhdpi-v4\\ic_vol_type_speaker_light.png"
     },
     {
-        "merged": "D:\\Habitizer-sadbranch\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\abc_scrubber_control_to_pressed_mtrl_005.png",
-        "source": "C:\\Users\\Andoryu\\.android\\build-cache\\71a97fee7c3e8e072c375b08ec9301718058bb51\\output\\res\\drawable-xxhdpi-v4\\abc_scrubber_control_to_pressed_mtrl_005.png"
-    },
-    {
         "merged": "D:\\Habitizer-sadbranch\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_mr_button_connecting_10_dark.png",
         "source": "C:\\Users\\Andoryu\\.android\\build-cache\\cbb61a5065c9c122e7651a1013ab5d2c4ecd81fd\\output\\res\\drawable-xxhdpi-v4\\ic_mr_button_connecting_10_dark.png"
+    },
+    {
+        "merged": "D:\\Habitizer-sadbranch\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\abc_scrubber_control_to_pressed_mtrl_005.png",
+        "source": "C:\\Users\\Andoryu\\.android\\build-cache\\71a97fee7c3e8e072c375b08ec9301718058bb51\\output\\res\\drawable-xxhdpi-v4\\abc_scrubber_control_to_pressed_mtrl_005.png"
     },
     {
         "merged": "D:\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_dialog_close_light.png",
@@ -264,12 +264,12 @@
         "source": "C:\\Users\\Andoryu\\.android\\build-cache\\cbb61a5065c9c122e7651a1013ab5d2c4ecd81fd\\output\\res\\drawable-xxhdpi-v4\\ic_audiotrack_dark.png"
     },
     {
-        "merged": "D:\\Habitizer-sadbranch\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\places_ic_search.png",
-        "source": "C:\\Users\\Andoryu\\.android\\build-cache\\dee30b310453919155cb10b98c633073f8661a5c\\output\\res\\drawable-xxhdpi-v4\\places_ic_search.png"
-    },
-    {
         "merged": "D:\\Habitizer-sadbranch\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_mr_button_connected_09_dark.png",
         "source": "C:\\Users\\Andoryu\\.android\\build-cache\\cbb61a5065c9c122e7651a1013ab5d2c4ecd81fd\\output\\res\\drawable-xxhdpi-v4\\ic_mr_button_connected_09_dark.png"
+    },
+    {
+        "merged": "D:\\Habitizer-sadbranch\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\places_ic_search.png",
+        "source": "C:\\Users\\Andoryu\\.android\\build-cache\\dee30b310453919155cb10b98c633073f8661a5c\\output\\res\\drawable-xxhdpi-v4\\places_ic_search.png"
     },
     {
         "merged": "D:\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\design_ic_visibility.png",
@@ -284,16 +284,16 @@
         "source": "C:\\Users\\Andoryu\\.android\\build-cache\\cbb61a5065c9c122e7651a1013ab5d2c4ecd81fd\\output\\res\\drawable-xxhdpi-v4\\ic_mr_button_connected_03_light.png"
     },
     {
-        "merged": "D:\\Habitizer-sadbranch\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_mr_button_disconnected_light.png",
-        "source": "C:\\Users\\Andoryu\\.android\\build-cache\\cbb61a5065c9c122e7651a1013ab5d2c4ecd81fd\\output\\res\\drawable-xxhdpi-v4\\ic_mr_button_disconnected_light.png"
+        "merged": "D:\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_mr_button_connected_17_dark.png",
+        "source": "C:\\Users\\Andoryu\\.android\\build-cache\\cbb61a5065c9c122e7651a1013ab5d2c4ecd81fd\\output\\res\\drawable-xxhdpi-v4\\ic_mr_button_connected_17_dark.png"
     },
     {
         "merged": "D:\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_mr_button_connected_00_dark.png",
         "source": "C:\\Users\\Andoryu\\.android\\build-cache\\cbb61a5065c9c122e7651a1013ab5d2c4ecd81fd\\output\\res\\drawable-xxhdpi-v4\\ic_mr_button_connected_00_dark.png"
     },
     {
-        "merged": "D:\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_mr_button_connected_17_dark.png",
-        "source": "C:\\Users\\Andoryu\\.android\\build-cache\\cbb61a5065c9c122e7651a1013ab5d2c4ecd81fd\\output\\res\\drawable-xxhdpi-v4\\ic_mr_button_connected_17_dark.png"
+        "merged": "D:\\Habitizer-sadbranch\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_mr_button_disconnected_light.png",
+        "source": "C:\\Users\\Andoryu\\.android\\build-cache\\cbb61a5065c9c122e7651a1013ab5d2c4ecd81fd\\output\\res\\drawable-xxhdpi-v4\\ic_mr_button_disconnected_light.png"
     },
     {
         "merged": "D:\\Habitizer-sadbranch\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_mr_button_connecting_08_dark.png",
@@ -316,12 +316,12 @@
         "source": "C:\\Users\\Andoryu\\.android\\build-cache\\cbb61a5065c9c122e7651a1013ab5d2c4ecd81fd\\output\\res\\drawable-xxhdpi-v4\\ic_mr_button_connecting_22_dark.png"
     },
     {
-        "merged": "D:\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_mr_button_connecting_20_light.png",
-        "source": "C:\\Users\\Andoryu\\.android\\build-cache\\cbb61a5065c9c122e7651a1013ab5d2c4ecd81fd\\output\\res\\drawable-xxhdpi-v4\\ic_mr_button_connecting_20_light.png"
-    },
-    {
         "merged": "D:\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\cast_ic_notification_2.png",
         "source": "C:\\Users\\Andoryu\\.android\\build-cache\\c2ca6b1c4009ee818bc93406d9ccf56244920c4e\\output\\res\\drawable-xxhdpi-v4\\cast_ic_notification_2.png"
+    },
+    {
+        "merged": "D:\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_mr_button_connecting_20_light.png",
+        "source": "C:\\Users\\Andoryu\\.android\\build-cache\\cbb61a5065c9c122e7651a1013ab5d2c4ecd81fd\\output\\res\\drawable-xxhdpi-v4\\ic_mr_button_connecting_20_light.png"
     },
     {
         "merged": "D:\\Habitizer-sadbranch\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\quantum_ic_volume_up_grey600_36.png",
@@ -420,20 +420,20 @@
         "source": "C:\\Users\\Andoryu\\.android\\build-cache\\cbb61a5065c9c122e7651a1013ab5d2c4ecd81fd\\output\\res\\drawable-xxhdpi-v4\\ic_media_play_light.png"
     },
     {
-        "merged": "D:\\Habitizer-sadbranch\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_mr_button_connecting_21_light.png",
-        "source": "C:\\Users\\Andoryu\\.android\\build-cache\\cbb61a5065c9c122e7651a1013ab5d2c4ecd81fd\\output\\res\\drawable-xxhdpi-v4\\ic_mr_button_connecting_21_light.png"
-    },
-    {
         "merged": "D:\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_mr_button_connecting_08_dark.png",
         "source": "C:\\Users\\Andoryu\\.android\\build-cache\\cbb61a5065c9c122e7651a1013ab5d2c4ecd81fd\\output\\res\\drawable-xxhdpi-v4\\ic_mr_button_connecting_08_dark.png"
     },
     {
-        "merged": "D:\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\quantum_ic_clear_white_24.png",
-        "source": "C:\\Users\\Andoryu\\.android\\build-cache\\d1d468c01183bd06ce235fc2324aa212baf2d8d1\\output\\res\\drawable-xxhdpi-v4\\quantum_ic_clear_white_24.png"
+        "merged": "D:\\Habitizer-sadbranch\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_mr_button_connecting_21_light.png",
+        "source": "C:\\Users\\Andoryu\\.android\\build-cache\\cbb61a5065c9c122e7651a1013ab5d2c4ecd81fd\\output\\res\\drawable-xxhdpi-v4\\ic_mr_button_connecting_21_light.png"
     },
     {
         "merged": "D:\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\abc_ic_star_half_black_48dp.png",
         "source": "C:\\Users\\Andoryu\\.android\\build-cache\\71a97fee7c3e8e072c375b08ec9301718058bb51\\output\\res\\drawable-xxhdpi-v4\\abc_ic_star_half_black_48dp.png"
+    },
+    {
+        "merged": "D:\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\quantum_ic_clear_white_24.png",
+        "source": "C:\\Users\\Andoryu\\.android\\build-cache\\d1d468c01183bd06ce235fc2324aa212baf2d8d1\\output\\res\\drawable-xxhdpi-v4\\quantum_ic_clear_white_24.png"
     },
     {
         "merged": "D:\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_mr_button_connected_19_dark.png",
@@ -460,12 +460,12 @@
         "source": "C:\\Users\\Andoryu\\.android\\build-cache\\d1d468c01183bd06ce235fc2324aa212baf2d8d1\\output\\res\\drawable-xxhdpi-v4\\quantum_ic_play_circle_filled_grey600_36.png"
     },
     {
-        "merged": "D:\\Habitizer-sadbranch\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_mr_button_connected_12_dark.png",
-        "source": "C:\\Users\\Andoryu\\.android\\build-cache\\cbb61a5065c9c122e7651a1013ab5d2c4ecd81fd\\output\\res\\drawable-xxhdpi-v4\\ic_mr_button_connected_12_dark.png"
-    },
-    {
         "merged": "D:\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\common_google_signin_btn_text_light_normal_background.9.png",
         "source": "C:\\Users\\Andoryu\\.android\\build-cache\\cd589b5e61db6b57086578d337a0bb4d423f3378\\output\\res\\drawable-xxhdpi-v4\\common_google_signin_btn_text_light_normal_background.9.png"
+    },
+    {
+        "merged": "D:\\Habitizer-sadbranch\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_mr_button_connected_12_dark.png",
+        "source": "C:\\Users\\Andoryu\\.android\\build-cache\\cbb61a5065c9c122e7651a1013ab5d2c4ecd81fd\\output\\res\\drawable-xxhdpi-v4\\ic_mr_button_connected_12_dark.png"
     },
     {
         "merged": "D:\\Habitizer-sadbranch\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_mr_button_connecting_17_light.png",
@@ -516,12 +516,12 @@
         "source": "C:\\Users\\Andoryu\\.android\\build-cache\\cbb61a5065c9c122e7651a1013ab5d2c4ecd81fd\\output\\res\\drawable-xxhdpi-v4\\ic_mr_button_connected_03_dark.png"
     },
     {
-        "merged": "D:\\Habitizer-sadbranch\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_mr_button_connecting_22_light.png",
-        "source": "C:\\Users\\Andoryu\\.android\\build-cache\\cbb61a5065c9c122e7651a1013ab5d2c4ecd81fd\\output\\res\\drawable-xxhdpi-v4\\ic_mr_button_connecting_22_light.png"
-    },
-    {
         "merged": "D:\\Habitizer-sadbranch\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_mr_button_connected_01_light.png",
         "source": "C:\\Users\\Andoryu\\.android\\build-cache\\cbb61a5065c9c122e7651a1013ab5d2c4ecd81fd\\output\\res\\drawable-xxhdpi-v4\\ic_mr_button_connected_01_light.png"
+    },
+    {
+        "merged": "D:\\Habitizer-sadbranch\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_mr_button_connecting_22_light.png",
+        "source": "C:\\Users\\Andoryu\\.android\\build-cache\\cbb61a5065c9c122e7651a1013ab5d2c4ecd81fd\\output\\res\\drawable-xxhdpi-v4\\ic_mr_button_connecting_22_light.png"
     },
     {
         "merged": "D:\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\design_ic_visibility_off.png",

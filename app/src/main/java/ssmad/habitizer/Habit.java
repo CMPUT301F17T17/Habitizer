@@ -1,5 +1,10 @@
 package ssmad.habitizer;
 
+import android.util.Log;
+
+import com.google.gson.Gson;
+import com.google.gson.JsonObject;
+
 import java.util.ArrayList;
 import java.util.Date;
 
@@ -80,5 +85,14 @@ public class Habit {
 
     public void setEvents(ArrayList<HabitEvent> events) {
         this.events = events;
+    }
+
+    public String getJsonString() {
+        JsonObject j = new JsonObject();
+        j.addProperty("user", "admin");
+        Gson g = new Gson();
+        String s = g.toJson(j);
+        Log.d("Habit.Json", s);
+        return s;
     }
 }

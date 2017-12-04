@@ -192,16 +192,16 @@
         "source": "C:\\Users\\Andoryu\\.android\\build-cache\\cbb61a5065c9c122e7651a1013ab5d2c4ecd81fd\\output\\res\\drawable\\mr_button_connecting_light.xml"
     },
     {
-        "merged": "D:\\Habitizer-sadbranch\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\mr_media_pause_light.xml",
-        "source": "C:\\Users\\Andoryu\\.android\\build-cache\\cbb61a5065c9c122e7651a1013ab5d2c4ecd81fd\\output\\res\\drawable\\mr_media_pause_light.xml"
+        "merged": "D:\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\mr_button_connecting_light.xml",
+        "source": "C:\\Users\\Andoryu\\.android\\build-cache\\cbb61a5065c9c122e7651a1013ab5d2c4ecd81fd\\output\\res\\drawable\\mr_button_connecting_light.xml"
     },
     {
         "merged": "D:\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_item_background_holo_light.xml",
         "source": "C:\\Users\\Andoryu\\.android\\build-cache\\71a97fee7c3e8e072c375b08ec9301718058bb51\\output\\res\\drawable\\abc_item_background_holo_light.xml"
     },
     {
-        "merged": "D:\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\mr_button_connecting_light.xml",
-        "source": "C:\\Users\\Andoryu\\.android\\build-cache\\cbb61a5065c9c122e7651a1013ab5d2c4ecd81fd\\output\\res\\drawable\\mr_button_connecting_light.xml"
+        "merged": "D:\\Habitizer-sadbranch\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\mr_media_pause_light.xml",
+        "source": "C:\\Users\\Andoryu\\.android\\build-cache\\cbb61a5065c9c122e7651a1013ab5d2c4ecd81fd\\output\\res\\drawable\\mr_media_pause_light.xml"
     },
     {
         "merged": "D:\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\mr_button_connected_light.xml",

@@ -18,7 +18,9 @@ import android.widget.Toast;
 
 import com.google.android.gms.common.ConnectionResult;
 import com.google.android.gms.common.GoogleApiAvailability;
+import com.google.gson.reflect.TypeToken;
 
+import java.lang.reflect.Type;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Date;
@@ -46,16 +48,22 @@ public class DummyMainActivity extends AppCompatActivity {
     public static Activity currentActivity;
     private static Context thisContext;
 
+    public static final String HABITFILENAME = "local_habits.sav";
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_dummy_main);
         thisContext = this;
         myHabitEvents = new ArrayList<>();
-        myHabits = new ArrayList<>();
         myHabitDict = new HashMap<>();
-        DEBUG_addHabits();
-
+        // DEBUG_addHabits();
+        Type listType = new TypeToken<ArrayList<Habit>>(){}.getType();
+        myHabits =  FileController.loadFromFile(DummyMainActivity.this, HABITFILENAME, listType);
+        if (myHabits == null){
+            myHabits = new ArrayList<>();
+        }
         Intent intent = new Intent(DummyMainActivity.this, LoginActivity.class);
         startActivityForResult(intent, VIEW_LOGIN);
 

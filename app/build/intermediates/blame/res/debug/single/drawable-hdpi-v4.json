@@ -76,12 +76,12 @@
         "source": "C:\\Users\\Andoryu\\.android\\build-cache\\71a97fee7c3e8e072c375b08ec9301718058bb51\\output\\res\\drawable-hdpi-v4\\abc_menu_hardkey_panel_mtrl_mult.9.png"
     },
     {
-        "merged": "D:\\Habitizer-sadbranch\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\powered_by_google_light.png",
-        "source": "C:\\Users\\Andoryu\\.android\\build-cache\\dee30b310453919155cb10b98c633073f8661a5c\\output\\res\\drawable-hdpi-v4\\powered_by_google_light.png"
-    },
-    {
         "merged": "D:\\Habitizer-sadbranch\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\cast_ic_stop_circle_filled_white.png",
         "source": "C:\\Users\\Andoryu\\.android\\build-cache\\d1d468c01183bd06ce235fc2324aa212baf2d8d1\\output\\res\\drawable-hdpi-v4\\cast_ic_stop_circle_filled_white.png"
+    },
+    {
+        "merged": "D:\\Habitizer-sadbranch\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\powered_by_google_light.png",
+        "source": "C:\\Users\\Andoryu\\.android\\build-cache\\dee30b310453919155cb10b98c633073f8661a5c\\output\\res\\drawable-hdpi-v4\\powered_by_google_light.png"
     },
     {
         "merged": "D:\\Habitizer-sadbranch\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\abc_textfield_activated_mtrl_alpha.9.png",

@@ -41,6 +41,7 @@ public class EditHabitActivity extends AppCompatActivity {
                     habit.setReason(reasonInput.getText().toString());
                     habit.setDaysOfWeekDue(AddHabitActivity.days);
                     AddHabitActivity.resetDays();
+                    FileController.saveInFile(EditHabitActivity.this, DummyMainActivity.HABITFILENAME, DummyMainActivity.myHabits);
                     EditHabitActivity.this.finish();
                 }
             }

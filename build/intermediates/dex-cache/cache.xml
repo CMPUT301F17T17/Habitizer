@@ -3,6 +3,15 @@
 
     <item
         is-multidex="true"
+        jar="D:\Habitizer\app\src\include\jest-droid-2.0.1-SNAPSHOT.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="e1199e84d8d3907b8262330dd6976ce04d37f6de">
+        <dex dex="D:\Habitizer\app\build\intermediates\transforms\dex\debug\folders\1000\2\jest-droid-2.0.1-SNAPSHOT_96b614911cc4ea5a75d80cb610ea87f82bd4ab74\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="D:\Habitizer\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
         jumboMode="true"
         optimize="true"
@@ -16,7 +25,7 @@
         jumboMode="true"
         optimize="true"
         revision="26.0.1"
-        sha1="45471ee9e086d0bcf4d5586dd4db566dcec1210a">
+        sha1="c738f10b1e581db584364764bebdf4fad2f99bbc">
         <dex dex="D:\Habitizer\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_6acc301475efe6a146c38cd9cc091685c5b9cff1\classes.dex" />
     </item>
 
