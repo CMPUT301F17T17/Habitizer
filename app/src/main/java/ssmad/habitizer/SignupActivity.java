@@ -1,12 +1,3 @@
-/*
- *  Class Name: SignupActivity
- *  Version: 0.5
- *  Date: November 13th, 2017
- *  Copyright (c) TEAM SSMAD, CMPUT 301, University of Alberta - All Rights Reserved.
- *  You may use, distribute, or modify this code under terms and conditions of the
- *  Code of Students Behaviour at University of Alberta
- */
-
 package ssmad.habitizer;
 
 import android.content.Context;
@@ -16,6 +7,7 @@ import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -34,13 +26,6 @@ import java.io.OutputStreamWriter;
 import java.lang.reflect.Type;
 import java.util.ArrayList;
 
-/**
- * Activity for user signing up
- * @author Andrew
- * @version 0.5
- * @see UserProfile
- * @since 0.5
- */
 public class SignupActivity extends AppCompatActivity {
     public static final String FILENAME= "account.sav";
     private EditText usernameText;
@@ -49,12 +34,6 @@ public class SignupActivity extends AppCompatActivity {
     private static ArrayList<Account> accountList = new ArrayList<Account>();
     private String username;
 
-    /**
-     * Called when activity starts
-     * Checks for existing username
-     * Adds in new user on success
-     * @param savedInstanceState
-     */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -64,7 +43,7 @@ public class SignupActivity extends AppCompatActivity {
         passwordText = (EditText) findViewById(R.id.password_input);
         signupButton =  (Button) findViewById(R.id.signup_btn);
 
-        loadFromFile();
+        //loadFromFile();
 
         signupButton.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v) {
@@ -77,19 +56,20 @@ public class SignupActivity extends AppCompatActivity {
                     Toast.makeText(SignupActivity.this,
                             "Username already exists!", Toast.LENGTH_SHORT).show();
                 } else if (correct){
-                    accountList.add(new Account(username, password));
-                    saveInFile(SignupActivity.this);
-                    Intent intent = new Intent();
-                    intent.putExtra(EditProfileActivity.USER_NAME, username);
-                    setResult(DummyMainActivity.VIEW_EDIT_PROFILE, intent);
+                    //accountList.add(new Account(username, password));
+                    //saveInFile(SignupActivity.this);
+
+                    Intent intent = new Intent(v.getContext(), EditProfileActivity.class);
+                    //intent.putExtra(EditProfileActivity.USER_NAME, username);
+                    intent.putExtra("username", username);
+                    intent.putExtra("password", password);
+                    intent.putExtra("fromSignup", true);
+                    startActivity(intent);
                     finish();
                 }
         }   });
     }
-
     /**
-     * Loads accounts from file
-     */
     private void loadFromFile() {
         try {
             FileInputStream fis = openFileInput(FILENAME);
@@ -107,10 +87,6 @@ public class SignupActivity extends AppCompatActivity {
         }
     }
 
-    /**
-     * Saves accounts into file
-     * @param context
-     */
     public static void saveInFile(Context context) {
         try {
             FileOutputStream fos = context.openFileOutput(FILENAME, Context.MODE_PRIVATE);
@@ -128,11 +104,6 @@ public class SignupActivity extends AppCompatActivity {
         }
     }
 
-    /**
-     * Finds user in account list
-     * @param username
-     * @return
-     */
     private Boolean find(String username){
         for(int i=0; i < accountList.size(); i++){
             if(accountList.get(i).getUserName().equals(username)){
@@ -140,12 +111,21 @@ public class SignupActivity extends AppCompatActivity {
             }
         }
         return false;
+    }**/
+
+    private Boolean find(String username){
+        ElasticsearchController.GetUsersTask getUsersTask = new ElasticsearchController.GetUsersTask();
+        getUsersTask.execute(username);
+        try {
+            if (!getUsersTask.get().isEmpty()) {
+                return true;
+            }
+        } catch (Exception e) {
+            Log.i("Error", "Failed to get the user accounts from the async object");
+        }
+        return false;
     }
 
-    /**
-     * Checks if constraints on input are met
-     * @return
-     */
     public Boolean checkInput(){
         Boolean correctness = true;
         String name = usernameText.getText().toString();
@@ -167,4 +147,5 @@ public class SignupActivity extends AppCompatActivity {
 
         return correctness;
     }
+
 }

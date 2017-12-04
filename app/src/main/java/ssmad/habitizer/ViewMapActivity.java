@@ -1,12 +1,3 @@
-/*
- *  Class Name: ViewMapActivity
- *  Version: 0.5
- *  Date: November 13th, 2017
- *  Copyright (c) TEAM SSMAD, CMPUT 301, University of Alberta - All Rights Reserved.
- *  You may use, distribute, or modify this code under terms and conditions of the
- *  Code of Students Behaviour at University of Alberta
- */
-
 package ssmad.habitizer;
 
 import android.app.Activity;
@@ -20,18 +11,8 @@ import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.MarkerOptions;
 
-/**
- * Activity for viewing map
- * @author Sadman
- * @version 0.5
- * @since 0.5
- */
 public class ViewMapActivity extends AppCompatActivity {
 
-    /**
-     * Called when activity starts, places map on current location of user
-     * @param savedInstanceState
-     */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

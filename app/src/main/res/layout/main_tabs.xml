@@ -39,4 +39,14 @@
         android:textColor="@android:color/black"
         app:layout_constraintBaseline_toBaselineOf="@+id/habit_feed_button"
         tools:layout_editor_absoluteX="186dp" />
+
+    <Button
+        android:id="@+id/profile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@android:color/darker_gray"
+        android:text="Profile"
+        android:textColor="@android:color/black"
+        app:layout_constraintBaseline_toBaselineOf="@+id/habit_profile_button"/>
 </LinearLayout>

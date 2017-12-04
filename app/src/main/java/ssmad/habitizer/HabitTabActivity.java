@@ -1,21 +1,4 @@
-/*
- *  CMPUT301F16T17
- *
- *  Project pt 4
- *
- *  November 13th, 2017
- *
- *  Copyright Notice
- *
- */
-
 package ssmad.habitizer;
-
-/**
- * Created by cryst on 10/22/2017.
- */
-
-
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -34,10 +17,7 @@ import static android.R.color.holo_blue_light;
 import static android.R.color.white;
 
 /**
- *Activity for displaying Habit related aspects of the app
- * @author Sadman
- * @version 0.5
- * @since 0.5
+ * Created by cryst on 10/22/2017.
  */
 
 public class HabitTabActivity extends AppCompatActivity {
@@ -64,7 +44,9 @@ public class HabitTabActivity extends AppCompatActivity {
         setContentView(R.layout.activity_habit_tab);
         //LinearLayout tabs = (LinearLayout) findViewById(R.id.tabs);
         //View childTabs = getLayoutInflater().inflate(R.layout.main_tabs, null);
-        DummyMainActivity.initTabs(DummyMainActivity.VIEW_HABIT, HabitTabActivity.this);
+        Intent intent = getIntent();
+        intent.getStringExtra("username");
+        DummyMainActivity.initTabs(DummyMainActivity.VIEW_HABIT, HabitTabActivity.this, intent);
 
         //tabs.addView(childTabs);
 

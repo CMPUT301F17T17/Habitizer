@@ -1,12 +1,3 @@
-/*
- *  Class Name: DummyMainActivity
- *  Version: 0.5
- *  Date: November 13th, 2017
- *  Copyright (c) TEAM SSMAD, CMPUT 301, University of Alberta - All Rights Reserved.
- *  You may use, distribute, or modify this code under terms and conditions of the
- *  Code of Students Behaviour at University of Alberta
- */
-
 package ssmad.habitizer;
 
 import android.app.Activity;
@@ -39,12 +30,7 @@ import static android.R.color.holo_blue_light;
 import static android.R.color.holo_orange_dark;
 import static android.R.color.white;
 
-/**
- * Main Activity, contains the tabs and checks for online connection
- * @author Sadman, Andrew
- * @version 0.5
- * @since 0.5
- */
+
 public class DummyMainActivity extends AppCompatActivity {
     public static ArrayList<HabitEvent> myHabitEvents;
     public static ArrayList<Habit> myHabits;
@@ -60,10 +46,6 @@ public class DummyMainActivity extends AppCompatActivity {
     public static Activity currentActivity;
     private static Context thisContext;
 
-    /**
-     * Called when activity starts, creates lists and sends to login
-     * @param savedInstanceState
-     */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -79,12 +61,6 @@ public class DummyMainActivity extends AppCompatActivity {
 
     }
 
-    /**
-     * Sends user to appropriate activity depending on action
-     * @param requestCode
-     * @param resultCode
-     * @param data
-     */
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
@@ -108,14 +84,17 @@ public class DummyMainActivity extends AppCompatActivity {
             switch (resultCode) {
                 case VIEW_FEED:
                     intent = new Intent(this, FeedTabActivity.class);
+                    intent.replaceExtras(data);
                     startActivityForResult(intent, VIEW_FEED);
                     break;
                 case VIEW_HABIT:
                     intent = new Intent(this, HabitTabActivity.class);
+                    intent.replaceExtras(data);
                     startActivityForResult(intent, VIEW_HABIT);
                     break;
                 case VIEW_SOCIAL:
                     intent = new Intent(this, SocialTabActivity.class);
+                    intent.replaceExtras(data);
                     startActivityForResult(intent, VIEW_SOCIAL);
                     break;
                 case VIEW_EDIT_PROFILE:
@@ -125,10 +104,12 @@ public class DummyMainActivity extends AppCompatActivity {
                     break;
                 case VIEW_SIGN_UP:
                     intent = new Intent(this, SignupActivity.class);
+                    intent.replaceExtras(data);
                     startActivityForResult(intent, VIEW_SIGN_UP);
                     break;
                 default:
                     intent = new Intent(this, HabitTabActivity.class);
+                    intent.replaceExtras(data);
                     startActivityForResult(intent, VIEW_HABIT);
 
             }
@@ -137,18 +118,9 @@ public class DummyMainActivity extends AppCompatActivity {
 
     }
 
-    /**
-     * Simple toast function for displaying messages
-     * @param s
-     * @param context
-     */
     public static void toastMe(String s, Context context) {
         Toast.makeText(context, s, Toast.LENGTH_SHORT).show();
     }
-
-    /**
-     * Used for debugging adding habits
-     */
     public void DEBUG_addHabits(){
         for(int i = 0; i < 10; i++){
             String title = "Habit_"+Integer.toString(i);
@@ -176,10 +148,6 @@ public class DummyMainActivity extends AppCompatActivity {
 
     }
 
-    /**
-     * Checks if google services are available
-     * @return
-     */
     public boolean isGoogleServicesAvailable() {
         GoogleApiAvailability api = GoogleApiAvailability.getInstance();
         int isAvailable = api.isGooglePlayServicesAvailable(this);
@@ -194,12 +162,7 @@ public class DummyMainActivity extends AppCompatActivity {
         return Boolean.FALSE;
     }
 
-    /**
-     * Initializes the tabs for moving between the main activities
-     * @param type
-     * @param ctx
-     */
-    public static void initTabs(int type, Activity ctx) {
+    public static void initTabs(int type, Activity ctx, Intent data) {
         DummyMainActivity.currentActivity = ctx;
         LinearLayout tabs = (LinearLayout) ctx.findViewById(R.id.tabs);
         View childTabs = ctx.getLayoutInflater().inflate(R.layout.main_tabs, null);
@@ -209,6 +172,8 @@ public class DummyMainActivity extends AppCompatActivity {
         Button bHabits = (Button) childTabs.findViewById(R.id.habits);
         Button bFeed = (Button) childTabs.findViewById(R.id.feed);
         Button bSocial = (Button) childTabs.findViewById(R.id.social);
+        Button bProfile = (Button) childTabs.findViewById(R.id.profile);
+
 
         switch (type) {
             case VIEW_FEED:
@@ -219,6 +184,9 @@ public class DummyMainActivity extends AppCompatActivity {
                 break;
             case VIEW_SOCIAL:
                 toChange = bSocial;
+                break;
+            case VIEW_EDIT_PROFILE:
+                toChange = bProfile;
                 break;
             default:
                 toChange = bHabits;
@@ -231,12 +199,14 @@ public class DummyMainActivity extends AppCompatActivity {
         tabsInner.setLayoutParams(new ViewGroup.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT,
                 ViewGroup.LayoutParams.WRAP_CONTENT));
 
+        final Intent intent = new Intent();
+        intent.replaceExtras(data);
         // init buttons
         if (bHabits != toChange) {
             bHabits.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    currentActivity.setResult(VIEW_HABIT);
+                    currentActivity.setResult(VIEW_HABIT, intent);
                     currentActivity.finish();
 
                 }
@@ -246,7 +216,7 @@ public class DummyMainActivity extends AppCompatActivity {
             bFeed.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    currentActivity.setResult(VIEW_FEED);
+                    currentActivity.setResult(VIEW_FEED, intent);
                     currentActivity.finish();
 
                 }
@@ -256,7 +226,17 @@ public class DummyMainActivity extends AppCompatActivity {
             bSocial.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    currentActivity.setResult(VIEW_SOCIAL);
+                    currentActivity.setResult(VIEW_SOCIAL, intent);
+                    currentActivity.finish();
+                }
+            });
+        }
+        if (bProfile != toChange) {
+            bProfile.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+
+                    currentActivity.setResult(VIEW_EDIT_PROFILE, intent);
                     currentActivity.finish();
                 }
             });

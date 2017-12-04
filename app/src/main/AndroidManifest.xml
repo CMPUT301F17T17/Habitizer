@@ -66,6 +66,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>-->
         </activity>
+        <activity android:name=".TestActivity"/>
         <activity android:name=".AddHabitActivity"/>
         <activity android:name=".AddHabitEventActivity"/>
         <activity android:name=".HabitTabActivity">
