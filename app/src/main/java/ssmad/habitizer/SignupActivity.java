@@ -7,6 +7,7 @@ import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -42,7 +43,7 @@ public class SignupActivity extends AppCompatActivity {
         passwordText = (EditText) findViewById(R.id.password_input);
         signupButton =  (Button) findViewById(R.id.signup_btn);
 
-        loadFromFile();
+        //loadFromFile();
 
         signupButton.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v) {
@@ -55,15 +56,20 @@ public class SignupActivity extends AppCompatActivity {
                     Toast.makeText(SignupActivity.this,
                             "Username already exists!", Toast.LENGTH_SHORT).show();
                 } else if (correct){
-                    accountList.add(new Account(username, password));
-                    saveInFile(SignupActivity.this);
-                    Intent intent = new Intent(SignupActivity.this, EditProfileActivity.class);
-                    intent.putExtra(EditProfileActivity.USER_NAME, username);
+                    //accountList.add(new Account(username, password));
+                    //saveInFile(SignupActivity.this);
+
+                    Intent intent = new Intent(v.getContext(), EditProfileActivity.class);
+                    //intent.putExtra(EditProfileActivity.USER_NAME, username);
+                    intent.putExtra("username", username);
+                    intent.putExtra("password", password);
+                    intent.putExtra("fromSignup", true);
                     startActivity(intent);
+                    finish();
                 }
         }   });
     }
-
+    /**
     private void loadFromFile() {
         try {
             FileInputStream fis = openFileInput(FILENAME);
@@ -105,6 +111,19 @@ public class SignupActivity extends AppCompatActivity {
             }
         }
         return false;
+    }**/
+
+    private Boolean find(String username){
+        ElasticsearchController.GetUsersTask getUsersTask = new ElasticsearchController.GetUsersTask();
+        getUsersTask.execute(username);
+        try {
+            if (!getUsersTask.get().isEmpty()) {
+                return true;
+            }
+        } catch (Exception e) {
+            Log.i("Error", "Failed to get the user accounts from the async object");
+        }
+        return false;
     }
 
     public Boolean checkInput(){
@@ -128,4 +147,5 @@ public class SignupActivity extends AppCompatActivity {
 
         return correctness;
     }
+
 }

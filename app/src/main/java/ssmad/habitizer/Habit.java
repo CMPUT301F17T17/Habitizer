@@ -12,6 +12,19 @@ public class Habit {
     private Date startDate;
     private String reason;
     private int[] daysOfWeekComplete = {0,0,0,0,0,0,0};
+    private int[] daysOfWeekDue = {0,0,0,0,0,0,0};
+
+    public int[] getDaysOfWeekDue() {
+        return daysOfWeekDue;
+    }
+
+    public void setDaysOfWeekDue(int[] daysOfWeekDue) {
+        for(int i = 0;i < 7;i++){
+
+            this.daysOfWeekDue[i] = daysOfWeekDue[i];
+        }
+    }
+
     private ArrayList<HabitEvent> events;
 
     @Override
@@ -26,6 +39,7 @@ public class Habit {
         this.title = title;
         this.startDate = startDate;
         this.reason = reason;
+
     }
 
     public String getTitle() {

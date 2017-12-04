@@ -1,22 +1,17 @@
 package ssmad.habitizer;
 
-import android.app.Activity;
-import android.os.Bundle;
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
 
-import com.robotium.solo.Solo;
+public class SocialTabActivity extends AppCompatActivity {
 
-/**
- * Created by cryst on 10/23/2017.
- */
-
-public class SocialTabActivity extends AppCompatActivity{
-
-    private Solo solo;
-
+    @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.social_tab);
+        setContentView(R.layout.activity_social_tab);
+        Intent intent = getIntent();
+        intent.getStringExtra("username");
+        DummyMainActivity.initTabs(DummyMainActivity.VIEW_SOCIAL, this, intent);
     }
-
 }
