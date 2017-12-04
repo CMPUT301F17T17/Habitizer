@@ -70,10 +70,10 @@ public class EditProfileActivity extends AppCompatActivity implements DatePicker
     private TextView nameDisplay;
     private TextView birthDisplay;
     private TextView genderDisplay;
-    private Button habbitButton;
     private Button followerButton;
     private Button followingButton;
     private Button editButton;
+    private Button logoutButton;
     private LinearLayout nameLayout;
     private LinearLayout birthLayout;
     private LinearLayout genderLayout;
@@ -112,10 +112,10 @@ public class EditProfileActivity extends AppCompatActivity implements DatePicker
         nameDisplay = (TextView) findViewById(R.id.name_dis);
         birthDisplay = (TextView) findViewById(R.id.birth_dis);
         genderDisplay = (TextView) findViewById(R.id.gender_dis);
-        habbitButton = (Button) findViewById(R.id.habit_btn);
         followerButton = (Button) findViewById(R.id.follower_btn);
         followingButton = (Button) findViewById(R.id.following_btn);
         editButton = (Button) findViewById(R.id.edit_btn);
+        logoutButton = (Button) findViewById(R.id.logout_btn);
         nameLayout = (LinearLayout) findViewById(R.id.lay_name);
         birthLayout = (LinearLayout) findViewById(R.id.lay_birth);
         genderLayout = (LinearLayout) findViewById(R.id.lay_gender);
@@ -254,7 +254,7 @@ public class EditProfileActivity extends AppCompatActivity implements DatePicker
     @Override
     public void onBackPressed() {
         Intent intent = new Intent();
-        intent.putExtra(USER_NAME, currentUser);
+        intent.putExtra("username", currentUser);
         setResult(DummyMainActivity.VIEW_EDIT_PROFILE,intent);
         super.onBackPressed();
     }
@@ -274,10 +274,10 @@ public class EditProfileActivity extends AppCompatActivity implements DatePicker
         Bitmap bitmap = BitmapFactory.decodeByteArray(imageBytes, 0, imageBytes.length);
         imageV.setImageBitmap(bitmap);
 
-        habbitButton.setOnClickListener(new View.OnClickListener() {
+        logoutButton.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                setResult(DummyMainActivity.VIEW_HABIT);
-                finish();
+                Intent intent = new Intent(EditProfileActivity.this, LoginActivity.class);
+                startActivityForResult(intent, DummyMainActivity.VIEW_LOGIN);
             }
         });
 
@@ -315,9 +315,9 @@ public class EditProfileActivity extends AppCompatActivity implements DatePicker
         nameLayout.setVisibility(View.VISIBLE);
         birthLayout.setVisibility(View.VISIBLE);
         genderLayout.setVisibility(View.VISIBLE);
-        habbitButton.setVisibility(View.VISIBLE);
         followLayout.setVisibility(View.VISIBLE);
         editButton.setVisibility(View.VISIBLE);
+        logoutButton.setVisibility(View.VISIBLE);
 
     }
 
@@ -337,7 +337,7 @@ public class EditProfileActivity extends AppCompatActivity implements DatePicker
         followLayout.setVisibility(View.GONE);
         editButton.setVisibility(View.GONE);
         imageV.setVisibility(View.GONE);
-        habbitButton.setVisibility(View.GONE);
+        logoutButton.setVisibility(View.GONE);
     }
 
     @Override
@@ -378,9 +378,9 @@ public class EditProfileActivity extends AppCompatActivity implements DatePicker
     }
 
     public Boolean findUser() {
-        String username = getIntent().getStringExtra("username");
+        currentUser = getIntent().getStringExtra("username");
         ElasticsearchController.GetUsersTask getUsersTask = new ElasticsearchController.GetUsersTask();
-        getUsersTask.execute(username);
+        getUsersTask.execute(currentUser);
         try {
             if (!getUsersTask.get().isEmpty()) {
                 userInfo = getUsersTask.get().get(0);

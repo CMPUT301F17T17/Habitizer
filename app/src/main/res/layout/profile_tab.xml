@@ -266,14 +266,15 @@
             android:visibility="gone" />
 
         <Button
-            android:id="@+id/habit_btn"
+            android:id="@+id/logout_btn"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="12dp"
             android:layout_marginRight="12dp"
             android:layout_marginTop="2dp"
-            android:text="Show Habits"
+            android:text="Log out"
             android:visibility="gone" />
+
     </LinearLayout>
 
 
