@@ -5,10 +5,6 @@ import android.support.v7.app.AppCompatActivity;
 
 import com.robotium.solo.Solo;
 
-/**
- * Created by dwai on 2017-10-23.
- */
-
 public class FollowActivity extends AppCompatActivity {
 
     private Solo solo;
