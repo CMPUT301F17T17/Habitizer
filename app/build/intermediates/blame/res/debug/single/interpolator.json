@@ -1,18 +1,10 @@
 [
     {
-        "merged": "C:\\Users\\cryst\\Desktop\\Habitizer-master\\Habitizer-master\\app\\build\\intermediates\\res\\merged\\debug\\interpolator\\mr_fast_out_slow_in.xml",
-        "source": "C:\\Users\\cryst\\.android\\build-cache\\8dbb2ec1280cb4b8b60b4b9764a9ccc7b3e8a818\\output\\res\\interpolator\\mr_fast_out_slow_in.xml"
-    },
-    {
-        "merged": "C:\\Users\\Simon\\Downloads\\Habitizer-master\\app\\build\\intermediates\\res\\merged\\debug\\interpolator\\mr_linear_out_slow_in.xml",
-        "source": "C:\\Users\\Simon\\.android\\build-cache\\84802a0bbeecea3b28db3ba5fdee2efb30d97594\\output\\res\\interpolator\\mr_linear_out_slow_in.xml"
-    },
-    {
-        "merged": "C:\\Users\\cryst\\Desktop\\Habitizer-master\\Habitizer-master\\app\\build\\intermediates\\res\\merged\\debug\\interpolator\\mr_linear_out_slow_in.xml",
+        "merged": "C:\\Users\\cryst\\AndroidStudioProjects\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\interpolator\\mr_linear_out_slow_in.xml",
         "source": "C:\\Users\\cryst\\.android\\build-cache\\8dbb2ec1280cb4b8b60b4b9764a9ccc7b3e8a818\\output\\res\\interpolator\\mr_linear_out_slow_in.xml"
     },
     {
-        "merged": "C:\\Users\\Simon\\Downloads\\Habitizer-master\\app\\build\\intermediates\\res\\merged\\debug\\interpolator\\mr_fast_out_slow_in.xml",
-        "source": "C:\\Users\\Simon\\.android\\build-cache\\84802a0bbeecea3b28db3ba5fdee2efb30d97594\\output\\res\\interpolator\\mr_fast_out_slow_in.xml"
+        "merged": "C:\\Users\\cryst\\AndroidStudioProjects\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\interpolator\\mr_fast_out_slow_in.xml",
+        "source": "C:\\Users\\cryst\\.android\\build-cache\\8dbb2ec1280cb4b8b60b4b9764a9ccc7b3e8a818\\output\\res\\interpolator\\mr_fast_out_slow_in.xml"
     }
 ]

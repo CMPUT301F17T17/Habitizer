@@ -1,18 +1,10 @@
 [
     {
-        "merged": "C:\\Users\\cryst\\Desktop\\Habitizer-master\\Habitizer-master\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi\\ic_launcher.png",
-        "source": "C:\\Users\\cryst\\Desktop\\Habitizer-master\\Habitizer-master\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher.png"
+        "merged": "C:\\Users\\cryst\\AndroidStudioProjects\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi\\ic_launcher.png",
+        "source": "C:\\Users\\cryst\\AndroidStudioProjects\\Habitizer\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher.png"
     },
     {
-        "merged": "C:\\Users\\cryst\\Desktop\\Habitizer-master\\Habitizer-master\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi\\ic_launcher_round.png",
-        "source": "C:\\Users\\cryst\\Desktop\\Habitizer-master\\Habitizer-master\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher_round.png"
-    },
-    {
-        "merged": "C:\\Users\\Simon\\Downloads\\Habitizer-master\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi\\ic_launcher_round.png",
-        "source": "C:\\Users\\Simon\\Downloads\\Habitizer-master\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher_round.png"
-    },
-    {
-        "merged": "C:\\Users\\Simon\\Downloads\\Habitizer-master\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi\\ic_launcher.png",
-        "source": "C:\\Users\\Simon\\Downloads\\Habitizer-master\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher.png"
+        "merged": "C:\\Users\\cryst\\AndroidStudioProjects\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi\\ic_launcher_round.png",
+        "source": "C:\\Users\\cryst\\AndroidStudioProjects\\Habitizer\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher_round.png"
     }
 ]

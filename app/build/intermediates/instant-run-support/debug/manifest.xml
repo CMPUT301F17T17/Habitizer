@@ -92,6 +92,7 @@
             </intent-filter>
             -->
         </activity>
+        <activity android:name="ssmad.habitizer.TestActivity" />
         <activity android:name="ssmad.habitizer.AddHabitActivity" />
         <activity android:name="ssmad.habitizer.AddHabitEventActivity" />
         <activity android:name="ssmad.habitizer.HabitTabActivity" >
