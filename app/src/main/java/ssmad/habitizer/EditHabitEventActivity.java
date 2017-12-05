@@ -1,3 +1,12 @@
+/*
+ *  Class Name: EditHabitEventActivity
+ *  Version: 0.5
+ *  Date: November 13th, 2017
+ *  Copyright (c) TEAM SSMAD, CMPUT 301, University of Alberta - All Rights Reserved.
+ *  You may use, distribute, or modify this code under terms and conditions of the
+ *  Code of Students Behaviour at University of Alberta
+ */
+
 package ssmad.habitizer;
 
 import android.app.Activity;
@@ -16,8 +25,19 @@ import java.util.Date;
 
 import static ssmad.habitizer.ViewHabitActivity.toEdit;
 
+/**
+ * Edits habit events
+ * @author Minfeng, Sadman
+ * @version 0.5
+ * @see HabitEvent
+ * @since 0.5
+ */
 public class EditHabitEventActivity extends AppCompatActivity {
 
+    /**
+     * Called when activity starts, takes input, sets values, confirm button
+     * @param savedInstanceState
+     */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -78,6 +98,13 @@ public class EditHabitEventActivity extends AppCompatActivity {
 
 
     }
+
+    /**
+     * Attempt to get picture and make the corresponding buttons available
+     * @param requestCode
+     * @param resultCode
+     * @param data
+     */
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);

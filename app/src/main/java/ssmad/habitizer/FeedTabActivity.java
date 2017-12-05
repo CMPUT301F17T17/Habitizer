@@ -1,10 +1,32 @@
+/*
+ *  CMPUT301F16T17
+ *
+ *  Project pt 4
+ *
+ *  November 13th, 2017
+ *
+ *  Copyright Notice
+ *
+ */
+
 package ssmad.habitizer;
+
+/**
+ * Created by cryst on 10/22/2017.
+ */
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ListView;
+
+/**
+ *Activity for displaying social related aspects of the app
+ * @author Sadman
+ * @version 0.5
+ * @since 0.5
+ */
 
 public class FeedTabActivity extends AppCompatActivity {
     ListView myHabitEventsListView;

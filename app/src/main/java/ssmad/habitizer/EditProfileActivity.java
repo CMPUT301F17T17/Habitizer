@@ -1,3 +1,12 @@
+/*
+ *  Class Name: EditProfileActivity
+ *  Version: 0.5
+ *  Date: November 13th, 2017
+ *  Copyright (c) TEAM SSMAD, CMPUT 301, University of Alberta - All Rights Reserved.
+ *  You may use, distribute, or modify this code under terms and conditions of the
+ *  Code of Students Behaviour at University of Alberta
+ */
+
 package ssmad.habitizer;
 
 import android.app.AlertDialog;
@@ -42,7 +51,13 @@ import java.lang.reflect.Type;
 import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Date;
-
+/**
+ * Edits Profile of user
+ * @author Andrew
+ * @version 0.5
+ * @see UserProfile
+ * @since 0.5
+ */
 public class EditProfileActivity extends AppCompatActivity implements DatePickerDialog.OnDateSetListener{
     public static String USER_NAME = "Username of current user will store here";
     public static final String FILENAME= "userProfiles.sav";
@@ -80,20 +95,23 @@ public class EditProfileActivity extends AppCompatActivity implements DatePicker
     private LinearLayout followLayout;
     private static String currentUser;
     private static Boolean fromSignup;
-    //This part is for displaing profile
 
+
+    /**
+     * Called when activity starts, used for displaying profile
+     * @param savedInstanceState
+     */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.profile_tab);
-        //setContentView(R.layout.activity_habit_tab);
+
         Intent intent = getIntent();
         fromSignup = intent.getBooleanExtra("fromSignup", false);
 
         if (!fromSignup){
             DummyMainActivity.initTabs(DummyMainActivity.VIEW_EDIT_PROFILE, EditProfileActivity.this, intent);}
 
-        //This part is for editing profile
         nmText = (TextView) findViewById(R.id.nmText);
         btText = (TextView) findViewById(R.id.btText);
         gdText = (TextView) findViewById(R.id.gdText);
@@ -108,7 +126,6 @@ public class EditProfileActivity extends AppCompatActivity implements DatePicker
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_item);
         genderSpn.setAdapter(adapter);
 
-        //This part is for displaying profile
         nameDisplay = (TextView) findViewById(R.id.name_dis);
         birthDisplay = (TextView) findViewById(R.id.birth_dis);
         genderDisplay = (TextView) findViewById(R.id.gender_dis);
@@ -122,23 +139,27 @@ public class EditProfileActivity extends AppCompatActivity implements DatePicker
         followLayout = (LinearLayout) findViewById(R.id.lay_follow);
 
 
-       // final int pos = findUserProfile();
+        //final int pos = findUserProfile();
 
-        if (fromSignup){ //
-            onEditEvent(); //create profile when sign up or edit profile
-        } else{
-            onDisplayEvent(); //display profile
+        if (fromSignup){
+            onEditEvent();
+        } else {
+            onDisplayEvent();
         }
 
     }
 
+    /**
+     * Used for editing profile
+     */
     private void onEditEvent(){
         final Boolean find = findUser();
-        if (find){
+        if (find) {
             nameText.setText(userInfo.getName());
             birthdayText.setText(userInfo.getBirthday());
             byte[] imageBytes = userInfo.getPortrait();
-            imageButton.setImageBitmap(BitmapFactory.decodeByteArray(imageBytes, 0,
+
+        imageButton.setImageBitmap(BitmapFactory.decodeByteArray(imageBytes, 0,
                     imageBytes.length));
         }
 
@@ -194,6 +215,7 @@ public class EditProfileActivity extends AppCompatActivity implements DatePicker
             }
         });
 
+
         genderSpn.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
@@ -229,6 +251,7 @@ public class EditProfileActivity extends AppCompatActivity implements DatePicker
                 Boolean profileOk = checkInput();
                 Account info;
 
+
                 if (!find){
                     if (profileOk) {
                         userInfo = new Account(user, password, imageByte, name, birthday, gender);
@@ -251,6 +274,9 @@ public class EditProfileActivity extends AppCompatActivity implements DatePicker
         });
     }
 
+    /**
+     * Send user back
+     */
     @Override
     public void onBackPressed() {
         Intent intent = new Intent();
@@ -259,6 +285,9 @@ public class EditProfileActivity extends AppCompatActivity implements DatePicker
         super.onBackPressed();
     }
 
+    /**
+     * Displays Profile
+     */
     private void onDisplayEvent(){
         findUser();
         String name = userInfo.getName();
@@ -267,6 +296,7 @@ public class EditProfileActivity extends AppCompatActivity implements DatePicker
         byte[] imageBytes = userInfo.getPortrait();
 
         displayVisibility();
+
         nameDisplay.setText(name);
         birthDisplay.setText(birthday);
         genderDisplay.setText(gender);
@@ -274,10 +304,10 @@ public class EditProfileActivity extends AppCompatActivity implements DatePicker
         Bitmap bitmap = BitmapFactory.decodeByteArray(imageBytes, 0, imageBytes.length);
         imageV.setImageBitmap(bitmap);
 
-        logoutButton.setOnClickListener(new View.OnClickListener() {
+        logoutButton.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v) {
-                Intent intent = new Intent(EditProfileActivity.this, LoginActivity.class);
-                startActivityForResult(intent, DummyMainActivity.VIEW_LOGIN);
+                setResult(DummyMainActivity.VIEW_HABIT);
+                finish();
             }
         });
 
@@ -301,6 +331,9 @@ public class EditProfileActivity extends AppCompatActivity implements DatePicker
         });
     }
 
+    /**
+     * Display visibility setting
+     */
     private void displayVisibility(){
         imageButton.setVisibility(View.GONE);
         nmText.setVisibility(View.GONE);
@@ -318,9 +351,11 @@ public class EditProfileActivity extends AppCompatActivity implements DatePicker
         followLayout.setVisibility(View.VISIBLE);
         editButton.setVisibility(View.VISIBLE);
         logoutButton.setVisibility(View.VISIBLE);
-
     }
 
+    /**
+     * Editing display visability
+     */
     private void editVisibility(){
         imageButton.setVisibility(View.VISIBLE);
         nmText.setVisibility(View.VISIBLE);
@@ -340,12 +375,25 @@ public class EditProfileActivity extends AppCompatActivity implements DatePicker
         logoutButton.setVisibility(View.GONE);
     }
 
+    /**
+     * Sets birthday date for profile
+     * @param view
+     * @param year
+     * @param month
+     * @param dayOfMonth
+     */
     @Override
     public void onDateSet(DatePicker view, int year, int month, int dayOfMonth) {
         String userBirthday = Integer.toString(year) + '-' + Integer.toString(month) + '-' + Integer.toString(dayOfMonth);
         birthdayText.setText(userBirthday);
     }
 
+    /**
+     * Choose between camera and gallery for picture
+     * @param requestCode
+     * @param resultCode
+     * @param data
+     */
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data){
         super.onActivityResult(requestCode, resultCode, data);
@@ -359,6 +407,10 @@ public class EditProfileActivity extends AppCompatActivity implements DatePicker
         }
     }
 
+    /**
+     * Select an image from gallery
+     * @param data
+     */
     private void selectFromGallery(Intent data){
         Uri imageUri = data.getData();
         try {
@@ -370,6 +422,10 @@ public class EditProfileActivity extends AppCompatActivity implements DatePicker
         imageButton.setImageBitmap(compressedPic);
     }
 
+    /**
+     * Select image from camera
+     * @param data
+     */
     private void selectFromCamera(Intent data){
         pic = (Bitmap) data.getExtras().get("data");
         Bitmap compressedPic = getResizedBitmap(pic, PIC_MAX_SIZE);
@@ -377,6 +433,10 @@ public class EditProfileActivity extends AppCompatActivity implements DatePicker
         imageButton.setImageBitmap(compressedPic);
     }
 
+    /**
+     * Finds user from server
+     * @return
+     */
     public Boolean findUser() {
         currentUser = getIntent().getStringExtra("username");
         ElasticsearchController.GetUsersTask getUsersTask = new ElasticsearchController.GetUsersTask();
@@ -393,6 +453,10 @@ public class EditProfileActivity extends AppCompatActivity implements DatePicker
         return false;
     }
 
+    /**
+     * Checks for constraints on input and displays appropriate error message
+     * @return
+     */
     public Boolean checkInput() {
         Boolean correctness = true;
         String name = nameText.getText().toString();
@@ -411,9 +475,8 @@ public class EditProfileActivity extends AppCompatActivity implements DatePicker
             Toast.makeText(EditProfileActivity.this, "Must select a gender", Toast.LENGTH_SHORT).show();
         } else if (date.isEmpty()) {
             correctness = false;
-            Toast.makeText(EditProfileActivity.this, "Must select a birthday", Toast.LENGTH_SHORT).show();
-        }
-        else if (Integer.parseInt(part[1]) > 12 || Integer.parseInt(part[2]) > 31) {
+            Toast.makeText(EditProfileActivity.this, "Must select a birthday", Toast.LENGTH_LONG).show();
+        } else if (Integer.parseInt(part[1]) > 12 || Integer.parseInt(part[2]) > 31) {
             correctness = false;
             Toast.makeText(EditProfileActivity.this, "Invalid date",
                     Toast.LENGTH_LONG).show();
@@ -421,6 +484,12 @@ public class EditProfileActivity extends AppCompatActivity implements DatePicker
         return correctness;
     }
 
+    /**
+     * Gets resized bitmap
+     * @param pic
+     * @param maxSize
+     * @return
+     */
     public Bitmap getResizedBitmap(Bitmap pic, int maxSize) {
 
         double div = 90.0;
@@ -442,12 +511,18 @@ public class EditProfileActivity extends AppCompatActivity implements DatePicker
         return image;
     }
 
+
+    /**
+     * Saves user to server
+     * @param info
+     */
     public void saveUser(Account info) {
         //post user profile
         userInfo = info;
         ElasticsearchController.AddUsersTask addUsersTask = new ElasticsearchController.AddUsersTask();
         addUsersTask.execute(userInfo);
     }
+
 
     public void followerEvent(){
         //Not handling with this event for now

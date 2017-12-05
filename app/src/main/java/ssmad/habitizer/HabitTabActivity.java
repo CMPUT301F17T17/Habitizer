@@ -1,4 +1,21 @@
+/*
+ *  CMPUT301F16T17
+ *
+ *  Project pt 4
+ *
+ *  November 13th, 2017
+ *
+ *  Copyright Notice
+ *
+ */
+
 package ssmad.habitizer;
+
+/**
+ * Created by cryst on 10/22/2017.
+ */
+
+
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -17,7 +34,10 @@ import static android.R.color.holo_blue_light;
 import static android.R.color.white;
 
 /**
- * Created by cryst on 10/22/2017.
+ *Activity for displaying Habit related aspects of the app
+ * @author Sadman
+ * @version 0.5
+ * @since 0.5
  */
 
 public class HabitTabActivity extends AppCompatActivity {

@@ -1,3 +1,11 @@
+/*
+ *  Class Name: ElasticsearchController
+ *  Version: 1.0
+ *  Date: November 13th, 2017
+ *  Copyright (c) TEAM SSMAD, CMPUT 301, University of Alberta - All Rights Reserved.
+ *  You may use, distribute, or modify this code under terms and conditions of the
+ *  Code of Students Behaviour at University of Alberta
+ */
 package ssmad.habitizer;
 
 import android.os.AsyncTask;
@@ -15,6 +23,12 @@ import io.searchbox.core.Index;
 import io.searchbox.core.Search;
 import io.searchbox.core.SearchResult;
 
+/**
+ * Controller for elastic search
+ * @author Andrew
+ * @version 1.0
+ * @since 1.0
+ */
 public class ElasticsearchController {
     private static JestDroidClient client;
 
