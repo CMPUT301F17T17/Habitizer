@@ -1,4 +1,21 @@
+/*
+ *  CMPUT301F16T17
+ *
+ *  Project pt 4
+ *
+ *  November 13th, 2017
+ *
+ *  Copyright Notice
+ *
+ */
+
 package ssmad.habitizer;
+
+/**
+ * Created by cryst on 10/22/2017.
+ */
+
+
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -17,13 +34,17 @@ import static android.R.color.holo_blue_light;
 import static android.R.color.white;
 
 /**
- * Created by cryst on 10/22/2017.
+ *Activity for displaying Habit related aspects of the app
+ * @author Sadman
+ * @version 0.5
+ * @since 0.5
  */
 
 public class HabitTabActivity extends AppCompatActivity {
 
 
     public static String  GENERIC_REQUEST_CODE = "GENERIC.REQUEST.CODE";
+    public static final int ADDING_EVENT = 123;
     ListView myHabitsListView;
 
     @Override
@@ -43,7 +64,9 @@ public class HabitTabActivity extends AppCompatActivity {
         setContentView(R.layout.activity_habit_tab);
         //LinearLayout tabs = (LinearLayout) findViewById(R.id.tabs);
         //View childTabs = getLayoutInflater().inflate(R.layout.main_tabs, null);
-        DummyMainActivity.initTabs(DummyMainActivity.VIEW_HABIT, HabitTabActivity.this);
+        Intent intent = getIntent();
+        intent.getStringExtra("username");
+        DummyMainActivity.initTabs(DummyMainActivity.VIEW_HABIT, HabitTabActivity.this, intent);
 
         //tabs.addView(childTabs);
 
@@ -62,6 +85,9 @@ public class HabitTabActivity extends AppCompatActivity {
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
+        if(requestCode == ADDING_EVENT){
+            AddHabitEventActivity._resetVars();
+        }
         DummyMainActivity.myHabitsAdapter.notifyDataSetChanged();
     }
 

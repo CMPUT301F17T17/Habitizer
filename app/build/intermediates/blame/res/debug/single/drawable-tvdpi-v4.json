@@ -1,18 +1,34 @@
 [
     {
-        "merged": "C:\\Users\\cryst\\AndroidStudioProjects\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-tvdpi-v4\\ic_plusone_standard_off_client.png",
+        "merged": "C:\\Users\\Simon\\Downloads\\Habitizer-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-tvdpi-v4\\ic_plusone_medium_off_client.png",
+        "source": "C:\\Users\\Simon\\.android\\build-cache\\90bde78d9e4c01c1fdfbb3db19cd5ff07266c7b6\\output\\res\\drawable-tvdpi-v4\\ic_plusone_medium_off_client.png"
+    },
+    {
+        "merged": "C:\\Users\\cryst\\Desktop\\Habitizer-master\\Habitizer-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-tvdpi-v4\\ic_plusone_small_off_client.png",
+        "source": "C:\\Users\\cryst\\.android\\build-cache\\111712d3ee1a56f65b8b586e3877d8b80e5f9ab6\\output\\res\\drawable-tvdpi-v4\\ic_plusone_small_off_client.png"
+    },
+    {
+        "merged": "C:\\Users\\Simon\\Downloads\\Habitizer-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-tvdpi-v4\\ic_plusone_tall_off_client.png",
+        "source": "C:\\Users\\Simon\\.android\\build-cache\\90bde78d9e4c01c1fdfbb3db19cd5ff07266c7b6\\output\\res\\drawable-tvdpi-v4\\ic_plusone_tall_off_client.png"
+    },
+    {
+        "merged": "C:\\Users\\cryst\\Desktop\\Habitizer-master\\Habitizer-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-tvdpi-v4\\ic_plusone_standard_off_client.png",
         "source": "C:\\Users\\cryst\\.android\\build-cache\\111712d3ee1a56f65b8b586e3877d8b80e5f9ab6\\output\\res\\drawable-tvdpi-v4\\ic_plusone_standard_off_client.png"
     },
     {
-        "merged": "C:\\Users\\cryst\\AndroidStudioProjects\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-tvdpi-v4\\ic_plusone_tall_off_client.png",
+        "merged": "C:\\Users\\cryst\\Desktop\\Habitizer-master\\Habitizer-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-tvdpi-v4\\ic_plusone_tall_off_client.png",
         "source": "C:\\Users\\cryst\\.android\\build-cache\\111712d3ee1a56f65b8b586e3877d8b80e5f9ab6\\output\\res\\drawable-tvdpi-v4\\ic_plusone_tall_off_client.png"
     },
     {
-        "merged": "C:\\Users\\cryst\\AndroidStudioProjects\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-tvdpi-v4\\ic_plusone_medium_off_client.png",
+        "merged": "C:\\Users\\cryst\\Desktop\\Habitizer-master\\Habitizer-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-tvdpi-v4\\ic_plusone_medium_off_client.png",
         "source": "C:\\Users\\cryst\\.android\\build-cache\\111712d3ee1a56f65b8b586e3877d8b80e5f9ab6\\output\\res\\drawable-tvdpi-v4\\ic_plusone_medium_off_client.png"
     },
     {
-        "merged": "C:\\Users\\cryst\\AndroidStudioProjects\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-tvdpi-v4\\ic_plusone_small_off_client.png",
-        "source": "C:\\Users\\cryst\\.android\\build-cache\\111712d3ee1a56f65b8b586e3877d8b80e5f9ab6\\output\\res\\drawable-tvdpi-v4\\ic_plusone_small_off_client.png"
+        "merged": "C:\\Users\\Simon\\Downloads\\Habitizer-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-tvdpi-v4\\ic_plusone_small_off_client.png",
+        "source": "C:\\Users\\Simon\\.android\\build-cache\\90bde78d9e4c01c1fdfbb3db19cd5ff07266c7b6\\output\\res\\drawable-tvdpi-v4\\ic_plusone_small_off_client.png"
+    },
+    {
+        "merged": "C:\\Users\\Simon\\Downloads\\Habitizer-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-tvdpi-v4\\ic_plusone_standard_off_client.png",
+        "source": "C:\\Users\\Simon\\.android\\build-cache\\90bde78d9e4c01c1fdfbb3db19cd5ff07266c7b6\\output\\res\\drawable-tvdpi-v4\\ic_plusone_standard_off_client.png"
     }
 ]

@@ -1,8 +1,18 @@
+/*
+ *  Class Name: AddHabitEventActivity
+ *  Version: 0.5
+ *  Date: November 13th, 2017
+ *  Copyright (c) TEAM SSMAD, CMPUT 301, University of Alberta - All Rights Reserved.
+ *  You may use, distribute, or modify this code under terms and conditions of the
+ *  Code of Students Behaviour at University of Alberta
+ */
+
 package ssmad.habitizer;
 
 import android.*;
 import android.Manifest;
 import android.app.Activity;
+import android.content.Context;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.graphics.Bitmap;
@@ -39,11 +49,13 @@ import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.MapFragment;
 import com.google.android.gms.maps.OnMapReadyCallback;
+import com.google.android.gms.maps.model.CustomCap;
 import com.google.android.gms.maps.model.LatLng;
 
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
+import java.util.Date;
 
 import static java.security.AccessController.getContext;
 
@@ -57,57 +69,65 @@ Ref getting pic
 https://stackoverflow.com/questions/10165302/dialog-to-pick-image-from-gallery-or-from-camera
 Ref getting map
 https://stackoverflow.com/questions/16536414/how-to-use-mapview-in-android-using-google-map-v2
+https://stackoverflow.com/questions/40142331/how-to-request-location-permission-on-android-6
+https://www.youtube.com/watch?v=Z3mKhMkdUFk&feature=youtu.be
+https://developer.amazon.com/docs/maps/display-interactive.html
 Ref pic size reduce
 https://stackoverflow.com/questions/16954109/reduce-the-size-of-a-bitmap-to-a-specified-size-in-android
  */
 
-public class AddHabitEventActivity extends AppCompatActivity implements OnMapReadyCallback {
-    private final int GET_PIC_WITH_CAMERA = 0;
-    private final int GET_PIC_FROM_GALLERY = 1;
-    private final int MY_PERMISSIONS_REQUEST_LOCATION = 8;
-    private final int PIC_MAX_SIZE = 65536;
-    private static boolean picButtonsAreVisible = Boolean.FALSE;
-    private static boolean picIsVisible = Boolean.FALSE;
-    private static Bitmap pic;
-    private GoogleMap gmap;
+/**
+ * Activity for adding in a Habit Event
+ * @author Sadman, Simon (a little)
+ * @version 0.5
+ * @see HabitEvent
+ * @since 0.5
+ */
+public class AddHabitEventActivity extends AppCompatActivity {
+    public static final int GET_PIC_WITH_CAMERA = 0;
+    public static final int GET_PIC_FROM_GALLERY = 1;
+    public static final int MY_PERMISSIONS_REQUEST_LOCATION = 8;
+    public static final int PIC_MAX_SIZE = 65536;
+    public static final int COMMENT_MAX_SIZE = 30;
+    public static boolean picButtonsAreVisible = Boolean.FALSE;
+    public static boolean picIsVisible = Boolean.FALSE;
+    public static boolean mapIsVisible = Boolean.FALSE;
+    public static boolean picWasChanged = Boolean.FALSE;
+    public static boolean locWasChanged = Boolean.FALSE;
+    public static double[] location;
+    public static String comment;
+    public static Bitmap pic;
+    public static byte[] picBytes;
+    public static GoogleMap gmap;
+    public static Button thisOneIsSpecialAndUnavailableSometimes;
 
+    /**
+     * Called when activity starts
+     * Takes input for habit event
+     * Connects buttons to actions
+     * @param savedInstanceState
+     */
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.add_habit_event);
-        Intent intent = getIntent();
-        int position = intent.getIntExtra(HabitTabActivity.GENERIC_REQUEST_CODE,0);
-        Habit habit = DummyMainActivity.myHabits.get(position);
         // Get stuff
-        TextView habitTitle = (TextView) findViewById(R.id.what_habit);
-        TextView habitEventComment = (EditText) findViewById(R.id.comment_input);
-        ImageButton addTop = (ImageButton) findViewById(R.id.add_top);
-        ImageButton cancelTop = (ImageButton) findViewById(R.id.cancel_top);
-        Button add = (Button) findViewById(R.id.add);
+        final int position = getIntent().getExtras().getInt(HabitTabActivity.GENERIC_REQUEST_CODE);
+        final Habit habit = DummyMainActivity.myHabits.get(position);
+        final TextView habitTitle = (TextView) findViewById(R.id.what_habit);
+        (findViewById(R.id.add_title)).setVisibility(View.VISIBLE);
+        //final TextView habitEventComment = (EditText) findViewById(R.id.comment_input);
+        final Button add = (Button) findViewById(R.id.add);
+        thisOneIsSpecialAndUnavailableSometimes = add;
         Button cancel = (Button) findViewById(R.id.cancel);
-        Button fromCamera = (Button) findViewById(R.id.pic_camera);
-        Button fromGallery = (Button) findViewById(R.id.pic_gallery);
-        CheckBox locationCheck = (CheckBox) findViewById(R.id.location_check);
-        CheckBox picCheck = (CheckBox) findViewById(R.id.pic_check);
-        if (picButtonsAreVisible) {
-            LinearLayout picToggle = (LinearLayout) findViewById(R.id.pic_toggle);
-            picToggle.setVisibility(View.VISIBLE);
-        }
-        if (picIsVisible) {
-            ImageView picPreview = (ImageView) findViewById(R.id.pic_preview);
-            picPreview.setImageBitmap(pic);
-            picPreview.setVisibility(View.VISIBLE);
-        }
+
+
+        setPicStuff(this);
+        setLocStuff(this);
+
 
         // Set stuff
         habitTitle.setText(habit.getTitle());
-
         add.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                addEvent();
-            }
-        });
-        addTop.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 addEvent();
@@ -119,189 +139,407 @@ public class AddHabitEventActivity extends AppCompatActivity implements OnMapRea
                 cancelEvent();
             }
         });
-        cancelTop.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                cancelEvent();
-            }
-        });
+        setUpCheckBoxes(this, (Button) findViewById(R.id.add));
+        setUpPicButtons(this, (Button) findViewById(R.id.add));
 
+    }
+
+    /**
+     * Tries to get picture and makes add button available
+     * @param requestCode
+     * @param resultCode
+     * @param data
+     */
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) { // OK
+        super.onActivityResult(requestCode, resultCode, data);
+        tryGetPic(this, requestCode, resultCode, data);
+        makeButtonAvailable((Button) findViewById(R.id.add));
+    }
+
+    /**
+     * Sets up checkboxes
+     * @param ctx
+     * @param btn
+     */
+    public static void setUpCheckBoxes(Activity ctx, final Button btn) {
+        CheckBox locationCheck = (CheckBox) ctx.findViewById(R.id.location_check);
+        CheckBox picCheck = (CheckBox) ctx.findViewById(R.id.pic_check);
+        final Activity fctx = ctx;
         picCheck.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 CheckBox thisBox = (CheckBox) v;
-                LinearLayout picToggle = (LinearLayout) findViewById(R.id.pic_toggle);
                 if (thisBox.isChecked()) {
-                    picToggle.setVisibility(View.VISIBLE);
+                    picButtonsAreVisible = Boolean.TRUE;
                 } else {
-                    picToggle.setVisibility(View.GONE);
+                    picButtonsAreVisible = Boolean.FALSE;
+                    picIsVisible = Boolean.FALSE;
+                    pic = null;
+                    picBytes = null;
                 }
-                picButtonsAreVisible = !picButtonsAreVisible;
+                setPicStuff(fctx);
             }
         });
         locationCheck.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 CheckBox thisBox = (CheckBox) v;
-                LinearLayout mapToggle = (LinearLayout) findViewById(R.id.map_toggle);
                 if (thisBox.isChecked()) {
-                    mapToggle.setVisibility(View.VISIBLE);
-                    initMap();
+
+                    makeButtonUnavailable(btn);
+                    initMap(fctx, null, btn);
                 } else {
-                    mapToggle.setVisibility(View.GONE);
+                    mapIsVisible = Boolean.FALSE;
+                    location = null;
+                    setLocStuff(fctx);
+                    makeButtonAvailable(btn);
                 }
             }
         });
+    }
+
+    /**
+     * Sets up buttons related to pictures
+     * @param ctx
+     * @param btn
+     */
+    public static void setUpPicButtons(Activity ctx, final Button btn) { // OK
+        Button fromCamera = (Button) ctx.findViewById(R.id.pic_camera);
+        Button fromGallery = (Button) ctx.findViewById(R.id.pic_gallery);
+        final Activity fctx = ctx;
         fromCamera.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                makeButtonUnavailable(btn);
                 Intent takePicture = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
-                startActivityForResult(takePicture, GET_PIC_WITH_CAMERA);
+                fctx.startActivityForResult(takePicture, GET_PIC_WITH_CAMERA);
+
             }
         });
         fromGallery.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                makeButtonUnavailable(btn);
                 Intent pickPhoto = new Intent(Intent.ACTION_PICK,
                         android.provider.MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
-                startActivityForResult(pickPhoto, GET_PIC_FROM_GALLERY);//one can be replaced with any action code
+                fctx.startActivityForResult(pickPhoto, GET_PIC_FROM_GALLERY);
+            }
+        });
+    }
+
+    /**
+     * Toggles seeing location task
+     * @param ctx
+     */
+    public static void setLocStuff(Activity ctx) {
+        LinearLayout mapToggle = (LinearLayout) ctx.findViewById(R.id.map_toggle);
+        if (mapIsVisible) {
+            mapToggle.setVisibility(View.VISIBLE);
+        } else {
+            mapToggle.setVisibility(View.GONE);
+
+        }
+    }
+
+    /**
+     * Toggles seeing picture task
+     * @param ctx
+     */
+    public static void setPicStuff(Activity ctx) { // OK
+        LinearLayout picToggle = (LinearLayout) ctx.findViewById(R.id.pic_toggle);
+        if (picButtonsAreVisible) {
+            picToggle.setVisibility(View.VISIBLE);
+        } else {
+            picToggle.setVisibility(View.GONE);
+
+        }
+        ImageView picPreview = (ImageView) ctx.findViewById(R.id.pic_preview);
+        if (picIsVisible) {
+            picPreview.setVisibility(View.VISIBLE);
+        } else {
+            picPreview.setVisibility(View.GONE);
+        }
+        picPreview.setImageBitmap(pic);
+    }
+
+    /**
+     * Attempts to retrieve picture
+     * @param ctx
+     * @param requestCode
+     * @param resultCode
+     * @param data
+     */
+    public static void tryGetPic(Activity ctx, int requestCode, int resultCode, Intent data) {
+        switch (requestCode) {
+            case GET_PIC_WITH_CAMERA:
+                if (resultCode == RESULT_OK) {
+                    pic = (Bitmap) data.getExtras().get("data");
+                    setPic(ctx);
+                    picIsVisible = Boolean.TRUE;
+                    setPicStuff(ctx);
+                    DummyMainActivity.toastMe("get pic from camera", ctx);
+                } else {
+                    getPictureFail(ctx);
+                }
+                break;
+            case GET_PIC_FROM_GALLERY:
+                if (resultCode == RESULT_OK) {
+                    Uri imageUri = data.getData();
+                    try {
+                        pic = MediaStore.Images.Media.getBitmap(ctx.getContentResolver(), imageUri);
+                    } catch (IOException e) {
+                        getPictureFail(ctx);
+                    }
+                    setPic(ctx);
+                    picIsVisible = Boolean.TRUE;
+                    setPicStuff(ctx);
+                    DummyMainActivity.toastMe("get pic from gallery", ctx);
+                } else {
+                    getPictureFail(ctx);
+                }
+                break;
+        }
+    }
+
+    /**
+     * Called upon failure of getting picture, displays failure message
+     * @param ctx
+     */
+    public static void getPictureFail(Activity ctx) {
+        DummyMainActivity.toastMe("Failed to get pic", ctx);
+        AddHabitEventActivity.picIsVisible = Boolean.FALSE;
+        AddHabitEventActivity.picButtonsAreVisible = Boolean.FALSE;
+        setPicStuff(ctx);
+        ((CheckBox) ctx.findViewById(R.id.pic_check)).setChecked(Boolean.FALSE);
+        picBytes = null;
+        pic = null;
+
+
+    }
+
+    /**
+     * Setter for picture with just context
+     * @param ctx
+     */
+    public static void setPic(Activity ctx) { // OK
+        byte[] b = getCompressedByteFromBitmap(pic, PIC_MAX_SIZE);
+        _setPic(ctx, b);
+
+    }
+
+    /**
+     * Setter for picture given context and bytes of picture
+     * @param ctx
+     * @param bytes
+     */
+    public static void _setPic(Activity ctx, byte[] bytes){
+        ImageView picPreview = (ImageView) ctx.findViewById(R.id.pic_preview);
+        picBytes = bytes;
+        picWasChanged = true;
+        //picPreview.setImageBitmap(pic);
+        setPicFromBytes(picBytes);
+        picPreview.setImageBitmap(pic);
+    }
+
+    /**
+     * Gets compressed bytes from Bitmap for image
+     * @param pic
+     * @param maxSize
+     * @return
+     */
+    public static byte[] getCompressedByteFromBitmap(Bitmap pic, int maxSize) {
+        double div = 100.0;
+        ByteArrayOutputStream stream;
+        int size;
+        byte[] image;
+        int quality;
+        do {
+            quality = (int) div;
+            stream = new ByteArrayOutputStream();
+            pic.compress(Bitmap.CompressFormat.JPEG, quality, stream);
+            image = stream.toByteArray();
+            size = image.length;
+            div = div * 0.9;
+        } while (size >= maxSize);
+
+
+        return image;
+    }
+
+    /**
+     * Sets picture from bytes
+     * @param bytes
+     */
+    public static void setPicFromBytes(byte[] bytes) {
+        pic = BitmapFactory.decodeByteArray(bytes, 0, bytes.length);
+    }
+
+    /**
+     * Adds Event
+     */
+    public void addEvent() {
+        Habit habit = DummyMainActivity.myHabits.get(getIntent().getExtras().getInt
+                (HabitTabActivity.GENERIC_REQUEST_CODE));
+        if (habitEventCheckFix(this)) {
+            byte[] fpb = picIsVisible ? picBytes : null;
+            HabitEvent habitEvent = new HabitEvent(habit.getTitle(), new Date(), fpb, location,
+                    comment);
+            DummyMainActivity.myHabitEvents.add(habitEvent);
+            finish();
+        }
+
+    }
+
+    /**
+     * Check constraints on comment and if there's a picture/location displayed
+     * @param ctx
+     * @return
+     */
+    public static boolean habitEventCheckFix(Activity ctx) {
+        comment = ((EditText) ctx.findViewById(R.id.comment_input)).getText().toString();
+        if (!mapIsVisible) {
+            location = null;
+        }
+        if (!picIsVisible) {
+            pic = null;
+            picBytes = null;
+        }
+        if (comment.length() > COMMENT_MAX_SIZE) {
+            DummyMainActivity.toastMe("Comment must be less than " + COMMENT_MAX_SIZE + " chars",
+                    ctx);
+            return Boolean.FALSE;
+        }
+        return Boolean.TRUE;
+    }
+
+    /**
+     * Cancels adding event
+     */
+    public void cancelEvent() {
+        finish();
+    }
+
+    /**
+     * Resets picture and location variables and sets with new ctx
+     * @param ctx
+     */
+    public static void resetVars(Activity ctx) {
+        location = null;
+        pic = null;
+        picBytes = null;
+        picIsVisible = false;
+        picButtonsAreVisible = false;
+        mapIsVisible = false;
+        setPicStuff(ctx);
+        setLocStuff(ctx);
+    }
+
+    /**
+     * Resets picture and location variables without setting
+     */
+    public static void _resetVars() {
+        location = null;
+        pic = null;
+        picBytes = null;
+        picIsVisible = false;
+        picButtonsAreVisible = false;
+        mapIsVisible = false;
+        picWasChanged = false;
+        locWasChanged = false;
+    }
+
+    /**
+     * Remove button from display
+     * @param button
+     */
+    public static void makeButtonUnavailable(Button button) {
+        button.setAlpha(0.5f);
+        button.setClickable(Boolean.FALSE);
+    }
+
+    /**
+     * Adds button to display
+     * @param button
+     */
+    public static void makeButtonAvailable(Button button) {
+        button.setAlpha(1.0f);
+        button.setClickable(Boolean.TRUE);
+    }
+
+    /**
+     * Initializes map
+     * @param ctx
+     * @param location
+     * @param btn
+     */
+    public static void initMap(Activity ctx, final Location location, final Button btn) {
+        MapFragment mapFragment = (MapFragment) ctx.getFragmentManager().findFragmentById(R.id.map);
+        final Activity fctx = ctx;
+        final Location floc = location;
+        mapFragment.getMapAsync(new OnMapReadyCallback() {
+            @Override
+            public void onMapReady(GoogleMap googleMap) {
+                myOnMapReady(fctx, googleMap, location, btn);
             }
         });
 
     }
 
-    @Override
-    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
-        super.onActivityResult(requestCode, resultCode, data);
-
-        switch (requestCode) {
-            case GET_PIC_WITH_CAMERA:
-                if (resultCode == RESULT_OK) {
-                    ImageView picPreview = (ImageView) findViewById(R.id.pic_preview);
-                    pic = (Bitmap) data.getExtras().get("data");
-                    Bitmap compressedPic = getResizedBitmap(pic, PIC_MAX_SIZE);
-
-                    picPreview.setImageBitmap(compressedPic);
-                    picPreview.setVisibility(View.VISIBLE);
-                    DummyMainActivity.toastMe("get pic from camera", AddHabitEventActivity.this);
-                    picIsVisible = Boolean.TRUE;
-
-                }
-
-                break;
-            case GET_PIC_FROM_GALLERY:
-                if (resultCode == RESULT_OK) {
-                    ImageView picPreview = (ImageView) findViewById(R.id.pic_preview);
-                    Uri imageUri = data.getData();
-                    try {
-                        pic = MediaStore.Images.Media.getBitmap(this.getContentResolver(), imageUri);
-                    } catch (IOException e) {
-                        DummyMainActivity.toastMe("Getting bitmap failed!", AddHabitEventActivity.this);
-                        break;
-                    }
-                    Bitmap compressedPic = getResizedBitmap(pic, PIC_MAX_SIZE);
-                    picPreview.setImageBitmap(compressedPic);
-                    picPreview.setVisibility(View.VISIBLE);
-                    DummyMainActivity.toastMe("get pic from gallery", AddHabitEventActivity.this);
-                    picIsVisible = Boolean.TRUE;
-                }
-                break;
-        }
-
-    }
-
-
-    public void addEvent() {
-
-    }
-
-    public void cancelEvent() {
-        finish();
-    }
-
-    public Bitmap getResizedBitmap(Bitmap pic, int maxSize) {
-
-        double div = 90.0;
-        Bitmap image = pic.copy(pic.getConfig(), true);
-        int size = image.getAllocationByteCount();
-
-        int quality;
-        while (size >= maxSize) {
-            quality = (int) (div);
-            ByteArrayOutputStream stream = new ByteArrayOutputStream();
-            pic.compress(Bitmap.CompressFormat.JPEG, quality, stream);
-
-            byte[] byteArray = stream.toByteArray();
-            image = BitmapFactory.decodeByteArray(byteArray, 0, byteArray.length);
-            size = byteArray.length;
-            Log.d("PhotoSize|Quality", size + " | " + quality);
-            div = div * 0.9;
-        }
-
-        return image;
-
-    }
-
-    public void initMap() {
-        MapFragment mapFragment = (MapFragment) getFragmentManager().findFragmentById(R.id.map);
-        mapFragment.getMapAsync(this);
-
-    }
-
-    @Override
-    public void onMapReady(GoogleMap googleMap) {
+    /**
+     * Makes call to functions to display map
+     * @param ctx
+     * @param googleMap
+     * @param location
+     * @param btn
+     */
+    public static void myOnMapReady(Activity ctx, GoogleMap googleMap, Location location, final
+                                    Button btn) {
         gmap = googleMap;
-        //gotoLocation(53.523079, -113.526329);
-        Location loc = getLocationPermissionThenLocation();
-        if(loc != null){
-
+        Location loc = location;
+        if (location == null) {
+            loc = getLocationPermissionThenLocation(ctx, btn);
+        }
+        if (loc != null) {
             double lat = loc.getLatitude();
             double lon = loc.getLongitude();
-
-            //gotoLocation(53.523079, -113.526329);
-            gotoLocation(lat, lon);
+            gotoLocation(ctx, lat, lon, btn);
         }
-
-
 
 
 
     }
 
-    private void gotoLocation(double lat, double lng) {
+    /**
+     * Goes to the specified coordinates on map
+     * @param ctx
+     * @param lat
+     * @param lng
+     * @param btn
+     */
+    public static void gotoLocation(Activity ctx, double lat, double lng, final Button btn) {
+
         float zoom = 15.0f;
+        location = new double[]{lat, lng};
+        locWasChanged = true;
         LatLng ll = new LatLng(lat, lng);
-        CameraUpdate update = CameraUpdateFactory.newLatLngZoom(ll,zoom);
+        CameraUpdate update = CameraUpdateFactory.newLatLngZoom(ll, zoom);
         gmap.moveCamera(update);
-    }
-
-    //https://github.com/CMPUT301W17T22/MoodSwing/blob/master/app/src/main/java/com/ualberta/cmput301w17t22/moodswing/MainActivity.java
-    public Location getLocationPermissionThenLocation() {
-        // Get the current location.
-        // http://stackoverflow.com/questions/32491960/android-check-permission-for-locationmanager
-        // Check if we have proper permissions to get the coarse lastKnownLocation.
-
-
-        // Check if we have proper permissions to get the fine lastKnownLocation.
-        if (ContextCompat.checkSelfPermission(this, android.Manifest.permission.
-                ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
-
-            Log.i("debugMaps", "Requesting fine permission");
-            // Request the permission.
-            // Dummy request code 8 used.
-            ActivityCompat.requestPermissions(this,
-                    new String[]{android.Manifest.permission.ACCESS_FINE_LOCATION}, MY_PERMISSIONS_REQUEST_LOCATION);
-            return null;
-        }else{
-            return getCurrentLocation();
-        }
-
+        mapIsVisible = Boolean.TRUE;
+        makeButtonAvailable(btn);
+        setLocStuff(ctx);
 
     }
 
-    public Location getCurrentLocation(){
+    /**
+     * Gets current location of user
+     * @param ctx
+     * @return
+     */
+    public static Location getCurrentLocation(Activity ctx) {
         // Get the lastKnownLocation once every 5 seconds, or every 10 meters.
-        LocationManager locationManager = (LocationManager) this.getSystemService(this.LOCATION_SERVICE);
+        LocationManager locationManager = (LocationManager) ctx.getSystemService(ctx
+                .LOCATION_SERVICE);
         Criteria criteria = new Criteria();
         String provider = locationManager.getBestProvider(criteria, false);
 
@@ -332,7 +570,57 @@ public class AddHabitEventActivity extends AppCompatActivity implements OnMapRea
         return lastKnownLocationLocation;
     }
 
+    /**
+     * Gets permission from user to access location
+     * @param ctx
+     * @param btn
+     * @return
+     */
+    public static Location getLocationPermissionThenLocation(Activity ctx, final Button btn) {
+        //https://github.com/CMPUT301W17T22/MoodSwing/blob/master/app/src/main/java/com/ualberta/cmput301w17t22/moodswing/MainActivity.java
+        // Get the current location.
+        // http://stackoverflow.com/questions/32491960/android-check-permission-for-locationmanager
+        // Check if we have proper permissions to get the coarse lastKnownLocation.
 
+
+        // Check if we have proper permissions to get the fine lastKnownLocation.
+        if (ContextCompat.checkSelfPermission(ctx, android.Manifest.permission.
+                ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
+            locationFail(ctx, btn);
+
+            Log.i("debugMaps", "Requesting fine permission");
+            // Request the permission.
+            // Dummy request code 8 used.
+            ActivityCompat.requestPermissions(ctx,
+                    new String[]{android.Manifest.permission.ACCESS_FINE_LOCATION}, MY_PERMISSIONS_REQUEST_LOCATION);
+
+            return null;
+        } else {
+            return getCurrentLocation(ctx);
+        }
+
+
+    }
+
+    /**
+     * Called upon failure to retrieve location
+     * @param ctx
+     * @param btn
+     */
+    public static void locationFail(Activity ctx, final Button btn) {
+        AddHabitEventActivity.mapIsVisible = Boolean.FALSE;
+        setLocStuff(ctx);
+        ((CheckBox) ctx.findViewById(R.id.location_check)).setChecked(Boolean.FALSE);
+        makeButtonAvailable(btn);
+        location = null;
+    }
+
+    /**
+     * Called after getting permission for location
+     * @param requestCode
+     * @param permissions
+     * @param grantResults
+     */
     @Override
     public void onRequestPermissionsResult(int requestCode, String permissions[], int[] grantResults) {
         switch (requestCode) {
@@ -343,31 +631,19 @@ public class AddHabitEventActivity extends AppCompatActivity implements OnMapRea
 
                     // permission was granted, yay! Do the
                     // location-related task you need to do.
-                    if (ContextCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION)
+                    if (ContextCompat.checkSelfPermission(this, Manifest.permission
+                            .ACCESS_FINE_LOCATION)
                             == PackageManager.PERMISSION_GRANTED) {
 
-                        //Request location updates:
-                        Location loc = getCurrentLocation();
-                        double lat = loc.getLatitude();
-                        double lon = loc.getLongitude();
 
-                        //gotoLocation(53.523079, -113.526329);
-                        gotoLocation(lat, lon);
+                        DummyMainActivity.toastMe("Can now set location", this);
 
 
                     }
 
-                } else {
-
-                    DummyMainActivity.toastMe("Location permission was denied",
-                            AddHabitEventActivity.this);
-
                 }
-                return;
             }
 
         }
     }
-
-
 }

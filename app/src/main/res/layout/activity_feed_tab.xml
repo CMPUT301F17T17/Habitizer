@@ -44,10 +44,17 @@
         android:layout_height="0dp"
         android:layout_weight="1" />
 
+    <Button
+        android:id="@+id/view_map"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="View Map"/>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:visibility="gone">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -59,28 +66,28 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="asc" />
+                android:text="asc"/>
 
             <CheckBox
                 android:id="@+id/user_check"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="User" />
+                android:text="User"/>
 
             <CheckBox
                 android:id="@+id/habit_check"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Habit" />
+                android:text="Habit"/>
 
             <CheckBox
                 android:id="@+id/today_check"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="today" />
+                android:text="today"/>
 
         </LinearLayout>
 
@@ -107,7 +114,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
-                        android:text="Me" />
+                        android:text="Me"/>
 
                     <EditText
                         android:id="@+id/user_input"
@@ -117,7 +124,7 @@
                         android:ems="10"
                         android:hint="Enter user here"
                         android:inputType="textPersonName"
-                        android:visibility="visible" />
+                        android:visibility="visible"/>
                 </LinearLayout>
 
                 <EditText
@@ -128,7 +135,7 @@
                     android:ems="10"
                     android:hint="Enter habit here"
                     android:inputType="textPersonName"
-                    android:visibility="visible" />
+                    android:visibility="visible"/>
             </LinearLayout>
 
             <Button
@@ -137,7 +144,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
                 android:layout_weight="1"
-                android:text="Go" />
+                android:text="Go"/>
         </LinearLayout>
 
     </LinearLayout>

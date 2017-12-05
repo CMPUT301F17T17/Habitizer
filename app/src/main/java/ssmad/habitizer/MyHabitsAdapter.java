@@ -1,3 +1,12 @@
+/*
+ *  Class Name: MyHabitsAdapter
+ *  Version: 0.5
+ *  Date: November 13th, 2017
+ *  Copyright (c) TEAM SSMAD, CMPUT 301, University of Alberta - All Rights Reserved.
+ *  You may use, distribute, or modify this code under terms and conditions of the
+ *  Code of Students Behaviour at University of Alberta
+ */
+
 package ssmad.habitizer;
 
 import android.app.Activity;
@@ -18,18 +27,34 @@ import android.widget.TextView;
 
 import java.util.ArrayList;
 
+import static ssmad.habitizer.R.drawable.days_border_valid;
+
 /**
  * Created by Sadman on 2017-11-10.
  */
 
+/**
+ * Adapter for Habits
+ * @author Sadman
+ * @version 0.5
+ * @see Habit
+ * @since 0.5
+ */
 public class MyHabitsAdapter extends ArrayAdapter<Habit> {
-    private static final int[] days = {R.id.day_m,
-            R.id.day_t, R.id.day_w, R.id.day_th,
-            R.id.day_f, R.id.day_s, R.id.day_su};
+    private static final int[] days = {R.id.m,
+            R.id.t, R.id.w, R.id.th,
+            R.id.f, R.id.s, R.id.su};
     MyHabitsAdapter(Context context, ArrayList<Habit> myHabits) {
         super(context, R.layout.myhabits_list_view, myHabits);
     }
 
+    /**
+     * Gets view for Habit
+     * @param position
+     * @param convertView
+     * @param parent
+     * @return
+     */
     @NonNull
     @Override
     public View getView(final int position, @Nullable View convertView, @NonNull ViewGroup parent) {
@@ -46,15 +71,24 @@ public class MyHabitsAdapter extends ArrayAdapter<Habit> {
         Button add = (Button) custom.findViewById(R.id.add);
         LinearLayout main = (LinearLayout) custom.findViewById(R.id.main);
 
+        LinearLayout daysOuter = (LinearLayout) custom.findViewById(R.id.days_outer);
+        View childdays = inflater.inflate(R.layout.days, null);
+
         // Setting things
 
         for(int i = 0; i < 7; i++){
-            if(habDueDays[i] == 0){
-                ImageView dayImageView = (ImageView) custom.findViewById(days[i]);
-                dayImageView.setColorFilter(Color.GRAY);
+            if(habDueDays[i] == 1){
+                TextView dayImageView = (TextView) childdays.findViewById(days[i]);
+                dayImageView.setBackground(getContext().getDrawable(R.drawable.days_border_valid));
                 Log.d("setting tint(pos|day)",position+"|"+i);
             }
         }
+
+        LinearLayout daysInner = (LinearLayout) childdays.findViewById(R.id.days_inner);
+        daysInner.setLayoutParams(new ViewGroup.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT,
+                ViewGroup.LayoutParams.WRAP_CONTENT));
+
+        daysOuter.addView(childdays);
 
 
         titleView.setText(habTitle);
@@ -66,16 +100,15 @@ public class MyHabitsAdapter extends ArrayAdapter<Habit> {
             public void onClick(View v) {
                 Intent intent = new Intent(getContext(), AddHabitEventActivity.class);
                 intent.putExtra(HabitTabActivity.GENERIC_REQUEST_CODE, position);
-                ((Activity) getContext()).startActivityForResult(intent, 0);
+                ((Activity) getContext()).startActivityForResult(intent, HabitTabActivity.ADDING_EVENT);
             }
         });
         main.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getContext(), EditHabitActivity.class);
+                Intent intent = new Intent(getContext(), ViewHabitActivity.class);
                 intent.putExtra(HabitTabActivity.GENERIC_REQUEST_CODE, position);
-                //TODO
-                //((Activity) getContext()).startActivityForResult(intent, 0);
+                ((Activity) getContext()).startActivityForResult(intent, 0);
             }
         });
 

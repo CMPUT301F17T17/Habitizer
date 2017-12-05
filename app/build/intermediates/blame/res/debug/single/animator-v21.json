@@ -1,6 +1,10 @@
 [
     {
-        "merged": "C:\\Users\\cryst\\AndroidStudioProjects\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\animator-v21\\design_appbar_state_list_animator.xml",
+        "merged": "C:\\Users\\Simon\\Downloads\\Habitizer-master\\app\\build\\intermediates\\res\\merged\\debug\\animator-v21\\design_appbar_state_list_animator.xml",
+        "source": "C:\\Users\\Simon\\.android\\build-cache\\71d8532e12e6d3de3b73e17e1bd1f893ffaf4057\\output\\res\\animator-v21\\design_appbar_state_list_animator.xml"
+    },
+    {
+        "merged": "C:\\Users\\cryst\\Desktop\\Habitizer-master\\Habitizer-master\\app\\build\\intermediates\\res\\merged\\debug\\animator-v21\\design_appbar_state_list_animator.xml",
         "source": "C:\\Users\\cryst\\.android\\build-cache\\be05bf9c16458419eb7087291bd58a9ed060f4d3\\output\\res\\animator-v21\\design_appbar_state_list_animator.xml"
     }
 ]

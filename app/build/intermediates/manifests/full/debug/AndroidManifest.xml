@@ -29,6 +29,11 @@
 
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
     <meta-data
         android:name="android.support.VERSION"
@@ -66,6 +71,27 @@
             </intent-filter>
             -->
         </activity>
+        <activity android:name="ssmad.habitizer.SignupActivity" >
+
+            <!--
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            -->
+
+        </activity>
+        <activity android:name="ssmad.habitizer.EditProfileActivity" >
+
+            <!--
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            -->
+        </activity>
         <activity android:name="ssmad.habitizer.TestActivity" />
         <activity android:name="ssmad.habitizer.AddHabitActivity" />
         <activity android:name="ssmad.habitizer.AddHabitEventActivity" />
@@ -90,6 +116,15 @@
 
         <activity android:name="ssmad.habitizer.FeedTabActivity" />
         <activity android:name="ssmad.habitizer.SocialTabActivity" />
+        <activity android:name="ssmad.habitizer.ViewHabitActivity" >
+        </activity>
+        <activity android:name="ssmad.habitizer.ViewHabitEventActivity" >
+        </activity>
+        <activity android:name="ssmad.habitizer.EditHabitEventActivity" >
+        </activity>
+        <activity android:name="ssmad.habitizer.ViewMapActivity" >
+        </activity>
+
         <!-- Include the AdActivity and InAppPurchaseActivity configChanges and themes. -->
         <activity
             android:name="com.google.android.gms.ads.AdActivity"
