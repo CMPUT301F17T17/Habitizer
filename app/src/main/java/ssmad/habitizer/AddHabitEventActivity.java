@@ -305,7 +305,22 @@ public class AddHabitEventActivity extends AppCompatActivity {
             byte[] fpb = picIsVisible ? picBytes : null;
             HabitEvent habitEvent = new HabitEvent(habit.getTitle(), new Date(), fpb, location,
                     comment);
+            ElasticsearchController.AddItemsTask postHabitEvent = new ElasticsearchController.AddItemsTask();
+
+
+
+            habitEvent.setHabit_id(habit.getId());
+            habitEvent.setUsername(habit.getUsername());
+            postHabitEvent.execute(DummyMainActivity.Event_Index, habitEvent.getJsonString());
+            try{
+                String id = postHabitEvent.get();
+                habitEvent.setId(id);
+            }catch (Exception e){
+                Log.d("ESC", "Could not update habit event on first try.");
+            }
             DummyMainActivity.myHabitEvents.add(habitEvent);
+            FileController.saveInFile(AddHabitEventActivity.this, DummyMainActivity.HABITEVENTFILENAME, DummyMainActivity.myHabitEvents);
+
             finish();
         }
 

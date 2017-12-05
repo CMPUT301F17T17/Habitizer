@@ -10,6 +10,8 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 import com.google.gson.Gson;
+import com.google.gson.JsonArray;
+import com.google.gson.JsonObject;
 import com.google.gson.reflect.TypeToken;
 
 import java.io.BufferedReader;
@@ -56,6 +58,8 @@ public class LoginActivity extends AppCompatActivity {
                 if (find) {
                     Intent intent = new Intent();
                     intent.putExtra("username", username);
+                    DummyMainActivity.currentUser = username;
+                    postLogin(username);
                     setResult(DummyMainActivity.VIEW_EDIT_PROFILE, intent);
                     finish();
                 } else {
@@ -74,6 +78,36 @@ public class LoginActivity extends AppCompatActivity {
 
     }
 
+    private void postLogin(String username) {
+        Type listType;
+        if(Utilities.isNetworkAvailable(LoginActivity.this)){
+            ElasticsearchController.GetItemsTask getHabitsArrayGetTask = new ElasticsearchController.GetItemsTask();
+            getHabitsArrayGetTask.execute(DummyMainActivity.Habit_Index, "username", username);
+            try{
+                JsonArray jsonHabits =  getHabitsArrayGetTask.get();
+                DummyMainActivity.myHabits = new ArrayList<>();
+                for (int i = 0; i < jsonHabits.size(); i++){
+                    Habit h = new Habit();
+                    JsonObject job  = jsonHabits.get(i).getAsJsonObject();
+                    /* Gson g = new Gson();
+                    String s = g.toJson(job);
+                    Log.d("LOGIN.json", s);*/
+                    h.fromJsonObject(job);
+                    DummyMainActivity.myHabits.add(h);
+                }
+            }catch (Exception e){
+                Log.d("ESC", "Adding habits in login.");
+            }
+        }else{
+
+            listType = new TypeToken<ArrayList<Habit>>(){}.getType();
+            DummyMainActivity.myHabits =  FileController.loadFromFile(LoginActivity.this, DummyMainActivity.HABITFILENAME, listType);
+            if ( DummyMainActivity.myHabits == null){
+                DummyMainActivity.myHabits = new ArrayList<>();
+            }
+        }
+    }
+
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
@@ -84,33 +118,7 @@ public class LoginActivity extends AppCompatActivity {
             finish();
         }
     }
-/**
-    private void loadFromFile() {
-        try {
-            FileInputStream fis = openFileInput(FILENAME);
-            BufferedReader in = new BufferedReader(new InputStreamReader(fis));
-            Gson gson = new Gson();
-            //Code taken from http://stackoverflow.com/questions/12384064/gson-convert-from-json-to-a-typed-arraylistt Sept.22,2016
-            Type listType = new TypeToken<ArrayList<Account>>(){}.getType();
-            accountList = gson.fromJson(in, listType);
-        } catch (FileNotFoundException e) {
-            // TODO Auto-generated catch block
-            accountList = new ArrayList<Account>();
-        } catch (IOException e) {
-            // TODO Auto-generated catch block
-            throw new RuntimeException();
-        }
-    }
 
-    private Boolean find(String username, String password){
-        for(int i=0; i < accountList.size(); i++){
-            if(accountList.get(i).getUserName().equals(username) &&
-                    accountList.get(i).getPassword().equals(password)){
-                return true;
-            }
-        }
-        return false;
-    }**/
     private Boolean find(String username, String password) {
         ElasticsearchController.GetUsersTask getUsersTask = new ElasticsearchController.GetUsersTask();
         getUsersTask.execute(username);

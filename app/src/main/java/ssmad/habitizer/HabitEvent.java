@@ -2,7 +2,14 @@ package ssmad.habitizer;
 
 import android.graphics.Bitmap;
 import android.location.Location;
+import android.util.Log;
 
+import com.google.gson.Gson;
+import com.google.gson.JsonArray;
+import com.google.gson.JsonObject;
+
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
 import java.util.Date;
 
 /**
@@ -17,11 +24,21 @@ https://alvinalexander.com/source-code/android/android-how-load-image-file-and-s
 public class HabitEvent {
     private String title;
     private Date completionDate;
+
+    private String habit_id;
+    private String id;
     private byte[] pic;
     private double[] location;
+
     private String comment;
+
     private boolean hasPic;
     private boolean hasLoc;
+    private String username;
+
+    public HabitEvent() {
+
+    }
 
     public boolean hasPicture() {
         return hasPic;
@@ -55,6 +72,58 @@ public class HabitEvent {
 
     }
 
+    public String getJsonString() {
+        JsonObject j = new JsonObject();
+        j.addProperty("habit_id", this.getHabit_id());
+        j.addProperty("title", this.getTitle());
+        j.addProperty("comment", this.getComment());
+        if (this.hasPicture()) {
+            j.addProperty("pic", this.getPicBytes().toString());
+        }
+        if (this.hasLocation()) {
+            j.addProperty("lat", this.getLocation()[0]);
+            j.addProperty("lng", this.getLocation()[1]);
+        }
+        j.addProperty("hasPic", this.hasPicture());
+        j.addProperty("hasLoc", this.hasLocation());
+        j.addProperty("username", this.getUsername());
+
+        SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+        String dateStr = sdf.format(this.getCompletionDate());
+        j.addProperty("completionDate",dateStr);
+
+        Gson g = new Gson();
+        String s = g.toJson(j);
+        Log.d("Event.Json", s);
+        return s;
+    }
+
+    public void fromJsonObject(JsonObject job) throws ParseException {
+        Gson g = new Gson();
+        String s = g.toJson(job);
+        Log.d("HABIT.json", s);
+        JsonObject j  = job.get("_source").getAsJsonObject();
+        this.setHabit_id(j.get("habit_id").getAsString());
+        this.setComment(j.get("comment").getAsString());
+        this.setTitle(j.get("title").getAsString());
+        this.setUsername(j.get("username").getAsString());
+
+        SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+        Date d = sdf.parse(j.get("completionDate").getAsString());
+        this.setCompletionDate(d);
+
+        this.setId(job.get("_id").getAsString());
+        this.hasPic = j.get("hasPic").getAsBoolean();
+        this.hasLoc = j.get("hasLoc").getAsBoolean();
+        if(this.hasPicture()){
+            this.setPicBytes(j.get("pic").getAsString().getBytes());
+        }
+        if(this.hasLocation()){
+            double[] loc = {j.get("lat").getAsDouble(), j.get("lng").getAsDouble()};
+            this.setLocation(loc);
+        }
+    }
+
     public String getTitle() {
         return title;
     }
@@ -71,7 +140,6 @@ public class HabitEvent {
         this.completionDate = completionDate;
     }
 
-
     public byte[] getPicBytes() {
         return pic;
     }
@@ -80,8 +148,17 @@ public class HabitEvent {
         this.pic = pic;
     }
 
+
     public double[] getLocation() {
         return location;
+    }
+
+    public String getHabit_id() {
+        return habit_id;
+    }
+
+    public void setHabit_id(String habit_id) {
+        this.habit_id = habit_id;
     }
 
     public void setLocation(double[] location) {
@@ -94,5 +171,22 @@ public class HabitEvent {
 
     public void setComment(String comment) {
         this.comment = comment;
+    }
+
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+
+        this.id = id;
+    }
+
+    public String getUsername() {
+        return this.username;
+    }
+
+    public void setUsername(String username) {
+        this.username = username;
     }
 }

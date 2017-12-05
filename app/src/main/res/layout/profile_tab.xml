@@ -241,18 +241,13 @@
             android:weightSum="1">
 
             <Button
-                android:id="@+id/follower_btn"
+                android:id="@+id/follow_btn"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_weight="0.50"
-                android:text="Follower" />
+                android:text="SOMETEXT"
+                android:visibility="gone" />
 
-            <Button
-                android:id="@+id/following_btn"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_weight="0.5"
-                android:text="Following" />
         </LinearLayout>
 
         <Button

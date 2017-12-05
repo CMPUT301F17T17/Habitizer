@@ -300,6 +300,10 @@
         "source": "D:\\Habitizer-sadbranch\\app\\src\\main\\res\\layout\\activity_dummy_main.xml"
     },
     {
+        "merged": "D:\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\layout\\social_list_view.xml",
+        "source": "D:\\Habitizer\\app\\src\\main\\res\\layout\\social_list_view.xml"
+    },
+    {
         "merged": "D:\\Habitizer\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_habit_tab.xml",
         "source": "D:\\Habitizer\\app\\src\\main\\res\\layout\\activity_habit_tab.xml"
     },

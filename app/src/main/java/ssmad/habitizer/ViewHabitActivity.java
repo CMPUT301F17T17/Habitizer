@@ -3,6 +3,7 @@ package ssmad.habitizer;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
@@ -31,7 +32,18 @@ public class ViewHabitActivity extends AppCompatActivity {
         deleteButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                String id = DummyMainActivity.myHabits.get(position).getId();
                 DummyMainActivity.myHabits.remove(position);
+                ElasticsearchController.DeleteItemsTask deleteHabit = new ElasticsearchController.DeleteItemsTask();
+                //TODO
+
+                deleteHabit.execute(DummyMainActivity.Habit_Index, id);
+                Boolean success = false;
+                try{
+                    success = deleteHabit.get();
+                }catch (Exception e){
+                    Log.d("ESC", "Could not delete habit on first try.");
+                }
                 FileController.saveInFile(ViewHabitActivity.this, DummyMainActivity.HABITFILENAME, DummyMainActivity.myHabits);
                 finish();
             }

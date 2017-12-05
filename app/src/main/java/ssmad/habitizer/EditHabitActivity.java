@@ -2,6 +2,7 @@ package ssmad.habitizer;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
@@ -41,6 +42,17 @@ public class EditHabitActivity extends AppCompatActivity {
                     habit.setReason(reasonInput.getText().toString());
                     habit.setDaysOfWeekDue(AddHabitActivity.days);
                     AddHabitActivity.resetDays();
+                    String id = habit.getId();
+                    ElasticsearchController.UpdateItemsTask updateHabit = new ElasticsearchController.UpdateItemsTask();
+                    //TODO
+
+                    updateHabit.execute(DummyMainActivity.Habit_Index, id, habit.getJsonString());
+                    Boolean success = false;
+                    try{
+                        success = updateHabit.get();
+                    }catch (Exception e){
+                        Log.d("ESC", "Could not update habit on first try.");
+                    }
                     FileController.saveInFile(EditHabitActivity.this, DummyMainActivity.HABITFILENAME, DummyMainActivity.myHabits);
                     EditHabitActivity.this.finish();
                 }

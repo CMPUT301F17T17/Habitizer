@@ -52,10 +52,11 @@ public class AddHabitActivity extends AppCompatActivity {
                     Habit habit = new Habit(habitInput.getText().toString(), start, reasonInput
                             .getText().toString());
                     habit.setDaysOfWeekDue(days);
-                    postHabit.execute("Habit_test", habit.getJsonString());
+                    habit.setUsername(DummyMainActivity.currentUser);
+                    postHabit.execute(DummyMainActivity.Habit_Index, habit.getJsonString());
                     try{
                         String id = postHabit.get();
-                        //habit.setId(id);
+                        habit.setId(id);
                     }catch (Exception e){
                         Log.d("ESC", "Could not update habit on first try.");
                     }

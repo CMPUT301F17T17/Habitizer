@@ -189,9 +189,9 @@
             android:layout_weight="1"
             android:gravity="center"
             android:text="Edit"
-            android:visibility="visible"
+            android:visibility="gone"
             tools:layout_editor_absoluteX="147dp"
-            tools:layout_editor_absoluteY="500dp"/>
+            tools:layout_editor_absoluteY="500dp" />
 
         <Button
             android:id="@+id/delete"

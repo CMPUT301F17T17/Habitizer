@@ -47,8 +47,14 @@ public class DummyMainActivity extends AppCompatActivity {
     public static final int VIEW_SIGN_UP = 995;
     public static Activity currentActivity;
     private static Context thisContext;
+    public static final String HABITEVENTFILENAME = "local_events.sav";
 
     public static final String HABITFILENAME = "local_habits.sav";
+    public static String currentUser;
+    public static final String Habit_Index = "Habit_test3";
+    public static final String Event_Index = "Event_test5";
+
+
 
 
     @Override
@@ -59,11 +65,7 @@ public class DummyMainActivity extends AppCompatActivity {
         myHabitEvents = new ArrayList<>();
         myHabitDict = new HashMap<>();
         // DEBUG_addHabits();
-        Type listType = new TypeToken<ArrayList<Habit>>(){}.getType();
-        myHabits =  FileController.loadFromFile(DummyMainActivity.this, HABITFILENAME, listType);
-        if (myHabits == null){
-            myHabits = new ArrayList<>();
-        }
+
         Intent intent = new Intent(DummyMainActivity.this, LoginActivity.class);
         startActivityForResult(intent, VIEW_LOGIN);
 

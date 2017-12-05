@@ -38,14 +38,19 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
 
+import java.lang.reflect.Array;
 import java.lang.reflect.Type;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Calendar;
 import java.util.Date;
+import java.util.List;
 
 public class EditProfileActivity extends AppCompatActivity implements DatePickerDialog.OnDateSetListener{
     public static String USER_NAME = "Username of current user will store here";
     public static final String FILENAME= "userProfiles.sav";
+    public static final int LIMITEDMODE = 23;
+
 
     private Integer REQUEST_GALLERY = 0;
     private Integer REQUEST_CAMERA = 1;
@@ -54,7 +59,7 @@ public class EditProfileActivity extends AppCompatActivity implements DatePicker
     public Boolean selected = false;
 
     private static ArrayList<UserProfile> profileList = new ArrayList<UserProfile>();
-    private Account userInfo;
+    private static Account userInfo;
 
     private TextView nmText;
     private TextView btText;
@@ -70,8 +75,7 @@ public class EditProfileActivity extends AppCompatActivity implements DatePicker
     private TextView nameDisplay;
     private TextView birthDisplay;
     private TextView genderDisplay;
-    private Button followerButton;
-    private Button followingButton;
+    private Button follow;
     private Button editButton;
     private Button logoutButton;
     private LinearLayout nameLayout;
@@ -90,7 +94,7 @@ public class EditProfileActivity extends AppCompatActivity implements DatePicker
         Intent intent = getIntent();
         fromSignup = intent.getBooleanExtra("fromSignup", false);
 
-        if (!fromSignup){
+        if (!(fromSignup || intent.hasExtra(SocialMultiAdapter.SOCIAL2ACCOUNT))){
             DummyMainActivity.initTabs(DummyMainActivity.VIEW_EDIT_PROFILE, EditProfileActivity.this, intent);}
 
         //This part is for editing profile
@@ -112,8 +116,7 @@ public class EditProfileActivity extends AppCompatActivity implements DatePicker
         nameDisplay = (TextView) findViewById(R.id.name_dis);
         birthDisplay = (TextView) findViewById(R.id.birth_dis);
         genderDisplay = (TextView) findViewById(R.id.gender_dis);
-        followerButton = (Button) findViewById(R.id.follower_btn);
-        followingButton = (Button) findViewById(R.id.following_btn);
+        follow = (Button) findViewById(R.id.follow_btn);
         editButton = (Button) findViewById(R.id.edit_btn);
         logoutButton = (Button) findViewById(R.id.logout_btn);
         nameLayout = (LinearLayout) findViewById(R.id.lay_name);
@@ -243,7 +246,7 @@ public class EditProfileActivity extends AppCompatActivity implements DatePicker
                         userInfo.setBirthday(birthday);
                         userInfo.setGender(gender);
                         saveUser(userInfo);
-                        onDisplayEvent();
+                        onDisplayUpdate(userInfo);
                     }
 
                 }
@@ -260,7 +263,79 @@ public class EditProfileActivity extends AppCompatActivity implements DatePicker
     }
 
     private void onDisplayEvent(){
-        findUser();
+        Intent intent = getIntent();
+        if(intent.hasExtra(SocialMultiAdapter.SOCIAL2ACCOUNT)){
+            final int position = intent.getIntExtra(SocialMultiAdapter.SOCIAL2ACCOUNT,0);
+
+            final Account targetUserInfo = SocialTabActivity.SocialAccounts.get(position);
+            onDisplayUpdate(targetUserInfo);
+
+            editButton.setVisibility(View.GONE);
+            logoutButton.setVisibility(View.GONE);
+            //TODO
+
+            Boolean IAmFollower = Arrays.asList(targetUserInfo.getFollowers()).contains(userInfo.getUsername());
+            Boolean HaveSentRequest = Arrays.asList(targetUserInfo.getRequests()).contains(userInfo.getUsername());
+
+            follow.setVisibility(View.VISIBLE);
+            if(IAmFollower && !HaveSentRequest){
+                follow.setText("Unfollow");
+            } else {
+                follow.setText("Follow");
+            }
+            if(HaveSentRequest){
+                follow.setAlpha(0.5f);
+            }else{
+                final Boolean tofollow = IAmFollower;
+                follow.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        Account targetUserInfo = SocialTabActivity.SocialAccounts.get(position);
+                        if (tofollow){
+                            targetUserInfo.setRequests(addOne(targetUserInfo.getRequests(), userInfo.getUsername()));
+                            userInfo.setSent_requests(addOne(userInfo.getSent_requests(), targetUserInfo.getUsername()));
+                        }else {
+                            targetUserInfo.setFollowers(addOne(targetUserInfo.getFollowers(), userInfo.getUsername()));
+                            userInfo.setFollowing(addOne(userInfo.getFollowing(), targetUserInfo.getUsername()));
+                        }
+                        saveUser(userInfo);
+                        saveUser(targetUserInfo);
+                        finish();
+                    }
+                });
+            }
+
+
+
+        }else{
+
+            findUser();
+
+            onDisplayUpdate(userInfo);
+
+            logoutButton.setOnClickListener(new View.OnClickListener() {
+                public void onClick(View v) {
+                    Intent intent = new Intent(EditProfileActivity.this, LoginActivity.class);
+                    startActivityForResult(intent, DummyMainActivity.VIEW_LOGIN);
+                }
+            });
+
+            follow.setOnClickListener(new View.OnClickListener() {
+                public void onClick(View v) {
+                    followingEvent();
+                }
+            });
+
+            editButton.setOnClickListener(new View.OnClickListener() {
+                public void onClick(View v) {
+                    editVisibility();
+                    onEditEvent();
+                }
+            });
+        }
+    }
+
+    private void onDisplayUpdate(Account userInfo) {
         String name = userInfo.getName();
         String birthday = userInfo.getBirthday();
         String gender = userInfo.getGender();
@@ -273,32 +348,6 @@ public class EditProfileActivity extends AppCompatActivity implements DatePicker
         //set up image
         Bitmap bitmap = BitmapFactory.decodeByteArray(imageBytes, 0, imageBytes.length);
         imageV.setImageBitmap(bitmap);
-
-        logoutButton.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) {
-                Intent intent = new Intent(EditProfileActivity.this, LoginActivity.class);
-                startActivityForResult(intent, DummyMainActivity.VIEW_LOGIN);
-            }
-        });
-
-        followerButton.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) {
-                followerEvent();
-            }
-        });
-
-        followingButton.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) {
-                followingEvent();
-            }
-        });
-
-        editButton.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) {
-                editVisibility();
-                onEditEvent();
-            }
-        });
     }
 
     private void displayVisibility(){
@@ -318,6 +367,7 @@ public class EditProfileActivity extends AppCompatActivity implements DatePicker
         followLayout.setVisibility(View.VISIBLE);
         editButton.setVisibility(View.VISIBLE);
         logoutButton.setVisibility(View.VISIBLE);
+
 
     }
 
@@ -444,9 +494,8 @@ public class EditProfileActivity extends AppCompatActivity implements DatePicker
 
     public void saveUser(Account info) {
         //post user profile
-        userInfo = info;
         ElasticsearchController.AddUsersTask addUsersTask = new ElasticsearchController.AddUsersTask();
-        addUsersTask.execute(userInfo);
+        addUsersTask.execute(info);
     }
 
     public void followerEvent(){
@@ -455,5 +504,10 @@ public class EditProfileActivity extends AppCompatActivity implements DatePicker
 
     public void followingEvent() {
         //Not handling with this event for now
+    }
+    public static String[] addOne(String[] arr, String s){
+        String[] result = Arrays.copyOf(arr, arr.length+1);
+        result[arr.length] = s;
+        return result;
     }
 }
