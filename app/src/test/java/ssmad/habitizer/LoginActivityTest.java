@@ -18,13 +18,16 @@ public class LoginActivityTest extends ActivityInstrumentationTestCase2<LoginAct
         super(LoginActivity.class);
     }
 
+
     public void testSetUp() throws Exception{
+
         solo = new Solo(getInstrumentation(), getActivity());
     }
 
     public void testStart() throws Exception {
         Activity activity = getActivity();
     }
+
 
     public void testSignUp() {
 
@@ -63,5 +66,6 @@ public class LoginActivityTest extends ActivityInstrumentationTestCase2<LoginAct
 
         solo.assertCurrentActivity("Wrong Activity!", LoginActivity.class);
     }
+
 
 }

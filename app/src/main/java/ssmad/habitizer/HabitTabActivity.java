@@ -64,7 +64,9 @@ public class HabitTabActivity extends AppCompatActivity {
         setContentView(R.layout.activity_habit_tab);
         //LinearLayout tabs = (LinearLayout) findViewById(R.id.tabs);
         //View childTabs = getLayoutInflater().inflate(R.layout.main_tabs, null);
-        DummyMainActivity.initTabs(DummyMainActivity.VIEW_HABIT, HabitTabActivity.this);
+        Intent intent = getIntent();
+        intent.getStringExtra("username");
+        DummyMainActivity.initTabs(DummyMainActivity.VIEW_HABIT, HabitTabActivity.this, intent);
 
         //tabs.addView(childTabs);
 

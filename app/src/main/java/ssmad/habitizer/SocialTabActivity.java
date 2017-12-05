@@ -13,6 +13,7 @@ package ssmad.habitizer;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.content.Intent;
 
 /**
  *Activity for displaying social related aspects of the app
@@ -27,6 +28,8 @@ public class SocialTabActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_social_tab);
-        DummyMainActivity.initTabs(DummyMainActivity.VIEW_SOCIAL, this);
+        Intent intent  = getIntent();
+        intent.getStringExtra("username");
+        DummyMainActivity.initTabs(DummyMainActivity.VIEW_SOCIAL, this, intent);
     }
 }

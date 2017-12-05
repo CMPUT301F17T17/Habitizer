@@ -15,6 +15,7 @@ public class HabitTabActivityTest extends ActivityInstrumentationTestCase2<Habit
 
     public HabitTabActivityTest() {super(HabitTabActivity.class);}
 
+
     public void testsetUp() throws Exception{
         solo = new Solo(getInstrumentation(), getActivity());
     }
@@ -24,7 +25,9 @@ public class HabitTabActivityTest extends ActivityInstrumentationTestCase2<Habit
     }
 
 
+
     public void testAddHabit(){
+
         solo.clickOnView(solo.getView(R.id.habit_tab_button));
         solo.assertCurrentActivity("Wrong Activity!", HabitTabActivity.class);
         solo.clickOnView(solo.getView(R.id.add_habit_button));
@@ -51,6 +54,7 @@ public class HabitTabActivityTest extends ActivityInstrumentationTestCase2<Habit
 
 
     public void testAddHabitEvent(){
+
         solo.clickOnView(solo.getView(R.id.habit_tab_button));
         solo.assertCurrentActivity("Wrong Activity!", HabitTabActivity.class);
 
@@ -68,6 +72,7 @@ public class HabitTabActivityTest extends ActivityInstrumentationTestCase2<Habit
         assertFalse(solo.waitForText("Due Today"));
 
     }
+
 
 //    public void EditHabitEventTest(){
 //        solo.clickOnView(solo.getView(R.id.habit_tab_button));
@@ -102,5 +107,6 @@ public class HabitTabActivityTest extends ActivityInstrumentationTestCase2<Habit
 //    public void tearDown() throws Exception {
 //        solo.finishOpenedActivities();
 //    }
+
 
 }

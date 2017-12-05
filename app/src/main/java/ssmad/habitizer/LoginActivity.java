@@ -44,7 +44,7 @@ public class LoginActivity extends AppCompatActivity {
     private EditText passwordText;
     private Button loginButton;
     private Button signupButton;
-    private ArrayList<Account> accountList = new ArrayList<Account>();
+    //private ArrayList<Account> accountList = new ArrayList<Account>();
 
     public static final int SIGNUP = 1212;
 
@@ -63,7 +63,7 @@ public class LoginActivity extends AppCompatActivity {
         loginButton = (Button) findViewById(R.id.login_btn);
         signupButton =  (Button) findViewById(R.id.signup_btn);
 
-        loadFromFile();
+        //loadFromFile();
 
         loginButton.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v) {
@@ -74,7 +74,7 @@ public class LoginActivity extends AppCompatActivity {
 
                 if (find) {
                     Intent intent = new Intent();
-                    intent.putExtra(EditProfileActivity.USER_NAME, username);
+                    intent.putExtra("username", username);
                     setResult(DummyMainActivity.VIEW_EDIT_PROFILE, intent);
                     finish();
                 } else {
@@ -110,25 +110,6 @@ public class LoginActivity extends AppCompatActivity {
         }
     }
 
-    /**
-     * Loads account list from file
-     */
-    private void loadFromFile() {
-        try {
-            FileInputStream fis = openFileInput(FILENAME);
-            BufferedReader in = new BufferedReader(new InputStreamReader(fis));
-            Gson gson = new Gson();
-            //Code taken from http://stackoverflow.com/questions/12384064/gson-convert-from-json-to-a-typed-arraylistt Sept.22,2016
-            Type listType = new TypeToken<ArrayList<Account>>(){}.getType();
-            accountList = gson.fromJson(in, listType);
-        } catch (FileNotFoundException e) {
-            // TODO Auto-generated catch block
-            accountList = new ArrayList<Account>();
-        } catch (IOException e) {
-            // TODO Auto-generated catch block
-            throw new RuntimeException();
-        }
-    }
 
     /**
      * Check if username and password match for successful login
@@ -136,12 +117,18 @@ public class LoginActivity extends AppCompatActivity {
      * @param password
      * @return
      */
-    private Boolean find(String username, String password){
-        for(int i=0; i < accountList.size(); i++){
-            if(accountList.get(i).getUserName().equals(username) &&
-                    accountList.get(i).getPassword().equals(password)){
-                return true;
+    private Boolean find(String username, String password) {
+        ElasticsearchController.GetUsersTask getUsersTask = new ElasticsearchController.GetUsersTask();
+        getUsersTask.execute(username);
+        try {
+            if (!getUsersTask.get().isEmpty()) {
+                Account user = getUsersTask.get().get(0);
+                if (user.getPassword().equals(password)){
+                    return true;
+                }
             }
+        } catch (Exception e) {
+            Log.i("Error", "Failed to get the user accounts from the async object");
         }
         return false;
     }

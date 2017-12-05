@@ -10,6 +10,7 @@
 package ssmad.habitizer;
 
 import android.app.AlertDialog;
+import android.app.DatePickerDialog;
 import android.content.Context;
 import android.content.Intent;
 import android.graphics.Bitmap;
@@ -19,11 +20,13 @@ import android.net.Uri;
 import android.provider.MediaStore;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.DatePicker;
 import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.ImageView;
@@ -46,7 +49,8 @@ import java.io.OutputStreamWriter;
 
 import java.lang.reflect.Type;
 import java.util.ArrayList;
-
+import java.util.Calendar;
+import java.util.Date;
 /**
  * Edits Profile of user
  * @author Andrew
@@ -54,7 +58,7 @@ import java.util.ArrayList;
  * @see UserProfile
  * @since 0.5
  */
-public class EditProfileActivity extends AppCompatActivity {
+public class EditProfileActivity extends AppCompatActivity implements DatePickerDialog.OnDateSetListener{
     public static String USER_NAME = "Username of current user will store here";
     public static final String FILENAME= "userProfiles.sav";
 
@@ -65,6 +69,7 @@ public class EditProfileActivity extends AppCompatActivity {
     public Boolean selected = false;
 
     private static ArrayList<UserProfile> profileList = new ArrayList<UserProfile>();
+    private Account userInfo;
 
     private TextView nmText;
     private TextView btText;
@@ -72,7 +77,7 @@ public class EditProfileActivity extends AppCompatActivity {
     private ImageButton imageButton;
     private ImageView imageV;
     private EditText nameText;
-    private EditText birthdayText;
+    private TextView birthdayText;
     private Spinner genderSpn;
     private Button confirmButton;
     private ArrayAdapter<CharSequence> adapter;
@@ -80,15 +85,16 @@ public class EditProfileActivity extends AppCompatActivity {
     private TextView nameDisplay;
     private TextView birthDisplay;
     private TextView genderDisplay;
-    private Button habbitButton;
     private Button followerButton;
     private Button followingButton;
     private Button editButton;
+    private Button logoutButton;
     private LinearLayout nameLayout;
     private LinearLayout birthLayout;
     private LinearLayout genderLayout;
     private LinearLayout followLayout;
     private static String currentUser;
+    private static Boolean fromSignup;
 
 
     /**
@@ -98,15 +104,21 @@ public class EditProfileActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_edit_profile);
-        //This part is for editing profile
+        setContentView(R.layout.profile_tab);
+
+        Intent intent = getIntent();
+        fromSignup = intent.getBooleanExtra("fromSignup", false);
+
+        if (!fromSignup){
+            DummyMainActivity.initTabs(DummyMainActivity.VIEW_EDIT_PROFILE, EditProfileActivity.this, intent);}
+
         nmText = (TextView) findViewById(R.id.nmText);
         btText = (TextView) findViewById(R.id.btText);
         gdText = (TextView) findViewById(R.id.gdText);
         imageButton = (ImageButton) findViewById(R.id.image_btn);
         imageV = (ImageView) findViewById(R.id.imageView);
         nameText = (EditText) findViewById(R.id.usr_name);
-        birthdayText = (EditText) findViewById(R.id.birth_date);
+        birthdayText = (TextView) findViewById(R.id.birth_date);
         genderSpn = (Spinner) findViewById(R.id.gender_spn);
         confirmButton = (Button) findViewById(R.id.confirm_btn);
         adapter = ArrayAdapter.createFromResource(this, R.array.gender_array,
@@ -114,40 +126,40 @@ public class EditProfileActivity extends AppCompatActivity {
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_item);
         genderSpn.setAdapter(adapter);
 
-        //This part is for displaying profile
         nameDisplay = (TextView) findViewById(R.id.name_dis);
         birthDisplay = (TextView) findViewById(R.id.birth_dis);
         genderDisplay = (TextView) findViewById(R.id.gender_dis);
-        habbitButton = (Button) findViewById(R.id.habit_btn);
         followerButton = (Button) findViewById(R.id.follower_btn);
         followingButton = (Button) findViewById(R.id.following_btn);
         editButton = (Button) findViewById(R.id.edit_btn);
+        logoutButton = (Button) findViewById(R.id.logout_btn);
         nameLayout = (LinearLayout) findViewById(R.id.lay_name);
         birthLayout = (LinearLayout) findViewById(R.id.lay_birth);
         genderLayout = (LinearLayout) findViewById(R.id.lay_gender);
         followLayout = (LinearLayout) findViewById(R.id.lay_follow);
 
 
-        final int pos = findUserProfile();
+        //final int pos = findUserProfile();
 
-        if (pos < 0){ //
-            onEditEvent(pos); //create profile when sign up or edit profile
-        } else{
-            onDisplayEvent(pos); //display profile
+        if (fromSignup){
+            onEditEvent();
+        } else {
+            onDisplayEvent();
         }
 
     }
 
     /**
      * Used for editing profile
-     * @param pos
      */
-    private void onEditEvent(final int pos){
-        if (pos >= 0){
-            nameText.setText(profileList.get(pos).getName());
-            birthdayText.setText(profileList.get(pos).getBirthday());
-            byte[] imageBytes = profileList.get(pos).getPortrait();
-            imageButton.setImageBitmap(BitmapFactory.decodeByteArray(imageBytes, 0,
+    private void onEditEvent(){
+        final Boolean find = findUser();
+        if (find) {
+            nameText.setText(userInfo.getName());
+            birthdayText.setText(userInfo.getBirthday());
+            byte[] imageBytes = userInfo.getPortrait();
+
+        imageButton.setImageBitmap(BitmapFactory.decodeByteArray(imageBytes, 0,
                     imageBytes.length));
         }
 
@@ -188,6 +200,22 @@ public class EditProfileActivity extends AppCompatActivity {
             }
         });
 
+        birthdayText.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Calendar date = Calendar.getInstance();
+                int year = date.get(Calendar.YEAR);
+                int month = date.get(Calendar.MONTH);
+                int day = date.get(Calendar.DAY_OF_MONTH);
+
+                DatePickerDialog datePickerDialog = new DatePickerDialog(EditProfileActivity.this,
+                        EditProfileActivity.this, year, month, day);
+                datePickerDialog.getDatePicker().setMaxDate(new Date().getTime());
+                datePickerDialog.show();
+
+            }
+        });
+
+
         genderSpn.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
@@ -201,7 +229,8 @@ public class EditProfileActivity extends AppCompatActivity {
             public void onClick(View v) {
                 //get extra user name
                 Intent intent = getIntent();
-                String user = intent.getStringExtra(EditProfileActivity.USER_NAME);
+                String user = intent.getStringExtra("username");
+                String password = intent.getStringExtra("password");
                 //get bitmap from iamgeButton then transfer it to byte array
                 ByteArrayOutputStream stream = new ByteArrayOutputStream();
                 Bitmap bitmap;
@@ -220,21 +249,24 @@ public class EditProfileActivity extends AppCompatActivity {
                 String gender = genderSpn.getSelectedItem().toString();
 
                 Boolean profileOk = checkInput();
-                if (pos < 0){
+                Account info;
+
+
+                if (!find){
                     if (profileOk) {
-                        profileList.add(new UserProfile(user, imageByte, name, birthday, gender));
-                        saveInFile(EditProfileActivity.this);
+                        userInfo = new Account(user, password, imageByte, name, birthday, gender);
+                        saveUser(userInfo);
                         setResult(DummyMainActivity.VIEW_LOGIN, new Intent());
                         finish();
                     }
                 } else {
                     if (profileOk) {
-                        profileList.get(pos).setPortrait(imageByte);
-                        profileList.get(pos).setName(name);
-                        profileList.get(pos).setBirthday(birthday);
-                        profileList.get(pos).setGender(gender);
-                        saveInFile(EditProfileActivity.this);
-                        onDisplayEvent(pos);
+                        userInfo.setPortrait(imageByte);
+                        userInfo.setName(name);
+                        userInfo.setBirthday(birthday);
+                        userInfo.setGender(gender);
+                        saveUser(userInfo);
+                        onDisplayEvent();
                     }
 
                 }
@@ -248,20 +280,20 @@ public class EditProfileActivity extends AppCompatActivity {
     @Override
     public void onBackPressed() {
         Intent intent = new Intent();
-        intent.putExtra(USER_NAME, currentUser);
+        intent.putExtra("username", currentUser);
         setResult(DummyMainActivity.VIEW_EDIT_PROFILE,intent);
         super.onBackPressed();
     }
 
     /**
      * Displays Profile
-     * @param pos
      */
-    private void onDisplayEvent(final int pos){
-        String name = profileList.get(pos).getName();
-        String birthday = profileList.get(pos).getBirthday();
-        String gender = profileList.get(pos).getGender();
-        byte[] imageBytes = profileList.get(pos).getPortrait();
+    private void onDisplayEvent(){
+        findUser();
+        String name = userInfo.getName();
+        String birthday = userInfo.getBirthday();
+        String gender = userInfo.getGender();
+        byte[] imageBytes = userInfo.getPortrait();
 
         displayVisibility();
 
@@ -272,7 +304,7 @@ public class EditProfileActivity extends AppCompatActivity {
         Bitmap bitmap = BitmapFactory.decodeByteArray(imageBytes, 0, imageBytes.length);
         imageV.setImageBitmap(bitmap);
 
-        habbitButton.setOnClickListener(new View.OnClickListener() {
+        logoutButton.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v) {
                 setResult(DummyMainActivity.VIEW_HABIT);
                 finish();
@@ -294,13 +326,13 @@ public class EditProfileActivity extends AppCompatActivity {
         editButton.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 editVisibility();
-                onEditEvent(pos);
+                onEditEvent();
             }
         });
     }
 
     /**
-     * Display visiblity setting
+     * Display visibility setting
      */
     private void displayVisibility(){
         imageButton.setVisibility(View.GONE);
@@ -316,10 +348,9 @@ public class EditProfileActivity extends AppCompatActivity {
         nameLayout.setVisibility(View.VISIBLE);
         birthLayout.setVisibility(View.VISIBLE);
         genderLayout.setVisibility(View.VISIBLE);
-        habbitButton.setVisibility(View.VISIBLE);
         followLayout.setVisibility(View.VISIBLE);
         editButton.setVisibility(View.VISIBLE);
-
+        logoutButton.setVisibility(View.VISIBLE);
     }
 
     /**
@@ -341,7 +372,20 @@ public class EditProfileActivity extends AppCompatActivity {
         followLayout.setVisibility(View.GONE);
         editButton.setVisibility(View.GONE);
         imageV.setVisibility(View.GONE);
-        habbitButton.setVisibility(View.GONE);
+        logoutButton.setVisibility(View.GONE);
+    }
+
+    /**
+     * Sets birthday date for profile
+     * @param view
+     * @param year
+     * @param month
+     * @param dayOfMonth
+     */
+    @Override
+    public void onDateSet(DatePicker view, int year, int month, int dayOfMonth) {
+        String userBirthday = Integer.toString(year) + '-' + Integer.toString(month) + '-' + Integer.toString(dayOfMonth);
+        birthdayText.setText(userBirthday);
     }
 
     /**
@@ -390,61 +434,23 @@ public class EditProfileActivity extends AppCompatActivity {
     }
 
     /**
-     * Load user from file
-     */
-    private void loadFromFile() {
-        try {
-            FileInputStream fis = openFileInput(FILENAME);
-            BufferedReader in = new BufferedReader(new InputStreamReader(fis));
-            Gson gson = new Gson();
-            //Code taken from http://stackoverflow.com/questions/12384064/gson-convert-from-json-to-a-typed-arraylistt Sept.22,2016
-            Type listType = new TypeToken<ArrayList<UserProfile>>(){}.getType();
-            profileList = gson.fromJson(in, listType);
-        } catch (FileNotFoundException e) {
-            // TODO Auto-generated catch block
-            profileList = new ArrayList<UserProfile>();
-        } catch (IOException e) {
-            // TODO Auto-generated catch block
-            throw new RuntimeException();
-        }
-    }
-
-    /**
-     * save user in file
-     * @param context
-     */
-    public static void saveInFile(Context context) {
-        try {
-            FileOutputStream fos = context.openFileOutput(FILENAME, Context.MODE_PRIVATE);
-            OutputStreamWriter writer = new OutputStreamWriter(fos);
-            Gson gson = new Gson();
-            gson.toJson(profileList, writer);
-            writer.flush();
-            fos.close();
-        } catch (FileNotFoundException e) {
-            // TODO Auto-generated catch block
-            throw new RuntimeException();
-        } catch (IOException e) {
-            // TODO Auto-generated catch block
-            throw new RuntimeException();
-        }
-    }
-
-    /**
-     * Finds user profile in file
+     * Finds user from server
      * @return
      */
-    public int findUserProfile(){
-        loadFromFile();
-        Intent intent = getIntent();
-        String user = intent.getStringExtra(this.USER_NAME);
-        currentUser = user;
-        for(int i=0; i < profileList.size(); i++){
-            if(profileList.get(i).getUsername().equals(user)){
-                return i;
+    public Boolean findUser() {
+        currentUser = getIntent().getStringExtra("username");
+        ElasticsearchController.GetUsersTask getUsersTask = new ElasticsearchController.GetUsersTask();
+        getUsersTask.execute(currentUser);
+        try {
+            if (!getUsersTask.get().isEmpty()) {
+                userInfo = getUsersTask.get().get(0);
+                Toast.makeText(EditProfileActivity.this, userInfo.getName(), Toast.LENGTH_SHORT).show();
+                return true;
             }
+        } catch (Exception e) {
+            Log.i("Error", "Failed to get the user accounts from the async object");
         }
-        return -1;
+        return false;
     }
 
     /**
@@ -467,10 +473,9 @@ public class EditProfileActivity extends AppCompatActivity {
         } else if (gender.isEmpty()) {
             correctness = false;
             Toast.makeText(EditProfileActivity.this, "Must select a gender", Toast.LENGTH_SHORT).show();
-        } else if (!date.matches("\\d{4}-\\d{2}-\\d{2}")) {
+        } else if (date.isEmpty()) {
             correctness = false;
-            Toast.makeText(EditProfileActivity.this, "Must Input Birthday in format: yyyy-mm-dd",
-                    Toast.LENGTH_LONG).show();
+            Toast.makeText(EditProfileActivity.this, "Must select a birthday", Toast.LENGTH_LONG).show();
         } else if (Integer.parseInt(part[1]) > 12 || Integer.parseInt(part[2]) > 31) {
             correctness = false;
             Toast.makeText(EditProfileActivity.this, "Invalid date",
@@ -505,6 +510,19 @@ public class EditProfileActivity extends AppCompatActivity {
         }
         return image;
     }
+
+
+    /**
+     * Saves user to server
+     * @param info
+     */
+    public void saveUser(Account info) {
+        //post user profile
+        userInfo = info;
+        ElasticsearchController.AddUsersTask addUsersTask = new ElasticsearchController.AddUsersTask();
+        addUsersTask.execute(userInfo);
+    }
+
 
     public void followerEvent(){
         //Not handling with this event for now

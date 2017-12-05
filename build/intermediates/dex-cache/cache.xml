@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="C:\Users\cryst\AndroidStudioProjects\Habitizer\app\src\include\jest-droid-2.0.1-SNAPSHOT.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="e1199e84d8d3907b8262330dd6976ce04d37f6de">
+        <dex dex="C:\Users\cryst\AndroidStudioProjects\Habitizer\app\build\intermediates\transforms\dex\debug\folders\1000\2\jest-droid-2.0.1-SNAPSHOT_26a396a2b078af0d5bbebe536a545c04d7824a5d\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\cryst\AndroidStudioProjects\Habitizer\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="3be78ebc2706b2e1fe2f12d5726887a92d6c183b">
+        <dex dex="C:\Users\cryst\AndroidStudioProjects\Habitizer\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run_15647eb5e01b5079b53b834f2c5fbbb0f2f8ed24\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\cryst\AndroidStudioProjects\Habitizer\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="96af7a36402a0d58e6378f79fabe0c132c132cf5">
+        <dex dex="C:\Users\cryst\AndroidStudioProjects\Habitizer\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_ea35f71762a0dd666a728680fc1a926bfbe6cbcd\classes.dex" />
+    </item>
+
+</items>

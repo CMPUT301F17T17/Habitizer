@@ -46,7 +46,9 @@ public class FeedTabActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_feed_tab);
-        DummyMainActivity.initTabs(DummyMainActivity.VIEW_FEED, this);
+        Intent intent = getIntent();
+        intent.getStringExtra("username");
+        DummyMainActivity.initTabs(DummyMainActivity.VIEW_FEED, this, intent);
         (findViewById(R.id.view_map)).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

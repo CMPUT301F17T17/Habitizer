@@ -16,6 +16,7 @@ import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -64,7 +65,7 @@ public class SignupActivity extends AppCompatActivity {
         passwordText = (EditText) findViewById(R.id.password_input);
         signupButton =  (Button) findViewById(R.id.signup_btn);
 
-        loadFromFile();
+        //loadFromFile();
 
         signupButton.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v) {
@@ -77,55 +78,17 @@ public class SignupActivity extends AppCompatActivity {
                     Toast.makeText(SignupActivity.this,
                             "Username already exists!", Toast.LENGTH_SHORT).show();
                 } else if (correct){
-                    accountList.add(new Account(username, password));
-                    saveInFile(SignupActivity.this);
-                    Intent intent = new Intent();
-                    intent.putExtra(EditProfileActivity.USER_NAME, username);
-                    setResult(DummyMainActivity.VIEW_EDIT_PROFILE, intent);
+                    //accountList.add(new Account(username, password));
+                    //saveInFile(SignupActivity.this);
+                    Intent intent = new Intent(v.getContext(), EditProfileActivity.class);
+                    //intent.putExtra(EditProfileActivity.USER_NAME, username);
+                    intent.putExtra("username", username);
+                    intent.putExtra("password", password);
+                    intent.putExtra("fromSignup", true);
+                    startActivity(intent);
                     finish();
                 }
         }   });
-    }
-
-    /**
-     * Loads accounts from file
-     */
-    private void loadFromFile() {
-        try {
-            FileInputStream fis = openFileInput(FILENAME);
-            BufferedReader in = new BufferedReader(new InputStreamReader(fis));
-            Gson gson = new Gson();
-            //Code taken from http://stackoverflow.com/questions/12384064/gson-convert-from-json-to-a-typed-arraylistt Sept.22,2016
-            Type listType = new TypeToken<ArrayList<Account>>(){}.getType();
-            accountList = gson.fromJson(in, listType);
-        } catch (FileNotFoundException e) {
-            // TODO Auto-generated catch block
-            accountList = new ArrayList<Account>();
-        } catch (IOException e) {
-            // TODO Auto-generated catch block
-            throw new RuntimeException();
-        }
-    }
-
-    /**
-     * Saves accounts into file
-     * @param context
-     */
-    public static void saveInFile(Context context) {
-        try {
-            FileOutputStream fos = context.openFileOutput(FILENAME, Context.MODE_PRIVATE);
-            OutputStreamWriter writer = new OutputStreamWriter(fos);
-            Gson gson = new Gson();
-            gson.toJson(accountList, writer);
-            writer.flush();
-            fos.close();
-        } catch (FileNotFoundException e) {
-            // TODO Auto-generated catch block
-            throw new RuntimeException();
-        } catch (IOException e) {
-            // TODO Auto-generated catch block
-            throw new RuntimeException();
-        }
     }
 
     /**
@@ -134,13 +97,18 @@ public class SignupActivity extends AppCompatActivity {
      * @return
      */
     private Boolean find(String username){
-        for(int i=0; i < accountList.size(); i++){
-            if(accountList.get(i).getUserName().equals(username)){
+        ElasticsearchController.GetUsersTask getUsersTask = new ElasticsearchController.GetUsersTask();
+        getUsersTask.execute(username);
+        try {
+            if (!getUsersTask.get().isEmpty()) {
                 return true;
             }
+        } catch (Exception e) {
+            Log.i("Error", "Failed to get the user accounts from the async object");
         }
         return false;
     }
+
 
     /**
      * Checks if constraints on input are met

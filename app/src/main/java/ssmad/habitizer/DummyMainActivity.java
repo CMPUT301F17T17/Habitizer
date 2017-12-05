@@ -108,14 +108,17 @@ public class DummyMainActivity extends AppCompatActivity {
             switch (resultCode) {
                 case VIEW_FEED:
                     intent = new Intent(this, FeedTabActivity.class);
+                    intent.replaceExtras(data);
                     startActivityForResult(intent, VIEW_FEED);
                     break;
                 case VIEW_HABIT:
                     intent = new Intent(this, HabitTabActivity.class);
+                    intent.replaceExtras(data);
                     startActivityForResult(intent, VIEW_HABIT);
                     break;
                 case VIEW_SOCIAL:
                     intent = new Intent(this, SocialTabActivity.class);
+                    intent.replaceExtras(data);
                     startActivityForResult(intent, VIEW_SOCIAL);
                     break;
                 case VIEW_EDIT_PROFILE:
@@ -125,10 +128,12 @@ public class DummyMainActivity extends AppCompatActivity {
                     break;
                 case VIEW_SIGN_UP:
                     intent = new Intent(this, SignupActivity.class);
+                    intent.replaceExtras(data);
                     startActivityForResult(intent, VIEW_SIGN_UP);
                     break;
                 default:
                     intent = new Intent(this, HabitTabActivity.class);
+                    intent.replaceExtras(data);
                     startActivityForResult(intent, VIEW_HABIT);
 
             }
@@ -199,7 +204,7 @@ public class DummyMainActivity extends AppCompatActivity {
      * @param type
      * @param ctx
      */
-    public static void initTabs(int type, Activity ctx) {
+    public static void initTabs(int type, Activity ctx, Intent data) {
         DummyMainActivity.currentActivity = ctx;
         LinearLayout tabs = (LinearLayout) ctx.findViewById(R.id.tabs);
         View childTabs = ctx.getLayoutInflater().inflate(R.layout.main_tabs, null);
@@ -209,6 +214,7 @@ public class DummyMainActivity extends AppCompatActivity {
         Button bHabits = (Button) childTabs.findViewById(R.id.habits);
         Button bFeed = (Button) childTabs.findViewById(R.id.feed);
         Button bSocial = (Button) childTabs.findViewById(R.id.social);
+        Button bProfile = (Button) childTabs.findViewById(R.id.profile);
 
         switch (type) {
             case VIEW_FEED:
@@ -219,6 +225,9 @@ public class DummyMainActivity extends AppCompatActivity {
                 break;
             case VIEW_SOCIAL:
                 toChange = bSocial;
+                break;
+            case VIEW_EDIT_PROFILE:
+                toChange = bProfile;
                 break;
             default:
                 toChange = bHabits;
@@ -231,12 +240,15 @@ public class DummyMainActivity extends AppCompatActivity {
         tabsInner.setLayoutParams(new ViewGroup.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT,
                 ViewGroup.LayoutParams.WRAP_CONTENT));
 
+        final Intent intent = new Intent();
+        intent.replaceExtras(data);
+
         // init buttons
         if (bHabits != toChange) {
             bHabits.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    currentActivity.setResult(VIEW_HABIT);
+                    currentActivity.setResult(VIEW_HABIT, intent);
                     currentActivity.finish();
 
                 }
@@ -246,7 +258,7 @@ public class DummyMainActivity extends AppCompatActivity {
             bFeed.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    currentActivity.setResult(VIEW_FEED);
+                    currentActivity.setResult(VIEW_FEED, intent);
                     currentActivity.finish();
 
                 }
@@ -256,12 +268,21 @@ public class DummyMainActivity extends AppCompatActivity {
             bSocial.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    currentActivity.setResult(VIEW_SOCIAL);
+                    currentActivity.setResult(VIEW_SOCIAL, intent);
                     currentActivity.finish();
                 }
             });
         }
 
+        if (bProfile != toChange) {
+            bProfile.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    currentActivity.setResult(VIEW_EDIT_PROFILE, intent);
+                    currentActivity.finish();
+                }
+            });
+        }
 
         // add it
         tabs.addView(childTabs);
