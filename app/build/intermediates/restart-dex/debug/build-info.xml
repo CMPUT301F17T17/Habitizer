@@ -6,22 +6,22 @@
     density="xxhdpi"
     format="10"
     plugin-version="2.3.3"
-    timestamp="1512455829578"
+    timestamp="1512458041056"
     token="-7454579888521570975"
     verifier="COLD_SWAP_REQUESTED" >
 
     <task
         name="javac"
-        duration="2008" />
+        duration="6725" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="35" />
+        duration="48" />
     <task
         name="verifier"
-        duration="12" />
+        duration="51" />
 
     <artifact
         location="D:\Habitizer\app\build\intermediates\split-apk\debug\slices\slice_4.apk"
@@ -29,20 +29,11 @@
 
     <build
         build-mode="FULL"
-        timestamp="1512447136656"
+        timestamp="1512456147751"
         verifier="FULL_BUILD_REQUESTED" >
-        <artifact
-            location="D:\Habitizer\app\build\intermediates\split-apk\debug\slices\slice_2.apk"
-            type="SPLIT" />
         <artifact
             location="D:\Habitizer\app\build\intermediates\split-apk\debug\slices\slice_0.apk"
             type="SPLIT" />
-        <artifact
-            location="D:\Habitizer\app\build\intermediates\split-apk\debug\slices\slice_4.apk"
-            type="SPLIT" />
-        <artifact
-            location="D:\Habitizer\app\build\outputs\apk\app-debug.apk"
-            type="SPLIT_MAIN" />
         <artifact
             location="D:\Habitizer\app\build\intermediates\split-apk\debug\slices\slice_5.apk"
             type="SPLIT" />
@@ -50,10 +41,16 @@
             location="D:\Habitizer\app\build\intermediates\split-apk\debug\slices\slice_6.apk"
             type="SPLIT" />
         <artifact
+            location="D:\Habitizer\app\build\intermediates\split-apk\debug\slices\slice_4.apk"
+            type="SPLIT" />
+        <artifact
             location="D:\Habitizer\app\build\intermediates\split-apk\debug\dep\dependencies.apk"
             type="SPLIT" />
         <artifact
             location="D:\Habitizer\app\build\intermediates\split-apk\debug\slices\slice_1.apk"
+            type="SPLIT" />
+        <artifact
+            location="D:\Habitizer\app\build\intermediates\split-apk\debug\slices\slice_2.apk"
             type="SPLIT" />
         <artifact
             location="D:\Habitizer\app\build\intermediates\split-apk\debug\slices\slice_3.apk"
@@ -67,21 +64,13 @@
         <artifact
             location="D:\Habitizer\app\build\intermediates\split-apk\debug\slices\slice_9.apk"
             type="SPLIT" />
-    </build>
-    <build
-        build-mode="COLD"
-        timestamp="1512452662082"
-        verifier="COLD_SWAP_REQUESTED" >
-        <artifact
-            location="D:\Habitizer\app\build\intermediates\split-apk\debug\slices\slice_0.apk"
-            type="SPLIT" />
         <artifact
             location="D:\Habitizer\app\build\outputs\apk\app-debug.apk"
             type="SPLIT_MAIN" />
     </build>
     <build
         build-mode="COLD"
-        timestamp="1512455829578"
+        timestamp="1512458041056"
         verifier="COLD_SWAP_REQUESTED" >
         <artifact
             location="D:\Habitizer\app\build\intermediates\split-apk\debug\slices\slice_4.apk"

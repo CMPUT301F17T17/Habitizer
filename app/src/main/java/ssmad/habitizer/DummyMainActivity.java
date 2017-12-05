@@ -53,8 +53,7 @@ public class DummyMainActivity extends AppCompatActivity {
     public static String currentUser;
     public static final String Habit_Index = "Habit_test3";
     public static final String Event_Index = "Event_test5";
-
-
+    public static Account currentAccount;
 
 
     @Override

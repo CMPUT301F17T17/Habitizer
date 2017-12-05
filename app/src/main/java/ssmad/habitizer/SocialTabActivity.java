@@ -66,6 +66,32 @@ public class SocialTabActivity extends AppCompatActivity {
             }
         });
 
+        requests.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String[] arr =  DummyMainActivity.currentAccount.getRequests();
+                SocialAccounts.clear();
+                for (int i = 0; i <arr.length; i++) {
+                    ElasticsearchController.GetUsersTask getUsersTask = new ElasticsearchController.GetUsersTask();
+                    getUsersTask.execute(arr[i]);
+                    Account user;
+                    try {
+                        if (!getUsersTask.get().isEmpty()) {
+                            user = getUsersTask.get().get(0);
+                            SocialAccounts.add(user);
+                        }
+                        else {
+                            DummyMainActivity.toastMe("No such a user exists!", context);
+                        }
+                    } catch (Exception e) {
+                        Log.i("Error", "Failed to get the user accounts from the async object");
+                    }
+                }
+                SocialAccountsAdapter.notifyDataSetChanged();
+
+            }
+        });
+
 
 
 
