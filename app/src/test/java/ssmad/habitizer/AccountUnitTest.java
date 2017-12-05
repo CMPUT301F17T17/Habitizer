@@ -31,7 +31,8 @@ public class AccountUnitTest {
      */
     @Test
     public void testUsernameGetAndSet() throws Exception{
-        Account account = new Account("testUsername", "testPassword");
+        byte [] testByte = {10, 10};
+        Account account = new Account("testUsername", "testPassword", testByte, "Test User", "1996-01-01", "Male");
         account.setUserName("newUsername");
         assertEquals("newUsername", account.getUserName());
 
@@ -43,7 +44,8 @@ public class AccountUnitTest {
      */
     @Test
     public void testPasswordGetAndSet() throws Exception{
-        Account account = new Account("testUsername", "testPassword");
+        byte [] testByte = {10, 10};
+        Account account = new Account("testUsername", "testPassword", testByte, "Test User", "1996-01-01", "Male");
         account.setUserPassword("newPassword");
         assertEquals("newPassword", account.getPassword());
     }
