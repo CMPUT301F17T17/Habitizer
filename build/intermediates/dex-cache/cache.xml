@@ -2,85 +2,67 @@
 <items version="2" >
 
     <item
-        is-multidex="false"
-        jar="C:\Users\Andoryu\.android\build-cache\cd589b5e61db6b57086578d337a0bb4d423f3378\output\jars\classes.jar"
-        jumboMode="false"
+        is-multidex="true"
+        jar="C:\Users\Andoryu\.android\build-cache\0432bc3ac23f95bd08a6e74d4b36ad29807d5559\output\jars\classes.jar"
+        jumboMode="true"
         optimize="true"
         revision="26.0.1"
-        sha1="70ffe00aaf049893f59d1dad57bd82992faa38ef">
-        <dex dex="D:\Habitizer\app\build\intermediates\pre-dexed\debug\classes_f03d16357f16ff2c62d56b965e41715f3dbd96c5.jar" />
+        sha1="0c835e9f3875cf245877c9b17d1c69bc98f16057">
+        <dex dex="D:\Habitizer\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_d431d6477d2fa4b95402735d5a33236550dc74fa\classes.dex" />
     </item>
     <item
-        is-multidex="false"
-        jar="C:\Users\Andoryu\.android\build-cache\bda025e595f735012a6f16500ac2edf219dea9e8\output\jars\classes.jar"
-        jumboMode="false"
+        is-multidex="true"
+        jar="C:\Users\Andoryu\.android\build-cache\5c093815ab08705ea8832e8f16562bb635f3c0b7\output\jars\classes.jar"
+        jumboMode="true"
         optimize="true"
         revision="26.0.1"
-        sha1="41f47bbcd281fdb1e42e220220ab3bfa1da591e0">
-        <dex dex="D:\Habitizer\app\build\intermediates\pre-dexed\debug\classes_38803747c21e4e853393ef159bc04b0978a3de1d.jar" />
+        sha1="143813b18381b28de1e04aae1d92fcb374a0add9">
+        <dex dex="D:\Habitizer\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_a9e990d75966edb930f005955475e26a212852ea\classes.dex" />
     </item>
     <item
-        is-multidex="false"
-        jar="C:\Users\Andoryu\.android\build-cache\6534f5c79a1ae65b9d429c52cfe24d7aff59c16d\output\jars\classes.jar"
-        jumboMode="false"
+        is-multidex="true"
+        jar="C:\Users\Andoryu\.android\build-cache\264cce1058572aa5cda8ad694a71f76a1b89414c\output\jars\classes.jar"
+        jumboMode="true"
         optimize="true"
         revision="26.0.1"
-        sha1="7c24e2e9773fb498e390ce973db382c3ddcf748e">
-        <dex dex="D:\Habitizer\app\build\intermediates\pre-dexed\debug\classes_66253d4883c05904e64d82e8ebd48ffd12ead1a5.jar" />
+        sha1="aec1bc54964a85d851c2c1b1cb7f90f7dbd755ab">
+        <dex dex="D:\Habitizer\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_2e6044e700e894a28f666af202cb8428a7e861cc\classes.dex" />
     </item>
     <item
-        is-multidex="false"
-        jar="C:\Users\Andoryu\.android\build-cache\a1ca2a39fe3f9491d7a9aecb0947ec79f3ea5729\output\jars\classes.jar"
-        jumboMode="false"
+        is-multidex="true"
+        jar="C:\Users\Andoryu\.android\build-cache\f3092cdde16f466b787a207c697916e40b157131\output\jars\classes.jar"
+        jumboMode="true"
         optimize="true"
         revision="26.0.1"
-        sha1="6b3430725095bd46b785e97bd34240826c27b4db">
-        <dex dex="D:\Habitizer\app\build\intermediates\pre-dexed\debug\classes_9c6ec6e89a032cc9843c15cad7be8d1372aab060.jar" />
+        sha1="4ec890171a97b5ab98292f131aa784e0f3792c73">
+        <dex dex="D:\Habitizer\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_84e2d5e4815fd53bdff36dbb7540551391e8ff81\classes.dex" />
     </item>
     <item
-        is-multidex="false"
-        jar="C:\Users\Andoryu\.android\build-cache\26778d91994a2552c7559744a3d5200679f8982a\output\jars\classes.jar"
-        jumboMode="false"
+        is-multidex="true"
+        jar="C:\Users\Andoryu\.android\build-cache\f81e72f488294cac2a291758aa06dca536938881\output\jars\classes.jar"
+        jumboMode="true"
         optimize="true"
         revision="26.0.1"
-        sha1="f15e20dd7bcde7c688cfda44d0c8320a5c1c24b8">
-        <dex dex="D:\Habitizer\app\build\intermediates\pre-dexed\debug\classes_39dc6d356f3922aeedf4b4a0d8aa6899470f5bf5.jar" />
+        sha1="2ab5be19bbd34bae74662ea6b2d4451314d92d97">
+        <dex dex="D:\Habitizer\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_b726a5d897b75c95a278f8058b9636f478665012\classes.dex" />
     </item>
     <item
-        is-multidex="false"
-        jar="C:\Users\Andoryu\.android\build-cache\c1fa5c0253806a134b7028969147519b58f58aed\output\jars\classes.jar"
-        jumboMode="false"
+        is-multidex="true"
+        jar="C:\Users\Andoryu\.android\build-cache\f5312afba003eb442ef71a65e359d9c00d7e4cd4\output\jars\classes.jar"
+        jumboMode="true"
         optimize="true"
         revision="26.0.1"
-        sha1="63b03eaa1aa9b9431c7638841175f9842dcbf274">
-        <dex dex="D:\Habitizer\app\build\intermediates\pre-dexed\debug\classes_69ec34e1c7b9bc877e449f99692f5d282601ffa0.jar" />
+        sha1="e11da70cff6a544a45cdc21f419802d9bb9043ac">
+        <dex dex="D:\Habitizer\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_3bb033b7de7991794994e46b622e8295e4be1c11\classes.dex" />
     </item>
     <item
-        is-multidex="false"
-        jar="C:\Users\Andoryu\.android\build-cache\02d4b755eea9656d7a0f4785f24b2aab83b0ffb9\output\jars\classes.jar"
-        jumboMode="false"
+        is-multidex="true"
+        jar="C:\Users\Andoryu\.android\build-cache\6805275fe38e3355b471dace391116ef140d2f9e\output\jars\classes.jar"
+        jumboMode="true"
         optimize="true"
         revision="26.0.1"
-        sha1="2c2f1b3f82c027e98f56bb0154de0acbcce42e6d">
-        <dex dex="D:\Habitizer\app\build\intermediates\pre-dexed\debug\classes_56b8811ae61a26b82ccb584f27f25f38d497d7b5.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\Andoryu\.android\build-cache\ece3dd6c97b2059744c06e2b8818d5eb729c1261\output\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="26.0.1"
-        sha1="fcae52a60bc07924d370b4d376116cd8f8581f54">
-        <dex dex="D:\Habitizer\app\build\intermediates\pre-dexed\debug\classes_0f9713684792bc3199260b926100ae6c919f6cf8.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\Andoryu\.android\build-cache\aef9ce8e94e145435241bca4af7e22cfdd18df85\output\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="26.0.1"
-        sha1="f2cb88e7e28736d44e7e643deb80c9af1c3662c8">
-        <dex dex="D:\Habitizer\app\build\intermediates\pre-dexed\debug\classes_a725f8da1158b5606425c13bf7cf002ecc7e0a88.jar" />
+        sha1="9819419ce8d79f3f81a0fc70f9345ac8c843af9c">
+        <dex dex="D:\Habitizer\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_69430c80cb6e891b8ccb0be2a12d0c1d751f1a7a\classes.dex" />
     </item>
     <item
         is-multidex="false"
@@ -108,6 +90,465 @@
         revision="26.0.1"
         sha1="c1b91bc7e480ab100d0397b16c93732e26fd10eb">
         <dex dex="D:\Habitizer\app\build\intermediates\pre-dexed\debug\classes_860962388755e25fd9e75864b4cf753e7897c9cf.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\Habitizer\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="3be78ebc2706b2e1fe2f12d5726887a92d6c183b">
+        <dex dex="D:\Habitizer\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run_a6aa21f8dcc96900b5b2e7b15bcfc08f5e6997b4\classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Andoryu\.android\build-cache\3027505fef034edc616d7dc49833c0104624caf8\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="e5b429c146094a612134910688d169ec08deeefb">
+        <dex dex="D:\Habitizer\app\build\intermediates\pre-dexed\debug\classes_3f3b30777fe808cd148472c564d7232622cd1bd7.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Andoryu\.android\build-cache\422258bd5ebb492cc835345417b0ec794400e333\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="02b91f8efa91dcdf5c555ee24b7f006f02cd0f8b">
+        <dex dex="D:\Habitizer\app\build\intermediates\pre-dexed\debug\classes_7a0f663592151566bf52107224bafb1ede7d61d1.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Andoryu\.android\build-cache\5bfc0223796cb347f0e3cf1d804c12a06dc4d4ab\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="92a1d5f71b0fc8938f1d3f2e6ef984b52b894b4d">
+        <dex dex="D:\Habitizer\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_72a19499a32b9fc4a295634b5922cf7ffd22ac19\classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Andoryu\.android\build-cache\3f17e59ea6cae4eaaf9a67cc12ad46c123266cf7\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="c6aa915c08cfd82780c10d4b957018bf819a48e2">
+        <dex dex="D:\Habitizer\app\build\intermediates\pre-dexed\debug\classes_01f833b6e4a54dcf3170f7b181fa0a5f6b1df847.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Andoryu\.android\build-cache\1d877a183f6f5a116d1955e006f007e725fe46bf\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="34c23b5894b4f24d566bfc33e0e25462c6436b78">
+        <dex dex="D:\Habitizer\app\build\intermediates\pre-dexed\debug\classes_248bbdd9c55950bbacb47d83d72076da0d9fce08.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Andoryu\.android\build-cache\89f3124acb48e71d8e2c03e4c6c45d503fa70a53\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="2c73e2a93e00abd240e495c1e62217e53904a3f3">
+        <dex dex="D:\Habitizer\app\build\intermediates\pre-dexed\debug\classes_c0ae69296d6f41b74bac8ca210e005b7bfc9d3cb.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Andoryu\.android\build-cache\249c632cee6b4a5ed77b9c51af2215a4fbe94bf5\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="8544f739799dd15db63927073a21312864ab0bfd">
+        <dex dex="D:\Habitizer\app\build\intermediates\pre-dexed\debug\classes_63a73b3645ad867cad611a1f0bbd40fdb8800e25.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Andoryu\.android\build-cache\300d6365e5e628b2e4be1017e7b293a3cc458493\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="764d32faf85bc6f7bd2cdcb3a70a482c1884fdd2">
+        <dex dex="D:\Habitizer\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_e7c48e82503fbcbc0bf1a71522c4caf780bafcbb\classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Andoryu\.android\build-cache\cbb61a5065c9c122e7651a1013ab5d2c4ecd81fd\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="af13a350b71b437ebf4be335d02a8f785c39b111">
+        <dex dex="D:\Habitizer\app\build\intermediates\pre-dexed\debug\classes_410590d98e3ec54677926c6cb1675891caf2db40.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Andoryu\.android\build-cache\620672a9680aca28ec73a35dbf77bda3c30e8669\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="0bffdc0bd4f7ca0e27c5bfeef39569f8da00aa26">
+        <dex dex="D:\Habitizer\app\build\intermediates\pre-dexed\debug\classes_e7af9f7cc5174afa79a4bacada86bb73b37ce578.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Andoryu\.android\build-cache\8ecb751fea2b1aa75c40a40fe481f2068d30ed22\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="a25b0b5aec89681b95d32780ad7904c1e1e4c679">
+        <dex dex="D:\Habitizer\app\build\intermediates\pre-dexed\debug\classes_09230f0e1cbc6f17cfc4bc8884b739dd65176426.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Andoryu\.android\build-cache\b762f46a10638aae0fb36d6292236b8d672e66c1\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="416fb9ee2fd6e7af0bba04b01d90cb475b1e2074">
+        <dex dex="D:\Habitizer\app\build\intermediates\pre-dexed\debug\classes_41a1c6eb4d032dfdef8e384529506b43c17ee58c.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Andoryu\.android\build-cache\c131d7fcb69194cea628d47a8ea588bcd51e474b\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="2b12b18c5518021cc71577c83d1290f8ddaa3c98">
+        <dex dex="D:\Habitizer\app\build\intermediates\pre-dexed\debug\classes_9f0fb7662267c9748ccc72119c75df7632d7bdd4.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Andoryu\.android\build-cache\b6bd2a97b091db88909fb839890bbea13f1ef9ad\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="829c6e46cb221c2102801221c648b77113743e81">
+        <dex dex="D:\Habitizer\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_e19d775000862c504aa45502a482b3bba2abbfd4\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Andoryu\.android\build-cache\224ce18edcfe3e3d6d6b7a32630c89dd3b439edc\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="d900f2a1ff098cac8befe6c023d723e9afb154be">
+        <dex dex="D:\Habitizer\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_5ae232698451ada7630844332e38030ac8328121\classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Andoryu\.android\build-cache\76e09ee727ea461cc3b8ffbc49ecf8ff092acdf8\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="c8bf878c09bf0df6ae76eb6c2df38c6a186b38b7">
+        <dex dex="D:\Habitizer\app\build\intermediates\pre-dexed\debug\classes_18bcc726422bc12e9c54e7e4007c2f3008bbd407.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Andoryu\.android\build-cache\4a5cc0df85a5d79efcaae90ded7a28747b4fffc4\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="dae0d68af4c87df40eca67069861e53b7cefaaa0">
+        <dex dex="D:\Habitizer\app\build\intermediates\pre-dexed\debug\classes_debdb0114ec95257f49263f380b4a54c498617fe.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Andoryu\.android\build-cache\e0b1728cbda1af9fa7d9d0202148ea7371c58ff3\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="76ea35b41786082af23db898ca9e0fc07cc71fb9">
+        <dex dex="D:\Habitizer\app\build\intermediates\pre-dexed\debug\classes_839c639dd771ea1501eba89fd7bbca44c3f23ca4.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Andoryu\.android\build-cache\30b114b5e3dc05aaf4ac62304d5f4326af64e9ab\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="bc156efaaee99f1ef6bf471347373a4cbb28e2a1">
+        <dex dex="D:\Habitizer\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_b7934a0000650953d1e1756935f8a2fd8e939b1a\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Andoryu\.android\build-cache\ac3fe65ea697fde3ef481816bd68bfce67202726\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="d9ea4cdaafa29ec4651d6e4715788d3fcaa7b913">
+        <dex dex="D:\Habitizer\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_796cd31386b7b34f82c05508b34e558cbfd80ac3\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Andoryu\.android\build-cache\00a361ee6525cf09856bf2152c927aea293ff7f8\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="6c58c14d15602fea2c50138c73bb107e8b832b62">
+        <dex dex="D:\Habitizer\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_3bc2225558777decf37ba952d16be7f97621a27e\classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Andoryu\.android\build-cache\759f955ce49a7d0801c9928ceab8ac65529522de\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="f5ff5e3811e8c9485fd27f9052ae4d4d23a22d9d">
+        <dex dex="D:\Habitizer\app\build\intermediates\pre-dexed\debug\classes_094a1dd6b4e285b2c6f40a0cb962fab575c9aea5.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Andoryu\.android\build-cache\f07ec3f6929218d4d07785543305181c946ec5fd\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="eea424e61a0c85b93a0e477565314a58136abaea">
+        <dex dex="D:\Habitizer\app\build\intermediates\pre-dexed\debug\classes_3edc17f7bdb7163da9e2e1794e266e62ef898f07.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Andoryu\.android\build-cache\e6a568920179f31a7c52af67c41149bde1e32fdc\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="2c379c235d7983201bb83edfc3c60bb0dafb5805">
+        <dex dex="D:\Habitizer\app\build\intermediates\pre-dexed\debug\classes_9045005cef822a24f100627be0f77b36e7824ac8.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Andoryu\.android\build-cache\1ed76ea885670556466521ce487e77dac6b91a9a\output\jars\libs\internal_impl-23.0.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="03d38bb042efe3e5ce27ba66b729a9523c36d8fe">
+        <dex dex="D:\Habitizer\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-23.0.0_5fb50fea9b4a3250da861d932462438a0fbfad25\classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Andoryu\.android\build-cache\b3221946f5743a1c35abe67a66a28a031782851f\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="057fb316bed8467398333f30926c2d5506e275b2">
+        <dex dex="D:\Habitizer\app\build\intermediates\pre-dexed\debug\classes_06903172fb8d1fae429670e3776f1c4fef3848d2.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Andoryu\.android\build-cache\891ba094ea8778452179d72f779b0e580322caa8\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="2430e711762a749feb00b3d64858ca4768251b9d">
+        <dex dex="D:\Habitizer\app\build\intermediates\pre-dexed\debug\classes_93006d671512330cd7efde94089ff6a256e07286.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Andoryu\.android\build-cache\308313e588dc6db828db673b8b66534a08ef713b\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="6ff48ef26bc539c78af4aa061cb9bad6abcbf5e8">
+        <dex dex="D:\Habitizer\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_6ce4534bf0fc1c3b3c737772b5910789f155ebc9\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Andoryu\.android\build-cache\1ed76ea885670556466521ce487e77dac6b91a9a\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="d358b3dd49a7c67844622dcbc9cf4339e13952ce">
+        <dex dex="D:\Habitizer\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_b226702d65e6b287c50297f060c73b9e46a04367\classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\Habitizer\app\src\include\jest-droid-2.0.1-SNAPSHOT.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="e1199e84d8d3907b8262330dd6976ce04d37f6de">
+        <dex dex="D:\Habitizer\app\build\intermediates\pre-dexed\debug\jest-droid-2.0.1-SNAPSHOT_96b614911cc4ea5a75d80cb610ea87f82bd4ab74.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Andoryu\.android\build-cache\d1d468c01183bd06ce235fc2324aa212baf2d8d1\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="56d68d1174b9c1e368017a850b62b12429f39757">
+        <dex dex="D:\Habitizer\app\build\intermediates\pre-dexed\debug\classes_408d28ee68ea6f4d6eb370f447b9caf184d4f667.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Andoryu\.android\build-cache\b22b6633a7fee68850d943d915507252b8104af6\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="9be5e957849eb82ad9addf9bdb2896de8bf5654b">
+        <dex dex="D:\Habitizer\app\build\intermediates\pre-dexed\debug\classes_73b9e416405c9fe52a4e087f44cec17e92d6e235.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Andoryu\.android\build-cache\653cfde7d0003f0f32d9f347fc0917023c72d5c7\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="568d5bda0b4d51f90d978ace369bb9ad024d2057">
+        <dex dex="D:\Habitizer\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_4082bd445c0e621109378f074c0ff7f3cd45060f\classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Andoryu\.android\build-cache\dee30b310453919155cb10b98c633073f8661a5c\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="5594a368622908d89c47d9a391aa2724fe046c35">
+        <dex dex="D:\Habitizer\app\build\intermediates\pre-dexed\debug\classes_c04dcc55c01678817aa6a598a245bd5c0608461a.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Andoryu\.android\build-cache\0805c46d86d6795c5c3b12815839d6fa0ad78f45\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="cd4c7c54e15d9ccbc448384fa2c4684d69ca73f0">
+        <dex dex="D:\Habitizer\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_d0a79494c1deea658c5386c405d0d52ba2e9b2d7\classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Andoryu\.android\build-cache\cd589b5e61db6b57086578d337a0bb4d423f3378\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="70ffe00aaf049893f59d1dad57bd82992faa38ef">
+        <dex dex="D:\Habitizer\app\build\intermediates\pre-dexed\debug\classes_f03d16357f16ff2c62d56b965e41715f3dbd96c5.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Andoryu\.android\build-cache\5095ec780d35bd72d6ca0a7d178f3fa5c5ea36f9\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="94d9cedd04b124aed044ac71c451a292856d854c">
+        <dex dex="D:\Habitizer\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_e372c2c1b847bcc3ca9f4d1495981572a807069f\classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Andoryu\.android\build-cache\bda025e595f735012a6f16500ac2edf219dea9e8\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="41f47bbcd281fdb1e42e220220ab3bfa1da591e0">
+        <dex dex="D:\Habitizer\app\build\intermediates\pre-dexed\debug\classes_38803747c21e4e853393ef159bc04b0978a3de1d.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Andoryu\.android\build-cache\6534f5c79a1ae65b9d429c52cfe24d7aff59c16d\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="7c24e2e9773fb498e390ce973db382c3ddcf748e">
+        <dex dex="D:\Habitizer\app\build\intermediates\pre-dexed\debug\classes_66253d4883c05904e64d82e8ebd48ffd12ead1a5.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Andoryu\.android\build-cache\c79e321311a72d528c7dc0a7dd0fb2c39630c60f\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="b3d0809a742c5f768c6aa9efc6decd5c1d6cd227">
+        <dex dex="D:\Habitizer\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_d70b020950ca07b08b48a86b201b258814b92457\classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Andoryu\.android\build-cache\a1ca2a39fe3f9491d7a9aecb0947ec79f3ea5729\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="6b3430725095bd46b785e97bd34240826c27b4db">
+        <dex dex="D:\Habitizer\app\build\intermediates\pre-dexed\debug\classes_9c6ec6e89a032cc9843c15cad7be8d1372aab060.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Andoryu\.android\build-cache\4d331477e461b41f379dc5439970bdf7bfc7e7f5\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="fe5b47e764869f1076cb9cfe12801ed2ef4e9117">
+        <dex dex="D:\Habitizer\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_6805208a7e49e8351008ef1c3aac6a1f8dccdb00\classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Andoryu\.android\build-cache\26778d91994a2552c7559744a3d5200679f8982a\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="f15e20dd7bcde7c688cfda44d0c8320a5c1c24b8">
+        <dex dex="D:\Habitizer\app\build\intermediates\pre-dexed\debug\classes_39dc6d356f3922aeedf4b4a0d8aa6899470f5bf5.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Andoryu\.android\build-cache\aa922f6a52776deed67ab20f5318ffc1a2a28675\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="604ecf403feb0084dc6d0c12f1677a490cf45e4c">
+        <dex dex="D:\Habitizer\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_519cf44f412e9dff6ec745f0f75397a85f2190f4\classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Andoryu\.android\build-cache\c1fa5c0253806a134b7028969147519b58f58aed\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="63b03eaa1aa9b9431c7638841175f9842dcbf274">
+        <dex dex="D:\Habitizer\app\build\intermediates\pre-dexed\debug\classes_69ec34e1c7b9bc877e449f99692f5d282601ffa0.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Andoryu\.android\build-cache\02d4b755eea9656d7a0f4785f24b2aab83b0ffb9\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="2c2f1b3f82c027e98f56bb0154de0acbcce42e6d">
+        <dex dex="D:\Habitizer\app\build\intermediates\pre-dexed\debug\classes_56b8811ae61a26b82ccb584f27f25f38d497d7b5.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Andoryu\.android\build-cache\587c63345f1af9966af2e9d1e2d318be32f3ae5e\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="79e298d7fed2fcada58da7032d07d34ee198a545">
+        <dex dex="D:\Habitizer\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_1976a248cd6089ba2be85893475f6b86b89c32b6\classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Andoryu\.android\build-cache\ece3dd6c97b2059744c06e2b8818d5eb729c1261\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="fcae52a60bc07924d370b4d376116cd8f8581f54">
+        <dex dex="D:\Habitizer\app\build\intermediates\pre-dexed\debug\classes_0f9713684792bc3199260b926100ae6c919f6cf8.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Andoryu\.android\build-cache\430d8abc012c1325202fb83128b6061689928b95\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="c96952c162c9f6076f44c5939982cb35491442ea">
+        <dex dex="D:\Habitizer\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_ed6a3ad5b08a79532c86187af989243d648ba077\classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Andoryu\.android\build-cache\aef9ce8e94e145435241bca4af7e22cfdd18df85\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="f2cb88e7e28736d44e7e643deb80c9af1c3662c8">
+        <dex dex="D:\Habitizer\app\build\intermediates\pre-dexed\debug\classes_a725f8da1158b5606425c13bf7cf002ecc7e0a88.jar" />
     </item>
     <item
         is-multidex="false"
@@ -138,12 +579,12 @@
     </item>
     <item
         is-multidex="true"
-        jar="D:\Habitizer\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jar="C:\Users\Andoryu\.android\build-cache\a1ec4f7a1313739002479c2459b3e58ced50f063\output\jars\classes.jar"
         jumboMode="true"
         optimize="true"
         revision="26.0.1"
-        sha1="3be78ebc2706b2e1fe2f12d5726887a92d6c183b">
-        <dex dex="D:\Habitizer\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run_a6aa21f8dcc96900b5b2e7b15bcfc08f5e6997b4\classes.dex" />
+        sha1="20e1a0f0de6276a5f36062b655f8b20f8cc00cc4">
+        <dex dex="D:\Habitizer\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_7674ccee889fbf77ba7a75496c2f60fbaff5e314\classes.dex" />
     </item>
     <item
         is-multidex="false"
@@ -155,13 +596,13 @@
         <dex dex="D:\Habitizer\app\build\intermediates\pre-dexed\debug\classes_ebbbac443ed7d7fa4004f27fd4566a589e75687c.jar" />
     </item>
     <item
-        is-multidex="false"
-        jar="C:\Users\Andoryu\.android\build-cache\3027505fef034edc616d7dc49833c0104624caf8\output\jars\classes.jar"
-        jumboMode="false"
+        is-multidex="true"
+        jar="C:\Users\Andoryu\.android\build-cache\bf6354ce3411bcabfb2ff98827b23bbc43ed1011\output\jars\classes.jar"
+        jumboMode="true"
         optimize="true"
         revision="26.0.1"
-        sha1="e5b429c146094a612134910688d169ec08deeefb">
-        <dex dex="D:\Habitizer\app\build\intermediates\pre-dexed\debug\classes_3f3b30777fe808cd148472c564d7232622cd1bd7.jar" />
+        sha1="a498fab72f8663c26fbf3d4496eb6b673b17bcae">
+        <dex dex="D:\Habitizer\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_1db5fd19f297492ce0b7dc8546aa72da78972d2b\classes.dex" />
     </item>
     <item
         is-multidex="false"
@@ -182,22 +623,13 @@
         <dex dex="D:\Habitizer\app\build\intermediates\pre-dexed\debug\classes_2f749cc7237ba262c61fdc9a9eafd656e1fd9d43.jar" />
     </item>
     <item
-        is-multidex="false"
-        jar="C:\Users\Andoryu\.android\build-cache\422258bd5ebb492cc835345417b0ec794400e333\output\jars\classes.jar"
-        jumboMode="false"
+        is-multidex="true"
+        jar="C:\Users\Andoryu\.android\build-cache\60511481276662eaffcad7a9efd50f43523be29b\output\jars\classes.jar"
+        jumboMode="true"
         optimize="true"
         revision="26.0.1"
-        sha1="02b91f8efa91dcdf5c555ee24b7f006f02cd0f8b">
-        <dex dex="D:\Habitizer\app\build\intermediates\pre-dexed\debug\classes_7a0f663592151566bf52107224bafb1ede7d61d1.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\Andoryu\.android\build-cache\3f17e59ea6cae4eaaf9a67cc12ad46c123266cf7\output\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="26.0.1"
-        sha1="c6aa915c08cfd82780c10d4b957018bf819a48e2">
-        <dex dex="D:\Habitizer\app\build\intermediates\pre-dexed\debug\classes_01f833b6e4a54dcf3170f7b181fa0a5f6b1df847.jar" />
+        sha1="8c0fc9b1ea0bac0cb31d60c8b1bf2feb0518e3a9">
+        <dex dex="D:\Habitizer\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_efd58bb921a95934ec67805f8c5e8f42752eae78\classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -218,22 +650,13 @@
         <dex dex="D:\Habitizer\app\build\intermediates\pre-dexed\debug\classes_c6a51f47c45e6d87b13c38946ccc4e8c90be6633.jar" />
     </item>
     <item
-        is-multidex="false"
-        jar="C:\Users\Andoryu\.android\build-cache\1d877a183f6f5a116d1955e006f007e725fe46bf\output\jars\classes.jar"
-        jumboMode="false"
+        is-multidex="true"
+        jar="C:\Users\Andoryu\.android\build-cache\7a27998f5bc44d9c2b838a707f3d5ad11817413d\output\jars\classes.jar"
+        jumboMode="true"
         optimize="true"
         revision="26.0.1"
-        sha1="34c23b5894b4f24d566bfc33e0e25462c6436b78">
-        <dex dex="D:\Habitizer\app\build\intermediates\pre-dexed\debug\classes_248bbdd9c55950bbacb47d83d72076da0d9fce08.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\Andoryu\.android\build-cache\89f3124acb48e71d8e2c03e4c6c45d503fa70a53\output\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="26.0.1"
-        sha1="2c73e2a93e00abd240e495c1e62217e53904a3f3">
-        <dex dex="D:\Habitizer\app\build\intermediates\pre-dexed\debug\classes_c0ae69296d6f41b74bac8ca210e005b7bfc9d3cb.jar" />
+        sha1="e6970f0554f9508c041f1f6960af15cc888c9f35">
+        <dex dex="D:\Habitizer\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_b71a984ce8c711ec59b281c6ff5b536719f69868\classes.dex" />
     </item>
     <item
         is-multidex="false"
@@ -246,24 +669,6 @@
     </item>
     <item
         is-multidex="false"
-        jar="C:\Users\Andoryu\.android\build-cache\249c632cee6b4a5ed77b9c51af2215a4fbe94bf5\output\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="26.0.1"
-        sha1="8544f739799dd15db63927073a21312864ab0bfd">
-        <dex dex="D:\Habitizer\app\build\intermediates\pre-dexed\debug\classes_63a73b3645ad867cad611a1f0bbd40fdb8800e25.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\Andoryu\.android\build-cache\cbb61a5065c9c122e7651a1013ab5d2c4ecd81fd\output\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="26.0.1"
-        sha1="af13a350b71b437ebf4be335d02a8f785c39b111">
-        <dex dex="D:\Habitizer\app\build\intermediates\pre-dexed\debug\classes_410590d98e3ec54677926c6cb1675891caf2db40.jar" />
-    </item>
-    <item
-        is-multidex="false"
         jar="C:\Users\Andoryu\.android\build-cache\93a21505e41351e8aa0b053667b70a2dc744c224\output\jars\classes.jar"
         jumboMode="false"
         optimize="true"
@@ -272,22 +677,22 @@
         <dex dex="D:\Habitizer\app\build\intermediates\pre-dexed\debug\classes_f4945bef3553312724fe1f584126878d8f0a26e4.jar" />
     </item>
     <item
-        is-multidex="false"
-        jar="C:\Users\Andoryu\.android\build-cache\620672a9680aca28ec73a35dbf77bda3c30e8669\output\jars\classes.jar"
-        jumboMode="false"
+        is-multidex="true"
+        jar="C:\Users\Andoryu\.android\build-cache\01ac750d0a008abafb3350ed174a8b9b9277ad04\output\jars\classes.jar"
+        jumboMode="true"
         optimize="true"
         revision="26.0.1"
-        sha1="0bffdc0bd4f7ca0e27c5bfeef39569f8da00aa26">
-        <dex dex="D:\Habitizer\app\build\intermediates\pre-dexed\debug\classes_e7af9f7cc5174afa79a4bacada86bb73b37ce578.jar" />
+        sha1="9919563cffd8e3732e944d3c437d4b9575a08448">
+        <dex dex="D:\Habitizer\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_1b3289c67a7bb0bb39ae2f2ea368fa67438b6c67\classes.dex" />
     </item>
     <item
-        is-multidex="false"
-        jar="C:\Users\Andoryu\.android\build-cache\8ecb751fea2b1aa75c40a40fe481f2068d30ed22\output\jars\classes.jar"
-        jumboMode="false"
+        is-multidex="true"
+        jar="C:\Users\Andoryu\.android\build-cache\d7fc4fe128c5a86de1994174720a6bc0662946a3\output\jars\classes.jar"
+        jumboMode="true"
         optimize="true"
         revision="26.0.1"
-        sha1="a25b0b5aec89681b95d32780ad7904c1e1e4c679">
-        <dex dex="D:\Habitizer\app\build\intermediates\pre-dexed\debug\classes_09230f0e1cbc6f17cfc4bc8884b739dd65176426.jar" />
+        sha1="4022261eeea0d92eb2997a68d2c1f084a16abad9">
+        <dex dex="D:\Habitizer\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_e0830a79f8fd3436cd1b22916723b0016a0a6cdf\classes.dex" />
     </item>
     <item
         is-multidex="false"
@@ -299,22 +704,40 @@
         <dex dex="D:\Habitizer\app\build\intermediates\pre-dexed\debug\classes_7b8a32ebfbfbe46ff0982752fb839cdc6df1a38d.jar" />
     </item>
     <item
-        is-multidex="false"
-        jar="C:\Users\Andoryu\.android\build-cache\b762f46a10638aae0fb36d6292236b8d672e66c1\output\jars\classes.jar"
-        jumboMode="false"
+        is-multidex="true"
+        jar="C:\Users\Andoryu\.android\build-cache\38e6693cbdd551e3310edb001780d99b3fa6bc80\output\jars\classes.jar"
+        jumboMode="true"
         optimize="true"
         revision="26.0.1"
-        sha1="416fb9ee2fd6e7af0bba04b01d90cb475b1e2074">
-        <dex dex="D:\Habitizer\app\build\intermediates\pre-dexed\debug\classes_41a1c6eb4d032dfdef8e384529506b43c17ee58c.jar" />
+        sha1="53f10fcd322a3931495d6ca2078a81f4957cdbce">
+        <dex dex="D:\Habitizer\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_f6ee00201f301665aa7094cf5de20fb22815c8bd\classes.dex" />
     </item>
     <item
-        is-multidex="false"
-        jar="C:\Users\Andoryu\.android\build-cache\c131d7fcb69194cea628d47a8ea588bcd51e474b\output\jars\classes.jar"
-        jumboMode="false"
+        is-multidex="true"
+        jar="C:\Users\Andoryu\.android\build-cache\ba8aa27a1e1282c59f6261dcecd39d66f0602901\output\jars\classes.jar"
+        jumboMode="true"
         optimize="true"
         revision="26.0.1"
-        sha1="2b12b18c5518021cc71577c83d1290f8ddaa3c98">
-        <dex dex="D:\Habitizer\app\build\intermediates\pre-dexed\debug\classes_9f0fb7662267c9748ccc72119c75df7632d7bdd4.jar" />
+        sha1="f399a2fde7888450cadcaec4974bfd169d8cce43">
+        <dex dex="D:\Habitizer\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_0d868a66a21ed97d866d816bcd0bcdb8ccbfa3e5\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Andoryu\.android\build-cache\9eee4b83f46a6e1acc91f4666b927893c0ae980d\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="a511c684ea4c2cf31a3377d51e7677cb76696e07">
+        <dex dex="D:\Habitizer\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_9d944d216ee51f962a15b743ecc95beeca9d152b\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Andoryu\.android\build-cache\fa295b295ff40dcca2f9442ca46e78c7482e89eb\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="f4fb6981392ca7680d02fd57d26d6124c141d9d9">
+        <dex dex="D:\Habitizer\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_839a8b96fb8f227e3710b3641073ab69800f25d9\classes.dex" />
     </item>
     <item
         is-multidex="false"
@@ -327,21 +750,21 @@
     </item>
     <item
         is-multidex="false"
-        jar="C:\Users\Andoryu\.android\build-cache\76e09ee727ea461cc3b8ffbc49ecf8ff092acdf8\output\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="26.0.1"
-        sha1="c8bf878c09bf0df6ae76eb6c2df38c6a186b38b7">
-        <dex dex="D:\Habitizer\app\build\intermediates\pre-dexed\debug\classes_18bcc726422bc12e9c54e7e4007c2f3008bbd407.jar" />
-    </item>
-    <item
-        is-multidex="false"
         jar="C:\Users\Andoryu\.android\build-cache\d567faffe9c7a4a79f4535997169a87eacaed47b\output\jars\classes.jar"
         jumboMode="false"
         optimize="true"
         revision="26.0.1"
         sha1="38789e20ace9ab7dbd00554bd2673ab424478d3b">
         <dex dex="D:\Habitizer\app\build\intermediates\pre-dexed\debug\classes_d22b9be758d50b95d45bc6c6785d20ac3b263336.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Andoryu\.android\build-cache\ac18b8a373462c7798c8853ad473afc3a60c287b\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="b6af089f583d547bcffc0689b2e80bc7aaa54b15">
+        <dex dex="D:\Habitizer\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_ba1c885ae43cdb64a5d4c95f74d5def5bc52e3de\classes.dex" />
     </item>
     <item
         is-multidex="false"
@@ -351,6 +774,15 @@
         revision="26.0.1"
         sha1="94ec2d7b23be9817d92905cc09124aecfc46d28c">
         <dex dex="D:\Habitizer\app\build\intermediates\pre-dexed\debug\robotium-solo-5.6.3_15574d60e5f818a3af9a7665e42f87e5281c5665.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Andoryu\.android\build-cache\fb7529157530945ca8c9b2f0eacdfdf9d28a774d\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="cf16220db9128d91a215aedc739584181d5ca6a4">
+        <dex dex="D:\Habitizer\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_93bd657b1a375030601cfe4f3caf333252b7e383\classes.dex" />
     </item>
     <item
         is-multidex="false"
@@ -363,24 +795,6 @@
     </item>
     <item
         is-multidex="false"
-        jar="C:\Users\Andoryu\.android\build-cache\4a5cc0df85a5d79efcaae90ded7a28747b4fffc4\output\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="26.0.1"
-        sha1="dae0d68af4c87df40eca67069861e53b7cefaaa0">
-        <dex dex="D:\Habitizer\app\build\intermediates\pre-dexed\debug\classes_debdb0114ec95257f49263f380b4a54c498617fe.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\Andoryu\.android\build-cache\e0b1728cbda1af9fa7d9d0202148ea7371c58ff3\output\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="26.0.1"
-        sha1="76ea35b41786082af23db898ca9e0fc07cc71fb9">
-        <dex dex="D:\Habitizer\app\build\intermediates\pre-dexed\debug\classes_839c639dd771ea1501eba89fd7bbca44c3f23ca4.jar" />
-    </item>
-    <item
-        is-multidex="false"
         jar="C:\Users\Andoryu\.android\build-cache\e53ab2c80895c9e64b0d5db40decb5201db046a2\output\jars\classes.jar"
         jumboMode="false"
         optimize="true"
@@ -389,40 +803,49 @@
         <dex dex="D:\Habitizer\app\build\intermediates\pre-dexed\debug\classes_2b3d52223774c73f0e5856029ef2330bea6cc363.jar" />
     </item>
     <item
-        is-multidex="false"
-        jar="C:\Users\Andoryu\.android\build-cache\759f955ce49a7d0801c9928ceab8ac65529522de\output\jars\classes.jar"
-        jumboMode="false"
+        is-multidex="true"
+        jar="C:\Users\Andoryu\.android\build-cache\c63d1f12fcdbab8d301fab7c073c7f115e9d3326\output\jars\classes.jar"
+        jumboMode="true"
         optimize="true"
         revision="26.0.1"
-        sha1="f5ff5e3811e8c9485fd27f9052ae4d4d23a22d9d">
-        <dex dex="D:\Habitizer\app\build\intermediates\pre-dexed\debug\classes_094a1dd6b4e285b2c6f40a0cb962fab575c9aea5.jar" />
+        sha1="fa472b7cbd3897bf6bed6068ac0b00e494987688">
+        <dex dex="D:\Habitizer\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_02bb1e0e45aa78a25b3f5a214a52699c142487f4\classes.dex" />
     </item>
     <item
-        is-multidex="false"
-        jar="C:\Users\Andoryu\.android\build-cache\f07ec3f6929218d4d07785543305181c946ec5fd\output\jars\classes.jar"
-        jumboMode="false"
+        is-multidex="true"
+        jar="C:\Users\Andoryu\.android\build-cache\82ab4f14361567ea2455915fd858e3e4064a26c4\output\jars\classes.jar"
+        jumboMode="true"
         optimize="true"
         revision="26.0.1"
-        sha1="eea424e61a0c85b93a0e477565314a58136abaea">
-        <dex dex="D:\Habitizer\app\build\intermediates\pre-dexed\debug\classes_3edc17f7bdb7163da9e2e1794e266e62ef898f07.jar" />
+        sha1="922c24fbfc4247947fcfaf2b95f295a16a8c3d17">
+        <dex dex="D:\Habitizer\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_49ddf10c89c49c3f74438e47383e64742ea52e8d\classes.dex" />
     </item>
     <item
-        is-multidex="false"
-        jar="C:\Users\Andoryu\.android\build-cache\e6a568920179f31a7c52af67c41149bde1e32fdc\output\jars\classes.jar"
-        jumboMode="false"
+        is-multidex="true"
+        jar="C:\Users\Andoryu\.android\build-cache\0267d21880120a8be8c554179136c8b6a04c9288\output\jars\classes.jar"
+        jumboMode="true"
         optimize="true"
         revision="26.0.1"
-        sha1="2c379c235d7983201bb83edfc3c60bb0dafb5805">
-        <dex dex="D:\Habitizer\app\build\intermediates\pre-dexed\debug\classes_9045005cef822a24f100627be0f77b36e7824ac8.jar" />
+        sha1="7e52b440a26498c56b4f263e215223b5451c955e">
+        <dex dex="D:\Habitizer\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_5a826ceb7c5afd22a9752cfeb37f16233f76d8a0\classes.dex" />
     </item>
     <item
-        is-multidex="false"
-        jar="C:\Users\Andoryu\.android\build-cache\b3221946f5743a1c35abe67a66a28a031782851f\output\jars\classes.jar"
-        jumboMode="false"
+        is-multidex="true"
+        jar="C:\Users\Andoryu\.android\build-cache\d42f99e9d44292bec7410de5431947d46584e579\output\jars\classes.jar"
+        jumboMode="true"
         optimize="true"
         revision="26.0.1"
-        sha1="057fb316bed8467398333f30926c2d5506e275b2">
-        <dex dex="D:\Habitizer\app\build\intermediates\pre-dexed\debug\classes_06903172fb8d1fae429670e3776f1c4fef3848d2.jar" />
+        sha1="f2774b1e02e5fbc524590311a744263c3b152d63">
+        <dex dex="D:\Habitizer\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_76c1a84e8124b5fa51e1fe9907d0b6afa7bd4d25\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Andoryu\.android\build-cache\10bb9faca17dd7fc04ca89f2a4a70b8ae6f67ab5\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="51a11c41a08f099a204e1b8dcc04f27217de50ec">
+        <dex dex="D:\Habitizer\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_034961cf9eaafc9fbf9c177fa1a320cde7062bfb\classes.dex" />
     </item>
     <item
         is-multidex="false"
@@ -432,42 +855,6 @@
         revision="26.0.1"
         sha1="43e9789bd3240271265ab30ce1be9f224843f5a8">
         <dex dex="D:\Habitizer\app\build\intermediates\pre-dexed\debug\classes_a00c0910e9212133a2cfae74e7c8745e7d280900.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\Andoryu\.android\build-cache\891ba094ea8778452179d72f779b0e580322caa8\output\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="26.0.1"
-        sha1="2430e711762a749feb00b3d64858ca4768251b9d">
-        <dex dex="D:\Habitizer\app\build\intermediates\pre-dexed\debug\classes_93006d671512330cd7efde94089ff6a256e07286.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="D:\Habitizer\app\src\include\jest-droid-2.0.1-SNAPSHOT.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="26.0.1"
-        sha1="e1199e84d8d3907b8262330dd6976ce04d37f6de">
-        <dex dex="D:\Habitizer\app\build\intermediates\pre-dexed\debug\jest-droid-2.0.1-SNAPSHOT_96b614911cc4ea5a75d80cb610ea87f82bd4ab74.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\Andoryu\.android\build-cache\d1d468c01183bd06ce235fc2324aa212baf2d8d1\output\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="26.0.1"
-        sha1="56d68d1174b9c1e368017a850b62b12429f39757">
-        <dex dex="D:\Habitizer\app\build\intermediates\pre-dexed\debug\classes_408d28ee68ea6f4d6eb370f447b9caf184d4f667.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\Andoryu\.android\build-cache\b22b6633a7fee68850d943d915507252b8104af6\output\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="26.0.1"
-        sha1="9be5e957849eb82ad9addf9bdb2896de8bf5654b">
-        <dex dex="D:\Habitizer\app\build\intermediates\pre-dexed\debug\classes_73b9e416405c9fe52a4e087f44cec17e92d6e235.jar" />
     </item>
     <item
         is-multidex="false"
@@ -497,13 +884,22 @@
         <dex dex="D:\Habitizer\app\build\intermediates\pre-dexed\debug\classes_6da2eedd7f15c0dc2640a3e30a1b0a1b2c05150d.jar" />
     </item>
     <item
-        is-multidex="false"
-        jar="C:\Users\Andoryu\.android\build-cache\dee30b310453919155cb10b98c633073f8661a5c\output\jars\classes.jar"
-        jumboMode="false"
+        is-multidex="true"
+        jar="C:\Users\Andoryu\.android\build-cache\04d261bf37460b2caf7cf295b013b048c13a5fc5\output\jars\classes.jar"
+        jumboMode="true"
         optimize="true"
         revision="26.0.1"
-        sha1="5594a368622908d89c47d9a391aa2724fe046c35">
-        <dex dex="D:\Habitizer\app\build\intermediates\pre-dexed\debug\classes_c04dcc55c01678817aa6a598a245bd5c0608461a.jar" />
+        sha1="060a7157438a0b1b0706b99c430fb3ecbc5a79a4">
+        <dex dex="D:\Habitizer\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_2bee825bb9a51520d3c75fc61ff9716dd1ccd83d\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Andoryu\.android\build-cache\e3224fbd2aae2e043b4fda403d00650d3968f00e\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="a45bc1ed812137b21dddd1cedaa3712b308f0b3f">
+        <dex dex="D:\Habitizer\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_9454f73f5ff8e9209962034f5f19cb66cc82c15e\classes.dex" />
     </item>
     <item
         is-multidex="false"
@@ -513,6 +909,15 @@
         revision="26.0.1"
         sha1="c72b1515efbd8ad652e2d63582c8234a979b1e53">
         <dex dex="D:\Habitizer\app\build\intermediates\pre-dexed\debug\classes_25559e78f7e976c4ea35c4c92e7f06e046746a31.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Andoryu\.android\build-cache\9701cc6600642ff5dc47ec06c0230907d655000b\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="b8e0372ca6dc89ac4fe22b76eeea4f68ece435b8">
+        <dex dex="D:\Habitizer\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_2897b8f96b6d9aab19fbbf86cf8d511e27d140ff\classes.dex" />
     </item>
     <item
         is-multidex="false"
@@ -547,7 +952,7 @@
         jumboMode="true"
         optimize="true"
         revision="26.0.1"
-        sha1="c738f10b1e581db584364764bebdf4fad2f99bbc">
+        sha1="a35e2735f0b98c341773fd55d1c81312ecda2279">
         <dex dex="D:\Habitizer\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_6acc301475efe6a146c38cd9cc091685c5b9cff1\classes.dex" />
     </item>
 

@@ -2,8 +2,15 @@ package ssmad.habitizer;
 
 import android.os.Parcel;
 import android.os.Parcelable;
+import android.util.Log;
 
+import com.google.gson.Gson;
+import com.google.gson.JsonObject;
+
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Date;
 
 /**
  * Created by Andoryu on 2017-11-10.
@@ -28,6 +35,58 @@ public class Account{
         this.name = name;
         this.birthday = birthday;
         this.gender = gender;
+    }
+
+    public String getJsonString() {
+        JsonObject j = new JsonObject();
+        j.addProperty("habit_id", this.getHabit_id());
+        j.addProperty("title", this.getTitle());
+        j.addProperty("comment", this.getComment());
+        if (this.hasPicture()) {
+            j.addProperty("pic", this.getPicBytes().toString());
+        }
+        if (this.hasLocation()) {
+            j.addProperty("lat", this.getLocation()[0]);
+            j.addProperty("lng", this.getLocation()[1]);
+        }
+        j.addProperty("hasPic", this.hasPicture());
+        j.addProperty("hasLoc", this.hasLocation());
+        j.addProperty("username", this.getUsername());
+
+        SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+        String dateStr = sdf.format(this.getCompletionDate());
+        j.addProperty("completionDate",dateStr);
+
+        Gson g = new Gson();
+        String s = g.toJson(j);
+        Log.d("Event.Json", s);
+        return s;
+    }
+
+    public void fromJsonObject(JsonObject job) throws ParseException {
+        Gson g = new Gson();
+        String s = g.toJson(job);
+        Log.d("HABIT.json", s);
+        JsonObject j  = job.get("_source").getAsJsonObject();
+        this.setHabit_id(j.get("habit_id").getAsString());
+        this.setComment(j.get("comment").getAsString());
+        this.setTitle(j.get("title").getAsString());
+        this.setUsername(j.get("username").getAsString());
+
+        SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+        Date d = sdf.parse(j.get("completionDate").getAsString());
+        this.setCompletionDate(d);
+
+        this.setId(job.get("_id").getAsString());
+        this.hasPic = j.get("hasPic").getAsBoolean();
+        this.hasLoc = j.get("hasLoc").getAsBoolean();
+        if(this.hasPicture()){
+            this.setPicBytes(j.get("pic").getAsString().getBytes());
+        }
+        if(this.hasLocation()){
+            double[] loc = {j.get("lat").getAsDouble(), j.get("lng").getAsDouble()};
+            this.setLocation(loc);
+        }
     }
 
     public void setUserName(String username) {

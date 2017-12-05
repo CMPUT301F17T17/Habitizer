@@ -16,7 +16,10 @@ import java.util.ArrayList;
 public class SocialTabActivity extends AppCompatActivity {
     public static ArrayList<Account> SocialAccounts = new ArrayList<>();
     public static ArrayAdapter<Account> SocialAccountsAdapter;
-
+    public static int AdapterMode = 0;
+    public static final int AdapterModeNothing = 0;
+    public static final int AdapterModeRequests = 1;
+    public static final int AdapterModeSentRequests = 2;
     @Override
     protected void onStart() {
         super.onStart();
@@ -37,7 +40,7 @@ public class SocialTabActivity extends AppCompatActivity {
         DummyMainActivity.initTabs(DummyMainActivity.VIEW_SOCIAL, this, intent);
 
         Button following = (Button) findViewById(R.id.following_btn);
-        Button follower = (Button) findViewById(R.id.follower_btn);
+        Button followers = (Button) findViewById(R.id.followers_btn);
         Button requests = (Button) findViewById(R.id.requests_btn);
         Button requests_sent = (Button) findViewById(R.id.send_requests_btn);
         Button find = (Button) findViewById(R.id.find_btn);
@@ -52,6 +55,7 @@ public class SocialTabActivity extends AppCompatActivity {
                 try {
                     if (!getUsersTask.get().isEmpty()) {
                         user = getUsersTask.get().get(0);
+                        AdapterMode = AdapterModeNothing;
                         SocialAccounts.clear();
                         SocialAccounts.add(user);
                         SocialAccountsAdapter.notifyDataSetChanged();
@@ -67,9 +71,61 @@ public class SocialTabActivity extends AppCompatActivity {
         });
 
         requests.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    String[] arr =  DummyMainActivity.currentAccount.getRequests();
+                    SocialAccounts.clear();
+                    for (int i = 0; i <arr.length; i++) {
+                        ElasticsearchController.GetUsersTask getUsersTask = new ElasticsearchController.GetUsersTask();
+                        getUsersTask.execute(arr[i]);
+                        Account user;
+                        try {
+                            if (!getUsersTask.get().isEmpty()) {
+                                AdapterMode = AdapterModeRequests;
+                                user = getUsersTask.get().get(0);
+                                SocialAccounts.add(user);
+                            }
+                            else {
+                                DummyMainActivity.toastMe("No such a user exists!", context);
+                            }
+                        } catch (Exception e) {
+                            Log.i("Error", "Failed to get the user accounts from the async object");
+                        }
+                    }
+                    SocialAccountsAdapter.notifyDataSetChanged();
+                }
+        });
+
+        requests_sent.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String[] arr =  DummyMainActivity.currentAccount.getRequests();
+                String[] arr =  DummyMainActivity.currentAccount.getSent_requests();
+                SocialAccounts.clear();
+                for (int i = 0; i <arr.length; i++) {
+                    ElasticsearchController.GetUsersTask getUsersTask = new ElasticsearchController.GetUsersTask();
+                    getUsersTask.execute(arr[i]);
+                    Account user;
+                    try {
+                        if (!getUsersTask.get().isEmpty()) {
+                            AdapterMode = AdapterModeSentRequests;
+                            user = getUsersTask.get().get(0);
+                            SocialAccounts.add(user);
+                        }
+                        else {
+                            DummyMainActivity.toastMe("No such a user exists!", context);
+                        }
+                    } catch (Exception e) {
+                        Log.i("Error", "Failed to get the user accounts from the async object");
+                    }
+                }
+                SocialAccountsAdapter.notifyDataSetChanged();
+            }
+        });
+
+        followers.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String[] arr =  DummyMainActivity.currentAccount.getFollowers();
                 SocialAccounts.clear();
                 for (int i = 0; i <arr.length; i++) {
                     ElasticsearchController.GetUsersTask getUsersTask = new ElasticsearchController.GetUsersTask();
@@ -88,10 +144,33 @@ public class SocialTabActivity extends AppCompatActivity {
                     }
                 }
                 SocialAccountsAdapter.notifyDataSetChanged();
-
             }
         });
 
+        following.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String[] arr =  DummyMainActivity.currentAccount.getFollowing();
+                SocialAccounts.clear();
+                for (int i = 0; i <arr.length; i++) {
+                    ElasticsearchController.GetUsersTask getUsersTask = new ElasticsearchController.GetUsersTask();
+                    getUsersTask.execute(arr[i]);
+                    Account user;
+                    try {
+                        if (!getUsersTask.get().isEmpty()) {
+                            user = getUsersTask.get().get(0);
+                            SocialAccounts.add(user);
+                        }
+                        else {
+                            DummyMainActivity.toastMe("No such a user exists!", context);
+                        }
+                    } catch (Exception e) {
+                        Log.i("Error", "Failed to get the user accounts from the async object");
+                    }
+                }
+                SocialAccountsAdapter.notifyDataSetChanged();
+            }
+        });
 
 
 

@@ -304,11 +304,7 @@ public class EditProfileActivity extends AppCompatActivity implements DatePicker
                     }
                 });
             }
-
-
-
         }else{
-
             findUser();
 
             onDisplayUpdate(userInfo);
@@ -317,12 +313,6 @@ public class EditProfileActivity extends AppCompatActivity implements DatePicker
                 public void onClick(View v) {
                     Intent intent = new Intent(EditProfileActivity.this, LoginActivity.class);
                     startActivityForResult(intent, DummyMainActivity.VIEW_LOGIN);
-                }
-            });
-
-            follow.setOnClickListener(new View.OnClickListener() {
-                public void onClick(View v) {
-                    followingEvent();
                 }
             });
 
@@ -434,7 +424,7 @@ public class EditProfileActivity extends AppCompatActivity implements DatePicker
         try {
             if (!getUsersTask.get().isEmpty()) {
                 userInfo = getUsersTask.get().get(0);
-                Toast.makeText(EditProfileActivity.this, userInfo.getName(), Toast.LENGTH_SHORT).show();
+                DummyMainActivity.currentAccount = userInfo;
                 return true;
             }
         } catch (Exception e) {
@@ -498,13 +488,6 @@ public class EditProfileActivity extends AppCompatActivity implements DatePicker
         addUsersTask.execute(info);
     }
 
-    public void followerEvent(){
-        //Not handling with this event for now
-    }
-
-    public void followingEvent() {
-        //Not handling with this event for now
-    }
     public static String[] addOne(String[] arr, String s){
         String[] result = Arrays.copyOf(arr, arr.length+1);
         result[arr.length] = s;

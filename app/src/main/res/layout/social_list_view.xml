@@ -24,8 +24,40 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="comment"/>
+            android:text="comment" />
 
     </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/request_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <Button
+            android:id="@+id/approve_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Approve" />
+
+        <Button
+            android:id="@+id/reject_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="reject" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/cancel_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:text="cancel"
+        android:visibility="gone" />
 
 </LinearLayout>
