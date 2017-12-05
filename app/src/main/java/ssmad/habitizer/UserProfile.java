@@ -2,6 +2,8 @@ package ssmad.habitizer;
 
 import android.graphics.Bitmap;
 
+import com.google.gson.JsonObject;
+
 /**
  * Created by Andoryu on 2017-11-11.
  */
@@ -19,6 +21,10 @@ public class UserProfile {
         this.name = name;
         this.birthday = birthday;
         this.gender = gender;
+    }
+
+    public UserProfile(JsonObject userData) {
+        //TODO;
     }
 
     public void setPortrait(byte[] portrait){
@@ -55,5 +61,13 @@ public class UserProfile {
 
     public String getGender(){
         return this.gender;
+    }
+
+    public String userId() {
+        return "";
+    }
+
+    public String getOtherInfo() {
+        return "";
     }
 }

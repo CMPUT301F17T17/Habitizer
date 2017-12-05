@@ -29,6 +29,7 @@ public class EditHabitEventActivity extends AppCompatActivity {
         ((EditText) findViewById(R.id.comment_input)).setText(habitEvent.getComment());
         ((TextView)findViewById(R.id.what_habit)).setText(habitEvent.getTitle());
         CheckBox picCheck = (CheckBox) findViewById(R.id.pic_check);
+
         if(habitEvent.hasPicture()){
             picCheck.setChecked(Boolean.TRUE);
             AddHabitEventActivity.picButtonsAreVisible = Boolean.TRUE;

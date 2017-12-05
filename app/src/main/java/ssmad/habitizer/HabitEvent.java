@@ -30,6 +30,13 @@ public class HabitEvent {
     public boolean hasLocation() {
         return hasLoc;
     }
+    public void sethasPicture(boolean b) {
+        this.hasPic = b;
+    }
+
+    public void sethasLocation(boolean b) {
+        this.hasLoc = b;
+    }
 
     public HabitEvent(String title, Date completionDate, byte[] pic, double[] location, String
             comment) {

@@ -1,5 +1,11 @@
 package ssmad.habitizer;
 
+import android.util.Log;
+
+import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
+import com.google.gson.JsonObject;
+
 import java.util.ArrayList;
 import java.util.Date;
 
@@ -11,6 +17,8 @@ public class Habit {
     private String title;
     private Date startDate;
     private String reason;
+    private String id;
+    private Boolean has_id = false;
     private int[] daysOfWeekComplete = {0,0,0,0,0,0,0};
     private int[] daysOfWeekDue = {0,0,0,0,0,0,0};
 
@@ -80,5 +88,19 @@ public class Habit {
 
     public void setEvents(ArrayList<HabitEvent> events) {
         this.events = events;
+    }
+
+    public String getJsonString() {
+        JsonObject j = new JsonObject();
+        j.addProperty("user", "admin");
+        Gson g = new Gson();
+        String s = g.toJson(j);
+        Log.d("Habit.Json", s);
+        return s;
+    }
+
+    public void setId(String id) {
+        this.id = id;
+        this.has_id = true;
     }
 }

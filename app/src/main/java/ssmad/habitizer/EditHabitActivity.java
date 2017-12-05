@@ -36,7 +36,7 @@ public class EditHabitActivity extends AppCompatActivity {
         doneButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(AddHabitActivity.habitChecksOut(EditHabitActivity.this)){
+                if(AddHabitActivity._habitChecksOut(EditHabitActivity.this)){
                     habit.setTitle(habitInput.getText().toString());
                     habit.setReason(reasonInput.getText().toString());
                     habit.setDaysOfWeekDue(AddHabitActivity.days);

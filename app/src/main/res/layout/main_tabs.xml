@@ -10,34 +10,35 @@
 
     <Button
         android:id="@+id/habits"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_weight="1"
+        android:layout_weight="2"
         android:background="@android:color/darker_gray"
         android:text="Habits"
-        android:textColor="@android:color/black"
+        android:textColor="?android:attr/detailsElementBackground"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"/>
 
     <Button
         android:id="@+id/feed"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_weight="1"
+        android:layout_weight="2"
         android:background="@android:color/darker_gray"
         android:text="Feed"
-        android:textColor="@android:color/black"
+        android:textColor="?android:attr/detailsElementBackground"
         app:layout_constraintBaseline_toBaselineOf="@+id/habit_tab_button"
-        tools:layout_editor_absoluteX="93dp" />
+        tools:layout_editor_absoluteX="93dp"/>
 
     <Button
         android:id="@+id/social"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_weight="1"
+        android:layout_weight="2"
         android:background="@android:color/darker_gray"
         android:text="Social"
-        android:textColor="@android:color/black"
+        android:textColor="?android:attr/detailsElementBackground"
         app:layout_constraintBaseline_toBaselineOf="@+id/habit_feed_button"
-        tools:layout_editor_absoluteX="186dp" />
+        tools:layout_editor_absoluteX="186dp"/>
+
 </LinearLayout>

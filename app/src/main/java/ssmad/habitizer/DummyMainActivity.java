@@ -54,10 +54,10 @@ public class DummyMainActivity extends AppCompatActivity {
         myHabitEvents = new ArrayList<>();
         myHabits = new ArrayList<>();
         myHabitDict = new HashMap<>();
-        DEBUG_addHabits();
+        //DEBUG_addHabits();
 
-        Intent intent = new Intent(DummyMainActivity.this, LoginActivity.class);
-        startActivityForResult(intent, VIEW_LOGIN);
+        Intent intent = new Intent(DummyMainActivity.this, HabitTabActivity.class);
+        startActivityForResult(intent, VIEW_HABIT);
 
     }
 

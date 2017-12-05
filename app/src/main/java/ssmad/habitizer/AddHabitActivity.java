@@ -37,7 +37,6 @@ public class AddHabitActivity extends AppCompatActivity {
 
         final TextView reasonInput = (TextView) findViewById(R.id.reason_input);
         reasonInput.setVisibility(View.VISIBLE);
-
         (findViewById(R.id.addnew)).setVisibility(View.VISIBLE);
         addButton.setVisibility(View.VISIBLE);
         setUpDays(this);
@@ -47,9 +46,18 @@ public class AddHabitActivity extends AppCompatActivity {
             public void onClick(View v) {
                 if (habitChecksOut(AddHabitActivity.this)) {
                     Date start = new Date();
+                    ElasticUtils.PostItem postHabit = new ElasticUtils.PostItem();
+
                     Habit habit = new Habit(habitInput.getText().toString(), start, reasonInput
                             .getText().toString());
                     habit.setDaysOfWeekDue(days);
+                    postHabit.execute("Habit_test", habit.getJsonString());
+                    try{
+                        String id = postHabit.get();
+                        habit.setId(id);
+                    }catch (Exception e){
+                        Log.d("ESC", "Could not update habit on first try.");
+                    }
                     DummyMainActivity.myHabits.add(habit);
                     DummyMainActivity.myHabitDict.put(habit.getTitle(), 0);
                     DummyMainActivity.toastMe("New habit added!", AddHabitActivity.this);
@@ -132,6 +140,24 @@ public class AddHabitActivity extends AppCompatActivity {
             DummyMainActivity.toastMe("Habit already exists", ctx);
 
         } else {
+            String reason = ((EditText) ctx.findViewById(R.id.reason_input)).getText().toString();
+            if (reason.length() > AddHabitActivity.MAX_REASON_LENGTH) {
+                DummyMainActivity.toastMe("Reason must be less than " + AddHabitActivity.MAX_REASON_LENGTH + " " + "chars", ctx);
+            } else {
+                return Boolean.TRUE;
+            }
+
+        }
+        return Boolean.FALSE;
+    }
+    public static boolean _habitChecksOut(Activity ctx) {
+        String title = ((EditText) ctx.findViewById(R.id.habit_input)).getText().toString();
+        if (title.isEmpty()) {
+            DummyMainActivity.toastMe("Must enter title", ctx);
+        } else if (title.length() > AddHabitActivity.MAX_TITLE_LENGTH) {
+            DummyMainActivity.toastMe("Title must be less than " + AddHabitActivity.MAX_TITLE_LENGTH + " chars",
+                    ctx);
+        }  else {
             String reason = ((EditText) ctx.findViewById(R.id.reason_input)).getText().toString();
             if (reason.length() > AddHabitActivity.MAX_REASON_LENGTH) {
                 DummyMainActivity.toastMe("Reason must be less than " + AddHabitActivity.MAX_REASON_LENGTH + " " + "chars", ctx);
