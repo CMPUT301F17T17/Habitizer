@@ -3,30 +3,30 @@
 
     <item
         is-multidex="true"
-        jar="D:\Habitizer\app\src\include\jest-droid-2.0.1-SNAPSHOT.jar"
+        jar="F:\Git\llll\Habitizer\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
         jumboMode="true"
         optimize="true"
         revision="26.0.1"
-        sha1="e1199e84d8d3907b8262330dd6976ce04d37f6de">
-        <dex dex="D:\Habitizer\app\build\intermediates\transforms\dex\debug\folders\1000\2\jest-droid-2.0.1-SNAPSHOT_96b614911cc4ea5a75d80cb610ea87f82bd4ab74\classes.dex" />
+        sha1="a81bca40596bf948c048449a022ed9851de2708c">
+        <dex dex="F:\Git\llll\Habitizer\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_1b639276d0e4397c2aa298e877e36b7a1da7237e\classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="D:\Habitizer\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jar="F:\Git\llll\Habitizer\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
         jumboMode="true"
         optimize="true"
         revision="26.0.1"
         sha1="3be78ebc2706b2e1fe2f12d5726887a92d6c183b">
-        <dex dex="D:\Habitizer\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run_a6aa21f8dcc96900b5b2e7b15bcfc08f5e6997b4\classes.dex" />
+        <dex dex="F:\Git\llll\Habitizer\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run_f65bde8935aa6b2a4631669288ecc5423c54ee42\classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="D:\Habitizer\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jar="F:\Git\llll\Habitizer\app\src\include\jest-droid-2.0.1-SNAPSHOT.jar"
         jumboMode="true"
         optimize="true"
         revision="26.0.1"
-        sha1="b736646e006537c2656520f1919ad51786c14310">
-        <dex dex="D:\Habitizer\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_6acc301475efe6a146c38cd9cc091685c5b9cff1\classes.dex" />
+        sha1="e1199e84d8d3907b8262330dd6976ce04d37f6de">
+        <dex dex="F:\Git\llll\Habitizer\app\build\intermediates\transforms\dex\debug\folders\1000\2\jest-droid-2.0.1-SNAPSHOT_3303fc778955c472ac1a801b03d48fa78baa80d2\classes.dex" />
     </item>
 
 </items>
