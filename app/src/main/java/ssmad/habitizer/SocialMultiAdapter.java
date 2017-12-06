@@ -16,9 +16,6 @@ public class SocialMultiAdapter extends ArrayAdapter<Account> {
     public static final String SOCIAL2ACCOUNT = "fromSocial";
     public static final String ACCOUNTMODE = "fromSocial_Mode";
 
-
-
-
     SocialMultiAdapter(Context context, ArrayList<Account> accounts) {
         super(context, R.layout.myfeed_list_view, accounts);
     }
@@ -96,8 +93,6 @@ public class SocialMultiAdapter extends ArrayAdapter<Account> {
                 notifyDataSetChanged();
             }
         });
-
-        //TODO save changes with elasticController
         return custom;
     }
 

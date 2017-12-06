@@ -22,7 +22,7 @@
         android:id="@+id/tabs"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_weight="1"
+        android:layout_weight="0.1"
         android:orientation="horizontal"></LinearLayout>
 
     <TextView
@@ -80,7 +80,7 @@
         android:layout_marginLeft="12dp"
         android:layout_marginRight="12dp"
         android:layout_marginTop="2dp"
-        android:layout_weight="0.25"
+        android:layout_weight="0.1"
         android:background="@android:color/white"
         android:ems="10"
         android:hint="Enter name here"
@@ -97,7 +97,7 @@
         android:layout_marginLeft="12dp"
         android:layout_marginRight="12dp"
         android:layout_marginTop="4dp"
-        android:layout_weight="0.1"
+        android:layout_weight="0.05"
         android:fontFamily="serif"
         android:text="Birthday:"
         android:textColor="@android:color/white" />
@@ -110,7 +110,7 @@
         android:layout_marginLeft="12dp"
         android:layout_marginRight="12dp"
         android:layout_marginTop="2dp"
-        android:layout_weight="0.25"
+        android:layout_weight="0.1"
         android:background="@android:color/white"
         android:clickable="true"
         android:ems="10"
@@ -129,7 +129,7 @@
         android:layout_marginLeft="12dp"
         android:layout_marginRight="12dp"
         android:layout_marginTop="4dp"
-        android:layout_weight="0.1"
+        android:layout_weight="0.05"
         android:fontFamily="serif"
         android:text="Gender:"
         android:textColor="@android:color/white" />
@@ -142,7 +142,7 @@
 
         android:layout_marginRight="12dp"
         android:layout_marginTop="2dp"
-        android:layout_weight="0.2" />
+        android:layout_weight="0.1" />
 
     <Button
         android:id="@+id/confirm_btn"
@@ -151,9 +151,9 @@
         android:layout_marginLeft="12dp"
         android:layout_marginRight="12dp"
         android:layout_marginTop="20dp"
-        android:layout_weight="0.15"
+        android:layout_weight="0.05"
         android:text="Comfirm"
-        android:visibility="gone" />
+        android:visibility="visible" />
 
     <LinearLayout
         android:id="@+id/lay_name"
@@ -236,7 +236,18 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:textSize="24sp" />
+
     </LinearLayout>
+
+    <Button
+        android:id="@+id/viewHabits_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_weight="0.1"
+        android:text="view habits"
+        android:visibility="gone" />
 
     <LinearLayout
         android:id="@+id/lay_follow"
@@ -245,14 +256,14 @@
         android:layout_marginLeft="12dp"
         android:layout_marginRight="12dp"
         android:layout_marginTop="10dp"
-        android:layout_weight="1"
+        android:layout_weight="0.15"
         android:orientation="horizontal"
         android:visibility="gone"
         android:weightSum="1">
 
         <Button
             android:id="@+id/follow_btn"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="0.15"
             android:text="SOMETEXT"

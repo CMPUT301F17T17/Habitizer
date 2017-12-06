@@ -75,6 +75,7 @@ public class EditProfileActivity extends AppCompatActivity implements DatePicker
     private TextView nameDisplay;
     private TextView birthDisplay;
     private TextView genderDisplay;
+    private Button viewHabit;
     private Button follow;
     private Button editButton;
     private Button logoutButton;
@@ -117,6 +118,7 @@ public class EditProfileActivity extends AppCompatActivity implements DatePicker
         birthDisplay = (TextView) findViewById(R.id.birth_dis);
         genderDisplay = (TextView) findViewById(R.id.gender_dis);
         follow = (Button) findViewById(R.id.follow_btn);
+        viewHabit = (Button) findViewById(R.id.viewHabits_btn);
         editButton = (Button) findViewById(R.id.edit_btn);
         logoutButton = (Button) findViewById(R.id.logout_btn);
         nameLayout = (LinearLayout) findViewById(R.id.lay_name);
@@ -286,6 +288,7 @@ public class EditProfileActivity extends AppCompatActivity implements DatePicker
 
             follow.setVisibility(View.VISIBLE);
             if (IAmFollower && !HaveSentRequest) {
+                viewHabit.setVisibility(View.VISIBLE);
                 follow.setText("Unfollow");
             } else {
                 follow.setText("Follow");
@@ -307,6 +310,17 @@ public class EditProfileActivity extends AppCompatActivity implements DatePicker
                         }
                         saveUser(userInfo);
                         saveUser(targetUserInfo);
+                        finish();
+                    }
+                });
+                //TODO 2 add view habit button
+                viewHabit.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        Intent intent = new Intent();
+                        intent.putExtra("fromProfile", true);
+                        intent.putExtra("targetUsername", targetUserInfo.getUsername());
+                        setResult(DummyMainActivity.VIEW_HABIT, intent);
                         finish();
                     }
                 });

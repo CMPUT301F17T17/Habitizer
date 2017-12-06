@@ -173,4 +173,13 @@ public class SocialTabActivity extends AppCompatActivity {
             }
         });
     }
+    //TODO 2 set result
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        if(resultCode == DummyMainActivity.VIEW_HABIT){
+            setResult(DummyMainActivity.VIEW_HABIT, data);
+            finish();
+        }
+    }
 }

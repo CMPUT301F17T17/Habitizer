@@ -70,28 +70,28 @@ public class MyHabitsAdapter extends ArrayAdapter<Habit> {
                 ViewGroup.LayoutParams.WRAP_CONTENT));
 
         daysOuter.addView(childdays);
-
-
         titleView.setText(habTitle);
         reasonView.setText(habReason);
-
-
-        add.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(getContext(), AddHabitEventActivity.class);
-                intent.putExtra(HabitTabActivity.GENERIC_REQUEST_CODE, position);
-                ((Activity) getContext()).startActivityForResult(intent, HabitTabActivity.ADDING_EVENT);
-            }
-        });
-        main.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(getContext(), ViewHabitActivity.class);
-                intent.putExtra(HabitTabActivity.GENERIC_REQUEST_CODE, position);
-                ((Activity) getContext()).startActivityForResult(intent, 0);
-            }
-        });
+        //TODO 2
+        if(!HabitTabActivity.isFromProfile){
+            add.setVisibility(View.VISIBLE);
+            add.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Intent intent = new Intent(getContext(), AddHabitEventActivity.class);
+                    intent.putExtra(HabitTabActivity.GENERIC_REQUEST_CODE, position);
+                    ((Activity) getContext()).startActivityForResult(intent, HabitTabActivity.ADDING_EVENT);
+                }
+            });
+            main.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Intent intent = new Intent(getContext(), ViewHabitActivity.class);
+                    intent.putExtra(HabitTabActivity.GENERIC_REQUEST_CODE, position);
+                    ((Activity) getContext()).startActivityForResult(intent, 0);
+                }
+            });
+        }
 
         //TODO statistic stuff
         stat.setOnClickListener(new View.OnClickListener() {
@@ -139,4 +139,5 @@ public class MyHabitsAdapter extends ArrayAdapter<Habit> {
 
         return custom;
     }
+
 }
