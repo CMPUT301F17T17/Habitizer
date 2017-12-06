@@ -16,10 +16,6 @@ import java.util.Date;
 import static android.R.color.holo_blue_light;
 import static android.R.color.white;
 
-/**
- * Created by cryst on 10/22/2017.
- */
-
 public class HabitTabActivity extends AppCompatActivity {
 
 
@@ -72,7 +68,6 @@ public class HabitTabActivity extends AppCompatActivity {
             finish();
         }
         if(requestCode == ADDING_EVENT){
-            AddHabitEventActivity._resetVars();
         }
         DummyMainActivity.myHabitsAdapter.notifyDataSetChanged();
     }

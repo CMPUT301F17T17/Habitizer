@@ -19,7 +19,9 @@ public class ViewMapActivity extends AppCompatActivity {
         setContentView(R.layout.activity_view_map);
         Button recenter= (Button) findViewById(R.id.center);
         Button nearby= (Button) findViewById(R.id.nearby);
-        AddHabitEventActivity.initMap(this, null, recenter);
+
+
+        /*AddHabitEventActivity.initMap(this, null, recenter);
         final Activity fctx = this;
         recenter.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -39,6 +41,6 @@ public class ViewMapActivity extends AppCompatActivity {
                             .title(h.getTitle()));
                 }
             }
-        });
+        });*/
     }
 }

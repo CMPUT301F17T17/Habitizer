@@ -26,6 +26,16 @@ public class HabitEvent {
     private Date completionDate;
 
     private String habit_id;
+    private String pic_id;
+
+    public String getPic_id() {
+        return pic_id;
+    }
+
+    public void setPic_id(String pic_id) {
+        this.pic_id = pic_id;
+    }
+
     private String id;
     private byte[] pic;
     private double[] location;
@@ -52,21 +62,21 @@ public class HabitEvent {
             comment) {
         this.title = title;
         this.completionDate = completionDate;
-        if(pic == null){
+        if (pic == null) {
             this.hasPic = Boolean.FALSE;
-        }else {
+        } else {
             this.hasPic = Boolean.TRUE;
             this.pic = pic;
         }
-        if(location == null){
+        if (location == null) {
             this.hasLoc = Boolean.FALSE;
-        }else {
+        } else {
             this.hasLoc = Boolean.TRUE;
             this.location = location;
         }
-        if(comment == null){
+        if (comment == null) {
             this.comment = "";
-        }else {
+        } else {
             this.comment = comment;
         }
 
@@ -78,7 +88,8 @@ public class HabitEvent {
         j.addProperty("title", this.getTitle());
         j.addProperty("comment", this.getComment());
         if (this.hasPicture()) {
-            j.addProperty("pic", this.getPicBytes().toString());
+            //j.addProperty("pic", this.getPicBytes().toString());
+            j.addProperty("picId", this.getPic_id());
         }
         if (this.hasLocation()) {
             j.addProperty("lat", this.getLocation()[0]);
@@ -90,7 +101,7 @@ public class HabitEvent {
 
         SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
         String dateStr = sdf.format(this.getCompletionDate());
-        j.addProperty("completionDate",dateStr);
+        j.addProperty("completionDate", dateStr);
 
         Gson g = new Gson();
         String s = g.toJson(j);
@@ -102,7 +113,7 @@ public class HabitEvent {
         Gson g = new Gson();
         String s = g.toJson(job);
         Log.d("HABIT.json", s);
-        JsonObject j  = job.get("_source").getAsJsonObject();
+        JsonObject j = job.get("_source").getAsJsonObject();
         this.setHabit_id(j.get("habitid").getAsString());
         this.setComment(j.get("comment").getAsString());
         this.setTitle(j.get("title").getAsString());
@@ -115,10 +126,11 @@ public class HabitEvent {
         this.setId(job.get("_id").getAsString());
         this.hasPic = j.get("hasPic").getAsBoolean();
         this.hasLoc = j.get("hasLoc").getAsBoolean();
-        if(this.hasPicture()){
-            this.setPicBytes(j.get("pic").getAsString().getBytes());
+        if (this.hasPicture()) {
+            this.setPic_id(j.get("picId").getAsString());
+            //this.setPicBytes(j.get("pic").getAsString().getBytes());
         }
-        if(this.hasLocation()){
+        if (this.hasLocation()) {
             double[] loc = {j.get("lat").getAsDouble(), j.get("lng").getAsDouble()};
             this.setLocation(loc);
         }
@@ -145,6 +157,11 @@ public class HabitEvent {
     }
 
     public void setPicBytes(byte[] pic) {
+        if(pic == null){
+            this.hasPic = false;
+        }else{
+this.hasPic = true;
+        }
         this.pic = pic;
     }
 
@@ -162,6 +179,11 @@ public class HabitEvent {
     }
 
     public void setLocation(double[] location) {
+        if(location == null){
+            this.hasLoc = false;
+        }else{
+            this.hasLoc = true;
+        }
         this.location = location;
     }
 
@@ -188,5 +210,19 @@ public class HabitEvent {
 
     public void setUsername(String username) {
         this.username = username;
+    }
+
+    public String getPictureJsonString() {
+        JsonObject j = new JsonObject();
+        j.addProperty("pic", this.getPicBytes().toString());
+
+
+        Gson g = new Gson();
+        String s = g.toJson(j);
+        return s;
+    }
+    public void setPicFromJsonObject(JsonObject job){
+        JsonObject j = job.get("_source").getAsJsonObject();
+        this.setPicBytes(j.get("pic").getAsString().getBytes());
     }
 }

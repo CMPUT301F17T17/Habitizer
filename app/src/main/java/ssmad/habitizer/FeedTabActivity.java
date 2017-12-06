@@ -99,7 +99,6 @@ public class FeedTabActivity extends AppCompatActivity {
         super.onActivityResult(requestCode, resultCode, data);
         DummyMainActivity.myHabitEventsAdapter.notifyDataSetChanged();
         if(requestCode == VIEWING){
-            AddHabitEventActivity._resetVars();
         }
     }
 
