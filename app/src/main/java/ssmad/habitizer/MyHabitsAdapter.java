@@ -1,7 +1,9 @@
 package ssmad.habitizer;
 
 import android.app.Activity;
+import android.app.AlertDialog;
 import android.content.Context;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.graphics.Color;
 import android.support.annotation.NonNull;
@@ -12,6 +14,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
@@ -47,6 +50,7 @@ public class MyHabitsAdapter extends ArrayAdapter<Habit> {
         TextView reasonView = (TextView) custom.findViewById(R.id.reason);
         Button add = (Button) custom.findViewById(R.id.add);
         LinearLayout main = (LinearLayout) custom.findViewById(R.id.main);
+        Button stat = (Button) custom.findViewById(R.id.stat_btn);
 
         LinearLayout daysOuter = (LinearLayout) custom.findViewById(R.id.days_outer);
         View childdays = inflater.inflate(R.layout.days, null);
@@ -89,6 +93,49 @@ public class MyHabitsAdapter extends ArrayAdapter<Habit> {
             }
         });
 
+        //TODO statistic stuff
+        stat.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                LayoutInflater inflater = LayoutInflater.from(getContext());
+                View dialog = inflater.inflate(R.layout.statistic, null);
+
+                AlertDialog.Builder dialog_build = new AlertDialog.Builder(getContext());
+
+                dialog_build.setView(dialog);
+                //These three variables are the values that user inputs
+                TextView show_percent = (TextView) dialog.findViewById(R.id.completePerText);
+
+                int[] real = getItem(position).getDaysOfWeekComplete();
+                int[] plan = getItem(position).getDaysOfWeekDue();
+                int complete = 0;
+                int total = 0;
+
+                //calc the percentage
+                for (int i = 0; i < 7; i++) {
+                    if (plan[i] == 1) {
+                        total += 1;
+                        if (plan[i] == real[i]){
+                            complete += 1;
+                        }
+                    }
+                }
+                if (total == 0) {
+                    show_percent.setText("No Day Set");
+                } else {
+                    show_percent.setText(String.format("%.2f%%", (double) complete / total * 100));
+                }
+                dialog_build
+                        .setTitle("Status")
+                        .setNegativeButton("Ok", new DialogInterface.OnClickListener(){
+                            public void onClick(DialogInterface dialog, int d){
+                                dialog.cancel();
+                            }
+                        });
+                final AlertDialog alertDialog = dialog_build.create();
+                alertDialog.show();
+            }
+        });
 
         return custom;
     }

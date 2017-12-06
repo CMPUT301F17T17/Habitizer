@@ -28,7 +28,6 @@ public class SocialTabActivity extends AppCompatActivity {
         SocialAccountsListView.setAdapter(SocialAccountsAdapter);
         SocialAccountsAdapter.notifyDataSetChanged();
 
-
     }
 
     @Override
@@ -133,6 +132,7 @@ public class SocialTabActivity extends AppCompatActivity {
                     Account user;
                     try {
                         if (!getUsersTask.get().isEmpty()) {
+                            AdapterMode = AdapterModeNothing;
                             user = getUsersTask.get().get(0);
                             SocialAccounts.add(user);
                         }
@@ -158,6 +158,7 @@ public class SocialTabActivity extends AppCompatActivity {
                     Account user;
                     try {
                         if (!getUsersTask.get().isEmpty()) {
+                            AdapterMode = AdapterModeNothing;
                             user = getUsersTask.get().get(0);
                             SocialAccounts.add(user);
                         }
@@ -171,8 +172,5 @@ public class SocialTabActivity extends AppCompatActivity {
                 SocialAccountsAdapter.notifyDataSetChanged();
             }
         });
-
-
-
     }
 }

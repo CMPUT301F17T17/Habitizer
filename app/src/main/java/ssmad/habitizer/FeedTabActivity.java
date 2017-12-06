@@ -12,6 +12,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ListView;
 
+import com.google.gson.Gson;
 import com.google.gson.JsonArray;
 import com.google.gson.JsonObject;
 import com.google.gson.reflect.TypeToken;
@@ -33,8 +34,15 @@ public class FeedTabActivity extends AppCompatActivity {
         DummyMainActivity.myHabitEventsAdapter = new MyFeedAdapter(FeedTabActivity.this, DummyMainActivity
                 .myHabitEvents);
         myHabitEventsListView.setAdapter(DummyMainActivity.myHabitEventsAdapter);
-        refreshFeed(null);
-        DummyMainActivity.myHabitEventsAdapter.notifyDataSetChanged();
+        //TODO change here
+        Intent intent = getIntent();
+        if (intent.getBooleanExtra("fromHabit", false)){
+            //intent.getStringExtra("currentHabitId");
+            refreshFeed2();
+        } else{
+            refreshFeed(null);
+            DummyMainActivity.myHabitEventsAdapter.notifyDataSetChanged();
+        }
 
 
     }
@@ -43,7 +51,6 @@ public class FeedTabActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_feed_tab);
         Intent intent = getIntent();
-        intent.getStringExtra("username");
         DummyMainActivity.initTabs(DummyMainActivity.VIEW_FEED, this, intent);
 
         final Button clearbtn = (Button) findViewById(R.id.clear_button);
@@ -122,9 +129,6 @@ public class FeedTabActivity extends AppCompatActivity {
                 for (int i = 0; i < jsonHabits.size(); i++){
                     HabitEvent h = new HabitEvent();
                     JsonObject job  = jsonHabits.get(i).getAsJsonObject();
-                    /* Gson g = new Gson();
-                    String s = g.toJson(job);
-                    Log.d("LOGIN.json", s);*/
                     h.fromJsonObject(job);
                     DummyMainActivity.myHabitEvents.add(h);
                 }
@@ -145,6 +149,51 @@ public class FeedTabActivity extends AppCompatActivity {
             ArrayList arr =  FileController.loadFromFile(FeedTabActivity.this, DummyMainActivity.HABITEVENTFILENAME, listType);
             if ( DummyMainActivity.myHabitEvents != null){
                 DummyMainActivity.myHabitEvents.addAll(arr);
+            }
+        }
+        DummyMainActivity.myHabitEventsAdapter.notifyDataSetChanged();
+    }
+    //TODO change here
+    private void refreshFeed2()  {
+        String habit_id = getIntent().getStringExtra("currentHabitId");
+        Type listType;
+        if(Utilities.isNetworkAvailable(FeedTabActivity.this)){
+            ElasticsearchController.GetFeedTask getHabitsArrayGetTask = new ElasticsearchController.GetFeedTask();
+            /*String query = String.format(
+                    "\"bool\":{" +
+                            "\"must\":" +
+                                "{ \"term\" :" +
+                                     "{\"habitid\": \"%s\"}" +
+                                "}", habit_id);
+            query = query + "}";*/
+            String query = String.format( " \"match\" :" +
+                                     "{\"habitid\": \"%s\"}" +
+                                "", habit_id);
+            query = query + "";
+            getHabitsArrayGetTask.execute(DummyMainActivity.Event_Index, query);
+            try{
+                JsonArray jsonHabits =  getHabitsArrayGetTask.get();
+                DummyMainActivity.myHabitEvents.clear();
+                Log.i("cnmlgb", habit_id);
+                Log.i("cnmlgb", query);
+                Gson g = new Gson();
+                Log.i("cnmlgb", g.toJson(jsonHabits));
+                for (int i = 0; i < jsonHabits.size(); i++){
+                    Log.i("cnmlgb", "passing2");
+                    HabitEvent h = new HabitEvent();
+                    JsonObject job  = jsonHabits.get(i).getAsJsonObject();
+                    h.fromJsonObject(job);
+                    DummyMainActivity.myHabitEvents.add(h);
+                }
+                Collections.sort(DummyMainActivity.myHabitEvents, new Comparator<HabitEvent>() {
+                    @Override
+                    public int compare(HabitEvent o1, HabitEvent o2) {
+                        return -o1.getCompletionDate().compareTo(o2.getCompletionDate());
+                    }
+                });
+                FileController.saveInFile(FeedTabActivity.this, DummyMainActivity.HABITEVENTFILENAME, DummyMainActivity.myHabitEvents);
+            }catch (Exception e){
+                Log.d("cnmlgb", "Adding habits events in login.");
             }
         }
         DummyMainActivity.myHabitEventsAdapter.notifyDataSetChanged();

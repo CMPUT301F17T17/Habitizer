@@ -60,7 +60,6 @@ public class ElasticsearchController {
             verifySettings();
 
             Index index = new Index.Builder(params[1]).index(INDEX).type(params[0]).build();
-
             try {
                 // where is the client?
                 DocumentResult result = client.execute(index);
@@ -171,10 +170,10 @@ public class ElasticsearchController {
             try {
                 // TODO get the results of the query
                 SearchResult result = client.execute(search);
+                Gson g = new Gson();
+                String s = g.toJson(result.getJsonObject());
+                Log.d("ESC.json", s);
                 JsonObject hits = result.getJsonObject().getAsJsonObject("hits");
-               /* Gson g = new Gson();
-                String s = g.toJson(hits);
-                Log.d("ESC.json", s);*/
                 if (result.isSucceeded()) {
                     userData = hits.getAsJsonArray("hits");
                 } else {

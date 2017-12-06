@@ -61,10 +61,16 @@ public class HabitTabActivity extends AppCompatActivity {
                 startActivityForResult(intent, 0);
             }
         });
+
+        //TODO button statitic
     }
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
+        if(data != null && data.getBooleanExtra("fromHabit", false)){
+            setResult(DummyMainActivity.VIEW_FEED, data);
+            finish();
+        }
         if(requestCode == ADDING_EVENT){
             AddHabitEventActivity._resetVars();
         }

@@ -27,18 +27,29 @@ import java.util.ArrayList;
 
 
 public class LoginActivity extends AppCompatActivity {
-    public static final String FILENAME= "account.sav";
+    public static final String FILENAME= "account2.sav";
     private EditText usernameText;
     private EditText passwordText;
     private Button loginButton;
     private Button signupButton;
-    //private ArrayList<Account> accountList = new ArrayList<Account>();
+    private ArrayList<Account> accountList = null;
 
     public static final int SIGNUP = 1212;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        Type listType = new TypeToken<ArrayList<Account>>(){}.getType();
+        accountList = FileController.loadFromFile(this, FILENAME, listType);
+        if (accountList != null && accountList.size() == 1) {
+            Account a = accountList.get(0);
+            Intent intent = new Intent();
+            intent.putExtra("username", a.getUserName());
+            DummyMainActivity.currentUser = a.getUserName();
+            postLogin(a.getUserName());
+            setResult(DummyMainActivity.VIEW_EDIT_PROFILE, intent);
+            finish();
+        }
         setContentView(R.layout.activity_login);
 
         usernameText = (EditText) findViewById(R.id.username_input);
@@ -59,6 +70,15 @@ public class LoginActivity extends AppCompatActivity {
                     Intent intent = new Intent();
                     intent.putExtra("username", username);
                     DummyMainActivity.currentUser = username;
+                    Account a = EditProfileActivity.findUser(username);
+                    if (accountList == null) {
+                        accountList = new ArrayList<Account>();
+                        accountList.add(a);
+                    } else {
+                        accountList.clear();
+                        accountList.add(a);
+                    }
+                    FileController.saveInFile(LoginActivity.this, FILENAME, accountList);
                     postLogin(username);
                     setResult(DummyMainActivity.VIEW_EDIT_PROFILE, intent);
                     finish();

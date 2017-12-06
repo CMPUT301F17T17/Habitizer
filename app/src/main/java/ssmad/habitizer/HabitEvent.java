@@ -74,7 +74,7 @@ public class HabitEvent {
 
     public String getJsonString() {
         JsonObject j = new JsonObject();
-        j.addProperty("habit_id", this.getHabit_id());
+        j.addProperty("habitid", this.getHabit_id());
         j.addProperty("title", this.getTitle());
         j.addProperty("comment", this.getComment());
         if (this.hasPicture()) {
@@ -103,7 +103,7 @@ public class HabitEvent {
         String s = g.toJson(job);
         Log.d("HABIT.json", s);
         JsonObject j  = job.get("_source").getAsJsonObject();
-        this.setHabit_id(j.get("habit_id").getAsString());
+        this.setHabit_id(j.get("habitid").getAsString());
         this.setComment(j.get("comment").getAsString());
         this.setTitle(j.get("title").getAsString());
         this.setUsername(j.get("username").getAsString());

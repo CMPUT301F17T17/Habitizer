@@ -952,7 +952,7 @@
         jumboMode="true"
         optimize="true"
         revision="26.0.1"
-        sha1="a35e2735f0b98c341773fd55d1c81312ecda2279">
+        sha1="5f9f60031d063dad24c4e01a252142a98687d853">
         <dex dex="D:\Habitizer\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_6acc301475efe6a146c38cd9cc091685c5b9cff1\classes.dex" />
     </item>
 

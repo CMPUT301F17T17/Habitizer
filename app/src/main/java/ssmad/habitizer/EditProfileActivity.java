@@ -126,7 +126,6 @@ public class EditProfileActivity extends AppCompatActivity implements DatePicker
 
 
        // final int pos = findUserProfile();
-
         if (fromSignup){ //
             onEditEvent(); //create profile when sign up or edit profile
         } else{
@@ -136,7 +135,14 @@ public class EditProfileActivity extends AppCompatActivity implements DatePicker
     }
 
     private void onEditEvent(){
-        final Boolean find = findUser();
+        Account user = findUser(getIntent().getStringExtra("username"));
+        final Boolean find;
+        if (user == null){
+            find = false;
+        } else {
+            find = true;
+        }
+
         if (find){
             nameText.setText(userInfo.getName());
             birthdayText.setText(userInfo.getBirthday());
@@ -264,10 +270,11 @@ public class EditProfileActivity extends AppCompatActivity implements DatePicker
 
     private void onDisplayEvent(){
         Intent intent = getIntent();
-        if(intent.hasExtra(SocialMultiAdapter.SOCIAL2ACCOUNT)){
-            final int position = intent.getIntExtra(SocialMultiAdapter.SOCIAL2ACCOUNT,0);
-
+        if(intent.hasExtra(SocialMultiAdapter.SOCIAL2ACCOUNT)) {
+            final int position = intent.getIntExtra(SocialMultiAdapter.SOCIAL2ACCOUNT, 0);
             final Account targetUserInfo = SocialTabActivity.SocialAccounts.get(position);
+            Log.i("cnmlgb", "why goes here");
+
             onDisplayUpdate(targetUserInfo);
 
             editButton.setVisibility(View.GONE);
@@ -278,25 +285,25 @@ public class EditProfileActivity extends AppCompatActivity implements DatePicker
             Boolean HaveSentRequest = Arrays.asList(targetUserInfo.getRequests()).contains(userInfo.getUsername());
 
             follow.setVisibility(View.VISIBLE);
-            if(IAmFollower && !HaveSentRequest){
+            if (IAmFollower && !HaveSentRequest) {
                 follow.setText("Unfollow");
             } else {
                 follow.setText("Follow");
             }
-            if(HaveSentRequest){
+            if (HaveSentRequest) {
                 follow.setAlpha(0.5f);
-            }else{
+            } else {
                 final Boolean tofollow = IAmFollower;
                 follow.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
                         Account targetUserInfo = SocialTabActivity.SocialAccounts.get(position);
-                        if (tofollow){
+                        if (!tofollow) {
                             targetUserInfo.setRequests(addOne(targetUserInfo.getRequests(), userInfo.getUsername()));
                             userInfo.setSent_requests(addOne(userInfo.getSent_requests(), targetUserInfo.getUsername()));
-                        }else {
-                            targetUserInfo.setFollowers(addOne(targetUserInfo.getFollowers(), userInfo.getUsername()));
-                            userInfo.setFollowing(addOne(userInfo.getFollowing(), targetUserInfo.getUsername()));
+                        } else { //want to unfollow
+                            targetUserInfo.setFollowers(minusOne(targetUserInfo.getFollowers(), userInfo.getUsername()));
+                            userInfo.setFollowing(minusOne(userInfo.getFollowing(), targetUserInfo.getUsername()));
                         }
                         saveUser(userInfo);
                         saveUser(targetUserInfo);
@@ -304,15 +311,17 @@ public class EditProfileActivity extends AppCompatActivity implements DatePicker
                     }
                 });
             }
-        }else{
-            findUser();
-
+        }else {
+            findUser(getIntent().getStringExtra("username"));
             onDisplayUpdate(userInfo);
-
             logoutButton.setOnClickListener(new View.OnClickListener() {
                 public void onClick(View v) {
-                    Intent intent = new Intent(EditProfileActivity.this, LoginActivity.class);
-                    startActivityForResult(intent, DummyMainActivity.VIEW_LOGIN);
+                    //Intent intent = getIntent();
+
+                    ArrayList<Account> accountArrayList = new ArrayList<Account>();
+                    FileController.saveInFile(EditProfileActivity.this, LoginActivity.FILENAME, accountArrayList);
+                    setResult(DummyMainActivity.VIEW_LOGIN, new Intent());
+                    finish();
                 }
             });
 
@@ -322,7 +331,7 @@ public class EditProfileActivity extends AppCompatActivity implements DatePicker
                     onEditEvent();
                 }
             });
-        }
+            }
     }
 
     private void onDisplayUpdate(Account userInfo) {
@@ -417,20 +426,21 @@ public class EditProfileActivity extends AppCompatActivity implements DatePicker
         imageButton.setImageBitmap(compressedPic);
     }
 
-    public Boolean findUser() {
-        currentUser = getIntent().getStringExtra("username");
+    public static Account findUser(String username) {
+        currentUser = username;
+
         ElasticsearchController.GetUsersTask getUsersTask = new ElasticsearchController.GetUsersTask();
         getUsersTask.execute(currentUser);
         try {
             if (!getUsersTask.get().isEmpty()) {
                 userInfo = getUsersTask.get().get(0);
                 DummyMainActivity.currentAccount = userInfo;
-                return true;
+                return userInfo;
             }
         } catch (Exception e) {
             Log.i("Error", "Failed to get the user accounts from the async object");
         }
-        return false;
+        return null;
     }
 
     public Boolean checkInput() {
@@ -492,5 +502,12 @@ public class EditProfileActivity extends AppCompatActivity implements DatePicker
         String[] result = Arrays.copyOf(arr, arr.length+1);
         result[arr.length] = s;
         return result;
+    }
+
+    public static String[] minusOne(String[] arr, String s){
+        List<String> result = new ArrayList<String>(Arrays.asList(arr));
+        result.remove(s);
+        String[] r = Arrays.copyOf(result.toArray(), result.size(), String[].class);
+        return r;
     }
 }

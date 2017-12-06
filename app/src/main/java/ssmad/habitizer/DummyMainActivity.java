@@ -48,11 +48,12 @@ public class DummyMainActivity extends AppCompatActivity {
     public static Activity currentActivity;
     private static Context thisContext;
     public static final String HABITEVENTFILENAME = "local_events.sav";
-
+    public static final String Account_Index = "User_test1";
+    public static final String Pic_Index = "pic_test1";
     public static final String HABITFILENAME = "local_habits.sav";
     public static String currentUser;
     public static final String Habit_Index = "Habit_test3";
-    public static final String Event_Index = "Event_test5";
+    public static final String Event_Index = "Event_test7";
     public static Account currentAccount;
 
 
@@ -91,6 +92,11 @@ public class DummyMainActivity extends AppCompatActivity {
             }
         }else{
             switch (resultCode) {
+                case VIEW_LOGIN:
+                    intent = new Intent(this, LoginActivity.class);
+                    intent.replaceExtras(data);
+                    startActivityForResult(intent, VIEW_LOGIN);
+                    break;
                 case VIEW_FEED:
                     intent = new Intent(this, FeedTabActivity.class);
                     intent.replaceExtras(data);

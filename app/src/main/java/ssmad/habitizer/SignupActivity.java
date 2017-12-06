@@ -69,49 +69,6 @@ public class SignupActivity extends AppCompatActivity {
                 }
         }   });
     }
-    /**
-    private void loadFromFile() {
-        try {
-            FileInputStream fis = openFileInput(FILENAME);
-            BufferedReader in = new BufferedReader(new InputStreamReader(fis));
-            Gson gson = new Gson();
-            //Code taken from http://stackoverflow.com/questions/12384064/gson-convert-from-json-to-a-typed-arraylistt Sept.22,2016
-            Type listType = new TypeToken<ArrayList<Account>>(){}.getType();
-            accountList = gson.fromJson(in, listType);
-        } catch (FileNotFoundException e) {
-            // TODO Auto-generated catch block
-            accountList = new ArrayList<Account>();
-        } catch (IOException e) {
-            // TODO Auto-generated catch block
-            throw new RuntimeException();
-        }
-    }
-
-    public static void saveInFile(Context context) {
-        try {
-            FileOutputStream fos = context.openFileOutput(FILENAME, Context.MODE_PRIVATE);
-            OutputStreamWriter writer = new OutputStreamWriter(fos);
-            Gson gson = new Gson();
-            gson.toJson(accountList, writer);
-            writer.flush();
-            fos.close();
-        } catch (FileNotFoundException e) {
-            // TODO Auto-generated catch block
-            throw new RuntimeException();
-        } catch (IOException e) {
-            // TODO Auto-generated catch block
-            throw new RuntimeException();
-        }
-    }
-
-    private Boolean find(String username){
-        for(int i=0; i < accountList.size(); i++){
-            if(accountList.get(i).getUserName().equals(username)){
-                return true;
-            }
-        }
-        return false;
-    }**/
 
     private Boolean find(String username){
         ElasticsearchController.GetUsersTask getUsersTask = new ElasticsearchController.GetUsersTask();

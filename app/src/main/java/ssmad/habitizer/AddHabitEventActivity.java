@@ -45,6 +45,7 @@ import com.google.android.gms.maps.model.LatLng;
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
+import java.util.Calendar;
 import java.util.Date;
 
 import static java.security.AccessController.getContext;
@@ -302,7 +303,8 @@ public class AddHabitEventActivity extends AppCompatActivity {
                 (HabitTabActivity.GENERIC_REQUEST_CODE));
         if (habitEventCheckFix(this)) {
             byte[] fpb = picIsVisible ? picBytes : null;
-            HabitEvent habitEvent = new HabitEvent(habit.getTitle(), new Date(), fpb, location,
+            Date completeDate = new Date();
+            HabitEvent habitEvent = new HabitEvent(habit.getTitle(), completeDate, fpb, location,
                     comment);
             ElasticsearchController.AddItemsTask postHabitEvent = new ElasticsearchController.AddItemsTask();
 
@@ -317,9 +319,26 @@ public class AddHabitEventActivity extends AppCompatActivity {
             }catch (Exception e){
                 Log.d("ESC", "Could not update habit event on first try.");
             }
+
+            //TODO save completion date
+            Calendar calendar = Calendar.getInstance();
+            calendar.setTime(completeDate);
+            int[] daysCompleteList = habit.getDaysOfWeekComplete();
+            int day = calendar.get(Calendar.DAY_OF_WEEK) -1;
+            if (day == 0){
+                day = 7;
+            }
+            daysCompleteList[day - 1] = 1;
+            habit.setDaysOfWeekComplete(daysCompleteList);
+
+            ElasticsearchController.UpdateItemsTask updateHabitTask = new ElasticsearchController.UpdateItemsTask();
+            updateHabitTask.execute(DummyMainActivity.Habit_Index, habit.getId(), habit.getJsonString());
+
+
             DummyMainActivity.myHabitEvents.add(habitEvent);
             FileController.saveInFile(AddHabitEventActivity.this, DummyMainActivity.HABITEVENTFILENAME, DummyMainActivity.myHabitEvents);
-
+            //TODO change
+            setResult(0 ,new Intent());
             finish();
         }
 
@@ -343,6 +362,8 @@ public class AddHabitEventActivity extends AppCompatActivity {
     }
 
     public void cancelEvent() {
+        //TODO change
+        setResult(0 ,new Intent());
         finish();
     }
 

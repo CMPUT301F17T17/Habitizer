@@ -14,6 +14,7 @@ public class ViewHabitActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.add_habit);
+        Button eventButton = (Button) findViewById(R.id.events_btn);
         Button editButton = (Button) findViewById(R.id.edit_button);
         Button doneButton = (Button) findViewById(R.id.done_button);
         final int position = getIntent().getExtras().getInt(HabitTabActivity.GENERIC_REQUEST_CODE);
@@ -29,6 +30,18 @@ public class ViewHabitActivity extends AppCompatActivity {
         doneButton.setVisibility(View.VISIBLE);
         Button deleteButton = (Button)  findViewById(R.id.delete);
         deleteButton.setVisibility(View.VISIBLE);
+        eventButton.setVisibility(View.VISIBLE);
+        eventButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String id = DummyMainActivity.myHabits.get(position).getId();
+                Intent intent = new Intent();
+                intent.putExtra("fromHabit", true);
+                intent.putExtra("currentHabitId", id);
+                setResult(0, intent);
+                finish();
+            }
+        });
         deleteButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -66,6 +79,7 @@ public class ViewHabitActivity extends AppCompatActivity {
 
             }
         });
+
     }
 
     @Override
