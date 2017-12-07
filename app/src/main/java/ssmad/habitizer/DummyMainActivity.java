@@ -67,8 +67,8 @@ public class DummyMainActivity extends AppCompatActivity {
     public static final String Pic_Index = "pic_test1";
     public static final String HABITFILENAME = "local_habits.sav";
     public static String currentUser;
-    public static final String Habit_Index = "Habit_test";
-    public static final String Event_Index = "Event_test";
+    public static final String Habit_Index = "Habit_test99";
+    public static final String Event_Index = "Event_test99";
     public static Account currentAccount;
 
     /**

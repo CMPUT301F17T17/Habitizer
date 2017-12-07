@@ -89,6 +89,8 @@ public class EditHabitEventActivity extends AppCompatActivity {
         (findViewById(R.id.cancel)).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
+                setResult(123, new Intent().putExtra("event_position", position));
                 finish();
             }
         });

@@ -46,7 +46,7 @@ public class ElasticsearchController {
     private static JestDroidClient client;
 
     private static final String INDEX = "cmput301f17t17";
-    private static final String USER_TYPE = "user";
+    private static final String USER_TYPE = "user99";
 
     /**
      * Adds User

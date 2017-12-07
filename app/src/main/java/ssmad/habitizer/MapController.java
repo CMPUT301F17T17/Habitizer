@@ -148,14 +148,19 @@ public class MapController {
             locc = getCurrentLocation(fctx);
         }
         if(code == AddHabitEventActivity.EVENT_PERMISSION_CHECK){
-            double[] d = {locc.getLatitude(), locc.getLongitude()};
-            AddHabitEventActivity.setLocation(d);
         }
 
         float zoom = 15.0f;
-        LatLng ll = new LatLng(locc.getLatitude(), locc.getLongitude());
-        CameraUpdate update = CameraUpdateFactory.newLatLngZoom(ll, zoom);
-        gmap.moveCamera(update);
+        if(locc == null){
+            DummyMainActivity.toastMe("Could not get location", fctx);
+        }else{
+            double[] d = {locc.getLatitude(), locc.getLongitude()};
+            AddHabitEventActivity.setLocation(d);
+
+            LatLng ll = new LatLng(locc.getLatitude(), locc.getLongitude());
+            CameraUpdate update = CameraUpdateFactory.newLatLngZoom(ll, zoom);
+            gmap.moveCamera(update);
+        }
     }
 
     //3. do this at the end
