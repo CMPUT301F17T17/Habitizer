@@ -34,6 +34,7 @@ import static android.R.color.white;
 
 
 public class DummyMainActivity extends AppCompatActivity {
+    public static final int EVENT_DELETED = 102;
     public static ArrayList<HabitEvent> myHabitEvents;
     public static ArrayList<Habit> myHabits;
     public static ArrayAdapter<Habit> myHabitsAdapter;
@@ -53,7 +54,7 @@ public class DummyMainActivity extends AppCompatActivity {
     public static final String HABITFILENAME = "local_habits.sav";
     public static String currentUser;
     public static final String Habit_Index = "Habit_test3";
-    public static final String Event_Index = "Event_test7";
+    public static final String Event_Index = "Event_test11";
     public static Account currentAccount;
 
 
@@ -63,6 +64,8 @@ public class DummyMainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_dummy_main);
         thisContext = this;
         myHabitEvents = new ArrayList<>();
+        myHabitEventsAdapter = new MyFeedAdapter(this, DummyMainActivity
+                .myHabitEvents);
         myHabitDict = new HashMap<>();
         // DEBUG_addHabits();
 
@@ -215,7 +218,7 @@ public class DummyMainActivity extends AppCompatActivity {
                 ViewGroup.LayoutParams.WRAP_CONTENT));
 
         final Intent intent = new Intent();
-        intent.replaceExtras(data);
+        //intent.replaceExtras(data);
         // init buttons
         if (bHabits != toChange) {
             bHabits.setOnClickListener(new View.OnClickListener() {

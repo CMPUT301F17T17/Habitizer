@@ -5,6 +5,7 @@ import android.location.Location;
 import android.util.Log;
 
 import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
 import com.google.gson.JsonArray;
 import com.google.gson.JsonObject;
 
@@ -88,8 +89,12 @@ public class HabitEvent {
         j.addProperty("title", this.getTitle());
         j.addProperty("comment", this.getComment());
         if (this.hasPicture()) {
-            //j.addProperty("pic", this.getPicBytes().toString());
-            j.addProperty("picId", this.getPic_id());
+            JsonArray picarr = new JsonArray();
+            for (int i = 0; i < this.pic.length; i++) {
+                picarr.add(this.pic[i]);
+            }
+            j.add("pic", picarr);
+            //j.addProperty("picId", this.getPic_id());
         }
         if (this.hasLocation()) {
             j.addProperty("lat", this.getLocation()[0]);
@@ -110,7 +115,7 @@ public class HabitEvent {
     }
 
     public void fromJsonObject(JsonObject job) throws ParseException {
-        Gson g = new Gson();
+        Gson g = new GsonBuilder().setPrettyPrinting().create();
         String s = g.toJson(job);
         Log.d("HABIT.json", s);
         JsonObject j = job.get("_source").getAsJsonObject();
@@ -123,12 +128,18 @@ public class HabitEvent {
         Date d = sdf.parse(j.get("completionDate").getAsString());
         this.setCompletionDate(d);
 
+
         this.setId(job.get("_id").getAsString());
         this.hasPic = j.get("hasPic").getAsBoolean();
         this.hasLoc = j.get("hasLoc").getAsBoolean();
         if (this.hasPicture()) {
-            this.setPic_id(j.get("picId").getAsString());
-            //this.setPicBytes(j.get("pic").getAsString().getBytes());
+            //this.setPic_id(j.get("picId").getAsString());
+            JsonArray picarr = j.get("pic").getAsJsonArray();
+            byte[] b = new byte[picarr.size()];
+            for (int i = 0; i < b.length; i++) {
+                b[i] = picarr.get(i).getAsByte();
+            }
+            this.setPicBytes(b);
         }
         if (this.hasLocation()) {
             double[] loc = {j.get("lat").getAsDouble(), j.get("lng").getAsDouble()};
@@ -160,7 +171,7 @@ public class HabitEvent {
         if(pic == null){
             this.hasPic = false;
         }else{
-this.hasPic = true;
+            this.hasPic = true;
         }
         this.pic = pic;
     }

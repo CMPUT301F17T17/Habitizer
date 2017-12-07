@@ -2,12 +2,14 @@ package ssmad.habitizer;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.content.pm.PackageManager;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.location.Location;
 import android.net.Uri;
 import android.os.Bundle;
 import android.provider.MediaStore;
+import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
@@ -46,6 +48,7 @@ public class AddHabitEventActivity extends AppCompatActivity {
     //public static final int MY_PERMISSIONS_REQUEST_LOCATION = 8;
     public static final int PIC_MAX_SIZE = 65536;
     public static final int COMMENT_MAX_SIZE = 30;
+    public static final int EVENT_PERMISSION_CHECK = 8;
     public static boolean picIsVisible = Boolean.FALSE;
     /*public static boolean picButtonsAreVisible = Boolean.FALSE;
     public static boolean mapIsVisible = Boolean.FALSE;
@@ -119,32 +122,24 @@ public class AddHabitEventActivity extends AppCompatActivity {
             }
 
 
-
-
         });
+        location = null;
+
         locationCheck.setOnClickListener(new View.OnClickListener() {
 
 
             @Override
             public void onClick(View v) {
                 CheckBox thisBox = (CheckBox) v;
-                location = null;
                 LinearLayout mapToggle = (LinearLayout) fctx.findViewById(R.id.map_toggle);
                 if (thisBox.isChecked()) {
-                    Boolean IHaveMapPermission = MapController.checkMapPermission(fctx);
-                    if (IHaveMapPermission){
-                        mapToggle.setVisibility(View.VISIBLE);
-                        Location loc = MapController.getCurrentLocation(fctx);
-                        double[] d = {loc.getLatitude(), loc.getLongitude()};
-                        location = d.clone();
-                        MapController.initMap(fctx, loc);
-                    }else{
-                        MapController.askForMapPermission(fctx);
-                        thisBox.setChecked(false);
-                        mapToggle.setVisibility(View.GONE);
-                    }
+                    mapToggle.setVisibility(View.VISIBLE);
+
+                    MapController.initMap2(fctx, null, EVENT_PERMISSION_CHECK);
+
                 } else {
                     mapToggle.setVisibility(View.GONE);
+                    location = null;
                 }
             }
         });
@@ -172,6 +167,9 @@ public class AddHabitEventActivity extends AppCompatActivity {
         });
     }
 
+    public static void setLocation(double[] loc){
+        location = loc;
+    }
 
 
     public static Bitmap getPicFromBytes(byte[] bytes) {
@@ -246,7 +244,6 @@ public class AddHabitEventActivity extends AppCompatActivity {
     }
 
 
-
     public void addEvent() {
         int position = getIntent()
                 .getExtras()
@@ -263,56 +260,33 @@ public class AddHabitEventActivity extends AppCompatActivity {
 
             String title = habit.getTitle();
             Date completeDate = new Date();
-            HabitEvent habitEvent = new HabitEvent(title, completeDate, picBytes, location,
-                    comment);
+            HabitEvent habitEvent = new HabitEvent(title, completeDate, picBytes, location, comment);
             habitEvent.setHabit_id(habit.getId());
             habitEvent.setUsername(habit.getUsername());
             postHabitEvent.execute(DummyMainActivity.Event_Index, habitEvent.getJsonString());
-            if(habitEvent.hasPicture()){
-                ElasticsearchController.AddItemsTask postHabitEventPicture =
-                        new ElasticsearchController.AddItemsTask();
-                postHabitEventPicture.execute(DummyMainActivity.Pic_Index,habitEvent.getPictureJsonString
-                        ());
-                try{
 
-                    String id = postHabitEventPicture.get();
-                    if(id == null){
-                        throw new Exception("lol");
-                    }
-                    habitEvent.setPic_id(id);
-                }catch (Exception e){
-                    Log.d("ESC", "Could not update habit event picture on first try.");
-                    String[] s = {
-                            DummyMainActivity.Pic_Index,
-                            String.valueOf(SyncController.TASK_ADD),
-                            habitEvent.getPictureJsonString()
-                    };
-                    SyncController.addToSync(s,habitEvent);
-
-                }
-            }
-            try{
+            try {
                 String id = postHabitEvent.get();
-                if(id == null){
+                if (id == null) {
                     throw new Exception("lol");
                 }
                 habitEvent.setId(id);
-            }catch (Exception e){
+            } catch (Exception e) {
                 Log.d("ESC", "Could not update habit event on first try.");
                 String[] s = {
                         DummyMainActivity.Event_Index,
                         String.valueOf(SyncController.TASK_ADD),
                         habitEvent.getJsonString()
                 };
-                SyncController.addToSync(s,habitEvent);
+                SyncController.addToSync(s, habitEvent);
             }
 
             // Andrew stuff
-			Calendar calendar = Calendar.getInstance();
+            Calendar calendar = Calendar.getInstance();
             calendar.setTime(completeDate);
             int[] daysCompleteList = habit.getDaysOfWeekComplete();
-            int day = calendar.get(Calendar.DAY_OF_WEEK) -1;
-            if (day == 0){
+            int day = calendar.get(Calendar.DAY_OF_WEEK) - 1;
+            if (day == 0) {
                 day = 7;
             }
             daysCompleteList[day - 1] = 1;
@@ -323,17 +297,47 @@ public class AddHabitEventActivity extends AppCompatActivity {
             //
 
 
-            DummyMainActivity.myHabitEvents.add(habitEvent);
+            //DummyMainActivity.myHabitEvents.add(habitEvent);
             // TODO fix this for offline
-            FileController.saveInFile(AddHabitEventActivity.this, DummyMainActivity.HABITEVENTFILENAME, DummyMainActivity.myHabitEvents);
-			//setResult(0 ,new Intent());
+            //FileController.saveInFile(AddHabitEventActivity.this, DummyMainActivity.HABITEVENTFILENAME, DummyMainActivity.myHabitEvents);
+            //setResult(0 ,new Intent());
             finish();
         }
 
     }
 
     public void cancelEvent() {
-		//setResult(0 ,new Intent());
+        //setResult(0 ,new Intent());
         finish();
     }
+
+    @Override
+    public void onRequestPermissionsResult(int requestCode, String permissions[], int[] grantResults) {
+        switch (requestCode) {
+            case EVENT_PERMISSION_CHECK: {
+                // If request is cancelled, the result arrays are empty.
+                if (grantResults.length > 0
+                        && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
+
+                    // permission was granted, yay! Do the
+                    // location-related task you need to do.
+                    if (ContextCompat.checkSelfPermission(this, android.Manifest.permission.ACCESS_FINE_LOCATION)
+                            == PackageManager.PERMISSION_GRANTED) {
+
+
+                        DummyMainActivity.toastMe("Can now set location", this);
+                        MapController.initMap2(this, null, EVENT_PERMISSION_CHECK);
+
+                    }
+
+                }else {
+                    LinearLayout mapToggle = (LinearLayout) this.findViewById(R.id.map_toggle);
+                    mapToggle.setVisibility(View.GONE);
+                }
+            }
+
+        }
+    }
+
+
 }

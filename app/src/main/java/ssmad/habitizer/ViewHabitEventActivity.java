@@ -20,6 +20,45 @@ public class ViewHabitEventActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.add_habit_event);
+        setup(getIntent().getIntExtra("event_position", 0));
+    }
+
+    private void deleteEvent(int position) {
+        HabitEvent habitEvent = DummyMainActivity.myHabitEvents.get(position);
+        ElasticsearchController.DeleteItemsTask postHabitEvent =
+                new ElasticsearchController.DeleteItemsTask();
+
+        postHabitEvent.execute(DummyMainActivity.Event_Index, habitEvent.getId());
+
+        try {
+            Boolean success = postHabitEvent.get();
+            if(!success){
+                throw new Exception("lol");
+            }
+        } catch (Exception e) {
+            Log.d("ESC", "Could not update habit event on first try.");
+            String[] s = {
+                    DummyMainActivity.Event_Index,
+                    String.valueOf(SyncController.TASK_UPDATE),
+                    habitEvent.getJsonString()
+            };
+            SyncController.addToSync(s, habitEvent);
+        }
+
+        // Andrew stuff
+
+        //
+
+
+        // TODO fix this for offline
+        //DummyMainActivity.myHabitEvents.remove(position);
+        //FileController.saveInFile(ViewHabitEventActivity.this, DummyMainActivity.HABITEVENTFILENAME,DummyMainActivity.myHabitEvents);
+        finish();
+    }
+
+    private void setup(final int position){
+
+        SyncController.sync(this);
         (findViewById(R.id.view_title)).setVisibility(View.VISIBLE);
         (findViewById(R.id.comment_input)).setVisibility(View.GONE);
         (findViewById(R.id.pic_check)).setVisibility(View.GONE);
@@ -27,15 +66,18 @@ public class ViewHabitEventActivity extends AppCompatActivity {
         (findViewById(R.id.comment_title)).setVisibility(View.GONE);
         TextView commentView = (TextView) findViewById(R.id.comment_view);
         commentView.setVisibility(View.VISIBLE);
-        final int position = getIntent().getExtras().getInt
-                (HabitTabActivity
-                        .GENERIC_REQUEST_CODE);
         HabitEvent habitEvent = DummyMainActivity.myHabitEvents.get(position);
         commentView.setText(habitEvent.getComment());
         ((TextView)findViewById(R.id.what_habit)).setText(habitEvent.getTitle());
         if(habitEvent.hasPicture()){
+            // OK Log.d("VIEW.EVENT.PIC", new String(habitEvent.getPicBytes()));
             Bitmap p = AddHabitEventActivity.getPicFromBytes(habitEvent.getPicBytes());
-            AddHabitEventActivity.setPic(this, p);
+            if(p == null){
+                DummyMainActivity.toastMe("Could not show picture", this);
+            }else{
+
+                AddHabitEventActivity.setPic(this, p);
+            }
         }
         (findViewById(R.id.cancel)).setVisibility(View.GONE);
         Button doneButton = (Button)  findViewById(R.id.done_button);
@@ -45,7 +87,6 @@ public class ViewHabitEventActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 deleteEvent(position);
-
                 finish();
             }
         });
@@ -70,73 +111,12 @@ public class ViewHabitEventActivity extends AppCompatActivity {
         if(habitEvent.hasLocation()){
 
             LinearLayout mapToggle = (LinearLayout) findViewById(R.id.map_toggle);
-            Boolean IHaveMapPermission = MapController.checkMapPermission(this);
-            if (IHaveMapPermission){
-                mapToggle.setVisibility(View.VISIBLE);
-                Location loc = new Location("lol");
-                double[] habitEventLoc = habitEvent.getLocation();
-                loc.setLatitude(habitEventLoc[0]);
-                loc.setLongitude(habitEventLoc[1]);
-                MapController.initMap(this, loc);
-            }else{
-                //TODO
-                MapController.askForMapPermission(this);
-                mapToggle.setVisibility(View.GONE);
-            }
+            mapToggle.setVisibility(View.VISIBLE);
+            Location loc = new Location("lol");
+            loc.setLatitude(habitEvent.getLocation()[0]);
+            loc.setLongitude(habitEvent.getLocation()[1]);
+            MapController.initMap2(this, loc ,AddHabitEventActivity.EVENT_PERMISSION_CHECK);
         }
-    }
-
-    private void deleteEvent(int position) {
-        HabitEvent habitEvent = DummyMainActivity.myHabitEvents.get(position);
-        ElasticsearchController.DeleteItemsTask postHabitEvent =
-                new ElasticsearchController.DeleteItemsTask();
-
-        postHabitEvent.execute(DummyMainActivity.Event_Index, habitEvent.getId());
-        if(habitEvent.hasPicture()) {
-            ElasticsearchController.DeleteItemsTask postHabitEventPicture =
-                    new ElasticsearchController.DeleteItemsTask();
-            postHabitEventPicture.execute(DummyMainActivity.Pic_Index, habitEvent.getPic_id());
-            try {
-                Boolean success = postHabitEventPicture.get();
-                if(!success){
-                    throw new Exception("lol");
-                }
-
-            } catch (Exception e) {
-                Log.d("ESC", "Could not update habit event picture on first try.");
-                String[] s = {
-                        DummyMainActivity.Pic_Index,
-                        String.valueOf(SyncController.TASK_DELETE),
-                        habitEvent.getPic_id()
-                };
-                SyncController.addToSync(s, habitEvent);
-
-            }
-        }
-        try {
-            Boolean success = postHabitEvent.get();
-            if(!success){
-                throw new Exception("lol");
-            }
-        } catch (Exception e) {
-            Log.d("ESC", "Could not update habit event on first try.");
-            String[] s = {
-                    DummyMainActivity.Event_Index,
-                    String.valueOf(SyncController.TASK_UPDATE),
-                    habitEvent.getJsonString()
-            };
-            SyncController.addToSync(s, habitEvent);
-        }
-
-        // Andrew stuff
-
-        //
-
-
-        // TODO fix this for offline
-        DummyMainActivity.myHabitEvents.remove(position);
-        FileController.saveInFile(ViewHabitEventActivity.this, DummyMainActivity.HABITEVENTFILENAME,
-                DummyMainActivity.myHabitEvents);
     }
 
     @Override
@@ -145,7 +125,6 @@ public class ViewHabitEventActivity extends AppCompatActivity {
         if(requestCode == EDITING){
         }
         //restart
-        finish();
-        startActivity(getIntent());
+        setup(data.getIntExtra("event_position", 0));
     }
 }

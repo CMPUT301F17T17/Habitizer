@@ -50,7 +50,7 @@ public class MyFeedAdapter extends ArrayAdapter<HabitEvent> {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(getContext(), ViewHabitEventActivity.class);
-                intent.putExtra(HabitTabActivity.GENERIC_REQUEST_CODE, fpos);
+                intent.putExtra("event_position", fpos);
                 ((Activity) getContext()).startActivityForResult(intent, FeedTabActivity.VIEWING);
             }
         });

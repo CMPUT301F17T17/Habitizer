@@ -26,22 +26,25 @@ public class FeedTabActivity extends AppCompatActivity {
     ListView myHabitEventsListView;
     public static final int VIEWING = 234;
 
+
     private static Boolean toClear = false;
     @Override
     protected void onStart() {
         super.onStart();
         myHabitEventsListView = (ListView) findViewById(R.id.feed_list);
-        DummyMainActivity.myHabitEventsAdapter = new MyFeedAdapter(FeedTabActivity.this, DummyMainActivity
+
+        DummyMainActivity.myHabitEventsAdapter = new MyFeedAdapter(this, DummyMainActivity
                 .myHabitEvents);
         myHabitEventsListView.setAdapter(DummyMainActivity.myHabitEventsAdapter);
         //TODO change here
+        DummyMainActivity.myHabitEventsAdapter.notifyDataSetChanged();
+        //DummyMainActivity.myHabitEvents = new ArrayList<>();
         Intent intent = getIntent();
         if (intent.getBooleanExtra("fromHabit", false)){
             //intent.getStringExtra("currentHabitId");
             refreshFeed2();
         } else{
             refreshFeed(null);
-            DummyMainActivity.myHabitEventsAdapter.notifyDataSetChanged();
         }
 
 
@@ -50,6 +53,9 @@ public class FeedTabActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_feed_tab);
+        myHabitEventsListView = (ListView) findViewById(R.id.feed_list);
+
+        myHabitEventsListView.setAdapter(DummyMainActivity.myHabitEventsAdapter);
         Intent intent = getIntent();
         DummyMainActivity.initTabs(DummyMainActivity.VIEW_FEED, this, intent);
 
@@ -75,7 +81,7 @@ public class FeedTabActivity extends AppCompatActivity {
         (findViewById(R.id.search_button)).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-               String word = ((EditText) context.findViewById(R.id.search_input)).getText().toString().trim();
+                String word = ((EditText) context.findViewById(R.id.search_input)).getText().toString().trim();
                 toClear = false;
                 if (word.equals("")){
                     DummyMainActivity.toastMe("Please enter a valid word", context);
@@ -106,49 +112,59 @@ public class FeedTabActivity extends AppCompatActivity {
         Type listType;
         if(Utilities.isNetworkAvailable(FeedTabActivity.this)){
             ElasticsearchController.GetFeedTask getHabitsArrayGetTask = new ElasticsearchController.GetFeedTask();
+
             String query = String.format(
-                "\"bool\":{" +
-                    "\"must\":[" +
-                        "{ \"term\" :" +
+                    "{\"bool\":{" +
+                            "\"must\":[" +
+                            "{ \"match\" :" +
                             "{\"username\": \"%s\"}" +
-                        "}", DummyMainActivity.currentUser);
+                            "}", DummyMainActivity.currentUser);
             if(word != null){
                 query = query +  String.format("," +
-                            "{ \"term\" : " +
-                                "{\"comment\": \"%s\"}" +
-                            "}" +
-                        "]}", word);
+                        "{ \"match\" : " +
+                        "{\"comment\": \"%s\"}" +
+                        "}" +
+                        "]}}", word);
             }else{
-                query = query + "]}";
+                query = query + "]}}";
             }
+            Log.d("FEED.TAB.QUERY", query);
             getHabitsArrayGetTask.execute(DummyMainActivity.Event_Index, query);
             try{
                 JsonArray jsonHabits =  getHabitsArrayGetTask.get();
+
+                Log.d("FEED.TAB.QUERY", "Error with eventarray");
                 DummyMainActivity.myHabitEvents.clear();
+                Log.d("FEED.TAB.QUERY", "Error in loop");
+                Gson g = new Gson();
+                Log.i("cnmlgb", g.toJson(jsonHabits));
                 for (int i = 0; i < jsonHabits.size(); i++){
+                    Log.d("FEED.TAB.QUERY", "Error in event conversion");
                     HabitEvent h = new HabitEvent();
                     JsonObject job  = jsonHabits.get(i).getAsJsonObject();
                     h.fromJsonObject(job);
                     DummyMainActivity.myHabitEvents.add(h);
                 }
+                // sort
+                Log.d("FEED.TAB.QUERY", "Error in sorting");
                 Collections.sort(DummyMainActivity.myHabitEvents, new Comparator<HabitEvent>() {
                     @Override
                     public int compare(HabitEvent o1, HabitEvent o2) {
                         return -o1.getCompletionDate().compareTo(o2.getCompletionDate());
                     }
                 });
-                FileController.saveInFile(FeedTabActivity.this, DummyMainActivity.HABITEVENTFILENAME, DummyMainActivity.myHabitEvents);
+                //FileController.saveInFile(FeedTabActivity.this, DummyMainActivity.HABITEVENTFILENAME, DummyMainActivity.myHabitEvents);
             }catch (Exception e){
-                Log.d("ESC", "Adding habits events in login.");
+                Log.d("FEED.TAB.QUERY", "Adding habits events in login.");
             }
         }else{
-
-            listType = new TypeToken<ArrayList<HabitEvent>>(){}.getType();
+            // TODO fix
+            /*listType = new TypeToken<ArrayList<HabitEvent>>(){}.getType();
             DummyMainActivity.myHabitEvents.clear();
             ArrayList arr =  FileController.loadFromFile(FeedTabActivity.this, DummyMainActivity.HABITEVENTFILENAME, listType);
             if ( DummyMainActivity.myHabitEvents != null){
                 DummyMainActivity.myHabitEvents.addAll(arr);
-            }
+            }*/
         }
         DummyMainActivity.myHabitEventsAdapter.notifyDataSetChanged();
     }
@@ -165,9 +181,9 @@ public class FeedTabActivity extends AppCompatActivity {
                                      "{\"habitid\": \"%s\"}" +
                                 "}", habit_id);
             query = query + "}";*/
-            String query = String.format( " \"match\" :" +
-                                     "{\"habitid\": \"%s\"}" +
-                                "", habit_id);
+            String query = String.format( " {\"match\" :" +
+                    "{\"habitid\": \"%s\"}" +
+                    "}", habit_id);
             query = query + "";
             getHabitsArrayGetTask.execute(DummyMainActivity.Event_Index, query);
             try{
@@ -190,7 +206,7 @@ public class FeedTabActivity extends AppCompatActivity {
                         return -o1.getCompletionDate().compareTo(o2.getCompletionDate());
                     }
                 });
-                FileController.saveInFile(FeedTabActivity.this, DummyMainActivity.HABITEVENTFILENAME, DummyMainActivity.myHabitEvents);
+                //FileController.saveInFile(FeedTabActivity.this, DummyMainActivity.HABITEVENTFILENAME, DummyMainActivity.myHabitEvents);
             }catch (Exception e){
                 Log.d("cnmlgb", "Adding habits events in login.");
             }

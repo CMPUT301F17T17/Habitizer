@@ -50,19 +50,11 @@ public class EditHabitEventActivity extends AppCompatActivity {
         if (habitEvent.hasLocation()) {
             locCheck.toggle();
             LinearLayout mapToggle = (LinearLayout) findViewById(R.id.map_toggle);
-            Boolean IHaveMapPermission = MapController.checkMapPermission(this);
-            if (IHaveMapPermission) {
-                mapToggle.setVisibility(View.VISIBLE);
-                Location loc = new Location("lol");
-                double[] habitEventLoc = habitEvent.getLocation();
-                loc.setLatitude(habitEventLoc[0]);
-                loc.setLongitude(habitEventLoc[1]);
-                MapController.initMap(this, loc);
-            } else {
-                //TODO
-                MapController.askForMapPermission(this);
-                mapToggle.setVisibility(View.GONE);
-            }
+            mapToggle.setVisibility(View.VISIBLE);
+            Location loc = new Location("lol");
+            loc.setLatitude(habitEvent.getLocation()[0]);
+            loc.setLongitude(habitEvent.getLocation()[1]);
+            MapController.initMap2(this, loc ,AddHabitEventActivity.EVENT_PERMISSION_CHECK);
         }
 
 
@@ -92,88 +84,16 @@ public class EditHabitEventActivity extends AppCompatActivity {
             DummyMainActivity.toastMe("Comment must be less than " + COMMENT_MAX_SIZE + " chars",
                     this);
         } else {
-
             ElasticsearchController.UpdateItemsTask postHabitEvent =
                     new ElasticsearchController.UpdateItemsTask();
 
             habitEvent.setComment(comment);
-            Boolean dontHavePic = !habitEvent.hasPicture();
             habitEvent.setPicBytes(picBytes);
-            Boolean nowHasPic = habitEvent.hasPicture();
             habitEvent.setLocation(location);
 
 
-            postHabitEvent.execute(DummyMainActivity.Event_Index, habitEvent.getJsonString());
-            if (dontHavePic && nowHasPic) {
-                //TODO add pic
-                ElasticsearchController.AddItemsTask postHabitEventPicture =
-                        new ElasticsearchController.AddItemsTask();
-                postHabitEventPicture.execute(DummyMainActivity.Pic_Index, habitEvent.getPictureJsonString
-                        ());
-                try {
-
-                    String id = postHabitEventPicture.get();
-                    if(id == null){
-                        throw new Exception("lol");
-                    }
-                    habitEvent.setPic_id(id);
-                } catch (Exception e) {
-                    Log.d("ESC", "Could not update habit event picture on first try.");
-                    String[] s = {
-                            DummyMainActivity.Pic_Index,
-                            String.valueOf(SyncController.TASK_ADD),
-                            habitEvent.getPictureJsonString()
-                    };
-                    SyncController.addToSync(s, habitEvent);
-
-                }
-            } else if (!dontHavePic && !nowHasPic) {
-                // TODO delete pic
-                ElasticsearchController.DeleteItemsTask postHabitEventPicture =
-                        new ElasticsearchController.DeleteItemsTask();
-                postHabitEventPicture.execute(DummyMainActivity.Pic_Index, habitEvent.getPic_id());
-                try {
-                    Boolean success = postHabitEventPicture.get();
-                    if(!success){
-                        throw new Exception("lol");
-                    }
-
-                } catch (Exception e) {
-                    Log.d("ESC", "Could not update habit event picture on first try.");
-                    String[] s = {
-                            DummyMainActivity.Pic_Index,
-                            String.valueOf(SyncController.TASK_DELETE),
-                            habitEvent.getPic_id()
-                    };
-                    SyncController.addToSync(s, habitEvent);
-
-                }
-            } else if (!dontHavePic && nowHasPic) {
-                // TODO update pic
-                ElasticsearchController.UpdateItemsTask postHabitEventPicture =
-                        new ElasticsearchController.UpdateItemsTask();
-                postHabitEventPicture.execute(DummyMainActivity.Pic_Index, habitEvent.getPic_id(), habitEvent
-                        .getPictureJsonString
-                                ());
-                try {
-                    Boolean success = postHabitEventPicture.get();
-                    if(!success){
-                        throw new Exception("lol");
-                    }
-
-                } catch (Exception e) {
-                    Log.d("ESC", "Could not update habit event picture on first try.");
-                    String[] s = {
-                            DummyMainActivity.Pic_Index,
-                            String.valueOf(SyncController.TASK_UPDATE),
-                            habitEvent.getPic_id(),
-                            habitEvent.getPictureJsonString()
-                    };
-                    SyncController.addToSync(s, habitEvent);
-
-                }
-
-            }
+            postHabitEvent.execute(DummyMainActivity.Event_Index, habitEvent.getId(),habitEvent
+                    .getJsonString());
 
             try {
                 Boolean success = postHabitEvent.get();
@@ -185,28 +105,17 @@ public class EditHabitEventActivity extends AppCompatActivity {
                 String[] s = {
                         DummyMainActivity.Event_Index,
                         String.valueOf(SyncController.TASK_UPDATE),
-                        habitEvent.getJsonString()
+                        habitEvent.getJsonString(),
+                        habitEvent.getId()
                 };
                 SyncController.addToSync(s, habitEvent);
             }
-
             // Andrew stuff
-
             //
-
-
             // TODO fix this for offline
-            FileController.saveInFile(EditHabitEventActivity.this, DummyMainActivity.HABITEVENTFILENAME,
-                    DummyMainActivity.myHabitEvents);
-
+            //FileController.saveInFile(EditHabitEventActivity.this, DummyMainActivity.HABITEVENTFILENAME,DummyMainActivity.myHabitEvents);
+            setResult(123, new Intent().putExtra("event_position", position));
             finish();
         }
-    }
-
-
-    @Override
-    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
-        super.onActivityResult(requestCode, resultCode, data);
-        AddHabitEventActivity.tryGetPic(this, requestCode, resultCode, data);
     }
 }

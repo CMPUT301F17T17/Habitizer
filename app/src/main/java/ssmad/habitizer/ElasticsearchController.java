@@ -4,11 +4,15 @@ import android.os.AsyncTask;
 import android.util.Log;
 
 import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
 import com.google.gson.JsonArray;
 import com.google.gson.JsonObject;
+import com.google.gson.JsonParser;
 import com.searchly.jestdroid.DroidClientConfig;
 import com.searchly.jestdroid.JestClientFactory;
 import com.searchly.jestdroid.JestDroidClient;
+
+import org.json.JSONObject;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -153,34 +157,38 @@ public class ElasticsearchController {
         protected JsonArray doInBackground(String... search_parameters) {
             verifySettings();
             JsonArray userData = null;
+            Gson g = new GsonBuilder().setPrettyPrinting().create();
+            JsonObject queryjson = new JsonObject();
+            JsonParser jsonParser = new JsonParser();
+            queryjson.addProperty("size", 1000);
+            queryjson.add("query",jsonParser.parse(search_parameters[1]));
+
+
 
             // TODO Build the query
-            String query = "{\n" +
-                    "\"size\" : 1000,"+
-                    "     \"query\" : {\n" +
-                                 search_parameters[1] +
-                    "     }\n" +
-                    "}";
+            String query = g.toJson(queryjson);
 
             Search search = new Search.Builder(query)
                     .addIndex(INDEX)
                     .addType(search_parameters[0])
                     .build();
 
+            Log.d("ESC.QUERY.INPUT", query);
             try {
                 // TODO get the results of the query
                 SearchResult result = client.execute(search);
-                Gson g = new Gson();
                 String s = g.toJson(result.getJsonObject());
-                Log.d("ESC.json", s);
+                Log.d("ESC.QUERY.RESULT", s);
                 JsonObject hits = result.getJsonObject().getAsJsonObject("hits");
                 if (result.isSucceeded()) {
                     userData = hits.getAsJsonArray("hits");
                 } else {
-                    Log.i("Error", "The search query failed to find any users that matched");
+                    Log.i("ESC.QUERY.FAIL", "The search query failed to find any users that " +
+                            "matched");
                 }
             } catch (Exception e) {
-                Log.i("Error", "Something went wrong when we tried to communicate with the elasticsearch server!");
+                Log.i("ESC.QUERY.EXCEPTION", "Something went wrong when we tried to communicate " +
+                        "with the elasticsearch server!");
             }
 
             return userData;
