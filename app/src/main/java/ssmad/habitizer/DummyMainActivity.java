@@ -1,12 +1,3 @@
-/*
- *  Class Name: DummyMainActivity
- *  Version: 0.5
- *  Date: November 13th, 2017
- *  Copyright (c) TEAM SSMAD, CMPUT 301, University of Alberta - All Rights Reserved.
- *  You may use, distribute, or modify this code under terms and conditions of the
- *  Code of Students Behaviour at University of Alberta
- */
-
 package ssmad.habitizer;
 
 import android.app.Activity;
@@ -27,7 +18,9 @@ import android.widget.Toast;
 
 import com.google.android.gms.common.ConnectionResult;
 import com.google.android.gms.common.GoogleApiAvailability;
+import com.google.gson.reflect.TypeToken;
 
+import java.lang.reflect.Type;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Date;
@@ -39,13 +32,9 @@ import static android.R.color.holo_blue_light;
 import static android.R.color.holo_orange_dark;
 import static android.R.color.white;
 
-/**
- * Main Activity, contains the tabs and checks for online connection
- * @author Sadman, Andrew
- * @version 0.5
- * @since 0.5
- */
+
 public class DummyMainActivity extends AppCompatActivity {
+    public static final int EVENT_DELETED = 102;
     public static ArrayList<HabitEvent> myHabitEvents;
     public static ArrayList<Habit> myHabits;
     public static ArrayAdapter<Habit> myHabitsAdapter;
@@ -59,32 +48,32 @@ public class DummyMainActivity extends AppCompatActivity {
     public static final int VIEW_SIGN_UP = 995;
     public static Activity currentActivity;
     private static Context thisContext;
+    public static final String HABITEVENTFILENAME = "local_events.sav";
+    public static final String Account_Index = "User_test1";
+    public static final String Pic_Index = "pic_test1";
+    public static final String HABITFILENAME = "local_habits.sav";
+    public static String currentUser;
+    public static final String Habit_Index = "Habit_test3";
+    public static final String Event_Index = "Event_test11";
+    public static Account currentAccount;
 
-    /**
-     * Called when activity starts, creates lists and sends to login
-     * @param savedInstanceState
-     */
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_dummy_main);
         thisContext = this;
         myHabitEvents = new ArrayList<>();
-        myHabits = new ArrayList<>();
+        myHabitEventsAdapter = new MyFeedAdapter(this, DummyMainActivity
+                .myHabitEvents);
         myHabitDict = new HashMap<>();
-        DEBUG_addHabits();
+        // DEBUG_addHabits();
 
         Intent intent = new Intent(DummyMainActivity.this, LoginActivity.class);
         startActivityForResult(intent, VIEW_LOGIN);
 
     }
 
-    /**
-     * Sends user to appropriate activity depending on action
-     * @param requestCode
-     * @param resultCode
-     * @param data
-     */
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
@@ -106,6 +95,11 @@ public class DummyMainActivity extends AppCompatActivity {
             }
         }else{
             switch (resultCode) {
+                case VIEW_LOGIN:
+                    intent = new Intent(this, LoginActivity.class);
+                    intent.replaceExtras(data);
+                    startActivityForResult(intent, VIEW_LOGIN);
+                    break;
                 case VIEW_FEED:
                     intent = new Intent(this, FeedTabActivity.class);
                     intent.replaceExtras(data);
@@ -142,18 +136,9 @@ public class DummyMainActivity extends AppCompatActivity {
 
     }
 
-    /**
-     * Simple toast function for displaying messages
-     * @param s
-     * @param context
-     */
     public static void toastMe(String s, Context context) {
         Toast.makeText(context, s, Toast.LENGTH_SHORT).show();
     }
-
-    /**
-     * Used for debugging adding habits
-     */
     public void DEBUG_addHabits(){
         for(int i = 0; i < 10; i++){
             String title = "Habit_"+Integer.toString(i);
@@ -181,10 +166,6 @@ public class DummyMainActivity extends AppCompatActivity {
 
     }
 
-    /**
-     * Checks if google services are available
-     * @return
-     */
     public boolean isGoogleServicesAvailable() {
         GoogleApiAvailability api = GoogleApiAvailability.getInstance();
         int isAvailable = api.isGooglePlayServicesAvailable(this);
@@ -199,11 +180,6 @@ public class DummyMainActivity extends AppCompatActivity {
         return Boolean.FALSE;
     }
 
-    /**
-     * Initializes the tabs for moving between the main activities
-     * @param type
-     * @param ctx
-     */
     public static void initTabs(int type, Activity ctx, Intent data) {
         DummyMainActivity.currentActivity = ctx;
         LinearLayout tabs = (LinearLayout) ctx.findViewById(R.id.tabs);
@@ -215,6 +191,7 @@ public class DummyMainActivity extends AppCompatActivity {
         Button bFeed = (Button) childTabs.findViewById(R.id.feed);
         Button bSocial = (Button) childTabs.findViewById(R.id.social);
         Button bProfile = (Button) childTabs.findViewById(R.id.profile);
+
 
         switch (type) {
             case VIEW_FEED:
@@ -241,8 +218,7 @@ public class DummyMainActivity extends AppCompatActivity {
                 ViewGroup.LayoutParams.WRAP_CONTENT));
 
         final Intent intent = new Intent();
-        intent.replaceExtras(data);
-
+        //intent.replaceExtras(data);
         // init buttons
         if (bHabits != toChange) {
             bHabits.setOnClickListener(new View.OnClickListener() {
@@ -273,16 +249,17 @@ public class DummyMainActivity extends AppCompatActivity {
                 }
             });
         }
-
         if (bProfile != toChange) {
             bProfile.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
+
                     currentActivity.setResult(VIEW_EDIT_PROFILE, intent);
                     currentActivity.finish();
                 }
             });
         }
+
 
         // add it
         tabs.addView(childTabs);

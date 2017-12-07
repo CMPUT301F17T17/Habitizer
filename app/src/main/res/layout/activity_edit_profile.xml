@@ -103,13 +103,12 @@
         android:layout_weight="0.08"
         android:background="@android:color/white"
         android:ems="10"
-        android:hint="Click here to set birthday"
+        android:hint="click here to set birthday"
         android:gravity="center_vertical"
-        android:inputType="textPersonName"
         android:paddingLeft="5dp"
         android:textColor="@android:color/black"
         android:textColorHint="@android:color/darker_gray"
-        android:textSize = "18sp"
+        android:textSize="18sp"
         android:onClick="onClick"
         android:clickable="true"/>
 
@@ -143,7 +142,7 @@
         android:layout_marginRight="12dp"
         android:layout_marginTop="20dp"
         android:layout_weight="0.01"
-        android:text="Confirm" />
+        android:text="Comfirm" />
 
     <LinearLayout
         android:id="@+id/lay_name"

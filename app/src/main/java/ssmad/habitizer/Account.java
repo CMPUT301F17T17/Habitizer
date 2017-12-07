@@ -1,37 +1,47 @@
-
 /*
- *  Class Name: Account
- *  Version: 0.5
- *  Date: November 13th, 2017
- *  Copyright (c) TEAM SSMAD, CMPUT 301, University of Alberta - All Rights Reserved.
- *  You may use, distribute, or modify this code under terms and conditions of the
- *  Code of Students Behaviour at University of Alberta
+ *
+ *  *  Class Name:
+ *  *  Version: 1.0
+ *  *  Date: December 6th, 2017
+ *  *  Copyright (c) TEAM SSMAD, CMPUT 301, University of Alberta - All Rights Reserved.
+ *  *  You may use, distribute, or modify this code under terms and conditions of the
+ *  *  Code of Students Behaviour at University of Alberta
+ *
  */
 
 package ssmad.habitizer;
 
-
 import android.os.Parcel;
 import android.os.Parcelable;
-/**
- * Created by Andoryu on 2017-11-10.
- */
+import android.util.Log;
+
+import com.google.gson.Gson;
+import com.google.gson.JsonObject;
+
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.ArrayList;
+import java.util.Date;
 
 /**
  * Represents an Account
  * @author Andrew
- * @version 0.5
+ * @version 1.0
  * @see UserProfile
  * @since 0.5
  */
 
-public class Account implements Parcelable{
+public class Account{
     private String username;
     private String password;
     private byte[] portrait;
     private String name;
     private String birthday;
     private String gender;
+    private String[] followers = {};
+    private String[] following = {};
+    private String[] requests = {};
+    private String[] sent_requests = {};
 
     /**
      * Constructor with username, password, portrait, name, birthday, and gender
@@ -42,6 +52,7 @@ public class Account implements Parcelable{
      * @param birthday
      * @param gender
      */
+
     public Account(String username, String password, byte[] portrait, String name, String birthday, String gender){
         this.username = username;
         this.password = password;
@@ -52,57 +63,15 @@ public class Account implements Parcelable{
     }
 
     /**
-     * Constructor given parcel
-     * @param in
+     * Constructor with username
+     * @param username
      */
-    public Account(Parcel in){
-        username = in.readString();
-        password = in.readString();
-        portrait = new byte[in.readInt()];
-        in.readByteArray(portrait);
-        name = in.readString();
-        birthday = in.readString();
-        gender = in.readString();
-    }
-
-
-    @Override
-    public int describeContents(){
-        return 0;
+    public Account(String username) {
+        this.username = username;
     }
 
     /**
-     * Writes to parcel
-     * @param dest
-     * @param flags
-     */
-    @Override
-    public void writeToParcel(Parcel dest, int flags) {
-        dest.writeString(username);
-        dest.writeString(password);
-        dest.writeByteArray(portrait);
-        dest.writeString(name);
-        dest.writeString(birthday);
-        dest.writeString(gender);
-    }
-
-    /**
-     * Creates account with parcelable
-     */
-    public static final Parcelable.Creator<Account> CREATOR = new Parcelable.Creator<Account>() {
-        @Override
-        public Account createFromParcel(Parcel in) {
-            return new Account(in);
-        }
-        @Override
-        public Account[] newArray(int size) {
-            return new Account[size];
-        }
-    };
-
-
-    /**
-     * Sets Username for this account
+     * For setting username
      * @param username
      */
     public void setUserName(String username) {
@@ -110,7 +79,7 @@ public class Account implements Parcelable{
     }
 
     /**
-     * Sets Password for this account
+     * For setting password
      * @param password
      */
     public void setUserPassword(String password) {
@@ -118,7 +87,7 @@ public class Account implements Parcelable{
     }
 
     /**
-     * Gets Username for this account
+     * For getting username
      * @return
      */
     public String getUserName(){
@@ -126,7 +95,7 @@ public class Account implements Parcelable{
     }
 
     /**
-     * Gets Password for this account
+     * For getting password
      * @return
      */
     public String getPassword(){
@@ -134,56 +103,102 @@ public class Account implements Parcelable{
     }
 
     /**
-     * Sets Portrait for this account
-     * @return
+     * For setting portrait
+     * @param portrait
      */
-    public void setPortrait(byte[] portrait){this.portrait = portrait; }
+    public void setPortrait(byte[] portrait){
+        this.portrait = portrait;
+    }
 
     /**
-     * Sets Name for this account
-     * @return
+     * For setting name
+     * @param name
      */
-    public void setName(String name) {this.name = name;}
+    public void setName(String name) {
+        this.name = name;
+    }
 
     /**
-     * Sets Birthday for this account
-     * @return
+     * For setting birthday
+     * @param birthday
      */
-    public void setBirthday(String birthday){this.birthday = birthday;}
+    public void setBirthday(String birthday){
+        this.birthday = birthday;
+    }
 
     /**
-     * Sets Gender for this account
-     * @return
+     * For setting Gender
+     * @param gender
      */
-    public void setGender(String gender){this.gender = gender;}
+    public void setGender(String gender){
+        this.gender = gender;
+    }
 
     /**
-     * Gets Username for this account
+     * For getting username
      * @return
      */
-    public String getUsername(){return this.username;}
+    public String getUsername(){
+        return this.username;
+    }
 
     /**
-     * Gets Portrait for this account
+     * For getting portrait
      * @return
      */
-    public byte[] getPortrait(){return this.portrait;}
+    public byte[] getPortrait(){
+        return this.portrait;
+    }
 
     /**
-     * Gets Name for this account
+     * For getting name
      * @return
      */
-    public String getName(){return this.name;}
+    public String getName(){
+        return this.name;
+    }
 
     /**
-     * Gets Birthday for this account
+     * For getting birthday
      * @return
      */
-    public String getBirthday(){return this.birthday;}
+    public String getBirthday(){
+        return this.birthday;
+    }
 
-    /**
-     * Gets Gender for this account
-     * @return
-     */
-    public String getGender(){return this.gender;}
+    public String getGender(){
+        return this.gender;
+    }
+
+    public String[] getFollowers() {
+        return followers;
+    }
+
+    public void setFollowers(String[] followers) {
+        this.followers = followers;
+    }
+
+    public String[] getFollowing() {
+        return following;
+    }
+
+    public void setFollowing(String[] following) {
+        this.following = following;
+    }
+
+    public String[] getRequests() {
+        return requests;
+    }
+
+    public void setRequests(String[] requests) {
+        this.requests = requests;
+    }
+
+    public String[] getSent_requests() {
+        return sent_requests;
+    }
+
+    public void setSent_requests(String[] sent_requests) {
+        this.sent_requests = sent_requests;
+    }
 }

@@ -15,8 +15,7 @@ public class HabitTabActivityTest extends ActivityInstrumentationTestCase2<Habit
 
     public HabitTabActivityTest() {super(HabitTabActivity.class);}
 
-
-    public void testsetUp() throws Exception{
+    public void setUp() throws Exception{
         solo = new Solo(getInstrumentation(), getActivity());
     }
 
@@ -25,9 +24,7 @@ public class HabitTabActivityTest extends ActivityInstrumentationTestCase2<Habit
     }
 
 
-
-    public void testAddHabit(){
-
+    public void AddHabitTest(){
         solo.clickOnView(solo.getView(R.id.habit_tab_button));
         solo.assertCurrentActivity("Wrong Activity!", HabitTabActivity.class);
         solo.clickOnView(solo.getView(R.id.add_habit_button));
@@ -53,8 +50,7 @@ public class HabitTabActivityTest extends ActivityInstrumentationTestCase2<Habit
     }
 
 
-    public void testAddHabitEvent(){
-
+    public void AddHabitEventTest(){
         solo.clickOnView(solo.getView(R.id.habit_tab_button));
         solo.assertCurrentActivity("Wrong Activity!", HabitTabActivity.class);
 
@@ -73,40 +69,8 @@ public class HabitTabActivityTest extends ActivityInstrumentationTestCase2<Habit
 
     }
 
-
-//    public void EditHabitEventTest(){
-//        solo.clickOnView(solo.getView(R.id.habit_tab_button));
-//        solo.assertCurrentActivity("Wrong Activity!", HabitTabActivity.class);
-//
-//        assertTrue(solo.waitForText("Push-Ups"));
-//        assertTrue(solo.waitForText("Due Today"));
-//        solo.clickInList(0,0);
-//
-//        solo.waitForActivity("EditHabitEventActivity");
-//        solo.assertCurrentActivity("Wrong Activity!", EditHabitEventActivity.class);
-//        solo.enterText((EditText) solo.getView(R.id.comment_input), "I actually only did 5!");
-//
-//        solo.clickOnView(solo.getView(R.id.done_button));
-//        solo.waitForActivity("HabitTabActivity");
-//        solo.assertCurrentActivity("Wrong Activity!", HabitTabActivity.class);
-//    }
-
-//    public void DeleteHabitEventTest(){
-//        solo.clickOnView(solo.getView(R.id.habit_tab_button));
-//        solo.assertCurrentActivity("Wrong Activity!", HabitTabActivity.class);
-//
-//        assertTrue(solo.waitForText("Push-Ups"));
-//        assertTrue(solo.waitForText("Due Today"));
-//        solo.clickInList(0,0);
-//
-//        solo.waitForActivity("DeleteHabitEventActivity");
-//        solo.assertCurrentActivity("Wrong Activity!", DeleteHabitEventActivity.class);
-//
-//    }
-
-//    public void tearDown() throws Exception {
-//        solo.finishOpenedActivities();
-//    }
-
+    public void tearDown() throws Exception {
+        solo.finishOpenedActivities();
+    }
 
 }

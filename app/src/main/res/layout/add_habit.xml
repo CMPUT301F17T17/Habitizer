@@ -172,8 +172,17 @@
                 android:orientation="horizontal">
 
             </LinearLayout>
+
         </LinearLayout>
     </ScrollView>
+
+    <Button
+        android:id="@+id/events_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Events"
+        android:visibility="gone" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -189,9 +198,9 @@
             android:layout_weight="1"
             android:gravity="center"
             android:text="Edit"
-            android:visibility="visible"
+            android:visibility="gone"
             tools:layout_editor_absoluteX="147dp"
-            tools:layout_editor_absoluteY="500dp"/>
+            tools:layout_editor_absoluteY="500dp" />
 
         <Button
             android:id="@+id/delete"
@@ -204,7 +213,7 @@
             android:text="Delete"
             android:visibility="gone"
             tools:layout_editor_absoluteX="147dp"
-            tools:layout_editor_absoluteY="500dp"/>
+            tools:layout_editor_absoluteY="500dp" />
     </LinearLayout>
 
 </LinearLayout>

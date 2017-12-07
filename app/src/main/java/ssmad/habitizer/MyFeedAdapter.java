@@ -1,12 +1,3 @@
-/*
- *  Class Name: MyFeedAdapter
- *  Version: 0.5
- *  Date: November 13th, 2017
- *  Copyright (c) TEAM SSMAD, CMPUT 301, University of Alberta - All Rights Reserved.
- *  You may use, distribute, or modify this code under terms and conditions of the
- *  Code of Students Behaviour at University of Alberta
- */
-
 package ssmad.habitizer;
 
 import android.app.Activity;
@@ -29,25 +20,11 @@ import java.util.ArrayList;
  * Created by Sadman on 2017-11-13.
  */
 
-/**
- * Adapter for Habit Event
- * @author Sadman
- * @version 0.5
- * @see HabitEvent
- * @since 0.5
- */
 public class MyFeedAdapter extends ArrayAdapter<HabitEvent> {
     MyFeedAdapter( Context context, ArrayList<HabitEvent> habitEvents) {
         super(context, R.layout.myfeed_list_view, habitEvents);
     }
 
-    /**
-     * Gets View of Habit Event checks
-     * @param position
-     * @param convertView
-     * @param parent
-     * @return
-     */
     @NonNull
     @Override
     public View getView(int position, @Nullable View convertView, @NonNull ViewGroup parent) {
@@ -73,7 +50,7 @@ public class MyFeedAdapter extends ArrayAdapter<HabitEvent> {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(getContext(), ViewHabitEventActivity.class);
-                intent.putExtra(HabitTabActivity.GENERIC_REQUEST_CODE, fpos);
+                intent.putExtra("event_position", fpos);
                 ((Activity) getContext()).startActivityForResult(intent, FeedTabActivity.VIEWING);
             }
         });

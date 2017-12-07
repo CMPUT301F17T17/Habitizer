@@ -92,7 +92,6 @@
             </intent-filter>
             -->
         </activity>
-        <activity android:name="ssmad.habitizer.TestActivity" />
         <activity android:name="ssmad.habitizer.AddHabitActivity" />
         <activity android:name="ssmad.habitizer.AddHabitEventActivity" />
         <activity android:name="ssmad.habitizer.HabitTabActivity" >
@@ -131,6 +130,9 @@
             android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
             android:theme="@android:style/Theme.Translucent" />
         <activity
+            android:name="com.google.android.gms.ads.purchase.InAppPurchaseActivity"
+            android:theme="@style/Theme.IAPTheme" />
+        <activity
             android:name="com.google.android.gms.appinvite.PreviewActivity"
             android:exported="true"
             android:theme="@style/Theme.AppInvite.Preview" >
@@ -153,11 +155,12 @@ Service handling Google Sign-In user revocation. For apps that do not integrate 
             android:name="com.google.android.gms.auth.api.signin.RevocationBoundService"
             android:exported="true"
             android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION" />
-
-        <receiver android:name="com.google.android.gms.cast.framework.media.MediaIntentReceiver" />
-
-        <service android:name="com.google.android.gms.cast.framework.media.MediaNotificationService" />
-        <service android:name="com.google.android.gms.cast.framework.ReconnectionService" />
+        <service
+            android:name="com.google.firebase.crash.internal.service.FirebaseCrashReceiverService"
+            android:process=":background_crash" />
+        <service
+            android:name="com.google.firebase.crash.internal.service.FirebaseCrashSenderService"
+            android:process=":background_crash" />
         <!--
  FirebaseMessagingService performs security checks at runtime,
              no need for explicit permissions despite exported="true"
@@ -176,7 +179,6 @@ Service handling Google Sign-In user revocation. For apps that do not integrate 
 
         <activity
             android:name="com.google.android.gms.tagmanager.TagManagerPreviewActivity"
-            android:exported="true"
             android:noHistory="true" > <!-- optional, removes the previewActivity from the activity stack. -->
             <intent-filter>
                 <data android:scheme="tagmanager.c.ssmad.habitizer" />
@@ -190,16 +192,9 @@ Service handling Google Sign-In user revocation. For apps that do not integrate 
 
         <receiver
             android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
-            android:enabled="true"
-            android:exported="false" >
-        </receiver>
-        <receiver
-            android:name="com.google.android.gms.measurement.AppMeasurementInstallReferrerReceiver"
-            android:enabled="true"
-            android:exported="true"
-            android:permission="android.permission.INSTALL_PACKAGES" >
+            android:enabled="true" >
             <intent-filter>
-                <action android:name="com.android.vending.INSTALL_REFERRER" />
+                <action android:name="com.google.android.gms.measurement.UPLOAD" />
             </intent-filter>
         </receiver>
 
@@ -207,11 +202,6 @@ Service handling Google Sign-In user revocation. For apps that do not integrate 
             android:name="com.google.android.gms.measurement.AppMeasurementService"
             android:enabled="true"
             android:exported="false" />
-        <service
-            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
-            android:enabled="true"
-            android:exported="false"
-            android:permission="android.permission.BIND_JOB_SERVICE" />
 
         <receiver
             android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
@@ -219,6 +209,7 @@ Service handling Google Sign-In user revocation. For apps that do not integrate 
             android:permission="com.google.android.c2dm.permission.SEND" >
             <intent-filter>
                 <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
 
                 <category android:name="ssmad.habitizer" />
             </intent-filter>
@@ -242,17 +233,16 @@ Service handling Google Sign-In user revocation. For apps that do not integrate 
             </intent-filter>
         </service>
 
-        <provider
-            android:name="com.google.firebase.provider.FirebaseInitProvider"
-            android:authorities="ssmad.habitizer.firebaseinitprovider"
-            android:exported="false"
-            android:initOrder="100" />
-
         <activity
             android:name="com.google.android.gms.common.api.GoogleApiActivity"
             android:exported="false"
             android:theme="@android:style/Theme.Translucent.NoTitleBar" />
 
+        <provider
+            android:name="com.google.firebase.provider.FirebaseInitProvider"
+            android:authorities="ssmad.habitizer.firebaseinitprovider"
+            android:exported="false"
+            android:initOrder="100" />
         <provider
             android:name="com.android.tools.fd.runtime.InstantRunContentProvider"
             android:authorities="ssmad.habitizer.com.android.tools.fd.runtime.InstantRunContentProvider"

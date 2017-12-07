@@ -7,3 +7,4 @@
     <item android:state_selected="true" android:color="@color/wallet_bright_foreground_holo_light"/>
     <item android:color="@color/wallet_bright_foreground_holo_light"/> <!-- not selected -->
 </selector>
+<!-- From: file:/tmp/tmp-deduplicated858741996730843793/java/com/google/android/gmscore/integ/client/wallet/res/color/wallet_primary_text_holo_light.xml -->

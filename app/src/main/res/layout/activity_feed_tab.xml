@@ -36,6 +36,14 @@
             android:layout_weight="1"
             android:text="Search" />
 
+        <Button
+            android:id="@+id/clear_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Clear"
+            android:visibility="gone" />
+
     </LinearLayout>
 
     <ListView

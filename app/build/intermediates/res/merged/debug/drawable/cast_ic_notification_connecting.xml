@@ -9,3 +9,4 @@
     <item android:drawable="@drawable/cast_ic_notification_2" android:duration="500" />
     <item android:drawable="@drawable/cast_ic_notification_1" android:duration="500" />
 </animation-list>
+<!-- From: file:/tmp/tmp-deduplicated9006361727330568639/java/com/google/android/gmscore/integ/client/cast/res/drawable/cast_ic_notification_connecting.xml -->
