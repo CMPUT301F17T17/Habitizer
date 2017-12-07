@@ -1,3 +1,12 @@
+/*
+ *  Class Name: AddHabitActivity
+ *  Version: 0.5
+ *  Date: November 13th, 2017
+ *  Copyright (c) TEAM SSMAD, CMPUT 301, University of Alberta - All Rights Reserved.
+ *  You may use, distribute, or modify this code under terms and conditions of the
+ *  Code of Students Behaviour at University of Alberta
+ */
+
 package ssmad.habitizer;
 
 import android.app.Activity;
@@ -17,9 +26,12 @@ import java.util.ArrayList;
 import java.util.Date;
 
 /**
- * Created by cryst on 10/23/2017.
+ * Activity for adding in a new Habit
+ * @author Sadman
+ * @version 0.5
+ * @see Habit
+ * @since 0.5
  */
-
 public class AddHabitActivity extends AppCompatActivity {
     public static final int MAX_REASON_LENGTH = 30;
     public static final int MAX_TITLE_LENGTH = 10;
@@ -28,6 +40,13 @@ public class AddHabitActivity extends AppCompatActivity {
             R.id.t, R.id.w, R.id.th,
             R.id.f, R.id.s, R.id.su};
 
+
+    /**
+     * Called when activity starts
+     * Takes input for habit
+     * Connects buttons to actions
+     * @param savedInstanceState
+     */
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.add_habit);
@@ -73,9 +92,19 @@ public class AddHabitActivity extends AppCompatActivity {
         });
     }
 
+    /**
+     * Checks if habit exists
+     * @param name
+     * @return
+     */
     private boolean habitExists(String name) {
         return DummyMainActivity.myHabitDict.containsKey(name);
     }
+
+    /**
+     * Sets frequency scheduling for habit
+     * @param habit
+     */
     public static void setDays( Habit habit){
         int[] thisHabitDays = habit.getDaysOfWeekDue();
 
@@ -84,6 +113,10 @@ public class AddHabitActivity extends AppCompatActivity {
         }
     }
 
+    /**
+     * Sets up view for showing completed days
+     * @param ctx
+     */
     public static void setUpDays(Activity ctx) {
         LinearLayout daysOuter = (LinearLayout) ctx.findViewById(R.id.days_outer);
         View childdays = ctx.getLayoutInflater().inflate(R.layout.days, null);
@@ -107,6 +140,10 @@ public class AddHabitActivity extends AppCompatActivity {
 
     }
 
+    /**
+     * Function for editing days
+     * @param ctx
+     */
     public static void makeDaysEditable(Activity ctx) {
         View childdays = ctx.findViewById(R.id.days_inner);
         for (int i = 0; i < 7; i++) {
@@ -128,12 +165,20 @@ public class AddHabitActivity extends AppCompatActivity {
         }
     }
 
+    /**
+     * Reset completed days
+     */
     public static void resetDays() {
         for (int i = 0; i < 7; i++) {
             AddHabitActivity.days[i] = 0;
         }
     }
 
+    /**
+     * Checks constraints on habit creation
+     * @param ctx
+     * @return
+     */
     public static boolean habitChecksOut(Activity ctx) {
         String title = ((EditText) ctx.findViewById(R.id.habit_input)).getText().toString();
         if (title.isEmpty()) {
