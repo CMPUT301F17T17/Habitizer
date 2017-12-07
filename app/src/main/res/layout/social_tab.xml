@@ -65,7 +65,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Following"
-        android:textSize="8sp"
+        android:textSize="7sp"
         tools:layout_editor_absoluteX="5dp"
         tools:layout_editor_absoluteY="78dp" />
 
@@ -75,7 +75,7 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="-8dp"
         android:text="followers"
-        android:textSize="8sp"
+        android:textSize="7sp"
         app:layout_constraintLeft_toRightOf="@+id/following_button"
         tools:layout_editor_absoluteY="78dp" />
 
@@ -85,7 +85,7 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="-15dp"
         android:text="requests"
-        android:textSize="8sp"
+        android:textSize="7sp"
         app:layout_constraintLeft_toRightOf="@+id/followers_button"
         tools:layout_editor_absoluteY="78dp" />
 

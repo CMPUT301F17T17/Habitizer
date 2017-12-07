@@ -152,7 +152,7 @@
         android:layout_marginRight="12dp"
         android:layout_marginTop="20dp"
         android:layout_weight="0.05"
-        android:text="Comfirm"
+        android:text="Confirm"
         android:visibility="visible" />
 
     <LinearLayout
@@ -290,7 +290,7 @@
         android:layout_marginRight="12dp"
         android:layout_marginTop="2dp"
         android:layout_weight="0.15"
-        android:text="Log out"
+        android:text="Logout"
         android:visibility="gone" />
 
 </LinearLayout>
