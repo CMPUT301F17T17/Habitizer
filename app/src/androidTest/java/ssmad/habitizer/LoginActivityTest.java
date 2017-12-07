@@ -60,9 +60,9 @@ public class LoginActivityTest extends ActivityInstrumentationTestCase2<LoginAct
 
         solo.assertCurrentActivity("Wrong Activity!", LoginActivity.class);
         solo.clearEditText((EditText) solo.getView(R.id.username_input));
-        solo.enterText((EditText) solo.getView(R.id.username_input), "testUser");
+        solo.enterText((EditText) solo.getView(R.id.username_input), "SSMAD");
         solo.clearEditText((EditText) solo.getView(R.id.password_input));
-        solo.enterText((EditText) solo.getView(R.id.password_input), "testPass");
+        solo.enterText((EditText) solo.getView(R.id.password_input), "SSMAD");
 
         // click on button
         solo.clickOnView(solo.getView(R.id.login_btn));
