@@ -31,8 +31,8 @@ public class AccountUnitTest {
      */
     @Test
     public void testUsernameGetAndSet() throws Exception{
-        byte[] testbyte = {15, 15};
-        Account account = new Account("testUsername", "testPassword", testbyte, "testname", "2000-01-01", "Male");
+        byte [] testByte = {10, 10};
+        Account account = new Account("testUsername", "testPassword", testByte, "Test User", "1996-01-01", "Male");
         account.setUserName("newUsername");
         assertEquals("newUsername", account.getUserName());
 
@@ -44,59 +44,10 @@ public class AccountUnitTest {
      */
     @Test
     public void testPasswordGetAndSet() throws Exception{
-        byte[] testbyte = {15, 15};
-        Account account = new Account("testUsername", "testPassword", testbyte, "testname", "2000-01-01", "Male");
+        byte [] testByte = {10, 10};
+        Account account = new Account("testUsername", "testPassword", testByte, "Test User", "1996-01-01", "Male");
         account.setUserPassword("newPassword");
         assertEquals("newPassword", account.getPassword());
-    }
-
-    /**
-     * Tests portrait getter/setter
-     * @throws Exception
-     */
-    @Test
-    public void testPortraitGetAndSet() throws Exception{
-        byte[] testbyte = {15, 15};
-        Account account = new Account("testUsername", "testPassword", testbyte, "testname", "2000-01-01", "Male");
-        byte[] newbyte = {10, 10};
-        account.setPortrait(newbyte);
-        assertEquals(newbyte, account.getPortrait());
-    }
-
-    /**
-     * Tests name getter/setter
-     * @throws Exception
-     */
-    @Test
-    public void testNameGetAndSet() throws Exception{
-        byte[] testbyte = {15, 15};
-        Account account = new Account("testUsername", "testPassword", testbyte, "testname", "2000-01-01", "Male");
-        account.setName("newName");
-        assertEquals("newName", account.getName());
-    }
-
-    /**
-     * Tests birthday getter/setter
-     * @throws Exception
-     */
-    @Test
-    public void testBirthdayGetAndSet() throws Exception{
-        byte[] testbyte = {15, 15};
-        Account account = new Account("testUsername", "testPassword", testbyte, "testname", "2000-01-01", "Male");
-        account.setBirthday("1990-05-05");
-        assertEquals("1990-05-05", account.getBirthday());
-    }
-
-    /**
-     * Tests gender getter/setter
-     * @throws Exception
-     */
-    @Test
-    public void testGenderGetAndSet() throws Exception{
-        byte[] testbyte = {15, 15};
-        Account account = new Account("testUsername", "testPassword", testbyte, "testname", "2000-01-01", "Male");
-        account.setGender("Female");
-        assertEquals("Female", account.getGender());
     }
 
 }

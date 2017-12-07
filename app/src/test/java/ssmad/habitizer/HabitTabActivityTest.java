@@ -33,7 +33,6 @@ public class HabitTabActivityTest extends ActivityInstrumentationTestCase2<Habit
         solo.assertCurrentActivity("Wrong Activity!", AddHabitActivity.class);
         solo.enterText((EditText) solo.getView(R.id.habit_input), "Push-Ups");
         solo.enterText((EditText) solo.getView(R.id.reason_input), "I want big arms");
-        //solo.clickOnView(solo.getView(R.id.date_input));
         // open up picker and select some date
 
         //solo.clickOnView(solo.getView(R.id.freq_input));
