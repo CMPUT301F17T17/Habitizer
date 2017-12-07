@@ -249,17 +249,16 @@ public class DummyMainActivity extends AppCompatActivity {
             default:
                 toChange = bHabits;
         }
-        // do colors
+
         toChange.setBackgroundColor(ctx.getResources().getColor(holo_blue_light, null));
         toChange.setTextColor(ctx.getResources().getColor(white, null));
-        // set w/h
+
         LinearLayout tabsInner = (LinearLayout) childTabs.findViewById(R.id.tabs_inner);
         tabsInner.setLayoutParams(new ViewGroup.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT,
                 ViewGroup.LayoutParams.WRAP_CONTENT));
 
         final Intent intent = new Intent();
-        //intent.replaceExtras(data);
-        // init buttons
+
         if (bHabits != toChange) {
             bHabits.setOnClickListener(new View.OnClickListener() {
                 @Override
@@ -301,7 +300,6 @@ public class DummyMainActivity extends AppCompatActivity {
         }
 
 
-        // add it
         tabs.addView(childTabs);
 
 

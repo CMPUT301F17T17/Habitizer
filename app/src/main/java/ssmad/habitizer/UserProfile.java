@@ -10,9 +10,6 @@ package ssmad.habitizer;
 
 import android.graphics.Bitmap;
 
-/**
- * Created by Andoryu on 2017-11-11.
- */
 
 /**
  * Represents a User

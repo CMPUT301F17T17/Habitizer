@@ -16,9 +16,6 @@ import java.util.Date;
 
 import static org.junit.Assert.assertEquals;
 
-/**
- * Created by cryst on 11/12/2017.
- */
 
 /**
  * For testing UserProfile

@@ -102,21 +102,21 @@ public class EditProfileActivity extends AppCompatActivity implements DatePicker
     private static Boolean fromSignup;
 
     /**
-     * Called when activity starts, used for displaying profile
+     * Called when activity starts, used for displaying/editing profile
      * @param savedInstanceState
      */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.profile_tab);
-        //setContentView(R.layout.activity_habit_tab);
+
         Intent intent = getIntent();
         fromSignup = intent.getBooleanExtra("fromSignup", false);
 
         if (!(fromSignup || intent.hasExtra(SocialMultiAdapter.SOCIAL2ACCOUNT))){
             DummyMainActivity.initTabs(DummyMainActivity.VIEW_EDIT_PROFILE, EditProfileActivity.this, intent);}
 
-        //This part is for editing profile
+
         nmText = (TextView) findViewById(R.id.nmText);
         btText = (TextView) findViewById(R.id.btText);
         gdText = (TextView) findViewById(R.id.gdText);
@@ -131,7 +131,7 @@ public class EditProfileActivity extends AppCompatActivity implements DatePicker
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_item);
         genderSpn.setAdapter(adapter);
 
-        //This part is for displaying profile
+
         nameDisplay = (TextView) findViewById(R.id.name_dis);
         birthDisplay = (TextView) findViewById(R.id.birth_dis);
         genderDisplay = (TextView) findViewById(R.id.gender_dis);
@@ -236,11 +236,11 @@ public class EditProfileActivity extends AppCompatActivity implements DatePicker
 
         confirmButton.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                //get extra user name
+
                 Intent intent = getIntent();
                 String user = intent.getStringExtra("username");
                 String password = intent.getStringExtra("password");
-                //get bitmap from iamgeButton then transfer it to byte array
+
                 ByteArrayOutputStream stream = new ByteArrayOutputStream();
                 Bitmap bitmap;
                 // If image is selected from camera or gallery, selected image will be converted
@@ -333,7 +333,7 @@ public class EditProfileActivity extends AppCompatActivity implements DatePicker
                         if (!tofollow) {
                             targetUserInfo.setRequests(addOne(targetUserInfo.getRequests(), userInfo.getUsername()));
                             userInfo.setSent_requests(addOne(userInfo.getSent_requests(), targetUserInfo.getUsername()));
-                        } else { //want to unfollow
+                        } else {
                             targetUserInfo.setFollowers(minusOne(targetUserInfo.getFollowers(), userInfo.getUsername()));
                             userInfo.setFollowing(minusOne(userInfo.getFollowing(), targetUserInfo.getUsername()));
                         }
@@ -391,7 +391,6 @@ public class EditProfileActivity extends AppCompatActivity implements DatePicker
         nameDisplay.setText(name);
         birthDisplay.setText(birthday);
         genderDisplay.setText(gender);
-        //set up image
         Bitmap bitmap = BitmapFactory.decodeByteArray(imageBytes, 0, imageBytes.length);
         imageV.setImageBitmap(bitmap);
     }

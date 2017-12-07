@@ -43,6 +43,9 @@ public class HabitTabActivity extends AppCompatActivity {
     public static Boolean isFromProfile = false; //TODO 2
     ListView myHabitsListView;
 
+    /**
+     * Called when activity starts, retrieves habits from server or offline list
+     */
     @Override
     protected void onStart() {
         super.onStart();
@@ -81,6 +84,10 @@ public class HabitTabActivity extends AppCompatActivity {
         DummyMainActivity.myHabitsAdapter.notifyDataSetChanged();
     }
 
+    /**
+     * Called on creation of activity, connects buttons to activities
+     * @param savedInstanceState
+     */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         Intent intent = getIntent();
@@ -105,6 +112,13 @@ public class HabitTabActivity extends AppCompatActivity {
             });
         }
     }
+
+    /**
+     * For sending user to different activities
+     * @param requestCode
+     * @param resultCode
+     * @param data
+     */
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);

@@ -19,10 +19,6 @@ import java.util.Date;
 import static org.junit.Assert.assertEquals;
 
 /**
- * Created by cryst on 11/10/2017.
- */
-
-/**
  * For testing Habit Events
  * @author Simon
  * @version 0.5

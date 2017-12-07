@@ -9,9 +9,6 @@
 
 package ssmad.habitizer;
 
-/**
- * Created by cryst on 11/29/2017.
- */
 
 import org.junit.Test;
 

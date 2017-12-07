@@ -1,3 +1,14 @@
+/*
+ *
+ * Class Name:
+ * Version: 1.0
+ * Date: December 6th, 2017
+ * Copyright (c) TEAM SSMAD, CMPUT 301, University of Alberta - All Rights Reserved.
+ * You may use, distribute, or modify this code under terms and conditions of the
+ * Code of Students Behaviour at University of Alberta
+ *
+ */
+
 package ssmad.habitizer;
 
 import android.app.Activity;
@@ -7,9 +18,12 @@ import android.widget.EditText;
 import com.robotium.solo.Solo;
 
 /**
- * Created by cryst on 10/23/2017.
+ * UI Testing of Habit Tab Activities
+ * @author Derrick
+ * @version 1.0
+ * @see HabitTabActivity
+ * @since 1.0
  */
-
 public class HabitTabActivityTest extends ActivityInstrumentationTestCase2<HabitTabActivity>{
     private Solo solo;
 
@@ -23,7 +37,9 @@ public class HabitTabActivityTest extends ActivityInstrumentationTestCase2<Habit
         Activity activity = getActivity();
     }
 
-
+    /**
+     * Tests adding a habit
+     */
     public void AddHabitTest(){
         solo.clickOnView(solo.getView(R.id.habit_tab_button));
         solo.assertCurrentActivity("Wrong Activity!", HabitTabActivity.class);
@@ -49,6 +65,9 @@ public class HabitTabActivityTest extends ActivityInstrumentationTestCase2<Habit
     }
 
 
+    /**
+     * Tests adding a habit event
+     */
     public void AddHabitEventTest(){
         solo.clickOnView(solo.getView(R.id.habit_tab_button));
         solo.assertCurrentActivity("Wrong Activity!", HabitTabActivity.class);

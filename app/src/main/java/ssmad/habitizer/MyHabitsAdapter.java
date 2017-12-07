@@ -32,10 +32,6 @@ import java.util.ArrayList;
 import static ssmad.habitizer.R.drawable.days_border_valid;
 
 /**
- * Created by Sadman on 2017-11-10.
- */
-
-/**
  * Adapter for Habits
  * @author Sadman
  * @version 1.0

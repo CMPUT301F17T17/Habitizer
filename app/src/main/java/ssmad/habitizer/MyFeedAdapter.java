@@ -25,10 +25,6 @@ import android.widget.TextView;
 import java.util.ArrayList;
 
 /**
- * Created by Sadman on 2017-11-13.
- */
-
-/**
  * Adapter for Habit Event
  * @author Sadman
  * @version 0.5

@@ -52,10 +52,8 @@ public class FeedTabActivity extends AppCompatActivity {
         myHabitEventsListView.setAdapter(DummyMainActivity.myHabitEventsAdapter);
         //TODO change here
         DummyMainActivity.myHabitEventsAdapter.notifyDataSetChanged();
-        //DummyMainActivity.myHabitEvents = new ArrayList<>();
         Intent intent = getIntent();
         if (intent.getBooleanExtra("fromHabit", false)){
-            //intent.getStringExtra("currentHabitId");
             refreshFeed2();
         } else{
             refreshFeed(null);
@@ -159,7 +157,6 @@ public class FeedTabActivity extends AppCompatActivity {
                     h.fromJsonObject(job);
                     DummyMainActivity.myHabitEvents.add(h);
                 }
-                // sort
                 Log.d("FEED.TAB.QUERY", "Error in sorting");
                 Collections.sort(DummyMainActivity.myHabitEvents, new Comparator<HabitEvent>() {
                     @Override
@@ -167,7 +164,7 @@ public class FeedTabActivity extends AppCompatActivity {
                         return -o1.getCompletionDate().compareTo(o2.getCompletionDate());
                     }
                 });
-                //FileController.saveInFile(FeedTabActivity.this, DummyMainActivity.HABITEVENTFILENAME, DummyMainActivity.myHabitEvents);
+
             }catch (Exception e){
                 Log.d("FEED.TAB.QUERY", "Adding habits events in login.");
             }
@@ -188,13 +185,7 @@ public class FeedTabActivity extends AppCompatActivity {
         Type listType;
         if(Utilities.isNetworkAvailable(FeedTabActivity.this)){
             ElasticsearchController.GetFeedTask getHabitsArrayGetTask = new ElasticsearchController.GetFeedTask();
-            /*String query = String.format(
-                    "\"bool\":{" +
-                            "\"must\":" +
-                                "{ \"term\" :" +
-                                     "{\"habitid\": \"%s\"}" +
-                                "}", habit_id);
-            query = query + "}";*/
+
             String query = String.format( " {\"match\" :" +
                     "{\"habitid\": \"%s\"}" +
                     "}", habit_id);
@@ -220,7 +211,7 @@ public class FeedTabActivity extends AppCompatActivity {
                         return -o1.getCompletionDate().compareTo(o2.getCompletionDate());
                     }
                 });
-                //FileController.saveInFile(FeedTabActivity.this, DummyMainActivity.HABITEVENTFILENAME, DummyMainActivity.myHabitEvents);
+
             }catch (Exception e){
                 Log.d("cnmlgb", "Adding habits events in login.");
             }
