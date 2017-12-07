@@ -1,3 +1,14 @@
+/*
+ *
+ *  *  Class Name:
+ *  *  Version: 1.0
+ *  *  Date: December 6th, 2017
+ *  *  Copyright (c) TEAM SSMAD, CMPUT 301, University of Alberta - All Rights Reserved.
+ *  *  You may use, distribute, or modify this code under terms and conditions of the
+ *  *  Code of Students Behaviour at University of Alberta
+ *
+ */
+
 package ssmad.habitizer;
 
 import android.os.Parcel;
@@ -13,7 +24,11 @@ import java.util.ArrayList;
 import java.util.Date;
 
 /**
- * Created by Andoryu on 2017-11-10.
+ * Represents an Account
+ * @author Andrew
+ * @version 1.0
+ * @see UserProfile
+ * @since 0.5
  */
 
 public class Account{
@@ -28,6 +43,16 @@ public class Account{
     private String[] requests = {};
     private String[] sent_requests = {};
 
+    /**
+     * Constructor with username, password, portrait, name, birthday, and gender
+     * @param username
+     * @param password
+     * @param portrait
+     * @param name
+     * @param birthday
+     * @param gender
+     */
+
     public Account(String username, String password, byte[] portrait, String name, String birthday, String gender){
         this.username = username;
         this.password = password;
@@ -37,54 +62,106 @@ public class Account{
         this.gender = gender;
     }
 
+    /**
+     * Constructor with username
+     * @param username
+     */
     public Account(String username) {
         this.username = username;
     }
 
+    /**
+     * For setting username
+     * @param username
+     */
     public void setUserName(String username) {
         this.username = username;
     }
 
+    /**
+     * For setting password
+     * @param password
+     */
     public void setUserPassword(String password) {
         this.password = password;
     }
 
+    /**
+     * For getting username
+     * @return
+     */
     public String getUserName(){
         return this.username;
     }
 
+    /**
+     * For getting password
+     * @return
+     */
     public String getPassword(){
         return this.password;
     }
 
+    /**
+     * For setting portrait
+     * @param portrait
+     */
     public void setPortrait(byte[] portrait){
         this.portrait = portrait;
     }
 
+    /**
+     * For setting name
+     * @param name
+     */
     public void setName(String name) {
         this.name = name;
     }
 
+    /**
+     * For setting birthday
+     * @param birthday
+     */
     public void setBirthday(String birthday){
         this.birthday = birthday;
     }
 
+    /**
+     * For setting Gender
+     * @param gender
+     */
     public void setGender(String gender){
         this.gender = gender;
     }
 
+    /**
+     * For getting username
+     * @return
+     */
     public String getUsername(){
         return this.username;
     }
 
+    /**
+     * For getting portrait
+     * @return
+     */
     public byte[] getPortrait(){
         return this.portrait;
     }
 
+    /**
+     * For getting name
+     * @return
+     */
     public String getName(){
         return this.name;
     }
 
+    /**
+     * For getting birthday
+     * @return
+     */
     public String getBirthday(){
         return this.birthday;
     }
