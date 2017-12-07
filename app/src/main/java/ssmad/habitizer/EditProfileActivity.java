@@ -1,6 +1,6 @@
 /*
  *  Class Name: EditProfileActivity
- *  Version: 0.5
+ *  Version: 1.0
  *  Date: November 13th, 2017
  *  Copyright (c) TEAM SSMAD, CMPUT 301, University of Alberta - All Rights Reserved.
  *  You may use, distribute, or modify this code under terms and conditions of the

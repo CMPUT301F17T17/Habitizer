@@ -1,11 +1,14 @@
+
 /*
  *  Class Name: LoginActivity
- *  Version: 0.5
- *  Date: November 13th, 2017
+ *  Version: 1.0
+ *  Date: December 6th, 2017
  *  Copyright (c) TEAM SSMAD, CMPUT 301, University of Alberta - All Rights Reserved.
  *  You may use, distribute, or modify this code under terms and conditions of the
  *  Code of Students Behaviour at University of Alberta
+ *
  */
+
 package ssmad.habitizer;
 
 import android.content.Intent;
@@ -32,13 +35,14 @@ import java.io.OutputStreamWriter;
 import java.lang.reflect.Type;
 import java.util.ArrayList;
 
+
 /**
- * Login Activity, for logging in and signing up
+ * Activity for user login
  * @author Andrew
- * @version 0.5
+ * @version 1.0
+ * @see SignupActivity
  * @since 0.5
  */
-
 public class LoginActivity extends AppCompatActivity {
     public static final String FILENAME= "account2.sav";
     private EditText usernameText;
@@ -75,7 +79,6 @@ public class LoginActivity extends AppCompatActivity {
         loginButton = (Button) findViewById(R.id.login_btn);
         signupButton =  (Button) findViewById(R.id.signup_btn);
 
-        //loadFromFile();
 
         loginButton.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v) {
@@ -116,6 +119,10 @@ public class LoginActivity extends AppCompatActivity {
 
     }
 
+    /**
+     * Checks if network is available and gets habits accordingly
+     * @param username
+     */
     private void postLogin(String username) {
         Type listType;
         if(Utilities.isNetworkAvailable(LoginActivity.this)){
@@ -127,9 +134,6 @@ public class LoginActivity extends AppCompatActivity {
                 for (int i = 0; i < jsonHabits.size(); i++){
                     Habit h = new Habit();
                     JsonObject job  = jsonHabits.get(i).getAsJsonObject();
-                    /* Gson g = new Gson();
-                    String s = g.toJson(job);
-                    Log.d("LOGIN.json", s);*/
                     h.fromJsonObject(job);
                     DummyMainActivity.myHabits.add(h);
                 }
@@ -147,7 +151,7 @@ public class LoginActivity extends AppCompatActivity {
     }
 
     /**
-     * Sends user to edit profile if requested
+     * Sends user to edit profile
      * @param requestCode
      * @param resultCode
      * @param data
@@ -164,7 +168,7 @@ public class LoginActivity extends AppCompatActivity {
     }
 
     /**
-     * Check if username and password match for successful login
+     * Check if user exists in server, and if username and password match for successful login
      * @param username
      * @param password
      * @return

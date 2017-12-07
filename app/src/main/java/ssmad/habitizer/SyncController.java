@@ -1,3 +1,13 @@
+/*
+ *  Class Name: SyncController
+ *  Version: 1.0
+ *  Date: December 6th, 2017
+ *  Copyright (c) TEAM SSMAD, CMPUT 301, University of Alberta - All Rights Reserved.
+ *  You may use, distribute, or modify this code under terms and conditions of the
+ *  Code of Students Behaviour at University of Alberta
+ *
+ */
+
 package ssmad.habitizer;
 
 import android.app.Activity;
@@ -9,9 +19,12 @@ import java.lang.reflect.Type;
 import java.util.ArrayList;
 
 /**
- * Created by Sadman on 2017-12-05.
+ * For managing offline capabilities
+ * @author Sadman
+ * @version 1.0
+ * @see ElasticsearchController
+ * @since 1.0
  */
-
 public class SyncController {
 
     public static final int TASK_ADD = 0;
@@ -21,6 +34,9 @@ public class SyncController {
     private static final int DS_HABITEVENT = 1;
     private static final int DS_ACCOUNT = 2;
 
+    /**
+     * Manage information requests
+     */
     public static class DoubleString {
         /**
          * s[0] -> namespace
@@ -34,37 +50,75 @@ public class SyncController {
         private Account a;
         private int type;
 
+        /**
+         * Gets request type
+         * @return
+         */
         public int getType() {
             return type;
         }
 
+        /**
+         * Gets habti event
+         * @return
+         */
         public HabitEvent getHabitEvent() {
             return he;
         }
 
+        /**
+         * Gets account
+         * @return
+         */
         public Account getAccount() {
             return a;
         }
 
+        /**
+         * Gets habit
+         * @return
+         */
         public Habit getHabit() {
             return h;
         }
 
+        /**
+         * Constructor for when habit is desired
+         * @param s
+         * @param h
+         */
         public DoubleString(String[] s, Habit h) {
             this.s = s;
             this.h = h;
             this.type = DS_HABIT;
         }
+
+        /**
+         * Constructor for when habti event is desired
+         * @param s
+         * @param h
+         */
         public DoubleString(String[] s, HabitEvent h) {
             this.s = s;
             this.he = h;
             this.type = DS_HABITEVENT;
         }
+
+        /**
+         * Constructor for when account is desired
+         * @param s
+         * @param h
+         */
         public DoubleString(String[] s, Account h) {
             this.s = s;
             this.a = h;
             this.type = DS_ACCOUNT;
         }
+
+        /**
+         * Gets string
+         * @return
+         */
         public String[] getString(){
             return this.s;
         }
@@ -85,6 +139,11 @@ public class SyncController {
         }
         return a;
     }
+
+    /**
+     * Performs the actual sync
+     * @param context
+     */
     public static void sync(Activity context) {
         Type t = new TypeToken<ArrayList<DoubleString>>(){}.getType();
         toSync = verify(context, toSync, t, "SyncItems.sav");
@@ -134,13 +193,32 @@ public class SyncController {
     }
 
 
+    /**
+     * Add to sync for habit
+     * @param s
+     * @param h
+     */
     public static void addToSync(String[] s, Habit h) {
         DoubleString d = new DoubleString(s,h);
         toSync.add(d);
-    }public static void addToSync(String[] s, HabitEvent h) {
+    }
+
+    /**
+     * Add to sync for habit event
+     * @param s
+     * @param h
+     */
+    public static void addToSync(String[] s, HabitEvent h) {
         DoubleString d = new DoubleString(s,h);
         toSync.add(d);
-    }public static void addToSync(String[] s, Account h) {
+    }
+
+    /**
+     * Add to sync for account
+     * @param s
+     * @param h
+     */
+    public static void addToSync(String[] s, Account h) {
         DoubleString d = new DoubleString(s,h);
         toSync.add(d);
     }

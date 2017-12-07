@@ -1,3 +1,13 @@
+/*
+ *  Class Name: SocialMultiAdapter
+ *  Version: 1.0
+ *  Date: December 6th, 2017
+ *  Copyright (c) TEAM SSMAD, CMPUT 301, University of Alberta - All Rights Reserved.
+ *  You may use, distribute, or modify this code under terms and conditions of the
+ *  Code of Students Behaviour at University of Alberta
+ *
+ */
+
 package ssmad.habitizer;
 
 import android.app.Activity;
@@ -12,14 +22,33 @@ import android.widget.ArrayAdapter;
 import android.widget.TextView;
 import java.util.ArrayList;
 
+/**
+ * Adapter for Social tab
+ * @author Sadman
+ * @version 1.0
+ * @see SocialTabActivity
+ * since 1.0
+ */
 public class SocialMultiAdapter extends ArrayAdapter<Account> {
     public static final String SOCIAL2ACCOUNT = "fromSocial";
     public static final String ACCOUNTMODE = "fromSocial_Mode";
 
+    /**
+     * Constructor for SocialMultiAdapter
+     * @param context
+     * @param accounts
+     */
     SocialMultiAdapter(Context context, ArrayList<Account> accounts) {
         super(context, R.layout.myfeed_list_view, accounts);
     }
 
+    /**
+     * Gets view for social tab listings
+     * @param position
+     * @param convertView
+     * @param parent
+     * @return
+     */
     @NonNull
     @Override
     public View getView(int position, @Nullable View convertView, @NonNull ViewGroup parent) {
@@ -96,6 +125,10 @@ public class SocialMultiAdapter extends ArrayAdapter<Account> {
         return custom;
     }
 
+    /**
+     * Saves changes to account
+     * @param account
+     */
     public void saveAccountChanges(Account account){
         ElasticsearchController.AddUsersTask addUsersTask = new ElasticsearchController.AddUsersTask();
         addUsersTask.execute(account);
