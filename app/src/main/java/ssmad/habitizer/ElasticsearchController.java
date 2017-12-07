@@ -27,8 +27,8 @@ import io.searchbox.core.Update;
 public class ElasticsearchController {
     private static JestDroidClient client;
 
-    private static final String INDEX = "team17";
-    private static final String USER_TYPE = "user3";
+    private static final String INDEX = "cmput301f17t17";
+    private static final String USER_TYPE = "user";
 
     // TODO we need a function which adds tweets to elastic search
     public static class AddUsersTask extends AsyncTask<Account, Void, Void> {
