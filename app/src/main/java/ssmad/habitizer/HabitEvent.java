@@ -1,11 +1,13 @@
 /*
  *  Class Name: HabitEvent
  *  Version: 1.0
- *  Date: November 13th, 2017
+ *  Date: December 6th, 2017
  *  Copyright (c) TEAM SSMAD, CMPUT 301, University of Alberta - All Rights Reserved.
  *  You may use, distribute, or modify this code under terms and conditions of the
  *  Code of Students Behaviour at University of Alberta
+ *
  */
+
 package ssmad.habitizer;
 
 import android.graphics.Bitmap;
@@ -22,19 +24,10 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 
 /**
- * Created by Sadman on 2017-11-10.
- */
-
-/*
-Refs:
-https://alvinalexander.com/source-code/android/android-how-load-image-file-and-set-imageview
- */
-
-
-/**
- * Represents a Habit Event
+ * Represents a Habit Event object
  * @author Sadman
  * @version 1.0
+ * @see Habit
  * @since 0.5
  */
 public class HabitEvent {
@@ -44,10 +37,18 @@ public class HabitEvent {
     private String habit_id;
     private String pic_id;
 
+    /**
+     * Gets picture id
+     * @return
+     */
     public String getPic_id() {
         return pic_id;
     }
 
+    /**
+     * Sets picture id
+     * @param pic_id
+     */
     public void setPic_id(String pic_id) {
         this.pic_id = pic_id;
     }
@@ -67,7 +68,7 @@ public class HabitEvent {
     }
 
     /**
-     * Boolean to check if event has picture
+     * Boolean for if event has picture
      * @return
      */
     public boolean hasPicture() {
@@ -75,7 +76,7 @@ public class HabitEvent {
     }
 
     /**
-     * Boolean to check if event has location
+     * Boolean for if event has location tagged
      * @return
      */
     public boolean hasLocation() {
@@ -83,7 +84,7 @@ public class HabitEvent {
     }
 
     /**
-     * Constructor for habit event with title, date, picture, location, and comment
+     * Constructor for habti event object
      * @param title
      * @param completionDate
      * @param pic
@@ -114,6 +115,10 @@ public class HabitEvent {
 
     }
 
+    /**
+     * Gets Json string
+     * @return
+     */
     public String getJsonString() {
         JsonObject j = new JsonObject();
         j.addProperty("habitid", this.getHabit_id());
@@ -145,6 +150,11 @@ public class HabitEvent {
         return s;
     }
 
+    /**
+     * Sets event according to json job passed in
+     * @param job
+     * @throws ParseException
+     */
     public void fromJsonObject(JsonObject job) throws ParseException {
         Gson g = new GsonBuilder().setPrettyPrinting().create();
         String s = g.toJson(job);
@@ -164,7 +174,6 @@ public class HabitEvent {
         this.hasPic = j.get("hasPic").getAsBoolean();
         this.hasLoc = j.get("hasLoc").getAsBoolean();
         if (this.hasPicture()) {
-            //this.setPic_id(j.get("picId").getAsString());
             JsonArray picarr = j.get("pic").getAsJsonArray();
             byte[] b = new byte[picarr.size()];
             for (int i = 0; i < b.length; i++) {
@@ -179,7 +188,7 @@ public class HabitEvent {
     }
 
     /**
-     * Gets Title
+     * Getter for title
      * @return
      */
     public String getTitle() {
@@ -187,7 +196,7 @@ public class HabitEvent {
     }
 
     /**
-     * Sets Title
+     * Setter for title
      * @param title
      */
     public void setTitle(String title) {
@@ -195,7 +204,7 @@ public class HabitEvent {
     }
 
     /**
-     * Gets completion date
+     * Getter for completion date
      * @return
      */
     public Date getCompletionDate() {
@@ -203,7 +212,7 @@ public class HabitEvent {
     }
 
     /**
-     * Sets completion date
+     * Setter for completion date
      * @param completionDate
      */
     public void setCompletionDate(Date completionDate) {
@@ -211,7 +220,7 @@ public class HabitEvent {
     }
 
     /**
-     * Gets picture (bytes)
+     * Getter for picture bytes
      * @return
      */
     public byte[] getPicBytes() {
@@ -219,7 +228,7 @@ public class HabitEvent {
     }
 
     /**
-     * Sets picture (bytes)
+     * Setter for picture bytes
      * @param pic
      */
     public void setPicBytes(byte[] pic) {
@@ -233,23 +242,31 @@ public class HabitEvent {
 
 
     /**
-     * Gets location
+     * Getter for location of event
      * @return
      */
     public double[] getLocation() {
         return location;
     }
 
+    /**
+     * Getter for ID of habit
+     * @return
+     */
     public String getHabit_id() {
         return habit_id;
     }
 
+    /**
+     * Setter for ID of habit
+     * @param habit_id
+     */
     public void setHabit_id(String habit_id) {
         this.habit_id = habit_id;
     }
 
     /**
-     * Sets location
+     * Setter location for habit
      * @param location
      */
     public void setLocation(double[] location) {
@@ -262,7 +279,7 @@ public class HabitEvent {
     }
 
     /**
-     * Gets comment
+     * Getter for comment
      * @return
      */
     public String getComment() {
@@ -270,30 +287,50 @@ public class HabitEvent {
     }
 
     /**
-     * Sets comment
+     * Setter for comment
      * @param comment
      */
     public void setComment(String comment) {
         this.comment = comment;
     }
 
+    /**
+     * Getter for ID
+     * @return
+     */
     public String getId() {
         return id;
     }
 
+    /**
+     * Setter for ID
+     * @param id
+     */
     public void setId(String id) {
 
         this.id = id;
     }
 
+    /**
+     * Getter for username
+     * @return
+     */
     public String getUsername() {
         return this.username;
     }
 
+    /**
+     * Setter for username
+     * @param username
+     */
     public void setUsername(String username) {
         this.username = username;
     }
 
+    /**
+     * Gets Json string for picutre
+     * @return
+     */
     public String getPictureJsonString() {
         JsonObject j = new JsonObject();
         j.addProperty("pic", this.getPicBytes().toString());
@@ -303,6 +340,11 @@ public class HabitEvent {
         String s = g.toJson(j);
         return s;
     }
+
+    /**
+     * Sets picture from Json job
+     * @param job
+     */
     public void setPicFromJsonObject(JsonObject job){
         JsonObject j = job.get("_source").getAsJsonObject();
         this.setPicBytes(j.get("pic").getAsString().getBytes());

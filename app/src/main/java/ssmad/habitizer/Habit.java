@@ -1,11 +1,14 @@
+
 /*
  *  Class Name: Habit
  *  Version: 1.0
- *  Date: November 13th, 2017
+ *  Date: December 6th, 2017
  *  Copyright (c) TEAM SSMAD, CMPUT 301, University of Alberta - All Rights Reserved.
  *  You may use, distribute, or modify this code under terms and conditions of the
  *  Code of Students Behaviour at University of Alberta
+ *
  */
+
 package ssmad.habitizer;
 
 import android.util.Log;
@@ -19,11 +22,6 @@ import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
 
-
-/**
- * Created by Sadman on 2017-11-10.
- */
-
 /**
  * Represents a Habit
  * @author Sadman
@@ -36,6 +34,10 @@ public class Habit {
     private String reason;
     private String id;
 
+    /**
+     * Getter for ID
+     * @return
+     */
     public String getId() {
         return id;
     }
@@ -46,17 +48,24 @@ public class Habit {
     private String username;
 
 
-
+    /**
+     * Getter for username
+     * @return
+     */
     public String getUsername() {
         return username;
     }
 
+    /**
+     * Setter for username
+     * @param username
+     */
     public void setUsername(String username) {
         this.username = username;
     }
 
     /**
-     * Gets days of week habit is due
+     * Getter for days of week habit is due
      * @return
      */
     public int[] getDaysOfWeekDue() {
@@ -64,7 +73,7 @@ public class Habit {
     }
 
     /**
-     * Sets days of week habit is due
+     * Setter for days of week habit is due
      * @param daysOfWeekDue
      */
     public void setDaysOfWeekDue(int[] daysOfWeekDue) {
@@ -77,7 +86,7 @@ public class Habit {
     private ArrayList<HabitEvent> events;
 
     /**
-     * Returns string of habit with details
+     * Puts together habit info to create string
      * @return
      */
     @Override
@@ -88,12 +97,14 @@ public class Habit {
                 '}';
     }
 
-
+    /**
+     * Empty constructor for Habit
+     */
     public Habit() {
     }
 
     /**
-     * Constructor for Habit with title, date, and reason
+     * Constructor for Habit with title, startDate, and reason
      * @param title
      * @param startDate
      * @param reason
@@ -106,7 +117,7 @@ public class Habit {
     }
 
     /**
-     * Gets Title of this habit
+     * Getter for title of habit
      * @return
      */
     public String getTitle() {
@@ -114,7 +125,7 @@ public class Habit {
     }
 
     /**
-     * Sets Title for this habit
+     * Setter for title of habit
      * @param title
      */
     public void setTitle(String title) {
@@ -122,7 +133,7 @@ public class Habit {
     }
 
     /**
-     * Gets Start Date of this habit
+     * Getter for start date
      * @return
      */
     public Date getStartDate() {
@@ -130,7 +141,7 @@ public class Habit {
     }
 
     /**
-     * Sets Start Date of this habit
+     * Setter for start date
      * @param startDate
      */
     public void setStartDate(Date startDate) {
@@ -138,7 +149,7 @@ public class Habit {
     }
 
     /**
-     * Gets Reason for this habit
+     * Getter for reason
      * @return
      */
     public String getReason() {
@@ -146,7 +157,7 @@ public class Habit {
     }
 
     /**
-     * Sets Reason for this habit
+     * Setter for reason
      * @param reason
      */
     public void setReason(String reason) {
@@ -154,7 +165,7 @@ public class Habit {
     }
 
     /**
-     * Gets days of week completed for this habit
+     * Getter for days of the week habit was completed
      * @return
      */
     public int[] getDaysOfWeekComplete() {
@@ -162,29 +173,29 @@ public class Habit {
     }
 
     /**
-     * Sets days of week completed for this habit
+     * Setter for days of week habit was completed
      * @param daysOfWeekComplete
      */
     public void setDaysOfWeekComplete(int[] daysOfWeekComplete) {
         this.daysOfWeekComplete = daysOfWeekComplete;
     }
 
-    /**
-     * Gets habit events of this habit
-     * @return
-     */
     public ArrayList<HabitEvent> getEvents() {
         return events;
     }
 
     /**
-     * Sets habit events for this habit
+     * Setter for list of habit events
      * @param events
      */
     public void setEvents(ArrayList<HabitEvent> events) {
         this.events = events;
     }
 
+    /**
+     * Getter for Json string
+     * @return
+     */
     public String getJsonString() {
         JsonObject j = new JsonObject();
         j.addProperty("username", this.getUsername());
@@ -213,6 +224,11 @@ public class Habit {
         return s;
     }
 
+    /**
+     * Creates habit from json job
+     * @param job
+     * @throws ParseException
+     */
     public void fromJsonObject(JsonObject job) throws ParseException {
          Gson g = new Gson();
         String s = g.toJson(job);
@@ -241,6 +257,10 @@ public class Habit {
 
     }
 
+    /**
+     * Setter for ID
+     * @param id
+     */
     public void setId(String id) {
         this.id = id;
     }

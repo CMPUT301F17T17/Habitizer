@@ -1,3 +1,13 @@
+/*
+ *  Class Name: FileController
+ *  Version: 1.0
+ *  Date: December 6th, 2017
+ *  Copyright (c) TEAM SSMAD, CMPUT 301, University of Alberta - All Rights Reserved.
+ *  You may use, distribute, or modify this code under terms and conditions of the
+ *  Code of Students Behaviour at University of Alberta
+ *
+ */
+
 package ssmad.habitizer;
 
 import android.content.Context;
@@ -16,11 +26,20 @@ import java.lang.reflect.Type;
 import java.util.ArrayList;
 
 /**
- * Created by Andoryu on 2017-12-04.
+ * Controller for loading/saving from file
+ * @author Andrew
+ * @version 1.0
+ * @since 0.5
  */
-
 public class FileController {
 
+    /**
+     * Loads info from file
+     * @param context
+     * @param filename
+     * @param type
+     * @return
+     */
     public static ArrayList loadFromFile(Context context, String filename, Type type) {
         ArrayList arr = null;
         try {
@@ -28,8 +47,6 @@ public class FileController {
             BufferedReader in = new BufferedReader(new InputStreamReader(fis));
             Gson gson = new Gson();
 
-            //Code taken from http://stackoverflow.com/questions/12384064/gson-convert-from-json-to-a-typed-arraylistt Sept.22,2016
-            //Type listType = new TypeToken<ArrayList<Account>>(){}.getType();
             arr = gson.fromJson(in, type);
         } catch (FileNotFoundException e) {
             // TODO Auto-generated catch block
@@ -40,6 +57,12 @@ public class FileController {
         return arr;
     }
 
+    /**
+     * Saves info in file
+     * @param context
+     * @param filename
+     * @param arr
+     */
     public static void saveInFile(Context context, String filename, ArrayList arr) {
         try {
             FileOutputStream fos = context.openFileOutput(filename, Context.MODE_PRIVATE);
