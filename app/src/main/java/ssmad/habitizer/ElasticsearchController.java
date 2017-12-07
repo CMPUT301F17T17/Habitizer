@@ -1,6 +1,11 @@
 /*
+<<<<<<< HEAD
  *  Class Name: HabitEvent
  *  Version: 0.5
+=======
+ *  Class Name: ElasticsearchController
+ *  Version: 1.0
+>>>>>>> master
  *  Date: November 13th, 2017
  *  Copyright (c) TEAM SSMAD, CMPUT 301, University of Alberta - All Rights Reserved.
  *  You may use, distribute, or modify this code under terms and conditions of the
@@ -28,6 +33,12 @@ import io.searchbox.core.Search;
 import io.searchbox.core.SearchResult;
 import io.searchbox.core.Update;
 
+/**
+ * Controller for elastic search
+ * @author Andrew
+ * @version 1.0
+ * @since 1.0
+ */
 public class ElasticsearchController {
     private static JestDroidClient client;
 
@@ -52,7 +63,15 @@ public class ElasticsearchController {
                     } else {
                         Log.i("Error", "Elasticsearch was not able to add the user");
                     }
+<<<<<<< HEAD
                 } catch (Exception e) {
+=======
+                    else {
+                        Log.i("Error", "Elasticsearch was not able to add the user");
+                    }
+                }
+                catch (Exception e) {
+>>>>>>> master
                     Log.i("Error", "The application failed to build and send the user info.");
                 }
 
@@ -111,6 +130,7 @@ public class ElasticsearchController {
                 } else {
                     Log.i("Error", "The search query failed to find any users that matched");
                 }
+<<<<<<< HEAD
             } catch (Exception e) {
                 Log.i("Error", "Something went wrong when we tried to communicate with the elasticsearch server!");
             }
@@ -147,6 +167,9 @@ public class ElasticsearchController {
                 if (result.isSucceeded()) {
                     userData = hits.getAsJsonArray("hits");
                 } else {
+=======
+                else {
+>>>>>>> master
                     Log.i("Error", "The search query failed to find any users that matched");
                 }
             } catch (Exception e) {

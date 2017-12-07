@@ -1,0 +1,201 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black"
+    android:orientation="vertical">
+    tools:context="ssmad.habitizer.AddHabitEventActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/edit_title"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Edit Habit Event"
+            android:textSize="30sp"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/view_title"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="View Habit Event"
+            android:textSize="30sp"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/add_title"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Add Habit Event"
+            android:textSize="30sp"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/what_habit"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:text="some_habit"
+            android:textSize="18sp"/>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/comment_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Comment (Optional)"/>
+
+            <EditText
+                android:id="@+id/comment_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:ems="10"
+                android:gravity="top"
+                android:hint="some_comment"
+                android:inputType="textPersonName"
+                android:singleLine="false"
+                android:textSize="18sp"/>
+
+            <TextView
+                android:id="@+id/comment_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="No Comment"
+                android:visibility="gone"/>
+
+            <CheckBox
+                android:id="@+id/pic_check"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Add Photo"/>
+
+            <LinearLayout
+                android:id="@+id/pic_toggle"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <Button
+                    android:id="@+id/pic_gallery"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Gallery"/>
+
+                <Button
+                    android:id="@+id/pic_camera"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Camera"/>
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/pic_preview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:visibility="gone"
+                app:srcCompat="@mipmap/ic_launcher"/>
+
+            <CheckBox
+                android:id="@+id/location_check"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Add Location"/>
+
+            <LinearLayout
+                android:id="@+id/map_toggle"
+                android:layout_width="match_parent"
+                android:layout_height="128dp"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <fragment
+                    android:id="@+id/map"
+                    android:name="com.google.android.gms.maps.MapFragment"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.01"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/edit_button"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Edit"
+            android:visibility="gone"/>
+
+        <Button
+            android:id="@+id/delete"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:backgroundTint="@android:color/holo_red_dark"
+            android:text="Delete"
+            android:visibility="gone"/>
+
+        <Button
+            android:id="@+id/done_button"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Done"
+            android:visibility="gone"/>
+
+        <Button
+            android:id="@+id/add"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Add"/>
+
+        <Button
+            android:id="@+id/cancel"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Cancel"/>
+
+    </LinearLayout>
+
+</LinearLayout>

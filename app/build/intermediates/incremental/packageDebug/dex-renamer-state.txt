@@ -1,0 +1,7 @@
+#Mon Dec 04 18:56:22 MST 2017
+base.0=C\:\\Users\\cryst\\AndroidStudioProjects\\Habitizer\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run-bootstrap_ea35f71762a0dd666a728680fc1a926bfbe6cbcd
+renamed.1=classes.dex
+renamed.0=classes2.dex
+file.1=C\:\\Users\\cryst\\AndroidStudioProjects\\Habitizer\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run_15647eb5e01b5079b53b834f2c5fbbb0f2f8ed24\\classes.dex
+base.1=C\:\\Users\\cryst\\AndroidStudioProjects\\Habitizer\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run_15647eb5e01b5079b53b834f2c5fbbb0f2f8ed24
+file.0=C\:\\Users\\cryst\\AndroidStudioProjects\\Habitizer\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run-bootstrap_ea35f71762a0dd666a728680fc1a926bfbe6cbcd\\classes.dex

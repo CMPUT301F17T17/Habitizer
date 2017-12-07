@@ -1,11 +1,19 @@
 /*
+<<<<<<< HEAD
  *  Class Name: HabitEvent
+=======
+ *  Class Name: LoginActivity
+>>>>>>> master
  *  Version: 0.5
  *  Date: November 13th, 2017
  *  Copyright (c) TEAM SSMAD, CMPUT 301, University of Alberta - All Rights Reserved.
  *  You may use, distribute, or modify this code under terms and conditions of the
  *  Code of Students Behaviour at University of Alberta
  */
+<<<<<<< HEAD
+=======
+
+>>>>>>> master
 package ssmad.habitizer;
 
 import android.content.Intent;
@@ -33,7 +41,12 @@ import java.lang.reflect.Type;
 import java.util.ArrayList;
 
 
-
+/**
+ * Login Activity, for logging in and signing up
+ * @author Andrew
+ * @version 0.5
+ * @since 0.5
+ */
 public class LoginActivity extends AppCompatActivity {
     public static final String FILENAME= "account2.sav";
     private EditText usernameText;
@@ -44,6 +57,11 @@ public class LoginActivity extends AppCompatActivity {
 
     public static final int SIGNUP = 1212;
 
+    /**
+     * Called when activity starts
+     * Takes in input for logging in, and connects buttons to actions
+     * @param savedInstanceState
+     */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -106,6 +124,7 @@ public class LoginActivity extends AppCompatActivity {
 
     }
 
+<<<<<<< HEAD
     private void postLogin(String username) {
         Type listType;
         if(Utilities.isNetworkAvailable(LoginActivity.this)){
@@ -136,6 +155,14 @@ public class LoginActivity extends AppCompatActivity {
         }
     }
 
+=======
+    /**
+     * Sends user to edit profile if requested
+     * @param requestCode
+     * @param resultCode
+     * @param data
+     */
+>>>>>>> master
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
@@ -147,6 +174,16 @@ public class LoginActivity extends AppCompatActivity {
         }
     }
 
+<<<<<<< HEAD
+=======
+
+    /**
+     * Check if username and password match for successful login
+     * @param username
+     * @param password
+     * @return
+     */
+>>>>>>> master
     private Boolean find(String username, String password) {
         ElasticsearchController.GetUsersTask getUsersTask = new ElasticsearchController.GetUsersTask();
         getUsersTask.execute(username);

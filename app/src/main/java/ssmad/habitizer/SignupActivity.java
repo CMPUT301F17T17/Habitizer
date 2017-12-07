@@ -1,11 +1,19 @@
 /*
+<<<<<<< HEAD
  *  Class Name: HabitEvent
+=======
+ *  Class Name: SignupActivity
+>>>>>>> master
  *  Version: 0.5
  *  Date: November 13th, 2017
  *  Copyright (c) TEAM SSMAD, CMPUT 301, University of Alberta - All Rights Reserved.
  *  You may use, distribute, or modify this code under terms and conditions of the
  *  Code of Students Behaviour at University of Alberta
  */
+<<<<<<< HEAD
+=======
+
+>>>>>>> master
 package ssmad.habitizer;
 
 import android.content.Context;
@@ -34,6 +42,13 @@ import java.io.OutputStreamWriter;
 import java.lang.reflect.Type;
 import java.util.ArrayList;
 
+/**
+ * Activity for user signing up
+ * @author Andrew
+ * @version 0.5
+ * @see UserProfile
+ * @since 0.5
+ */
 public class SignupActivity extends AppCompatActivity {
     public static final String FILENAME= "account.sav";
     private EditText usernameText;
@@ -42,6 +57,12 @@ public class SignupActivity extends AppCompatActivity {
     private static ArrayList<Account> accountList = new ArrayList<Account>();
     private String username;
 
+    /**
+     * Called when activity starts
+     * Checks for existing username
+     * Adds in new user on success
+     * @param savedInstanceState
+     */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -66,7 +87,6 @@ public class SignupActivity extends AppCompatActivity {
                 } else if (correct){
                     //accountList.add(new Account(username, password));
                     //saveInFile(SignupActivity.this);
-
                     Intent intent = new Intent(v.getContext(), EditProfileActivity.class);
                     //intent.putExtra(EditProfileActivity.USER_NAME, username);
                     intent.putExtra("username", username);
@@ -78,6 +98,11 @@ public class SignupActivity extends AppCompatActivity {
         }   });
     }
 
+    /**
+     * Finds user in account list
+     * @param username
+     * @return
+     */
     private Boolean find(String username){
         ElasticsearchController.GetUsersTask getUsersTask = new ElasticsearchController.GetUsersTask();
         getUsersTask.execute(username);
@@ -91,6 +116,11 @@ public class SignupActivity extends AppCompatActivity {
         return false;
     }
 
+
+    /**
+     * Checks if constraints on input are met
+     * @return
+     */
     public Boolean checkInput(){
         Boolean correctness = true;
         String name = usernameText.getText().toString();
@@ -112,5 +142,4 @@ public class SignupActivity extends AppCompatActivity {
 
         return correctness;
     }
-
 }

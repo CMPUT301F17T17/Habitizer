@@ -1,11 +1,16 @@
 /*
+<<<<<<< HEAD
  *  Class Name: HabitEvent
+=======
+ *  Class Name: SocialTabActivity
+>>>>>>> master
  *  Version: 0.5
  *  Date: November 13th, 2017
  *  Copyright (c) TEAM SSMAD, CMPUT 301, University of Alberta - All Rights Reserved.
  *  You may use, distribute, or modify this code under terms and conditions of the
  *  Code of Students Behaviour at University of Alberta
  */
+<<<<<<< HEAD
 package ssmad.habitizer;
 
 import android.app.Activity;
@@ -20,7 +25,23 @@ import android.widget.EditText;
 import android.widget.ListView;
 
 import java.util.ArrayList;
+=======
 
+package ssmad.habitizer;
+
+
+
+import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
+import android.content.Intent;
+>>>>>>> master
+
+/**
+ *Activity for displaying social related aspects of the app
+ * @author Simon
+ * @version 0.1
+ * @since 0.1
+ */
 public class SocialTabActivity extends AppCompatActivity {
     public static ArrayList<Account> SocialAccounts = new ArrayList<>();
     public static ArrayAdapter<Account> SocialAccountsAdapter;
@@ -38,11 +59,12 @@ public class SocialTabActivity extends AppCompatActivity {
 
     }
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_social_tab);
-        Intent intent = getIntent();
+        Intent intent  = getIntent();
         intent.getStringExtra("username");
         DummyMainActivity.initTabs(DummyMainActivity.VIEW_SOCIAL, this, intent);
 
