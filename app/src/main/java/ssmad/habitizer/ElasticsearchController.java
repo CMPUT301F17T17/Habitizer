@@ -1,3 +1,14 @@
+
+/*
+ *  Class Name: Elastic Search Controller
+ *  Version: 1.0
+ *  Date: December 6th, 2017
+ *  Copyright (c) TEAM SSMAD, CMPUT 301, University of Alberta - All Rights Reserved.
+ *  You may use, distribute, or modify this code under terms and conditions of the
+ *  Code of Students Behaviour at University of Alberta
+ *
+ */
+
 package ssmad.habitizer;
 
 import android.os.AsyncTask;
@@ -24,15 +35,29 @@ import io.searchbox.core.Search;
 import io.searchbox.core.SearchResult;
 import io.searchbox.core.Update;
 
+/**
+ * Controller for elastic search, storage and search of users/habits on server
+ * @author Andrew, Sadman
+ * @version 1.0
+ * @see Utilities
+ * @since 1.0
+ */
 public class ElasticsearchController {
     private static JestDroidClient client;
 
     private static final String INDEX = "cmput301f17t17";
     private static final String USER_TYPE = "user";
 
-    // TODO we need a function which adds tweets to elastic search
+    /**
+     * Adds User
+     */
     public static class AddUsersTask extends AsyncTask<Account, Void, Void> {
 
+        /**
+         * Gets particular user/info
+         * @param users
+         * @return
+         */
         @Override
         protected Void doInBackground(Account... users) {
             verifySettings();
@@ -57,8 +82,16 @@ public class ElasticsearchController {
         }
     }
 
+    /**
+     * Gets item from list
+     */
     public static class AddItemsTask extends AsyncTask<String, Void, String> {
 
+        /**
+         * tries to get item from list
+         * @param params
+         * @return
+         */
         @Override
         protected String doInBackground(String... params) {
             verifySettings();
@@ -79,6 +112,9 @@ public class ElasticsearchController {
         }
     }
 
+    /**
+     * Gets requested users
+     */
     public static class GetUsersTask extends AsyncTask<String, Void, ArrayList<Account>> {
         @Override
         protected ArrayList<Account> doInBackground(String... search_parameters) {
@@ -114,6 +150,9 @@ public class ElasticsearchController {
         }
     }
 
+    /**
+     * Gets requested items
+     */
     public static class GetItemsTask extends AsyncTask<String, Void, JsonArray> {
         @Override
         protected JsonArray doInBackground(String... search_parameters) {
@@ -152,6 +191,10 @@ public class ElasticsearchController {
             return userData;
         }
     }
+
+    /**
+     * Gets feed for habits
+     */
     public static class GetFeedTask extends AsyncTask<String, Void, JsonArray> {
         @Override
         protected JsonArray doInBackground(String... search_parameters) {
@@ -195,15 +238,19 @@ public class ElasticsearchController {
         }
     }
 
+    /**
+     * Deletes item from list
+     */
     public static class DeleteItemsTask extends AsyncTask<String, Void, Boolean> {
 
         @Override
         protected Boolean doInBackground(String... params) {
             verifySettings();
-/**
- * params[0] = type
- * params[1] = id
- */
+        /**
+        * params[0] = type
+        * params[1] = id
+        */
+
             Delete delete = new Delete.Builder(params[1]).index(INDEX).type(params[0]).build();
             Boolean success = false;
             try {
@@ -220,16 +267,20 @@ public class ElasticsearchController {
             return success;
         }
     }
+
+    /**
+     * Updates items of list
+     */
     public static class UpdateItemsTask extends AsyncTask<String, Void, Boolean> {
 
         @Override
         protected Boolean doInBackground(String... params) {
             verifySettings();
-/**
- * params[0] = type
- * params[1] = id
- * params[2] = jsonstring
- */
+        /**
+        * params[0] = type
+        * params[1] = id
+        * params[2] = jsonstring
+        */
             Update update = new Update.Builder("{\"doc\": "+params[2]+"}").index(INDEX).type(params[0]).id(params[1]).build();
             Boolean success = false;
             try {
@@ -247,6 +298,9 @@ public class ElasticsearchController {
         }
     }
 
+    /**
+     * Verify settings
+     */
     public static void verifySettings() {
         if (client == null) {
             DroidClientConfig.Builder builder = new DroidClientConfig.Builder("http://cmput301.softwareprocess.es:8080");

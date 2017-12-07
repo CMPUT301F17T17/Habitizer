@@ -1,3 +1,11 @@
+/*
+ *  Class Name: AddHabitEventActivity
+ *  Version: 1.0
+ *  Date: November 13th, 2017
+ *  Copyright (c) TEAM SSMAD, CMPUT 301, University of Alberta - All Rights Reserved.
+ *  You may use, distribute, or modify this code under terms and conditions of the
+ *  Code of Students Behaviour at University of Alberta
+ */
 package ssmad.habitizer;
 
 import android.app.Activity;
@@ -27,21 +35,12 @@ import java.util.Date;
 
 
 /**
- * Created by cryst on 10/23/2017.
+ * Activity for adding in a Habit Event
+ * @author Sadman, Simon (a little)
+ * @version 0.5
+ * @see HabitEvent
+ * @since 0.5
  */
-
-/*
-Ref getting pic
-https://stackoverflow.com/questions/10165302/dialog-to-pick-image-from-gallery-or-from-camera
-Ref getting map
-https://stackoverflow.com/questions/16536414/how-to-use-mapview-in-android-using-google-map-v2
-https://stackoverflow.com/questions/40142331/how-to-request-location-permission-on-android-6
-https://www.youtube.com/watch?v=Z3mKhMkdUFk&feature=youtu.be
-https://developer.amazon.com/docs/maps/display-interactive.html
-Ref pic size reduce
-https://stackoverflow.com/questions/16954109/reduce-the-size-of-a-bitmap-to-a-specified-size-in-android
- */
-
 public class AddHabitEventActivity extends AppCompatActivity {
     public static final int GET_PIC_WITH_CAMERA = 0;
     public static final int GET_PIC_FROM_GALLERY = 1;
@@ -60,6 +59,12 @@ public class AddHabitEventActivity extends AppCompatActivity {
     public static byte[] picBytes;
     //public static GoogleMap gmap;
 
+    /**
+     * Called when activity starts
+     * Takes input for habit event
+     * Connects buttons to actions
+     * @param savedInstanceState
+     */
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.add_habit_event);
@@ -72,12 +77,6 @@ public class AddHabitEventActivity extends AppCompatActivity {
         final Button add = (Button) findViewById(R.id.add);
         Button cancel = (Button) findViewById(R.id.cancel);
 
-
-        //setPicStuff(this);
-        //setLocStuff(this);
-
-
-        // Set stuff
         habitTitle.setText(habit.getTitle());
         add.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -96,6 +95,12 @@ public class AddHabitEventActivity extends AppCompatActivity {
 
     }
 
+    /**
+     * Tries to get picture and makes add button available
+     * @param requestCode
+     * @param resultCode
+     * @param data
+     */
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) { // OK
         super.onActivityResult(requestCode, resultCode, data);
@@ -103,6 +108,11 @@ public class AddHabitEventActivity extends AppCompatActivity {
     }
 
 
+    /**
+     * Sets up checkboxes
+     * @param ctx
+     * @param btn
+     */
     public static void setUpCheckBoxes(Activity ctx) {
         CheckBox locationCheck = (CheckBox) ctx.findViewById(R.id.location_check);
         CheckBox picCheck = (CheckBox) ctx.findViewById(R.id.pic_check);
@@ -145,6 +155,11 @@ public class AddHabitEventActivity extends AppCompatActivity {
         });
     }
 
+    /**
+     * Sets up buttons related to pictures
+     * @param ctx
+     * @param btn
+     */
     public static void setUpPicButtons(Activity ctx) { // OK
         Button fromCamera = (Button) ctx.findViewById(R.id.pic_camera);
         Button fromGallery = (Button) ctx.findViewById(R.id.pic_gallery);
@@ -167,15 +182,31 @@ public class AddHabitEventActivity extends AppCompatActivity {
         });
     }
 
+    /**
+     * Sets location
+     * @param loc
+     */
     public static void setLocation(double[] loc){
         location = loc;
     }
 
 
+    /**
+     * Gets picture from bytes
+     * @param bytes
+     * @return
+     */
     public static Bitmap getPicFromBytes(byte[] bytes) {
         return BitmapFactory.decodeByteArray(bytes, 0, bytes.length);
     }
 
+    /**
+     * Sends request to server for picture
+     * @param ctx
+     * @param requestCode
+     * @param resultCode
+     * @param data
+     */
     public static void tryGetPic(Activity ctx, int requestCode, int resultCode, Intent data) {
 
         switch (requestCode) {
@@ -208,12 +239,21 @@ public class AddHabitEventActivity extends AppCompatActivity {
         }
     }
 
+    /**
+     * Called upon failure to get picture
+     * @param ctx
+     */
     public static void getPictureFail(Activity ctx) {
         DummyMainActivity.toastMe("Failed to get pic", ctx);
         ImageView picPreview = (ImageView) ctx.findViewById(R.id.pic_preview);
         picPreview.setImageBitmap(null);
     }
 
+    /**
+     * Sets picture
+     * @param ctx
+     * @param pic
+     */
     public static void setPic(Activity ctx, Bitmap pic) { // OK
         picBytes = getCompressedByteFromBitmap(pic, PIC_MAX_SIZE);
         ImageView picPreview = (ImageView) ctx.findViewById(R.id.pic_preview);
@@ -224,6 +264,12 @@ public class AddHabitEventActivity extends AppCompatActivity {
     }
 
 
+    /**
+     * Gets compressed byte from bitmap
+     * @param pic
+     * @param maxSize
+     * @return
+     */
     public static byte[] getCompressedByteFromBitmap(Bitmap pic, int maxSize) {
         double div = 100.0;
         ByteArrayOutputStream stream;
@@ -244,6 +290,9 @@ public class AddHabitEventActivity extends AppCompatActivity {
     }
 
 
+    /**
+     * For adding the event
+     */
     public void addEvent() {
         int position = getIntent()
                 .getExtras()
@@ -281,7 +330,6 @@ public class AddHabitEventActivity extends AppCompatActivity {
                 SyncController.addToSync(s, habitEvent);
             }
 
-            // Andrew stuff
             Calendar calendar = Calendar.getInstance();
             calendar.setTime(completeDate);
             int[] daysCompleteList = habit.getDaysOfWeekComplete();
@@ -294,33 +342,32 @@ public class AddHabitEventActivity extends AppCompatActivity {
 
             ElasticsearchController.UpdateItemsTask updateHabitTask = new ElasticsearchController.UpdateItemsTask();
             updateHabitTask.execute(DummyMainActivity.Habit_Index, habit.getId(), habit.getJsonString());
-            //
-
-
-            //DummyMainActivity.myHabitEvents.add(habitEvent);
-            // TODO fix this for offline
-            //FileController.saveInFile(AddHabitEventActivity.this, DummyMainActivity.HABITEVENTFILENAME, DummyMainActivity.myHabitEvents);
-            //setResult(0 ,new Intent());
             finish();
         }
 
     }
 
+    /**
+     * Cancel add event
+     */
     public void cancelEvent() {
         //setResult(0 ,new Intent());
         finish();
     }
 
+    /**
+     * Called on getting permission for location
+     * @param requestCode
+     * @param permissions
+     * @param grantResults
+     */
     @Override
     public void onRequestPermissionsResult(int requestCode, String permissions[], int[] grantResults) {
         switch (requestCode) {
             case EVENT_PERMISSION_CHECK: {
-                // If request is cancelled, the result arrays are empty.
                 if (grantResults.length > 0
                         && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
 
-                    // permission was granted, yay! Do the
-                    // location-related task you need to do.
                     if (ContextCompat.checkSelfPermission(this, android.Manifest.permission.ACCESS_FINE_LOCATION)
                             == PackageManager.PERMISSION_GRANTED) {
 

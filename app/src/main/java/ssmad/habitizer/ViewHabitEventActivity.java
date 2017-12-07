@@ -1,3 +1,11 @@
+/*
+ *  Class Name: ViewHabitEventActivity
+ *  Version: 1.0
+ *  Date: November 13th, 2017
+ *  Copyright (c) TEAM SSMAD, CMPUT 301, University of Alberta - All Rights Reserved.
+ *  You may use, distribute, or modify this code under terms and conditions of the
+ *  Code of Students Behaviour at University of Alberta
+ */
 package ssmad.habitizer;
 
 import android.content.Intent;
@@ -13,9 +21,23 @@ import android.widget.TextView;
 
 import static ssmad.habitizer.ViewHabitActivity.toEdit;
 
+/**
+ * For viewing a habit event
+ * @author Minfeng, Sadman
+ * @version 1.0
+ * @see HabitEvent
+ * @since 0.5
+ */
 public class ViewHabitEventActivity extends AppCompatActivity {
     private final int EDITING = 345;
 
+    /**
+     * Called when activity starts
+     * Takes input
+     * Connects buttons to actions
+     * Option to delete habit events
+     * @param savedInstanceState
+     */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -119,6 +141,12 @@ public class ViewHabitEventActivity extends AppCompatActivity {
         }
     }
 
+    /**
+     * Moves to activity given by intent, resets variables if request is to edit
+     * @param requestCode
+     * @param resultCode
+     * @param data
+     */
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);

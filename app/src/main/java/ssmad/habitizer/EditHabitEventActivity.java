@@ -1,3 +1,11 @@
+/*
+ *  Class Name: EditHabitEventActivity
+ *  Version: 0.5
+ *  Date: November 13th, 2017
+ *  Copyright (c) TEAM SSMAD, CMPUT 301, University of Alberta - All Rights Reserved.
+ *  You may use, distribute, or modify this code under terms and conditions of the
+ *  Code of Students Behaviour at University of Alberta
+ */
 package ssmad.habitizer;
 
 import android.app.Activity;
@@ -21,8 +29,19 @@ import static ssmad.habitizer.AddHabitEventActivity.location;
 import static ssmad.habitizer.AddHabitEventActivity.picBytes;
 import static ssmad.habitizer.ViewHabitActivity.toEdit;
 
+/**
+ * Edits habit events
+ * @author Minfeng, Sadman
+ * @version 0.5
+ * @see HabitEvent
+ * @since 0.5
+ */
 public class EditHabitEventActivity extends AppCompatActivity {
 
+    /**
+     * Called when activity starts, takes input, sets values, confirm button
+     * @param savedInstanceState
+     */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -77,6 +96,10 @@ public class EditHabitEventActivity extends AppCompatActivity {
 
     }
 
+    /**
+     * Checks constraints and on passing, checks and updates server
+     * @param position
+     */
     private void doneEvent(int position) {
         HabitEvent habitEvent = DummyMainActivity.myHabitEvents.get(position);
         String comment = ((EditText) findViewById(R.id.comment_input)).getText().toString();

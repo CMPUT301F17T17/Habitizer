@@ -1,13 +1,27 @@
+/*
+ *  Class Name: Utilities
+ *  Version: 1.0
+ *  Date: December 6th, 2017
+ *  Copyright (c) TEAM SSMAD, CMPUT 301, University of Alberta - All Rights Reserved.
+ *  You may use, distribute, or modify this code under terms and conditions of the
+ *  Code of Students Behaviour at University of Alberta
+ *
+ */
+
 package ssmad.habitizer;
 
 import android.content.Context;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 
-/**
- * Created by Andoryu on 2017-12-04.
- */
 
+/**
+ * Checkf for server connection
+ * @author Sadman
+ * @version 1.0
+ * @see ElasticsearchController
+ * @since 1.0
+ */
 public class Utilities {
     //https://stackoverflow.com/questions/30343011/how-to-check-if-an-android-device-is-online
     public static boolean isNetworkAvailable(Context context) {

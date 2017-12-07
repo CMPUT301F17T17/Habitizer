@@ -166,38 +166,74 @@ public class Account{
         return this.birthday;
     }
 
+    /**
+     * For getting gender
+     * @return
+     */
     public String getGender(){
         return this.gender;
     }
 
+    /**
+     * For getting followers
+     * @return
+     */
     public String[] getFollowers() {
         return followers;
     }
 
+    /**
+     * For setting followers
+     * @param followers
+     */
     public void setFollowers(String[] followers) {
         this.followers = followers;
     }
 
+    /**
+     * For getting following
+     * @return
+     */
     public String[] getFollowing() {
         return following;
     }
 
+    /**
+     * For setting following
+     * @param following
+     */
     public void setFollowing(String[] following) {
         this.following = following;
     }
 
+    /**
+     * For getting follow requests
+     * @return
+     */
     public String[] getRequests() {
         return requests;
     }
 
+    /**
+     * For setting follow requests
+     * @param requests
+     */
     public void setRequests(String[] requests) {
         this.requests = requests;
     }
 
+    /**
+     * For getting sent follow requests
+     * @return
+     */
     public String[] getSent_requests() {
         return sent_requests;
     }
 
+    /**
+     * For setting sent follow requests
+     * @param sent_requests
+     */
     public void setSent_requests(String[] sent_requests) {
         this.sent_requests = sent_requests;
     }

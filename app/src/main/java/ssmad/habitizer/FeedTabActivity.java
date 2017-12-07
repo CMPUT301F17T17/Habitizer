@@ -1,3 +1,11 @@
+/*
+ *  Class Name: FeedTabActivity
+ *  Version: 1.0
+ *  Date: November 13th, 2017
+ *  Copyright (c) TEAM SSMAD, CMPUT 301, University of Alberta - All Rights Reserved.
+ *  You may use, distribute, or modify this code under terms and conditions of the
+ *  Code of Students Behaviour at University of Alberta
+ */
 package ssmad.habitizer;
 
 import android.app.Activity;
@@ -22,6 +30,12 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
 
+/**
+ *Activity for displaying social related aspects of the app
+ * @author Sadman
+ * @version 1.0
+ * @since 0.5
+ */
 public class FeedTabActivity extends AppCompatActivity {
     ListView myHabitEventsListView;
     public static final int VIEWING = 234;

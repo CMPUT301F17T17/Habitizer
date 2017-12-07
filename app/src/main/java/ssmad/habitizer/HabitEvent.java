@@ -1,3 +1,11 @@
+/*
+ *  Class Name: HabitEvent
+ *  Version: 1.0
+ *  Date: November 13th, 2017
+ *  Copyright (c) TEAM SSMAD, CMPUT 301, University of Alberta - All Rights Reserved.
+ *  You may use, distribute, or modify this code under terms and conditions of the
+ *  Code of Students Behaviour at University of Alberta
+ */
 package ssmad.habitizer;
 
 import android.graphics.Bitmap;
@@ -22,6 +30,13 @@ Refs:
 https://alvinalexander.com/source-code/android/android-how-load-image-file-and-set-imageview
  */
 
+
+/**
+ * Represents a Habit Event
+ * @author Sadman
+ * @version 1.0
+ * @since 0.5
+ */
 public class HabitEvent {
     private String title;
     private Date completionDate;
@@ -51,14 +66,30 @@ public class HabitEvent {
 
     }
 
+    /**
+     * Boolean to check if event has picture
+     * @return
+     */
     public boolean hasPicture() {
         return hasPic;
     }
 
+    /**
+     * Boolean to check if event has location
+     * @return
+     */
     public boolean hasLocation() {
         return hasLoc;
     }
 
+    /**
+     * Constructor for habit event with title, date, picture, location, and comment
+     * @param title
+     * @param completionDate
+     * @param pic
+     * @param location
+     * @param comment
+     */
     public HabitEvent(String title, Date completionDate, byte[] pic, double[] location, String
             comment) {
         this.title = title;
@@ -147,26 +178,50 @@ public class HabitEvent {
         }
     }
 
+    /**
+     * Gets Title
+     * @return
+     */
     public String getTitle() {
         return title;
     }
 
+    /**
+     * Sets Title
+     * @param title
+     */
     public void setTitle(String title) {
         this.title = title;
     }
 
+    /**
+     * Gets completion date
+     * @return
+     */
     public Date getCompletionDate() {
         return completionDate;
     }
 
+    /**
+     * Sets completion date
+     * @param completionDate
+     */
     public void setCompletionDate(Date completionDate) {
         this.completionDate = completionDate;
     }
 
+    /**
+     * Gets picture (bytes)
+     * @return
+     */
     public byte[] getPicBytes() {
         return pic;
     }
 
+    /**
+     * Sets picture (bytes)
+     * @param pic
+     */
     public void setPicBytes(byte[] pic) {
         if(pic == null){
             this.hasPic = false;
@@ -177,6 +232,10 @@ public class HabitEvent {
     }
 
 
+    /**
+     * Gets location
+     * @return
+     */
     public double[] getLocation() {
         return location;
     }
@@ -189,6 +248,10 @@ public class HabitEvent {
         this.habit_id = habit_id;
     }
 
+    /**
+     * Sets location
+     * @param location
+     */
     public void setLocation(double[] location) {
         if(location == null){
             this.hasLoc = false;
@@ -198,10 +261,18 @@ public class HabitEvent {
         this.location = location;
     }
 
+    /**
+     * Gets comment
+     * @return
+     */
     public String getComment() {
         return comment;
     }
 
+    /**
+     * Sets comment
+     * @param comment
+     */
     public void setComment(String comment) {
         this.comment = comment;
     }

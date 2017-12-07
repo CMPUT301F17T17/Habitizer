@@ -1,3 +1,11 @@
+/*
+ *  Class Name: ViewMapActivity
+ *  Version: 1.0
+ *  Date: November 13th, 2017
+ *  Copyright (c) TEAM SSMAD, CMPUT 301, University of Alberta - All Rights Reserved.
+ *  You may use, distribute, or modify this code under terms and conditions of the
+ *  Code of Students Behaviour at University of Alberta
+ */
 package ssmad.habitizer;
 
 import android.app.Activity;
@@ -14,6 +22,12 @@ import com.google.android.gms.maps.model.MarkerOptions;
 
 import java.util.Map;
 
+/**
+ * Activity for viewing map
+ * @author Sadman
+ * @version 1.0
+ * @since 0.5
+ */
 public class ViewMapActivity extends AppCompatActivity {
     public static final int MAP_PERMISSION_CHECK = 10;
     private final double NEAREST_DIST = 5000.0;

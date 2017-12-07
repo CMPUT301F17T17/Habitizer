@@ -1,3 +1,11 @@
+/*
+ *  Class Name: MyHabitsAdapter
+ *  Version: 1.0
+ *  Date: November 13th, 2017
+ *  Copyright (c) TEAM SSMAD, CMPUT 301, University of Alberta - All Rights Reserved.
+ *  You may use, distribute, or modify this code under terms and conditions of the
+ *  Code of Students Behaviour at University of Alberta
+ */
 package ssmad.habitizer;
 
 import android.app.Activity;
@@ -27,6 +35,13 @@ import static ssmad.habitizer.R.drawable.days_border_valid;
  * Created by Sadman on 2017-11-10.
  */
 
+/**
+ * Adapter for Habits
+ * @author Sadman
+ * @version 1.0
+ * @see Habit
+ * @since 0.5
+ */
 public class MyHabitsAdapter extends ArrayAdapter<Habit> {
     private static final int[] days = {R.id.m,
             R.id.t, R.id.w, R.id.th,
@@ -35,6 +50,13 @@ public class MyHabitsAdapter extends ArrayAdapter<Habit> {
         super(context, R.layout.myhabits_list_view, myHabits);
     }
 
+    /**
+     * Gets view for Habit
+     * @param position
+     * @param convertView
+     * @param parent
+     * @return
+     */
     @NonNull
     @Override
     public View getView(final int position, @Nullable View convertView, @NonNull ViewGroup parent) {

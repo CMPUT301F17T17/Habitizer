@@ -1,3 +1,11 @@
+/*
+ *  Class Name: EditHabitActivity
+ *  Version: 1.0
+ *  Date: November 13th, 2017
+ *  Copyright (c) TEAM SSMAD, CMPUT 301, University of Alberta - All Rights Reserved.
+ *  You may use, distribute, or modify this code under terms and conditions of the
+ *  Code of Students Behaviour at University of Alberta
+ */
 package ssmad.habitizer;
 
 import android.support.v7.app.AppCompatActivity;
@@ -7,8 +15,19 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
+/**
+ * Used for editing habits
+ * @author Minfeng, Sadman
+ * @version 1.0
+ * @see Habit
+ * @since 0.5
+ */
 public class EditHabitActivity extends AppCompatActivity {
 
+    /**
+     * Called when activity starts, takes input, sets new values, confirm button
+     * @param savedInstanceState
+     */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

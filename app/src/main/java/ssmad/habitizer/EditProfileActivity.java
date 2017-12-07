@@ -1,3 +1,11 @@
+/*
+ *  Class Name: EditProfileActivity
+ *  Version: 0.5
+ *  Date: November 13th, 2017
+ *  Copyright (c) TEAM SSMAD, CMPUT 301, University of Alberta - All Rights Reserved.
+ *  You may use, distribute, or modify this code under terms and conditions of the
+ *  Code of Students Behaviour at University of Alberta
+ */
 package ssmad.habitizer;
 
 import android.app.AlertDialog;
@@ -46,6 +54,13 @@ import java.util.Calendar;
 import java.util.Date;
 import java.util.List;
 
+/**
+ * Edits Profile of user
+ * @author Andrew
+ * @version 1.0
+ * @see UserProfile
+ * @since 0.5
+ */
 public class EditProfileActivity extends AppCompatActivity implements DatePickerDialog.OnDateSetListener{
     public static String USER_NAME = "Username of current user will store here";
     public static final String FILENAME= "userProfiles.sav";
@@ -85,8 +100,11 @@ public class EditProfileActivity extends AppCompatActivity implements DatePicker
     private LinearLayout followLayout;
     private static String currentUser;
     private static Boolean fromSignup;
-    //This part is for displaing profile
 
+    /**
+     * Called when activity starts, used for displaying profile
+     * @param savedInstanceState
+     */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -127,15 +145,17 @@ public class EditProfileActivity extends AppCompatActivity implements DatePicker
         followLayout = (LinearLayout) findViewById(R.id.lay_follow);
 
 
-       // final int pos = findUserProfile();
-        if (fromSignup){ //
-            onEditEvent(); //create profile when sign up or edit profile
+        if (fromSignup){
+            onEditEvent();
         } else{
-            onDisplayEvent(); //display profile
+            onDisplayEvent();
         }
 
     }
 
+    /**
+     * Used for editing profile
+     */
     private void onEditEvent(){
         Account user = findUser(getIntent().getStringExtra("username"));
         final Boolean find;
@@ -262,6 +282,9 @@ public class EditProfileActivity extends AppCompatActivity implements DatePicker
         });
     }
 
+    /**
+     * Send user back to edit profile
+     */
     @Override
     public void onBackPressed() {
         Intent intent = new Intent();
@@ -270,6 +293,9 @@ public class EditProfileActivity extends AppCompatActivity implements DatePicker
         super.onBackPressed();
     }
 
+    /**
+     * Displays Profile
+     */
     private void onDisplayEvent(){
         Intent intent = getIntent();
         if(intent.hasExtra(SocialMultiAdapter.SOCIAL2ACCOUNT)) {
@@ -351,6 +377,10 @@ public class EditProfileActivity extends AppCompatActivity implements DatePicker
             }
     }
 
+    /**
+     * Update user profile with new info
+     * @param userInfo
+     */
     private void onDisplayUpdate(Account userInfo) {
         String name = userInfo.getName();
         String birthday = userInfo.getBirthday();
@@ -366,6 +396,9 @@ public class EditProfileActivity extends AppCompatActivity implements DatePicker
         imageV.setImageBitmap(bitmap);
     }
 
+    /**
+     * Visibility settings
+     */
     private void displayVisibility(){
         imageButton.setVisibility(View.GONE);
         nmText.setVisibility(View.GONE);
@@ -387,6 +420,9 @@ public class EditProfileActivity extends AppCompatActivity implements DatePicker
 
     }
 
+    /**
+     * Edit visibility settings
+     */
     private void editVisibility(){
         imageButton.setVisibility(View.VISIBLE);
         nmText.setVisibility(View.VISIBLE);
@@ -406,12 +442,25 @@ public class EditProfileActivity extends AppCompatActivity implements DatePicker
         logoutButton.setVisibility(View.GONE);
     }
 
+    /**
+     * Set user birthday from DatePicker
+     * @param view
+     * @param year
+     * @param month
+     * @param dayOfMonth
+     */
     @Override
     public void onDateSet(DatePicker view, int year, int month, int dayOfMonth) {
         String userBirthday = Integer.toString(year) + '-' + Integer.toString(month) + '-' + Integer.toString(dayOfMonth);
         birthdayText.setText(userBirthday);
     }
 
+    /**
+     * Choose between camera and gallery for picture
+     * @param requestCode
+     * @param resultCode
+     * @param data
+     */
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data){
         super.onActivityResult(requestCode, resultCode, data);
@@ -425,6 +474,10 @@ public class EditProfileActivity extends AppCompatActivity implements DatePicker
         }
     }
 
+    /**
+     * Select an image from gallery
+     * @param data
+     */
     private void selectFromGallery(Intent data){
         Uri imageUri = data.getData();
         try {
@@ -436,6 +489,10 @@ public class EditProfileActivity extends AppCompatActivity implements DatePicker
         imageButton.setImageBitmap(compressedPic);
     }
 
+    /**
+     * Select image from camera
+     * @param data
+     */
     private void selectFromCamera(Intent data){
         pic = (Bitmap) data.getExtras().get("data");
         Bitmap compressedPic = getResizedBitmap(pic, PIC_MAX_SIZE);
@@ -443,6 +500,10 @@ public class EditProfileActivity extends AppCompatActivity implements DatePicker
         imageButton.setImageBitmap(compressedPic);
     }
 
+    /**
+     * Finds user from server
+     * @return
+     */
     public static Account findUser(String username) {
         currentUser = username;
 
@@ -460,6 +521,10 @@ public class EditProfileActivity extends AppCompatActivity implements DatePicker
         return null;
     }
 
+    /**
+     * Checks for constraints on input and displays appropriate error message
+     * @return
+     */
     public Boolean checkInput() {
         Boolean correctness = true;
         String name = nameText.getText().toString();
@@ -488,6 +553,12 @@ public class EditProfileActivity extends AppCompatActivity implements DatePicker
         return correctness;
     }
 
+    /**
+     * Gets resized bitmap
+     * @param pic
+     * @param maxSize
+     * @return
+     */
     public Bitmap getResizedBitmap(Bitmap pic, int maxSize) {
 
         double div = 90.0;
@@ -503,24 +574,39 @@ public class EditProfileActivity extends AppCompatActivity implements DatePicker
             byte[] byteArray = stream.toByteArray();
             image = BitmapFactory.decodeByteArray(byteArray, 0, byteArray.length);
             size = byteArray.length;
-            //Log.d("PhotoSize|Quality", size + " | " + quality);
             div = div * 0.9;
         }
         return image;
     }
 
+    /**
+     * Saves user to server
+     * @param info
+     */
     public void saveUser(Account info) {
         //post user profile
         ElasticsearchController.AddUsersTask addUsersTask = new ElasticsearchController.AddUsersTask();
         addUsersTask.execute(info);
     }
 
+    /**
+     * Adds one user to list
+     * @param arr
+     * @param s
+     * @return
+     */
     public static String[] addOne(String[] arr, String s){
         String[] result = Arrays.copyOf(arr, arr.length+1);
         result[arr.length] = s;
         return result;
     }
 
+    /**
+     * Removes one user from list
+     * @param arr
+     * @param s
+     * @return
+     */
     public static String[] minusOne(String[] arr, String s){
         List<String> result = new ArrayList<String>(Arrays.asList(arr));
         result.remove(s);
