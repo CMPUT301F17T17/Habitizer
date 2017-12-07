@@ -286,13 +286,16 @@ public class EditProfileActivity extends AppCompatActivity implements DatePicker
             Boolean IAmFollower = Arrays.asList(targetUserInfo.getFollowers()).contains(userInfo.getUsername());
             Boolean HaveSentRequest = Arrays.asList(targetUserInfo.getRequests()).contains(userInfo.getUsername());
 
-            follow.setVisibility(View.VISIBLE);
+            if (!targetUserInfo.getUsername().equals(userInfo.getUsername())){
+                follow.setVisibility(View.VISIBLE);
+            }
             if (IAmFollower && !HaveSentRequest) {
                 viewHabit.setVisibility(View.VISIBLE);
                 follow.setText("Unfollow");
             } else {
                 follow.setText("Follow");
             }
+
             if (HaveSentRequest) {
                 follow.setAlpha(0.5f);
             } else {
