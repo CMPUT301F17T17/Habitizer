@@ -1,3 +1,11 @@
+/*
+ *  Class Name: HabitEvent
+ *  Version: 0.5
+ *  Date: November 13th, 2017
+ *  Copyright (c) TEAM SSMAD, CMPUT 301, University of Alberta - All Rights Reserved.
+ *  You may use, distribute, or modify this code under terms and conditions of the
+ *  Code of Students Behaviour at University of Alberta
+ */
 package ssmad.habitizer;
 
 import android.app.Activity;
@@ -47,13 +55,26 @@ public class AddHabitActivity extends AppCompatActivity {
             public void onClick(View v) {
                 if (habitChecksOut(AddHabitActivity.this)) {
                     Date start = new Date();
+                    ElasticsearchController.AddItemsTask postHabit = new ElasticsearchController.AddItemsTask();
+
                     Habit habit = new Habit(habitInput.getText().toString(), start, reasonInput
                             .getText().toString());
                     habit.setDaysOfWeekDue(days);
+                    habit.setUsername(DummyMainActivity.currentUser);
+                    postHabit.execute(DummyMainActivity.Habit_Index, habit.getJsonString());
+                    try{
+                        String id = postHabit.get();
+                        habit.setId(id);
+                    }catch (Exception e){
+                        Log.d("ESC", "Could not update habit on first try.");
+                    }
                     DummyMainActivity.myHabits.add(habit);
                     DummyMainActivity.myHabitDict.put(habit.getTitle(), 0);
                     DummyMainActivity.toastMe("New habit added!", AddHabitActivity.this);
                     resetDays();
+
+                    FileController.saveInFile(AddHabitActivity.this, DummyMainActivity.HABITFILENAME, DummyMainActivity.myHabits);
+
                     AddHabitActivity.this.finish();
                 }
             }

@@ -1,3 +1,11 @@
+/*
+ *  Class Name: HabitEvent
+ *  Version: 0.5
+ *  Date: November 13th, 2017
+ *  Copyright (c) TEAM SSMAD, CMPUT 301, University of Alberta - All Rights Reserved.
+ *  You may use, distribute, or modify this code under terms and conditions of the
+ *  Code of Students Behaviour at University of Alberta
+ */
 package ssmad.habitizer;
 
 import android.app.Activity;
@@ -19,7 +27,9 @@ public class ViewMapActivity extends AppCompatActivity {
         setContentView(R.layout.activity_view_map);
         Button recenter= (Button) findViewById(R.id.center);
         Button nearby= (Button) findViewById(R.id.nearby);
-        AddHabitEventActivity.initMap(this, null, recenter);
+
+
+        /*AddHabitEventActivity.initMap(this, null, recenter);
         final Activity fctx = this;
         recenter.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -39,6 +49,6 @@ public class ViewMapActivity extends AppCompatActivity {
                             .title(h.getTitle()));
                 }
             }
-        });
+        });*/
     }
 }

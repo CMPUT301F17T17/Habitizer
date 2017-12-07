@@ -1,3 +1,11 @@
+/*
+ *  Class Name: HabitEvent
+ *  Version: 0.5
+ *  Date: November 13th, 2017
+ *  Copyright (c) TEAM SSMAD, CMPUT 301, University of Alberta - All Rights Reserved.
+ *  You may use, distribute, or modify this code under terms and conditions of the
+ *  Code of Students Behaviour at University of Alberta
+ */
 package ssmad.habitizer;
 
 import android.app.Activity;
@@ -18,7 +26,9 @@ import android.widget.Toast;
 
 import com.google.android.gms.common.ConnectionResult;
 import com.google.android.gms.common.GoogleApiAvailability;
+import com.google.gson.reflect.TypeToken;
 
+import java.lang.reflect.Type;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Date;
@@ -45,6 +55,15 @@ public class DummyMainActivity extends AppCompatActivity {
     public static final int VIEW_SIGN_UP = 995;
     public static Activity currentActivity;
     private static Context thisContext;
+    public static final String HABITEVENTFILENAME = "local_events.sav";
+    public static final String Account_Index = "User_test1";
+    public static final String Pic_Index = "pic_test1";
+    public static final String HABITFILENAME = "local_habits.sav";
+    public static String currentUser;
+    public static final String Habit_Index = "Habit_test3";
+    public static final String Event_Index = "Event_test7";
+    public static Account currentAccount;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -52,9 +71,8 @@ public class DummyMainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_dummy_main);
         thisContext = this;
         myHabitEvents = new ArrayList<>();
-        myHabits = new ArrayList<>();
         myHabitDict = new HashMap<>();
-        DEBUG_addHabits();
+        // DEBUG_addHabits();
 
         Intent intent = new Intent(DummyMainActivity.this, LoginActivity.class);
         startActivityForResult(intent, VIEW_LOGIN);
@@ -82,6 +100,11 @@ public class DummyMainActivity extends AppCompatActivity {
             }
         }else{
             switch (resultCode) {
+                case VIEW_LOGIN:
+                    intent = new Intent(this, LoginActivity.class);
+                    intent.replaceExtras(data);
+                    startActivityForResult(intent, VIEW_LOGIN);
+                    break;
                 case VIEW_FEED:
                     intent = new Intent(this, FeedTabActivity.class);
                     intent.replaceExtras(data);

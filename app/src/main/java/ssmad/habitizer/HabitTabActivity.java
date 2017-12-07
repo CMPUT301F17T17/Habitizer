@@ -1,3 +1,11 @@
+/*
+ *  Class Name: HabitEvent
+ *  Version: 0.5
+ *  Date: November 13th, 2017
+ *  Copyright (c) TEAM SSMAD, CMPUT 301, University of Alberta - All Rights Reserved.
+ *  You may use, distribute, or modify this code under terms and conditions of the
+ *  Code of Students Behaviour at University of Alberta
+ */
 package ssmad.habitizer;
 
 import android.content.Intent;
@@ -10,63 +18,94 @@ import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.ListView;
 
+import com.google.gson.JsonArray;
+import com.google.gson.JsonObject;
+
+import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.Date;
 
 import static android.R.color.holo_blue_light;
 import static android.R.color.white;
 
-/**
- * Created by cryst on 10/22/2017.
- */
-
 public class HabitTabActivity extends AppCompatActivity {
 
 
     public static String  GENERIC_REQUEST_CODE = "GENERIC.REQUEST.CODE";
     public static final int ADDING_EVENT = 123;
+    public static Boolean isFromProfile = false; //TODO 2
     ListView myHabitsListView;
 
     @Override
     protected void onStart() {
         super.onStart();
+        //TODO 2 searching another user habits for viewing
+        Intent intent = getIntent();
+        ArrayList<Habit> habitList;
+        if(intent != null && intent.getBooleanExtra("fromProfile", false)){
+            isFromProfile = true;
+            if(Utilities.isNetworkAvailable(HabitTabActivity.this)){
+                ElasticsearchController.GetItemsTask getHabitsArrayGetTask = new ElasticsearchController.GetItemsTask();
+                getHabitsArrayGetTask.execute(DummyMainActivity.Habit_Index, "username", intent.getStringExtra("targetUsername"));
+                try{
+                    JsonArray jsonHabits =  getHabitsArrayGetTask.get();
+                    habitList = new ArrayList<>();
+                    for (int i = 0; i < jsonHabits.size(); i++){
+                        Habit h = new Habit();
+                        JsonObject job  = jsonHabits.get(i).getAsJsonObject();
+                        h.fromJsonObject(job);
+                        habitList.add(h);
+                    }
+                }catch (Exception e){
+                    habitList = null;
+                    Log.d("ESC", "Adding habits in login.");
+                }
+            }else{
+                habitList = null;
+                DummyMainActivity.toastMe("No internet", HabitTabActivity.this);
+            }
+        }else {
+            isFromProfile = false;
+            habitList = DummyMainActivity.myHabits;
+        }
         myHabitsListView = (ListView) findViewById(R.id.habits_listview);
-        DummyMainActivity.myHabitsAdapter = new MyHabitsAdapter(HabitTabActivity.this, DummyMainActivity.myHabits);
+        DummyMainActivity.myHabitsAdapter = new MyHabitsAdapter(HabitTabActivity.this, habitList);
         myHabitsListView.setAdapter(DummyMainActivity.myHabitsAdapter);
         DummyMainActivity.myHabitsAdapter.notifyDataSetChanged();
-
-
     }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_habit_tab);
-        //LinearLayout tabs = (LinearLayout) findViewById(R.id.tabs);
-        //View childTabs = getLayoutInflater().inflate(R.layout.main_tabs, null);
         Intent intent = getIntent();
-        intent.getStringExtra("username");
-        DummyMainActivity.initTabs(DummyMainActivity.VIEW_HABIT, HabitTabActivity.this, intent);
-
-        //tabs.addView(childTabs);
-
-
-
-
+        setContentView(R.layout.activity_habit_tab);
         Button button = (Button) findViewById(R.id.add_habit_button);
-        button.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(HabitTabActivity.this, AddHabitActivity.class);
-                startActivityForResult(intent, 0);
-            }
-        });
+
+        super.onCreate(savedInstanceState);
+        //TODO 2
+        if (intent != null && intent.getBooleanExtra("fromProfile", false)){
+            button.setVisibility(View.GONE);
+        }else {
+            //LinearLayout tabs = (LinearLayout) findViewById(R.id.tabs);
+            //View childTabs = getLayoutInflater().inflate(R.layout.main_tabs, null);
+            DummyMainActivity.initTabs(DummyMainActivity.VIEW_HABIT, HabitTabActivity.this, intent);
+            //tabs.addView(childTabs);
+            button.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Intent intent = new Intent(HabitTabActivity.this, AddHabitActivity.class);
+                    startActivityForResult(intent, 0);
+                }
+            });
+        }
     }
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
+        if(data != null && data.getBooleanExtra("fromHabit", false)){
+            setResult(DummyMainActivity.VIEW_FEED, data);
+            finish();
+        }
         if(requestCode == ADDING_EVENT){
-            AddHabitEventActivity._resetVars();
         }
         DummyMainActivity.myHabitsAdapter.notifyDataSetChanged();
     }
